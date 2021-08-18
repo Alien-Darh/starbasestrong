@@ -1,0 +1,22 @@
+# Starbase Component
+
+component_set = {
+	key = "STARBASE_AURA_CRISIS"
+	
+	icon = "GFX_spaceport_module_aura_crisis"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "STARBASE_AURA_FALLEN"
+	
+	icon = "GFX_spaceport_module_aura_fallen"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "STARBASE_AURA_MARAUDERS"
+	
+	icon = "GFX_spaceport_module_aura_marauders"
+	icon_frame = 1
+}

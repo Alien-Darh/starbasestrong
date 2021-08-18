@@ -1,0 +1,12 @@
+
+on_monthly_pulse_country = {
+	events = {
+		whgenevents.5
+		whgenevents.8
+	}
+}
+on_system_lost = {
+	events = {
+		whgenevents.7
+	}
+}
