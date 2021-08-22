@@ -231,6 +231,7 @@
  CRUISER_STERN_T2_AUX:0 "Missile stern aux"
  CRUISER_STERN_T3_AUX:0 "Stern surveillance aux"
  
+ BATTLESHIP_BOW_M2S4_AUX:0 "Mounted bow aux"
  BATTLESHIP_BOW_L1M1S2_AUX:0 "Transverse bow aux"
  BATTLESHIP_BOW_L2_AUX:0 "Break pulses aux"
  BATTLESHIP_BOW_M1S2SHB_AUX:0 "Hangar de proa aux"

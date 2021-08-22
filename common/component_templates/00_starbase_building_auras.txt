@@ -39,6 +39,7 @@ utility_component_template = {
 
 		modifier = {
 			ship_emergency_ftl_min_days_mult = 1
+			ship_disengage_chance_mult = -0.10
 		}
 
 		graphics = {
@@ -63,6 +64,26 @@ utility_component_template = {
 
 	class_restriction = { shipclass_starbase }
 
+	friendly_aura = {
+		name = "aura_starbase_communications_jammer"
+		system_wide = yes
+		stack_info = {
+			id = friendly_communications_jammer_aura
+			priority = 10
+		}
+		
+		modifier = {
+			ship_weapon_damage = 0.10
+		}
+		
+		graphics = {
+			ship_effect = {
+				entity = "ship_aura_positive_entity"
+				dynamic_scale = no
+			}
+		}
+	}	
+	
 	hostile_aura = {
 		name = "aura_starbase_communications_jammer"
 		system_wide = yes
@@ -73,8 +94,7 @@ utility_component_template = {
 		}
 
 		modifier = {
-			ship_speed_mult = -0.10
-			ship_disengage_chance_mult = -0.10
+			ship_weapon_damage = -0.10
 		}
 
 		graphics = {
@@ -95,6 +115,26 @@ utility_component_template = {
 
 	class_restriction = { shipclass_starbase }
 
+	friendly_aura = {
+		name = "aura_starbase_distruption_field"
+		system_wide = yes
+		stack_info = {
+			id = friendly_disruption_field_aura
+			priority = 10
+		}
+		
+		modifier = {
+			ship_shield_mult = 0.10
+		}
+		
+		graphics = {
+			ship_effect = {
+				entity = "ship_aura_positive_entity"
+				dynamic_scale = no
+			}
+		}
+	}	
+	
 	hostile_aura = {
 		name = "aura_starbase_distruption_field"
 		system_wide = yes
@@ -106,7 +146,6 @@ utility_component_template = {
 
 		modifier = {
 			ship_shield_mult = -0.10
-			ship_armor_mult = -0.10
 		}
 
 		graphics = {
@@ -147,6 +186,7 @@ utility_component_template = {
 			}
 		}
 	}
+	
 	hostile_aura = {
 		name = "aura_starbase_command_center"
 		system_wide = yes
@@ -372,8 +412,8 @@ utility_component_template = {
 			priority = 10
 		}
 		
-		modifier = { 
-			ship_weapon_damage = 0.10
+		modifier = {
+			ship_speed_mult = 0.10
 		}
 		
 		graphics = {
@@ -383,6 +423,7 @@ utility_component_template = {
 			}
 		}
 	}
+	
 	hostile_aura = {
 		name = "starbase_aura_warp"
 		system_wide = yes
@@ -392,7 +433,7 @@ utility_component_template = {
 		}
 		
 		modifier = {
-			ship_weapon_damage = -0.10
+			ship_speed_mult = -0.10
 		}
 		
 		graphics = {

@@ -35,8 +35,8 @@ tech_defense_platform_hull_1 = {
 	}
 
 	modifier = {
-		shipsize_military_station_small_hull_add = 2000
-		shipsize_military_station_small_build_speed_mult = 0.20
+		shipsize_military_station_small_hull_add = 1000
+		shipsize_military_station_small_build_speed_mult = 0.10
 	}
 }
 
@@ -73,8 +73,8 @@ tech_defense_platform_hull_2 = {
 	}
 		
 	modifier = {
-		shipsize_military_station_medium_hull_add = 3000
-		shipsize_military_station_medium_build_speed_mult = 0.20
+		shipsize_military_station_medium_hull_add = 2000
+		shipsize_military_station_medium_build_speed_mult = 0.10
 	}	
 }
 
@@ -112,6 +112,6 @@ tech_defense_platform_hull_3 = {
 		
 	modifier = {
 		shipsize_military_station_large_hull_add = 4000
-		shipsize_military_station_large_build_speed_mult = 0.20
+		shipsize_military_station_large_build_speed_mult = 0.10
 	}	
 }

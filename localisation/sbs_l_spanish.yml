@@ -48,6 +48,7 @@
  CRUISER_STERN_T2_AUX:0 "Popa de misiles aux"
  CRUISER_STERN_T3_AUX:0 "Popa de vigilancia aux"
  
+ BATTLESHIP_BOW_M2S4_AUX:0 "Proa con montura aux"
  BATTLESHIP_BOW_L1M1S2_AUX:0 "Proa transversal aux"
  BATTLESHIP_BOW_L2_AUX:0 "Rompe pulsos aux"
  BATTLESHIP_BOW_M1S2SHB_AUX:0 "Proa hangar aux"
