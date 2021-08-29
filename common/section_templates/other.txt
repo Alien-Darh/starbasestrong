@@ -62,8 +62,8 @@ ship_section_template = {
 		is_side_slot = no
 	}
 	
-	large_utility_slots = 0
-	medium_utility_slots = 3
+	large_utility_slots = 1
+	medium_utility_slots = 2
 	aux_utility_slots = 3
 
 	resources = {
@@ -122,8 +122,8 @@ ship_section_template = {
 		is_side_slot = no
 	}
 
-	large_utility_slots = 0
-	medium_utility_slots = 3
+	large_utility_slots = 1
+	medium_utility_slots = 2
 	aux_utility_slots = 3
 
 	resources = {
@@ -164,8 +164,8 @@ ship_section_template = {
 		locatorname = "medium_gun_02"
 	}
 
-	large_utility_slots = 0
-	medium_utility_slots = 3
+	large_utility_slots = 1
+	medium_utility_slots = 2
 	aux_utility_slots = 3
 
 	resources = {
@@ -214,8 +214,8 @@ ship_section_template = {
 		locatorname = "medium_gun_02"
 	}
 
-	large_utility_slots = 0
-	medium_utility_slots = 3
+	large_utility_slots = 1
+	medium_utility_slots = 2
 	aux_utility_slots = 3
 
 	resources = {
@@ -255,8 +255,8 @@ ship_section_template = {
 		locatorname = "large_gun_01"
 	}
 
-	large_utility_slots = 0
-	medium_utility_slots = 3
+	large_utility_slots = 1
+	medium_utility_slots = 2
 	aux_utility_slots = 3
 
 	resources = {
@@ -294,8 +294,8 @@ ship_section_template = {
 		locatorname = "large_gun_01"
 	}
 
-	large_utility_slots = 0
-	medium_utility_slots = 3
+	large_utility_slots = 1
+	medium_utility_slots = 2
 	aux_utility_slots = 3
 
 	ai_weight = {
@@ -387,9 +387,9 @@ ship_section_template = {
 		section_instance = 1
 	}
 
+	large_utility_slots = 1
+	medium_utility_slots = 4
 	small_utility_slots = 0
-	medium_utility_slots = 6
-	large_utility_slots = 0
 	aux_utility_slots = 3
 }
 
@@ -434,9 +434,9 @@ ship_section_template = {
 		section_instance = 1
 	}
 
+	large_utility_slots = 1
+	medium_utility_slots = 4
 	small_utility_slots = 0
-	medium_utility_slots = 6
-	large_utility_slots = 0
 	aux_utility_slots = 3
 }
 
@@ -467,9 +467,9 @@ ship_section_template = {
 		section_instance = 1
 	}
 
+	large_utility_slots = 1
+	medium_utility_slots = 4
 	small_utility_slots = 0
-	medium_utility_slots = 6
-	large_utility_slots = 0
 	aux_utility_slots = 3
 }
 
@@ -503,9 +503,9 @@ ship_section_template = {
 		section_instance = 1
 	}
 
+	large_utility_slots = 1
+	medium_utility_slots = 4
 	small_utility_slots = 0
-	medium_utility_slots = 6
-	large_utility_slots = 0
 	aux_utility_slots = 3
 }
 

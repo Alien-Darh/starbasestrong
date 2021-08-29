@@ -92,6 +92,7 @@
  mod_shipsize_juggernaut_build_speed_mult:0 "Veloc. construc. Juggernaut"
  mod_shipsize_titan_build_speed_mult:0 "Veloc. construc. Titanes"
  mod_shipclass_military_station_build_speed_mult:0 "Veloc. constr. plataformas defensa"
+ mod_shipclass_starbase_evasion_add:0 "Evasión de la base estelar"
  requires_neutron_star:0 "$TRIGGER_FAIL$Requiere un §Y$pc_neutron_star$§! en el sistema."
  requires_pulsar:0 "$TRIGGER_FAIL$Requiere un §Y$pc_pulsar$§! en el sistema."
  requires_solar_panels:0 "$TRIGGER_FAIL$Requiere modulo de panel solar."

@@ -1065,7 +1065,7 @@ defense_grid = {
 	}
 
 	station_modifier = {
-		starbase_defense_platform_capacity_add = 8
+		starbase_defense_platform_capacity_add = 11
 		shipclass_military_station_build_speed_mult = 0.25
 	}
 
@@ -2898,8 +2898,8 @@ system_fast = {
 			energy = 5
 		}
 	}
-
-	triggered_station_modifier = {
+	
+	triggered_system_modifier = {
 		potential = {
 			hidden_trigger = { exists = this }
 			solar_system = {		
@@ -2907,12 +2907,11 @@ system_fast = {
 			}	
 		}
 		modifier = {
-			shipclass_starbase_hull_mult = 0.25
 			ship_speed_reduction = 0.50
 		}	
 	}
-
-	triggered_station_modifier = {
+	
+	triggered_system_modifier = {
 		potential = {
 			hidden_trigger = { exists = this }
 			solar_system = {
@@ -2920,12 +2919,12 @@ system_fast = {
 			}
 		}
 		modifier = {
-			ship_shield_reduction = 0.25
+			ship_shield_reduction = 0.50
 			ship_speed_reduction = 0.50
 		}		
 	}
-
-	triggered_station_modifier = {
+	
+	triggered_system_modifier = {
 		potential = {
 			hidden_trigger = { exists = this }
 			solar_system = {
@@ -2933,13 +2932,14 @@ system_fast = {
 			}	
 		}
 		modifier = {	
-			shipclass_military_station_damage_mult = 0.25
-			shipclass_military_station_hull_mult = 0.25
+			ship_shield_reduction = 0.50
 		}	
 	}
 	
 	station_modifier = {
-		starbase_defense_platform_capacity_add = 8
+		shipclass_starbase_hull_mult = 0.25
+		shipclass_starbase_damage_mult = 0.25
+		shipclass_starbase_evasion_add = 25
 	}
 	
 	show_in_tech = "tech_sensors_3"
