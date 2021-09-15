@@ -189,10 +189,10 @@
  sm_unity_module:0 "Unidad nacional"
  sm_unity_module_desc:0 "Los módulos de unidad son iconos nacionales y ayudarán a la población a sentirse mas orgullosos de sus logros y expansión por la galaxia."
  
- sm_job_module:0 "Oficina de empleos"
+ sm_job_module:0 "Ofic. de empleos"
  sm_job_module_desc:0 "Edificio de coordinación de la base estelar que ayuda con los trabajos planetarios según las especialidades de los módulos incorporados."
  
- sm_job_drone_module:0 "Oficina de empleos"
+ sm_job_drone_module:0 "Ofic. de empleos"
  sm_job_drone_module_desc:0 "Edificio de coordinación de la base estelar que ayuda con los trabajos planetarios según las especialidades de los módulos incorporados."
  
  sm_orbital_assembly:0 "Acelerador biokinético"
@@ -200,9 +200,6 @@
 
  sm_system_fast:0 "Soporte estación"
  sm_system_fast_desc:0 "Edificio que genera un campo gravitacional extremo en sistemas especiales. Las bases estelares estarán mas protegidas a las variables ambientales de sistemas galácticos complejos como estrellas Neutrones, Púlsares u Agujeros Negros."
-
- sm_processor_alloys:0 "Procesador de Aleaciones"
- sm_processor_alloys_desc:0 "Edificio de alta complejidad de tratamiento de minerales para aleaciones. Debido a su alta peligrosidad este edificio de la base estelar solo es posible montarlo en sistemas que no tengan planetas habitables y así recolectar minerales de los sistemas vecinos para su elaboración."
  
  requires_black_hole_neutron_star_pulsar:0 "§RRequiere un §Y$pc_pulsar$§! \n§RRequiere un §Y$pc_neutron_star$§! \n§RRequiere un §Y$pc_black_hole$§! \nen el sistema.§!"
  

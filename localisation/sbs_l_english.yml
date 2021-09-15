@@ -44,9 +44,6 @@
 
  sm_system_fast:0 "Station support"
  sm_system_fast_desc:0 "Building that generates an extreme gravitational field in special systems. The stellar bases will be more protected from the environmental variables of complex galactic systems such as Neutron stars, Pulsars or Black Holes."
-
- sm_processor_alloys:0 "Alloy Processor"
- sm_processor_alloys_desc:0 "High complexity building for mineral treatment for alloys. Due to its high danger, this building of the star base is only possible to mount it in systems that do not have habitable planets and thus collect minerals from neighboring systems for its elaboration."
  
  ############## Aura crisis ################
 
