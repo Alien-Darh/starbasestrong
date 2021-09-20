@@ -1,0 +1,6 @@
+
+
+starbase_space_storm = {
+	ship_speed_reduction = 0.50
+	ship_shield_reduction = 0.50
+}

@@ -173,6 +173,7 @@
  
  mod_shipclass_military_station_build_speed_mult:0 "Defense Platforms Build Speed"
  mod_shipclass_starbase_evasion_add:0 "Starbase Evasion"
+ mod_shipclass_military_station_evasion_add:0 "Defense platform evasion"
 
  #################################################
 

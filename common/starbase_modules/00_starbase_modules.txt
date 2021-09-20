@@ -5,13 +5,16 @@ unity_module = {
 	resources = {
 		category = starbase_modules
 		cost = {
-			influence = 10
+			influence = 20
 		}
 		produces = {
 			unity = 0.50
 		}		
 
-		upkeep = { energy = 5 }
+		upkeep = {
+			energy = 5
+			influence = 0.10
+		}
 	}
 	
 	potential = {
@@ -39,14 +42,17 @@ manufacturing_module = {
 	resources = {
 		category = starbase_modules
 		cost = {
-			minerals = 200
-			influence = 10
+			minerals = 20
+			influence = 20
 		}
 		produces = {
-			consumer_goods = 2
+			consumer_goods = 5
 		}		
 
-		upkeep = { energy = 5 }
+		upkeep = { 
+			energy = 5
+			influence = 0.10
+		}
 	}
 
 	potential = {
@@ -88,10 +94,10 @@ storage_food = {
 	resources = {
 		category = starbase_modules
 		cost = {
-			alloys = 25
+			influence = 20
 		}		
 		produces = {
-			food = 2
+			food = 5
 		}
 		upkeep = { energy = 5 }		
 	}
@@ -126,10 +132,10 @@ storage_minerals = {
 	resources = {
 		category = starbase_modules
 		cost = {
-			alloys = 25
+			alloys = 20
 		}		
 		produces = {
-			minerals = 2
+			minerals = 5
 		}
 		upkeep = { energy = 5 }		
 	}
@@ -176,11 +182,14 @@ management_office = {
 	resources = {
 		category = starbase_modules
 		cost = {
-			minerals = 200
-			influence = 10
+			minerals = 20
+			influence = 20
 		}
 
-		upkeep = { energy = 5 }
+		upkeep = { 
+			energy = 5
+			influence = 0.10
+		}
 	}
 
 	potential = {
@@ -202,7 +211,7 @@ management_office = {
 		}			
 	}
 
-	country_modifier = { country_admin_cap_mult = 0.02 }
+	country_modifier = { country_admin_cap_mult = 0.05 }
 
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
@@ -223,12 +232,15 @@ social_services = {
 	resources = {
 		category = starbase_modules
 		cost = {
-			alloys = 25
+			alloys = 10
+			energy = 10
 		}		
 		produces = {
-			influence = 0.1
+			influence = 0.20
 		}
-		upkeep = { energy = 5 }		
+		upkeep = { 
+			energy = 10
+		}		
 	}
 
 	possible = {
