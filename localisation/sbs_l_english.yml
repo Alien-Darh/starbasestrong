@@ -1,205 +1,23 @@
 ﻿l_english:
 
- tech_solar_panels:0 "Solar Panels"
- tech_solar_panels_desc:0 "Use the energy of a sun to produce energy"
-
- sm_solar_panels:0 "$tech_solar_panels$"
- sm_solar_panels_desc:0 "Produce §Y5§! £energy£ energy"
-
- sm_research_lav:0 "Science Lab"
- sm_research_lav_desc:0 "Starbase research laboratory"
-
- sm_archeological_center: "Archeological Center"
- sm_archeological_center_desc: "Archaeological study of the starbase"
-
- sm_hydrogen_cells:0 "Hydrogen Cells"
- sm_hydrogen_cells_desc: "Advanced energy storage"
-
- sm_nanotechnology_lab:0 "Nanotechnology Laboratory"
- sm_nanotechnology_lab_desc:0 "Experimental production of resources "
+ CORVETTE_FRACTAL_REACTOR:0 "Fractal reactor"
+ DESTROYER_FRACTAL_REACTOR:0 "Fractal reactor"
+ CRUISER_FRACTAL_REACTOR:0 "Fractal reactor" 
+ BATTLESHIP_FRACTAL_REACTOR:0 "Fractal reactor"
+ COLOSSUS_FRACTAL_REACTOR:0 "Fractal reactor"
+ ION_CANNON_FRACTAL_REACTOR:0 "Fractal reactor"
+ PLATFORM_FRACTAL_REACTOR:0 "Fractal reactor"
+ TITAN_FRACTAL_REACTOR:0 "Fractal reactor"
+ STARBASE_FRACTAL_REACTOR:0 "Fractal reactor" 
+ tech_fractal_power:0 "Fractal reactor"
+ tech_fractal_power_desc:0 "The reactor works by the gravitational attraction of nearby stars colliding cosmic rays in complex and fractals enigmatic calculations producing a lot of power without any noise." 
  
- sm_social_services:0 "Soc. services"
- sm_social_services_desc:0 "The social services modules will significantly help to streamline the procedures and needs of local and foreign people."
- 
- sm_storage_food:0 "Fridge"
- sm_storage_food_desc:0 "Food modules help preserve and safeguard the needs of local and foreign people in difficult times." 
-
- sm_storage_minerals:0 "Storage"
- sm_storage_minerals_desc:0 "Los módulos de minerales ayudarán a la minería local para preservar las necesidades de materia prima en tiempos difíciles."
- 
- sm_manufacturing_module:0 "Manufacture"
- sm_manufacturing_module_desc:0 "The manufacturing modules will help local factories to keep trade stable and meet the needs of the population." 
- 
- sm_unity_module:0 "National unity"
- sm_unity_module_desc:0 "The unit modules are national icons and will help the population feel more proud of their achievements and expansion throughout the galaxy."
-
- sm_job_module:0 "Employment office"
- sm_job_module_desc:0 "Coordination building of the star base that helps with planetary works according to the specialties of the modules incorporated in the station."
-
- sm_job_drone_module:0 "Employment office"
- sm_job_drone_module_desc:0 "Coordination building of the star base that helps with planetary works according to the specialties of the modules incorporated in the station."
-
- sm_orbital_assembly:0 "Biokinético accelerator"
- sm_orbital_assembly_desc:0 "The starbase has the ability to produce mechanical implants and a powerful wave beam to accelerate biological genomes, enhancing the growth and assembly of the planetary population."
-
- sm_system_fast:0 "Station support"
- sm_system_fast_desc:0 "Building that generates an extreme gravitational field in special systems. The stellar bases will be more protected from the environmental variables of complex galactic systems such as Neutron stars, Pulsars or Black Holes."
- 
- ############## Aura crisis ################
-
- sm_aura_crisis:0 "Defensive Crisis Aura"
- sm_aura_crisis_desc:0 "Sophisticated Aura will help Starbases defend against the Endgame Crisis"
- aura_starbase_crisis:0 "Offensive Aura - Crisis"
- STARBASE_AURA_CRISIS:0 "Crisis Aura"
-
-
- sm_aura_fallen:0 "Awakened Aura"
- sm_aura_fallen_desc:0 "Sophisticated Aura will help Starbases defend against some Awakened Empires"
- aura_starbase_fallen:0 "Offensive Aura - Awakened"
- STARBASE_AURA_FALLEN:0 "Awakened Aura"
-
- sm_aura_marauders:0 "Aura Strong"
- sm_aura_marauders_desc:0 "A sophisticated Aura will help star bases defend against hostile empires and others."
- aura_starbase_marauders:0 "Offensive Aura - Strong"
- STARBASE_AURA_MARAUDERS:0 "Aura Strong"
-
- mod_damage_vs_country_type_awakened_marauders_mult:0 "Damage to Marauders"
-
- ############## Starbases ################
-
- TECH_UNLOCK_STARHOLD_TECHNO_TITLE:0 "§SUnlock Technology:§! Auxiliary Sections I"
- TECH_UNLOCK_STARHOLD_TECHNO_DESC:0 "Thanks to the auxiliary modules of our starbases, new sections are added to Corvettes."
-
- TECH_UNLOCK_STAR_FORTRESS_TECHNO_TITLE:0 "§SUnlock Technology:§! Auxiliary Sections II"
- TECH_UNLOCK_STAR_FORTRESS_TECHNO_DESC:0 "Thanks to the auxiliary modules of our starbases, new sections are added to Destroyers."
-
- TECH_UNLOCK_CITADEL_TECHNO_TITLE:0 "§SUnlock Technology:§! Auxiliary Sections III"
- TECH_UNLOCK_CITADEL_TECHNO_DESC:0 "Thanks to the auxiliary modules of our starbases, new sections are added to Cruisers."
-
- TECH_UNLOCK_CITADEL_UPGRADE_TITLE:0 "§SUnlock Technology:§! $starbase_citadel_upgrade$"
- TECH_UNLOCK_CITADEL_UPGRADE_DESC:0 "The technological advances of our empire are to be feared, with the new improvements of our Star Base it will be an imposing lock and new sections are added to Battleships and Titans."
-
- tech_starbase_citadel_upgrade:0 "$starbase_citadel_upgrade$"
- tech_starbase_citadel_upgrade_desc:0 "Access the new buildings of the $starbase_citadel$ to reinforce the limits of your empire or promote arts, commerce or research."
-
- starbase_citadel_upgrade:0 "$starbase_citadel$ Upgrade"
- 
- tech_defense_platform_hull_2:0 "Tungsten Structural Integrity"
- tech_defense_platform_hull_2_desc:0 "A reinforced frame and shields with increased shock absorption ensure the structural integrity of the defense station, even under intense pressure."
-
- tech_defense_platform_hull_3:0 "Graphene Structural Integrity"
- tech_defense_platform_hull_3_desc:0 "A reinforced frame and shields with increased shock absorption ensure the structural integrity of the defense fortress, even under intense pressure and crossfire."
- 
- mod_shipsize_military_station_medium_hull_add:0 "Defense station hull points"
- mod_shipsize_military_station_medium_build_speed_mult:0 "Speed build defense station"
- 
- mod_shipsize_military_station_large_hull_add:0 "Defense fortress hull points"
- mod_shipsize_military_station_large_build_speed_mult:0 "Speed build defense fortress"
-
- ###############################################
-
- sm_star_gate:0 "$stargate$"
- sm_star_gate_desc:0 "Our starbases now have a §S$stargate$§! connecting a network of link roads throughout our empire with access control."
- STARBASE_STAR_GATE:0 "STARGATE"
-
- starbase_aura_warp:0 "Aura Hyper Impulse"
- gateway_0:0 "Portal location"
- gateway_ruined:0 "Portal disabled"
- gateway_restored:0 "$gateway_final$"
- gateway_final:0 "Portal"
-
- ###############################################
-
- sm_pulsar_observatory:0 "Pulsar Observatory"
- sm_pulsar_observatory_desc:0 "With the construction of a scientific facility specialized in studying Pulsars, our empire will surely see improvements in its engineering understanding."
-
- sm_neutron_observatory:0 "Neutron Star Observatory"
- sm_neutron_observatory_desc:0 "With the construction of a scientific facility specialized in studying neutron stars, our empire will surely see improvements in its understanding of society."
-
- sm_aux_module: "Auxiliary Platform"
- sm_aux_module_desc: "Advanced auxiliary platforms for Star Bases, performing rapid fleet construction."
-
- sm_space_housing: "Housing Modules"
- sm_space_housing_desc: "Deploy accommodation modules on starbases on planets to increase the population."
-
- sm_management_office: "Administrative office"
- sm_management_office_desc: "Deploy management modules on starbases around planets to increase bureaucratic efficiency."
- 
- sm_refinery_exotic_gases:0 "Exotic gas refinery "
- sm_refinery_exotic_gases_desc:0 "With nanite technology we can refine exotic gases extracted from the depths, improving production."
- 
- sm_refinery_rare_crystals:0 "Rare Crystal Refinery "
- sm_refinery_rare_crystals_desc:0 "With nanite technology we can refine rare crystals mined from the depths improving production."
- 
- sm_refinery_volatile_motes:0 "Volatile Motes Refinery "
- sm_refinery_volatile_motes_desc:0 "With nanite technology we can refine volatile specks extracted from the depths, improving production."
- 
- sm_refinery_alloys:0 "Alloy refinery"
- sm_refinery_alloys_desc:0 "With nanites technology we can refine alloys extracted from the depths improving production."
- 
- sm_refinery_living_metal:0 "Living metal refinery"
- sm_refinery_living_metal_desc:0 "With Nanites technology we can refine living metal extracted from the depths improving production."
- 
- sm_refinery_dark_matter:0 "Dark matter Refinery"
- sm_refinery_dark_matter_desc:0 "With Nanites technology we can refine dark matter extracted from the depths improving production."
-
- sm_gun_battery_upgrade:0 "XL gun battery"
- sm_gun_battery_upgrade_desc:0 "Add two XL weapon slots to the starbase."
- 
- 
- 
- #################################################
-
- requires_pulsar:0 "$TRIGGER_FAIL$Requires a §Y$pc_pulsar$§! in the system."
- requires_neutron_star:0 "$TRIGGER_FAIL$Requires a §Y$pc_neutron_star$§! in the system."
- 
- requires_outpost:0 "$TRIGGER_FAIL$Requires a §YStarport§! in the system."
- requires_solar_panels:0 "Requires $tech_solar_panels$ module"
- 
- requires_mine_exotic_gases:0 "$TRIGGER_FAIL$Requires a §YGas extraction deposit§! in the system."
- requires_mine_rare_crystals:0 "$TRIGGER_FAIL$Requires a §YRare crystal extraction deposit§! in the system."
- requires_mine_volatile_motes:0 "$TRIGGER_FAIL$Requires a §YVolatile motes extraction deposit§! in the system."
- 
- requires_mine_alloys:0 "$TRIGGER_FAIL$Requires a §YAlloy extraction deposit§! in the system."
- requires_mine_living_metal:0 "$TRIGGER_FAIL$Requires a §YLiving metal extraction deposit§! in the system."
- requires_mine_dark_matter:0 "$TRIGGER_FAIL$Requires a §YDark matter extraction deposit§! in the system."
- requires_mine_minerals:0 "$TRIGGER_FAIL$Requires a §YMineral extraction deposit§! in the system."
-
- #################################################
-
- mod_shipsize_titan_build_speed_mult:0 "Build speed $titan_plural$"
- mod_shipsize_colossus_build_speed_mult:0 "Build speed $colossus$"
- mod_shipsize_juggernaut_build_speed_mult:0 "Build speed $juggernaut$"
- 
- mod_shipclass_military_station_build_speed_mult:0 "Defense Platforms Build Speed"
- mod_shipclass_starbase_evasion_add:0 "Starbase Evasion"
- mod_shipclass_military_station_evasion_add:0 "Defense platform evasion"
-
- #################################################
-
- TECH_UNLOCK_FRACTAL_POWER_TITLE:0 "§SUnlock the component:§! $tech_fractal_power$ \n§SSuspensión:§! Zero Gravitational.\n§SFragmentation:§! Complete Invisibility"
- TECH_UNLOCK_FRACTAL_POWER_DESC:0 "$tech_fractal_power_desc$"
-
- tech_fractal_power:0 "Fractal Reactor"
- tech_fractal_power_desc:0 "The reactor works by the gravitational pull of nearby stars colliding cosmic rays in complex and enigmatic fractal calculations producing a lot of power without any noise."
- 
- #################################################
-
- CORVETTE_FRACTAL_REACTOR:0 "$tech_fractal_power$"
- DESTROYER_FRACTAL_REACTOR:0 "$tech_fractal_power$"
- CRUISER_FRACTAL_REACTOR:0 "$tech_fractal_power$"
- BATTLESHIP_FRACTAL_REACTOR:0 "$tech_fractal_power$"
- TITAN_FRACTAL_REACTOR:0 "$tech_fractal_power$"
- COLOSSUS_FRACTAL_REACTOR:0 "$tech_fractal_power$"
- PLATFORM_FRACTAL_REACTOR:0 "$tech_fractal_power$"
- ION_CANNON_FRACTAL_REACTOR:0 "$tech_fractal_power$"
- STARBASE_FRACTAL_REACTOR:0 "$tech_fractal_power$"
-
- #################################################
+ TECH_UNLOCK_FRACTAL_POWER_DESC:0 "The reactor works by the gravitational attraction of nearby stars colliding cosmic rays in complex and fractals enigmatic calculations producing a lot of power without any noise." 
+ TECH_UNLOCK_FRACTAL_POWER_TITLE:0 "§SUnlock the component:§! Fractal reactor \n§SSuspensión:§! Gravitational zero..\n§SFragmentation:§! Full invisibility"
 
  CORVETTE_MID_TPDA:0 "Medium artillery"
  CORVETTE_MID_M1S1_AUX:0 "Missile ship aux"
- CORVETTE_MID_S3_AUX:0 "Interceptador aux"
+ CORVETTE_MID_S3_AUX:0 "Interceptor aux"
  CORVETTE_MID_S2PD1_AUX:0 "Surveillance ship aux"
  CORVETTE_MID_TPDA_AUX:0 "Medium artillery aux"
  
@@ -209,18 +27,18 @@
  DESTROYER_BOW_S3_AUX:0 "Surveillance ship aux"
  DESTROYER_BOW_L1_AUX:0 "Gun bow aux"
  DESTROYER_STERN_PD2_AUX:0 "Surveillance ship aux"
- DESTROYER_STERN_S2_AUX:0 "Break lightning aux"
+ DESTROYER_STERN_S2_AUX:0 "Break rays aux"
  DESTROYER_STERN_M1_AUX:0 "Artillery stern aux"
  DESTROYER_BOW_L1_XP_AUX:0 "Medium artillery aux"
  DESTROYER_STERN_T1_AUX:0 "Missile stern aux"
  
  CRUISER_BOW_T2:0 "Medium artillery" 
  CRUISER_STERN_T2:0 "Missile stern"
- CRUISER_STERN_T3:0 "Stern surveillance"
+ CRUISER_STERN_T3:0 "Surveillance stern"
  CRUISER_BOW_L1_AUX:0 "Artillery bow aux"
  CRUISER_BOW_M1S2_AUX:0 "Missile bow aux"
  CRUISER_BOW_M2_AUX:0 "Transverse bow aux"
- CRUISER_MID_S2HB_AUX:0 "Hangar central aux"
+ CRUISER_MID_S2HB_AUX:0 "Hangar core aux"
  CRUISER_MID_L1M1_AUX:0 "Artillery core aux"
  CRUISER_MID_M3_AUX:0 "Transverse core aux"
  CRUISER_MID_M2S2_AUX:0 "Missile core aux"
@@ -231,31 +49,163 @@
  CRUISER_STERN_T3_AUX:0 "Stern surveillance aux"
  
  BATTLESHIP_BOW_M2S4_AUX:0 "Mounted bow aux"
- BATTLESHIP_BOW_L1M1S2_AUX:0 "Transverse bow aux"
+ BATTLESHIP_BOW_L1M1S2_AUX:0 "Cross bow aux"
  BATTLESHIP_BOW_L2_AUX:0 "Break pulses aux"
- BATTLESHIP_BOW_M1S2SHB_AUX:0 "Hangar de proa aux"
+ BATTLESHIP_BOW_M1S2SHB_AUX:0 "Hangar bow aux"
  BATTLESHIP_BOW_M3S2_AUX:0 "Soul breaker aux"
- BATTLESHIP_MID_L2M2_AUX:0 "Transverse coreaux"
+ BATTLESHIP_MID_L2M2_AUX:0 "Transverse core aux"
  BATTLESHIP_MID_L3_AUX:0 "Core artillery aux"
- BATTLESHIP_MID_M4SHB_AUX:0 "Hangar central aux"
- BATTLESHIP_MID_S4LHB_AUX:0 "Ship carrier core aux"
- BATTLESHIP_STERN_M1S2_AUX:0 "Aeon bulwark aux"
+ BATTLESHIP_MID_M4SHB_AUX:0 "Hangar core aux"
+ BATTLESHIP_MID_S4LHB_AUX:0 "Carrier core aux"
+ BATTLESHIP_STERN_M1S2_AUX:0 "Aeon Bulwark aux"
  BATTLESHIP_STERN_L1_AUX:0 "Artillery stern aux"
  BATTLESHIP_STERN_M2_AUX:0 "Transverse stern aux"
- BATTLESHIP_STERN_S4_AUX:0 "Bastión Zenith aux" 
- TITAN_STERN_XP:0 "Stern of titán aux"
+ BATTLESHIP_STERN_S4_AUX:0 "Zenith bulwark aux" 
+ TITAN_STERN_XP:0 "Stern of titan aux"
  
- ################# Gateway #####################
+ STARBASE_AURA_CRISIS:0 "Aura Crisis"
+ STARBASE_AURA_FALLEN:0 "Aura Awakened"
+ STARBASE_AURA_MARAUDERS:0 "Aura fortress"
+ STARBASE_STAR_GATE:0 "Stargate"
 
- stargate: "Stargate"
- stargate_DESC: "$gateway_final_DESC$"
- stargate_MEGASTRUCTURE_DETAILS: "$gateway_final_MEGASTRUCTURE_DETAILS$"
+ TECH_UNLOCK_STARHOLD_TECHNO_TITLE:0 "§SUnlock technology:§! Auxiliary sections I"
+ TECH_UNLOCK_STARHOLD_TECHNO_DESC:0 "Thanks to the auxiliary modules of our stellar bases, new sections are added to Corves"
+ 
+ TECH_UNLOCK_STAR_FORTRESS_TECHNO_TITLE:0 "§SUnlock technology:§! Auxiliary sections II"
+ TECH_UNLOCK_STAR_FORTRESS_TECHNO_DESC:0 "Thanks to the auxiliary modules of our stellar bases, new sections are added to destroyers"
+ 
+ TECH_UNLOCK_CITADEL_TECHNO_TITLE:0 "§SUnlock technology:§! Auxiliary sections III"
+ TECH_UNLOCK_CITADEL_TECHNO_DESC:0 "Thanks to the auxiliary modules of our stellar bases, new sections are added to cruises"
+ 
+ TECH_UNLOCK_CITADEL_UPGRADE_TITLE:0 "§SUnlock technology:§! Improvement of citadel"
+ TECH_UNLOCK_CITADEL_UPGRADE_DESC:0 "The technological advances of our empire are to fear, with the new improvements of our stellar base will be an imposing bolt and new sections are added to battleships and Titans"
 
- whgenevents.6.name: "$stargate$ Generated"
- whgenevents.6.desc: "The Starbase in §Y[psi_nav_origin_system.GetName]§! has completed the creation of a unique and stable §Y$stargate$§! for the internal subspace network of our empire."
+ aura_starbase_crisis:0 "Offensive Aura - Crisis "
+ aura_starbase_fallen:0 "Offensive Aura - Awakened"
+ aura_starbase_marauders:0 "Offensive Aura - Fortress"
+ gateway_0:0 "Portal location"
+ gateway_final:0 "Portal"
+ gateway_restored:0 "$gateway_final$"
+ gateway_ruined:0 "Disabled portal"
+ mod_damage_vs_country_type_awakened_marauders_mult:0 "Damage to the marauders"
+ mod_shipsize_colossus_build_speed_mult:0 "Speed colossus construction"
+ mod_shipsize_juggernaut_build_speed_mult:0 "Speed juggernaut construction"
+ mod_shipsize_titan_build_speed_mult:0 "Speed titans construction"
+ mod_shipclass_military_station_build_speed_mult:0 "Speed construction defense platforms"
+ mod_shipclass_starbase_evasion_add:0 "Evasion of the stellar base"
+ mod_shipclass_military_station_evasion_add:0 "Evasion of the defense platform"
+ requires_neutron_star:0 "$TRIGGER_FAIL$Requires a one §Y$pc_neutron_star$§! in the system."
+ requires_pulsar:0 "$TRIGGER_FAIL$Requires a one §Y$pc_pulsar$§! in the system."
+ requires_solar_panels:0 "$TRIGGER_FAIL$Requires solar panel module."
+ requires_outpost:0 "$TRIGGER_FAIL$Requires a one §YStelar port§! in the system."
+ requires_mine_exotic_gases:0 "$TRIGGER_FAIL$Requires a one §YGas extraction deposit§! in the system."
+ requires_mine_rare_crystals:0 "$TRIGGER_FAIL$Requires a one §YRare crystal deposit§! in the system."
+ requires_mine_volatile_motes:0 "$TRIGGER_FAIL$Requires a one §YVolatile speck extraction deposit§! in the system."
+ requires_mine_alloys:0 "$TRIGGER_FAIL$Requires a one §YAlloy extraction deposit§! in the system."
+ requires_mine_living_metal:0 "$TRIGGER_FAIL$Requires a one §YLive metal extraction deposit§! in the system."
+ requires_mine_dark_matter:0 "$TRIGGER_FAIL$Requires a one §YDark material extraction deposit§! in the system."
+ requires_mine_minerals:0 "$TRIGGER_FAIL$Requires a one §YMineral extraction deposit§! in the system."
  
- requires_black_hole_neutron_star_pulsar:0 "§RRequires a §Y$pc_pulsar$§! \n§RRequires a §Y$pc_neutron_star$§! \n§RRequires a §Y$pc_black_hole$§! \nin the system.§!"
+ sm_archeological_center:0 "Archeological Center"
+ sm_archeological_center_desc:0 "Archaeological Study of the Star Base"
+ sm_aura_crisis:0 "Aura Crisis"
+ sm_aura_crisis_desc:0 "Sophisticated aura will help the stellar bases to defend themselves from the final game crisis"
+ sm_aura_fallen:0 "Aura Awakened"
+ sm_aura_fallen_desc:0 "Sophisticated aura will help the stellar bases to defend themselves against some awakened empires"
+ sm_aura_marauders:0 "Aura fortress "
+ sm_aura_marauders_desc:0 "A sophisticated aura will help the stellar bases to defend itself from hostile and other empires."
+ sm_aux_module:0 "Auxiliary Module"
+ sm_aux_module_desc:0 "Advanced auxiliary module for stellar bases, dedicated to rapid fleet construction."
+ sm_gun_battery_upgrade:0 "XL battery"
+ sm_gun_battery_upgrade_desc:0 "Add two XL weapons spaces to the stellar base."
+ sm_hydrogen_cells:0 "Hydrogen cells"
+ sm_hydrogen_cells_desc:0 "Advanced energy storage"
+ sm_management_office:0 "Administrative office"
+ sm_management_office_desc:0 "Display administration modules on the stellar bases around the planets to increase bureaucratic efficiency."
+ sm_nanotechnology_lab:0 "Nanotechnological laboratory"
+ sm_nanotechnology_lab_desc:0 "Experimental resource production"
+ sm_neutron_observatory:0 "Neutron Star Observatory"
+ sm_neutron_observatory_desc:0 "With the construction of a scientific installation specializing in studying neutron stars, our empire will surely see improvements in their understanding of society."
+ sm_pulsar_observatory:0 "Pulsar Observatory."
+ sm_pulsar_observatory_desc:0 "With the construction of a scientific installation specializing in studying pulsar, our empire will surely see improvements in their engineering understanding."
+ sm_research_lav:0 "Science lab"
+ sm_research_lav_desc:0 "Research Laboratory of the Star Base"
+ sm_solar_panels:0 "Solar panels"
+ sm_solar_panels_desc:0 "Produce energy"
+ sm_space_housing:0 "Housing modules"
+ sm_space_housing_desc:0 "Display accommodation modules in the stellar bases around the planets to increase the populations."
+ sm_star_gate:0 "$stargate$"
+ sm_star_gate_desc:0 "Our stellar bases now have a §S$stargate$§! That connects a link network in all our empire with access control."
+ sm_refinery_exotic_gases:0 "Exotic Gases Refinery"
+ sm_refinery_exotic_gases_desc:0 "With the technology of Nanites we can refine the exotic gases extracted from the depths by improving production."
+ sm_refinery_rare_crystals:0 "Rare crystal refinery"
+ sm_refinery_rare_crystals_desc:0 "With Nanites technology we can refine the rare crystals extracted from the depths improving production."
+ sm_refinery_volatile_motes:0 "Volatile motes refinery"
+ sm_refinery_volatile_motes_desc:0 "With Nanites technology we can refine volatile specks extracted from the depths by improving production."
+ sm_refinery_alloys:0 "Alloy refinery"
+ sm_refinery_alloys_desc:0 "With nanites technology we can refine alloys extracted from the depths improving production."
+ sm_refinery_living_metal:0 "Live metal refinery"
+ sm_refinery_living_metal_desc:0 "With Nanites technology we can refine alive metal extracted from the depths improving production."
+ sm_refinery_dark_matter:0 "Darkness Refinery"
+ sm_refinery_dark_matter_desc:0 "With Nanites technology we can refine dark matter extracted from the depths improving production."
  
- requires_no_modules:0 "$TRIGGER_FAIL$§RYou cannot have combat modules on the starbase§!: due to explosive components for making alloys."
+ starbase_aura_warp:0 "Aura hyperimpulso"
+ starbase_citadel_upgrade:0 "Citadel improvement"
+ starbase_citadel_upgrade_plural:0 "Improvements of citadels "
+ stargate:0 "Stargate"
+ stargate_DESC:0 "$gateway_final_DESC$"
+ stargate_MEGASTRUCTURE_DETAILS:0 "$gateway_final_MEGASTRUCTURE_DETAILS$"
  
- requires_citadel_upgrade:0 "$TRIGGER_FAIL$§RRequires update§!: due to specialized defense and weapon mounting requirements it is necessary to reinforce the starbase"
+ tech_defense_platform_hull_2:0 "Structural integrity of tungsten"
+ tech_defense_platform_hull_2_desc:0 "A reinforced frame and shields with greater impact absorption guarantee the structural integrity of the defense station, including intense pressure."
+ tech_defense_platform_hull_3:0 "Structural integrity of graphene"
+ tech_defense_platform_hull_3_desc:0 "A reinforced frame and shields with greater impact absorption guarantee the structural integrity of defense strength, even intense pressure and cross fire."
+ 
+ mod_shipsize_military_station_medium_hull_add:0 "Defense station hull points"
+ mod_shipsize_military_station_medium_build_speed_mult:0 "Defense station construction speed"
+ 
+ mod_shipsize_military_station_large_hull_add:0 "Defense fortress hull points"
+ mod_shipsize_military_station_large_build_speed_mult:0 "Speed build defense fortress"
+
+ tech_solar_panels:0 "Solar panels"
+ tech_solar_panels_desc:0 "Use the energy of the sun to produce energy"
+ tech_starbase_citadel_upgrade:0 "Improvement of citadel"
+ tech_starbase_citadel_upgrade_desc:0 "Access the new buildings of the Citadel stellar base to reinforce the limits of your empire or promote arts, commerce or research"
+ 
+ whgenevents.6.desc:0 "The starbase in §Y[psi_nav_origin_system.GetName]§! has finished creating a §Y$stargate$§! Unique and stable for the subspace internal network of our empire."
+ whgenevents.6.name:0 "$stargate$ Generated"
+ 
+ sm_social_services:0 "Social services"
+ sm_social_services_desc:0 "The social services modules will significantly help streamline the procedures and needs of the local and foreign people."
+ 
+ sm_storage_food:0 "Fridge"
+ sm_storage_food_desc:0 "The food modules will help preserve and safeguard the needs of the local and foreign people in difficult times."
+ 
+ sm_storage_minerals:0 "Storages"
+ sm_storage_minerals_desc:0 "Mineral modules will help local mining to preserve the needs of raw material in difficult times."
+ 
+ sm_manufacturing_module:0 "Manufacture"
+ sm_manufacturing_module_desc:0 "Manufacturing modules will help local factories maintain stable trade and meet the needs of the population."
+ 
+ sm_unity_module:0 "Galactic unit"
+ sm_unity_module_desc:0 "The unit modules are national icons and will help the population feel more proud of their achievements and expansion by the galaxy."
+ 
+ sm_job_module:0 "Employment office"
+ sm_job_module_desc:0 "Starbase Coordination Building that assists with planetary jobs based on built-in module specialties."
+ 
+ sm_job_drone_module:0 "Employment office"
+ sm_job_drone_module_desc:0 "Coordination building of the stellar base that helps with the planetary work according to the specialties of the built-in modules."
+ 
+ sm_orbital_assembly:0 "Biokinetic accelerator"
+ sm_orbital_assembly_desc:0 "The stellar base has the ability to produce mechanical implants and a powerful wave beam to accelerate biological genomes by improving the growth and assembly of the planetary population."
+
+ sm_system_fast:0 "Station support."
+ sm_system_fast_desc:0 "Building that generates an extreme gravitational field in special systems. The stellar bases will be more protected to the environmental variables of complex galactic systems such as neutron stars, pulsars or black holes."
+ 
+ requires_black_hole_neutron_star_pulsar:0 "§RRequires a one §Y$pc_pulsar$§! \n§RRequires a one §Y$pc_neutron_star$§! \n§RRequires a one §Y$pc_black_hole$§! \nen el sistema.§!"
+ 
+ requires_no_modules:0 "$TRIGGER_FAIL$§RYou can not have combat modules on the stellar base§!: Due to the explosive components for the elaboration of alloys."
+ 
+ requires_citadel_upgrade:0 "$TRIGGER_FAIL$§RRequires update§!: Due to the assembly requirements of specialized weapons and defense it is necessary to reinforce the stellar base"
+ 
+ starbase_space_storm:0 "The starbase generates a speed and shield sync disruption in the system ... in counter measure it adds power to all its weapons."

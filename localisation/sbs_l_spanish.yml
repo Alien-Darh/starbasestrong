@@ -17,7 +17,7 @@
 
  CORVETTE_MID_TPDA:0 "Artillería media"
  CORVETTE_MID_M1S1_AUX:0 "Nave de misiles aux"
- CORVETTE_MID_S3_AUX:0 "Interceptor aux"
+ CORVETTE_MID_S3_AUX:0 "Interceptador aux"
  CORVETTE_MID_S2PD1_AUX:0 "Nave de vigilancia aux"
  CORVETTE_MID_TPDA_AUX:0 "Artillería media aux"
  
@@ -131,7 +131,7 @@
  sm_research_lav:0 "Laboratorio de Ciencia"
  sm_research_lav_desc:0 "Laboratorio de investigación de la base estelar"
  sm_solar_panels:0 "Paneles Solares"
- sm_solar_panels_desc:0 "Produce 5 energía"
+ sm_solar_panels_desc:0 "Produce energía"
  sm_space_housing:0 "Módulos Habitacionales"
  sm_space_housing_desc:0 "Despliega módulos de alojamiento en las bases estelares alrededor de los planetas para aumentar las poblaciones."
  sm_star_gate:0 "$stargate$"
@@ -187,7 +187,7 @@
  sm_manufacturing_module:0 "Manufactura"
  sm_manufacturing_module_desc:0 "Los módulos de manufactura ayudarán a las fábricas locales a mantener el comercio estable y cubrir las necesidades de la población."
  
- sm_unity_module:0 "Unidad nacional"
+ sm_unity_module:0 "Unidad galáctica"
  sm_unity_module_desc:0 "Los módulos de unidad son iconos nacionales y ayudarán a la población a sentirse mas orgullosos de sus logros y expansión por la galaxia."
  
  sm_job_module:0 "Ofic. de empleos"
@@ -208,4 +208,4 @@
  
  requires_citadel_upgrade:0 "$TRIGGER_FAIL$§RRequiere actualización§!: debido a los requerimientos de montaje de armas y defensa especializados es necesario reforzar la base estelar"
  
- starbase_space_storm:0 "La base estelar genera una interrupción de velocidad y sincronización de escudos en el sistema."
+ starbase_space_storm:0 "La base estelar genera una interrupción de velocidad y sincronización de escudos en el sistema... en contra medida agrega potencia a todas sus armas."
