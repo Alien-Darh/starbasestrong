@@ -528,7 +528,6 @@ offworld_trading_company = {
 	icon = "GFX_starbase_offworld_trading_company"
 	construction_days = 360
 
-
 	potential = {
 		exists = owner
 		owner = {
@@ -639,8 +638,11 @@ offworld_trading_company = {
 		trade_value_add = 12
 	}
 
-	custom_tooltip = sm_offworld_trading_company_desc_modifier
+	system_modifier = {
+		planet_max_branch_office_buildings_add = 1
+	}
 
+	#custom_tooltip = sm_offworld_trading_company_desc_modifier
 	show_in_tech = "tech_space_trading"
 
 	ai_build_at_chokepoint = no
@@ -1573,6 +1575,10 @@ warp_fluctuator = {
 		starbase_trade_collection_range_add = 2
 	}
 
+	system_modifier = {
+		planet_max_branch_office_buildings_add = 1
+	}
+	
 	equipped_component = "STARBASE_AURA_WARP_FLUCTUATOR"
 	show_in_tech = "tech_interstellar_economics"
 
@@ -2851,7 +2857,6 @@ job_module = {
 
 	show_in_tech = "tech_colonial_centralization"
 	show_in_tech = "tech_galactic_administration"
-	show_tech_unlock_if = { is_regular_empire = yes }
 	
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
@@ -3289,7 +3294,6 @@ job_drone_module = {
 
 	show_in_tech = "tech_colonial_centralization"
 	show_in_tech = "tech_galactic_administration"
-	show_tech_unlock_if = { has_ethic = ethic_gestalt_consciousness }
 	
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes

@@ -151,6 +151,7 @@
  
  starbase_aura_warp:0 "Aura HiperImpulso"
  starbase_citadel_upgrade:0 "Mejora Ciudadela"
+ starbase_citadel_upgrade_plural:0 "Mejoras de Ciudadelas"
  stargate:0 "Puerta Estelar"
  stargate_DESC:0 "$gateway_final_DESC$"
  stargate_MEGASTRUCTURE_DETAILS:0 "$gateway_final_MEGASTRUCTURE_DETAILS$"
@@ -206,3 +207,5 @@
  requires_no_modules:0 "$TRIGGER_FAIL$§RNo se puede tener módulos de combate en la base estelar§!: debido a los componentes explosivos para la elaboración de aleaciones."
  
  requires_citadel_upgrade:0 "$TRIGGER_FAIL$§RRequiere actualización§!: debido a los requerimientos de montaje de armas y defensa especializados es necesario reforzar la base estelar"
+ 
+ starbase_space_storm:0 "La base estelar genera una interrupción de velocidad y sincronización de escudos en el sistema."

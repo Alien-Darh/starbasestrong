@@ -82,13 +82,12 @@ manufacturing_module = {
 }
 
 storage_food = {
-	section = "STORAGE_FOOD_STARBASE_SECTION"
 	icon = "GFX_starbase_storage_food"
 	construction_days = 130
 
 	potential = {
 		exists = owner
-		owner = { has_technology = tech_hydroponics }
+		owner = { has_technology = tech_eco_simulation }
 	}
 
 	resources = {
@@ -110,7 +109,7 @@ storage_food = {
 		has_starbase_building = hydroponics_bay
 	}
 
-	show_in_tech = "tech_hydroponics"
+	show_in_tech = "tech_eco_simulation"
 
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
@@ -120,13 +119,12 @@ storage_food = {
 }
 
 storage_minerals = {
-	section = "STORAGE_MINERALS_STARBASE_SECTION"
 	icon = "GFX_starbase_storage_minerals"
 	construction_days = 130
 
 	potential = {
 		exists = owner
-		owner = { has_technology = tech_mineral_purification_1 }
+		owner = { has_technology = tech_mining_1 }
 	}
 
 	resources = {
@@ -166,7 +164,7 @@ storage_minerals = {
 		}				
 	}
 
-	show_in_tech = "tech_mineral_purification_1"
+	show_in_tech = "tech_mining_1"
 
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
@@ -220,7 +218,6 @@ management_office = {
 }
 
 social_services = {
-	section = "SOCIAL_SERVICES_STARBASE_SECTION"
 	icon = "GFX_starbase_social_services"
 	construction_days = 130
 
@@ -236,7 +233,7 @@ social_services = {
 			energy = 10
 		}		
 		produces = {
-			influence = 0.20
+			influence = 0.2
 		}
 		upkeep = { 
 			energy = 10

@@ -20,3 +20,4 @@ component_set = {
 	icon = "GFX_spaceport_module_aura_marauders"
 	icon_frame = 1
 }
+

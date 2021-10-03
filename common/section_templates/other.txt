@@ -388,9 +388,9 @@ ship_section_template = {
 	}
 
 	large_utility_slots = 1
-	medium_utility_slots = 3
+	medium_utility_slots = 4
 	small_utility_slots = 0
-	aux_utility_slots = 5
+	aux_utility_slots = 4
 }
 
 ship_section_template = {
@@ -435,9 +435,9 @@ ship_section_template = {
 	}
 
 	large_utility_slots = 1
-	medium_utility_slots = 3
+	medium_utility_slots = 4
 	small_utility_slots = 0
-	aux_utility_slots = 5
+	aux_utility_slots = 4
 }
 
 ship_section_template = {
@@ -468,9 +468,9 @@ ship_section_template = {
 	}
 
 	large_utility_slots = 1
-	medium_utility_slots = 3
+	medium_utility_slots = 4
 	small_utility_slots = 0
-	aux_utility_slots = 5
+	aux_utility_slots = 4
 }
 
 ship_section_template = {
@@ -504,9 +504,9 @@ ship_section_template = {
 	}
 
 	large_utility_slots = 1
-	medium_utility_slots = 3
+	medium_utility_slots = 4
 	small_utility_slots = 0
-	aux_utility_slots = 5
+	aux_utility_slots = 4
 }
 
 ###########################
