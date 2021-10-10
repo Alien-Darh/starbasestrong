@@ -87,7 +87,7 @@ storage_food = {
 
 	potential = {
 		exists = owner
-		owner = { has_technology = tech_eco_simulation }
+		owner = { has_technology = tech_hydroponics }
 	}
 
 	resources = {

@@ -25,7 +25,21 @@ country_event = {
 				}
 			}
 			solar_system = {
-				add_modifier = { modifier = starbase_space_storm }		
+				add_modifier = { modifier = starbase_space_storm }
+				star = {
+					create_ambient_object = {
+						type = "space_storm_1"
+						location = this
+					}
+					last_created_ambient_object = {
+						set_ambient_object_flag = space_storm_object
+						set_location = {
+							target = prev
+							distance = 0
+							angle = random
+						}
+					}
+				}				
 			}
 		}
 	}
@@ -47,7 +61,17 @@ country_event = {
 	}
 
 	immediate = {
-		from = { remove_modifier = starbase_space_storm }
+		from = { 
+			remove_modifier = starbase_space_storm
+			solar_system = { 			
+				every_system = {
+					random_system_ambient_object = {
+						limit = { has_ambient_object_flag = space_storm_object }
+						destroy_ambient_object = this
+					}	
+				}
+			}
+		}
 	}
 }
 
@@ -75,7 +99,13 @@ country_event = {
 					has_modifier = starbase_space_storm
 				}
 			}
-			solar_system = { remove_modifier = starbase_space_storm }
+			solar_system = { 
+			remove_modifier = starbase_space_storm 
+				random_system_ambient_object = {
+					limit = { has_ambient_object_flag = space_storm_object }
+					destroy_ambient_object = this
+				}	
+			}
 		}
 	}
 }

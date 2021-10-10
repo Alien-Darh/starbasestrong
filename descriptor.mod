@@ -4,6 +4,6 @@ tags={
 }
 name="Starbase Strong"
 picture="thumbnail.png"
-supported_version="3.1.1"
+supported_version="3.1.2"
 path="C:/Users/drubk/OneDrive/Documentos/Paradox Interactive/Stellaris/mod/starbasestrong"
 remote_file_id="1886769279"
