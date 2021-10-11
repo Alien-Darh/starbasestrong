@@ -3235,7 +3235,7 @@ orbital_assembly = {
 		planet_pop_assembly_add = 1
 	}
 	
-	show_in_tech = "tech_cryostasis_1"
+	show_in_tech = "tech_cryostasis_1" 
 	show_in_tech = "tech_cryostasis_2"
 	
 	ai_build_at_chokepoint = no

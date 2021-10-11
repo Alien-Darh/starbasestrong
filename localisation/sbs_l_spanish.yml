@@ -64,8 +64,11 @@
  TITAN_STERN_XP:0 "Popa de titán aux"
  
  STARBASE_AURA_CRISIS:0 "Aura Crisis"
+ STARBASE_AURA_CRISIS_DESC:0 "Poderosa aura ancestral contra crisis galactica"
  STARBASE_AURA_FALLEN:0 "Aura Despertados"
+ STARBASE_AURA_FALLEN_DESC:0 "Poderosa aura ancestral contra imperios despertados"
  STARBASE_AURA_MARAUDERS:0 "Aura Fortaleza"
+ STARBASE_AURA_MARAUDERS_DESC:0 "Poderosa aura ancestral de naves de combate"
  STARBASE_STAR_GATE:0 "Puerta Estelar"
 
  TECH_UNLOCK_STARHOLD_TECHNO_TITLE:0 "§SDesbloquea Tecnología:§! Secciones Auxiliares I"

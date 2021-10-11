@@ -64,8 +64,11 @@
  TITAN_STERN_XP:0 "Stern of titan aux"
  
  STARBASE_AURA_CRISIS:0 "Aura Crisis"
+ STARBASE_AURA_CRISIS_DESC:0 "Powerful ancestral aura against Galactic crisis"
  STARBASE_AURA_FALLEN:0 "Aura Awakened"
+ STARBASE_AURA_FALLEN_DESC:0 "Powerful ancestral aura against awakened empires"
  STARBASE_AURA_MARAUDERS:0 "Aura fortress"
+ STARBASE_AURA_MARAUDERS_DESC:0 "Powerful ancestral aura of combat ships"
  STARBASE_STAR_GATE:0 "Stargate"
 
  TECH_UNLOCK_STARHOLD_TECHNO_TITLE:0 "§SUnlock technology:§! Auxiliary sections I"
