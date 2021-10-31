@@ -212,3 +212,11 @@
  requires_citadel_upgrade:0 "$TRIGGER_FAIL$§RRequiere actualización§!: debido a los requerimientos de montaje de armas y defensa especializados es necesario reforzar la base estelar"
  
  starbase_space_storm:0 "La base estelar genera una interrupción de velocidad y sincronización de escudos en el sistema... en contra medida agrega potencia a todas sus armas."
+
+ tech_ftl_inhibitor_II:0 "Inhibidor avanzado"
+ tech_ftl_inhibitor_II_desc:0 "Poderoso inhibidor avanzado de contraataque contra imperios hostiles de principios de siglo ayudará a contrarrestar la ofensiva enemiga."
+ 
+ STARBASE_AURA_FTL_INHIBITOR_II:0 "Inhibidor avanzado"
+ aura_starbase_ftl_inhibitor_II:0 "Aura ofensiva - Inhibidor de contraataque"
+ mod_damage_vs_country_type_default_mult:0 "Daño a imperios hostiles comunes"
+ mod_damage_vs_country_type_adversary_mult:0 "Daño a imperios hostiles declarados"

@@ -212,3 +212,11 @@
  requires_citadel_upgrade:0 "$TRIGGER_FAIL$§RRequires update§!: Due to the assembly requirements of specialized weapons and defense it is necessary to reinforce the stellar base"
  
  starbase_space_storm:0 "The starbase generates a speed and shield sync disruption in the system ... in counter measure it adds power to all its weapons."
+ 
+ tech_ftl_inhibitor_II:0 "Advanced inhibitor."
+ tech_ftl_inhibitor_II_desc:0 "Powerful advanced counterattack inhibitor against hostile empires from the century will help counteract the enemy offensive."
+ 
+ STARBASE_AURA_FTL_INHIBITOR_II:0 "Advanced inhibitor."
+ aura_starbase_ftl_inhibitor_II:0 "Offensive aura - Backing inhibitor"
+ mod_damage_vs_country_type_default_mult:0 "Damage to common hostile empires"
+ mod_damage_vs_country_type_adversary_mult:0 "Damage to declared hostile empires"

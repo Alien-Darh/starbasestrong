@@ -135,4 +135,12 @@ spriteTypes = {
 		name = "GFX_starbase_system_fast"
 		texturefile = "gfx/interface/icons/modules/starbase_system_fast.dds"
 	}
+	spriteType = {
+		name = "GFX_ship_part_aura_snare_I"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_aura_snare_I.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_aura_snare_II"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_aura_snare_II.dds"
+	}
 }

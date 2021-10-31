@@ -136,7 +136,7 @@ starbase_starport = {
 	build_block_radius = @build_block_radius_starbase
 	formation_priority = @starbase_formation_priority
 	icon_frame = 2
-	icon = ship_size_military_1
+	icon = ship_size_military_station
 }
 
 starbase_starhold = {
@@ -203,7 +203,7 @@ starbase_starhold = {
 	build_block_radius = @build_block_radius_starbase
 	formation_priority = @starbase_formation_priority
 	icon_frame = 3
-	icon = ship_size_military_2
+	icon = ship_size_military_station
 }
 
 starbase_starfortress = {
@@ -272,7 +272,7 @@ starbase_starfortress = {
 	build_block_radius = @build_block_radius_starbase
 	formation_priority = @starbase_formation_priority
 	icon_frame = 4
-	icon = ship_size_military_4
+	icon = ship_size_military_station
 }
 
 starbase_citadel = {
@@ -342,7 +342,7 @@ starbase_citadel = {
 	build_block_radius = @build_block_radius_starbase
 	formation_priority = @starbase_formation_priority
 	icon_frame = 5
-	icon = ship_size_military_8
+	icon = ship_size_military_station
 }
 
 starbase_citadel_upgrade = {
@@ -412,6 +412,7 @@ starbase_citadel_upgrade = {
 	build_block_radius = @build_block_radius_starbase
 	formation_priority = @starbase_formation_priority
 	icon_frame = 6
+	icon = ship_size_military_station
 }
 
 ####################													#############################################

@@ -21,3 +21,17 @@ component_set = {
 	icon_frame = 1
 }
 
+component_set = {
+	key = "STARBASE_AURA_FTL_INHIBITOR"
+	
+	icon = "GFX_ship_part_aura_snare_I"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "STARBASE_AURA_FTL_INHIBITOR_II"
+	
+	icon = "GFX_ship_part_aura_snare_II"
+	icon_frame = 1
+}
+

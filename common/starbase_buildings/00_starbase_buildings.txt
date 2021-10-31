@@ -1029,7 +1029,8 @@ target_uplink_computer = {
 	}
 
 	station_modifier = {
-		ship_weapon_range_mult = 1.50
+		ship_weapon_range_mult = 1.00
+		shipclass_military_station_damage_mult = 0.20
 	}
 
 	ai_build_at_chokepoint = yes
@@ -1788,8 +1789,8 @@ aura_marauders = {
 	}
 	possible = {
 		custom_tooltip = {
-			fail_text = "requires_citadel"
-			has_starbase_size >= starbase_citadel
+			fail_text = "requires_starfortress"
+			has_starbase_size >= starbase_starfortress
 		}
 	}
 	resources = {
