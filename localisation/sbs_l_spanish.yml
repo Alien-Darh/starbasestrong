@@ -220,3 +220,6 @@
  aura_starbase_ftl_inhibitor_II:0 "Aura ofensiva - Inhibidor de contraataque"
  mod_damage_vs_country_type_default_mult:0 "Daño a imperios hostiles comunes"
  mod_damage_vs_country_type_adversary_mult:0 "Daño a imperios hostiles declarados"
+ 
+ tech_station_large:0 "Fortaleza"
+ tech_station_large_desc:0 "Una gigantesca estructura acorazada de defensa capas de soportar el mas intenso ataque naval"

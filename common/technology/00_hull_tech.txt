@@ -112,6 +112,5 @@ tech_defense_platform_hull_3 = {
 	modifier = {
 		shipsize_military_station_small_hull_add = 3000
 		shipsize_military_station_medium_hull_add = 6000
-		shipsize_military_station_large_hull_add = 9000
 	}	
 }

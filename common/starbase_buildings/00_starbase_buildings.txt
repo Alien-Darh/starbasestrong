@@ -1029,7 +1029,7 @@ target_uplink_computer = {
 	}
 
 	station_modifier = {
-		ship_weapon_range_mult = 1.00
+		ship_weapon_range_mult = 1.50
 		shipclass_military_station_damage_mult = 0.20
 	}
 

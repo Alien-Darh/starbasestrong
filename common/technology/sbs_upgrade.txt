@@ -46,8 +46,8 @@ tech_starbase_citadel_upgrade = {
 	weight_modifier = {
         modifier = {
             factor = 0
-			mid_game_years_passed <= 100
-			#years_passed < 175
+			mid_game_years_passed <= 75
+			#years_passed < 150
         }
 	}
 

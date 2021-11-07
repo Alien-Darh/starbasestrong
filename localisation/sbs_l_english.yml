@@ -220,3 +220,6 @@
  aura_starbase_ftl_inhibitor_II:0 "Offensive aura - Backing inhibitor"
  mod_damage_vs_country_type_default_mult:0 "Damage to common hostile empires"
  mod_damage_vs_country_type_adversary_mult:0 "Damage to declared hostile empires"
+ 
+ tech_station_large:0 "Strength"
+ tech_station_large_desc:0 "A gigantic armored defense structure capable of withstanding the most intense naval attack"
