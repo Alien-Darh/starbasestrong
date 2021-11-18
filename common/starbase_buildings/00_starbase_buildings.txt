@@ -641,7 +641,7 @@ offworld_trading_company = {
 	system_modifier = {
 		planet_max_branch_office_buildings_add = 1
 	}
-
+	
 	#custom_tooltip = sm_offworld_trading_company_desc_modifier
 	show_in_tech = "tech_space_trading"
 
