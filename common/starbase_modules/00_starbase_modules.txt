@@ -356,7 +356,7 @@ shipyard = {
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
 	ai_weight = {
-		weight = 20
+		weight = 100
 		modifier = {
 			factor = 100
 			owner = {
@@ -436,7 +436,7 @@ anchorage = {
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
 	ai_weight = {
-		weight = 20
+		weight = 100
 		modifier = {
 			factor = 2
 			count_starbase_modules = {
@@ -473,7 +473,7 @@ gun_battery = {
 	ai_build_at_chokepoint = yes
 	ai_build_outside_chokepoint = no
 	ai_weight = {
-		weight = 10
+		weight = 100
 		modifier = {
 			factor = 2
 			exists = owner
@@ -515,7 +515,7 @@ missile_battery = {
 	ai_build_at_chokepoint = yes
 	ai_build_outside_chokepoint = no
 	ai_weight = {
-		weight = 10
+		weight = 100
 		modifier = {
 			factor = 2
 			exists = owner
@@ -556,7 +556,7 @@ hangar_bay = {
 
 	ai_build_outside_chokepoint = yes
 	ai_weight = {
-		weight = 10
+		weight = 100
 		modifier = {
 			factor = 2
 			exists = owner
@@ -626,7 +626,7 @@ solar_panel_network = {
 
 	ai_build_at_chokepoint = no
 	ai_weight = {
-		weight = 15
+		weight = 100
 	}
 }
 
@@ -659,7 +659,7 @@ trading_hub = {
 
 	ai_build_at_chokepoint = no
 	ai_weight = {
-		weight = 15
+		weight = 100
 		modifier = {
 			factor = 5
 			NOT = { has_starbase_module = trading_hub }
@@ -722,7 +722,7 @@ gun_battery_upgrade = {
 	show_in_tech = "tech_starbase_citadel_upgrade"
 
 	ai_weight = {
-		weight = 10
+		weight = 100
 		modifier = {
 			factor = 2
 			exists = owner

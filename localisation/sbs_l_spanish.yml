@@ -205,7 +205,7 @@
  sm_system_fast:0 "Soporte estación"
  sm_system_fast_desc:0 "Edificio que genera un campo gravitacional extremo en sistemas especiales. Las bases estelares estarán mas protegidas a las variables ambientales de sistemas galácticos complejos como estrellas Neutrones, Púlsares u Agujeros Negros."
  
- requires_black_hole_neutron_star_pulsar:0 "§RRequiere un §Y$pc_pulsar$§! \n§RRequiere un §Y$pc_neutron_star$§! \n§RRequiere un §Y$pc_black_hole$§! \nen el sistema.§!"
+ requires_black_hole_neutron_star_pulsar_x:0 "§RRequiere un §Y$pc_pulsar$§! \n§RRequiere un §Y$pc_neutron_star$§! \n§RRequiere un §Y$pc_black_hole$§! \nen el sistema.§! \n Y algunas estrellas binarias o trinarias."
  
  requires_no_modules:0 "$TRIGGER_FAIL$§RNo se puede tener módulos de combate en la base estelar§!: debido a los componentes explosivos para la elaboración de aleaciones."
  

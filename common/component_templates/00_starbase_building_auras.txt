@@ -5,11 +5,11 @@ utility_component_template = {
 	icon = "GFX_ship_part_empty_ftl_drive"
 	icon_frame = 1
 	power = 0
-	
+
 	class_restriction = { shipclass_starbase }
 	component_set = "ftl_inhibitor"
 	upgrades_to = "STARBASE_AURA_FTL_INHIBITOR"
-	
+
 	ai_weight = {
 		weight = 1
 	}
@@ -108,7 +108,7 @@ utility_component_template = {
 	power = 0
 
 	class_restriction = { shipclass_starbase }
-	
+
 	hostile_aura = {
 		name = "aura_starbase_communications_jammer"
 		system_wide = yes
@@ -119,7 +119,7 @@ utility_component_template = {
 		}
 
 		modifier = {
-			ship_speed_mult = -0.2
+			ship_speed_mult = -0.25
 		}
 
 		graphics = {
@@ -138,8 +138,8 @@ utility_component_template = {
 	icon_frame = 1
 	power = 0
 
-	class_restriction = { shipclass_starbase }	
-	
+	class_restriction = { shipclass_starbase }
+
 	hostile_aura = {
 		name = "aura_starbase_distruption_field"
 		system_wide = yes
@@ -172,7 +172,7 @@ utility_component_template = {
 	power = 0
 
 	class_restriction = { shipclass_starbase }
-	
+
 	hostile_aura = {
 		name = "aura_starbase_command_center"
 		system_wide = yes
@@ -193,7 +193,7 @@ utility_component_template = {
 				dynamic_scale = no
 			}
 		}
-	}	
+	}
 }
 
 utility_component_template = {
@@ -333,14 +333,14 @@ utility_component_template = {
 			weapon_type_strike_craft_weapon_damage_mult = 0.10
 			weapon_type_strike_craft_speed_mult = 0.10
 		}
-		
+
 		graphics = {
 			ship_effect = {
 				entity = "ship_aura_positive_entity"
 				dynamic_scale = no
 			}
 		}
-	}	
+	}
 	
 	hostile_aura = {
 		name = "aura_starbase_marauders"

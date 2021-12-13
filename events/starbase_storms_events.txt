@@ -52,7 +52,7 @@ country_event = {
 
 	trigger = {
 		from = {
-			NOR = {
+			NAND = {
 				exists = starbase
 				starbase = { has_starbase_building = system_fast }
 			}

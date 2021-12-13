@@ -32,7 +32,7 @@ country_event = {
 				spawn_megastructure = {
 					type = stargate
 					owner = space_owner
-					coords_from = this
+					coords_from = prev
 					orbit_distance = 30
 					orbit_angle = 120
 					init_effect = { activate_gateway = this }

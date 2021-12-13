@@ -22,7 +22,7 @@ crew_quarters = {
 	ai_build_at_chokepoint = yes
 	ai_build_outside_chokepoint = yes
 	ai_weight = {
-		weight = 50
+		weight = 100
 	}
 }
 
@@ -89,10 +89,10 @@ hydroponics_bay = {
 
 	show_in_tech = "tech_hydroponics"
 
-	ai_build_at_chokepoint = no
+	ai_build_at_chokepoint = yes
 	ai_build_outside_chokepoint = yes
 	ai_weight = {
-		weight = 50
+		weight = 100
 	}
 }
 
@@ -114,7 +114,7 @@ resource_silo = {
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
 	ai_weight = {
-		weight = 50
+		weight = 100
 	}
 }
 
@@ -279,7 +279,7 @@ nebula_refinery = {
 	ai_build_at_chokepoint = yes
 	ai_build_outside_chokepoint = yes
 	ai_weight = {
-		weight = 150
+		weight = 100
 	}
 }
 
@@ -364,7 +364,7 @@ research_lav = {
 	ai_build_at_chokepoint = yes
 	ai_build_outside_chokepoint = yes
 	ai_weight = {
-		weight = 150
+		weight = 100
 	}
 }
 
@@ -417,7 +417,7 @@ listening_post = {
 	ai_build_at_chokepoint = yes
 	ai_build_outside_chokepoint = no
 	ai_weight = {
-		weight = 50
+		weight = 100
 	}
 
 	show_in_tech = "tech_sensors_2"
@@ -445,7 +445,7 @@ hydrogen_cells = {
 	}
 	ai_build_at_chokepoint = yes
 	ai_build_outside_chokepoint = yes
-	ai_weight = { weight = 150 }
+	ai_weight = { weight = 100 }
 }
 
 archeological_center = {
@@ -478,7 +478,7 @@ archeological_center = {
 	}
 	ai_build_at_chokepoint = yes
 	ai_build_outside_chokepoint = yes
-	ai_weight = { weight = 150 }
+	ai_weight = { weight = 100 }
 }
 
 nanotechnology_lab = {
@@ -521,12 +521,13 @@ nanotechnology_lab = {
 	}
 	ai_build_at_chokepoint = yes
 	ai_build_outside_chokepoint = yes
-	ai_weight = { weight = 150 }
+	ai_weight = { weight = 100 }
 }
 
 offworld_trading_company = {
 	icon = "GFX_starbase_offworld_trading_company"
 	construction_days = 360
+
 
 	potential = {
 		exists = owner
@@ -541,7 +542,13 @@ offworld_trading_company = {
 			fail_text = "requires_starport"
 			has_starbase_size >= starbase_starport
 		}
-		has_starbase_module = trading_hub
+		OR = {
+			has_starbase_module = trading_hub
+			starbase_buildable_is_in_queue_before = {
+				first = trading_hub
+				second = offworld_trading_company
+			}
+		}
 	}
 
 	resources = {
@@ -638,17 +645,17 @@ offworld_trading_company = {
 		trade_value_add = 12
 	}
 
+	custom_tooltip = sm_offworld_trading_company_desc_modifier
 	system_modifier = {
 		planet_max_branch_office_buildings_add = 1
 	}
-	
-	#custom_tooltip = sm_offworld_trading_company_desc_modifier
+
 	show_in_tech = "tech_space_trading"
 
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
 	ai_weight = {
-		weight = 200
+		weight = 100
 		modifier = {
 			factor = 0
 			count_starbase_modules = {
@@ -692,7 +699,7 @@ fleet_academy = {
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
 	ai_weight = {
-		weight = 200
+		weight = 100
 		modifier = {
 			factor = 0
 			count_starbase_modules = {
@@ -713,7 +720,13 @@ naval_logistics_office = {
 	}
 
 	possible = {
-		has_starbase_module = anchorage
+		OR = {
+			has_starbase_module = anchorage
+			starbase_buildable_is_in_queue_before = {
+				first = anchorage
+				second = naval_logistics_office
+			}
+		}
 	}
 
 	resources = {
@@ -733,12 +746,12 @@ naval_logistics_office = {
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
 	ai_weight = {
-		weight = 200
+		weight = 100
 		modifier = {
 			factor = 0
 			count_starbase_modules = {
 				type = anchorage
-				count < 3
+				count < 1
 			}
 		}
 	}
@@ -758,7 +771,13 @@ titan_yards = {
 			fail_text = "requires_citadel"
 			has_starbase_size >= starbase_citadel
 		}
-		has_starbase_module = shipyard
+		OR = {
+			has_starbase_module = shipyard
+			starbase_buildable_is_in_queue_before = {
+				first = shipyard
+				second = titan_yards
+			}
+		}
 	}
 
 	resources = {
@@ -777,7 +796,7 @@ titan_yards = {
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
 	ai_weight = {
-		weight = 200
+		weight = 100
 		modifier = {
 			factor = 0
 			count_starbase_modules = {
@@ -817,7 +836,13 @@ colossus_yards = {
 			fail_text = "requires_citadel"
 			has_starbase_size >= starbase_citadel
 		}
-		has_starbase_module = shipyard
+		OR = {
+			has_starbase_module = shipyard
+			starbase_buildable_is_in_queue_before = {
+				first = shipyard
+				second = colossus_yards
+			}
+		}
 	}
 
 	resources = {
@@ -838,7 +863,7 @@ colossus_yards = {
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
 	ai_weight = {
-		weight = 200
+		weight = 100
 		modifier = {
 			factor = 0
 			count_starbase_modules = {
@@ -998,7 +1023,7 @@ black_hole_observatory = {
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
 	ai_weight = {
-		weight = 150
+		weight = 100
 	}
 }
 
@@ -1036,7 +1061,7 @@ target_uplink_computer = {
 	ai_build_at_chokepoint = yes
 	ai_build_outside_chokepoint = no
 	ai_weight = {
-		weight = 10
+		weight = 100
 	}
 }
 
@@ -1077,7 +1102,7 @@ defense_grid = {
 	ai_build_at_chokepoint = yes
 	ai_build_outside_chokepoint = no
 	ai_weight = {
-		weight = 10
+		weight = 100
 	}
 }
 
@@ -1160,7 +1185,7 @@ pulsar_observatory = {
 	show_in_tech = "tech_sensors_2"
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
-	ai_weight = { weight = 150 }
+	ai_weight = { weight = 100 }
 }
 
 neutron_observatory = {
@@ -1243,7 +1268,7 @@ neutron_observatory = {
 	show_in_tech = "tech_sensors_2"
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
-	ai_weight = { weight = 150 }
+	ai_weight = { weight = 100 }
 }
 
 deep_space_black_site = {
@@ -1299,7 +1324,7 @@ deep_space_black_site = {
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
 	ai_weight = {
-		weight = 150
+		weight = 100
 	}
 }
 
@@ -1314,7 +1339,11 @@ curator_think_tank = {
 			solar_system = { has_star_flag = enclave }
 		}
 		owner = {
-			is_homicidal = no
+			NOR = {
+				has_valid_civic = civic_fanatic_purifiers
+				has_valid_civic = civic_hive_devouring_swarm
+				has_valid_civic = civic_machine_terminator
+			}
 		}
 	}
 
@@ -1387,7 +1416,7 @@ curator_think_tank = {
 	ai_build_at_chokepoint = yes
 	ai_build_outside_chokepoint = yes
 	ai_weight = {
-		weight = 150
+		weight = 100
 	}
 }
 
@@ -1402,7 +1431,11 @@ art_college = {
 			solar_system = { has_star_flag = enclave }
 		}
 		owner = {
-			is_homicidal = no
+			NOR = {
+				has_valid_civic = civic_fanatic_purifiers
+				has_valid_civic = civic_hive_devouring_swarm
+				has_valid_civic = civic_machine_terminator
+			}
 		}
 	}
 
@@ -1471,7 +1504,7 @@ art_college = {
 	ai_build_at_chokepoint = yes
 	ai_build_outside_chokepoint = yes
 	ai_weight = {
-		weight = 150
+		weight = 100
 	}
 }
 
@@ -1507,7 +1540,7 @@ communications_jammer = {
 	ai_build_at_chokepoint = yes
 	ai_build_outside_chokepoint = no
 	ai_weight = {
-		weight = 10
+		weight = 100
 	}
 }
 
@@ -1538,7 +1571,7 @@ disruption_field = {
 	ai_build_at_chokepoint = yes
 	ai_build_outside_chokepoint = no
 	ai_weight = {
-		weight = 10
+		weight = 100
 	}
 }
 
@@ -1579,14 +1612,14 @@ warp_fluctuator = {
 	system_modifier = {
 		planet_max_branch_office_buildings_add = 1
 	}
-	
+
 	equipped_component = "STARBASE_AURA_WARP_FLUCTUATOR"
 	show_in_tech = "tech_interstellar_economics"
 
 	ai_build_at_chokepoint = yes
 	ai_build_outside_chokepoint = no
 	ai_weight = {
-		weight = 10
+		weight = 100
 	}
 }
 
@@ -1630,6 +1663,8 @@ transit_hub = {
 	system_modifier = {
 		planet_resettlement_unemployed_mult = 1.00
 	}
+
+	custom_tooltip = sm_transit_hub_desc_modifier
 
 	show_in_tech = "tech_hyper_drive_2"
 
@@ -1684,7 +1719,7 @@ command_center = {
 	ai_build_at_chokepoint = yes
 	ai_build_outside_chokepoint = no
 	ai_weight = {
-		weight = 10
+		weight = 100
 	}
 }
 
@@ -1776,7 +1811,7 @@ aura_fallen = {
 	equipped_component = "STARBASE_AURA_FALLEN"
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
-	ai_weight = { weight = 10 }
+	ai_weight = { weight = 100 }
 	#show_in_tech = "tech_starbase_4"
 }
 
@@ -1801,7 +1836,7 @@ aura_marauders = {
 	equipped_component = "STARBASE_AURA_MARAUDERS"
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
-	ai_weight = { weight = 10 }
+	ai_weight = { weight = 100 }
 	show_in_tech = "tech_starbase_5"
 }
 
@@ -1885,7 +1920,7 @@ trader_proxy_office = {
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
 	ai_weight = {
-		weight = 200
+		weight = 100
 		modifier = {
 			factor = 0
 			OR = {
@@ -1901,6 +1936,112 @@ trader_proxy_office = {
 	}
 }
 
+dragon_hatchery = {
+	icon = "GFX_starbase_dragon_hatchery"
+	construction_days = 720
+
+	potential = {
+		exists = owner
+		owner = {
+			is_dragon_breeder_country = yes
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_citadel"
+			has_starbase_size >= starbase_citadel
+		}
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 750
+		}
+		upkeep = {
+			energy = 10
+		}
+	}
+
+	custom_tooltip = dragon_hatchery_tooltip
+
+	ai_build_at_chokepoint = yes
+	ai_build_outside_chokepoint = yes
+	ai_weight = {
+		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		modifier = {
+			factor = 0
+			owner = {
+				count_owned_starbase = {
+					count >= 1
+					limit = {
+						has_starbase_building = dragon_hatchery
+					}
+				}
+			}
+		}
+	}
+}
+
+ice_mining_station = {
+	icon = "GFX_starbase_ice_mining_station"
+	construction_days = 360
+
+	potential = {
+		exists = owner
+		owner = {
+			has_ascension_perk = ap_hydrocentric
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starport"
+			has_starbase_size >= starbase_starport
+		}
+
+		custom_tooltip = {
+			fail_text = requires_ice_source
+			solar_system = {
+				OR = {
+					has_planet_class = pc_ice_asteroid
+					has_planet_class = pc_frozen
+				}
+			}
+		}
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 100
+		}
+	}
+
+	custom_tooltip = ice_mining_station_tooltip
+
+	system_modifier = {
+		station_gatherers_produces_mult = 0.15
+	}
+
+	ai_build_at_chokepoint = yes
+	ai_build_outside_chokepoint = yes
+	ai_weight = {
+		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		modifier = {
+			factor = 0
+			owner = {
+				count_owned_starbase = {
+					count >= 2
+					limit = {
+						has_starbase_building = ice_mining_station
+					}
+				}
+			}
+		}
+	}
+}
 
 star_gate = {
 	icon = "GFX_spaceport_star_gate"
@@ -2040,7 +2181,7 @@ aux_module = {
 
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
-	ai_weight = { weight = 150 }
+	ai_weight = { weight = 100 }
 	show_in_tech = "tech_starbase_3"
 }
 
@@ -2100,7 +2241,7 @@ refinery_exotic_gases = {
 
 	ai_build_at_chokepoint = yes
 	ai_build_outside_chokepoint = yes
-	ai_weight = { weight = 150 }
+	ai_weight = { weight = 100 }
 }
 
 refinery_rare_crystals = {
@@ -2159,7 +2300,7 @@ refinery_rare_crystals = {
 
 	ai_build_at_chokepoint = yes
 	ai_build_outside_chokepoint = yes
-	ai_weight = { weight = 150 }
+	ai_weight = { weight = 100 }
 }
 
 refinery_volatile_motes = {
@@ -2218,7 +2359,7 @@ refinery_volatile_motes = {
 
 	ai_build_at_chokepoint = yes
 	ai_build_outside_chokepoint = yes
-	ai_weight = { weight = 150 }
+	ai_weight = { weight = 100 }
 }
 
 refinery_alloys = {
@@ -2283,7 +2424,7 @@ refinery_alloys = {
 
 	ai_build_at_chokepoint = yes
 	ai_build_outside_chokepoint = yes
-	ai_weight = { weight = 150 }
+	ai_weight = { weight = 100 }
 }
 
 refinery_living_metal = {
@@ -2338,7 +2479,7 @@ refinery_living_metal = {
 
 	ai_build_at_chokepoint = yes
 	ai_build_outside_chokepoint = yes
-	ai_weight = { weight = 150 }
+	ai_weight = { weight = 100 }
 }
 
 refinery_dark_matter = {
@@ -2392,7 +2533,7 @@ refinery_dark_matter = {
 
 	ai_build_at_chokepoint = yes
 	ai_build_outside_chokepoint = yes
-	ai_weight = { weight = 150 }
+	ai_weight = { weight = 100 }
 }
 
 job_module = {
@@ -3261,12 +3402,28 @@ system_fast = {
 			has_starbase_size >= starbase_starfortress
 		}
 		custom_tooltip = {
-			fail_text = "requires_black_hole_neutron_star_pulsar"
+			fail_text = "requires_black_hole_neutron_star_pulsar_x"
 			solar_system = {
 				OR = {
 					is_star_class = sc_black_hole
 					is_star_class = sc_neutron_star
 					is_star_class = sc_pulsar
+
+					is_star_class = sc_binary_1
+					is_star_class = sc_binary_2
+					is_star_class = sc_binary_3
+					is_star_class = sc_binary_4
+					is_star_class = sc_binary_5
+					is_star_class = sc_binary_6
+					is_star_class = sc_binary_7
+					is_star_class = sc_binary_8
+					is_star_class = sc_binary_9
+					is_star_class = sc_binary_10
+					
+					is_star_class = sc_trinary_1
+					is_star_class = sc_trinary_2
+					is_star_class = sc_trinary_3
+					is_star_class = sc_trinary_4
 				}	
 			}
 		}		
@@ -3292,6 +3449,7 @@ system_fast = {
 		modifier = {
 			shipclass_starbase_hull_mult = 0.25
 			shipclass_military_station_hull_mult = 0.25
+			ship_speed_reduction = 0.25
 		}	
 	}
 	
@@ -3304,6 +3462,8 @@ system_fast = {
 		modifier = {
 			shipclass_starbase_damage_mult = 0.25
 			shipclass_military_station_damage_mult = 0.25
+			ship_speed_reduction = 0.25
+			ship_shield_reduction = 0.25
 		}		
 	}
 	
@@ -3316,6 +3476,35 @@ system_fast = {
 		modifier = {	
 			shipclass_starbase_evasion_add = 25
 			shipclass_military_station_evasion_add = 25
+			ship_shield_reduction = 0.25
+		}
+	}
+	
+	triggered_station_modifier = {
+		potential = {
+			solar_system = {
+				OR = {
+					is_star_class = sc_trinary_1
+					is_star_class = sc_trinary_2
+					is_star_class = sc_trinary_3
+					is_star_class = sc_trinary_4				
+				
+					is_star_class = sc_binary_1
+					is_star_class = sc_binary_2
+					is_star_class = sc_binary_3
+					is_star_class = sc_binary_4
+					is_star_class = sc_binary_5
+					is_star_class = sc_binary_6
+					is_star_class = sc_binary_7
+					is_star_class = sc_binary_8
+					is_star_class = sc_binary_9
+					is_star_class = sc_binary_10
+				}
+			}
+		}
+		modifier = {	
+			ship_speed_reduction = 0.25
+			ship_shield_reduction = 0.25
 		}
 	}
 	
@@ -3328,6 +3517,6 @@ system_fast = {
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
 	ai_weight = {
-		weight = 50
+		weight = 100
 	}
 }

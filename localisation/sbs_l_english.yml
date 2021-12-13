@@ -205,7 +205,7 @@
  sm_system_fast:0 "Station support."
  sm_system_fast_desc:0 "Building that generates an extreme gravitational field in special systems. The stellar bases will be more protected to the environmental variables of complex galactic systems such as neutron stars, pulsars or black holes."
  
- requires_black_hole_neutron_star_pulsar:0 "§RRequires a one §Y$pc_pulsar$§! \n§RRequires a one §Y$pc_neutron_star$§! \n§RRequires a one §Y$pc_black_hole$§! \nen el sistema.§!"
+ requires_black_hole_neutron_star_pulsar_x:0 "§RRequires a one §Y$pc_pulsar$§! \n§RRequires a one §Y$pc_neutron_star$§! \n§RRequires a one §Y$pc_black_hole$§! \nen el sistema.§! \nAnd some binary or trinary stars."
  
  requires_no_modules:0 "$TRIGGER_FAIL$§RYou can not have combat modules on the stellar base§!: Due to the explosive components for the elaboration of alloys."
  
