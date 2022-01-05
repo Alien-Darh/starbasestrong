@@ -234,7 +234,13 @@ tech_station_large = {
 	weight = @tier4cost3
 	prerequisites = { "tech_starbase_citadel_upgrade" }
 	
-
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_STATION_LARGE_TITLE"
+			desc = "TECH_UNLOCK_STATION_LARGE_DESC"
+		}		
+	}
+	
 	weight_modifier = {
 		modifier = {
 			factor = 0

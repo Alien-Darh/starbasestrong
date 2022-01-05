@@ -223,3 +223,6 @@
  
  tech_station_large:0 "Fortaleza"
  tech_station_large_desc:0 "Una gigantesca estructura acorazada de defensa capas de soportar el mas intenso ataque naval"
+ 
+ TECH_UNLOCK_STATION_LARGE_TITLE:0 "Estacion Ultra Defensa"
+ TECH_UNLOCK_STATION_LARGE_DESC:0 "Una poderosa estación de defensa y ataque es añadida a la base estelar... capaz e intimidar a cualquier fuerza de ataque en el sistema."
