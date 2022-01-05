@@ -22,7 +22,6 @@ entity = {
 	}
 }
 
-
 entity = {
 	name = "avian_01_starbase_starport_entity"
 	pdxmesh = "avian_01_starport_frame_mesh"
@@ -147,75 +146,70 @@ entity = {
 
 entity = {
 	name = "avian_01_starbase_outpost_phase_01_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
 	default_state = "idle"
 	state = { name = "idle"
 		start_event = { trigger_once = yes sound = { soundeffect = "ringworld_construction_ambient" } }
 	}
 
-	attach = { "slot1" = "avian_01_starbase_outpost_section_entity" }
+	attach = { root = "avian_01_starbase_outpost_section_entity" }
 
 	cull_radius = 500
 }
-
 
 entity = {
 	name = "avian_01_starbase_starport_phase_02_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
 	default_state = "idle"
 	state = { name = "idle"
 		start_event = { trigger_once = yes sound = { soundeffect = "ringworld_construction_ambient" } }
 	}
 
-	attach = { "slot1" = "avian_01_starbase_starport_section_entity" }
+	attach = { root = "avian_01_starbase_starport_section_entity" }
 
 	cull_radius = 500
 }
-
 
 entity = {
 	name = "avian_01_starbase_starhold_phase_03_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
 	default_state = "idle"
 	state = { name = "idle"
 		start_event = { trigger_once = yes sound = { soundeffect = "ringworld_construction_ambient" } }
 	}
 
-	attach = { "slot1" = "avian_01_starbase_starhold_section_entity" }
+	attach = { root = "avian_01_starbase_starhold_section_entity" }
 
 	cull_radius = 500
 }
-
 
 entity = {
 	name = "avian_01_starbase_starfortress_phase_04_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
 	default_state = "idle"
 	state = { name = "idle"
 		start_event = { trigger_once = yes sound = { soundeffect = "ringworld_construction_ambient" } }
 	}
 
-	attach = { "slot1" = "avian_01_starbase_starfortress_section_entity" }
+	attach = { root = "avian_01_starbase_starfortress_section_entity" }
 
 	cull_radius = 500
 }
 
-
-
 entity = {
 	name = "avian_01_starbase_citadel_phase_05_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
 	default_state = "idle"
 	state = { name = "idle"
 		start_event = { trigger_once = yes sound = { soundeffect = "ringworld_construction_ambient" } }
 	}
 
-	attach = { "slot1" = "avian_01_starbase_citadel_section_entity" }
+	attach = { root = "avian_01_starbase_citadel_section_entity" }
 
 	cull_radius = 500
 
@@ -223,15 +217,13 @@ entity = {
 
 entity = {
 	name = "avian_01_starbases_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 	locator = { name = "slot2"				position = { 50	0  0 } }
 	locator = { name = "slot3"				position = { 100	0  0 } }
 	locator = { name = "slot4"				position = { 175	0  0 } }
 	locator = { name = "slot5"				position = { 250	0  0 } }
 
-
-
-	attach = { "slot1" = "avian_01_starbase_outpost_phase_01_entity" }
+	attach = { root = "avian_01_starbase_outpost_phase_01_entity" }
 	attach = { "slot2" = "avian_01_starbase_starport_phase_02_entity" }
 	attach = { "slot3" = "avian_01_starbase_starhold_phase_03_entity" }
 	attach = { "slot4" = "avian_01_starbase_starfortress_phase_04_entity" }
@@ -302,7 +294,6 @@ entity = {
 	scale = 1.0
 }
 
-
 ###### Ion Cannon ######
 
 entity = {
@@ -316,7 +307,6 @@ entity = {
 	scale = 0.5
 
 }
-
 
 	##################################################################
 	######														######
@@ -342,7 +332,6 @@ entity = {
 	}
 }
 
-
 entity = {
 	name = "plantoid_01_starbase_starport_entity"
 	pdxmesh = "plantoid_01_starport_frame_mesh"
@@ -360,7 +349,6 @@ entity = {
 		start_event = { trigger_once = yes sound = { soundeffect = "starbase_hum_stage_01" } }
 	}
 }
-
 
 entity = {
 	name = "plantoid_01_starbase_starhold_entity"
@@ -409,7 +397,6 @@ entity = {
 		start_event = { trigger_once = yes sound = { soundeffect = "starbase_hum_stage_02" } }
 	}
 }
-
 
 entity = {
 	name = "plantoid_01_starbase_citadel_entity"
@@ -469,50 +456,45 @@ entity = {
 
 entity = {
 	name = "plantoid_01_starbase_outpost_phase_01_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
-	attach = { "slot1" = "plantoid_01_starbase_outpost_section_entity" }
+	attach = { root = "plantoid_01_starbase_outpost_section_entity" }
 
 	cull_radius = 500
 }
-
 
 entity = {
 	name = "plantoid_01_starbase_starport_phase_02_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
-	attach = { "slot1" = "plantoid_01_starbase_starport_section_entity" }
+	attach = { root = "plantoid_01_starbase_starport_section_entity" }
 
 	cull_radius = 500
 }
-
 
 entity = {
 	name = "plantoid_01_starbase_starhold_phase_03_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
-	attach = { "slot1" = "plantoid_01_starbase_starhold_section_entity" }
+	attach = { root = "plantoid_01_starbase_starhold_section_entity" }
 
 	cull_radius = 500
 }
-
 
 entity = {
 	name = "plantoid_01_starbase_starfortress_phase_04_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
-	attach = { "slot1" = "plantoid_01_starbase_starfortress_section_entity" }
+	attach = { root = "plantoid_01_starbase_starfortress_section_entity" }
 
 	cull_radius = 500
 }
 
-
-
 entity = {
 	name = "plantoid_01_starbase_citadel_phase_05_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
-	attach = { "slot1" = "plantoid_01_starbase_citadel_section_entity" }
+	attach = { root = "plantoid_01_starbase_citadel_section_entity" }
 
 	cull_radius = 500
 
@@ -520,15 +502,13 @@ entity = {
 
 entity = {
 	name = "plantoid_01_starbases_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 	locator = { name = "slot2"				position = { 50	0  0 } }
 	locator = { name = "slot3"				position = { 100	0  0 } }
 	locator = { name = "slot4"				position = { 175	0  0 } }
 	locator = { name = "slot5"				position = { 250	0  0 } }
 
-
-
-	attach = { "slot1" = "plantoid_01_starbase_outpost_phase_01_entity" }
+	attach = { root = "plantoid_01_starbase_outpost_phase_01_entity" }
 	attach = { "slot2" = "plantoid_01_starbase_starport_phase_02_entity" }
 	attach = { "slot3" = "plantoid_01_starbase_starhold_phase_03_entity" }
 	attach = { "slot4" = "plantoid_01_starbase_starfortress_phase_04_entity" }
@@ -593,7 +573,6 @@ entity = {
 	scale = 1.0
 }
 
-
 	entity = {
 		name = "plantoid_01_starbase_turret_section_entity"
 		pdxmesh = "plantoid_01_starbase_turret_section_mesh"
@@ -619,7 +598,6 @@ entity = {
 
 	attach = { "xl_gun_01" = "ion_cannon_core_entity" }
 }
-
 
 	##################################################################
 	######														######
@@ -647,7 +625,6 @@ entity = {
 	}
 }
 
-
 entity = {
 	name = "molluscoid_01_starbase_starport_entity"
 	pdxmesh = "molluscoid_01_starport_frame_mesh"
@@ -669,7 +646,6 @@ entity = {
 		start_event = { trigger_once = yes sound = { soundeffect = "starbase_hum_stage_01" } }
 	}
 }
-
 
 entity = {
 	name = "molluscoid_01_starbase_starhold_entity"
@@ -720,7 +696,6 @@ entity = {
 		start_event = { trigger_once = yes sound = { soundeffect = "starbase_hum_stage_02" } }
 	}
 }
-
 
 entity = {
 	name = "molluscoid_01_starbase_citadel_entity"
@@ -802,53 +777,47 @@ entity = {
 
 #################################################################################################################
 
-
 entity = {
 	name = "molluscoid_01_starbase_outpost_phase_01_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
-	attach = { "slot1" = "molluscoid_01_starbase_outpost_section_entity" }
+	attach = { root = "molluscoid_01_starbase_outpost_section_entity" }
 
 	cull_radius = 500
 }
-
 
 entity = {
 	name = "molluscoid_01_starbase_starport_phase_02_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
-	attach = { "slot1" = "molluscoid_01_starbase_starport_section_entity" }
+	attach = { root = "molluscoid_01_starbase_starport_section_entity" }
 
 	cull_radius = 500
 }
-
 
 entity = {
 	name = "molluscoid_01_starbase_starhold_phase_03_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
-	attach = { "slot1" = "molluscoid_01_starbase_starhold_section_entity" }
+	attach = { root = "molluscoid_01_starbase_starhold_section_entity" }
 
 	cull_radius = 500
 }
-
 
 entity = {
 	name = "molluscoid_01_starbase_starfortress_phase_04_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
-	attach = { "slot1" = "molluscoid_01_starbase_starfortress_section_entity" }
+	attach = { root = "molluscoid_01_starbase_starfortress_section_entity" }
 
 	cull_radius = 500
 }
 
-
-
 entity = {
 	name = "molluscoid_01_starbase_citadel_phase_05_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
-	attach = { "slot1" = "molluscoid_01_starbase_citadel_section_entity" }
+	attach = { root = "molluscoid_01_starbase_citadel_section_entity" }
 
 	cull_radius = 500
 
@@ -856,15 +825,13 @@ entity = {
 
 entity = {
 	name = "molluscoid_01_starbases_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 	locator = { name = "slot2"				position = { 50	0  0 } }
 	locator = { name = "slot3"				position = { 100	0  0 } }
 	locator = { name = "slot4"				position = { 175	0  0 } }
 	locator = { name = "slot5"				position = { 250	0  0 } }
 
-
-
-	attach = { "slot1" = "molluscoid_01_starbase_outpost_phase_01_entity" }
+	attach = { root = "molluscoid_01_starbase_outpost_phase_01_entity" }
 	attach = { "slot2" = "molluscoid_01_starbase_starport_phase_02_entity" }
 	attach = { "slot3" = "molluscoid_01_starbase_starhold_phase_03_entity" }
 	attach = { "slot4" = "molluscoid_01_starbase_starfortress_phase_04_entity" }
@@ -937,14 +904,12 @@ entity = {
 	scale = 1.0
 }
 
-
 ######### ANIMATIONS ##########
 
 animation = {
 	name = "molluscoid_01_outpost_idle_animation"
 	file = "molluscoid_01_outpost_idle.anim"
 }
-
 
 ###### Ion Cannon ######
 
@@ -966,9 +931,6 @@ entity = {
 
 	attach = { "root" = "ion_cannon_core_entity" }
 }
-
-
-
 
 	##################################################################
 	######														######
@@ -1016,7 +978,6 @@ entity = {
 	}
 }
 
-
 entity = {
 	name = "fungoid_01_starbase_starport_entity"
 	pdxmesh = "fungoid_01_starport_frame_mesh"
@@ -1058,7 +1019,6 @@ entity = {
 
 	}
 }
-
 
 entity = {
 	name = "fungoid_01_starbase_starhold_entity"
@@ -1146,7 +1106,6 @@ entity = {
 
 	}
 }
-
 
 entity = {
 	name = "fungoid_01_starbase_citadel_entity"
@@ -1250,50 +1209,45 @@ entity = {
 
 entity = {
 	name = "fungoid_01_starbase_outpost_phase_01_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
-	attach = { "slot1" = "fungoid_01_starbase_outpost_section_entity" }
+	attach = { root = "fungoid_01_starbase_outpost_section_entity" }
 
 	cull_radius = 500
 }
-
 
 entity = {
 	name = "fungoid_01_starbase_starport_phase_02_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
-	attach = { "slot1" = "fungoid_01_starbase_starport_section_entity" }
+	attach = { root = "fungoid_01_starbase_starport_section_entity" }
 
 	cull_radius = 500
 }
-
 
 entity = {
 	name = "fungoid_01_starbase_starhold_phase_03_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
-	attach = { "slot1" = "fungoid_01_starbase_starhold_section_entity" }
+	attach = { root = "fungoid_01_starbase_starhold_section_entity" }
 
 	cull_radius = 500
 }
-
 
 entity = {
 	name = "fungoid_01_starbase_starfortress_phase_04_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
-	attach = { "slot1" = "fungoid_01_starbase_starfortress_section_entity" }
+	attach = { root = "fungoid_01_starbase_starfortress_section_entity" }
 
 	cull_radius = 500
 }
 
-
-
 entity = {
 	name = "fungoid_01_starbase_citadel_phase_05_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
-	attach = { "slot1" = "fungoid_01_starbase_citadel_section_entity" }
+	attach = { root = "fungoid_01_starbase_citadel_section_entity" }
 
 	cull_radius = 500
 
@@ -1301,15 +1255,13 @@ entity = {
 
 entity = {
 	name = "fungoid_01_starbases_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 	locator = { name = "slot2"				position = { 50	0  0 } }
 	locator = { name = "slot3"				position = { 100	0  0 } }
 	locator = { name = "slot4"				position = { 175	0  0 } }
 	locator = { name = "slot5"				position = { 250	0  0 } }
 
-
-
-	attach = { "slot1" = "fungoid_01_starbase_outpost_phase_01_entity" }
+	attach = { root = "fungoid_01_starbase_outpost_phase_01_entity" }
 	attach = { "slot2" = "fungoid_01_starbase_starport_phase_02_entity" }
 	attach = { "slot3" = "fungoid_01_starbase_starhold_phase_03_entity" }
 	attach = { "slot4" = "fungoid_01_starbase_starfortress_phase_04_entity" }
@@ -1380,14 +1332,12 @@ entity = {
 	scale = 1.0
 }
 
-
 ######### ANIMATIONS ##########
 
 animation = {
 	name = "fungoid_01_citadel_idle_animation"
 	file = "fungoid_01_citadel_idle.anim"
 }
-
 
 ###### Ion Cannon ######
 
@@ -1429,7 +1379,6 @@ entity = {
 	}
 }
 
-
 entity = {
 	name = "mammalian_01_starbase_starport_entity"
 	pdxmesh = "mammalian_01_starport_frame_mesh"
@@ -1451,7 +1400,6 @@ entity = {
 		start_event = { trigger_once = yes sound = { soundeffect = "starbase_hum_stage_01" } }
 	}
 }
-
 
 entity = {
 	name = "mammalian_01_starbase_starhold_entity"
@@ -1504,7 +1452,6 @@ entity = {
 		start_event = { trigger_once = yes sound = { soundeffect = "starbase_hum_stage_02" } }
 	}
 }
-
 
 entity = {
 	name = "mammalian_01_starbase_citadel_entity"
@@ -1568,50 +1515,45 @@ entity = {
 
 entity = {
 	name = "mammalian_01_starbase_outpost_phase_01_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
-	attach = { "slot1" = "mammalian_01_starbase_outpost_section_entity" }
+	attach = { root = "mammalian_01_starbase_outpost_section_entity" }
 
 	cull_radius = 500
 }
-
 
 entity = {
 	name = "mammalian_01_starbase_starport_phase_02_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
-	attach = { "slot1" = "mammalian_01_starbase_starport_section_entity" }
+	attach = { root = "mammalian_01_starbase_starport_section_entity" }
 
 	cull_radius = 500
 }
-
 
 entity = {
 	name = "mammalian_01_starbase_starhold_phase_03_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
-	attach = { "slot1" = "mammalian_01_starbase_starhold_section_entity" }
+	attach = { root = "mammalian_01_starbase_starhold_section_entity" }
 
 	cull_radius = 500
 }
-
 
 entity = {
 	name = "mammalian_01_starbase_starfortress_phase_04_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
-	attach = { "slot1" = "mammalian_01_starbase_starfortress_section_entity" }
+	attach = { root = "mammalian_01_starbase_starfortress_section_entity" }
 
 	cull_radius = 500
 }
 
-
-
 entity = {
 	name = "mammalian_01_starbase_citadel_phase_05_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
-	attach = { "slot1" = "mammalian_01_starbase_citadel_section_entity" }
+	attach = { root = "mammalian_01_starbase_citadel_section_entity" }
 
 	cull_radius = 500
 
@@ -1619,15 +1561,13 @@ entity = {
 
 entity = {
 	name = "mammalian_01_starbases_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 	locator = { name = "slot2"				position = { 50	0  0 } }
 	locator = { name = "slot3"				position = { 100	0  0 } }
 	locator = { name = "slot4"				position = { 175	0  0 } }
 	locator = { name = "slot5"				position = { 250	0  0 } }
 
-
-
-	attach = { "slot1" = "mammalian_01_starbase_outpost_phase_01_entity" }
+	attach = { root = "mammalian_01_starbase_outpost_phase_01_entity" }
 	attach = { "slot2" = "mammalian_01_starbase_starport_phase_02_entity" }
 	attach = { "slot3" = "mammalian_01_starbase_starhold_phase_03_entity" }
 	attach = { "slot4" = "mammalian_01_starbase_starfortress_phase_04_entity" }
@@ -1691,7 +1631,6 @@ entity = {
 
 	scale = 1.0
 }
-
 
 entity = {
 	name = "mammalian_01_starbase_turret_section_entity"
@@ -1763,7 +1702,6 @@ entity = {
 	}
 }
 
-
 entity = {
 	name = "reptilian_01_starbase_starport_entity"
 	pdxmesh = "reptilian_01_starport_frame_mesh"
@@ -1785,7 +1723,6 @@ entity = {
 		start_event = { trigger_once = yes sound = { soundeffect = "starbase_hum_stage_01" } }
 	}
 }
-
 
 entity = {
 	name = "reptilian_01_starbase_starhold_entity"
@@ -1837,7 +1774,6 @@ entity = {
 	}
 }
 
-
 entity = {
 	name = "reptilian_01_starbase_citadel_entity"
 	pdxmesh = "reptilian_01_citadel_frame_mesh"
@@ -1847,7 +1783,7 @@ entity = {
 	name = "reptilian_01_starbase_citadel_section_entity"
 	pdxmesh = "reptilian_01_citadel_mesh"
 
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
@@ -1881,7 +1817,7 @@ entity = {
 	name = "reptilian_01_starbase_citadel_upgrade_section_entity"
 	pdxmesh = "reptilian_01_citadel_mesh"
 
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
@@ -1908,50 +1844,45 @@ entity = {
 
 entity = {
 	name = "reptilian_01_starbase_outpost_phase_01_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
-	attach = { "slot1" = "reptilian_01_starbase_outpost_section_entity" }
+	attach = { root = "reptilian_01_starbase_outpost_section_entity" }
 
 	cull_radius = 500
 }
-
 
 entity = {
 	name = "reptilian_01_starbase_starport_phase_02_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
-	attach = { "slot1" = "reptilian_01_starbase_starport_section_entity" }
+	attach = { root = "reptilian_01_starbase_starport_section_entity" }
 
 	cull_radius = 500
 }
-
 
 entity = {
 	name = "reptilian_01_starbase_starhold_phase_03_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
-	attach = { "slot1" = "reptilian_01_starbase_starhold_section_entity" }
+	attach = { root = "reptilian_01_starbase_starhold_section_entity" }
 
 	cull_radius = 500
 }
-
 
 entity = {
 	name = "reptilian_01_starbase_starfortress_phase_04_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
-	attach = { "slot1" = "reptilian_01_starbase_starfortress_section_entity" }
+	attach = { root = "reptilian_01_starbase_starfortress_section_entity" }
 
 	cull_radius = 500
 }
 
-
-
 entity = {
 	name = "reptilian_01_starbase_citadel_phase_05_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
-	attach = { "slot1" = "reptilian_01_starbase_citadel_section_entity" }
+	attach = { root = "reptilian_01_starbase_citadel_section_entity" }
 
 	cull_radius = 500
 
@@ -1959,15 +1890,13 @@ entity = {
 
 entity = {
 	name = "reptilian_01_starbases_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 	locator = { name = "slot2"				position = { 50	0  0 } }
 	locator = { name = "slot3"				position = { 100	0  0 } }
 	locator = { name = "slot4"				position = { 175	0  0 } }
 	locator = { name = "slot5"				position = { 250	0  0 } }
 
-
-
-	attach = { "slot1" = "reptilian_01_starbase_outpost_phase_01_entity" }
+	attach = { root = "reptilian_01_starbase_outpost_phase_01_entity" }
 	attach = { "slot2" = "reptilian_01_starbase_starport_phase_02_entity" }
 	attach = { "slot3" = "reptilian_01_starbase_starhold_phase_03_entity" }
 	attach = { "slot4" = "reptilian_01_starbase_starfortress_phase_04_entity" }
@@ -2065,7 +1994,6 @@ entity = {
 	attach = { "xl_gun_01" = "ion_cannon_core_entity" }
 }
 
-
 	##################################################################
 	######														######
 	######						Arthropoid						######
@@ -2092,7 +2020,6 @@ entity = {
 	}
 }
 
-
 entity = {
 	name = "arthropoid_01_starbase_starport_entity"
 	pdxmesh = "arthropoid_01_starport_frame_mesh"
@@ -2113,7 +2040,6 @@ entity = {
 		start_event = { trigger_once = yes sound = { soundeffect = "starbase_hum_stage_01" } }
 	}
 }
-
 
 entity = {
 	name = "arthropoid_01_starbase_starhold_entity"
@@ -2158,7 +2084,6 @@ entity = {
 		start_event = { trigger_once = yes sound = { soundeffect = "starbase_hum_stage_02" } }
 	}
 }
-
 
 entity = {
 	name = "arthropoid_01_starbase_citadel_entity"
@@ -2220,50 +2145,45 @@ entity = {
 
 entity = {
 	name = "arthropoid_01_starbase_outpost_phase_01_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
-	attach = { "slot1" = "arthropoid_01_starbase_outpost_section_entity" }
+	attach = { root = "arthropoid_01_starbase_outpost_section_entity" }
 
 	cull_radius = 500
 }
-
 
 entity = {
 	name = "arthropoid_01_starbase_starport_phase_02_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
-	attach = { "slot1" = "arthropoid_01_starbase_starport_section_entity" }
+	attach = { root = "arthropoid_01_starbase_starport_section_entity" }
 
 	cull_radius = 500
 }
-
 
 entity = {
 	name = "arthropoid_01_starbase_starhold_phase_03_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
-	attach = { "slot1" = "arthropoid_01_starbase_starhold_section_entity" }
+	attach = { root = "arthropoid_01_starbase_starhold_section_entity" }
 
 	cull_radius = 500
 }
-
 
 entity = {
 	name = "arthropoid_01_starbase_starfortress_phase_04_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
-	attach = { "slot1" = "arthropoid_01_starbase_starfortress_section_entity" }
+	attach = { root = "arthropoid_01_starbase_starfortress_section_entity" }
 
 	cull_radius = 500
 }
 
-
-
 entity = {
 	name = "arthropoid_01_starbase_citadel_phase_05_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
-	attach = { "slot1" = "arthropoid_01_starbase_citadel_section_entity" }
+	attach = { root = "arthropoid_01_starbase_citadel_section_entity" }
 
 	cull_radius = 500
 
@@ -2277,9 +2197,7 @@ entity = {
 	locator = { name = "slot4"				position = { 150	0  0 } }
 	locator = { name = "slot5"				position = { 250	0  0 } }
 
-
-
-	attach = { "slot1" = "arthropoid_01_starbase_outpost_phase_01_entity" }
+	attach = { root = "arthropoid_01_starbase_outpost_phase_01_entity" }
 	attach = { "slot2" = "arthropoid_01_starbase_starport_phase_02_entity" }
 	attach = { "slot3" = "arthropoid_01_starbase_starhold_phase_03_entity" }
 	attach = { "slot4" = "arthropoid_01_starbase_starfortress_phase_04_entity" }
@@ -2288,7 +2206,6 @@ entity = {
 	cull_radius = 500
 
 }
-
 
 entity = {
 	name = "arthropoid_01_starbase_turret_section_entity"
@@ -2302,8 +2219,6 @@ entity = {
 
 	scale = 1.0
 }
-
-
 
 entity = {
 	name = "arthropoid_01_starbase_outpost_construction_entity"
@@ -2365,12 +2280,15 @@ entity = {
 	entity = {
 		name = "arthropoid_01_ion_cannon_entity"
 		locator = { name = "part1" position = { 0 0 0 } }
+		locator = { name = "root" position = { 0 0 0 } }
 	}
 
 	entity = {
 		name = "arthropoid_01_ion_cannon_section_entity"
 		pdxmesh = "arthropoid_01_ion_cannon_mesh"
 		scale = 0.5
+
+		locator = { name = "root" position = { 0 0 0 } }
 
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
@@ -2404,7 +2322,6 @@ entity = {
 		start_event = { trigger_once = yes sound = { soundeffect = "starbase_hum_stage_01" } }
 	}
 }
-
 
 entity = {
 	name = "humanoid_01_starbase_starport_entity"
@@ -2537,75 +2454,70 @@ entity = {
 
 entity = {
 	name = "humanoid_01_starbase_outpost_phase_01_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
 	default_state = "idle"
 	state = { name = "idle"
 		start_event = { trigger_once = yes sound = { soundeffect = "ringworld_construction_ambient" } }
 	}
 
-	attach = { "slot1" = "humanoid_01_starbase_outpost_section_entity" }
+	attach = { root = "humanoid_01_starbase_outpost_section_entity" }
 
 	cull_radius = 500
 }
-
 
 entity = {
 	name = "humanoid_01_starbase_starport_phase_02_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
 	default_state = "idle"
 	state = { name = "idle"
 		start_event = { trigger_once = yes sound = { soundeffect = "ringworld_construction_ambient" } }
 	}
 
-	attach = { "slot1" = "humanoid_01_starbase_starport_section_entity" }
+	attach = { root = "humanoid_01_starbase_starport_section_entity" }
 
 	cull_radius = 500
 }
-
 
 entity = {
 	name = "humanoid_01_starbase_starhold_phase_03_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
 	default_state = "idle"
 	state = { name = "idle"
 		start_event = { trigger_once = yes sound = { soundeffect = "ringworld_construction_ambient" } }
 	}
 
-	attach = { "slot1" = "humanoid_01_starbase_starhold_section_entity" }
+	attach = { root = "humanoid_01_starbase_starhold_section_entity" }
 
 	cull_radius = 500
 }
-
 
 entity = {
 	name = "humanoid_01_starbase_starfortress_phase_04_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
 	default_state = "idle"
 	state = { name = "idle"
 		start_event = { trigger_once = yes sound = { soundeffect = "ringworld_construction_ambient" } }
 	}
 
-	attach = { "slot1" = "humanoid_01_starbase_starfortress_section_entity" }
+	attach = { root = "humanoid_01_starbase_starfortress_section_entity" }
 
 	cull_radius = 500
 }
 
-
-
 entity = {
 	name = "humanoid_01_starbase_citadel_phase_05_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
 	default_state = "idle"
 	state = { name = "idle"
 		start_event = { trigger_once = yes sound = { soundeffect = "ringworld_construction_ambient" } }
 	}
 
-	attach = { "slot1" = "humanoid_01_starbase_citadel_section_entity" }
+	attach = { root = "humanoid_01_starbase_citadel_section_entity" }
 
 	cull_radius = 500
 
@@ -2613,15 +2525,13 @@ entity = {
 
 entity = {
 	name = "humanoid_01_starbases_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 	locator = { name = "slot2"				position = { 50	0  0 } }
 	locator = { name = "slot3"				position = { 100	0  0 } }
 	locator = { name = "slot4"				position = { 175	0  0 } }
 	locator = { name = "slot5"				position = { 250	0  0 } }
 
-
-
-	attach = { "slot1" = "humanoid_01_starbase_outpost_phase_01_entity" }
+	attach = { root = "humanoid_01_starbase_outpost_phase_01_entity" }
 	attach = { "slot2" = "humanoid_01_starbase_starport_phase_02_entity" }
 	attach = { "slot3" = "humanoid_01_starbase_starhold_phase_03_entity" }
 	attach = { "slot4" = "humanoid_01_starbase_starfortress_phase_04_entity" }
@@ -2723,7 +2633,6 @@ animation = {
 	file = "humanoid_01_citadel_idle.anim"
 }
 
-
 	##################################################################
 	######														######
 	######						Fallen Empire 01				######
@@ -2819,7 +2728,6 @@ entity = {
 	locator = { name = "medium_gun_012" position = { 0 0 0 } }
 	locator = { name = "medium_gun_013" position = { 0 0 0 } }
 
-
 	default_state = "idle"
 	state = { name = "idle"		animation = "idle"
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
@@ -2839,9 +2747,9 @@ entity = {
 
 entity = {
 	name = "fallen_empire_01_starbase_citadel_phase_02_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
-	attach = { "slot1" = "fallen_empire_01_starbase_citadel_entity" }
+	attach = { root = "fallen_empire_01_starbase_citadel_entity" }
 
 	cull_radius = 500
 
@@ -2854,8 +2762,6 @@ entity = {
 	locator = { name = "slot3"				position = { 100	0  0 } }
 	locator = { name = "slot4"				position = { 150	0  0 } }
 	locator = { name = "slot5"				position = { 250	0  0 } }
-
-
 
 	attach = { "slot5" = "fallen_empire_01_starbase_citadel_phase_02_entity" }
 
@@ -2969,7 +2875,6 @@ entity = {
 	locator = { name = "medium_gun_012" position = { 0 0 0 } }
 	locator = { name = "medium_gun_013" position = { 0 0 0 } }
 
-
 	default_state = "idle"
 	state = { name = "idle"		animation = "idle"
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
@@ -2989,9 +2894,9 @@ entity = {
 
 entity = {
 	name = "fallen_empire_02_starbase_citadel_phase_02_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
-	attach = { "slot1" = "fallen_empire_02_starbase_citadel_entity" }
+	attach = { root = "fallen_empire_02_starbase_citadel_entity" }
 
 	cull_radius = 500
 
@@ -3005,8 +2910,6 @@ entity = {
 	locator = { name = "slot4"				position = { 150	0  0 } }
 	locator = { name = "slot5"				position = { 250	0  0 } }
 
-
-
 	attach = { "slot5" = "fallen_empire_02_starbase_citadel_phase_02_entity" }
 
 	cull_radius = 500
@@ -3018,7 +2921,6 @@ entity = {
 	locator = { name = "medium_gun_01" 	position = { 0 0 0 } }
 	locator = { name = "medium_gun_02" 	position = { 0 0 0 } }
 }
-
 
 	##################################################################
 	######														######
@@ -3089,7 +2991,6 @@ entity = {
 	}
 }
 
-
 entity = {
 	name = "fallen_empire_03_starbase_citadel_entity"
 	pdxmesh = "fallen_empire_citadel_frame_mesh"
@@ -3116,7 +3017,6 @@ entity = {
 	locator = { name = "medium_gun_012" position = { 0 0 0 } }
 	locator = { name = "medium_gun_013" position = { 0 0 0 } }
 
-
 	default_state = "idle"
 	state = { name = "idle"		animation = "idle"
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
@@ -3134,13 +3034,11 @@ entity = {
 	scale = 1.0
 }
 
-
-
 entity = {
 	name = "fallen_empire_03_starbase_citadel_phase_02_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
-	attach = { "slot1" = "fallen_empire_03_starbase_citadel_entity" }
+	attach = { root = "fallen_empire_03_starbase_citadel_entity" }
 
 	cull_radius = 500
 
@@ -3154,8 +3052,6 @@ entity = {
 	locator = { name = "slot4"				position = { 150	0  0 } }
 	locator = { name = "slot5"				position = { 250	0  0 } }
 
-
-
 	attach = { "slot5" = "fallen_empire_03_starbase_citadel_phase_02_entity" }
 
 	cull_radius = 500
@@ -3167,7 +3063,6 @@ entity = {
 	locator = { name = "medium_gun_01" 	position = { 0 0 0 } }
 	locator = { name = "medium_gun_02" 	position = { 0 0 0 } }
 }
-
 
 	##################################################################
 	######														######
@@ -3238,8 +3133,6 @@ entity = {
 	}
 }
 
-
-
 entity = {
 	name = "fallen_empire_04_starbase_citadel_entity"
 	pdxmesh = "fallen_empire_citadel_frame_mesh"
@@ -3266,7 +3159,6 @@ entity = {
 	locator = { name = "medium_gun_012" position = { 0 0 0 } }
 	locator = { name = "medium_gun_013" position = { 0 0 0 } }
 
-
 	default_state = "idle"
 	state = { name = "idle"		animation = "idle"
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
@@ -3284,13 +3176,11 @@ entity = {
 	scale = 1.0
 }
 
-
-
 entity = {
 	name = "fallen_empire_04_starbase_citadel_phase_02_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
-	attach = { "slot1" = "fallen_empire_04_starbase_citadel_entity" }
+	attach = { root = "fallen_empire_04_starbase_citadel_entity" }
 
 	cull_radius = 500
 
@@ -3304,8 +3194,6 @@ entity = {
 	locator = { name = "slot4"				position = { 150	0  0 } }
 	locator = { name = "slot5"				position = { 250	0  0 } }
 
-
-
 	attach = { "slot5" = "fallen_empire_04_starbase_citadel_phase_02_entity" }
 
 	cull_radius = 500
@@ -3317,7 +3205,6 @@ entity = {
 	locator = { name = "medium_gun_01" 	position = { 0 0 0 } }
 	locator = { name = "medium_gun_02" 	position = { 0 0 0 } }
 }
-
 
 	##################################################################
 	######														######
@@ -3371,7 +3258,6 @@ entity = {
 	}
 }
 
-
 entity = {
 	name = "fallen_machine_empire_01_starbase_citadel_entity"
 	pdxmesh = "fallen_empire_citadel_frame_mesh"
@@ -3398,7 +3284,6 @@ entity = {
 	locator = { name = "medium_gun_012" position = { 0 0 0 } }
 	locator = { name = "medium_gun_013" position = { 0 0 0 } }
 
-
 	default_state = "idle"
 	state = { name = "idle"		animation = "idle"
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
@@ -3416,12 +3301,11 @@ entity = {
 	scale = 1.0
 }
 
-
 entity = {
 	name = "fallen_machine_empire_01_starbase_citadel_phase_02_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
-	attach = { "slot1" = "fallen_machine_empire_01_starbase_citadel_entity" }
+	attach = { root = "fallen_machine_empire_01_starbase_citadel_entity" }
 
 	cull_radius = 500
 
@@ -3434,8 +3318,6 @@ entity = {
 	locator = { name = "slot3"				position = { 100	0  0 } }
 	locator = { name = "slot4"				position = { 150	0  0 } }
 	locator = { name = "slot5"				position = { 250	0  0 } }
-
-
 
 	attach = { "slot5" = "fallen_machine_empire_01_starbase_citadel_phase_02_entity" }
 
@@ -3476,7 +3358,6 @@ entity = {
 			emissive_recolor_crunch = 2.0
 		}
 }
-
 
 entity = {
 	name = "lithoid_01_starbase_starport_entity"
@@ -3615,75 +3496,70 @@ entity = {
 
 entity = {
 	name = "lithoid_01_starbase_outpost_phase_01_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
 	default_state = "idle"
 	state = { name = "idle"
 		start_event = { trigger_once = yes sound = { soundeffect = "ringworld_construction_ambient" } }
 	}
 
-	attach = { "slot1" = "lithoid_01_starbase_outpost_section_entity" }
+	attach = { root = "lithoid_01_starbase_outpost_section_entity" }
 
 	cull_radius = 500
 }
-
 
 entity = {
 	name = "lithoid_01_starbase_starport_phase_02_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
 	default_state = "idle"
 	state = { name = "idle"
 		start_event = { trigger_once = yes sound = { soundeffect = "ringworld_construction_ambient" } }
 	}
 
-	attach = { "slot1" = "lithoid_01_starbase_starport_section_entity" }
+	attach = { root = "lithoid_01_starbase_starport_section_entity" }
 
 	cull_radius = 500
 }
-
 
 entity = {
 	name = "lithoid_01_starbase_starhold_phase_03_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
 	default_state = "idle"
 	state = { name = "idle"
 		start_event = { trigger_once = yes sound = { soundeffect = "ringworld_construction_ambient" } }
 	}
 
-	attach = { "slot1" = "lithoid_01_starbase_starhold_section_entity" }
+	attach = { root = "lithoid_01_starbase_starhold_section_entity" }
 
 	cull_radius = 500
 }
-
 
 entity = {
 	name = "lithoid_01_starbase_starfortress_phase_04_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
 	default_state = "idle"
 	state = { name = "idle"
 		start_event = { trigger_once = yes sound = { soundeffect = "ringworld_construction_ambient" } }
 	}
 
-	attach = { "slot1" = "lithoid_01_starbase_starfortress_section_entity" }
+	attach = { root = "lithoid_01_starbase_starfortress_section_entity" }
 
 	cull_radius = 500
 }
 
-
-
 entity = {
 	name = "lithoid_01_starbase_citadel_phase_05_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
 	default_state = "idle"
 	state = { name = "idle"
 		start_event = { trigger_once = yes sound = { soundeffect = "ringworld_construction_ambient" } }
 	}
 
-	attach = { "slot1" = "lithoid_01_starbase_citadel_section_entity" }
+	attach = { root = "lithoid_01_starbase_citadel_section_entity" }
 
 	cull_radius = 500
 
@@ -3691,15 +3567,13 @@ entity = {
 
 entity = {
 	name = "lithoid_01_starbases_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 	locator = { name = "slot2"				position = { 50	0  0 } }
 	locator = { name = "slot3"				position = { 100	0  0 } }
 	locator = { name = "slot4"				position = { 175	0  0 } }
 	locator = { name = "slot5"				position = { 250	0  0 } }
 
-
-
-	attach = { "slot1" = "lithoid_01_starbase_outpost_phase_01_entity" }
+	attach = { root = "lithoid_01_starbase_outpost_phase_01_entity" }
 	attach = { "slot2" = "lithoid_01_starbase_starport_phase_02_entity" }
 	attach = { "slot3" = "lithoid_01_starbase_starhold_phase_03_entity" }
 	attach = { "slot4" = "lithoid_01_starbase_starfortress_phase_04_entity" }
@@ -3729,8 +3603,6 @@ entity = {
 			event = { trigger_once = yes sound = { soundeffect = "place_construction" } }
 
 		}
-
-
 
 	scale = 1.0
 }
@@ -3768,7 +3640,6 @@ entity = {
 	scale = 1.0
 }
 
-
 entity = {
 	name = "lithoid_01_starbase_core_entity"
 
@@ -3799,14 +3670,12 @@ animation = {
 	file = "lithoid_01_citadel_idle.anim"
 }
 
-
 ###### Ion Cannon ######
 
 entity = {
 	name = "lithoid_01_ion_cannon_entity"
 	locator = { name = "part1" position = { 0 0 0 } }
 }
-
 
 entity = {
 	name = "lithoid_01_ion_cannon_section_entity"
@@ -3892,9 +3761,8 @@ entity = {
 	}
 		game_data = {
 			emissive_recolor_crunch = 2.0
-		}		
+		}
 }
-
 
 entity = {
 	name = "necroid_01_starbase_starport_entity"
@@ -3918,9 +3786,8 @@ entity = {
 	}
 		game_data = {
 			emissive_recolor_crunch = 2.0
-		}		
+		}
 }
-
 
 entity = {
 	name = "necroid_01_starbase_starhold_entity"
@@ -3948,7 +3815,7 @@ entity = {
 	}
 		game_data = {
 			emissive_recolor_crunch = 2.0
-		}		
+		}
 }
 
 entity = {
@@ -3977,9 +3844,8 @@ entity = {
 	}
 		game_data = {
 			emissive_recolor_crunch = 2.0
-		}		
+		}
 }
-
 
 entity = {
 	name = "necroid_01_starbase_citadel_entity"
@@ -4007,10 +3873,10 @@ entity = {
 		 start_event = { trigger_once = yes sound = { soundeffect = "starbase_hum_stage_02" } }
 		 start_event = { trigger_once = yes sound = { soundeffect = "starbase_hum_stage_03" } }
 	}
-	
+
 		game_data = {
 			emissive_recolor_crunch = 2.0
-		}		
+		}
 }
 
 ######################################################################################################################
@@ -4041,88 +3907,81 @@ entity = {
 		 start_event = { trigger_once = yes sound = { soundeffect = "starbase_hum_stage_02" } }
 		 start_event = { trigger_once = yes sound = { soundeffect = "starbase_hum_stage_03" } }
 	}
-	
+
 		game_data = {
 			emissive_recolor_crunch = 2.0
-		}		
+		}
 }
 
 ###################################################################################################
 
-entity = {	
+entity = {
 	name = "necroid_01_starbase_outpost_phase_01_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
-	attach = { "slot1" = "necroid_01_starbase_outpost_section_entity" }
+	attach = { root = "necroid_01_starbase_outpost_section_entity" }
 
 	cull_radius = 500
 }
 
-
-entity = {	
+entity = {
 	name = "necroid_01_starbase_starport_phase_02_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
-	attach = { "slot1" = "necroid_01_starbase_starport_section_entity" }
+	attach = { root = "necroid_01_starbase_starport_section_entity" }
 
 	cull_radius = 500
 }
 
-
-entity = {	
+entity = {
 	name = "necroid_01_starbase_starhold_phase_03_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
-	attach = { "slot1" = "necroid_01_starbase_starhold_section_entity" }
+	attach = { root = "necroid_01_starbase_starhold_section_entity" }
 
 	cull_radius = 500
 }
 
-
-entity = {	
+entity = {
 	name = "necroid_01_starbase_starfortress_phase_04_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
-	
-	attach = { "slot1" = "necroid_01_starbase_starfortress_section_entity" }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
+
+	attach = { root = "necroid_01_starbase_starfortress_section_entity" }
 
 	cull_radius = 500
 }
 
-
-
-entity = {	
+entity = {
 	name = "necroid_01_starbase_citadel_phase_05_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 
-	attach = { "slot1" = "necroid_01_starbase_citadel_section_entity" }
+	attach = { root = "necroid_01_starbase_citadel_section_entity" }
 
 	cull_radius = 500
-		
+
 }
 
-entity = {	
+entity = {
 	name = "necroid_01_starbases_entity"
-	locator = { name = "slot1"				position = { 0	0  0 } }
+	#locator = { name = "slot1"				position = { 0	0  0 } }
 	locator = { name = "slot2"				position = { 50	0  0 } }
 	locator = { name = "slot3"				position = { 100	0  0 } }
 	locator = { name = "slot4"				position = { 175	0  0 } }
 	locator = { name = "slot5"				position = { 250	0  0 } }
-	
-	
 
-	attach = { "slot1" = "necroid_01_starbase_outpost_phase_01_entity" }
+	attach = { root = "necroid_01_starbase_outpost_phase_01_entity" }
 	attach = { "slot2" = "necroid_01_starbase_starport_phase_02_entity" }
 	attach = { "slot3" = "necroid_01_starbase_starhold_phase_03_entity" }
 	attach = { "slot4" = "necroid_01_starbase_starfortress_phase_04_entity" }
 	attach = { "slot5" = "necroid_01_starbase_citadel_phase_05_entity" }
 
 	cull_radius = 500
-		
+
 }
 
 entity = {
 	name = "necroid_01_starbase_outpost_construction_entity"
-	pdxmesh = "necroid_01_outpost_mesh"	
+	pdxmesh = "necroid_01_outpost_mesh"
 		default_state = "idle"
 		state = { name = "idle" state_time = 5
 			event = { trigger_once = yes sound = { soundeffect = "place_construction" } }
@@ -4133,7 +3992,7 @@ entity = {
 
 entity = {
 	name = "necroid_01_starbase_starport_construction_entity"
-	pdxmesh = "necroid_01_starport_mesh"	
+	pdxmesh = "necroid_01_starport_mesh"
 		default_state = "idle"
 		state = { name = "idle" state_time = 5
 			event = { trigger_once = yes sound = { soundeffect = "place_construction" } }
@@ -4144,7 +4003,7 @@ entity = {
 
 entity = {
 	name = "necroid_01_starbase_starhold_construction_entity"
-	pdxmesh = "necroid_01_starhold_mesh"	
+	pdxmesh = "necroid_01_starhold_mesh"
 		default_state = "idle"
 		state = { name = "idle" state_time = 5
 			event = { trigger_once = yes sound = { soundeffect = "place_construction" } }
@@ -4155,7 +4014,7 @@ entity = {
 
 entity = {
 	name = "necroid_01_starbase_starfortress_construction_entity"
-	pdxmesh = "necroid_01_starfort_mesh"	
+	pdxmesh = "necroid_01_starfort_mesh"
 		default_state = "idle"
 		state = { name = "idle" state_time = 5
 			event = { trigger_once = yes sound = { soundeffect = "place_construction" } }
@@ -4166,7 +4025,7 @@ entity = {
 
 entity = {
 	name = "necroid_01_starbase_citadel_construction_entity"
-	pdxmesh = "necroid_01_citadel_mesh"	
+	pdxmesh = "necroid_01_citadel_mesh"
 		default_state = "idle"
 		state = { name = "idle" state_time = 5
 			event = { trigger_once = yes sound = { soundeffect = "place_construction" } }
@@ -4192,18 +4051,629 @@ entity = {
 	pdxmesh = "necroid_01_ion_cannon_mesh"
 	scale = 1
 	locator = { name = "root" position = { 0 0 0 } }
-	
+
 	default_state = "idle"
-	state = { name = "idle" state_time = 8 
-#		event = {	time = 0 	node = "effect_core"	entity = "necroid_01_ion_core_effect_entity"	
-#		erosion_in = 2		life = 1.5 	erosion_out = 2	}	
-#
-#		event = {	time = 4 	node = "effect_core"	entity = "necroid_01_ion_core_effect_entity"	
+	state = { name = "idle" state_time = 8
+#		event = {	time = 0 	node = "effect_core"	entity = "necroid_01_ion_core_effect_entity"
 #		erosion_in = 2		life = 1.5 	erosion_out = 2	}
-#	
-		
+#
+#		event = {	time = 4 	node = "effect_core"	entity = "necroid_01_ion_core_effect_entity"
+#		erosion_in = 2		life = 1.5 	erosion_out = 2	}
+#
+
 		event = { time = 0.0 node = "effect_core" particle = "necroid_01_ion_core_effect" keep_particle = yes trigger_once = yes }
 	}
-	
+
 	attach = { "effect_core" = "necroid_01_ion_core_effect_entity" }
+}
+
+	##################################################################
+	######														######
+	######						Nemesis 						######
+	######														######
+	##################################################################
+
+	entity = {
+		name = "nemesis_01_starbase_outpost_entity"
+		pdxmesh = "nemesis_01_outpost_frame_mesh"
+	}
+
+	entity = {
+		name = "nemesis_01_starbase_outpost_section_entity"
+		pdxmesh = "nemesis_01_outpost_mesh"
+
+		#locator = { name = "slot1"				position = { 0	0  0 } }
+
+		default_state = "idle"
+		state = { name = "idle" state_time = 5
+			 event = { time = 0 node = "light_locator_01" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+			 event = { time = 0 node = "light_locator_02" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+			 event = { time = 0 node = "light_locator_03" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+			 start_event = { trigger_once = yes sound = { soundeffect = "amb_nemesis_starbase_hum_01" } }
+		}
+			game_data = {
+				emissive_recolor_crunch = 2.0
+			}
+	}
+
+entity = {
+	name = "nemesis_01_starbase_starport_entity"
+	pdxmesh = "nemesis_01_starport_frame_mesh"
+}
+
+entity = {
+	name = "nemesis_01_starbase_starport_section_entity"
+	pdxmesh = "nemesis_01_starport_mesh"
+
+	#locator = { name = "slot1"				position = { 0	0  0 } }
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		 event = { time = 0 node = "light_locator_01" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_02" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_03" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_04" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_05" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 start_event = { trigger_once = yes sound = { soundeffect = "amb_nemesis_starbase_hum_01" } }
+		 start_event = { trigger_once = yes sound = { soundeffect = "amb_nemesis_starbase_hum_02" } }
+	}
+		game_data = {
+			emissive_recolor_crunch = 2.0
+		}
+}
+
+entity = {
+	name = "nemesis_01_starbase_starhold_entity"
+	pdxmesh = "nemesis_01_starhold_frame_mesh"
+}
+
+entity = {
+	name = "nemesis_01_starbase_starhold_section_entity"
+	pdxmesh = "nemesis_01_starhold_mesh"
+
+	#locator = { name = "slot1"				position = { 0	0  0 } }
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		 event = { time = 0 node = "light_locator_01" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_02" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_03" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_04" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_05" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_06" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_07" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_08" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 start_event = { trigger_once = yes sound = { soundeffect = "starbase_hum_stage_01" } }
+		 start_event = { trigger_once = yes sound = { soundeffect = "amb_nemesis_starbase_hum_01" } }
+		 start_event = { trigger_once = yes sound = { soundeffect = "amb_nemesis_starbase_hum_02" } }
+	}
+		game_data = {
+			emissive_recolor_crunch = 2.0
+		}
+}
+
+entity = {
+	name = "nemesis_01_starbase_starfortress_entity"
+	pdxmesh = "nemesis_01_starfort_frame_mesh"
+}
+
+entity = {
+	name = "nemesis_01_starbase_starfortress_section_entity"
+	pdxmesh = "nemesis_01_starfort_mesh"
+
+	#locator = { name = "slot1"				position = { 0	0  0 } }
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		 event = { time = 0 node = "light_locator_01" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_02" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_03" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_04" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_05" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_06" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_07" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_08" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 start_event = { trigger_once = yes sound = { soundeffect = "starbase_hum_stage_01" } }
+		 start_event = { trigger_once = yes sound = { soundeffect = "starbase_hum_stage_02" } }
+		 start_event = { trigger_once = yes sound = { soundeffect = "amb_nemesis_starbase_hum_01" } }
+		 start_event = { trigger_once = yes sound = { soundeffect = "amb_nemesis_starbase_hum_02" } }
+	}
+		game_data = {
+			emissive_recolor_crunch = 2.0
+		}
+}
+
+entity = {
+	name = "nemesis_01_starbase_citadel_entity"
+	pdxmesh = "nemesis_01_citadel_frame_mesh"
+}
+
+entity = {
+	name = "nemesis_01_starbase_citadel_section_entity"
+	pdxmesh = "nemesis_01_citadel_mesh"
+
+	#locator = { name = "slot1"				position = { 0	0  0 } }
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		 event = { time = 0 node = "light_locator_01" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_02" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_03" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_04" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_05" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_06" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_07" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_08" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_09" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 start_event = { trigger_once = yes sound = { soundeffect = "starbase_hum_stage_01" } }
+		 start_event = { trigger_once = yes sound = { soundeffect = "starbase_hum_stage_02" } }
+		 start_event = { trigger_once = yes sound = { soundeffect = "amb_nemesis_starbase_hum_01" } }
+		 start_event = { trigger_once = yes sound = { soundeffect = "amb_nemesis_starbase_hum_02" } }
+		 start_event = { trigger_once = yes sound = { soundeffect = "amb_nemesis_starbase_hum_03" } }
+	}
+
+		game_data = {
+			emissive_recolor_crunch = 2.0
+		}
+}
+
+entity = {
+	name = "nemesis_01_starbase_outpost_phase_01_entity"
+	#locator = { name = "slot1"				position = { 0	0  0 } }
+
+	attach = { root = "nemesis_01_starbase_outpost_section_entity" }
+
+	cull_radius = 500
+}
+
+entity = {
+	name = "nemesis_01_starbase_starport_phase_02_entity"
+	#locator = { name = "slot1"				position = { 0	0  0 } }
+
+	attach = { root = "nemesis_01_starbase_starport_section_entity" }
+
+	cull_radius = 500
+}
+
+entity = {
+	name = "nemesis_01_starbase_starhold_phase_03_entity"
+	#locator = { name = "slot1"				position = { 0	0  0 } }
+
+	attach = { root = "nemesis_01_starbase_starhold_section_entity" }
+
+	cull_radius = 500
+}
+
+entity = {
+	name = "nemesis_01_starbase_starfortress_phase_04_entity"
+	#locator = { name = "slot1"				position = { 0	0  0 } }
+
+	attach = { root = "nemesis_01_starbase_starfortress_section_entity" }
+
+	cull_radius = 500
+}
+
+entity = {
+	name = "nemesis_01_starbase_citadel_phase_05_entity"
+	#locator = { name = "slot1"				position = { 0	0  0 } }
+
+	attach = { root = "nemesis_01_starbase_citadel_section_entity" }
+
+	cull_radius = 500
+
+}
+
+entity = {
+	name = "nemesis_01_starbases_entity"
+	#locator = { name = "slot1"				position = { 0	0  0 } }
+	locator = { name = "slot2"				position = { 50	0  0 } }
+	locator = { name = "slot3"				position = { 100	0  0 } }
+	locator = { name = "slot4"				position = { 175	0  0 } }
+	locator = { name = "slot5"				position = { 250	0  0 } }
+
+	attach = { root = "nemesis_01_starbase_outpost_phase_01_entity" }
+	attach = { "slot2" = "nemesis_01_starbase_starport_phase_02_entity" }
+	attach = { "slot3" = "nemesis_01_starbase_starhold_phase_03_entity" }
+	attach = { "slot4" = "nemesis_01_starbase_starfortress_phase_04_entity" }
+	attach = { "slot5" = "nemesis_01_starbase_citadel_phase_05_entity" }
+
+	cull_radius = 500
+
+}
+
+entity = {
+	name = "nemesis_01_starbase_outpost_construction_entity"
+	pdxmesh = "nemesis_01_outpost_mesh"
+		default_state = "idle"
+		state = { name = "idle" state_time = 5
+			event = { trigger_once = yes sound = { soundeffect = "place_construction" } }
+		}
+
+	scale = 1.0
+}
+
+entity = {
+	name = "nemesis_01_starbase_starport_construction_entity"
+	pdxmesh = "nemesis_01_starport_mesh"
+		default_state = "idle"
+		state = { name = "idle" state_time = 5
+			event = { trigger_once = yes sound = { soundeffect = "place_construction" } }
+		}
+
+	scale = 1.0
+}
+
+entity = {
+	name = "nemesis_01_starbase_starhold_construction_entity"
+	pdxmesh = "nemesis_01_starhold_mesh"
+		default_state = "idle"
+		state = { name = "idle" state_time = 5
+			event = { trigger_once = yes sound = { soundeffect = "place_construction" } }
+		}
+
+	scale = 1.0
+}
+
+entity = {
+	name = "nemesis_01_starbase_starfortress_construction_entity"
+	pdxmesh = "nemesis_01_starfort_mesh"
+		default_state = "idle"
+		state = { name = "idle" state_time = 5
+			event = { trigger_once = yes sound = { soundeffect = "place_construction" } }
+		}
+
+	scale = 1.0
+}
+
+entity = {
+	name = "nemesis_01_starbase_citadel_construction_entity"
+	pdxmesh = "nemesis_01_citadel_mesh"
+		default_state = "idle"
+		state = { name = "idle" state_time = 5
+			event = { trigger_once = yes sound = { soundeffect = "place_construction" } }
+		}
+
+	scale = 1.0
+}
+
+	entity = {
+	name = "nemesis_01_starbase_turret_section_entity"
+	pdxmesh = "nemesis_01_starbase_turret_section_mesh"
+	}
+
+###### Ion Cannon ######
+
+entity = {
+	name = "nemesis_01_ion_cannon_entity"
+	locator = { name = "part1" position = { 0 0 0 } }
+}
+
+entity = {
+	name = "nemesis_01_ion_cannon_section_entity"
+	pdxmesh = "nemesis_01_ion_cannon_mesh"
+	scale = 1
+	locator = { name = "root" position = { 0 0 0 } }
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 8
+		event = { time = 0.0 node = "engine" particle = "nemesis_01_ion_core_effect" keep_particle = yes trigger_once = yes }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_nemesis_starbase_ion_cannon_hum_01" } }
+#
+#		event = {	time = 4 	node = "effect_core"	entity = "necroid_01_ion_core_effect_entity"
+#		erosion_in = 2		life = 1.5 	erosion_out = 2	}
+
+	}
+
+ 	#attach = { "part1" = "nemesis_01_ion_cannon_windup_entity" }
+}
+
+	##################################################################
+	######														######
+	######						Aquatic 						######
+	######														######
+	##################################################################
+
+	entity = {
+		name = "aquatic_01_starbase_citadel_entity"
+		pdxmesh = "aquatic_01_citadel_frame_mesh"
+	}
+
+	entity = {
+		name = "aquatic_01_starbase_citadel_section_entity"
+		pdxmesh = "aquatic_01_citadel_mesh"
+
+		#locator = { name = "slot1"				position = { 0	0  0 } }
+
+		default_state = "idle"
+		state = { name = "idle" state_time = 5
+			 event = { time = 0 node = "light_locator_01" particle = "aquatic_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+			 event = { time = 0 node = "light_locator_02" particle = "aquatic_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+			 event = { time = 0 node = "light_locator_03" particle = "aquatic_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+			 event = { time = 0 node = "light_locator_04" particle = "aquatic_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+			 event = { time = 0 node = "light_locator_05" particle = "aquatic_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+			 event = { time = 0 node = "light_locator_06" particle = "aquatic_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+			 event = { time = 0 node = "light_locator_07" particle = "aquatic_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+			 event = { time = 0 node = "light_locator_08" particle = "aquatic_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+			 event = { time = 0 node = "light_locator_09" particle = "aquatic_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+			 start_event = { trigger_once = yes sound = { soundeffect = "aqu_ship_starbase_idle" } }
+		}
+
+			game_data = {
+				emissive_recolor_crunch = 2.0
+			}
+	}
+
+	entity = {
+		name = "aquatic_01_starbase_outpost_entity"
+		pdxmesh = "aquatic_01_outpost_frame_mesh"
+	}
+
+	entity = {
+		name = "aquatic_01_starbase_outpost_section_entity"
+		pdxmesh = "aquatic_01_outpost_mesh"
+
+		#locator = { name = "slot1"				position = { 0	0  0 } }
+
+		default_state = "idle"
+		state = { name = "idle" state_time = 5
+			 event = { time = 0 node = "light_locator_01" particle = "aquatic_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+			 event = { time = 0 node = "light_locator_02" particle = "aquatic_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+			 event = { time = 0 node = "light_locator_03" particle = "aquatic_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+			 event = { time = 0 node = "light_locator_04" particle = "aquatic_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+			 event = { time = 0 node = "light_locator_05" particle = "aquatic_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+			 event = { time = 0 node = "light_locator_06" particle = "aquatic_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+			 event = { time = 0 node = "light_locator_07" particle = "aquatic_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+			 event = { time = 0 node = "light_locator_08" particle = "aquatic_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+			 event = { time = 0 node = "light_locator_09" particle = "aquatic_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+			 start_event = { trigger_once = yes sound = { soundeffect = "aqu_ship_starbase_idle" } }
+		}
+			game_data = {
+				emissive_recolor_crunch = 2.0
+			}
+	}
+
+	entity = {
+		name = "aquatic_01_starbase_starfortress_entity"
+		pdxmesh = "aquatic_01_starfort_frame_mesh"
+	}
+
+	entity = {
+		name = "aquatic_01_starbase_starfortress_section_entity"
+		pdxmesh = "aquatic_01_starfort_mesh"
+
+		#locator = { name = "slot1"				position = { 0	0  0 } }
+
+		default_state = "idle"
+		state = { name = "idle" state_time = 5
+			 event = { time = 0 node = "light_locator_01" particle = "aquatic_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+			 event = { time = 0 node = "light_locator_02" particle = "aquatic_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+			 event = { time = 0 node = "light_locator_03" particle = "aquatic_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+			 event = { time = 0 node = "light_locator_04" particle = "aquatic_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+			 event = { time = 0 node = "light_locator_05" particle = "aquatic_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+			 event = { time = 0 node = "light_locator_06" particle = "aquatic_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+			 event = { time = 0 node = "light_locator_07" particle = "aquatic_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+			 event = { time = 0 node = "light_locator_08" particle = "aquatic_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+			 event = { time = 0 node = "light_locator_09" particle = "aquatic_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+			 start_event = { trigger_once = yes sound = { soundeffect = "aqu_ship_starbase_idle" } }
+		}
+			game_data = {
+				emissive_recolor_crunch = 2.0
+			}
+	}
+
+entity = {
+	name = "aquatic_01_starbase_starhold_entity"
+	pdxmesh = "aquatic_01_starhold_frame_mesh"
+}
+
+entity = {
+	name = "aquatic_01_starbase_starhold_section_entity"
+	pdxmesh = "aquatic_01_starhold_mesh"
+
+	#locator = { name = "slot1"				position = { 0	0  0 } }
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		 event = { time = 0 node = "light_locator_01" particle = "aquatic_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_02" particle = "aquatic_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_03" particle = "aquatic_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_04" particle = "aquatic_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_05" particle = "aquatic_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_06" particle = "aquatic_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_07" particle = "aquatic_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_08" particle = "aquatic_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_09" particle = "aquatic_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 start_event = { trigger_once = yes sound = { soundeffect = "aqu_ship_starbase_idle" } }
+	}
+		game_data = {
+			emissive_recolor_crunch = 2.0
+		}
+}
+
+entity = {
+	name = "aquatic_01_starbase_starport_entity"
+	pdxmesh = "aquatic_01_starport_frame_mesh"
+}
+
+entity = {
+	name = "aquatic_01_starbase_starport_section_entity"
+	pdxmesh = "aquatic_01_starport_mesh"
+
+	#locator = { name = "slot1"				position = { 0	0  0 } }
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		 event = { time = 0 node = "light_locator_01" particle = "aquatic_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_02" particle = "aquatic_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_03" particle = "aquatic_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_04" particle = "aquatic_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_05" particle = "aquatic_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_06" particle = "aquatic_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_07" particle = "aquatic_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_08" particle = "aquatic_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 event = { time = 0 node = "light_locator_09" particle = "aquatic_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		 start_event = { trigger_once = yes sound = { soundeffect = "aqu_ship_starbase_idle" } }
+	}
+		game_data = {
+			emissive_recolor_crunch = 2.0
+		}
+}
+
+entity = {
+	name = "aquatic_01_starbase_outpost_phase_01_entity"
+	#locator = { name = "slot1"				position = { 0	0  0 } }
+
+	attach = { root = "aquatic_01_starbase_outpost_section_entity" }
+
+	cull_radius = 500
+}
+
+entity = {
+	name = "aquatic_01_starbase_starport_phase_02_entity"
+	#locator = { name = "slot1"				position = { 0	0  0 } }
+
+	attach = { root = "aquatic_01_starbase_starport_section_entity" }
+
+	cull_radius = 500
+}
+
+entity = {
+	name = "aquatic_01_starbase_starhold_phase_03_entity"
+	#locator = { name = "slot1"				position = { 0	0  0 } }
+
+	attach = { root = "aquatic_01_starbase_starhold_section_entity" }
+
+	cull_radius = 500
+}
+
+entity = {
+	name = "aquatic_01_starbase_starfortress_phase_04_entity"
+	#locator = { name = "slot1"				position = { 0	0  0 } }
+
+	attach = { root = "aquatic_01_starbase_starfortress_section_entity" }
+
+	cull_radius = 500
+}
+
+entity = {
+	name = "aquatic_01_starbase_citadel_phase_05_entity"
+	#locator = { name = "slot1"				position = { 0	0  0 } }
+
+	attach = { root = "aquatic_01_starbase_citadel_section_entity" }
+
+	cull_radius = 500
+
+}
+
+entity = {
+	name = "aquatic_01_starbases_entity"
+	#locator = { name = "slot1"				position = { 0	0  0 } }
+	locator = { name = "slot2"				position = { 50	0  0 } }
+	locator = { name = "slot3"				position = { 100	0  0 } }
+	locator = { name = "slot4"				position = { 175	0  0 } }
+	locator = { name = "slot5"				position = { 250	0  0 } }
+
+	attach = { root = "aquatic_01_starbase_outpost_phase_01_entity" }
+	attach = { "slot2" = "aquatic_01_starbase_starport_phase_02_entity" }
+	attach = { "slot3" = "aquatic_01_starbase_starhold_phase_03_entity" }
+	attach = { "slot4" = "aquatic_01_starbase_starfortress_phase_04_entity" }
+	attach = { "slot5" = "aquatic_01_starbase_citadel_phase_05_entity" }
+
+	cull_radius = 500
+
+}
+
+entity = {
+	name = "aquatic_01_starbase_outpost_construction_entity"
+	pdxmesh = "aquatic_01_outpost_mesh"
+		default_state = "idle"
+		state = { name = "idle" state_time = 5
+			event = { trigger_once = yes sound = { soundeffect = "place_construction" } }
+		}
+
+	scale = 1.0
+}
+
+entity = {
+	name = "aquatic_01_starbase_starport_construction_entity"
+	pdxmesh = "aquatic_01_starport_mesh"
+		default_state = "idle"
+		state = { name = "idle" state_time = 5
+			event = { trigger_once = yes sound = { soundeffect = "place_construction" } }
+		}
+
+	scale = 1.0
+}
+
+entity = {
+	name = "aquatic_01_starbase_starhold_construction_entity"
+	pdxmesh = "aquatic_01_starhold_mesh"
+		default_state = "idle"
+		state = { name = "idle" state_time = 5
+			event = { trigger_once = yes sound = { soundeffect = "place_construction" } }
+		}
+
+	scale = 1.0
+}
+
+entity = {
+	name = "aquatic_01_starbase_starfortress_construction_entity"
+	pdxmesh = "aquatic_01_starfort_mesh"
+		default_state = "idle"
+		state = { name = "idle" state_time = 5
+			event = { trigger_once = yes sound = { soundeffect = "place_construction" } }
+		}
+
+	scale = 1.0
+}
+
+entity = {
+	name = "aquatic_01_starbase_citadel_construction_entity"
+	pdxmesh = "aquatic_01_citadel_mesh"
+		default_state = "idle"
+		state = { name = "idle" state_time = 5
+			event = { trigger_once = yes sound = { soundeffect = "place_construction" } }
+		}
+
+	scale = 1.0
+}
+
+entity = {
+	name = "aquatic_01_starbase_turret_section_entity"
+	pdxmesh = "aquatic_01_starbase_turret_section_mesh"
+	}
+
+###### Ion Cannon ######
+
+entity = {
+	name = "aquatic_01_ion_cannon_entity"
+	locator = { name = "part1" position = { 0 0 0 } }
+}
+
+entity = {
+	name = "aquatic_01_ion_cannon_section_entity"
+	pdxmesh = "aquatic_01_ion_cannon_mesh"
+	scale = 1
+	locator = { name = "root" position = { 0 0 0 } }
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 8
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_nemesis_starbase_ion_cannon_hum_01" } }
+
+	}
+
+ 	attach = { "root" = "aquatic_01_ion_cannon_effect_mesh_entity" }
+}
+
+entity = {
+	name = "aquatic_01_ion_cannon_effect_mesh_entity"
+	pdxmesh = "aquatic_01_ion_cannon_effect_mesh"
+
+		game_data = {
+		uv_animation_speed 		= 0.05
+		uv_animation_direction 	= { 0.4 -1.0 }
+		bloom_factor = 3
+	}
+
+	scale = 1
 }
