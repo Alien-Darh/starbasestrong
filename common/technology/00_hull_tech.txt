@@ -36,6 +36,7 @@ tech_defense_platform_hull_1 = {
 
 	modifier = {
 		shipsize_military_station_small_hull_add = 1000
+		ship_military_station_small_cost_mult = -0.2
 	}
 }
 
@@ -47,6 +48,7 @@ tech_defense_platform_hull_2 = {
 	prerequisites = { "tech_starbase_4" "tech_defense_platform_hull_1" }
 	is_rare = yes
 	weight = @tier3weight3
+
 	
 	weight_modifier = {
 		factor = 0.50
@@ -72,19 +74,19 @@ tech_defense_platform_hull_2 = {
 	}
 		
 	modifier = {
-		shipsize_military_station_small_hull_add = 2000
-		shipsize_military_station_medium_hull_add = 4000
+		shipclass_military_station_hull_mult = 0.25
+		ship_military_station_madium_cost_mult = -0.25
 	}	
 }
 
 tech_defense_platform_hull_3 = {
-	cost = @tier4cost1
+	cost = @tier4cost3
 	area = engineering
 	tier = 4
 	category = { voidcraft }		
-	prerequisites = { "tech_starbase_citadel_upgrade" "tech_defense_platform_hull_2" }
+	prerequisites = { "tech_starbase_citadel" "tech_defense_platform_hull_2" }
 	is_rare = yes
-	weight = @tier4weight2
+	weight = @tier4weight3
 	
 	weight_modifier = {
 		factor = 0.50
@@ -110,7 +112,7 @@ tech_defense_platform_hull_3 = {
 	}
 		
 	modifier = {
-		shipsize_military_station_small_hull_add = 3000
-		shipsize_military_station_medium_hull_add = 6000
+		shipclass_military_station_hull_mult = 0.25
+		shipsize_military_station_medium_build_speed_mult = 0.25
 	}	
 }

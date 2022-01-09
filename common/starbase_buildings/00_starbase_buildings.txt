@@ -1093,7 +1093,7 @@ defense_grid = {
 	}
 
 	station_modifier = {
-		starbase_defense_platform_capacity_add = 11
+		starbase_defense_platform_capacity_add = 8
 		shipclass_military_station_build_speed_mult = 0.25
 	}
 

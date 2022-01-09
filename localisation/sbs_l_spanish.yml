@@ -82,7 +82,7 @@
  
  TECH_UNLOCK_CITADEL_UPGRADE_TITLE:0 "§SDesbloquea Tecnología:§! Mejora de Ciudadela"
  TECH_UNLOCK_CITADEL_UPGRADE_DESC:0 "Los avances tecnológicos de nuestro imperio son de temer, con las nuevas mejoras de nuestra Base Estelar será un cerrojo imponente y se agregan nuevas secciones a Acorazados y Titanes"
-
+ 
  aura_starbase_crisis:0 "Aura Ofensiva - Crisis"
  aura_starbase_fallen:0 "Aura Ofensiva - Despertados"
  aura_starbase_marauders:0 "Aura Ofensiva - Fortaleza"
@@ -220,9 +220,3 @@
  aura_starbase_ftl_inhibitor_II:0 "Aura ofensiva - Inhibidor de contraataque"
  mod_damage_vs_country_type_default_mult:0 "Daño a imperios hostiles comunes"
  mod_damage_vs_country_type_adversary_mult:0 "Daño a imperios hostiles declarados"
- 
- tech_station_large:0 "Fortaleza"
- tech_station_large_desc:0 "Una gigantesca estructura acorazada de defensa capas de soportar el mas intenso ataque naval"
- 
- TECH_UNLOCK_STATION_LARGE_TITLE:0 "Estacion Ultra Defensa"
- TECH_UNLOCK_STATION_LARGE_DESC:0 "Una poderosa estación de defensa y ataque es añadida a la base estelar... capaz e intimidar a cualquier fuerza de ataque en el sistema."
