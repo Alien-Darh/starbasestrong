@@ -12,7 +12,7 @@ starbase_outpost = {
 	modifier = {
 		ship_evasion_mult = -1
 		ship_armor_add = 1000
-		starbase_defense_platform_capacity_add = 1
+		starbase_defense_platform_capacity_add = 2
 		ship_sensor_range_add = 1
 	}
 	ship_modifier = {
@@ -83,7 +83,7 @@ starbase_starport = {
 		ship_armor_add = 2000
 		starbase_module_capacity_add = 2
 		starbase_building_capacity_add = 1
-		starbase_defense_platform_capacity_add = 3
+		starbase_defense_platform_capacity_add = 4
 		#trade system
 		starbase_trade_collection_range_add = 1
 		starbase_trade_protection_range_add = 1
@@ -215,7 +215,7 @@ starbase_starfortress = {
 		ship_armor_add = 10000
 		starbase_module_capacity_add = 6
 		starbase_building_capacity_add = 4
-		starbase_defense_platform_capacity_add = 9
+		starbase_defense_platform_capacity_add = 10
 		#trade system
 		starbase_trade_collection_range_add = 1
 		starbase_trade_protection_range_add = 1
