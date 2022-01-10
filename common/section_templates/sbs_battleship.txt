@@ -10,7 +10,7 @@ ship_section_template = {
 	entity = "battleship_bow_L1M1S2_entity"
 	icon = "GFX_ship_part_core_bow"
 	icon_frame = 1
-	
+
 	component_slot = {
 		name = "LARGE_GUN_01"
 		template = "large_turret"
@@ -21,19 +21,19 @@ ship_section_template = {
 		template = "medium_turret"
 		locatorname = "medium_gun_01"
 	}
-	
+
 	component_slot = {
 		name = "SMALL_GUN_01"
 		template = "small_turret"
 		locatorname = "small_gun_01"
 	}
-	
+
 	component_slot = {
 		name = "SMALL_GUN_02"
 		template = "small_turret"
 		locatorname = "small_gun_02"
 	}
-	
+
 	large_utility_slots = 3
 
 	resources = {
@@ -57,7 +57,7 @@ ship_section_template = {
 		template = "large_turret"
 		locatorname = "large_gun_01"
 	}
-	
+
 	component_slot = {
 		name = "LARGE_GUN_02"
 		template = "large_turret"
@@ -65,7 +65,7 @@ ship_section_template = {
 	}
 
 	large_utility_slots = 3
-	
+
 	resources = {
 		category = ship_sections
 		cost = {
@@ -81,7 +81,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "battleship_bow_M1S2SHB_entity"
 	icon = "GFX_ship_part_core_bow"
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 10.0
@@ -90,21 +90,21 @@ ship_section_template = {
 		modifier = {
 			factor = 0.1
 			NOT = { is_preferred_weapons = weapon_type_strike_craft }
-		}		
+		}
 	}
-	
+
 	component_slot = {
 		name = "MEDIUM_GUN_01"
 		template = "medium_turret"
 		locatorname = "medium_gun_01"
 	}
-	
+
 	component_slot = {
 		name = "SMALL_GUN_01"
 		template = "point_defence_turret"
 		locatorname = "small_gun_01"
 	}
-	
+
 	component_slot = {
 		name = "SMALL_GUN_02"
 		template = "point_defence_turret"
@@ -118,7 +118,7 @@ ship_section_template = {
 	}
 
 	large_utility_slots = 3
-	
+
 	resources = {
 		category = ship_sections
 		cost = {
@@ -134,9 +134,9 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "battleship_bow_XL1_entity"
 	icon = "GFX_ship_part_core_bow"
-	
+
 	prerequisites = { tech_energy_lance_1 tech_energy_lance_2 tech_arc_emitter_1 tech_arc_emitter_2 tech_mass_accelerator_1 tech_mass_accelerator_2 }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 10.0
@@ -145,9 +145,9 @@ ship_section_template = {
 		modifier = {
 			factor = 0.1
 			is_preferred_weapons = weapon_type_explosive
-		}		
+		}
 	}
-	
+
 	component_slot = {
 		name = "EXTRA_LARGE_01"
 		template = "invisible_extra_large_fixed"
@@ -155,7 +155,7 @@ ship_section_template = {
 	}
 
 	aux_utility_slots = 3
-	
+
 	resources = {
 		category = ship_sections
 		cost = {
@@ -171,8 +171,8 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "battleship_bow_M3S2_entity"
 	icon = "GFX_ship_part_core_bow"
-	
-	
+
+
 	component_slot = {
 		name = "MEDIUM_GUN_01"
 		template = "medium_turret"
@@ -184,27 +184,27 @@ ship_section_template = {
 		template = "medium_turret"
 		locatorname = "medium_gun_02"
 	}
-	
+
 	component_slot = {
 		name = "MEDIUM_GUN_03"
 		template = "medium_turret"
 		locatorname = "medium_gun_03"
 	}
-	
+
 	component_slot = {
 		name = "SMALL_GUN_01"
 		template = "small_turret"
 		locatorname = "small_gun_01"
 	}
-	
+
 	component_slot = {
 		name = "SMALL_GUN_02"
 		template = "small_turret"
 		locatorname = "small_gun_02"
 	}
-	
+
 	large_utility_slots = 3
-	
+
 	resources = {
 		category = ship_sections
 		cost = {
@@ -231,21 +231,21 @@ ship_section_template = {
 		template = "large_turret"
 		locatorname = "large_gun_02"
 	}
-	
+
 	component_slot = {
 		name = "MEDIUM_GUN_01"
 		template = "medium_turret"
 		locatorname = "medium_gun_01"
 	}
-	
+
 	component_slot = {
 		name = "MEDIUM_GUN_02"
 		template = "medium_turret"
 		locatorname = "medium_gun_02"
 	}
-	
+
 	large_utility_slots = 3
-	
+
 	resources = {
 		category = ship_sections
 		cost = {
@@ -267,21 +267,21 @@ ship_section_template = {
 		template = "large_turret"
 		locatorname = "large_gun_01"
 	}
-	
+
 	component_slot = {
 		name = "LARGE_GUN_02"
 		template = "large_turret"
 		locatorname = "large_gun_02"
 	}
-	
+
 	component_slot = {
 		name = "LARGE_GUN_03"
 		template = "large_turret"
 		locatorname = "large_gun_03"
 	}
-	
+
 	large_utility_slots = 3
-	
+
 	resources = {
 		category = ship_sections
 		cost = {
@@ -297,7 +297,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "battleship_mid_M4SHB_entity"
 	icon = "GFX_ship_part_core_mid"
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 10.0
@@ -306,42 +306,42 @@ ship_section_template = {
 		modifier = {
 			factor = 0.1
 			NOT = { is_preferred_weapons = weapon_type_strike_craft }
-		}		
+		}
 	}
-	
+
 	component_slot = {
 		name = "MEDIUM_GUN_01"
 		template = "medium_turret"
 		locatorname = "medium_gun_01"
 	}
-	
+
 	component_slot = {
 		name = "MEDIUM_GUN_02"
 		template = "medium_turret"
 		locatorname = "medium_gun_02"
 	}
-	
+
 	component_slot = {
 		name = "MEDIUM_GUN_03"
 		template = "medium_turret"
 		locatorname = "medium_gun_03"
 	}
-	
+
 	component_slot = {
 		name = "MEDIUM_GUN_04"
 		template = "medium_turret"
 		locatorname = "medium_gun_04"
 	}
-	
+
 	component_slot = {
 		name = "STRIKE_CRAFT_01"
 		template = "large_strike_craft"
 		rotation = 90
 		locatorname = "strike_craft_locator_01"
-	}	
-	
+	}
+
 	large_utility_slots = 3
-	
+
 	resources = {
 		category = ship_sections
 		cost = {
@@ -363,19 +363,19 @@ ship_section_template = {
 		template = "small_turret"
 		locatorname = "small_gun_01"
 	}
-	
+
 	component_slot = {
 		name = "SMALL_GUN_02"
 		template = "small_turret"
 		locatorname = "small_gun_02"
 	}
-	
+
 	component_slot = {
 		name = "SMALL_GUN_03"
 		template = "point_defence_turret"
 		locatorname = "small_gun_03"
 	}
-	
+
 		component_slot = {
 		name = "SMALL_GUN_04"
 		template = "point_defence_turret"
@@ -386,16 +386,16 @@ ship_section_template = {
 		template = "large_strike_craft"
 		rotation = 90
 		locatorname = "strike_craft_locator_01"
-	}	
+	}
 	component_slot = {
 		name = "STRIKE_CRAFT_02"
 		template = "large_strike_craft"
 		rotation = -90
 		locatorname = "strike_craft_locator_02"
-	}	
+	}
 
 	large_utility_slots = 3
-	
+
 	resources = {
 		category = ship_sections
 		cost = {
@@ -419,21 +419,21 @@ ship_section_template = {
 		template = "medium_turret"
 		locatorname = "medium_gun_01"
 	}
-	
+
 	component_slot = {
 		name = "SMALL_GUN_01"
 		template = "small_turret"
 		locatorname = "small_gun_01"
 	}
-	
+
 	component_slot = {
 		name = "SMALL_GUN_02"
 		template = "small_turret"
 		locatorname = "small_gun_02"
 	}
-	
+
 	aux_utility_slots = 2
-	
+
 	resources = {
 		category = ship_sections
 		cost = {
@@ -449,15 +449,15 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "battleship_stern_L1_entity"
 	icon = "GFX_ship_part_core_stern"
-	
+
 	component_slot = {
 		name = "LARGE_GUN_01"
 		template = "large_turret"
 		locatorname = "large_gun_01"
 	}
-	
+
 	aux_utility_slots = 2
-	
+
 	resources = {
 		category = ship_sections
 		cost = {
@@ -473,21 +473,21 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "battleship_stern_M2_entity"
 	icon = "GFX_ship_part_core_stern"
-	
+
 	component_slot = {
 		name = "MEDIUM_GUN_01"
 		template = "medium_turret"
 		locatorname = "medium_gun_01"
-				
+
 	}
 	component_slot = {
 		name = "MEDIUM_GUN_02"
 		template = "medium_turret"
 		locatorname = "medium_gun_02"
 	}
-	
+
 	aux_utility_slots = 2
-	
+
 	resources = {
 		category = ship_sections
 		cost = {
@@ -503,7 +503,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "battleship_stern_S4_entity"
 	icon = "GFX_ship_part_core_stern"
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 10.0
@@ -512,35 +512,35 @@ ship_section_template = {
 		modifier = {
 			factor = 0.1
 			NOT = { is_preferred_weapons = weapon_type_strike_craft }
-		}		
+		}
 	}
-	
+
 	component_slot = {
 		name = "SMALL_GUN_01"
 		template = "point_defence_turret"
 		locatorname = "small_gun_01"
 	}
-	
+
 	component_slot = {
 		name = "SMALL_GUN_01"
 		template = "point_defence_turret"
-		locatorname = "small_gun_01"
+		locatorname = "small_gun_02"
 	}
-	
+
 	component_slot = {
 		name = "SMALL_GUN_02"
 		template = "point_defence_turret"
-		locatorname = "small_gun_02"
+		locatorname = "small_gun_03"
 	}
 	component_slot = {
 		name = "STRIKE_CRAFT_01"
 		template = "large_strike_craft"
 		rotation = 90
-		locatorname = "strike_craft_locator_01"
+		locatorname = "small_gun_04"
 	}
-	
+
 	aux_utility_slots = 2
-	
+
 	resources = {
 		category = ship_sections
 		cost = {
@@ -558,9 +558,9 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "battleship_bow_XL1_entity"
 	icon = "GFX_ship_part_core_bow"
-	
+
 	prerequisites = { tech_starbase_citadel_upgrade }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 10.0
@@ -569,9 +569,9 @@ ship_section_template = {
 		modifier = {
 			factor = 0.1
 			is_preferred_weapons = weapon_type_explosive
-		}		
+		}
 	}
-	
+
 	component_slot = {
 		name = "EXTRA_LARGE_01"
 		template = "invisible_extra_large_fixed"
@@ -580,7 +580,7 @@ ship_section_template = {
 
 	large_utility_slots = 3
 	aux_utility_slots = 3
-	
+
 	resources = {
 		category = ship_sections
 		cost = {
@@ -598,8 +598,8 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_bow"
 	icon_frame = 1
 
-	prerequisites = { tech_starbase_citadel_upgrade }	
-	
+	prerequisites = { tech_starbase_citadel_upgrade }
+
 	component_slot = {
 		name = "LARGE_GUN_01"
 		template = "large_turret"
@@ -610,19 +610,19 @@ ship_section_template = {
 		template = "medium_turret"
 		locatorname = "medium_gun_01"
 	}
-	
+
 	component_slot = {
 		name = "SMALL_GUN_01"
 		template = "small_turret"
 		locatorname = "small_gun_01"
 	}
-	
+
 	component_slot = {
 		name = "SMALL_GUN_02"
 		template = "small_turret"
 		locatorname = "small_gun_02"
 	}
-	
+
 	large_utility_slots = 3
 	aux_utility_slots = 3
 
@@ -643,13 +643,13 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_bow"
 
 	prerequisites = { tech_starbase_citadel_upgrade }
-	
+
 	component_slot = {
 		name = "LARGE_GUN_01"
 		template = "large_turret"
 		locatorname = "large_gun_01"
 	}
-	
+
 	component_slot = {
 		name = "LARGE_GUN_02"
 		template = "large_turret"
@@ -658,7 +658,7 @@ ship_section_template = {
 
 	large_utility_slots = 3
 	aux_utility_slots = 3
-	
+
 	resources = {
 		category = ship_sections
 		cost = {
@@ -676,7 +676,7 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_bow"
 
 	prerequisites = { tech_starbase_citadel_upgrade }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 10.0
@@ -685,21 +685,21 @@ ship_section_template = {
 		modifier = {
 			factor = 0.1
 			NOT = { is_preferred_weapons = weapon_type_strike_craft }
-		}		
+		}
 	}
-	
+
 	component_slot = {
 		name = "MEDIUM_GUN_01"
 		template = "medium_turret"
 		locatorname = "medium_gun_01"
 	}
-	
+
 	component_slot = {
 		name = "SMALL_GUN_01"
 		template = "point_defence_turret"
 		locatorname = "small_gun_01"
 	}
-	
+
 	component_slot = {
 		name = "SMALL_GUN_02"
 		template = "point_defence_turret"
@@ -714,7 +714,7 @@ ship_section_template = {
 
 	large_utility_slots = 3
 	aux_utility_slots = 3
-	
+
 	resources = {
 		category = ship_sections
 		cost = {
@@ -730,9 +730,9 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "battleship_bow_M3S2_entity"
 	icon = "GFX_ship_part_core_bow"
-	
+
 	prerequisites = { tech_starbase_citadel_upgrade }
-	
+
 	component_slot = {
 		name = "MEDIUM_GUN_01"
 		template = "medium_turret"
@@ -744,28 +744,28 @@ ship_section_template = {
 		template = "medium_turret"
 		locatorname = "medium_gun_02"
 	}
-	
+
 	component_slot = {
 		name = "MEDIUM_GUN_03"
 		template = "medium_turret"
 		locatorname = "medium_gun_03"
 	}
-	
+
 	component_slot = {
 		name = "SMALL_GUN_01"
 		template = "small_turret"
 		locatorname = "small_gun_01"
 	}
-	
+
 	component_slot = {
 		name = "SMALL_GUN_02"
 		template = "small_turret"
 		locatorname = "small_gun_02"
 	}
-	
+
 	large_utility_slots = 3
 	aux_utility_slots = 3
-	
+
 	resources = {
 		category = ship_sections
 		cost = {
@@ -783,7 +783,7 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_mid"
 
 	prerequisites = { tech_starbase_citadel_upgrade }
-	
+
 	component_slot = {
 		name = "LARGE_GUN_01"
 		template = "large_turret"
@@ -794,22 +794,22 @@ ship_section_template = {
 		template = "large_turret"
 		locatorname = "large_gun_02"
 	}
-	
+
 	component_slot = {
 		name = "MEDIUM_GUN_01"
 		template = "medium_turret"
 		locatorname = "medium_gun_01"
 	}
-	
+
 	component_slot = {
 		name = "MEDIUM_GUN_02"
 		template = "medium_turret"
 		locatorname = "medium_gun_02"
 	}
-	
+
 	large_utility_slots = 3
 	aux_utility_slots = 3
-	
+
 	resources = {
 		category = ship_sections
 		cost = {
@@ -827,28 +827,28 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_mid"
 
 	prerequisites = { tech_starbase_citadel_upgrade }
-	
+
 	component_slot = {
 		name = "LARGE_GUN_01"
 		template = "large_turret"
 		locatorname = "large_gun_01"
 	}
-	
+
 	component_slot = {
 		name = "LARGE_GUN_02"
 		template = "large_turret"
 		locatorname = "large_gun_02"
 	}
-	
+
 	component_slot = {
 		name = "LARGE_GUN_03"
 		template = "large_turret"
 		locatorname = "large_gun_03"
 	}
-	
+
 	large_utility_slots = 3
 	aux_utility_slots = 3
-	
+
 	resources = {
 		category = ship_sections
 		cost = {
@@ -864,9 +864,9 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "battleship_mid_M4SHB_entity"
 	icon = "GFX_ship_part_core_mid"
-	
+
 	prerequisites = { tech_starbase_citadel_upgrade }
-	
+
 	ai_weight = {
 		modifier = {
 			factor = 10.0
@@ -875,43 +875,43 @@ ship_section_template = {
 		modifier = {
 			factor = 0.1
 			NOT = { is_preferred_weapons = weapon_type_strike_craft }
-		}		
+		}
 	}
-	
+
 	component_slot = {
 		name = "MEDIUM_GUN_01"
 		template = "medium_turret"
 		locatorname = "medium_gun_01"
 	}
-	
+
 	component_slot = {
 		name = "MEDIUM_GUN_02"
 		template = "medium_turret"
 		locatorname = "medium_gun_02"
 	}
-	
+
 	component_slot = {
 		name = "MEDIUM_GUN_03"
 		template = "medium_turret"
 		locatorname = "medium_gun_03"
 	}
-	
+
 	component_slot = {
 		name = "MEDIUM_GUN_04"
 		template = "medium_turret"
 		locatorname = "medium_gun_04"
 	}
-	
+
 	component_slot = {
 		name = "STRIKE_CRAFT_01"
 		template = "large_strike_craft"
 		rotation = 90
 		locatorname = "strike_craft_locator_01"
-	}	
-	
+	}
+
 	large_utility_slots = 3
 	aux_utility_slots = 3
-	
+
 	resources = {
 		category = ship_sections
 		cost = {
@@ -927,7 +927,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "battleship_mid_S4LHB_entity"
 	icon = "GFX_ship_part_core_mid"
-	
+
 	prerequisites = { tech_starbase_citadel_upgrade }
 
 	component_slot = {
@@ -935,19 +935,19 @@ ship_section_template = {
 		template = "small_turret"
 		locatorname = "small_gun_01"
 	}
-	
+
 	component_slot = {
 		name = "SMALL_GUN_02"
 		template = "small_turret"
 		locatorname = "small_gun_02"
 	}
-	
+
 	component_slot = {
 		name = "SMALL_GUN_03"
 		template = "point_defence_turret"
 		locatorname = "small_gun_03"
 	}
-	
+
 	component_slot = {
 		name = "SMALL_GUN_04"
 		template = "point_defence_turret"
@@ -958,17 +958,17 @@ ship_section_template = {
 		template = "large_strike_craft"
 		rotation = 90
 		locatorname = "strike_craft_locator_01"
-	}	
+	}
 	component_slot = {
 		name = "STRIKE_CRAFT_02"
 		template = "large_strike_craft"
 		rotation = -90
 		locatorname = "strike_craft_locator_02"
-	}	
+	}
 
 	large_utility_slots = 3
 	aux_utility_slots = 3
-	
+
 	resources = {
 		category = ship_sections
 		cost = {
@@ -986,18 +986,18 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "battleship_stern_L1_entity"
 	icon = "GFX_ship_part_core_stern"
-	
+
 	prerequisites = { tech_starbase_citadel_upgrade }
-	
+
 	component_slot = {
 		name = "LARGE_GUN_01"
 		template = "large_turret"
 		locatorname = "large_gun_01"
 	}
-	
+
 	large_utility_slots = 2
 	aux_utility_slots = 4
-	
+
 	resources = {
 		category = ship_sections
 		cost = {
@@ -1013,24 +1013,24 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "battleship_stern_M2_entity"
 	icon = "GFX_ship_part_core_stern"
-	
+
 	prerequisites = { tech_starbase_citadel_upgrade }
-	
+
 	component_slot = {
 		name = "MEDIUM_GUN_01"
 		template = "medium_turret"
 		locatorname = "medium_gun_01"
-				
+
 	}
 	component_slot = {
 		name = "MEDIUM_GUN_02"
 		template = "medium_turret"
 		locatorname = "medium_gun_02"
 	}
-	
+
 	large_utility_slots = 2
 	aux_utility_slots = 4
-	
+
 	resources = {
 		category = ship_sections
 		cost = {
@@ -1046,30 +1046,30 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "battleship_stern_M1S2_entity"
 	icon = "GFX_ship_part_core_stern"
-	
-	prerequisites = { tech_starbase_citadel_upgrade }	
+
+	prerequisites = { tech_starbase_citadel_upgrade }
 
 	component_slot = {
 		name = "MEDIUM_GUN_01"
 		template = "medium_turret"
 		locatorname = "medium_gun_01"
 	}
-	
+
 	component_slot = {
 		name = "SMALL_GUN_01"
 		template = "small_turret"
 		locatorname = "small_gun_01"
 	}
-	
+
 	component_slot = {
 		name = "SMALL_GUN_02"
 		template = "small_turret"
 		locatorname = "small_gun_02"
 	}
-	
+
 	large_utility_slots = 2
 	aux_utility_slots = 4
-	
+
 	resources = {
 		category = ship_sections
 		cost = {
@@ -1085,9 +1085,9 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "battleship_stern_S4_entity"
 	icon = "GFX_ship_part_core_stern"
-	
-	prerequisites = { tech_starbase_citadel_upgrade }	
-	
+
+	prerequisites = { tech_starbase_citadel_upgrade }
+
 	ai_weight = {
 		modifier = {
 			factor = 10.0
@@ -1096,36 +1096,36 @@ ship_section_template = {
 		modifier = {
 			factor = 0.1
 			NOT = { is_preferred_weapons = weapon_type_strike_craft }
-		}		
+		}
 	}
-	
+
 	component_slot = {
 		name = "SMALL_GUN_01"
 		template = "point_defence_turret"
 		locatorname = "small_gun_01"
 	}
-	
-	component_slot = {
-		name = "SMALL_GUN_01"
-		template = "point_defence_turret"
-		locatorname = "small_gun_01"
-	}
-	
+
 	component_slot = {
 		name = "SMALL_GUN_02"
 		template = "point_defence_turret"
 		locatorname = "small_gun_02"
 	}
+
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "point_defence_turret"
+		locatorname = "small_gun_03"
+	}
 	component_slot = {
 		name = "STRIKE_CRAFT_01"
 		template = "large_strike_craft"
 		rotation = 90
-		locatorname = "strike_craft_locator_01"
+		locatorname = "small_gun_04"
 	}
-	
+
 	large_utility_slots = 2
 	aux_utility_slots = 4
-	
+
 	resources = {
 		category = ship_sections
 		cost = {

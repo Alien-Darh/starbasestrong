@@ -35,7 +35,8 @@ tech_defense_platform_hull_1 = {
 	}
 
 	modifier = {
-		shipsize_military_station_small_hull_add = 1000
+		shipclass_military_station_hull_mult = 0.25
+		ship_military_station_small_cost_mult = -0.2
 	}
 }
 
@@ -43,11 +44,12 @@ tech_defense_platform_hull_2 = {
 	cost = @tier3cost3
 	area = engineering
 	tier = 3
-	category = { voidcraft }		
+	category = { voidcraft }
 	prerequisites = { "tech_starbase_4" "tech_defense_platform_hull_1" }
 	is_rare = yes
 	weight = @tier3weight3
-	
+
+
 	weight_modifier = {
 		factor = 0.50
 		modifier = {
@@ -61,31 +63,31 @@ tech_defense_platform_hull_2 = {
 				has_federation_perk = rare_tech_boost
 				any_member = { has_technology = tech_defense_platform_hull_2 }
 			}
-		}		
+		}
 		modifier = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
 				has_trait = "leader_trait_expertise_voidcraft"
 			}
-		}	
+		}
 	}
-		
+
 	modifier = {
-		shipsize_military_station_small_hull_add = 2000
-		shipsize_military_station_medium_hull_add = 4000
-	}	
+		shipclass_military_station_hull_mult = 0.25
+		ship_military_station_medium_cost_mult = -0.25
+	}
 }
 
 tech_defense_platform_hull_3 = {
-	cost = @tier4cost1
+	cost = @tier4cost3
 	area = engineering
 	tier = 4
-	category = { voidcraft }		
+	category = { voidcraft }
 	prerequisites = { "tech_starbase_citadel_upgrade" "tech_defense_platform_hull_2" }
 	is_rare = yes
-	weight = @tier4weight2
-	
+	weight = @tier4weight3
+
 	weight_modifier = {
 		factor = 0.50
 		modifier = {
@@ -99,18 +101,18 @@ tech_defense_platform_hull_3 = {
 				has_federation_perk = rare_tech_boost
 				any_member = { has_technology = tech_defense_platform_hull_3 }
 			}
-		}		
+		}
 		modifier = {
 			factor = 1.25
 			research_leader = {
 				area = engineering
 				has_trait = "leader_trait_expertise_voidcraft"
 			}
-		}	
+		}
 	}
-		
+
 	modifier = {
-		shipsize_military_station_small_hull_add = 3000
-		shipsize_military_station_medium_hull_add = 6000
-	}	
+		shipclass_military_station_hull_mult = 0.25
+		shipsize_military_station_medium_build_speed_mult = 0.25
+	}
 }
