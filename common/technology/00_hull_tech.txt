@@ -35,7 +35,7 @@ tech_defense_platform_hull_1 = {
 	}
 
 	modifier = {
-		shipsize_military_station_small_hull_add = 1000
+		shipclass_military_station_hull_mult = 0.25
 		ship_military_station_small_cost_mult = -0.2
 	}
 }
