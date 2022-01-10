@@ -2392,7 +2392,7 @@ refinery_alloys = {
 				has_starbase_module = hangar_bay
 				has_starbase_module = gun_battery_upgrade
 			}
-		}		
+		}
 	}
 
 	resources = {
@@ -2550,7 +2550,7 @@ job_module = {
 			influence = 0.25
 		}
 	}
-##	
+##
 	triggered_system_modifier = {
 		potential = {
 			hidden_trigger = { exists = this }
@@ -2561,7 +2561,7 @@ job_module = {
 		}
 		job_artisan_add = 1
 	}
-	
+
 	triggered_system_modifier = {
 		potential = {
 			hidden_trigger = { exists = this }
@@ -2576,15 +2576,15 @@ job_module = {
 		}
 		job_artisan_add = 2
 	}
-##	
+##
 	triggered_system_modifier = {
 		potential = {
 			is_scope_type = starbase
 			has_starbase_building = refinery_alloys
 			}
-		job_foundry_add = 1	
+		job_foundry_add = 1
 	}
-##	
+##
 	triggered_system_modifier = {
 		potential = {
 			hidden_trigger = { exists = this }
@@ -2610,7 +2610,7 @@ job_module = {
 		}
 		job_technician_add = 2
 	}
-##	
+##
 	triggered_system_modifier = {
 		potential = {
 			hidden_trigger = { exists = this }
@@ -2636,7 +2636,7 @@ job_module = {
 		}
 		job_miner_add = 2
 	}
-##	
+##
 	triggered_system_modifier = {
 		potential = {
 			hidden_trigger = { exists = this }
@@ -2662,7 +2662,7 @@ job_module = {
 		}
 		job_farmer_add = 2
 	}
-##	
+##
 	triggered_system_modifier = {
 		potential = {
 			hidden_trigger = { exists = this }
@@ -2696,7 +2696,7 @@ job_module = {
 				type = management_office
 				count >= 1
 			}
-		}	
+		}
 		job_bureaucrat_add = 1
 	}
 
@@ -2711,10 +2711,10 @@ job_module = {
 			owner = {
 				has_technology = tech_galactic_administration
 			}
-		}	
+		}
 		job_bureaucrat_add = 2
 	}
-##	
+##
 	triggered_system_modifier = {
 		potential = {
 			is_scope_type = starbase
@@ -2723,7 +2723,7 @@ job_module = {
 		job_researcher_add = 1
 	}
 
-##	
+##
 	triggered_system_modifier = {
 		potential = {
 			hidden_trigger = { exists = this }
@@ -2731,7 +2731,7 @@ job_module = {
 				type = social_services
 				count >= 1
 			}
-		}	
+		}
 		job_enforcer_add = 1
 	}
 
@@ -2746,7 +2746,7 @@ job_module = {
 			owner = {
 				has_technology = tech_galactic_administration
 			}
-		}	
+		}
 		job_enforcer_add = 2
 	}
 ##
@@ -2757,7 +2757,7 @@ job_module = {
 				type = unity_module
 				count >= 1
 			}
-		}	
+		}
 		job_executive_add = 1
 	}
 
@@ -2772,7 +2772,7 @@ job_module = {
 			owner = {
 				has_technology = tech_galactic_administration
 			}
-		}	
+		}
 		job_executive_add = 2
 	}
 ##
@@ -2783,7 +2783,7 @@ job_module = {
 			}
 		job_manager_add = 1
 	}
-##	
+##
 	triggered_system_modifier = {
 		potential = {
 			hidden_trigger = { exists = this }
@@ -2791,7 +2791,7 @@ job_module = {
 				type = anchorage
 				count >= 1
 			}
-		}	
+		}
 		job_soldier_add = 1
 	}
 
@@ -2806,7 +2806,7 @@ job_module = {
 			owner = {
 				has_technology = tech_galactic_administration
 			}
-		}	
+		}
 		job_soldier_add = 2
 	}
 ##
@@ -2822,12 +2822,12 @@ job_module = {
 					is_owned_by = from
 				}
 			}
-		}		
+		}
 	}
 
 	show_in_tech = "tech_colonial_centralization"
 	show_in_tech = "tech_galactic_administration"
-	
+
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
 	ai_weight = { weight = 100 }
@@ -2838,7 +2838,7 @@ job_module = {
 job_drone_module = {
 	icon = "GFX_starbase_job_module"
 	construction_days = 360
-	
+
 	potential = {
 		exists = owner
 		owner = {
@@ -2846,12 +2846,12 @@ job_drone_module = {
 			has_technology = "tech_colonial_centralization"
 		}
 	}
-	
+
 	resources = {
 		category = starbase_modules
 		cost = {
 			influence = 10
-		}	
+		}
 		upkeep = {
 			energy = 10
 			influence = 0.25
@@ -2883,15 +2883,15 @@ job_drone_module = {
 		}
 		job_artisan_drone_add = 2
 	}
-##	
+##
 	triggered_system_modifier = {
 		potential = {
 			is_scope_type = starbase
 			has_starbase_building = refinery_alloys
 			}
 		job_alloy_drone_add = 1
-	}	
-##	
+	}
+##
 	triggered_system_modifier = {
 		potential = {
 			hidden_trigger = { exists = this }
@@ -2902,7 +2902,7 @@ job_drone_module = {
 		}
 		job_technician_drone_add = 1
 	}
-	
+
 	triggered_system_modifier = {
 		potential = {
 			hidden_trigger = { exists = this }
@@ -2928,7 +2928,7 @@ job_drone_module = {
 		}
 		job_mining_drone_add = 1
 	}
-	
+
 	triggered_system_modifier = {
 		potential = {
 			hidden_trigger = { exists = this }
@@ -2943,7 +2943,7 @@ job_drone_module = {
 		}
 		job_mining_drone_add = 2
 	}
-##	
+##
 	triggered_system_modifier = {
 		potential = {
 			hidden_trigger = { exists = this }
@@ -2954,7 +2954,7 @@ job_drone_module = {
 		}
 		job_agri_drone_add = 1
 	}
-	
+
 	triggered_system_modifier = {
 		potential = {
 			hidden_trigger = { exists = this }
@@ -2977,10 +2977,10 @@ job_drone_module = {
 				type = management_office
 				count >= 1
 			}
-		}	
+		}
 		job_coordinator_add = 1
 	}
-	
+
 	triggered_system_modifier = {
 		potential = {
 			hidden_trigger = { exists = this }
@@ -2992,10 +2992,10 @@ job_drone_module = {
 			owner = {
 				has_technology = tech_galactic_administration
 			}
-		}	
+		}
 		job_coordinator_add = 2
 	}
-##	
+##
 	triggered_system_modifier = {
 		potential = {
 			is_scope_type = starbase
@@ -3007,7 +3007,7 @@ job_drone_module = {
 			job_brain_drone_add = 1
 		}
 	}
-##	
+##
 	triggered_system_modifier = {
 		potential = {
 			hidden_trigger = { exists = this }
@@ -3015,10 +3015,10 @@ job_drone_module = {
 				type = social_services
 				count >= 1
 			}
-		}	
+		}
 		job_patrol_drone_add = 1
 	}
-	
+
 	triggered_system_modifier = {
 		potential = {
 			hidden_trigger = { exists = this }
@@ -3030,7 +3030,7 @@ job_drone_module = {
 			owner = {
 				has_technology = tech_galactic_administration
 			}
-		}	
+		}
 		job_patrol_drone_add = 2
 	}
 ##
@@ -3041,10 +3041,10 @@ job_drone_module = {
 				type = unity_module
 				count >= 1
 			}
-		}	
+		}
 		job_roboticist_add = 2
 	}
-	
+
 	triggered_system_modifier = {
 		potential = {
 			hidden_trigger = { exists = this }
@@ -3056,7 +3056,7 @@ job_drone_module = {
 			owner = {
 				has_technology = tech_galactic_administration
 			}
-		}	
+		}
 		job_roboticist_add = 2
 	}
 ##
@@ -3067,7 +3067,7 @@ job_drone_module = {
 			}
 		job_maintenance_drone_add = 1
 	}
-##	
+##
 	triggered_system_modifier = {
 		potential = {
 			hidden_trigger = { exists = this }
@@ -3076,7 +3076,7 @@ job_drone_module = {
 				count >= 1
 			}
 		}
-		job_warrior_drone_add = 1	
+		job_warrior_drone_add = 1
 	}
 
 	triggered_system_modifier = {
@@ -3093,7 +3093,7 @@ job_drone_module = {
 		}
 		job_warrior_drone_add = 2
 	}
-##	
+##
 	triggered_system_modifier = {
 		potential = {
 			is_scope_type = starbase
@@ -3106,29 +3106,29 @@ job_drone_module = {
 		potential = {
 			hidden_trigger = { exists = this }
 			exists = owner
-			owner = {			
+			owner = {
 				any_owned_megastructure = {
 					OR = {
 						is_megastructure_type = strategic_coordination_center_3
 						is_megastructure_type = strategic_coordination_center_restored
 					}
-				}	
+				}
 			}
 		}
 		job_maintenance_drone_add = 3
 	}
-##	
+##
 	triggered_system_modifier = {
 		potential = {
 			hidden_trigger = { exists = this }
 			exists = owner
-			owner = {			
+			owner = {
 				any_owned_megastructure = {
 					OR = {
 						is_megastructure_type = dyson_sphere_5
 						is_megastructure_type = dyson_sphere_restored
 					}
-				}	
+				}
 			}
 		}
 		job_technician_drone_add = 2
@@ -3138,110 +3138,110 @@ job_drone_module = {
 		potential = {
 			hidden_trigger = { exists = this }
 			exists = owner
-			owner = {			
+			owner = {
 				any_owned_megastructure = {
 					OR = {
 						is_megastructure_type = think_tank_4
 						is_megastructure_type = think_tank_restored
 					}
-				}	
+				}
 			}
 		}
 		job_brain_drone_add = 3
 	}
-##	
-	triggered_system_modifier = {
-		potential = {
-			hidden_trigger = { exists = this }
-			exists = owner
-			owner = {			
-				any_owned_megastructure = {
-					OR = {
-						is_megastructure_type = matter_decompressor_4
-						is_megastructure_type = matter_decompressor_restored
-					}
-				}	
-			}
-		}
-		job_mining_drone_add = 3
-	}	
 ##
 	triggered_system_modifier = {
 		potential = {
 			hidden_trigger = { exists = this }
 			exists = owner
-			owner = {			
+			owner = {
+				any_owned_megastructure = {
+					OR = {
+						is_megastructure_type = matter_decompressor_4
+						is_megastructure_type = matter_decompressor_restored
+					}
+				}
+			}
+		}
+		job_mining_drone_add = 3
+	}
+##
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			exists = owner
+			owner = {
 				any_owned_megastructure = {
 					OR = {
 						is_megastructure_type = mega_art_installation_4
 						is_megastructure_type = mega_art_installation_restored
 						is_megastructure_type = mega_art_installation_restored_2
 					}
-				}	
+				}
 			}
 		}
 		job_agri_drone_add = 3
-	}	
+	}
 ##
 	triggered_system_modifier = {
 		potential = {
 			hidden_trigger = { exists = this }
 			exists = owner
-			owner = {			
+			owner = {
 				any_owned_megastructure = {
 					OR = {
 						is_megastructure_type = interstellar_assembly_4
 						is_megastructure_type = interstellar_assembly_restored
 					}
-				}	
+				}
 			}
 		}
 		job_coordinator_add = 3
-	}	
+	}
 ##
 	triggered_system_modifier = {
 		potential = {
 			hidden_trigger = { exists = this }
 			exists = owner
-			owner = {			
+			owner = {
 				any_owned_megastructure = {
 					OR = {
 						is_megastructure_type = mega_shipyard_3
 						is_megastructure_type = mega_shipyard_restored
 					}
-				}	
+				}
 			}
 		}
 		job_warrior_drone_add = 3
-	}	
+	}
 ##
 	triggered_system_modifier = {
 		potential = {
 			hidden_trigger = { exists = this }
 			exists = owner
-			owner = {			
+			owner = {
 				any_owned_megastructure = {
 					OR = {
 						is_megastructure_type = spy_orb_4
 						is_megastructure_type = spy_orb_restored
 					}
-				}	
+				}
 			}
 		}
 		job_patrol_drone_add = 3
-	}	
+	}
 ##
 	triggered_system_modifier = {
 		potential = {
 			hidden_trigger = { exists = this }
 			exists = owner
-			owner = {			
+			owner = {
 				any_owned_megastructure = {
 					OR = {
 						is_megastructure_type = crisis_sphere_4
 						is_megastructure_type = crisis_sphere_ruined
 					}
-				}	
+				}
 			}
 		}
 		job_alloy_drone_add = 3
@@ -3259,12 +3259,12 @@ job_drone_module = {
 					is_owned_by = from
 				}
 			}
-		}		
+		}
 	}
 
 	show_in_tech = "tech_colonial_centralization"
 	show_in_tech = "tech_galactic_administration"
-	
+
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
 	ai_weight = { weight = 100 }
@@ -3275,23 +3275,23 @@ job_drone_module = {
 orbital_assembly = {
 	icon = "GFX_starbase_orbital_assembly"
 	construction_days = 720
-	
+
 	resources = {
 		category = starbase_buildings
-		cost = { 
+		cost = {
 			alloys = 50
 		}
 		upkeep = {
-			food = 10 
-			energy = 5 
+			food = 10
+			energy = 5
 		}
 	}
-	
-	potential = { 
+
+	potential = {
 		exists = owner
 		owner = {
 			has_technology = tech_cryostasis_1
-		} 
+		}
 	}
 
 	possible = {
@@ -3306,9 +3306,9 @@ orbital_assembly = {
 					is_owned_by = from
 				}
 			}
-		}		
-	}	
-	
+		}
+	}
+
 	triggered_system_modifier = {
 		potential = {
 			hidden_trigger = { exists = this }
@@ -3341,7 +3341,7 @@ orbital_assembly = {
 		}
 		planet_pop_assembly_add = 2
 	}
-	
+
 	triggered_system_modifier = {
 		potential = {
 			hidden_trigger = { exists = this }
@@ -3368,10 +3368,10 @@ orbital_assembly = {
 		pop_growth_speed = 0.02
 		planet_pop_assembly_add = 1
 	}
-	
-	show_in_tech = "tech_cryostasis_1" 
+
+	show_in_tech = "tech_cryostasis_1"
 	show_in_tech = "tech_cryostasis_2"
-	
+
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
 	ai_weight = { weight = 100 }
@@ -3380,14 +3380,14 @@ orbital_assembly = {
 system_fast = {
 	icon = "GFX_starbase_system_fast"
 	construction_days = 360
-	
+
 	potential = {
 		exists = owner
-		owner = { 
+		owner = {
 			has_technology = tech_sensors_3
 		}
 	}
-	
+
 	possible = {
 		custom_tooltip = {
 			fail_text = "requires_starfortress"
@@ -3400,27 +3400,13 @@ system_fast = {
 					is_star_class = sc_black_hole
 					is_star_class = sc_neutron_star
 					is_star_class = sc_pulsar
-
-					is_star_class = sc_binary_1
-					is_star_class = sc_binary_2
-					is_star_class = sc_binary_3
-					is_star_class = sc_binary_4
-					is_star_class = sc_binary_5
-					is_star_class = sc_binary_6
-					is_star_class = sc_binary_7
-					is_star_class = sc_binary_8
-					is_star_class = sc_binary_9
-					is_star_class = sc_binary_10
-					
-					is_star_class = sc_trinary_1
-					is_star_class = sc_trinary_2
-					is_star_class = sc_trinary_3
-					is_star_class = sc_trinary_4
-				}	
+					is_binary_star = yes
+					is_trinary_star = yes
+				}
 			}
-		}		
+		}
 	}
-	
+
 	resources = {
 		category = starbase_buildings
 		cost = {
@@ -3431,20 +3417,20 @@ system_fast = {
 			energy = 5
 		}
 	}
-	
+
 	triggered_station_modifier = {
 		potential = {
-			solar_system = {		
+			solar_system = {
 				is_star_class = sc_pulsar
-			}	
+			}
 		}
 		modifier = {
 			shipclass_starbase_hull_mult = 0.25
 			shipclass_military_station_hull_mult = 0.25
 			ship_speed_reduction = 0.25
-		}	
+		}
 	}
-	
+
 	triggered_station_modifier = {
 		potential = {
 			solar_system = {
@@ -3456,56 +3442,43 @@ system_fast = {
 			shipclass_military_station_damage_mult = 0.25
 			ship_speed_reduction = 0.25
 			ship_shield_reduction = 0.25
-		}		
+		}
 	}
-	
+
 	triggered_station_modifier = {
 		potential = {
 			solar_system = {
 				is_star_class = sc_neutron_star
 			}
 		}
-		modifier = {	
+		modifier = {
 			shipclass_starbase_evasion_add = 25
 			shipclass_military_station_evasion_add = 25
 			ship_shield_reduction = 0.25
 		}
 	}
-	
+
 	triggered_station_modifier = {
 		potential = {
 			solar_system = {
 				OR = {
-					is_star_class = sc_trinary_1
-					is_star_class = sc_trinary_2
-					is_star_class = sc_trinary_3
-					is_star_class = sc_trinary_4				
-				
-					is_star_class = sc_binary_1
-					is_star_class = sc_binary_2
-					is_star_class = sc_binary_3
-					is_star_class = sc_binary_4
-					is_star_class = sc_binary_5
-					is_star_class = sc_binary_6
-					is_star_class = sc_binary_7
-					is_star_class = sc_binary_8
-					is_star_class = sc_binary_9
-					is_star_class = sc_binary_10
+					is_binary_star = yes
+					is_trinary_star = yes
 				}
 			}
 		}
-		modifier = {	
+		modifier = {
 			ship_speed_reduction = 0.25
 			ship_shield_reduction = 0.25
 		}
 	}
-	
-	station_modifier = {	
+
+	station_modifier = {
 		shipclass_military_station_build_speed_mult = 0.25
 	}
-	
+
 	show_in_tech = "tech_sensors_3"
-	
+
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
 	ai_weight = {

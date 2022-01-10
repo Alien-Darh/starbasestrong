@@ -91,7 +91,7 @@
  mod_shipsize_military_station_medium_build_speed_mult: "Defense station construction speed"
  mod_shipsize_military_station_medium_hull_add: "Defense station hull points"
  mod_shipsize_titan_build_speed_mult: "Baugeschwindigkeit $titan_plural$"
- requires_black_hole_neutron_star_pulsar: "§RBenötigt ein §Y$pc_pulsar$§! \n§RBenötigt ein §Y$pc_neutron_star$§! \n§RRequires a  §Y$pc_black_hole$§! \nen el sistema.§!"
+ requires_black_hole_neutron_star_pulsar_x: "§RBenötigt einen §Y$pc_pulsar$§!\n§Reinen §Y$pc_neutron_star$§!\noder ein §Y$pc_black_hole$§!\n \n oder Doppel- oder Dreierstern-System."
  requires_citadel_upgrade: "$TRIGGER_FAIL$§RRequires update§!: Due to the assembly requirements of specialized weapons and defense it is necessary to reinforce the stellar base"
  requires_mine_alloys: "$TRIGGER_FAIL$Benötigt ein §YAlloy extraction Vorkommen§! im System."
  requires_mine_dark_matter: "$TRIGGER_FAIL$Benötigt ein §YDark material extraction Vorkommen§! im System."

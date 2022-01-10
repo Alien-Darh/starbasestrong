@@ -152,7 +152,7 @@
  sm_refinery_dark_matter:0 "$sr_dark_matter$ Refinery"
  sm_refinery_dark_matter_desc:0 "With Nanites technology we can refine dark matter extracted from the depths improving production."
 
- starbase_aura_warp:0 "Aura Hyperimpuls"
+ starbase_aura_warp:0 "Hyperimpuls Aura"
  starbase_citadel_upgrade:0 "Citadel improvement"
  starbase_citadel_upgrade_plural:0 "Improvements of citadels "
  stargate:0 "Stargate"
@@ -214,6 +214,8 @@
  starbase_space_storm:0 "The starbase generates a speed and shield sync disruption in the system ... in counter measure it adds power to all its weapons."
 
  tech_ftl_inhibitor_II:0 "Advanced inhibitor."
+ tech_ftl_inhibitor_II_desc:0 "Powerful advanced counterattack inhibitor against hostile empires from the century will help counteract the enemy offensive."
+
  requires_black_hole_neutron_star_pulsar_x:0 "§RRequires a §Y$pc_pulsar$§! \n§RRequires a §Y$pc_neutron_star$§! \n§RRequires a §Y$pc_black_hole$§! \nen el sistema.§! \nAnd some binary or trinary stars."
 
  STARBASE_AURA_FTL_INHIBITOR_II:0 "$tech_ftl_inhibitor_II$"
