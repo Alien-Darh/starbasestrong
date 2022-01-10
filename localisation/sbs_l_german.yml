@@ -184,5 +184,7 @@
  tech_solar_panels_desc: "Nutzt die Energie der Sonne um Energie-Credits zu produzieren"
  tech_starbase_citadel_upgrade: "$starbase_citadel_upgrade$"
  tech_starbase_citadel_upgrade_desc: "Greife auf die neuen Konstruktionen der $starbase_citadel_plural$-Sternenbasis zu, um die Grenzen Ihres Reiches zu stärken oder Kunst, Handel oder Forschung zu fördern."
+ tech_station_large: "Strength"
+ tech_station_large_desc: "Eine gigantische gepanzerte Verteidigungsstruktur, die den intensivsten Marineangriffen standhalten kann"
  whgenevents.6.desc: "Die Sternenbasis in §Y[psi_nav_origin_system.GetName]§! hat die Erstellung eines einzigartigen und stabilen §YStargates§! für das interne Subraum-Netzwerk unseres Reiches abgeschlossen."
  whgenevents.6.name: "$stargate$ erstellt"
