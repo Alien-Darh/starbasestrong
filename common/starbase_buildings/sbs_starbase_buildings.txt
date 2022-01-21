@@ -1,0 +1,1928 @@
+
+research_lav = {
+	icon = "GFX_spaceport_module_observatory_research"
+	construction_days = 360
+
+	potential = {
+		exists = owner
+		owner = {
+			has_technology = tech_physics_2
+			has_technology = tech_engineering_2
+			has_technology = tech_society_2
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starport"
+			has_starbase_size >= starbase_starport
+		}
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = { alloys = 100 }
+
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_technology = tech_space_science_1 }
+			}
+			physics_research = 0.5
+			society_research = 0.5
+			engineering_research = 0.5
+		}
+
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_technology = tech_space_science_2 }
+			}
+			physics_research = 0.5
+			society_research = 0.5
+			engineering_research = 0.5
+		}
+
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_technology = tech_space_science_3 }
+			}
+			physics_research = 0.5
+			society_research = 0.5
+			engineering_research = 0.5
+		}
+
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_technology = tech_space_science_4 }
+			}
+			physics_research = 0.5
+			society_research = 0.5
+			engineering_research = 0.5
+		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_technology = tech_space_science_5 }
+			}
+			physics_research = 0.5
+			society_research = 0.5
+			engineering_research = 0.5
+		}
+
+		upkeep = { energy = 5 }
+	}
+
+	ai_build_at_chokepoint = yes
+	ai_build_outside_chokepoint = yes
+	ai_weight = {
+		weight = 100
+	}
+}
+
+hydrogen_cells = {
+	icon = "GFX_spaceport_module_hydrogen_cells"
+	construction_days = 360
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_power_plant_3 }
+	}
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starhold"
+			has_starbase_size >= starbase_starhold
+		}
+		has_starbase_module = solar_panels
+	}
+	resources = {
+		category = starbase_buildings
+		cost = { alloys = 100 }
+		produces = { energy = 10 }
+		upkeep = { minerals = 4 }
+	}
+	ai_build_at_chokepoint = yes
+	ai_build_outside_chokepoint = yes
+	ai_weight = { weight = 100 }
+}
+
+archeological_center = {
+	icon = "GFX_spaceport_module_archeological_center"
+	construction_days = 360
+	potential = {
+		exists = owner
+		owner = {
+			has_technology = tech_physics_2
+			has_technology = tech_engineering_2
+			has_technology = tech_society_2
+		}
+	}
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starfortress"
+			has_starbase_size >= starbase_starfortress
+		}
+	}
+	resources = {
+		category = starbase_buildings
+		cost = { minerals = 100 }
+		produces = { minor_artifacts = 0.01 }
+		upkeep = {
+			energy = 5
+			minerals = 5
+		}
+	}
+	ai_build_at_chokepoint = yes
+	ai_build_outside_chokepoint = yes
+	ai_weight = { weight = 100 }
+}
+
+nanotechnology_lab = {
+	icon = "GFX_spaceport_module_nanotechnology_lab"
+	construction_days = 360
+
+	potential = {
+		exists = owner
+		owner = {
+			has_technology = tech_exotic_gases
+			has_technology = tech_rare_crystals
+			has_technology = tech_volatile_motes
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_citadel"
+			has_starbase_size >= starbase_citadel
+		}
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			minerals = 200
+			energy = 200
+			alloys = 200
+		}
+		produces = {
+			nanites = 1
+		}
+		upkeep = {
+			energy = 10
+			minerals = 10
+			alloys = 10
+		}
+	}
+	ai_build_at_chokepoint = yes
+	ai_build_outside_chokepoint = yes
+	ai_weight = { weight = 100 }
+}
+
+space_housing = {
+	icon = "GFX_starbase_space_housing"
+	construction_days = 360
+	resources = {
+		category = starbase_buildings
+		cost = { alloys = 500 }
+		upkeep = { energy = 5 }
+	}
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starhold"
+			has_starbase_size >= starbase_starhold
+		}
+		custom_tooltip = {
+			fail_text = "requires_colonized_planet"
+			solar_system = {
+				any_system_planet = { is_owned_by = from }
+			}
+		}
+	}
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_housing_1 }
+	}
+
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			exists = owner
+			owner = {
+				has_technology = tech_housing_1
+			}
+		}
+		planet_max_buildings_add = 1
+		planet_max_districts_add = 1
+	}
+
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			exists = owner
+			owner = {
+				has_technology = tech_housing_2
+			}
+		}
+		planet_max_buildings_add = 1
+		planet_max_districts_add = 2
+	}
+
+	ai_build_at_chokepoint = no
+	ai_build_outside_chokepoint = yes
+	ai_weight = { weight = 100 }
+
+	show_in_tech = "tech_housing_1"
+	show_in_tech = "tech_housing_2"
+}
+
+pulsar_observatory = {
+	icon = "GFX_spaceport_module_observatory_engineering"
+	construction_days = 360
+
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_sensors_2 }
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starport"
+			has_starbase_size >= starbase_starport
+		}
+		custom_tooltip = {
+			fail_text = "requires_pulsar"
+			star = { is_star_class = sc_pulsar }
+		}
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 100
+		}
+
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_technology = tech_engineering_1 }
+			}
+			engineering_research = 2
+		}
+
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_technology = tech_engineering_2 }
+			}
+			engineering_research = 2
+		}
+
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_technology = tech_engineering_3 }
+			}
+			engineering_research = 2
+		}
+
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { is_galactic_community_member = yes }
+				OR = {
+					is_active_resolution = "resolution_galacticstudies_astral_studies_network"
+					is_active_resolution = "resolution_galacticstudies_advanced_xenostudies"
+					is_active_resolution = "resolution_galacticstudies_ethical_guideline_refactoring"
+					is_active_resolution = "resolution_galacticstudies_extradimensional_experimentation"
+				}
+			}
+			engineering_research = 6
+		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_technology = tech_mine_living_metal }
+			}
+			sr_living_metal = 1
+		}
+
+		upkeep = {
+			energy = 2
+		}
+	}
+
+	show_in_tech = "tech_sensors_2"
+	ai_build_at_chokepoint = no
+	ai_build_outside_chokepoint = yes
+	ai_weight = { weight = 100 }
+}
+
+neutron_observatory = {
+	icon = "GFX_spaceport_module_observatory_society"
+	construction_days = 360
+
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_sensors_2 }
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starport"
+			has_starbase_size >= starbase_starport
+		}
+		custom_tooltip = {
+			fail_text = "requires_neutron_star"
+			star = { is_star_class = sc_neutron_star }
+		}
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 100
+		}
+
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_technology = tech_society_1 }
+			}
+			society_research = 2
+		}
+
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_technology = tech_society_2 }
+			}
+			society_research = 2
+		}
+
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_technology = tech_society_3 }
+			}
+			society_research = 2
+		}
+
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { is_galactic_community_member = yes }
+				OR = {
+					is_active_resolution = "resolution_galacticstudies_astral_studies_network"
+					is_active_resolution = "resolution_galacticstudies_advanced_xenostudies"
+					is_active_resolution = "resolution_galacticstudies_ethical_guideline_refactoring"
+					is_active_resolution = "resolution_galacticstudies_extradimensional_experimentation"
+				}
+			}
+			society_research = 6
+		}
+
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_technology = tech_mine_zro }
+			}
+			sr_zro = 1
+		}
+
+		upkeep = {
+			energy = 2
+		}
+	}
+
+	show_in_tech = "tech_sensors_2"
+	ai_build_at_chokepoint = no
+	ai_build_outside_chokepoint = yes
+	ai_weight = { weight = 100 }
+}
+
+aura_crisis = {
+	icon = "GFX_spaceport_module_aura_crisis"
+	construction_days = 180
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_starbase_citadel_upgrade }
+	}
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_citadel_upgrade"
+			has_starbase_size >= starbase_citadel_upgrade
+		}
+	}
+	resources = {
+		category = starbase_buildings
+		cost = { alloys = 100 }
+		upkeep = { energy = 10 }
+	}
+	equipped_component = "STARBASE_AURA_CRISIS"
+	ai_build_at_chokepoint = no
+	ai_build_outside_chokepoint = yes
+	ai_weight = { weight = 10 }
+	show_in_tech = "tech_starbase_citadel_upgrade"
+}
+
+aura_fallen = {
+	icon = "GFX_spaceport_module_aura_fallen"
+	construction_days = 180
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_starbase_4 }
+	}
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starfortress"
+			has_starbase_size >= starbase_starfortress
+		}
+	}
+	resources = {
+		category = starbase_buildings
+		cost = { alloys = 100 }
+		upkeep = { energy = 10 }
+	}
+	equipped_component = "STARBASE_AURA_FALLEN"
+	ai_build_at_chokepoint = no
+	ai_build_outside_chokepoint = yes
+	ai_weight = { weight = 100 }
+	#show_in_tech = "tech_starbase_4"
+}
+
+aura_marauders = {
+	icon = "GFX_spaceport_module_aura_marauders"
+	construction_days = 180
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_starbase_5 }
+	}
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starfortress"
+			has_starbase_size >= starbase_starfortress
+		}
+	}
+	resources = {
+		category = starbase_buildings
+		cost = { alloys = 100 }
+		upkeep = { energy = 10 }
+	}
+	equipped_component = "STARBASE_AURA_MARAUDERS"
+	ai_build_at_chokepoint = no
+	ai_build_outside_chokepoint = yes
+	ai_weight = { weight = 100 }
+	show_in_tech = "tech_starbase_5"
+}
+
+star_gate = {
+	icon = "GFX_spaceport_star_gate"
+	construction_days = 360
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_gateway_activation }
+	}
+	possible = {
+		custom_tooltip = { fail_text = "requires_starfortress" }
+		has_starbase_size >= starbase_starfortress
+		solar_system = {
+			#has_natural_wormhole = no
+			NOR = {
+				has_megastructure = gateway_0
+				has_megastructure = gateway_ruined
+				has_megastructure = gateway_restored
+				has_megastructure = gateway_final
+			}
+		}
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			minerals = 900
+			energy = 600
+			alloys = 300
+			influence = 150
+		}
+		upkeep = { energy = 25 }
+	}
+
+	equipped_component = "STARBASE_STAR_GATE"
+	ai_build_at_chokepoint = no
+	ai_build_outside_chokepoint = yes
+	ai_weight = { weight = 0 }
+
+	show_in_tech = "tech_starbase_4"
+	# show_in_tech = "tech_gateway_activation"
+	orbit_modifier = {
+		ship_windup_mult = -0.20
+		ship_winddown_mult = -0.20
+	}
+}
+
+aux_module = {
+	icon = "GFX_starbase_aux_module_sbs1"
+	construction_days = 360
+	resources = {
+		category = starbase_buildings
+		cost = { alloys = 50 }
+		upkeep = { energy = 4 }
+	}
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_starbase_3 }
+	}
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starport"
+			has_starbase_size >= starbase_starport
+		}
+		has_starbase_module = shipyard
+	}
+
+	triggered_station_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			exists = owner
+			owner = {
+				has_technology = tech_corvettes
+			}
+		}
+		shipsize_corvette_build_speed_mult = 0.05
+	}
+
+	triggered_station_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			exists = owner
+			owner = {
+				has_technology = tech_destroyers
+			}
+		}
+		shipsize_destroyer_build_speed_mult = 0.10
+	}
+
+	triggered_station_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			exists = owner
+			owner = {
+				has_technology = tech_cruisers
+			}
+		}
+		shipsize_cruiser_build_speed_mult = 0.15
+	}
+
+	triggered_station_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			exists = owner
+			owner = {
+				has_technology = tech_battleships
+			}
+		}
+		shipsize_battleship_build_speed_mult = 0.20
+	}
+
+	triggered_station_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			exists = owner
+			owner = {
+				has_technology = tech_titans
+			}
+		}
+		shipsize_titan_build_speed_mult = 0.25
+	}
+
+	triggered_station_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			exists = owner
+			owner = {
+				has_technology = tech_colossus
+			}
+		}
+		shipsize_colossus_build_speed_mult = 0.30
+	}
+
+	triggered_station_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			exists = owner
+			owner = {
+				has_technology = tech_juggernaut
+			}
+		}
+		shipsize_juggernaut_build_speed_mult = 0.35
+	}
+
+	ai_build_at_chokepoint = no
+	ai_build_outside_chokepoint = yes
+	ai_weight = { weight = 100 }
+	show_in_tech = "tech_starbase_3"
+}
+
+refinery_exotic_gases = {
+	icon = "GFX_module_refinery_exotic_gases"
+	construction_days = 360
+
+	potential = {
+		exists = owner
+		owner = {
+			has_technology = tech_mine_exotic_gases
+			has_technology = tech_exotic_gases
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starfortress"
+			has_starbase_size >= starbase_starfortress
+		}
+		custom_tooltip = {
+			fail_text = "requires_mine_exotic_gases"
+			solar_system = {
+				any_system_planet = {
+					OR = {
+						has_deposit = d_exotic_gases_1
+						has_deposit = d_exotic_gases_2
+						has_deposit = d_exotic_gases_3
+						has_deposit = d_exotic_gases_4
+						has_deposit = d_exotic_gases_5
+					}
+				}
+			}
+		}
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			energy = 25
+			minerals = 10
+			nanites = 5
+		}
+		produces = {
+			exotic_gases = 2
+		}
+		upkeep = {
+			energy = 5
+			minerals = 10
+			nanites = 1
+		}
+	}
+
+	show_in_tech = "tech_exotic_gases"
+
+	ai_build_at_chokepoint = yes
+	ai_build_outside_chokepoint = yes
+	ai_weight = { weight = 100 }
+}
+
+refinery_rare_crystals = {
+	icon = "GFX_module_refinery_rare_crystals"
+	construction_days = 360
+
+	potential = {
+		exists = owner
+		owner = {
+			has_technology = tech_mine_rare_crystals
+			has_technology = tech_rare_crystals
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starfortress"
+			has_starbase_size >= starbase_starfortress
+		}
+		custom_tooltip = {
+			fail_text = "requires_mine_rare_crystals"
+			solar_system = {
+				any_system_planet = {
+					OR = {
+						has_deposit = d_rare_crystals_1
+						has_deposit = d_rare_crystals_2
+						has_deposit = d_rare_crystals_3
+						has_deposit = d_rare_crystals_4
+						has_deposit = d_rare_crystals_5
+					}
+				}
+			}
+		}
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			energy = 25
+			minerals = 10
+			nanites = 5
+		}
+		produces = {
+			rare_crystals = 2
+		}
+		upkeep = {
+			energy = 5
+			minerals = 10
+			nanites = 1
+		}
+	}
+
+	show_in_tech = "tech_rare_crystals"
+
+	ai_build_at_chokepoint = yes
+	ai_build_outside_chokepoint = yes
+	ai_weight = { weight = 100 }
+}
+
+refinery_volatile_motes = {
+	icon = "GFX_module_refinery_volatile_motes"
+	construction_days = 360
+
+	potential = {
+		exists = owner
+		owner = {
+			has_technology = tech_mine_volatile_motes
+			has_technology = tech_volatile_motes
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starfortress"
+			has_starbase_size >= starbase_starfortress
+		}
+		custom_tooltip = {
+			fail_text = "requires_mine_volatile_motes"
+			solar_system = {
+				any_system_planet = {
+					OR = {
+						has_deposit = d_volatile_motes_1
+						has_deposit = d_volatile_motes_2
+						has_deposit = d_volatile_motes_3
+						has_deposit = d_volatile_motes_4
+						has_deposit = d_volatile_motes_5
+					}
+				}
+			}
+		}
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			energy = 25
+			minerals = 10
+			nanites = 5
+		}
+		produces = {
+			volatile_motes = 2
+		}
+		upkeep = {
+			energy = 5
+			minerals = 10
+			nanites = 1
+		}
+	}
+
+	show_in_tech = "tech_volatile_motes"
+
+	ai_build_at_chokepoint = yes
+	ai_build_outside_chokepoint = yes
+	ai_weight = { weight = 100 }
+}
+
+refinery_alloys = {
+	icon = "GFX_module_refinery_alloys"
+	construction_days = 360
+
+	potential = {
+		exists = owner
+		owner = {
+			has_technology = tech_advanced_metallurgy_2
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starfortress"
+			has_starbase_size >= starbase_starfortress
+		}
+		custom_tooltip = {
+			fail_text = "requires_mine_alloys"
+			solar_system = {
+				any_system_planet = {
+					OR = {
+						has_deposit = d_alloys_1
+						has_deposit = d_alloys_2
+						has_deposit = d_alloys_3
+						has_deposit = d_alloys_4
+						has_deposit = d_alloys_5
+					}
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_modules"
+			NOR = {
+				has_starbase_module = gun_battery
+				has_starbase_module = missile_battery
+				has_starbase_module = hangar_bay
+				has_starbase_module = gun_battery_upgrade
+			}
+		}
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			energy = 25
+			minerals = 50
+			nanites = 5
+		}
+		produces = {
+			alloys = 15
+		}
+		upkeep = {
+			energy = 5
+			minerals = 10
+			nanites = 1
+		}
+	}
+
+	show_in_tech = "tech_advanced_metallurgy_2"
+
+	ai_build_at_chokepoint = yes
+	ai_build_outside_chokepoint = yes
+	ai_weight = { weight = 100 }
+}
+
+refinery_living_metal = {
+	icon = "GFX_module_refinery_living_metal"
+	construction_days = 360
+
+	potential = {
+		exists = owner
+		owner = {
+			has_technology = tech_mine_living_metal
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starfortress"
+			has_starbase_size >= starbase_starfortress
+		}
+		custom_tooltip = {
+			fail_text = "requires_mine_living_metal"
+			solar_system = {
+				any_system_planet = {
+					OR = {
+						has_deposit = d_living_metal_deposit
+						has_deposit = d_living_metal_deposit_1
+						has_deposit = d_living_metal_deposit_2
+						has_deposit = d_living_metal_deposit_3
+					}
+				}
+			}
+		}
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			energy = 25
+			minerals = 10
+			nanites = 5
+		}
+		produces = {
+			sr_living_metal = 2
+		}
+		upkeep = {
+			energy = 10
+			minerals = 5
+			nanites = 1
+		}
+	}
+
+	show_in_tech = "tech_mine_living_metal"
+
+	ai_build_at_chokepoint = yes
+	ai_build_outside_chokepoint = yes
+	ai_weight = { weight = 100 }
+}
+
+refinery_dark_matter = {
+	icon = "GFX_module_refinery_dark_matter"
+	construction_days = 360
+
+	potential = {
+		exists = owner
+		owner = {
+			has_technology = tech_mine_dark_matter
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starfortress"
+			has_starbase_size >= starbase_starfortress
+		}
+		custom_tooltip = {
+			fail_text = "requires_mine_dark_matter"
+			solar_system = {
+				any_system_planet = {
+					OR = {
+						has_deposit = d_dark_matter_deposit_1
+						has_deposit = d_dark_matter_deposit_2
+						has_deposit = d_dark_matter_deposit_3
+					}
+				}
+			}
+		}
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			energy = 25
+			minerals = 10
+			nanites = 5
+		}
+		produces = {
+			sr_dark_matter = 2
+		}
+		upkeep = {
+			energy = 10
+			minerals = 5
+			nanites = 1
+		}
+	}
+
+	show_in_tech = "tech_mine_dark_matter"
+
+	ai_build_at_chokepoint = yes
+	ai_build_outside_chokepoint = yes
+	ai_weight = { weight = 100 }
+}
+
+job_module = {
+	icon = "GFX_starbase_job_module"
+	construction_days = 360
+
+	potential = {
+		exists = owner
+		owner = {
+			NOT = { has_ethic = ethic_gestalt_consciousness }
+			has_technology = "tech_colonial_centralization"
+		}
+	}
+
+	resources = {
+		category = starbase_modules
+		cost = {
+			influence = 10
+		}
+		upkeep = {
+			energy = 10
+			influence = 0.25
+		}
+	}
+##
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = manufacturing_module
+				count >= 1
+			}
+		}
+		job_artisan_add = 1
+	}
+
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = manufacturing_module
+				count >= 1
+			}
+			exists = owner
+			owner = {
+				has_technology = tech_galactic_administration
+			}
+		}
+		job_artisan_add = 2
+	}
+##
+	triggered_system_modifier = {
+		potential = {
+			is_scope_type = starbase
+			has_starbase_building = refinery_alloys
+			}
+		job_foundry_add = 1
+	}
+##
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = solar_panels
+				count >= 1
+			}
+		}
+		job_technician_add = 1
+	}
+
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = solar_panels
+				count >= 1
+			}
+			exists = owner
+			owner = {
+				has_technology = tech_galactic_administration
+			}
+		}
+		job_technician_add = 2
+	}
+##
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = storage_minerals
+				count >= 1
+			}
+		}
+		job_miner_add = 1
+	}
+
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = storage_minerals
+				count >= 1
+			}
+			exists = owner
+			owner = {
+				has_technology = tech_galactic_administration
+			}
+		}
+		job_miner_add = 2
+	}
+##
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = storage_food
+				count >= 1
+			}
+		}
+		job_farmer_add = 1
+	}
+
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = storage_food
+				count >= 1
+			}
+			exists = owner
+			owner = {
+				has_technology = tech_galactic_administration
+			}
+		}
+		job_farmer_add = 2
+	}
+##
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = trading_hub
+				count >= 1
+			}
+		}
+		job_merchant_add = 1
+	}
+
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = trading_hub
+				count >= 1
+			}
+			exists = owner
+			owner = {
+				has_technology = tech_galactic_administration
+			}
+		}
+		job_merchant_add = 2
+	}
+##
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = management_office
+				count >= 1
+			}
+		}
+		job_bureaucrat_add = 1
+	}
+
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = management_office
+				count >= 1
+			}
+			exists = owner
+			owner = {
+				has_technology = tech_galactic_administration
+			}
+		}
+		job_bureaucrat_add = 2
+	}
+##
+	triggered_system_modifier = {
+		potential = {
+			is_scope_type = starbase
+			has_starbase_building = research_lav
+			}
+		job_researcher_add = 1
+	}
+
+##
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = social_services
+				count >= 1
+			}
+		}
+		job_enforcer_add = 1
+	}
+
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = social_services
+				count >= 1
+			}
+			exists = owner
+			owner = {
+				has_technology = tech_galactic_administration
+			}
+		}
+		job_enforcer_add = 2
+	}
+##
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = unity_module
+				count >= 1
+			}
+		}
+		job_executive_add = 1
+	}
+
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = unity_module
+				count >= 1
+			}
+			exists = owner
+			owner = {
+				has_technology = tech_galactic_administration
+			}
+		}
+		job_executive_add = 2
+	}
+##
+	triggered_system_modifier = {
+		potential = {
+			is_scope_type = starbase
+			has_starbase_building = resource_silo
+			}
+		job_manager_add = 1
+	}
+##
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = anchorage
+				count >= 1
+			}
+		}
+		job_soldier_add = 1
+	}
+
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = anchorage
+				count >= 1
+			}
+			exists = owner
+			owner = {
+				has_technology = tech_galactic_administration
+			}
+		}
+		job_soldier_add = 2
+	}
+##
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starhold"
+			has_starbase_size >= starbase_starhold
+		}
+		custom_tooltip = {
+			fail_text = "requires_colonized_planet"
+			solar_system = {
+				any_system_planet = {
+					is_owned_by = from
+				}
+			}
+		}
+	}
+
+	show_in_tech = "tech_colonial_centralization"
+	show_in_tech = "tech_galactic_administration"
+
+	ai_build_at_chokepoint = no
+	ai_build_outside_chokepoint = yes
+	ai_weight = { weight = 100 }
+}
+
+#####	#####	#####	#####	#####	#####	#####	#####
+
+job_drone_module = {
+	icon = "GFX_starbase_job_module"
+	construction_days = 360
+
+	potential = {
+		exists = owner
+		owner = {
+			has_ethic = ethic_gestalt_consciousness
+			has_technology = "tech_colonial_centralization"
+		}
+	}
+
+	resources = {
+		category = starbase_modules
+		cost = {
+			influence = 10
+		}
+		upkeep = {
+			energy = 10
+			influence = 0.25
+		}
+	}
+##
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = manufacturing_module
+				count >= 1
+			}
+		}
+		job_artisan_drone_add = 1
+	}
+
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = manufacturing_module
+				count >= 1
+			}
+			exists = owner
+			owner = {
+				has_technology = tech_galactic_administration
+			}
+		}
+		job_artisan_drone_add = 2
+	}
+##
+	triggered_system_modifier = {
+		potential = {
+			is_scope_type = starbase
+			has_starbase_building = refinery_alloys
+			}
+		job_alloy_drone_add = 1
+	}
+##
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = solar_panel_network
+				count >= 1
+			}
+		}
+		job_technician_drone_add = 1
+	}
+
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = solar_panel_network
+				count >= 1
+			}
+			exists = owner
+			owner = {
+				has_technology = tech_galactic_administration
+			}
+		}
+		job_technician_drone_add = 2
+	}
+##
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = storage_minerals
+				count >= 1
+			}
+		}
+		job_mining_drone_add = 1
+	}
+
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = storage_minerals
+				count >= 1
+			}
+			exists = owner
+			owner = {
+				has_technology = tech_galactic_administration
+			}
+		}
+		job_mining_drone_add = 2
+	}
+##
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = storage_food
+				count >= 1
+			}
+		}
+		job_agri_drone_add = 1
+	}
+
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = storage_food
+				count >= 1
+			}
+			exists = owner
+			owner = {
+				has_technology = tech_galactic_administration
+			}
+		}
+		job_agri_drone_add = 2
+	}
+##
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = management_office
+				count >= 1
+			}
+		}
+		job_coordinator_add = 1
+	}
+
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = management_office
+				count >= 1
+			}
+			exists = owner
+			owner = {
+				has_technology = tech_galactic_administration
+			}
+		}
+		job_coordinator_add = 2
+	}
+##
+	triggered_system_modifier = {
+		potential = {
+			is_scope_type = starbase
+			has_starbase_building = research_lav
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_brain_drone_add = 1
+		}
+	}
+##
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = social_services
+				count >= 1
+			}
+		}
+		job_patrol_drone_add = 1
+	}
+
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = social_services
+				count >= 1
+			}
+			exists = owner
+			owner = {
+				has_technology = tech_galactic_administration
+			}
+		}
+		job_patrol_drone_add = 2
+	}
+##
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = unity_module
+				count >= 1
+			}
+		}
+		job_roboticist_add = 2
+	}
+
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = unity_module
+				count >= 1
+			}
+			exists = owner
+			owner = {
+				has_technology = tech_galactic_administration
+			}
+		}
+		job_roboticist_add = 2
+	}
+##
+	triggered_system_modifier = {
+		potential = {
+			is_scope_type = starbase
+			has_starbase_building = resource_silo
+			}
+		job_maintenance_drone_add = 1
+	}
+##
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = anchorage
+				count >= 1
+			}
+		}
+		job_warrior_drone_add = 1
+	}
+
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			count_starbase_modules = {
+				type = anchorage
+				count >= 1
+			}
+			exists = owner
+			owner = {
+				has_technology = tech_galactic_administration
+			}
+		}
+		job_warrior_drone_add = 2
+	}
+##
+	triggered_system_modifier = {
+		potential = {
+			is_scope_type = starbase
+			has_starbase_building = space_housing
+			}
+		job_spawning_drone_add = 1
+	}
+##
+ 	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			exists = owner
+			owner = {
+				any_owned_megastructure = {
+					OR = {
+						is_megastructure_type = strategic_coordination_center_3
+						is_megastructure_type = strategic_coordination_center_restored
+					}
+				}
+			}
+		}
+		job_maintenance_drone_add = 3
+	}
+##
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			exists = owner
+			owner = {
+				any_owned_megastructure = {
+					OR = {
+						is_megastructure_type = dyson_sphere_5
+						is_megastructure_type = dyson_sphere_restored
+					}
+				}
+			}
+		}
+		job_technician_drone_add = 2
+	}
+##
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			exists = owner
+			owner = {
+				any_owned_megastructure = {
+					OR = {
+						is_megastructure_type = think_tank_4
+						is_megastructure_type = think_tank_restored
+					}
+				}
+			}
+		}
+		job_brain_drone_add = 3
+	}
+##
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			exists = owner
+			owner = {
+				any_owned_megastructure = {
+					OR = {
+						is_megastructure_type = matter_decompressor_4
+						is_megastructure_type = matter_decompressor_restored
+					}
+				}
+			}
+		}
+		job_mining_drone_add = 3
+	}
+##
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			exists = owner
+			owner = {
+				any_owned_megastructure = {
+					OR = {
+						is_megastructure_type = mega_art_installation_4
+						is_megastructure_type = mega_art_installation_restored
+						is_megastructure_type = mega_art_installation_restored_2
+					}
+				}
+			}
+		}
+		job_agri_drone_add = 3
+	}
+##
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			exists = owner
+			owner = {
+				any_owned_megastructure = {
+					OR = {
+						is_megastructure_type = interstellar_assembly_4
+						is_megastructure_type = interstellar_assembly_restored
+					}
+				}
+			}
+		}
+		job_coordinator_add = 3
+	}
+##
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			exists = owner
+			owner = {
+				any_owned_megastructure = {
+					OR = {
+						is_megastructure_type = mega_shipyard_3
+						is_megastructure_type = mega_shipyard_restored
+					}
+				}
+			}
+		}
+		job_warrior_drone_add = 3
+	}
+##
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			exists = owner
+			owner = {
+				any_owned_megastructure = {
+					OR = {
+						is_megastructure_type = spy_orb_4
+						is_megastructure_type = spy_orb_restored
+					}
+				}
+			}
+		}
+		job_patrol_drone_add = 3
+	}
+##
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			exists = owner
+			owner = {
+				any_owned_megastructure = {
+					OR = {
+						is_megastructure_type = crisis_sphere_4
+						is_megastructure_type = crisis_sphere_ruined
+					}
+				}
+			}
+		}
+		job_alloy_drone_add = 3
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starhold"
+			has_starbase_size >= starbase_starhold
+		}
+		custom_tooltip = {
+			fail_text = "requires_colonized_planet"
+			solar_system = {
+				any_system_planet = {
+					is_owned_by = from
+				}
+			}
+		}
+	}
+
+	show_in_tech = "tech_colonial_centralization"
+	show_in_tech = "tech_galactic_administration"
+
+	ai_build_at_chokepoint = no
+	ai_build_outside_chokepoint = yes
+	ai_weight = { weight = 100 }
+}
+
+#####	#####	#####	#####	#####	#####	#####	#####
+
+orbital_assembly = {
+	icon = "GFX_starbase_orbital_assembly"
+	construction_days = 720
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 50
+		}
+		upkeep = {
+			food = 10
+			energy = 5
+		}
+	}
+
+	potential = {
+		exists = owner
+		owner = {
+			has_technology = tech_cryostasis_1
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starhold"
+			has_starbase_size >= starbase_starhold
+		}
+		custom_tooltip = {
+			fail_text = "requires_colonized_planet"
+			solar_system = {
+				any_system_planet = {
+					is_owned_by = from
+				}
+			}
+		}
+	}
+
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			exists = owner
+			owner = {
+				has_technology = tech_cryostasis_1
+			}
+		}
+		pop_growth_speed = 0.03
+	}
+
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			exists = owner
+			owner = {
+				has_technology = tech_droid_workers
+			}
+		}
+		planet_pop_assembly_add = 2
+	}
+
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			exists = owner
+			owner = {
+				has_technology = tech_micro_replicators
+			}
+		}
+		planet_pop_assembly_add = 2
+	}
+
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			exists = owner
+			owner = {
+				has_technology = tech_self_assembling_components
+			}
+		}
+		planet_pop_assembly_add = 3
+	}
+
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			exists = owner
+			owner = {
+				has_technology = tech_cryostasis_2
+			}
+		}
+		pop_growth_speed = 0.05
+	}
+
+	system_modifier = {
+		pop_growth_speed = 0.02
+		planet_pop_assembly_add = 1
+	}
+
+	show_in_tech = "tech_cryostasis_1"
+	show_in_tech = "tech_cryostasis_2"
+
+	ai_build_at_chokepoint = no
+	ai_build_outside_chokepoint = yes
+	ai_weight = { weight = 100 }
+}
+
+system_fast = {
+	icon = "GFX_starbase_system_fast"
+	construction_days = 360
+
+	potential = {
+		exists = owner
+		owner = {
+			has_technology = tech_sensors_3
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starfortress"
+			has_starbase_size >= starbase_starfortress
+		}
+		custom_tooltip = {
+			fail_text = "requires_black_hole_neutron_star_pulsar_x"
+			solar_system = {
+				OR = {
+					is_star_class = sc_black_hole
+					is_star_class = sc_neutron_star
+					is_star_class = sc_pulsar
+					is_binary_star = yes
+					is_trinary_star = yes
+				}
+			}
+		}
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 50
+		}
+
+		upkeep = {
+			energy = 5
+		}
+	}
+
+	triggered_station_modifier = {
+		potential = {
+			solar_system = {
+				is_star_class = sc_pulsar
+			}
+		}
+		modifier = {
+			shipclass_starbase_hull_mult = 0.25
+			shipclass_military_station_hull_mult = 0.25
+			ship_speed_reduction = 0.25
+		}
+	}
+
+	triggered_station_modifier = {
+		potential = {
+			solar_system = {
+				is_star_class = sc_black_hole
+			}
+		}
+		modifier = {
+			shipclass_starbase_damage_mult = 0.25
+			shipclass_military_station_damage_mult = 0.25
+			ship_speed_reduction = 0.25
+			ship_shield_reduction = 0.25
+		}
+	}
+
+	triggered_station_modifier = {
+		potential = {
+			solar_system = {
+				is_star_class = sc_neutron_star
+			}
+		}
+		modifier = {
+			shipclass_starbase_evasion_add = 25
+			shipclass_military_station_evasion_add = 25
+			ship_shield_reduction = 0.25
+		}
+	}
+
+	triggered_station_modifier = {
+		potential = {
+			solar_system = {
+				OR = {
+					is_binary_star = yes
+					is_trinary_star = yes
+				}
+			}
+		}
+		modifier = {
+			ship_speed_reduction = 0.25
+			ship_shield_reduction = 0.25
+		}
+	}
+
+	station_modifier = {
+		shipclass_military_station_build_speed_mult = 0.25
+	}
+
+	show_in_tech = "tech_sensors_3"
+
+	ai_build_at_chokepoint = no
+	ai_build_outside_chokepoint = yes
+	ai_weight = {
+		weight = 100
+	}
+}

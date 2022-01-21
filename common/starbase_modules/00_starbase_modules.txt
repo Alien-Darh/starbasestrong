@@ -1,336 +1,10 @@
-unity_module = {
-	icon = "GFX_starbase_unity_module"
-	construction_days = 360
-	
-	resources = {
-		category = starbase_modules
-		cost = {
-			influence = 20
-		}
-		produces = {
-			unity = 0.50
-		}		
-
-		upkeep = {
-			energy = 5
-			influence = 0.10
-		}
-	}
-	
-	potential = {
-		exists = owner
-		owner = { has_technology = tech_planetary_unification } }
-
-	possible = {
-		custom_tooltip = {
-			fail_text = "requires_starport"
-			has_starbase_size >= starbase_starport
-		}			
-	}
-
-	show_in_tech = "tech_planetary_unification"
-	
-	ai_build_at_chokepoint = no
-	ai_build_outside_chokepoint = yes
-	ai_weight = { weight = 100 }
-}
-
-manufacturing_module = {
-	icon = "GFX_starbase_manufacturing_module"
-	construction_days = 360
-	
-	resources = {
-		category = starbase_modules
-		cost = {
-			minerals = 20
-			influence = 20
-		}
-		produces = {
-			consumer_goods = 5
-		}		
-
-		upkeep = { 
-			energy = 5
-			influence = 0.10
-		}
-	}
-
-	potential = {
-		exists = owner
-		owner = { has_technology = tech_space_trading } }
-
-	possible = {
-		custom_tooltip = {
-			fail_text = "requires_starport"
-			has_starbase_size >= starbase_starport
-		}
-		custom_tooltip = {
-			fail_text = "requires_colonized_planet"
-			solar_system = {
-				any_system_planet = {
-					is_owned_by = from
-				}
-			}
-		}			
-	}
-
-	show_in_tech = "tech_space_trading"
-	
-	ai_build_at_chokepoint = no
-	ai_build_outside_chokepoint = yes
-	ai_weight = { weight = 100 }
-}
-
-storage_food = {
-	icon = "GFX_starbase_storage_food"
-	construction_days = 130
-
-	potential = {
-		exists = owner
-		owner = { has_technology = tech_hydroponics }
-	}
-
-	resources = {
-		category = starbase_modules
-		cost = {
-			influence = 20
-		}		
-		produces = {
-			food = 5
-		}
-		upkeep = { energy = 5 }		
-	}
-
-	possible = {
-		custom_tooltip = {
-			fail_text = "requires_starport"
-			has_starbase_size >= starbase_starport
-		}
-		has_starbase_building = hydroponics_bay
-	}
-
-	show_in_tech = "tech_eco_simulation"
-
-	ai_build_at_chokepoint = no
-	ai_build_outside_chokepoint = yes
-	ai_weight = {
-		weight = 50
-	}
-}
-
-storage_minerals = {
-	icon = "GFX_starbase_storage_minerals"
-	construction_days = 130
-
-	potential = {
-		exists = owner
-		owner = { has_technology = tech_mining_1 }
-	}
-
-	resources = {
-		category = starbase_modules
-		cost = {
-			alloys = 20
-		}		
-		produces = {
-			minerals = 5
-		}
-		upkeep = { energy = 5 }		
-	}
-
-	possible = {
-		custom_tooltip = {
-			fail_text = "requires_starport"
-			has_starbase_size >= starbase_starport
-		}
-		custom_tooltip = {
-			fail_text = "requires_mine_minerals"
-			solar_system = {
-				any_system_planet = {
-					OR = {
-						has_deposit = d_minerals_1
-						has_deposit = d_minerals_2
-						has_deposit = d_minerals_3
-						has_deposit = d_minerals_4
-						has_deposit = d_minerals_5
-						has_deposit = d_minerals_6
-						has_deposit = d_minerals_7
-						has_deposit = d_minerals_8
-						has_deposit = d_minerals_9
-						has_deposit = d_minerals_10
-					}	
-				}
-			}	
-		}				
-	}
-
-	show_in_tech = "tech_mining_1"
-
-	ai_build_at_chokepoint = no
-	ai_build_outside_chokepoint = yes
-	ai_weight = {
-		weight = 50
-	}
-}
-
-management_office = {
-	icon = "GFX_starbase_management_office"
-	construction_days = 360
-	
-	resources = {
-		category = starbase_modules
-		cost = {
-			minerals = 20
-			influence = 20
-		}
-
-		upkeep = { 
-			energy = 5
-			influence = 0.10
-		}
-	}
-
-	potential = {
-		exists = owner
-		owner = { has_technology = tech_adaptive_bureaucracy } }
-
-	possible = {
-		custom_tooltip = {
-			fail_text = "requires_starport"
-			has_starbase_size >= starbase_starport
-		}
-		custom_tooltip = {
-			fail_text = "requires_colonized_planet"
-			solar_system = {
-				any_system_planet = {
-					is_owned_by = from
-				}
-			}
-		}			
-	}
-
-	country_modifier = { country_admin_cap_mult = 0.05 }
-
-	ai_build_at_chokepoint = no
-	ai_build_outside_chokepoint = yes
-	ai_weight = { weight = 100 }
-	show_in_tech = "tech_adaptive_bureaucracy"
-}
-
-social_services = {
-	icon = "GFX_starbase_social_services"
-	construction_days = 130
-
-	potential = {
-		exists = owner
-		owner = { has_technology = tech_effective_bureaucracy }
-	}
-
-	resources = {
-		category = starbase_modules
-		cost = {
-			alloys = 10
-			energy = 10
-		}		
-		produces = {
-			influence = 0.2
-		}
-		upkeep = { 
-			energy = 10
-		}		
-	}
-
-	possible = {
-		custom_tooltip = {
-			fail_text = "requires_starport"
-			has_starbase_size >= starbase_starport
-		}
-		custom_tooltip = {
-			fail_text = "requires_colonized_planet"
-			solar_system = {
-				any_system_planet = {
-					is_owned_by = from
-				}
-			}
-		}	
-	}
-
-	show_in_tech = "tech_effective_bureaucracy"
-
-	ai_build_at_chokepoint = no
-	ai_build_outside_chokepoint = yes
-	ai_weight = {
-		weight = 50
-	}
-}
-
-solar_panels = {
-	section = "REFINERY_STARBASE_SECTION"
-	icon = "GFX_solar_panel_network"
-	construction_days = 130
-
-	potential = {
-		exists = owner
-		owner = {
-			is_gestalt = no		
-			has_technology = "tech_solar_panels"
-		}	
-	}
-
-	resources = {
-		category = starbase_modules
-		cost = {
-			alloys = 25
-		}
-		
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { has_technology = tech_power_plant_1 }
-			}
-			energy = 0.5
-		}
-		
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { has_technology = tech_power_plant_2 }
-			}
-			energy = 0.5
-		}
-		
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { has_technology = tech_power_plant_3 }
-			}
-			energy = 0.5
-		}
-		
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { has_technology = tech_power_plant_4 }
-			}
-			energy = 0.5
-		}		
-	}
-
-	possible = {
-		custom_tooltip = {
-			fail_text = "requires_starport"
-			has_starbase_size >= starbase_starport
-		}		
-	}
-
-	show_in_tech = "tech_solar_panels"
-
-	ai_build_at_chokepoint = no
-	ai_build_outside_chokepoint = yes
-	ai_weight = {
-		weight = 50
-	}
-}
+# possible section models:
+# SHIPYARD_STARBASE_SECTION
+# REFINERY_STARBASE_SECTION
+# SCIENCE_STARBASE_SECTION
+# HANGAR_STARBASE_SECTION
+# ASSEMBLYYARD_STARBASE_SECTION
+#
 
 shipyard = {
 	icon = "GFX_starbase_shipyard"
@@ -356,7 +30,7 @@ shipyard = {
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
 	ai_weight = {
-		weight = 100
+		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
 		modifier = {
 			factor = 100
 			owner = {
@@ -427,7 +101,7 @@ anchorage = {
 	country_modifier = {
 		country_naval_cap_add = 4
 	}
-	
+
 	triggered_country_modifier = {
 		potential = { has_starbase_building = naval_logistics_office }
 		country_naval_cap_add = 4
@@ -436,7 +110,7 @@ anchorage = {
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
 	ai_weight = {
-		weight = 100
+		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
 		modifier = {
 			factor = 2
 			count_starbase_modules = {
@@ -473,7 +147,7 @@ gun_battery = {
 	ai_build_at_chokepoint = yes
 	ai_build_outside_chokepoint = no
 	ai_weight = {
-		weight = 100
+		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
 		modifier = {
 			factor = 2
 			exists = owner
@@ -515,7 +189,7 @@ missile_battery = {
 	ai_build_at_chokepoint = yes
 	ai_build_outside_chokepoint = no
 	ai_weight = {
-		weight = 100
+		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
 		modifier = {
 			factor = 2
 			exists = owner
@@ -556,7 +230,7 @@ hangar_bay = {
 
 	ai_build_outside_chokepoint = yes
 	ai_weight = {
-		weight = 100
+		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
 		modifier = {
 			factor = 2
 			exists = owner
@@ -626,7 +300,7 @@ solar_panel_network = {
 
 	ai_build_at_chokepoint = no
 	ai_weight = {
-		weight = 100
+		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
 	}
 }
 
@@ -659,7 +333,7 @@ trading_hub = {
 
 	ai_build_at_chokepoint = no
 	ai_weight = {
-		weight = 100
+		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
 		modifier = {
 			factor = 5
 			NOT = { has_starbase_module = trading_hub }
@@ -671,69 +345,3 @@ trading_hub = {
 		}
 	}
 }
-
-gun_battery_upgrade = {
-	section = "BATTERY_STARBASE_SECTION_UPGRADE"
-	icon = "GFX_starbase_battery_upgrade"
-	construction_days = 180
-
-	potential = {
-		exists = owner
-		owner = {
-			OR = {
-				has_technology = tech_energy_lance_1
-				has_technology = tech_energy_lance_2
-				has_technology = tech_arc_emitter_1
-				has_technology = tech_arc_emitter_2
-				has_technology = tech_mass_accelerator_1
-				has_technology = tech_mass_accelerator_2
-			}
-		}
-	}
-
-	possible = {
-		custom_tooltip = {
-			fail_text = "requires_citadel_upgrade"
-			has_starbase_size >= starbase_citadel_upgrade
-		}
-	}
-
-	resources = {
-		category = starbase_modules
-		cost = {
-			alloys = 50
-		}
-
-		upkeep = {
-			energy = 5
-		}
-	}
-
-	station_modifier = {
-		ship_shield_mult = 0.10
-		ship_hull_mult = 0.10
-		ship_armor_mult = 0.10
-		starbase_trade_protection_range_add = 1
-		starbase_trade_protection_add = 5
-	}
-
-	ai_build_at_chokepoint = yes
-	ai_build_outside_chokepoint = no
-	show_in_tech = "tech_starbase_citadel_upgrade"
-
-	ai_weight = {
-		weight = 100
-		modifier = {
-			factor = 2
-			exists = owner
-			owner = {
-				OR = {
-					is_preferred_weapons = weapon_type_energy
-					is_preferred_weapons = weapon_type_kinetic
-				}
-			}
-		}
-	}
-}	
-
-
