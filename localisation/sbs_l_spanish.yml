@@ -2,17 +2,17 @@
 
  CORVETTE_FRACTAL_REACTOR:0 "Reactor Fractal"
  DESTROYER_FRACTAL_REACTOR:0 "Reactor Fractal"
- CRUISER_FRACTAL_REACTOR:0 "Reactor Fractal" 
+ CRUISER_FRACTAL_REACTOR:0 "Reactor Fractal"
  BATTLESHIP_FRACTAL_REACTOR:0 "Reactor Fractal"
  COLOSSUS_FRACTAL_REACTOR:0 "Reactor Fractal"
  ION_CANNON_FRACTAL_REACTOR:0 "Reactor Fractal"
  PLATFORM_FRACTAL_REACTOR:0 "Reactor Fractal"
  TITAN_FRACTAL_REACTOR:0 "Reactor Fractal"
- STARBASE_FRACTAL_REACTOR:0 "Reactor Fractal" 
+ STARBASE_FRACTAL_REACTOR:0 "Reactor Fractal"
  tech_fractal_power:0 "Reactor Fractal"
- tech_fractal_power_desc:0 "El reactor funciona por la atracción gravitacional de las estrellas cercanas colisionando rayos cósmicos en complejos y fractales cálculos enigmáticos produciendo mucha potencia sin ruido alguno." 
- 
- TECH_UNLOCK_FRACTAL_POWER_DESC:0 "El reactor funciona por la atracción gravitacional de las estrellas cercanas colisionando rayos cósmicos en complejos y fractales cálculos enigmáticos produciendo mucha potencia sin ruido alguno." 
+ tech_fractal_power_desc:0 "El reactor funciona por la atracción gravitacional de las estrellas cercanas colisionando rayos cósmicos en complejos y fractales cálculos enigmáticos produciendo mucha potencia sin ruido alguno."
+
+ TECH_UNLOCK_FRACTAL_POWER_DESC:0 "El reactor funciona por la atracción gravitacional de las estrellas cercanas colisionando rayos cósmicos en complejos y fractales cálculos enigmáticos produciendo mucha potencia sin ruido alguno."
  TECH_UNLOCK_FRACTAL_POWER_TITLE:0 "§SDesbloquea el componente:§! Reactor Fractal \n§SSuspensión:§! Gravitacional Cero.\n§SFragmentación:§! Invisibilidad Completa"
 
  CORVETTE_MID_TPDA:0 "Artillería media"
@@ -20,7 +20,7 @@
  CORVETTE_MID_S3_AUX:0 "Interceptador aux"
  CORVETTE_MID_S2PD1_AUX:0 "Nave de vigilancia aux"
  CORVETTE_MID_TPDA_AUX:0 "Artillería media aux"
- 
+
  DESTROYER_BOW_L1_XP:0 "Artillería media"
  DESTROYER_STERN_T1:0 "Popa de misiles"
  DESTROYER_BOW_M1S2_AUX:0 "Nave artillada aux"
@@ -31,8 +31,8 @@
  DESTROYER_STERN_M1_AUX:0 "Popa artillada aux"
  DESTROYER_BOW_L1_XP_AUX:0 "Artillería media aux"
  DESTROYER_STERN_T1_AUX:0 "Popa de misiles aux"
- 
- CRUISER_BOW_T2:0 "Artillería media" 
+
+ CRUISER_BOW_T2:0 "Artillería media"
  CRUISER_STERN_T2:0 "Popa de misiles"
  CRUISER_STERN_T3:0 "Popa de vigilancia"
  CRUISER_BOW_L1_AUX:0 "Proa de artillería aux"
@@ -47,7 +47,7 @@
  CRUISER_BOW_T2_AUX:0 "Artillería media aux"
  CRUISER_STERN_T2_AUX:0 "Popa de misiles aux"
  CRUISER_STERN_T3_AUX:0 "Popa de vigilancia aux"
- 
+
  BATTLESHIP_BOW_M2S4_AUX:0 "Proa con montura aux"
  BATTLESHIP_BOW_L1M1S2_AUX:0 "Proa transversal aux"
  BATTLESHIP_BOW_L2_AUX:0 "Rompe pulsos aux"
@@ -60,9 +60,9 @@
  BATTLESHIP_STERN_M1S2_AUX:0 "Baluarte eón aux"
  BATTLESHIP_STERN_L1_AUX:0 "Popa artillada aux"
  BATTLESHIP_STERN_M2_AUX:0 "Popa transversal aux"
- BATTLESHIP_STERN_S4_AUX:0 "Baluarte cénit aux" 
+ BATTLESHIP_STERN_S4_AUX:0 "Baluarte cénit aux"
  TITAN_STERN_XP:0 "Popa de titán aux"
- 
+
  STARBASE_AURA_CRISIS:0 "Aura Crisis"
  STARBASE_AURA_CRISIS_DESC:0 "Poderosa aura ancestral contra crisis galactica"
  STARBASE_AURA_FALLEN:0 "Aura Despertados"
@@ -73,13 +73,13 @@
 
  TECH_UNLOCK_STARHOLD_TECHNO_TITLE:0 "§SDesbloquea Tecnología:§! Secciones Auxiliares I"
  TECH_UNLOCK_STARHOLD_TECHNO_DESC:0 "Gracias a los módulos auxiliares de nuestras bases estelares, se agregan nuevas secciones a Corvetas"
- 
+
  TECH_UNLOCK_STAR_FORTRESS_TECHNO_TITLE:0 "§SDesbloquea Tecnología:§! Secciones Auxiliares II"
  TECH_UNLOCK_STAR_FORTRESS_TECHNO_DESC:0 "Gracias a los módulos auxiliares de nuestras bases estelares, se agregan nuevas secciones a Destructores"
- 
+
  TECH_UNLOCK_CITADEL_TECHNO_TITLE:0 "§SDesbloquea Tecnología:§! Secciones Auxiliares III"
  TECH_UNLOCK_CITADEL_TECHNO_DESC:0 "Gracias a los módulos auxiliares de nuestras bases estelares, se agregan nuevas secciones a Cruceros"
- 
+
  TECH_UNLOCK_CITADEL_UPGRADE_TITLE:0 "§SDesbloquea Tecnología:§! Mejora de Ciudadela"
  TECH_UNLOCK_CITADEL_UPGRADE_DESC:0 "Los avances tecnológicos de nuestro imperio son de temer, con las nuevas mejoras de nuestra Base Estelar será un cerrojo imponente y se agregan nuevas secciones a Acorazados y Titanes"
 
@@ -108,7 +108,7 @@
  requires_mine_living_metal:0 "$TRIGGER_FAIL$Requiere un §YDeposito de extracción de metal vivo§! en el sistema."
  requires_mine_dark_matter:0 "$TRIGGER_FAIL$Requiere un §YDeposito de extracción de materia oscura§! en el sistema."
  requires_mine_minerals:0 "$TRIGGER_FAIL$Requiere un §YDeposito de extracción de minerales§! en el sistema."
- 
+
  sm_archeological_center:0 "Centro Arqueológico"
  sm_archeological_center_desc:0 "Estudio Arqueológico de la base estelar"
  sm_aura_crisis:0 "Aura Crisis"
@@ -151,22 +151,22 @@
  sm_refinery_living_metal_desc:0 "Con la tecnología de nanites podemos refinar metal vivo extraído desde las profundidades mejorando la producción."
  sm_refinery_dark_matter:0 "Refinería de materia oscura"
  sm_refinery_dark_matter_desc:0 "Con la tecnología de nanites podemos refinar materia oscura extraída desde las profundidades mejorando la producción."
- 
+
  starbase_aura_warp:0 "Aura HiperImpulso"
  starbase_citadel_upgrade:0 "Mejora Ciudadela"
  starbase_citadel_upgrade_plural:0 "Mejoras de Ciudadelas"
  stargate:0 "Puerta Estelar"
  stargate_DESC:0 "$gateway_final_DESC$"
  stargate_MEGASTRUCTURE_DETAILS:0 "$gateway_final_MEGASTRUCTURE_DETAILS$"
- 
+
  tech_defense_platform_hull_2:0 "Integridad estructural de Tungsteno"
  tech_defense_platform_hull_2_desc:0 "Un armazón reforzado y escudos con mayor absorción de impacto garantizan la integridad estructural de la estación de defensa, incluso bajo intensa presión."
  tech_defense_platform_hull_3:0 "Integridad estructural de Grafeno"
  tech_defense_platform_hull_3_desc:0 "Un armazón reforzado y escudos con mayor absorción de impacto garantizan la integridad estructural de fortaleza de defensa, incluso bajo intensa presión y fuego cruzado."
- 
+
  mod_shipsize_military_station_medium_hull_add:0 "Pts. de casco estación de defensa"
  mod_shipsize_military_station_medium_build_speed_mult:0 "Veloc. constr. estación de defensa"
- 
+
  mod_shipsize_military_station_large_hull_add:0 "Pts. de casco fortaleza de defensa"
  mod_shipsize_military_station_large_build_speed_mult:0 "Veloc. constr. fortaleza de defensa"
 
@@ -174,52 +174,52 @@
  tech_solar_panels_desc:0 "Usa la energía del sol para producir energía"
  tech_starbase_citadel_upgrade:0 "Mejora de Ciudadela"
  tech_starbase_citadel_upgrade_desc:0 "Accede a los nuevos edificios de la Base Estelar Ciudadela para reforzar los limites de tu imperio o fomentar las artes, el comercio o investigación"
- 
- whgenevents.6.desc:0 "La Base Estelar en §Y[psi_nav_origin_system.GetName]§! ha terminado de crear una §Y$stargate$§! única y estable para la red interna subespacial de nuestro imperio."
+
+ whgenevents.6.desc:0 "La Base Estelar en §Y[System.GetName]§! ha terminado de crear una §Y$stargate$§! única y estable para la red interna subespacial de nuestro imperio."
  whgenevents.6.name:0 "$stargate$ Generada"
- 
+
  sm_social_services:0 "Serv. Sociales"
  sm_social_services_desc:0 "Los módulos de servicios sociales ayudarán significativamente a agilizar los trámites y necesidades del pueblo local y extranjero."
- 
+
  sm_storage_food:0 "Frigorífico"
  sm_storage_food_desc:0 "Los módulos de alimentos ayudarán a preservar y resguardar las necesidades del pueblo local y extranjero en tiempos difíciles."
- 
+
  sm_storage_minerals:0 "Bodegas"
  sm_storage_minerals_desc:0 "Los módulos de minerales ayudarán a la minería local para preservar las necesidades de materia prima en tiempos difíciles."
- 
+
  sm_manufacturing_module:0 "Manufactura"
  sm_manufacturing_module_desc:0 "Los módulos de manufactura ayudarán a las fábricas locales a mantener el comercio estable y cubrir las necesidades de la población."
- 
+
  sm_unity_module:0 "Unidad galáctica"
  sm_unity_module_desc:0 "Los módulos de unidad son iconos nacionales y ayudarán a la población a sentirse mas orgullosos de sus logros y expansión por la galaxia."
- 
+
  sm_job_module:0 "Ofic. de empleos"
  sm_job_module_desc:0 "Edificio de coordinación de la base estelar que ayuda con los trabajos planetarios según las especialidades de los módulos incorporados."
- 
+
  sm_job_drone_module:0 "Ofic. de empleos"
  sm_job_drone_module_desc:0 "Edificio de coordinación de la base estelar que ayuda con los trabajos planetarios según las especialidades de los módulos incorporados."
- 
+
  sm_orbital_assembly:0 "Acelerador biokinético"
  sm_orbital_assembly_desc:0 "La base estelar tiene la capacidad de producir implantes mecánicos y un poderoso rayo de ondas para acelerar los genomas biológicos mejorando el crecimiento y ensamblaje de la población planetaria."
 
  sm_system_fast:0 "Soporte estación"
  sm_system_fast_desc:0 "Edificio que genera un campo gravitacional extremo en sistemas especiales. Las bases estelares estarán mas protegidas a las variables ambientales de sistemas galácticos complejos como estrellas Neutrones, Púlsares u Agujeros Negros."
- 
+
  requires_black_hole_neutron_star_pulsar_x:0 "§RRequiere un §Y$pc_pulsar$§! \n§RRequiere un §Y$pc_neutron_star$§! \n§RRequiere un §Y$pc_black_hole$§! \nen el sistema.§! \n Y algunas estrellas binarias o trinarias."
- 
+
  requires_no_modules:0 "$TRIGGER_FAIL$§RNo se puede tener módulos de combate en la base estelar§!: debido a los componentes explosivos para la elaboración de aleaciones."
- 
+
  requires_citadel_upgrade:0 "$TRIGGER_FAIL$§RRequiere actualización§!: debido a los requerimientos de montaje de armas y defensa especializados es necesario reforzar la base estelar"
- 
+
  starbase_space_storm:0 "La base estelar genera una interrupción de velocidad y sincronización de escudos en el sistema... en contra medida agrega potencia a todas sus armas."
 
  tech_ftl_inhibitor_II:0 "Inhibidor avanzado"
  tech_ftl_inhibitor_II_desc:0 "Poderoso inhibidor avanzado de contraataque contra imperios hostiles de principios de siglo ayudará a contrarrestar la ofensiva enemiga."
- 
+
  STARBASE_AURA_FTL_INHIBITOR_II:0 "Inhibidor avanzado"
  aura_starbase_ftl_inhibitor_II:0 "Aura ofensiva - Inhibidor de contraataque"
  mod_damage_vs_country_type_default_mult:0 "Daño a imperios hostiles comunes"
  mod_damage_vs_country_type_adversary_mult:0 "Daño a imperios hostiles declarados"
- 
+
  tech_station_large:0 "Fortaleza"
  tech_station_large_desc:0 "Una gigantesca estructura acorazada de defensa capas de soportar el mas intenso ataque naval"
