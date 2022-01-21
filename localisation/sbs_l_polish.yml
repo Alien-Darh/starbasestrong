@@ -186,5 +186,5 @@
  tech_starbase_citadel_upgrade_desc: "Access the new buildings of the Citadel stellar base to reinforce the limits of your empire or promote arts, commerce or research"
  tech_station_large: "Strength"
  tech_station_large_desc: "A gigantic armored defense structure capable of withstanding the most intense naval attack"
- whgenevents.6.desc: "The starbase in §Y[psi_nav_origin_system.GetName]§! has finished creating a §Y$stargate$§! Unique and stable for the subspace internal network of our empire."
+ whgenevents.6.desc: "The starbase in §Y[System.GetName]§! has finished creating a §Y$stargate$§! Unique and stable for the subspace internal network of our empire."
  whgenevents.6.name: "$stargate$ Generated"

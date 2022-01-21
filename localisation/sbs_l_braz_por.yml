@@ -186,5 +186,5 @@
  tech_starbase_citadel_upgrade_desc: "Accede a los nuevos edificios de la Base Estelar Ciudadela para reforzar los limites de tu imperio o fomentar las artes, el comercio o investigación"
  tech_station_large: "Fortaleza"
  tech_station_large_desc: "Una gigantesca estructura acorazada de defensa capas de soportar el mas intenso ataque naval"
- whgenevents.6.desc: "La Base Estelar en §Y[psi_nav_origin_system.GetName]§! ha terminado de crear una §Y$stargate$§! única y estable para la red interna subespacial de nuestro imperio."
+ whgenevents.6.desc: "La Base Estelar en §Y[System.GetName]§! ha terminado de crear una §Y$stargate$§! única y estable para la red interna subespacial de nuestro imperio."
  whgenevents.6.name: "$stargate$ Generada"

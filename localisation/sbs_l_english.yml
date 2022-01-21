@@ -175,7 +175,7 @@
  tech_starbase_citadel_upgrade:0 "Improvement of citadel"
  tech_starbase_citadel_upgrade_desc:0 "Access the new buildings of the Citadel stellar base to reinforce the limits of your empire or promote arts, commerce or research"
 
- whgenevents.6.desc:0 "The starbase in §Y[psi_nav_origin_system.GetName]§! has finished creating a §Y$stargate$§! Unique and stable for the subspace internal network of our empire."
+ whgenevents.6.desc:0 "The starbase in §Y[System.GetName]§! has finished creating a §Y$stargate$§! Unique and stable for the subspace internal network of our empire."
  whgenevents.6.name:0 "$stargate$ Generated"
 
  sm_social_services:0 "Social services"

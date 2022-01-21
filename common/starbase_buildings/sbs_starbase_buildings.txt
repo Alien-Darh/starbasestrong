@@ -484,8 +484,10 @@ star_gate = {
 		owner = { has_technology = tech_gateway_activation }
 	}
 	possible = {
-		custom_tooltip = { fail_text = "requires_starfortress" }
-		has_starbase_size >= starbase_starfortress
+		custom_tooltip = {
+			fail_text = "requires_starfortress"
+			has_starbase_size >= starbase_starfortress
+		}
 		solar_system = {
 			#has_natural_wormhole = no
 			NOR = {
@@ -493,6 +495,8 @@ star_gate = {
 				has_megastructure = gateway_ruined
 				has_megastructure = gateway_restored
 				has_megastructure = gateway_final
+				has_megastructure = gateway_final
+				has_megastructure = stargate
 			}
 		}
 	}
