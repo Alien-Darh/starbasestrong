@@ -1,9 +1,9 @@
-version="3.2.2"
+version="3.3.0"
 tags={
 	"Military"
 	"Starbases"
 }
 name="Starbase Strong"
 picture="thumbnail.png"
-supported_version="3.2.2"
+supported_version="3.3.*"
 remote_file_id="1886769279"

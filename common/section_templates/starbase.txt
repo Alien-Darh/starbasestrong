@@ -306,28 +306,28 @@ ship_section_template = {
 		name = "STRIKE_CRAFT_01"
 		template = "large_strike_craft"
 		rotation = 90
-		locatorname = "part1"
+		locatorname = "slot1"
 	}
 
 	component_slot = {
 		name = "STRIKE_CRAFT_02"
 		template = "large_strike_craft"
 		rotation = 90
-		locatorname = "part2"
+		locatorname = "slot1"
 	}
 
 	component_slot = {
 		name = "STRIKE_CRAFT_03"
 		template = "large_strike_craft"
 		rotation = 90
-		locatorname = "part3"
+		locatorname = "slot1"
 	}
 
 	component_slot = {
 		name = "STRIKE_CRAFT_04"
 		template = "large_strike_craft"
 		rotation = 90
-		locatorname = "part4"
+		locatorname = "slot1"
 	}
 
 	small_utility_slots = 0
@@ -379,19 +379,19 @@ ship_section_template = {
 	component_slot = {
 		name = "TORPEDO_01"
 		template = "medium_missile_turret"
-		locatorname = "medium_gun_11"
+		locatorname = "medium_gun_011"
 	}
 
 	component_slot = {
 		name = "TORPEDO_02"
 		template = "medium_missile_turret"
-		locatorname = "medium_gun_12"
+		locatorname = "medium_gun_012"
 	}
 
 	component_slot = {
 		name = "TORPEDO_03"
 		template = "medium_missile_turret"
-		locatorname = "medium_gun_13"
+		locatorname = "medium_gun_013"
 	}
 
 	component_slot = {
@@ -433,42 +433,42 @@ ship_section_template = {
 	component_slot = {
 		name = "LARGE_GUN_05"
 		template = "large_turret"
-		locatorname = "medium_gun_10"
+		locatorname = "medium_gun_010"
 	}
 
 	component_slot = {
 		name = "STRIKE_CRAFT_01"
 		template = "large_strike_craft"
 		rotation = 90
-		locatorname = "part1"
+		locatorname = "slot1"
 	}
 
 	component_slot = {
 		name = "STRIKE_CRAFT_02"
 		template = "large_strike_craft"
 		rotation = 90
-		locatorname = "part2"
+		locatorname = "slot1"
 	}
 
 	component_slot = {
 		name = "STRIKE_CRAFT_03"
 		template = "large_strike_craft"
 		rotation = 90
-		locatorname = "part3"
+		locatorname = "slot1"
 	}
 
 	component_slot = {
 		name = "STRIKE_CRAFT_04"
 		template = "large_strike_craft"
 		rotation = 90
-		locatorname = "part4"
+		locatorname = "slot1"
 	}
 
 	component_slot = {
 		name = "STRIKE_CRAFT_05"
 		template = "large_strike_craft"
 		rotation = 90
-		locatorname = "part5"
+		locatorname = "slot1"
 	}
 
 	small_utility_slots = 0
