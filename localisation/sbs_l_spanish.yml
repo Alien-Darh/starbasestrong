@@ -155,6 +155,10 @@
  starbase_aura_warp:0 "Aura HiperImpulso"
  starbase_citadel_upgrade:0 "Mejora Ciudadela"
  starbase_citadel_upgrade_plural:0 "Mejoras de Ciudadelas"
+ CITADEL_STARBASE_SECTION:0 "Sección de combate de alto poder"
+ CITADEL_STARBASE_UPGRADE_SECTION:0 "Mejora de la base estelar a Bunker estelar"
+ BATTERY_STARBASE_SECTION_UPGRADE:0 "Materia de largo alcance y alto poder de fuego"
+ 
  stargate:0 "Puerta Estelar"
  stargate_DESC:0 "$gateway_final_DESC$"
  stargate_MEGASTRUCTURE_DETAILS:0 "$gateway_final_MEGASTRUCTURE_DETAILS$"
@@ -217,6 +221,8 @@
  tech_ftl_inhibitor_II_desc:0 "Poderoso inhibidor avanzado de contraataque contra imperios hostiles de principios de siglo ayudará a contrarrestar la ofensiva enemiga."
 
  STARBASE_AURA_FTL_INHIBITOR_II:0 "Inhibidor avanzado"
+ STARBASE_AURA_FTL_INHIBITOR_II_DESC:0 "Potente inhibidor contra amenazas"
+ STARBASE_AURA_FTL_INHIBITOR_DESC:0 "Inhibidor inicial contra amenazas"
  aura_starbase_ftl_inhibitor_II:0 "Aura ofensiva - Inhibidor de contraataque"
  mod_damage_vs_country_type_default_mult:0 "Daño a imperios hostiles comunes"
  mod_damage_vs_country_type_adversary_mult:0 "Daño a imperios hostiles declarados"
