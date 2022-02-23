@@ -8,12 +8,12 @@ unity_module = {
 			influence = 20
 		}
 		produces = {
-			unity = 0.50
+			unity = 1
 		}
 
 		upkeep = {
 			energy = 5
-			influence = 0.10
+			influence = 0.05
 		}
 	}
 

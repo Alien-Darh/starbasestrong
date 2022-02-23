@@ -550,7 +550,7 @@ aux_module = {
 			hidden_trigger = { exists = this }
 			exists = owner
 			owner = {
-				has_technology = tech_corvettes
+				has_technology = tech_corvette_build_speed
 			}
 		}
 		shipsize_corvette_build_speed_mult = 0.05
@@ -561,7 +561,7 @@ aux_module = {
 			hidden_trigger = { exists = this }
 			exists = owner
 			owner = {
-				has_technology = tech_destroyers
+				has_technology = tech_destroyer_build_speed
 			}
 		}
 		shipsize_destroyer_build_speed_mult = 0.10
@@ -572,7 +572,7 @@ aux_module = {
 			hidden_trigger = { exists = this }
 			exists = owner
 			owner = {
-				has_technology = tech_cruisers
+				has_technology = tech_cruiser_build_speed
 			}
 		}
 		shipsize_cruiser_build_speed_mult = 0.15
@@ -583,7 +583,7 @@ aux_module = {
 			hidden_trigger = { exists = this }
 			exists = owner
 			owner = {
-				has_technology = tech_battleships
+				has_technology = tech_battleship_build_speed
 			}
 		}
 		shipsize_battleship_build_speed_mult = 0.20
@@ -621,7 +621,11 @@ aux_module = {
 		}
 		shipsize_juggernaut_build_speed_mult = 0.35
 	}
-
+	
+	station_modifier = {
+		starbase_shipyard_build_speed_mult = 0.05
+	}
+	
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
 	ai_weight = { weight = 100 }

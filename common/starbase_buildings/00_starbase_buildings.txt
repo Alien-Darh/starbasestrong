@@ -460,9 +460,6 @@ offworld_trading_company = {
 	}
 
 	custom_tooltip = sm_offworld_trading_company_desc_modifier
-	system_modifier = {
-		planet_max_branch_office_buildings_add = 1
-	}
 
 	show_in_tech = "tech_space_trading"
 
@@ -490,7 +487,13 @@ fleet_academy = {
 	}
 
 	possible = {
-		has_starbase_module = shipyard
+		OR = {
+			has_starbase_module = shipyard
+			starbase_buildable_is_in_queue_before = {
+				first = shipyard
+				second = fleet_academy
+			}
+		}
 	}
 
 	ship_modifier = {
@@ -814,7 +817,9 @@ target_uplink_computer = {
 		ship_weapon_range_mult = 1.50
 		shipclass_military_station_damage_mult = 0.20
 	}
-
+	defense_platform_modifier = {
+		ship_weapon_range_mult = 0.50
+	}
 	ai_build_at_chokepoint = yes
 	ai_build_outside_chokepoint = no
 	ai_weight = {
@@ -931,7 +936,11 @@ curator_think_tank = {
 			solar_system = { has_star_flag = enclave }
 		}
 		owner = {
-			is_homicidal = no
+			NOR = {
+				has_valid_civic = civic_fanatic_purifiers
+				has_valid_civic = civic_hive_devouring_swarm
+				has_valid_civic = civic_machine_terminator
+			}
 		}
 	}
 
@@ -1019,7 +1028,11 @@ art_college = {
 			solar_system = { has_star_flag = enclave }
 		}
 		owner = {
-			is_homicidal = no
+			NOR = {
+				has_valid_civic = civic_fanatic_purifiers
+				has_valid_civic = civic_hive_devouring_swarm
+				has_valid_civic = civic_machine_terminator
+			}
 		}
 	}
 
@@ -1166,7 +1179,7 @@ warp_fluctuator = {
 	potential = {
 		exists = owner
 		owner = {
-			has_technology = tech_hyper_drive_2
+			has_technology = tech_interstellar_economics
 			is_gestalt = no
 		}
 	}
@@ -1191,10 +1204,6 @@ warp_fluctuator = {
 
 	station_modifier = {
 		starbase_trade_collection_range_add = 2
-	}
-
-	system_modifier = {
-		planet_max_branch_office_buildings_add = 1
 	}
 
 	equipped_component = "STARBASE_AURA_WARP_FLUCTUATOR"
@@ -1460,6 +1469,13 @@ dragon_hatchery = {
 		custom_tooltip = {
 			fail_text = "requires_citadel"
 			has_starbase_size >= starbase_citadel
+		}
+		OR = {
+			has_starbase_module = shipyard
+			starbase_buildable_is_in_queue_before = {
+				first = shipyard
+				second = dragon_hatchery
+			}
 		}
 	}
 

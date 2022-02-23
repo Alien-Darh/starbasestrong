@@ -1,10 +1,10 @@
 tech_solar_panels = {
 	area = engineering
-	cost = @tier1cost2
+	cost = @tier1cost1
 	tier = 1
 	category = { voidcraft }
 	#prerequisites = { "tech_starbase_2" }
-	weight = @tier1weight2
+	weight = @tier1weight1
 
 	potential = {
 		is_gestalt = no
