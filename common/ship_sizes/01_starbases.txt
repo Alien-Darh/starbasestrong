@@ -70,4 +70,11 @@ starbase_citadel_upgrade = {
 	formation_priority = @starbase_formation_priority
 	icon_frame = 6
 	icon = ship_size_military_station
+	potential_construction = {
+		always = no
+	}
+
+	possible_construction = {
+		always = no
+	}
 }

@@ -242,13 +242,16 @@ pulsar_observatory = {
 
 	potential = {
 		exists = owner
-		owner = { has_technology = tech_sensors_2 }
+		owner = { has_technology = tech_self_aware_logic }
 	}
 
 	possible = {
 		custom_tooltip = {
-			fail_text = "requires_starport"
-			has_starbase_size >= starbase_starport
+			fail_text = "requires_starport_or_ring"
+			OR = {
+				has_starbase_size >= starbase_starport
+				is_orbital_ring = yes
+			}
 		}
 		custom_tooltip = {
 			fail_text = "requires_pulsar"
@@ -311,8 +314,7 @@ pulsar_observatory = {
 			energy = 2
 		}
 	}
-
-	show_in_tech = "tech_sensors_2"
+	show_in_tech = "tech_self_aware_logic"
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
 	ai_weight = { weight = 100 }
@@ -324,13 +326,16 @@ neutron_observatory = {
 
 	potential = {
 		exists = owner
-		owner = { has_technology = tech_sensors_2 }
+		owner = { has_technology = tech_self_aware_logic }
 	}
 
 	possible = {
 		custom_tooltip = {
-			fail_text = "requires_starport"
-			has_starbase_size >= starbase_starport
+			fail_text = "requires_starport_or_ring"
+			OR = {
+				has_starbase_size >= starbase_starport
+				is_orbital_ring = yes
+			}
 		}
 		custom_tooltip = {
 			fail_text = "requires_neutron_star"
@@ -394,8 +399,7 @@ neutron_observatory = {
 			energy = 2
 		}
 	}
-
-	show_in_tech = "tech_sensors_2"
+	show_in_tech = "tech_self_aware_logic"
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
 	ai_weight = { weight = 100 }
@@ -1273,6 +1277,28 @@ job_module = {
 		}
 	}
 
+	triggered_country_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_colonial_bureaucracy
+			}
+		}
+		empire_size_systems_mult = -0.10
+		empire_size_districts_mult = -0.10
+	}
+	
+	triggered_country_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_galactic_bureaucracy
+			}
+		}
+		empire_size_systems_mult = -0.20
+		empire_size_districts_mult = -0.20
+	}
+	
 	show_in_tech = "tech_colonial_centralization"
 	show_in_tech = "tech_galactic_administration"
 
@@ -1710,6 +1736,28 @@ job_drone_module = {
 		}
 	}
 
+	triggered_country_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_colonial_bureaucracy
+			}
+		}
+		empire_size_systems_mult = -0.10
+		empire_size_districts_mult = -0.10
+	}
+	
+	triggered_country_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_galactic_bureaucracy
+			}
+		}
+		empire_size_systems_mult = -0.20
+		empire_size_districts_mult = -0.20
+	}
+	
 	show_in_tech = "tech_colonial_centralization"
 	show_in_tech = "tech_galactic_administration"
 
@@ -1932,4 +1980,100 @@ system_fast = {
 	ai_weight = {
 		weight = 100
 	}
+}
+
+orbital_ecology = {
+	icon = "GFX_starbase_orbital_ecology"
+	construction_days = 360
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 50
+		}
+		upkeep = {
+			food = 10
+			minerals = 10
+			energy = 5
+		}
+	}
+
+	potential = {
+		exists = owner
+		owner = {
+			has_technology = tech_colonization_2
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starhold"
+			has_starbase_size >= starbase_starport
+		}
+		custom_tooltip = {
+			fail_text = "requires_colonized_planet"
+			solar_system = {
+				any_system_planet = {
+					is_owned_by = from
+				}
+			}
+		}
+	}
+
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			exists = owner
+			owner = {
+				has_technology = tech_colonization_2
+			}
+		}
+		planet_stability_add = 5
+	}
+
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			exists = owner
+			owner = {
+				has_technology = tech_colonization_3
+			}
+		}
+		planet_stability_add = 5
+	}
+
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			exists = owner
+			owner = {
+				has_technology = tech_colonization_4
+			}
+		}
+		planet_stability_add = 5
+	}
+
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			exists = owner
+			owner = {
+				has_technology = tech_colonization_5
+			}
+		}
+		planet_stability_add = 5
+	}
+
+	system_modifier = {
+		deposit_blockers_cost_mult = -0.10
+	}
+
+	show_in_tech = "tech_colonization_2"
+	show_in_tech = "tech_colonization_3"
+	show_in_tech = "tech_colonization_4"
+	show_in_tech = "tech_colonization_5"
+
+	ai_build_at_chokepoint = no
+	ai_build_outside_chokepoint = yes
+	ai_weight = { weight = 100 }
 }

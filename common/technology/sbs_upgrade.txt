@@ -47,8 +47,18 @@ tech_starbase_citadel_upgrade = {
         modifier = {
             factor = 0
 			mid_game_years_passed <= 75
-			#years_passed < 150
         }
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_unyielding_adopt
+		}
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
 	}
 
 	prereqfor_desc = {
@@ -59,8 +69,15 @@ tech_starbase_citadel_upgrade = {
 	}
 
 	ai_weight = {
-	    factor = 1000
-    }
+		factor = @ai_starbase_types_factor
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
 }
 
 tech_ftl_inhibitor = {
@@ -82,7 +99,7 @@ tech_ftl_inhibitor = {
 			has_tradition = tr_unyielding_adopt
 		}
 		modifier = {
-			factor = 1.25
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = physics
 				has_trait = "leader_trait_expertise_particles"
@@ -91,7 +108,6 @@ tech_ftl_inhibitor = {
 	}
 
 	ai_weight = {
-		factor = 4 #FTL inhibitor is really good
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -121,7 +137,7 @@ tech_ftl_inhibitor_II = {
 			has_tradition = tr_unyielding_adopt
 		}
 		modifier = {
-			factor = 1.25
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = physics
 				has_trait = "leader_trait_expertise_particles"
@@ -130,7 +146,6 @@ tech_ftl_inhibitor_II = {
 	}
 
 	ai_weight = {
-		factor = 4 #FTL inhibitor is really good
 		modifier = {
 			factor = 1.25
 			research_leader = {

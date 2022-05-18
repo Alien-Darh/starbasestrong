@@ -43,7 +43,10 @@ military_station_small = {
 
 	potential_construction = {
 		is_scope_type = starbase
-		has_starbase_size >= starbase_outpost
+		OR = {
+			has_starbase_size >= starbase_outpost
+			has_starbase_size >= orbital_ring_tier_1
+		}	
 	}
 
 	resources = {
@@ -92,7 +95,10 @@ military_station_medium = {
 	
 	potential_construction = {
 		is_scope_type = starbase
-		has_starbase_size >= starbase_starfortress
+		OR = {
+			has_starbase_size >= starbase_starfortress
+			has_starbase_size >= orbital_ring_tier_2
+		}
 	}
 
 	resources = {
@@ -141,7 +147,10 @@ military_station_large = {
 	
 	potential_construction = {
 		is_scope_type = starbase
-		has_starbase_size >= starbase_citadel_upgrade
+		OR = {
+			has_starbase_size >= starbase_citadel_upgrade
+			has_starbase_size >= orbital_ring_tier_3
+		}
 	}
 
 	resources = {

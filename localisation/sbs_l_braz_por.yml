@@ -163,6 +163,8 @@
  sm_storage_minerals_desc: "Los módulos de minerales ayudarán a la minería local para preservar las necesidades de materia prima en tiempos difíciles."
  sm_system_fast: "Soporte estación"
  sm_system_fast_desc: "Edificio que genera un campo gravitacional extremo en sistemas especiales. Las bases estelares estarán mas protegidas a las variables ambientales de sistemas galácticos complejos como estrellas Neutrones, Púlsares u Agujeros Negros."
+ sm_orbital_ecology:0 "Ecological Station"
+ sm_orbital_ecology_desc:0 "Environmental planning building and orbital ecological adaptation that helps in the improvement of the adequate use of planetary surfaces for the implementation of population and crops."
  sm_unity_module: "Unidad galáctica"
  sm_unity_module_desc: "Los módulos de unidad son iconos nacionales y ayudarán a la población a sentirse mas orgullosos de sus logros y expansión por la galaxia."
  starbase_aura_warp: "Aura HiperImpulso"

@@ -5,7 +5,7 @@ tech_gateway_activation = {
 	tier = 2
 	category = { particles }
 	is_rare = yes
-	is_reverse_engineerable = no	
+	is_reverse_engineerable = no
 	weight = @tier2weight3
 	prerequisites = { "tech_gateway_construction" "tech_starbase_4" }
 
@@ -39,11 +39,15 @@ tech_gateway_activation = {
 			has_tradition = tr_discovery_adopt
 		}
 		modifier = {
-			factor = 1.25
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = physics
 				has_trait = "leader_trait_expertise_particles"
 			}
+		}
+		modifier = {
+			factor = @ap_grasp_the_void_travel_tech
+			has_ascension_perk = ap_grasp_the_void
 		}
 		modifier = {
 			factor = @ap_technological_ascendancy_rare_tech
@@ -58,29 +62,20 @@ tech_gateway_activation = {
 			}
 		}
 	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 2
+			is_ai = no #auto-research
+		}
+	}
 }
-#		modifier = {
-#			factor = 0
-#			NOR = {
-#				OR = {
-#					has_seen_any_bypass = gateway
-#					has_seen_any_bypass = lgate
-#				}
-#				any_relation = {
-#					is_country_type = default
-#					has_communications = ROOT
-#					has_technology = tech_gateway_activation
-#				}
-#			}
-#		}
-#		modifier = {
-#			factor = 4
-#			OR = {
-#				owns_any_bypass = gateway
-#				owns_any_bypass = lgate
-#			}
-#		}
-#	}
 
 tech_gateway_construction = {
 	cost = @tier2cost2
@@ -88,7 +83,7 @@ tech_gateway_construction = {
 	tier = 2
 	category = { particles }
 	is_rare = yes
-	is_reverse_engineerable = no	
+	is_reverse_engineerable = no
 	weight = @tier1weight2
 	prerequisites = { "tech_starbase_3" }
 
@@ -122,7 +117,7 @@ tech_gateway_construction = {
 			has_tradition = tr_discovery_adopt
 		}
 		modifier = {
-			factor = 1.25
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = physics
 				has_trait = "leader_trait_expertise_particles"
@@ -131,6 +126,10 @@ tech_gateway_construction = {
 		modifier = {
 			factor = @ap_technological_ascendancy_rare_tech
 			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = @ap_grasp_the_void_travel_tech
+			has_ascension_perk = ap_grasp_the_void
 		}
 		modifier = {
 			factor = @federation_perk_factor
@@ -147,13 +146,16 @@ tech_gateway_construction = {
 	}
 
 	ai_weight = {
-		factor = 4 #FTL techs are good
 		modifier = {
 			factor = 1.25
 			research_leader = {
 				area = physics
 				has_trait = "leader_trait_expertise_particles"
 			}
+		}
+		modifier = {
+			factor = 2
+			is_ai = no #auto-research
 		}
 	}
 }

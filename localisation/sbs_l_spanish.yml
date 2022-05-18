@@ -127,10 +127,14 @@
  sm_management_office_desc:0 "Despliega módulos de administración en las bases estelares alrededor de los planetas para aumentar la eficiencia burocrática."
  sm_nanotechnology_lab:0 "Laboratorio Nanotecnológico"
  sm_nanotechnology_lab_desc:0 "Producción experimental de recursos"
- sm_neutron_observatory:0 "Observatorio de estrellas neutrones"
+ sm_neutron_observatory:0 "Obser. de Neutrones"
  sm_neutron_observatory_desc:0 "Con la construcción de una instalación científica especializada en estudiar estrellas de neutrones, nuestro imperio seguramente verá mejoras en su entendimiento de sociedad."
- sm_pulsar_observatory:0 "Observatorio de Pulsares"
+ sm_pulsar_observatory:0 "Obser. de Pulsares"
  sm_pulsar_observatory_desc:0 "Con la construcción de una instalación científica especializada en estudiar Pulsares, nuestro imperio seguramente verá mejoras en su entendimiento de ingeniería."
+ TECH_UNLOCK_STARBASE_BUILDING:0 "§HAccede al edif. de la base:§! $NAME$"
+ TECH_UNLOCK_STARBASE_MODULE:0 "§HDesbloquea módulo de la base:§! $NAME$"
+ feature_campaign_edicts:0 "Edictos adicionales"
+ sm_black_hole_observatory:0 "Obser. de agujeros"
  sm_research_lav:0 "Laboratorio de Ciencia"
  sm_research_lav_desc:0 "Laboratorio de investigación de la base estelar"
  sm_solar_panels:0 "Paneles Solares"
@@ -194,7 +198,7 @@
  sm_manufacturing_module:0 "Manufactura"
  sm_manufacturing_module_desc:0 "Los módulos de manufactura ayudarán a las fábricas locales a mantener el comercio estable y cubrir las necesidades de la población."
 
- sm_unity_module:0 "Unidad galáctica"
+ sm_unity_module:0 "Unidad"
  sm_unity_module_desc:0 "Los módulos de unidad son iconos nacionales y ayudarán a la población a sentirse mas orgullosos de sus logros y expansión por la galaxia."
 
  sm_job_module:0 "Ofic. de empleos"
@@ -208,6 +212,9 @@
 
  sm_system_fast:0 "Soporte estación"
  sm_system_fast_desc:0 "Edificio que genera un campo gravitacional extremo en sistemas especiales. Las bases estelares estarán mas protegidas a las variables ambientales de sistemas galácticos complejos como estrellas Neutrones, Púlsares u Agujeros Negros."
+ 
+ sm_orbital_ecology:0 "Estación ecológica"
+ sm_orbital_ecology_desc:0 "Edificio de planificacion ambiental y adaptacion ecologica orbital que ayuda en la mejora del uso adecuado de superficies planetarias para la implementacion de población y cultivos."
 
  requires_black_hole_neutron_star_pulsar_x:0 "§RRequiere un §Y$pc_pulsar$§! \n§RRequiere un §Y$pc_neutron_star$§! \n§RRequiere un §Y$pc_black_hole$§! \nen el sistema.§! \n Y algunas estrellas binarias o trinarias."
 

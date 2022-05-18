@@ -26,28 +26,32 @@ tech_defense_platform_hull_1 = {
 			}
 		}
 		modifier = {
-			factor = 1.25
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = engineering
 				has_trait = "leader_trait_expertise_voidcraft"
 			}
 		}
+		modifier = {
+			factor = 1.5
+			is_specialist_subject_type = { TYPE = bulwark }
+		}
 	}
 
 	modifier = {
 		shipclass_military_station_hull_mult = 0.25
-		ship_military_station_small_cost_mult = -0.2
+		ship_military_station_small_cost_mult = -0.25
 	}
 }
 
 tech_defense_platform_hull_2 = {
-	cost = @tier3cost3
+	cost = @tier3cost2
 	area = engineering
 	tier = 3
 	category = { voidcraft }
 	prerequisites = { "tech_starbase_4" "tech_defense_platform_hull_1" }
 	is_rare = yes
-	weight = @tier3weight3
+	weight = @tier3weight2
 
 
 	weight_modifier = {
@@ -61,32 +65,36 @@ tech_defense_platform_hull_2 = {
 			has_federation = yes
 			federation = {
 				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = tech_defense_platform_hull_2 }
+				any_member = { has_technology = tech_defense_platform_hull_1 }
 			}
 		}
 		modifier = {
-			factor = 1.25
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = engineering
 				has_trait = "leader_trait_expertise_voidcraft"
 			}
 		}
+		modifier = {
+			factor = 1.5
+			is_specialist_subject_type = { TYPE = bulwark }
+		}
 	}
 
 	modifier = {
 		shipclass_military_station_hull_mult = 0.25
-		ship_military_station_medium_cost_mult = -0.25
+		shipclass_military_station_damage_mult = 0.25
 	}
 }
 
 tech_defense_platform_hull_3 = {
-	cost = @tier4cost3
+	cost = @tier4cost2
 	area = engineering
 	tier = 4
 	category = { voidcraft }
 	prerequisites = { "tech_starbase_citadel_upgrade" "tech_defense_platform_hull_2" }
 	is_rare = yes
-	weight = @tier4weight3
+	weight = @tier4weight2
 
 	weight_modifier = {
 		factor = 0.50
@@ -99,20 +107,24 @@ tech_defense_platform_hull_3 = {
 			has_federation = yes
 			federation = {
 				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = tech_defense_platform_hull_3 }
+				any_member = { has_technology = tech_defense_platform_hull_1 }
 			}
 		}
 		modifier = {
-			factor = 1.25
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = engineering
 				has_trait = "leader_trait_expertise_voidcraft"
 			}
 		}
+		modifier = {
+			factor = 1.5
+			is_specialist_subject_type = { TYPE = bulwark }
+		}
 	}
 
 	modifier = {
 		shipclass_military_station_hull_mult = 0.25
-		shipsize_military_station_medium_build_speed_mult = 0.25
+		shipclass_military_station_damage_mult = 0.25
 	}
 }

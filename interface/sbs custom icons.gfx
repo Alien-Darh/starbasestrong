@@ -143,4 +143,8 @@ spriteTypes = {
 		name = "GFX_ship_part_aura_snare_II"
 		texturefile = "gfx/interface/icons/ship_parts/ship_part_aura_snare_II.dds"
 	}
+	spriteType = {
+		name = "GFX_starbase_orbital_ecology"
+		texturefile = "gfx/interface/icons/modules/starbase_orbital_ecology.dds"
+	}
 }

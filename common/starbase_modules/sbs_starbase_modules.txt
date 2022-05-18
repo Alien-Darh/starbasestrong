@@ -8,18 +8,20 @@ unity_module = {
 			influence = 20
 		}
 		produces = {
-			unity = 1
+			unity = 5
 		}
 
 		upkeep = {
-			energy = 5
+			energy = 10
 			influence = 0.05
 		}
 	}
 
 	potential = {
 		exists = owner
-		owner = { has_technology = tech_planetary_unification } }
+		owner = { has_technology = tech_planetary_unification } 
+		is_orbital_ring = no
+	}
 
 	possible = {
 		custom_tooltip = {
@@ -57,7 +59,9 @@ manufacturing_module = {
 
 	potential = {
 		exists = owner
-		owner = { has_technology = tech_space_trading } }
+		owner = { has_technology = tech_space_trading }
+		is_orbital_ring = no
+	}
 
 	possible = {
 		custom_tooltip = {
@@ -88,6 +92,7 @@ storage_food = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_hydroponics }
+		is_orbital_ring = no
 	}
 
 	resources = {
@@ -125,6 +130,7 @@ storage_minerals = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_mining_1 }
+		is_orbital_ring = no
 	}
 
 	resources = {
@@ -192,7 +198,9 @@ management_office = {
 
 	potential = {
 		exists = owner
-		owner = { has_technology = tech_adaptive_bureaucracy } }
+		owner = { has_technology = tech_adaptive_bureaucracy }
+		is_orbital_ring = no
+	}
 
 	possible = {
 		custom_tooltip = {
@@ -209,8 +217,12 @@ management_office = {
 		}
 	}
 
-	country_modifier = { country_admin_cap_mult = 0.05 }
-
+	country_modifier = {
+		empire_size_colonies_mult = -0.05
+		empire_size_districts_mult = -0.10
+		empire_size_pops_mult = -0.15
+	}
+	
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
 	ai_weight = { weight = 100 }
@@ -224,6 +236,7 @@ social_services = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_effective_bureaucracy }
+		is_orbital_ring = no
 	}
 
 	resources = {
@@ -233,7 +246,7 @@ social_services = {
 			energy = 10
 		}
 		produces = {
-			influence = 0.2
+			influence = 0.25
 		}
 		upkeep = {
 			energy = 10
@@ -275,6 +288,7 @@ solar_panels = {
 			is_gestalt = no
 			has_technology = "tech_solar_panels"
 		}
+		is_orbital_ring = no
 	}
 
 	resources = {
@@ -349,6 +363,7 @@ gun_battery_upgrade = {
 				has_technology = tech_mass_accelerator_2
 			}
 		}
+		is_orbital_ring = no
 	}
 
 	possible = {
