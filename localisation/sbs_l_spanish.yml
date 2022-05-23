@@ -89,8 +89,7 @@
  gateway_0:0 "Emplazamiento portal"
  gateway_final:0 "Portal"
  gateway_restored:0 "$gateway_final$"
- gateway_ruined:0 "Portal deshabilitado"
- mod_damage_vs_country_type_awakened_marauders_mult:0 "Daño a los merodeadores"
+ gateway_ruined:0 "Portal deshabilitado
  mod_shipsize_colossus_build_speed_mult:0 "Veloc. construc. Colosos"
  mod_shipsize_juggernaut_build_speed_mult:0 "Veloc. construc. Juggernaut"
  mod_shipsize_titan_build_speed_mult:0 "Veloc. construc. Titanes"

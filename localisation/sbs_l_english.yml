@@ -90,7 +90,6 @@
  gateway_final:0 "Portal"
  gateway_restored:0 "$gateway_final$"
  gateway_ruined:0 "Disabled portal"
- mod_damage_vs_country_type_awakened_marauders_mult:0 "Damage to the marauders"
  mod_shipsize_colossus_build_speed_mult:0 "Speed colossus construction"
  mod_shipsize_juggernaut_build_speed_mult:0 "Speed juggernaut construction"
  mod_shipsize_titan_build_speed_mult:0 "Speed titans construction"

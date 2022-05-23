@@ -24,13 +24,33 @@ utility_component_template = {
 		modifier = {
 			ship_emergency_ftl_min_days_mult = 1
 			ship_disengage_chance_mult = -0.20
+		}
+
+		graphics = {
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+
+	friendly_aura = {
+		name = "aura_starbase_ftl_inhibitor_II"
+		system_wide = yes
+
+		stack_info = {
+			id = friendly_flt_inhibitor_aura_II
+			priority = 10
+		}
+
+		modifier = {
 			damage_vs_country_type_adversary_mult = 0.20
 			damage_vs_country_type_default_mult = 0.10
 		}
 
 		graphics = {
 			ship_effect = {
-				entity = "ship_aura_negative_entity"
+				entity = "ship_aura_positive_entity"
 				dynamic_scale = no
 			}
 		}
@@ -52,11 +72,11 @@ utility_component_template = {
 
 	ftl_inhibitor = yes
 
-	hostile_aura = {
+	friendly_aura = {
 		name = "aura_starbase_crisis"
 		system_wide = yes
 		stack_info = {
-			id = hostile_crisis_aura
+			id = friendly_crisis_aura
 			priority = 10
 		}
 
@@ -69,19 +89,13 @@ utility_component_template = {
 			damage_vs_country_type_gray_goo_mult = 0.25
 		}
 
-		damage_per_day = {
-			accuracy = 0.25
-			damage = { min = 10 max = 25 }
-			armor_penetration = 0.75
-		}
-
 		graphics = {
 			area_effect = {
 				entity = "circle_area_entity"
 				dynamic_scale = yes
 			}
 			ship_effect = {
-				entity = "ship_aura_negative_entity"
+				entity = "ship_aura_positive_entity"
 				dynamic_scale = no
 			}
 		}
@@ -96,11 +110,11 @@ utility_component_template = {
 	power = 0
 	class_restriction = { shipclass_starbase }
 
-	hostile_aura = {
+	friendly_aura = {
 		name = "aura_starbase_fallen"
 		system_wide = yes
 		stack_info = {
-			id = hostile_fallen_aura
+			id = friendly_fallen_aura
 			priority = 10
 		}
 
@@ -118,7 +132,7 @@ utility_component_template = {
 				dynamic_scale = yes
 			}
 			ship_effect = {
-				entity = "ship_aura_negative_entity"
+				entity = "ship_aura_positive_entity"
 				dynamic_scale = no
 			}
 		}

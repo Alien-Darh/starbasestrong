@@ -79,7 +79,6 @@
  gateway_restored: "$gateway_final$"
  gateway_ruined: "Disabled portal"
  mod_damage_vs_country_type_adversary_mult: "Damage to declared hostile empires"
- mod_damage_vs_country_type_awakened_marauders_mult: "Damage to the marauders"
  mod_damage_vs_country_type_default_mult: "Damage to common hostile empires"
  mod_shipclass_military_station_build_speed_mult: "Speed construction defense platforms"
  mod_shipclass_military_station_evasion_add: "Evasion of the defense platform"

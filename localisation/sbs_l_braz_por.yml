@@ -79,7 +79,6 @@
  gateway_restored: "$gateway_final$"
  gateway_ruined: "Portal deshabilitado"
  mod_damage_vs_country_type_adversary_mult: "Daño a imperios hostiles declarados"
- mod_damage_vs_country_type_awakened_marauders_mult: "Daño a los merodeadores"
  mod_damage_vs_country_type_default_mult: "Daño a imperios hostiles comunes"
  mod_shipclass_military_station_build_speed_mult: "Veloc. constr. plataformas defensa"
  mod_shipclass_military_station_evasion_add: "Evasión de la plataforma de defensa"
