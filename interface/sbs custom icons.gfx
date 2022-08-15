@@ -68,6 +68,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/icons/modules/starbase_management_office.dds"
 	}
 	spriteType = {
+		name = "GFX_starbase_management_building"
+		texturefile = "gfx/interface/icons/modules/starbase_management_building.dds"
+	}
+	spriteType = {
 		name = "GFX_spaceport_module_observatory_research"
 		texturefile = "gfx/interface/icons/modules/spaceport_module_observatory_research.dds"
 	}

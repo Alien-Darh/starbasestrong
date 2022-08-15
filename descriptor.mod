@@ -5,5 +5,5 @@ tags={
 }
 name="Starbase Strong"
 picture="thumbnail.png"
-supported_version="3.4.2"
+supported_version="3.4.5"
 remote_file_id="1886769279"

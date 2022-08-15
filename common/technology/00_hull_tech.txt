@@ -49,7 +49,7 @@ tech_defense_platform_hull_2 = {
 	area = engineering
 	tier = 3
 	category = { voidcraft }
-	prerequisites = { "tech_starbase_4" "tech_defense_platform_hull_1" }
+	prerequisites = { "tech_starbase_3" "tech_defense_platform_hull_1" }
 	is_rare = yes
 	weight = @tier3weight2
 

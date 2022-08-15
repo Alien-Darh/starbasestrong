@@ -1,4 +1,4 @@
-﻿l_english:
+﻿l_japanese:
 
  CORVETTE_FRACTAL_REACTOR:0 "Fractal reactor"
  DESTROYER_FRACTAL_REACTOR:0 "Fractal reactor"
@@ -235,7 +235,7 @@
  starbase_citadel_upgrade_plural:0 "Ciudad improvements"
  CITADEL_STARBASE_SECTION:0 "High power combat section"
  CITADEL_STARBASE_UPGRADE_SECTION:0 "Improvement of the stellar base to stellar bunker"
- BATTERY_STARBASE_SECTION_UPGRADE:0 "Long-range weapon and high fire power"
+ BATTERY_STARBASE_SECTION_UPGRADE:0 "Long -range weapon and high fire power"
  
  stargate:0 "Stargate"
  stargate_DESC:0 "$gateway_final_DESC$"
