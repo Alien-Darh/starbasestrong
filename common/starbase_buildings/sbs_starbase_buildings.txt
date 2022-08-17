@@ -2129,7 +2129,8 @@ management_building = {
 				has_technology = tech_colonial_centralization
 			}
 		}
-		empire_size_systems_mult = -0.05
+		empire_size_branch_office_mult = -0.02
+		empire_size_systems_mult = -0.02
 	}
 	
 	triggered_country_modifier = {
@@ -2139,7 +2140,8 @@ management_building = {
 				has_technology = tech_galactic_administration
 			}
 		}
-		empire_size_systems_mult = -0.10
+		empire_size_systems_mult = -0.02
+		empire_size_branch_office_mult = -0.02
 	}
 
 	triggered_country_modifier = {
@@ -2149,7 +2151,8 @@ management_building = {
 				has_technology = tech_colonial_bureaucracy
 			}
 		}
-		empire_size_branch_office_mult = -0.05
+		empire_size_branch_office_mult = -0.04
+		empire_size_systems_mult = -0.04
 	}
 
 	triggered_country_modifier = {
@@ -2159,7 +2162,8 @@ management_building = {
 				has_technology = tech_galactic_bureaucracy
 			}
 		}
-		empire_size_branch_office_mult = -0.10
+		empire_size_branch_office_mult = -0.04
+		empire_size_systems_mult = -0.04
 	}
 
 	country_modifier = {
