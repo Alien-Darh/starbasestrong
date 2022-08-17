@@ -197,8 +197,8 @@
  sm_orbital_ecology:0 "Estación ecológica"
  sm_orbital_ecology_desc:0 "Edificio de planificacion ambiental y adaptacion ecologica orbital que ayuda en la mejora del uso adecuado de superficies planetarias para la implementacion de población y cultivos."
 
- sm_management_building:0 "Intendencia"
- sm_management_building_desc:0 "Corporación encargada de administrar y gobernar eficientemente los sistemas planetarios de la zona."
+ sm_management_building:0 "Administración"
+ sm_management_building_desc:0 "Edificio corporativo encargado de administrar y gobernar eficientemente los sistemas planetarios de la zona."
 
  sm_research_lav:0 "Laboratorio de Ciencia"
  sm_research_lav_desc:0 "Laboratorio de investigación de la base estelar"
