@@ -128,3 +128,144 @@ tech_defense_platform_hull_3 = {
 		shipclass_military_station_damage_mult = 0.25
 	}
 }
+
+# Torpedso hipersónicos
+tech_torpedoes_0 = {
+	cost = @tier1cost2
+	area = engineering
+	tier = 1
+	category = { propulsion }
+	ai_update_type = military
+	weight = @tier1weight2
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = @favored_weapon_ai_tech_factor
+			is_preferred_weapons = weapon_type_explosive
+		}
+		modifier = {
+			factor = @disfavored_weapon_ai_tech_factor
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}
+	}
+}
+
+tech_torpedoes_1 = {
+	area = engineering
+	cost = @tier2cost2
+	tier = 2
+	category = { propulsion }
+	ai_update_type = military
+	prerequisites = { "tech_missiles_1" "tech_torpedoes_0" }
+	weight = @tier2weight2
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = @favored_weapon_ai_tech_factor
+			is_preferred_weapons = weapon_type_explosive
+		}
+		modifier = {
+			factor = @disfavored_weapon_ai_tech_factor
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}
+	}
+}
+
+tech_sensors_1 = {
+	area = physics
+	cost = @tier1cost1
+	tier = 1
+	category = { computing }
+	ai_update_type = all
+	weight = @tier1weight1
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_discovery_adopt
+		}
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+	}
+}

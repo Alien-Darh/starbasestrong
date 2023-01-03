@@ -5,14 +5,14 @@ unity_module = {
 	resources = {
 		category = starbase_modules
 		cost = {
-			influence = 25
+			influence = 10
 		}
 		produces = {
 			unity = 5
 		}
 
 		upkeep = {
-			energy = 10
+			energy = 5
 			influence = 0.1
 		}
 	}
@@ -28,12 +28,16 @@ unity_module = {
 			fail_text = "requires_starport"
 			has_starbase_size >= starbase_starport
 		}
+		custom_tooltip = {
+			fail_text = "requires_max_u"
+			NOT = {
+				has_starbase_module = unity_module
+			}
+		}
 	}
 
 	show_in_tech = "tech_planetary_unification"
 
-	ai_build_at_chokepoint = no
-	ai_build_outside_chokepoint = yes
 	ai_weight = { weight = 100 }
 }
 
@@ -45,6 +49,7 @@ manufacturing_module = {
 		category = starbase_modules
 		cost = {
 			minerals = 20
+			alloys = 20
 			influence = 20
 		}
 		produces = {
@@ -80,8 +85,6 @@ manufacturing_module = {
 
 	show_in_tech = "tech_space_trading"
 
-	ai_build_at_chokepoint = no
-	ai_build_outside_chokepoint = yes
 	ai_weight = { weight = 100 }
 }
 
@@ -103,7 +106,9 @@ storage_food = {
 		produces = {
 			food = 5
 		}
-		upkeep = { energy = 5 }
+		upkeep = { 
+			energy = 5
+		}
 	}
 
 	possible = {
@@ -116,8 +121,6 @@ storage_food = {
 
 	show_in_tech = "tech_eco_simulation"
 
-	ai_build_at_chokepoint = no
-	ai_build_outside_chokepoint = yes
 	ai_weight = {
 		weight = 50
 	}
@@ -141,7 +144,9 @@ storage_minerals = {
 		produces = {
 			minerals = 5
 		}
-		upkeep = { energy = 5 }
+		upkeep = { 
+			energy = 5
+		}
 	}
 
 	possible = {
@@ -172,8 +177,6 @@ storage_minerals = {
 
 	show_in_tech = "tech_mining_1"
 
-	ai_build_at_chokepoint = no
-	ai_build_outside_chokepoint = yes
 	ai_weight = {
 		weight = 50
 	}
@@ -186,12 +189,12 @@ management_office = {
 	resources = {
 		category = starbase_modules
 		cost = {
-			minerals = 25
-			influence = 25
+			minor_artifacts = 5
+			influence = 50
 		}
 
 		upkeep = {
-			energy = 25
+			energy = 5
 			influence = 0.25
 		}
 	}
@@ -215,16 +218,20 @@ management_office = {
 				}
 			}
 		}
-		has_starbase_building = management_building
+		custom_tooltip = {
+			fail_text = "requires_max_m"
+			NOT = {
+				has_starbase_module = management_office
+			}
+		}	
+		has_starbase_building = management_building	
 	}
 
 	country_modifier = {
 		empire_size_colonies_mult = -0.05
 		empire_size_districts_mult = -0.05
 	}
-	
-	ai_build_at_chokepoint = no
-	ai_build_outside_chokepoint = yes
+
 	ai_weight = { weight = 100 }
 	show_in_tech = "tech_adaptive_bureaucracy"
 }
@@ -249,7 +256,8 @@ social_services = {
 			influence = 0.25
 		}
 		upkeep = {
-			energy = 25
+			energy = 10
+			alloys = 2
 		}
 	}
 
@@ -266,12 +274,16 @@ social_services = {
 				}
 			}
 		}
+		custom_tooltip = {
+			fail_text = "requires_max_s"
+			NOT = {
+				has_starbase_module = social_services
+			}
+		}
 	}
 
 	show_in_tech = "tech_effective_bureaucracy"
 
-	ai_build_at_chokepoint = no
-	ai_build_outside_chokepoint = yes
 	ai_weight = {
 		weight = 50
 	}
@@ -281,20 +293,38 @@ solar_panels = {
 	section = "REFINERY_STARBASE_SECTION"
 	icon = "GFX_solar_panel_network"
 	construction_days = 130
+	initial = yes
 
 	potential = {
 		exists = owner
+		is_orbital_ring = no
 		owner = {
 			is_gestalt = no
 			has_technology = "tech_solar_panels"
 		}
-		is_orbital_ring = no
+	}
+
+	possible = {
+		solar_system = {
+			custom_tooltip = {
+				fail_text = "requires_no_black_hole_or_dyson_sphere"
+				NOR = {
+					is_star_class = sc_black_hole
+					has_megastructure = dyson_sphere_3
+					has_megastructure = dyson_sphere_4
+					has_megastructure = dyson_sphere_5
+				}
+			}
+		}
 	}
 
 	resources = {
 		category = starbase_modules
 		cost = {
 			alloys = 25
+		}
+		upkeep = {
+			minerals = 2
 		}
 
 		produces = {
@@ -330,19 +360,10 @@ solar_panels = {
 		}
 	}
 
-	possible = {
-		custom_tooltip = {
-			fail_text = "requires_starport"
-			has_starbase_size >= starbase_starport
-		}
-	}
-
 	show_in_tech = "tech_solar_panels"
 
-	ai_build_at_chokepoint = no
-	ai_build_outside_chokepoint = yes
 	ai_weight = {
-		weight = 50
+		weight = 100
 	}
 }
 
@@ -392,8 +413,6 @@ gun_battery_upgrade = {
 		starbase_trade_protection_add = 5
 	}
 
-	ai_build_at_chokepoint = yes
-	ai_build_outside_chokepoint = no
 	show_in_tech = "tech_starbase_citadel_upgrade"
 
 	ai_weight = {

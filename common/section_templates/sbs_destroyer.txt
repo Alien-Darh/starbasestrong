@@ -9,6 +9,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "destroyer_bow_S3_entity"
 	icon = "GFX_ship_part_core_bow"
+	ai_tags = { gunship }
 
 	ai_weight = {
 		modifier = {
@@ -61,6 +62,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "destroyer_stern_M1_entity"
 	icon = "GFX_ship_part_core_stern"
+	ai_tags = { explosive energy_torpedoes }
 
 	ai_weight = {
 		modifier = {
@@ -98,6 +100,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "destroyer_bow_M1S2_entity"
 	icon = "GFX_ship_part_core_bow"
+	ai_tags = { gunship }
 
 	prerequisites = { tech_starbase_4 }
 
@@ -151,6 +154,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "destroyer_bow_S3_entity"
 	icon = "GFX_ship_part_core_bow"
+	ai_tags = { screen }
 
 	prerequisites = { tech_starbase_4 }
 
@@ -206,6 +210,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "destroyer_bow_L1_entity"
 	icon = "GFX_ship_part_core_bow"
+	ai_tags = { artillery }
 
 	prerequisites = { tech_starbase_4 }
 
@@ -251,6 +256,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "destroyer_stern_S2_entity"
 	icon = "GFX_ship_part_core_stern"
+	ai_tags = { screen }
 
 	prerequisites = { tech_starbase_4 }
 
@@ -299,6 +305,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "destroyer_stern_S2_entity"
 	icon = "GFX_ship_part_core_stern"
+	ai_tags = { gunship }
 
 	prerequisites = { tech_starbase_4 }
 
@@ -337,6 +344,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "destroyer_stern_M1_entity"
 	icon = "GFX_ship_part_core_stern"
+	ai_tags = { artillery }
 
 	prerequisites = { tech_starbase_4 }
 
@@ -365,6 +373,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "destroyer_bow_M1S2_entity"
 	icon = "GFX_ship_part_core_bow"
+	ai_tags = { gunship }
 
 	prerequisites = { tech_starbase_4 }
 
@@ -418,6 +427,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "destroyer_stern_M1_entity"
 	icon = "GFX_ship_part_core_stern"
+	ai_tags = { explosive energy_torpedoes }
 
 	prerequisites = { tech_starbase_4 }
 

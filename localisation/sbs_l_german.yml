@@ -10,6 +10,7 @@
  TITAN_FRACTAL_REACTOR:0 "Fraktal-Reaktor"
  STARBASE_FRACTAL_REACTOR:0 "Fraktal-Reaktor"
 
+ CORVETTE_MID_S1_AUX:0 "Aux Shifter Core"
  CORVETTE_MID_TPDA:0 "Mittlere artillerie"
  CORVETTE_MID_M1S1_AUX:0 "Hilfsraketenschiff"
  CORVETTE_MID_S3_AUX:0 "Hilfsabfangjäger"
@@ -43,11 +44,16 @@
  CRUISER_STERN_T2_AUX:0 "Hilfs-Heckrakete"
  CRUISER_STERN_T3_AUX:0 "Überwachung Heckhilfsmittel"
 
+ BATTLESHIP_BOW_L1S4_AUX:1 "Titan Breaker aux"
  BATTLESHIP_BOW_M2S4_AUX:0 "Bogen mit Hilfshalterung"
  BATTLESHIP_BOW_L1M1S2_AUX:0 "Hilfsquerbogen"
  BATTLESHIP_BOW_L2_AUX:0 "Axillarer pulsbrecher"
  BATTLESHIP_BOW_M1S2SHB_AUX:0 "Hilfsbügelbogen"
  BATTLESHIP_BOW_M3S2_AUX:0 "Hilfs-Seelenbrecher"
+ BATTLESHIP_MID_L2S4:1 "Nova-Kern"
+ BATTLESHIP_MID_L2S4_AUX:1 "Nova-Kern aux"
+ BATTLESHIP_MID_L1M4:1 "Sturmbringer-Kern"
+ BATTLESHIP_MID_L1M4_AUX:1 "Sturmbringer-Kern aux"
  BATTLESHIP_MID_L2M2_AUX:0 "Hilfsquerkern"
  BATTLESHIP_MID_L3_AUX:0 "Hilfsartilleriekern"
  BATTLESHIP_MID_M4SHB_AUX:0 "Hilfshangarkern"
@@ -83,7 +89,7 @@
 
  TECH_UNLOCK_FRACTAL_POWER_DESC:0 "Der Reaktor wirkt aufgrund der Gravitationsanziehung nahe gelegener Sterne, die kosmische Strahlen in komplexen und fraktalen rätselhaften Berechnungen kollidieren und viel Leistung ohne Geräusche erzeugen."
 
- TECH_UNLOCK_FRACTAL_POWER_TITLE:0 "§SSchalte die Komponente frei:§! Fraktal-Reaktor \n§SSuspension:§! Zull -Gravitation.\n§SZersplitterung:§! Vollständige Unsichtbarkeit."
+ TECH_UNLOCK_FRACTAL_POWER_TITLE:0 "§SSchalte die Komponente frei:§! Fraktal-Reaktor."
 
  tech_defense_platform_hull_2:0 "Strukturintegrität von Wolfram"
  tech_defense_platform_hull_2_desc:0 "Ein verstärkter Rahmen und eine Schilde mit einer größeren Aufprallabsorption garantiert die strukturelle Integrität der Verteidigungsstation auch unter starkem Druck."
@@ -102,8 +108,41 @@
  tech_starbase_citadel_upgrade:0 "$starbase_citadel_upgrade$"
  tech_starbase_citadel_upgrade_desc:0 "Greife auf die neuen Konstruktionen der $starbase_citadel_plural$-Sternenbasis zu, um die Grenzen Ihres Reiches zu stärken oder Kunst, Handel oder Forschung zu fördern."
 
- whgenevents.6.name: "$stargate$ erstellt"
- whgenevents.6.desc: "Die Sternenbasis in §Y[System.GetName]§! hat die Erstellung eines einzigartigen und stabilen §YStargates§! für das interne Subraum-Netzwerk unseres Reiches abgeschlossen."
+ tech_gateway_stargate:0 "Stargate"
+ tech_gateway_stargate_desc:0 "Durch den Bau neuer Sternentore an unseren Stützpunkten können wir ein schnelles Transportnetzwerk schaffen, das das interstellare Reisen revolutionieren könnte."
+
+ gateway_stargate_title:0 "Stargate konstruktion"
+ gateway_stargate_desc:0 "Es ermöglicht den Bau von Sternentoren an unseren Stützpunkten und die Schaffung eines galaktischen Netzwerks innerhalb unserer Grenzen."
+
+ whgenevents.6.name:0 "$stargate$ erstellt"
+ whgenevents.6.desc:0 "Die Sternenbasis in §Y[System.GetName]§! hat die Erstellung eines einzigartigen und stabilen §YStargates§! für das interne Subraum-Netzwerk unseres Reiches abgeschlossen."
+
+ tech_starclean:0 "Nano-Recycling"
+ tech_starclean_desc:0 "Nanotechnologie zum Recyceln zerfallener, veralteter oder taktisch falsch platzierter Megastrukturen."
+ starclean_title:0 "Nano-Recycling"
+ starclean_desc:0 "Fortschrittliche Technologie zum Recyceln kaputter, veralteter oder taktisch falsch platzierter Megastrukturen mit Tausenden von Nanobots, die alles potenziell Nützliche recyceln."
+
+ sm_star_clean:0 "Nano-Recycling"
+ sm_star_clean_desc:0 "Nanotechnologie zum Recyceln zerfallener, veralteter oder taktisch falsch platzierter Megastrukturen."
+ requires_mega:0 "$TRIGGER_FAIL$Benötigt ein §Y$MEGASTRUCTURE$§! oder ein §Y$pc_habitat$§! im System."
+
+ sm_star_hyper:0 "$hyper_relay$ SBS"
+ sm_star_hyper_desc:0 "$hyper_relay_DESC$"
+ hyper_relay_starbase:0 "$hyper_relay$ SBS"
+ hyper_relay_starbase_DESC:0 "$hyper_relay_DESC$"
+ hyper_relay_starbase_MEGASTRUCTURE_DETAILS:1 "$hyper_relay_MEGASTRUCTURE_DETAILS$"
+
+ cleanevents.1.name:0 "Nano-Recycling"
+ cleanevents.1.desc:0 "Tausende von kontrollierten Nanobots werden aus der Sternenbasis strömen und jede Megastruktur recyceln, die ihnen befohlen wird."
+ cleanevents.1.a:0 "§Y$MEGASTRUCTURE$§!"
+ cleanevents.1.b:0 "§Y$pc_habitat$§!"
+ cleanevents.1.c:0 "§Y$BYPASS_GATEWAY$§!"
+ cleanevents.1.d:0 "§Y$hyper_relay$§!"
+ cleanevents.1.e:0 "§Y$orbital_ring$§!"
+ cleanevents.1.f:0 "§YNanobots aufladen§!"
+
+ tech_sensors_1:0 "Remote sensing"
+ tech_sensors_1_desc:0 "These sensors have been created to operate at a distance, controlled by advanced artificial intelligence is capable of controlling modules that detect changes in wavelengths and some unnatural energy alterations. Its easy positioning makes it essential for exploration, support in defense and replenishment of spacecraft."
 
  aura_starbase_crisis:0 "Offensive Aura - Krise"
  aura_starbase_fallen:0 "Offensive Aura - Gefallen"
@@ -135,7 +174,8 @@
  requires_mine_minerals:0 "$TRIGGER_FAIL$benötigt ein §YMineral extraction Vorkommen§! im system."
  requires_no_modules:0 "$TRIGGER_FAIL$§RSie können keine Kampfmodule an der Sternbasis haben§!: Aufgrund der explosiven Komponenten für die Ausarbeitung von Legierungen."
  requires_citadel_upgrade:0 "$TRIGGER_FAIL$§RBenötigt Update§!: Aufgrund der Anforderungen an spezialisierte Waffen und Verteidigungsversammlungen ist es notwendig, die Sternbasis zu verstärken."
- requires_black_hole_neutron_star_pulsar_x:0 "§RBenötigt ein §Y$pc_pulsar$§! \n§RBenötigt ein §Y$pc_neutron_star$§! \n§RBenötigt ein §Y$pc_black_hole$§! \neim system.§! \nUnd einige binäre oder Trinarsterne."
+ requires_habitable_planet:0 "Erfordert einen bewohnbaren Planeten im System, um ihn zu erkunden"
+ requires_modules:0 "Requires combat module"
 
  sm_archeological_center:0 "Archäologisches Zentrum"
  sm_archeological_center_desc:0 "Archäologische Untersuchung der Sternenbasis"
@@ -152,6 +192,12 @@
  sm_aux_module:0 "Hilfsplattform"
  sm_aux_module_desc:0 "Erweiterte Hilfsplattformen für Star Bases, die einen schnellen Flottenbau durchführen."
 
+ sm_aux_module_starhold:0 "Support module"
+ sm_aux_module_starhold_desc:0 "Logistic support station is strategically placed at the edges of our borders with some tactical advantages."
+ 
+ sm_module_protection_link:0 "Protection module"
+ sm_module_protection_link_desc:0 "A station that is able to repel and delay some pirate attacks in the system before being captured."
+ 
  sm_gun_battery_upgrade:0 "XL-Kanonen-Batterie"
  sm_gun_battery_upgrade_desc:0 "Füge der Sternenbasis zwei XL-Waffensteckplätze hinzu."
 
@@ -170,7 +216,7 @@
  sm_pulsar_observatory:0 "Pulsar-Observatorium"
  sm_pulsar_observatory_desc:0 "Mit dem Bau einer wissenschaftlichen Einrichtung, die auf das Studium von Pulsaren spezialisiert ist, wird unser Imperium sicherlich Verbesserungen in seinem technischen Verständnis sehen."
 
- sm_social_services:0 "Soziale Dienste"
+ sm_social_services:0 "Dienste"
  sm_social_services_desc:0 "Die Module der sozialen Dienste werden wesentlich dazu beitragen, die Verfahren und Bedürfnisse der einheimischen und ausländischen Bevölkerung zu rationalisieren."
 
  sm_storage_food:0 "Kühler"
@@ -182,7 +228,7 @@
  sm_manufacturing_module:0 "Herstellung"
  sm_manufacturing_module_desc:0 "Die Fertigungsmodule helfen den lokalen Fabriken, den stabilen Handel aufrechtzuerhalten und die Bedürfnisse der Bevölkerung zu erfüllen."
 
- sm_unity_module:0 "Galaktische Einheit"
+ sm_unity_module:0 "Einheit"
  sm_unity_module_desc:0 "Die Einheitenmodule sind nationale Symbole und werden der Bevölkerung helfen, stolzer auf ihre Errungenschaften und ihre Expansion durch die Galaxie zu sein."
 
  sm_job_module:0 "Einstellungsamt"
@@ -192,7 +238,7 @@
  sm_orbital_assembly_desc:0 "Die Sternbasis hat die Fähigkeit, mechanische Implantate und einen starken Wellenstrahl zu produzieren, um biologische Genome zu beschleunigen und das Wachstum und die Zusammenstellung der Planetenpopulation zu verbessern."
 
  sm_system_fast:0 "Stationsunterstützung"
- sm_system_fast_desc:0 "Gebäude, das in speziellen Systemen ein extremes Gravitationsfeld erzeugt. Die stellaren Basen werden besser vor den Umweltvariablen komplexer galaktischer Systeme wie Neutronensterne, Pulsare oder Schwarze Löcher geschützt."
+ sm_system_fast_desc:0 "Gebäude, das im System ein extremes Gravitationsfeld erzeugt. Die Sternenbasen werden besser vor den Umgebungsvariablen komplexer galaktischer Systeme wie Neutronen, Pulsarsternen, Schwarzen Löchern oder anderen geschützt."
  
  sm_orbital_ecology:0 "Ecological station"
  sm_orbital_ecology_desc:0 "Environmental planning building and orbital ecological adaptation that helps in the improvement of the adequate use of planetary surfaces for the implementation of population and crops."
@@ -247,3 +293,56 @@
  STARBASE_AURA_FTL_INHIBITOR_II_DESC:0 "Starker Bedrohungsinhibitor"
  STARBASE_AURA_FTL_INHIBITOR_DESC:0 "Anfänglicher Bedrohungshemmer"
  aura_starbase_ftl_inhibitor_II:0 "Offensive aura  - Gegenangriff Inhibitor."
+
+ requires_max_m:0 "Base estelar con módulo §YVerwaltungsstelle§!"
+ requires_max_u:0 "Base estelar con módulo §YEinheit§!"
+ requires_max_s:0 "Base estelar con módulo §YDienste§!"
+
+  ################  BOOSTER ################
+  
+  REACTOR_BOOSTER_4:0 "Reactor impellers IV"
+  REACTOR_BOOSTER_4_DESC:0 "$REACTOR_BOOSTER_3_DESC$"
+  REACTOR_BOOSTER_5:0 "Reactor V-drives V"
+  REACTOR_BOOSTER_5_DESC:0 "$REACTOR_BOOSTER_3_DESC$"
+ 
+  tech_reactor_boosters_4:0 "Reactor impellers IV"
+  tech_reactor_boosters_4_desc:0 "$REACTOR_BOOSTER_3_DESC$"
+  tech_reactor_boosters_5:0 "Reactor V-drives V"
+  tech_reactor_boosters_5_desc:0 "$REACTOR_BOOSTER_3_DESC$"
+
+ ########## Torpedo #########
+
+ tech_torpedoes_0:0 "Hypersonic torpedoes"
+ tech_torpedoes_0_desc:0 "New space ballistic technology"
+
+ TORPEDO_0:0 "Hypersonic torpedoes"
+ TORPEDO_0_DESC:0 "New space ballistic technology"
+
+ ########## hyperlane #########
+
+ tech_hyperlane_sbs:0 "Quantendisruptor"
+ tech_hyperlane_sbs_desc:0 "Leistungsstarkes Hyperlane-Unterbrechungssystem, das in der Lage ist, den Zugang zu feindlichen Imperien zu blockieren, die von der Sternenbasis aus kontrolliert werden."
+ TECH_UNLOCK_HYPERLANE_SBS_TITLE:0 "§HGreifen Sie auf die Megastruktur zu:§! Quantendisruptor"
+ TECH_UNLOCK_HYPERLANE_SBS_DESC:0 "Leistungsstarkes Hyperlane-Unterbrechungssystem, das in der Lage ist, den Zugang zu feindlichen Imperien zu blockieren, die von der Sternenbasis aus kontrolliert werden."
+ sm_hyperlane_sbs:0 "Gravitationsregler"
+ sm_hyperlane_sbs_desc:0 "Kontrollgebäude, das der Erzeugung und Kontrolle der quantenzerstörenden Megastruktur gewidmet ist."
+
+ hyperlane_sbs.2.name:0 "Aktiver Quantendisruptor"
+ hyperlane_sbs.2.desc:0 "Die Hyperlane wurde blockiert und kann nicht auf einer anderen Sternenbasis verwendet werden.\n\nDas Disruptor-Quantum muss taktisch im Territorium eingesetzt werden, um sich vor anderen potenziellen Bedrohungen zu schützen, die andere Eingänge in das Territorium durchbrechen."
+
+ hyperlane_sbs.6.name:0 "Inaktiver Quantendisruptor"
+ hyperlane_sbs.6.desc:0 "Die Hyperlane wurde freigeschaltet und die Megastruktur kann auf einer anderen Sternenbasis verwendet werden.\n\nDer Quanten-Disruptor muss taktisch im Territorium eingesetzt werden, um sich vor möglichen Bedrohungen zu schützen, die andere Eingänge in das Territorium durchbrechen."
+
+ hyperlane_sbs:0 "Quantendisruptor"
+ hyperlane_sbs_desc:0 "Während der Hyperlane aktiv ist, wird er blockiert und kann nicht auf einer anderen Sternenbasis verwendet werden.\n\nDas Disruptor-Quantum muss im Gebiet taktisch eingesetzt werden, um sich vor anderen möglichen Bedrohungen zu schützen, die andere Eingänge durchbrechen."
+ requires_no_existing_sbs:0 "Benötigt inaktiven Quantendisruptor"
+ requires_country:0 "Erfordert feindliches Limit"
+ requires_no_war:0 "Benötigt Limit ohne Krieg"
+ hyperlane_sbs_MEGASTRUCTURE_DETAILS:0 "Quantendisruptor; mächtige Megastruktur, die in der Lage ist, die Gravitationswellen des Systemsterns zu verändern, um Sternenbahnen zu schließen oder zu öffnen."
+ hyperlane_sbs_DESC:0"Solange dies aktiv ist, wird der Hyperpfad dauerhaft blockiert."
+
+ ########## Kampfplattformen #########
+
+ military_station_sbs.11_title:0 "Kampfplattformen"
+ military_station_sbs.11_desc:0 "§YDefensive Warfare Protocol;§! Kampfplattformen erhöhen ihren Angriff und ihre Panzerung während eines Konflikts.\n\nPlattformen von §HStarbases§!, die im Kampf verloren gehen, werden nicht zerstört, sondern deaktiviert, bis Sie sie wiedererlangen, und können nicht gegen sie eingesetzt werden Sie, es sei denn, die Basis wird zuerst eingenommen.\n\nWiederhergestellte Kampfplattformen brauchen Zeit, um vollständig reaktiviert zu werden. Lassen Sie sie nicht in Ruhe, während die volle Leistung wiederhergestellt ist.\n\nWenn der Angriff auf die Plattformen zu überwältigend ist, können Sie sie verlieren und müssen erneuert werden."
+ station_sbs:0 "Defensives Protokoll"

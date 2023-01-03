@@ -10,8 +10,9 @@
  TITAN_FRACTAL_REACTOR:0 "Reactor Fractal"
  STARBASE_FRACTAL_REACTOR:0 "Reactor Fractal"
 
+ CORVETTE_MID_S1_AUX:0 "Núcleo cambiador aux"
  CORVETTE_MID_TPDA:0 "Artillería media"
- CORVETTE_MID_M1S1_AUX:0 "Nave de misiles aux"
+ CORVETTE_MID_M1S1_AUX:0 "Nave de Torpedos aux"
  CORVETTE_MID_S3_AUX:0 "Interceptador aux"
  CORVETTE_MID_S2PD1_AUX:0 "Nave de vigilancia aux"
  CORVETTE_MID_TPDA_AUX:0 "Artillería media aux"
@@ -27,7 +28,7 @@
  DESTROYER_BOW_L1_XP_AUX:0 "Artillería media aux"
  DESTROYER_STERN_T1_AUX:0 "Popa de misiles aux"
 
- CRUISER_BOW_T2:0 "Artillería media"
+ CRUISER_BOW_T2:0 "Proa media"
  CRUISER_STERN_T2:0 "Popa de misiles"
  CRUISER_STERN_T3:0 "Popa de vigilancia"
  CRUISER_BOW_L1_AUX:0 "Proa de artillería aux"
@@ -39,15 +40,20 @@
  CRUISER_MID_M2S2_AUX:0 "Núcleo de misiles aux"
  CRUISER_STERN_M1_AUX:0 "Popa transversal aux"
  CRUISER_STERN_S2_AUX:0 "Popa artillada aux"
- CRUISER_BOW_T2_AUX:0 "Artillería media aux"
+ CRUISER_BOW_T2_AUX:0 "Proa media aux"
  CRUISER_STERN_T2_AUX:0 "Popa de misiles aux"
  CRUISER_STERN_T3_AUX:0 "Popa de vigilancia aux"
 
+ BATTLESHIP_BOW_L1S4_AUX:1 "Rompetitanes aux"
  BATTLESHIP_BOW_M2S4_AUX:0 "Proa con montura aux"
  BATTLESHIP_BOW_L1M1S2_AUX:0 "Proa transversal aux"
  BATTLESHIP_BOW_L2_AUX:0 "Rompe pulsos aux"
  BATTLESHIP_BOW_M1S2SHB_AUX:0 "Proa hangar aux"
  BATTLESHIP_BOW_M3S2_AUX:0 "Rompe almas aux"
+ BATTLESHIP_MID_L2S4:1 "Núcleo nova"
+ BATTLESHIP_MID_L2S4_AUX:1 "Núcleo nova aux"
+ BATTLESHIP_MID_L1M4:1 "Núcleo tormentoso"
+ BATTLESHIP_MID_L1M4_AUX:1 "Núcleo tormentoso aux"
  BATTLESHIP_MID_L2M2_AUX:0 "Núcleo transversal aux"
  BATTLESHIP_MID_L3_AUX:0 "Núcleo artillería aux"
  BATTLESHIP_MID_M4SHB_AUX:0 "Núcleo hangar aux"
@@ -83,7 +89,7 @@
 
  TECH_UNLOCK_FRACTAL_POWER_DESC:0 "El reactor funciona por la atracción gravitacional de las estrellas cercanas colisionando rayos cósmicos en complejos y fractales cálculos enigmáticos produciendo mucha potencia sin ruido alguno."
 
- TECH_UNLOCK_FRACTAL_POWER_TITLE:0 "§SDesbloquea el componente:§! Reactor Fractal \n§SSuspensión:§! Gravitacional Cero.\n§SFragmentación:§! Invisibilidad Completa"
+ TECH_UNLOCK_FRACTAL_POWER_TITLE:0 "§SDesbloquea el componente:§! Reactor Fractal."
 
  tech_defense_platform_hull_2:0 "Integridad estructural de Tungsteno"
  tech_defense_platform_hull_2_desc:0 "Un armazón reforzado y escudos con mayor absorción de impacto garantizan la integridad estructural de la estación de defensa, incluso bajo intensa presión."
@@ -102,8 +108,41 @@
  tech_starbase_citadel_upgrade:0 "Mejora de Ciudadela"
  tech_starbase_citadel_upgrade_desc:0 "Accede a los nuevos edificios de la Base Estelar Ciudadela para reforzar los limites de tu imperio o fomentar las artes, el comercio o investigación"
 
+ tech_gateway_stargate:0 "Puerta estelar"
+ tech_gateway_stargate_desc:0 "La construcción de nuevas puertas estelares en nuestras bases nos permite crear una red de transporte rápido que podría revolucionar el viaje interestelar."
+
+ gateway_stargate_title:0 "Construcción de puerta estelar"
+ gateway_stargate_desc:0 "Permite la construcción de puertas estelares en nuestras bases y crear una red galáctica dentro de nuestras fronteras."
+
  whgenevents.6.name:0 "$stargate$ Generada"
  whgenevents.6.desc:0 "La Base Estelar en §Y[System.GetName]§! ha terminado de crear una §Y$stargate$§! única y estable para la red interna subespacial de nuestro imperio."
+
+ tech_starclean:0 "Nano reciclaje"
+ tech_starclean_desc:0 "Nanotecnología para reciclar megaestructuras descompuestas, obsoletas o tácticamente mal emplazadas."
+ starclean_title:0 "Nano reciclaje"
+ starclean_desc:0 "Tecnología avanzada para reciclar megaestructuras descompuestas, obsoletas o tácticamente mal emplazadas empleando miles de nanobots que reciclarán todo lo potencialmente util."
+
+ sm_star_clean:0 "Nano reciclaje"
+ sm_star_clean_desc:0 "Nanotecnología para reciclar megaestructuras descompuestas, obsoletas o tácticamente mal construidas."
+ requires_mega:0 "$TRIGGER_FAIL$Requiere una §Y$MEGASTRUCTURE$§! o un §Y$pc_habitat$§! en el sistema."
+
+ sm_star_hyper:0 "$hyper_relay$ SBS"
+ sm_star_hyper_desc:0 "$hyper_relay_DESC$"
+ hyper_relay_starbase:0 "$hyper_relay$ SBS"
+ hyper_relay_starbase_DESC:0 "$hyper_relay_DESC$"
+ hyper_relay_starbase_MEGASTRUCTURE_DETAILS:1 "$hyper_relay_MEGASTRUCTURE_DETAILS$"
+
+ cleanevents.1.name:0 "Nano reciclaje"
+ cleanevents.1.desc:0 "Miles de Nanobots controlados saldrán desde la base estelar y reciclaran cualquier megaestructura que se les haya ordenado."
+ cleanevents.1.a:0 "§Y$MEGASTRUCTURE$§!"
+ cleanevents.1.b:0 "§Y$pc_habitat$§!"
+ cleanevents.1.c:0 "§Y$BYPASS_GATEWAY$§!"
+ cleanevents.1.d:0 "§Y$hyper_relay$§!"
+ cleanevents.1.e:0 "§Y$orbital_ring$§!"
+ cleanevents.1.f:0 "§YRecargar nanobots§!"
+
+ tech_sensors_1:0 "Sensores remotos"
+ tech_sensors_1_desc:0 "Estos sensores se han creado para operar a distancia, controlados por una inteligencia artificial avanzada es capaz de controlar módulos que detectan cambios de longitudes de onda y algunas alteraciones de energía no naturales. Su fácil posicionamiento lo hace imprescindible para la exploración, apoyo en defensa y reabastecimiento de naves espaciales."
 
  aura_starbase_crisis:0 "Aura Ofensiva - Crisis"
  aura_starbase_fallen:0 "Aura Ofensiva - Despertados"
@@ -135,7 +174,8 @@
  requires_mine_minerals:0 "$TRIGGER_FAIL$Requiere un §YDepósito de extracción de minerales§! en el sistema."
  requires_no_modules:0 "$TRIGGER_FAIL$§RNo se puede tener módulos de combate en la base estelar§!: debido a los componentes explosivos para la elaboración de aleaciones."
  requires_citadel_upgrade:0 "$TRIGGER_FAIL$§RRequiere actualización§!: debido a los requerimientos de montaje de armas y defensa especializados es necesario reforzar la base estelar."
- requires_black_hole_neutron_star_pulsar_x:0 "§RRequiere un §Y$pc_pulsar$§! \n§RRequiere un §Y$pc_neutron_star$§! \n§RRequiere un §Y$pc_black_hole$§! \nen el sistema.§! \nY algunas estrellas binarias o trinarias."
+ requires_habitable_planet:0 "Requiere un planeta habitable en el sistema para explorar"
+ requires_modules:0 "Requiere modulo de combate"
 
  sm_archeological_center:0 "Centro Arqueológico"
  sm_archeological_center_desc:0 "Estudio Arqueológico de la base estelar"
@@ -152,6 +192,12 @@
  sm_aux_module:0 "Módulo Auxiliar"
  sm_aux_module_desc:0 "Módulo auxiliar avanzado para Bases Estelares, dedicado a la construcción rápida de flotas."
 
+ sm_aux_module_starhold:0 "Modulo soporte"
+ sm_aux_module_starhold_desc:0 "Estación de soporte logístico es colocada estratégicamente en los bordes de nuestras fronteras con algunas ventajas tácticas."
+ 
+ sm_module_protection_link:0 "Modulo protección"
+ sm_module_protection_link_desc:0 "Una estación que es capaz de repeler y retrasar algunos ataques de piratas en el sistema antes de ser capturada."
+ 
  sm_gun_battery_upgrade:0 "Batería XL"
  sm_gun_battery_upgrade_desc:0 "Añade dos espacios de armas XL a la base estelar."
 
@@ -170,7 +216,7 @@
  sm_pulsar_observatory:0 "Obser. de Pulsares"
  sm_pulsar_observatory_desc:0 "Con la construcción de una instalación científica especializada en estudiar Pulsares, nuestro imperio seguramente verá mejoras en su entendimiento de ingeniería."
 
- sm_social_services:0 "Serv. Sociales"
+ sm_social_services:0 "Servicios"
  sm_social_services_desc:0 "Los módulos de servicios sociales ayudarán significativamente a agilizar los trámites y necesidades del pueblo local y extranjero."
 
  sm_storage_food:0 "Frigorífico"
@@ -192,7 +238,7 @@
  sm_orbital_assembly_desc:0 "La base estelar tiene la capacidad de producir implantes mecánicos y un poderoso rayo de ondas para acelerar los genomas biológicos mejorando el crecimiento y ensamblaje de la población planetaria."
 
  sm_system_fast:0 "Soporte estación"
- sm_system_fast_desc:0 "Edificio que genera un campo gravitacional extremo en sistemas especiales. Las bases estelares estarán mas protegidas a las variables ambientales de sistemas galácticos complejos como estrellas Neutrones, Púlsares u Agujeros Negros."
+ sm_system_fast_desc:0 "Edificio que genera un campo gravitacional extremo en el sistema. Las bases estelares estarán mas protegidas a las variables ambientales de sistemas galácticos complejos como estrellas Neutrones, Púlsares, Agujeros Negros u otros."
  
  sm_orbital_ecology:0 "Estación ecológica"
  sm_orbital_ecology_desc:0 "Edificio de planificacion ambiental y adaptacion ecologica orbital que ayuda en la mejora del uso adecuado de superficies planetarias para la implementacion de población y cultivos."
@@ -248,7 +294,61 @@
  STARBASE_AURA_FTL_INHIBITOR_DESC:0 "Inhibidor inicial contra amenazas"
  aura_starbase_ftl_inhibitor_II:0 "Aura ofensiva - Inhibidor de contraataque."
 
+ requires_max_m:0 "Base estelar con módulo §YAdministración§!"
+ requires_max_u:0 "Base estelar con módulo §YUnidad§!"
+ requires_max_s:0 "Base estelar con módulo §YServicios§!"
+
+  ################  BOOSTER ################
+  
+  REACTOR_BOOSTER_4:0 "Impulsores de reactor IV"
+  REACTOR_BOOSTER_4_DESC:0 "$REACTOR_BOOSTER_3_DESC$"
+  REACTOR_BOOSTER_5:0 "Impulsores de reactor V"
+  REACTOR_BOOSTER_5_DESC:0 "$REACTOR_BOOSTER_3_DESC$"
+ 
+  tech_reactor_boosters_4:0 "Impulsores de reactor IV"
+  tech_reactor_boosters_4_desc:0 "$REACTOR_BOOSTER_3_DESC$"
+  tech_reactor_boosters_5:0 "Impulsores de reactor V"
+  tech_reactor_boosters_5_desc:0 "$REACTOR_BOOSTER_3_DESC$"
+
+ ########## Torpedo #########
+
+ tech_torpedoes_0:0 "Torpedos hipersónicos"
+ tech_torpedoes_0_desc:0 "Nueva tecnología balística hipersónica espacial"
+
+ TORPEDO_0:0 "Torpedos hipersónicos"
+ TORPEDO_0_DESC:0 "Nueva tecnología balística hipersónica espacial"
+
+ ########## hyperlane #########
+
+ tech_hyperlane_sbs:0 "Disruptor quantum"
+ tech_hyperlane_sbs_desc:0 "Poderoso sistema de alteración de hiperrutas que es capaz cerrar el acceso a imperios hostiles controlados desde la base estelar."
+ TECH_UNLOCK_HYPERLANE_SBS_TITLE:0 "§HAccede a la megaestructura:§! Disruptor quantum"
+ TECH_UNLOCK_HYPERLANE_SBS_DESC:0 "Poderoso sistema de alteración de hiperrutas que es capaz cerrar el acceso a imperios hostiles controlados desde la base estelar."
+ sm_hyperlane_sbs:0 "Controlador gravitacional"
+ sm_hyperlane_sbs_desc:0 "Edificio de control dedicado a generar y controlar la megaestructura disruptiva quantum."
+
+ hyperlane_sbs.2.name:0 "Disruptor quantum activo"
+ hyperlane_sbs.2.desc:0 "La hiperruta ha sido bloqueada y la megaestructura no podrá ser usada en otra base estelar mientras este activa.\n\nEl Disruptor quantum tendrá que ser usado tácticamente en el territorio, cuidando la irrupción de otras posibles amenazas por otras entradas del territorio."
+
+ hyperlane_sbs.6.name:0 "Disruptor quantum inactivo"
+ hyperlane_sbs.6.desc:0 "La hiperruta ha sido desbloqueada y la megaestructura podrá ser usada en otra base estelar.\n\nEl Disruptor quantum tendrá que ser usado tácticamente en el territorio, cuidando la irrupción de posibles amenazas por otras entradas del territorio."
+
+ hyperlane_sbs:0 "Disruptor quantum"
+ hyperlane_sbs_desc:0 "Mientras este activo la hiperruta estará bloqueada y no podrá ser usada en otra base estelar.\n\nEl Disruptor quantum tendrá que ser usado tácticamente en el territorio, cuidando la irrupción de otras posibles amenazas por otras entradas."
+ requires_no_existing_sbs:0 "Requiere disruptor quantum inactivo"
+ requires_country:0 "Requiere límite hostil"
+ requires_no_war:0 "Requiere límite sin guerra"
+ hyperlane_sbs_MEGASTRUCTURE_DETAILS:0 "Disruptor quantum; poderosa megaestructura capaz de alterar las ondas gravitacionales de la estrella del sistema para cerrar o abrir rutas estelares."
+ hyperlane_sbs_DESC:0 "Mientras este activo la hiperruta estará bloqueada permanentemente."
+
+ ########## Plataforma de combate #########
+
+ military_station_sbs.11_title:0 "Plataformas de combate"
+ military_station_sbs.11_desc:0 "§YProtocolo de guerra defensiva;§! las plataformas de combate aumentan su ataque y armadura durante el conflicto.\n\nLas plataformas de las §HBases estelares§! perdidas en batalla no serán destruidas pero serán desactivadas hasta que las recuperes y no podrán ser usadas en tu contra, salvo que la base sea tomada antes.\n\nLas plataformas de combate recuperadas tardarán un tiempo en reactivarse completamente, no las dejes solas mientras se restablece toda la potencia.\n\nSi el ataque a las plataformas es demasiado abrumador, puede que las pierdas y habrá que rehacerlas."
+ station_sbs:0 "Protocolo defensivo"
+
  ########## solo español #########
 
  TECH_UNLOCK_STARBASE_BUILDING:0 "§HAccede al edif. de la base:§! $NAME$"
  TECH_UNLOCK_STARBASE_MODULE:0 "§HDesbloquea módulo de la base:§! $NAME$"
+

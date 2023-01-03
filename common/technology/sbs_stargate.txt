@@ -1,5 +1,5 @@
 
-tech_gateway_activation = {
+tech_gateway_stargate = {
 	cost = @tier2cost3
 	area = physics
 	tier = 2
@@ -7,9 +7,14 @@ tech_gateway_activation = {
 	is_rare = yes
 	is_reverse_engineerable = no
 	weight = @tier2weight3
-	prerequisites = { "tech_gateway_construction" "tech_starbase_4" }
+	prerequisites = { "tech_wormhole_stabilization" }
 
-	feature_flags = { gateway_activation }
+	prereqfor_desc = {
+		custom = {
+			title = gateway_stargate_title
+			desc = gateway_stargate_desc
+		}
+	}
 
 	weight_modifier = {
 		factor = 0.5
@@ -35,10 +40,6 @@ tech_gateway_activation = {
 			}
 		}
 		modifier = {
-			factor = 1.25
-			has_tradition = tr_discovery_adopt
-		}
-		modifier = {
 			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = physics
@@ -46,22 +47,15 @@ tech_gateway_activation = {
 			}
 		}
 		modifier = {
-			factor = @ap_grasp_the_void_travel_tech
-			has_ascension_perk = ap_grasp_the_void
-		}
-		modifier = {
 			factor = @ap_technological_ascendancy_rare_tech
 			has_ascension_perk = ap_technological_ascendancy
 		}
 		modifier = {
-			factor = @federation_perk_factor
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = tech_gateway_activation }
-			}
+			factor = 2
+			owns_any_bypass = gateway
 		}
 	}
+
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -77,17 +71,22 @@ tech_gateway_activation = {
 	}
 }
 
-tech_gateway_construction = {
-	cost = @tier2cost2
+tech_starclean = {
+	cost = @tier4cost1
 	area = physics
-	tier = 2
+	tier = 4
 	category = { particles }
 	is_rare = yes
 	is_reverse_engineerable = no
-	weight = @tier1weight2
-	prerequisites = { "tech_starbase_3" }
+	weight = @tier4weight1
+	prerequisites = { "tech_mega_engineering" }
 
-	feature_flags = { gateway_construction }
+	prereqfor_desc = {
+		custom = {
+			title = starclean_title
+			desc = starclean_desc
+		}
+	}
 
 	weight_modifier = {
 		factor = 0.5
@@ -112,47 +111,9 @@ tech_gateway_construction = {
 				}
 			}
 		}
-		modifier = {
-			factor = 1.25
-			has_tradition = tr_discovery_adopt
-		}
-		modifier = {
-			factor = value:tech_weight_likelihood
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
-		}
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
-		modifier = {
-			factor = @ap_grasp_the_void_travel_tech
-			has_ascension_perk = ap_grasp_the_void
-		}
-		modifier = {
-			factor = @federation_perk_factor
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = tech_gateway_construction }
-			}
-		}
-		modifier = {
-			factor = 4
-			owns_any_bypass = gateway
-		}
 	}
 
 	ai_weight = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
-		}
 		modifier = {
 			factor = 2
 			is_ai = no #auto-research

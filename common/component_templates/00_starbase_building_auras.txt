@@ -128,14 +128,36 @@ utility_component_template = {
 		}
 
 		modifier = {
-			ship_shield_mult = -0.10
-			ship_armor_mult = -0.10
-			ship_hull_mult = -0.10
+			ship_shield_mult = -0.05
+			ship_armor_mult = -0.05
+			ship_hull_mult = -0.05
 		}
 
 		graphics = {
 			ship_effect = {
 				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+	friendly_aura = {
+		name = "aura_starbase_command_center"
+		system_wide = yes
+
+		stack_info = {
+			id = friendly_command_center_aura
+			priority = 10
+		}
+
+		modifier = {
+			ship_shield_mult = 0.05
+			ship_armor_mult = 0.05
+			ship_hull_mult = 0.05
+		}
+
+		graphics = {
+			ship_effect = {
+				entity = "ship_aura_positive_entity"
 				dynamic_scale = no
 			}
 		}
@@ -151,6 +173,28 @@ utility_component_template = {
 
 	class_restriction = { shipclass_starbase }
 
+	friendly_aura = {
+		name = "aura_starbase_command_center"
+		system_wide = yes
+
+		stack_info = {
+			id = friendly_command_center_aura
+			priority = 10
+		}
+
+		modifier = {
+			ship_fire_rate_mult = 0.05
+			ship_weapon_damage = 0.05
+		}
+
+		graphics = {
+			ship_effect = {
+				entity = "ship_aura_positive_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+
 	hostile_aura = {
 		name = "aura_starbase_command_center"
 		system_wide = yes
@@ -161,8 +205,8 @@ utility_component_template = {
 		}
 
 		modifier = {
-			ship_fire_rate_mult = -0.10
-			ship_weapon_damage = -0.10
+			ship_fire_rate_mult = -0.05
+			ship_weapon_damage = -0.05
 		}
 
 		graphics = {

@@ -151,4 +151,117 @@ spriteTypes = {
 		name = "GFX_starbase_orbital_ecology"
 		texturefile = "gfx/interface/icons/modules/starbase_orbital_ecology.dds"
 	}
+	spriteType = {
+		name = "GFX_ship_part_reactor_booster_4"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_reactor_booster_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_reactor_booster_5"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_reactor_booster_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_spaceport_star_clean"
+		texturefile = "gfx/interface/icons/modules/spaceport_star_clean.dds"
+	}
+	spriteType = {
+		name = "GFX_spaceport_star_hyper"
+		texturefile = "gfx/interface/icons/modules/spaceport_star_hyper.dds"
+	}
+
+	spriteType = {
+		name = "GFX_starbase_aux_module_sbs0"
+		texturefile = "gfx/interface/icons/modules/starbase_aux_module_sbs0.dds"
+	}
+
+	spriteType = {
+		name = "GFX_spaceport_module_protection_link"
+		texturefile = "gfx/interface/icons/modules/spaceport_module_protection_link.dds"
+	}
+
+	spriteType = {
+		name = "GFX_spaceport_hyperlane_sbs"
+		texturefile = "gfx/interface/icons/modules/spaceport_hyperlane_sbs.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_evt_ruined_system_clean"
+		texturefile = "gfx/event_pictures/ruined_system_clean.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		effectFile = "gfx/FX/buttonstate.shader"
+		animation = {
+			animationmaskfile = "gfx/interface/icons/relics/ruined_system_clean_shine_3.dds"			
+			animationtexturefile = "gfx/interface/icons/relics/shine_overlay_02.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 20				# in seconds
+			animationdelay = 5				# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "pulsing"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/icons/relics/ruined_system_clean_shine_2.dds"			
+			animationtexturefile = "gfx/interface/icons/relics/glow_overlay.dds" 	# <- the animated file
+			animationrotation = 180.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 1				# in seconds
+			animationdelay = 4			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "pulsing"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+		alwaystransparent = yes				
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_torpedo_0"
+		texturefile = "gfx/interface/icons/ship_parts/sbs_ship_part_torpedo_0.dds"
+	}
+
+	spriteType = {
+		name = "GFX_evt_worm_box"
+		texturefile = "gfx/event_pictures/worm_box.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		effectFile = "gfx/FX/buttonstate.shader"
+		animation = {
+			animationmaskfile = "gfx/interface/icons/relics/worm_shine.dds"			
+			animationtexturefile = "gfx/interface/icons/relics/glow_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 18				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+		alwaystransparent = yes				
+	}
+
+	spriteType = {
+		name = "GFX_evt_turrent_box"
+		texturefile = "gfx/event_pictures/turrent_box.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		effectFile = "gfx/FX/buttonstate.shader"
+		animation = {
+			animationmaskfile = "gfx/interface/icons/relics/turrent_shine.dds"			
+			animationtexturefile = "gfx/interface/icons/relics/glow_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 18				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+		alwaystransparent = yes				
+	}
 }

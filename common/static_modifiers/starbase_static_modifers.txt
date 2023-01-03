@@ -3,3 +3,8 @@ starbase_space_storm = {
 	ship_speed_reduction = 0.50
 	ship_shield_reduction = 0.50
 }
+
+station_sbs = {
+	shipclass_military_station_damage_mult = 0.25
+	shipclass_military_station_hull_mult = 0.25
+}
