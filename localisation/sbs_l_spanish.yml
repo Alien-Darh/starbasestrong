@@ -196,10 +196,10 @@
 
  sm_aux_module_starhold:0 "Modulo soporte"
  sm_aux_module_starhold_desc:0 "Estación de soporte logístico es colocada estratégicamente en los bordes de nuestras fronteras con algunas ventajas tácticas."
- 
+
  sm_module_protection_link:0 "Modulo protección"
  sm_module_protection_link_desc:0 "Una estación que es capaz de repeler y retrasar algunos ataques de piratas en el sistema antes de ser capturada."
- 
+
  sm_gun_battery_upgrade:0 "Batería XL"
  sm_gun_battery_upgrade_desc:0 "Añade dos espacios de armas XL a la base estelar."
 
@@ -241,7 +241,7 @@
 
  sm_system_fast:0 "Soporte estación"
  sm_system_fast_desc:0 "Edificio que genera un campo gravitacional extremo en el sistema. Las bases estelares estarán mas protegidas a las variables ambientales de sistemas galácticos complejos como estrellas Neutrones, Púlsares, Agujeros Negros u otros."
- 
+
  sm_orbital_ecology:0 "Estación ecológica"
  sm_orbital_ecology_desc:0 "Edificio de planificacion ambiental y adaptacion ecologica orbital que ayuda en la mejora del uso adecuado de superficies planetarias para la implementacion de población y cultivos."
 
@@ -313,7 +313,7 @@
  CITADEL_STARBASE_SECTION:0 "Sección de combate de alto poder"
  CITADEL_STARBASE_UPGRADE_SECTION:0 "Mejora de la base estelar a Bunker estelar"
  BATTERY_STARBASE_SECTION_UPGRADE:0 "Arma de largo alcance y alto poder de fuego"
- 
+
  stargate:0 "Puerta Estelar"
  stargate_DESC:0 "$gateway_final_DESC$"
  stargate_MEGASTRUCTURE_DETAILS:0 "$gateway_final_MEGASTRUCTURE_DETAILS$"
@@ -330,12 +330,12 @@
  requires_max_s:0 "Base estelar con módulo §YServicios§!"
 
   ################  BOOSTER ################
-  
+
   REACTOR_BOOSTER_4:0 "Impulsores de reactor IV"
   REACTOR_BOOSTER_4_DESC:0 "$REACTOR_BOOSTER_3_DESC$"
   REACTOR_BOOSTER_5:0 "Impulsores de reactor V"
   REACTOR_BOOSTER_5_DESC:0 "$REACTOR_BOOSTER_3_DESC$"
- 
+
   tech_reactor_boosters_4:0 "Impulsores de reactor IV"
   tech_reactor_boosters_4_desc:0 "$REACTOR_BOOSTER_3_DESC$"
   tech_reactor_boosters_5:0 "Impulsores de reactor V"
@@ -395,4 +395,3 @@
 
  TECH_UNLOCK_STARBASE_BUILDING:0 "§HAccede al edif. de la base:§! $NAME$"
  TECH_UNLOCK_STARBASE_MODULE:0 "§HDesbloquea módulo de la base:§! $NAME$"
-

@@ -389,7 +389,6 @@ guiTypes = {
 					scrollbartype = "standardlistbox_slider"
 					autohide_scrollbar = no
 					spacing = 3
-					spacing = 3
 				}
 			}
 		}

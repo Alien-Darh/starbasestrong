@@ -7,7 +7,7 @@ country_event = {
 	picture = GFX_evt_pem_box
 	show_sound = event_space_battle
 	location = event_target:sbsemp_emp
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -16,7 +16,7 @@ country_event = {
 		is_ai = no
 		has_technology = tech_emp_sbs
 		NOT = { has_country_flag = emp_sbs_target }
-		any_owned_starbase = { 
+		any_owned_starbase = {
 			has_starbase_building = emp_sbs
 			solar_system = {
 				any_fleet_in_system = {
@@ -89,7 +89,7 @@ country_event = {
 					last_created_ambient_object = {
 						set_ambient_object_flag = destroyed_system_effect
 						set_location = {
-							target = prev
+							target = prev.star
 							distance = 0
 							angle = random
 						}
@@ -150,14 +150,12 @@ country_event = {
 						if = {
 							limit = { exists = starbase }
 							starbase = {
-								remove_starbase_module = {
-									module = gun_battery
-									module = missile_battery
-									module = hangar_bay
-								}
+								remove_starbase_module = { module = gun_battery }
+								remove_starbase_module = { module = missile_battery }
+								remove_starbase_module = { module = hangar_bay }
 							}
 						}
-						else = {
+						else_if = {
 							limit = {
 								any_fleet_in_system = {
 									is_ship_class = shipclass_military_station
@@ -180,7 +178,7 @@ country_event = {
 					}
 					last_created_ambient_object = {
 						set_location = {
-							target = PREV
+							target = PREV.star
 							distance = 0
 							angle = random
 						}

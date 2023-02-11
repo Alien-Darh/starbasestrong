@@ -196,10 +196,10 @@
 
  sm_aux_module_starhold:0 "Support module"
  sm_aux_module_starhold_desc:0 "Logistic support station is strategically placed at the edges of our borders with some tactical advantages."
- 
+
  sm_module_protection_link:0 "Protection module"
  sm_module_protection_link_desc:0 "A station that is able to repel and delay some pirate attacks in the system before being captured."
- 
+
  sm_gun_battery_upgrade:0 "XL-Kanonen-Batterie"
  sm_gun_battery_upgrade_desc:0 "Füge der Sternenbasis zwei XL-Waffensteckplätze hinzu."
 
@@ -241,7 +241,7 @@
 
  sm_system_fast:0 "Stationsunterstützung"
  sm_system_fast_desc:0 "Gebäude, das im System ein extremes Gravitationsfeld erzeugt. Die Sternenbasen werden besser vor den Umgebungsvariablen komplexer galaktischer Systeme wie Neutronen, Pulsarsternen, Schwarzen Löchern oder anderen geschützt."
- 
+
  sm_orbital_ecology:0 "Ecological station"
  sm_orbital_ecology_desc:0 "Environmental planning building and orbital ecological adaptation that helps in the improvement of the adequate use of planetary surfaces for the implementation of population and crops."
 
@@ -272,13 +272,13 @@
  sm_refinery_alloys:0 "$alloys$ $sm_refinery$"
  sm_refinery_alloys_desc:0 "Mit der Nanitentechnologie können wir Legierungen verfeinern, die aus den Tiefen extrahiert werden und die Produktion verbessern."
 
- sm_refinery_living_metal:0 "Raffinerie £sr_living_metal£ §Y §!"
+ sm_refinery_living_metal:0 "$sr_living_metal$ $sm_refinery$"
  sm_refinery_living_metal_desc:0 "Mit der Nanitentechnologie können wir lebendige Metall verfeinern, die aus den Tiefen extrahiert werden, um die Produktion zu verbessern."
 
  sm_gatherers_living_metal:0 "Kollektor £sr_living_metal£ §Y §!"
  sm_gatherers_living_metal_desc:0 "Spezialisierte Drohnen sammeln Extrakte von lebendem Metall in dem System, das den Stern in der Nähe des Ereignishorizonts verlässt."
 
- sm_refinery_dark_matter:0 "Raffinerie £sr_dark_matter£ §Y §!"
+ sm_refinery_dark_matter:0 "$sr_dark_matter$ $sm_refinery$"
  sm_refinery_dark_matter_desc:0 "With Nanites technology we can refine dark matter extracted from the depths improving production."
 
  sm_gatherers_dark_matter:0 "Kollektor £sr_dark_matter£ §Y §!"
@@ -313,7 +313,7 @@
  CITADEL_STARBASE_SECTION:0 "Hochleistungs-Kampfabschnitt"
  CITADEL_STARBASE_UPGRADE_SECTION:0 "Verbesserung der Sternbasis zum Sternbunker"
  BATTERY_STARBASE_SECTION_UPGRADE:0 "Langzeitwaffe und hohe Feuerkraft"
- 
+
  stargate:0 "Stargate"
  stargate_DESC:0 "$gateway_final_DESC$"
  stargate_MEGASTRUCTURE_DETAILS:0 "$gateway_final_MEGASTRUCTURE_DETAILS$"
@@ -330,12 +330,12 @@
  requires_max_s:0 "Base estelar con módulo §YDienste§!"
 
   ################  BOOSTER ################
-  
+
   REACTOR_BOOSTER_4:0 "Reactor impellers IV"
   REACTOR_BOOSTER_4_DESC:0 "$REACTOR_BOOSTER_3_DESC$"
   REACTOR_BOOSTER_5:0 "Reactor V-drives V"
   REACTOR_BOOSTER_5_DESC:0 "$REACTOR_BOOSTER_3_DESC$"
- 
+
   tech_reactor_boosters_4:0 "Reactor impellers IV"
   tech_reactor_boosters_4_desc:0 "$REACTOR_BOOSTER_3_DESC$"
   tech_reactor_boosters_5:0 "Reactor V-drives V"

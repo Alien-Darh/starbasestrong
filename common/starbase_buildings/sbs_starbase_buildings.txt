@@ -611,7 +611,7 @@ aux_module = {
 		}
 		shipsize_juggernaut_build_speed_mult = 0.35
 	}
-	
+
 	station_modifier = {
 		starbase_shipyard_build_speed_mult = 0.05
 	}
@@ -1056,7 +1056,7 @@ job_module = {
 			exists = owner
 			owner = {
 				NOT = { has_authority = auth_machine_intelligence }
-			}		
+			}
 			is_scope_type = starbase
 			has_starbase_building = refinery_alloys
 			}
@@ -1229,7 +1229,7 @@ job_module = {
 		}
 		job_farmer_add = 1
 	}
-##	
+##
 	triggered_system_modifier = {
 		potential = {
 			exists = owner
@@ -1291,7 +1291,7 @@ job_module = {
 		}
 		job_merchant_add = 1
 	}
-##	
+##
 	triggered_system_modifier = {
 		potential = {
 			exists = owner
@@ -1365,7 +1365,7 @@ job_module = {
 			}
 		job_researcher_add = 1
 	}
-##	
+##
 	triggered_system_modifier = {
 		potential = {
 			exists = owner
@@ -1410,7 +1410,7 @@ job_module = {
 		}
 		job_enforcer_add = 1
 	}
-##	
+##
 	triggered_system_modifier = {
 		potential = {
 			exists = owner
@@ -1472,7 +1472,7 @@ job_module = {
 		}
 		job_executive_add = 1
 	}
-##	
+##
 	triggered_system_modifier = {
 		potential = {
 			exists = owner
@@ -1515,7 +1515,7 @@ job_module = {
 			}
 		job_manager_add = 1
 	}
-##	
+##
 	triggered_system_modifier = {
 		potential = {
 			exists = owner
@@ -1558,7 +1558,7 @@ job_module = {
 		}
 		job_soldier_add = 1
 	}
-##	
+##
 	triggered_system_modifier = {
 		potential = {
 			exists = owner
@@ -2117,7 +2117,7 @@ management_building = {
 		}
 		empire_size_systems_mult = -0.04
 	}
-	
+
 	triggered_country_modifier = {
 		potential = {
 			exists = owner
@@ -2165,7 +2165,7 @@ star_clean = {
 							is_megastructure_type = dyson_sphere_restored
 							is_megastructure_type = dyson_sphere_permanently_ruined
 							is_megastructure_type = dyson_sphere_ruined
-		
+
 							is_megastructure_type = think_tank_0
 							is_megastructure_type = think_tank_1
 							is_megastructure_type = think_tank_2
@@ -2174,7 +2174,7 @@ star_clean = {
 							is_megastructure_type = think_tank_restored
 							is_megastructure_type = think_tank_permanently_ruined
 							is_megastructure_type = think_tank_ruined
-	
+
 							is_megastructure_type = spy_orb_0
 							is_megastructure_type = spy_orb_1
 							is_megastructure_type = spy_orb_2
@@ -2183,7 +2183,7 @@ star_clean = {
 							is_megastructure_type = spy_orb_restored
 							is_megastructure_type = spy_orb_permanently_ruined
 							is_megastructure_type = spy_orb_ruined
-	
+
 							is_megastructure_type = matter_decompressor_0
 							is_megastructure_type = matter_decompressor_1
 							is_megastructure_type = matter_decompressor_2
@@ -2192,7 +2192,7 @@ star_clean = {
 							is_megastructure_type = matter_decompressor_restored
 							is_megastructure_type = matter_decompressor_permanently_ruined
 							is_megastructure_type = matter_decompressor_ruined
-	
+
 							is_megastructure_type = strategic_coordination_center_0
 							is_megastructure_type = strategic_coordination_center_1
 							is_megastructure_type = strategic_coordination_center_2
@@ -2200,7 +2200,7 @@ star_clean = {
 							is_megastructure_type = strategic_coordination_center_restored
 							is_megastructure_type = strategic_coordination_center_restored
 							is_megastructure_type = strategic_coordination_center_ruined
-		
+
 							is_megastructure_type = mega_art_installation_0
 							is_megastructure_type = mega_art_installation_1
 							is_megastructure_type = mega_art_installation_2
@@ -2209,7 +2209,7 @@ star_clean = {
 							is_megastructure_type = mega_art_installation_restored_2
 							is_megastructure_type = mega_art_installation_ruined
 							is_megastructure_type = mega_art_installation_permanently_ruined
-						
+
 							is_megastructure_type = interstellar_assembly_0
 							is_megastructure_type = interstellar_assembly_1
 							is_megastructure_type = interstellar_assembly_2
@@ -2218,7 +2218,7 @@ star_clean = {
 							is_megastructure_type = interstellar_assembly_restored
 							is_megastructure_type = interstellar_assembly_ruined
 							is_megastructure_type = interstellar_assembly_permanently_ruined
-		
+
 							is_megastructure_type = mega_shipyard_0
 							is_megastructure_type = mega_shipyard_1
 							is_megastructure_type = mega_shipyard_2
@@ -2226,7 +2226,7 @@ star_clean = {
 							is_megastructure_type = mega_shipyard_restored
 							is_megastructure_type = mega_shipyard_ruined
 							is_megastructure_type = mega_shipyard_permanently_ruined
-	
+
 							is_megastructure_type = quantum_catapult_0
 							is_megastructure_type = quantum_catapult_1
 							is_megastructure_type = quantum_catapult_2
@@ -2253,7 +2253,7 @@ star_clean = {
 							exists = starbase
 							starbase = {
 								has_starbase_size >= orbital_ring_tier_1
-							}	
+							}
 						}
 					}
 				}
@@ -2336,7 +2336,7 @@ aux_module_starhold = {
 		exists = owner
 		owner = { has_technology = tech_sensors_1 }
 	}
-	
+
 	orbit_modifier = {
 		ship_orbit_upkeep_mult = -0.10
 		ship_repair_hull_mult = 0.2
@@ -2362,7 +2362,7 @@ hyperlane_sbs = {
 	resources = {
 		category = starbase_buildings
 		cost = { alloys = 25 }
-		upkeep = { 
+		upkeep = {
 			energy = 5
 			influence = 1
 		}
@@ -2392,7 +2392,7 @@ hyperlane_sbs = {
 			solar_system = {
 				OR = {
 					any_country_neighbor_to_system = {
-						NOR = { 
+						NOR = {
 							is_at_war_with = root
 							space_owner = { is_at_war_with = root.owner }
 						}
@@ -2424,7 +2424,7 @@ emp_sbs = {
 
 	potential = {
 		exists = owner
-		owner = { 
+		owner = {
 			has_technology = tech_emp_sbs
 			has_federation = no
 		}
@@ -2467,14 +2467,14 @@ emp_sbs = {
 gatherers_production = {
 	icon = "GFX_starbase_gatherers_production"
 	construction_days = 360
-	
+
 	potential = {
 		exists = owner
-		owner = { 
+		owner = {
 			has_technology = tech_space_mining_4
 		}
 	}
-	
+
 	possible = {
 		custom_tooltip = {
 			fail_text = "requires_starport"
@@ -2512,11 +2512,11 @@ gatherers_production = {
 			energy = 5
 		}
 	}
-	
+
 	system_modifier = {
 		station_gatherers_produces_mult = 0.25
 	}
-	
+
 	show_in_tech = "tech_space_mining_4"
 
 	ai_weight = { weight = 150 }
@@ -2525,14 +2525,14 @@ gatherers_production = {
 gatherers_production_science = {
 	icon = "GFX_starbase_gatherers_production_science"
 	construction_days = 360
-	
+
 	potential = {
 		exists = owner
-		owner = { 
+		owner = {
 			has_technology = tech_space_mining_2
 		}
 	}
-	
+
 	possible = {
 		custom_tooltip = {
 			fail_text = "requires_starport"
@@ -2570,11 +2570,11 @@ gatherers_production_science = {
 			energy = 5
 		}
 	}
-	
+
 	system_modifier = {
 		station_researchers_produces_mult = 0.25
 	}
-	
+
 	show_in_tech = "tech_space_mining_2"
 
 	ai_weight = { weight = 150 }
@@ -2583,14 +2583,14 @@ gatherers_production_science = {
 gatherers_production_rare = {
 	icon = "GFX_starbase_gatherers_production_rare"
 	construction_days = 360
-	
+
 	potential = {
 		exists = owner
-		owner = { 
+		owner = {
 			has_technology = tech_space_mining_3
 		}
 	}
-	
+
 	possible = {
 		custom_tooltip = {
 			fail_text = "requires_starport"
@@ -2646,7 +2646,6 @@ gatherers_production_rare = {
 	ai_weight = { weight = 150 }
 }
 
-
 module_protection_link = {
 	icon = "GFX_spaceport_module_protection_link"
 	construction_days = 180
@@ -2659,7 +2658,7 @@ module_protection_link = {
 
 	potential = {
 		exists = owner
-		owner = { 
+		owner = {
 			is_gestalt = no
 			is_criminal_syndicate = no
 			has_technology = tech_sensors_1
@@ -2684,11 +2683,11 @@ federation_sbs = {
 
 	resources = {
 		category = starbase_buildings
-		cost = { 
-			alloys = 25 
+		cost = {
+			alloys = 25
 			unity = 25
 		}
-		upkeep = { 
+		upkeep = {
 			energy = 100
 			alloys = 75
 			unity = 50
@@ -2733,17 +2732,11 @@ federation_sbs = {
 	}
 
 	destroy_trigger = {
-		OR = {
-			solar_system = {
-				NOT = {
-					any_country_neighbor_to_system = {
+		solar_system = {
+			NOT = {
+				any_country_neighbor_to_system = {
+					OR = {
 						exists = federation
-					}
-				}
-			}
-			solar_system = {
-				NOT = {
-					any_country_neighbor_to_system = {
 						is_at_war_with = root
 					}
 				}

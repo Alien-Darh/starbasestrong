@@ -19,8 +19,6 @@ crew_quarters = {
 		ship_orbit_upkeep_mult = -0.25
 	}
 
-
-
 	ai_weight = {
 		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
 	}
@@ -102,8 +100,6 @@ hydroponics_bay = {
 	
 	show_in_tech = "tech_hydroponics"
 
-
-
 	ai_weight = {
 		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
 	}
@@ -146,8 +142,6 @@ resource_silo = {
 		}
 		country_resource_max_add = 10000
 	}
-
-
 
 	ai_weight = {
 		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
@@ -315,8 +309,6 @@ nebula_refinery = {
 
 	show_in_tech = "tech_space_mining_1"
 
-
-
 	ai_weight = {
 		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
 	}
@@ -376,8 +368,6 @@ listening_post = {
 		ship_hyperlane_range_add = 1
 	}
 
-
-
 	ai_weight = {
 		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
 	}
@@ -432,8 +422,6 @@ offworld_trading_company = {
 
 	show_in_tech = "tech_space_trading"
 
-
-
 	ai_weight = {
 		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
 		modifier = {
@@ -483,8 +471,6 @@ fleet_academy = {
 	}
 
 	show_in_tech = "tech_interstellar_fleet_traditions"
-
-
 
 	ai_weight = {
 		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
@@ -539,8 +525,6 @@ naval_logistics_office = {
 	custom_tooltip = sm_naval_logistics_office_desc_modifier
 	show_in_tech = "tech_interstellar_fleet_traditions"
 
-
-
 	ai_weight = {
 		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
 		modifier = {
@@ -589,8 +573,6 @@ titan_yards = {
 	}
 
 	custom_tooltip = sm_titan_yards_desc_modifier
-
-
 
 	ai_weight = {
 		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
@@ -657,8 +639,6 @@ colossus_yards = {
 	custom_tooltip = sm_colossus_yards_desc_modifier
 	show_in_tech = "tech_colossus"
 	show_in_tech = "tech_juggernaut"
-
-
 
 	ai_weight = {
 		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
@@ -756,8 +736,6 @@ black_hole_observatory = {
 
 	show_in_tech = "tech_sensors_3"
 
-
-
 	ai_weight = {
 		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
 	}
@@ -801,8 +779,6 @@ target_uplink_computer = {
 		ship_weapon_range_mult = 0.50
 	}
 
-
-
 	ai_weight = {
 		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
 	}
@@ -844,8 +820,6 @@ defense_grid = {
 	}
 
 	show_in_tech = "tech_synchronized_defences"
-
-
 
 	ai_weight = {
 		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
@@ -902,8 +876,6 @@ deep_space_black_site = {
 	}
 
 	show_in_tech = "tech_living_state"
-
-
 
 	ai_weight = {
 		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
@@ -989,8 +961,6 @@ curator_think_tank = {
 		}
 	}
 
-
-
 	ai_weight = {
 		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
 	}
@@ -1070,8 +1040,6 @@ art_college = {
 			energy = 5
 		}
 	}
-
-
 
 	ai_weight = {
 		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
@@ -1153,8 +1121,6 @@ salvager_workshop = {
 		ship_repair_hull_mult = 0.3
 		ship_repair_armor_mult = 0.3
 	}
-
-
 
 	ai_weight = {
 		weight = 150
@@ -1247,8 +1213,6 @@ shroud_beacon = {
 		}
 	}
 
-
-
 	ai_weight = {
 		weight = 50
 		#Don't build nextdoor to the Shroudwalkers
@@ -1333,8 +1297,6 @@ communications_jammer = {
 
 	equipped_component = "STARBASE_AURA_COMMUNICATIONS_JAMMER"
 
-
-
 	ai_weight = {
 		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
 	}
@@ -1384,8 +1346,6 @@ disruption_field = {
 
 	equipped_component = "STARBASE_AURA_DISRUPTION_FIELD"
 
-
-
 	ai_weight = {
 		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
 	}
@@ -1428,8 +1388,6 @@ warp_fluctuator = {
 
 	equipped_component = "STARBASE_AURA_WARP_FLUCTUATOR"
 	show_in_tech = "tech_interstellar_economics"
-
-
 
 	ai_weight = {
 		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
@@ -1502,8 +1460,6 @@ transit_hub = {
 
 	show_in_tech = "tech_hyper_drive_2"
 
-
-
 	ai_weight = {
 		weight = 100
 		modifier = {
@@ -1569,8 +1525,6 @@ command_center = {
 
 	equipped_component = "STARBASE_AURA_COMMAND_CENTER"
 	show_in_tech = "tech_command_matrix"
-
-
 
 	ai_weight = {
 		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
@@ -1760,8 +1714,6 @@ dragon_hatchery = {
 
 	custom_tooltip = dragon_hatchery_tooltip
 
-
-
 	ai_weight = {
 		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
 		modifier = {
@@ -1819,8 +1771,6 @@ ice_mining_station = {
 		station_gatherers_produces_mult = 0.15
 	}
 
-
-
 	ai_weight = {
 		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
 		modifier = {
@@ -1866,8 +1816,6 @@ offspring_outlook = {
 		}
 	}
 	equipped_component = "STARBASE_OFFSPRING_OUTLOOK"
-
-
 
 	ai_weight = {
 		weight = 10
@@ -1947,8 +1895,6 @@ mercenary_garrison = {
 			energy = 20
 		}
 	}
-
-
 
 	ai_weight = {
 		weight = 50

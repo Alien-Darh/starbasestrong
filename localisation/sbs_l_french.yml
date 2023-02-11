@@ -103,8 +103,8 @@
  tech_station_large:0 "Fortaleza"
  tech_station_large_desc:0 "A gigantic defense armored structure layers of supporting the most intense naval attack."
 
- tech_solar_panels:0 "Solar panels"
- tech_solar_panels_desc:0 "Use sun energy to produce energy"
+ tech_solar_panels:0 "$sm_solar_panels$"
+ tech_solar_panels_desc:0 "$sm_solar_panels_desc$"
  tech_starbase_citadel_upgrade:0 "Improvement of Citadel"
  tech_starbase_citadel_upgrade_desc:0 "Access the new buildings of the Citadel star base to reinforce the limits of your empire or foster arts, trade or research."
 
@@ -193,13 +193,13 @@
 
  sm_aux_module_starhold:0 "Support module"
  sm_aux_module_starhold_desc:0 "Logistic support station is strategically placed at the edges of our borders with some tactical advantages."
- 
+
  sm_module_protection_link:0 "Protection module"
  sm_module_protection_link_desc:0 "A station that is able to repel and delay some pirate attacks in the system before being captured."
- 
+
  sm_module_protection_link:0 "Modulo protección"
  sm_module_protection_link_desc:0 "Una estación que es capaz de repeler y retrasar algunos ataques de piratas en el sistema antes de ser capturada."
- 
+
  sm_gun_battery_upgrade:0 "XL battery"
  sm_gun_battery_upgrade_desc:0 "Add two XL weapons spaces to the star base."
 
@@ -241,7 +241,7 @@
 
  sm_system_fast:0 "Station support"
  sm_system_fast_desc:0 "Building that generates an extreme gravitational field in the system. The star bases will be more protected to the environmental variables of complex galactic systems such as neutrons, pulsar stars, black holes or others."
- 
+
  sm_orbital_ecology:0 "Ecological station"
  sm_orbital_ecology_desc:0 "Environmental planning building and orbital ecological adaptation that helps in the improvement of the adequate use of planetary surfaces for the implementation of population and crops."
 
@@ -252,7 +252,7 @@
  sm_research_lav_desc:0 "Starbase Research Laboratory."
 
  sm_solar_panels:0 "Solar panels"
- sm_solar_panels_desc:0 "Produces energy"
+ sm_solar_panels_desc:0 "Use sun energy to produce energy"
 
  sm_space_housing:0 "Housing Modules"
  sm_space_housing_desc:0 "Deploy accommodation pods to starbases around planets to increase populations."
@@ -313,7 +313,7 @@
  CITADEL_STARBASE_SECTION:0 "High power combat section"
  CITADEL_STARBASE_UPGRADE_SECTION:0 "Improvement of the stellar base to stellar bunker"
  BATTERY_STARBASE_SECTION_UPGRADE:0 "Long -range weapon and high fire power"
- 
+
  stargate:0 "Stargate"
  stargate_DESC:0 "$gateway_final_DESC$"
  stargate_MEGASTRUCTURE_DETAILS:0 "$gateway_final_MEGASTRUCTURE_DETAILS$"
@@ -330,12 +330,12 @@
  requires_max_s:0 "Starbase with module §YServices§!"
 
   ################  BOOSTER ################
-  
+
   REACTOR_BOOSTER_4:0 "Reactor impellers IV"
   REACTOR_BOOSTER_4_DESC:0 "$REACTOR_BOOSTER_3_DESC$"
   REACTOR_BOOSTER_5:0 "Reactor V-drives V"
   REACTOR_BOOSTER_5_DESC:0 "$REACTOR_BOOSTER_3_DESC$"
- 
+
   tech_reactor_boosters_4:0 "Reactor impellers IV"
   tech_reactor_boosters_4_desc:0 "$REACTOR_BOOSTER_3_DESC$"
   tech_reactor_boosters_5:0 "Reactor V-drives V"

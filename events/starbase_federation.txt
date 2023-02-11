@@ -53,7 +53,7 @@ starbase_event = {
 								graphical_culture = "ai_01"
 							}
 						}
-						set_location = root.solar_system
+						set_location = root.solar_system.star
 					}
 					settings = {
 						uses_naval_capacity = no
