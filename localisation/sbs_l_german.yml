@@ -272,16 +272,16 @@
  sm_refinery_alloys:0 "$alloys$ $sm_refinery$"
  sm_refinery_alloys_desc:0 "Mit der Nanitentechnologie können wir Legierungen verfeinern, die aus den Tiefen extrahiert werden und die Produktion verbessern."
 
- sm_refinery_living_metal:0 "$sr_living_metal$ $sm_refinery$"
+ sm_refinery_living_metal:0 "Raffinerie £sr_living_metal£ §Y §!"
  sm_refinery_living_metal_desc:0 "Mit der Nanitentechnologie können wir lebendige Metall verfeinern, die aus den Tiefen extrahiert werden, um die Produktion zu verbessern."
 
- sm_gatherers_living_metal:0 "Kollektor §Y$sr_living_metal$§!"
+ sm_gatherers_living_metal:0 "Kollektor £sr_living_metal£ §Y §!"
  sm_gatherers_living_metal_desc:0 "Spezialisierte Drohnen sammeln Extrakte von lebendem Metall in dem System, das den Stern in der Nähe des Ereignishorizonts verlässt."
 
- sm_refinery_dark_matter:0 "$sr_dark_matter$ $sm_refinery$"
+ sm_refinery_dark_matter:0 "Raffinerie £sr_dark_matter£ §Y §!"
  sm_refinery_dark_matter_desc:0 "With Nanites technology we can refine dark matter extracted from the depths improving production."
 
- sm_gatherers_dark_matter:0 "Kollektor §Y$sr_dark_matter$§!"
+ sm_gatherers_dark_matter:0 "Kollektor £sr_dark_matter£ §Y §!"
  sm_gatherers_dark_matter_desc:0 "Spezialisierte Drohnen sammeln Extrakte dunkler Materie in dem System, das den Stern in der Nähe des Ereignishorizonts verlässt."
 
  sm_gatherers_production:0 "Ressourcensammler"
