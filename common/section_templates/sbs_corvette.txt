@@ -167,9 +167,9 @@ ship_section_template = {
 		locatorname = "medium_gun_01"
 	}
 	
-	small_utility_slots = 2
+	small_utility_slots = 1
 	medium_utility_slots = 1
-	large_utility_slots = 0
+	large_utility_slots = 1
 	aux_utility_slots = 3
 	
 	resources = {

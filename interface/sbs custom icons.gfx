@@ -186,6 +186,41 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_starbase_gatherers_dark_matter"
+		texturefile = "gfx/interface/icons/modules/starbase_gatherers_dark_matter.dds"
+	}
+
+	spriteType = {
+		name = "GFX_starbase_gatherers_living_metal"
+		texturefile = "gfx/interface/icons/modules/starbase_gatherers_living_metal.dds"
+	}
+
+	spriteType = {
+		name = "GFX_starbase_gatherers_production"
+		texturefile = "gfx/interface/icons/modules/starbase_gatherers_production.dds"
+	}
+
+	spriteType = {
+		name = "GFX_spaceport_sbs_emp"
+		texturefile = "gfx/interface/icons/modules/spaceport_sbs_emp.dds"
+	}
+
+	spriteType = {
+		name = "GFX_starbase_gatherers_production_rare"
+		texturefile = "gfx/interface/icons/modules/starbase_gatherers_production_rare.dds"
+	}
+
+	spriteType = {
+		name = "GFX_starbase_gatherers_production_science"
+		texturefile = "gfx/interface/icons/modules/starbase_gatherers_production_science.dds"
+	}
+
+	spriteType = {
+		name = "GFX_spaceport_federation_sbs"
+		texturefile = "gfx/interface/icons/modules/spaceport_federation_sbs.dds"
+	}
+
+	spriteType = {
 		name = "GFX_evt_ruined_system_clean"
 		texturefile = "gfx/event_pictures/ruined_system_clean.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
@@ -251,6 +286,27 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.shader"
 		animation = {
 			animationmaskfile = "gfx/interface/icons/relics/turrent_shine.dds"			
+			animationtexturefile = "gfx/interface/icons/relics/glow_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 18				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+		alwaystransparent = yes				
+	}
+
+	spriteType = {
+		name = "GFX_evt_pem_box"
+		texturefile = "gfx/event_pictures/pem_box.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		effectFile = "gfx/FX/buttonstate.shader"
+		animation = {
+			animationmaskfile = "gfx/interface/icons/relics/pem_shine.dds"			
 			animationtexturefile = "gfx/interface/icons/relics/glow_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = yes			# yes or no ;)

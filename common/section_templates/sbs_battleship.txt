@@ -217,8 +217,8 @@ ship_section_template = {
 	ai_tags = { gunship }
 
 	component_slot = {
-		name = "MEDIUM_GUN_01"
-		template = "medium_turret"
+		name = "TORPEDO_01"
+		template = "medium_missile_turret"
 		locatorname = "medium_gun_01"
 	}
 
@@ -969,8 +969,8 @@ ship_section_template = {
 	prerequisites = { tech_starbase_citadel_upgrade }
 
 	component_slot = {
-		name = "MEDIUM_GUN_01"
-		template = "medium_turret"
+		name = "TORPEDO_01"
+		template = "medium_missile_turret"
 		locatorname = "medium_gun_01"
 	}
 

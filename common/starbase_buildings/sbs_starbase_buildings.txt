@@ -311,16 +311,8 @@ pulsar_observatory = {
 			}
 			engineering_research = 6
 		}
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { has_technology = tech_mine_living_metal }
-			}
-			sr_living_metal = 1
-		}
-
 		upkeep = {
-			energy = 2
+			energy = 5
 		}
 	}
 	show_in_tech = "tech_self_aware_logic"
@@ -394,17 +386,8 @@ neutron_observatory = {
 			}
 			society_research = 6
 		}
-
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { has_technology = tech_mine_zro }
-			}
-			sr_zro = 1
-		}
-
 		upkeep = {
-			energy = 2
+			energy = 5
 		}
 	}
 	show_in_tech = "tech_self_aware_logic"
@@ -883,10 +866,13 @@ refinery_living_metal = {
 		}
 		custom_tooltip = {
 			fail_text = "requires_mine_living_metal"
-			solar_system = {
-				any_system_planet = {
-					has_deposit = d_living_metal_deposit
+			OR = {
+				solar_system = {
+					any_system_planet = {
+						has_deposit = d_living_metal_deposit
+					}
 				}
+				has_starbase_module = gatherers_living_metal
 			}
 		}
 	}
@@ -931,14 +917,17 @@ refinery_dark_matter = {
 		}
 		custom_tooltip = {
 			fail_text = "requires_mine_dark_matter"
-			solar_system = {
-				any_system_planet = {
-					OR = {
-						has_deposit = d_dark_matter_deposit_1
-						has_deposit = d_dark_matter_deposit_2
-						has_deposit = d_dark_matter_deposit_3
+			OR = {
+				solar_system = {
+					any_system_planet = {
+						OR = {
+							has_deposit = d_dark_matter_deposit_1
+							has_deposit = d_dark_matter_deposit_2
+							has_deposit = d_dark_matter_deposit_3
+						}
 					}
 				}
+				has_starbase_module = gatherers_dark_matter
 			}
 		}
 	}
@@ -951,7 +940,7 @@ refinery_dark_matter = {
 			nanites = 5
 		}
 		produces = {
-			sr_dark_matter = 2
+			sr_dark_matter = 1
 		}
 		upkeep = {
 			energy = 10
@@ -1895,9 +1884,11 @@ system_fast = {
 		custom_tooltip = {
 			fail_text = "requires_modules"
 			OR = {
-				has_starbase_module = gun_battery
-				has_starbase_module = missile_battery
-				has_starbase_module = hangar_bay
+				AND = {
+					has_starbase_module = gun_battery
+					has_starbase_module = missile_battery
+					has_starbase_module = hangar_bay
+				}
 				has_starbase_module = gun_battery_upgrade
 			}
 		}
@@ -1915,10 +1906,9 @@ system_fast = {
 
 	triggered_station_modifier = {
 		potential = {
-			from = {
-				solar_system = {
-					is_star_class = sc_pulsar
-				}
+			exists = solar_system
+			solar_system = {
+				is_star_class = sc_pulsar
 			}
 		}
 		modifier = {
@@ -1930,10 +1920,9 @@ system_fast = {
 
 	triggered_station_modifier = {
 		potential = {
-			from = {
-				solar_system = {
-					is_star_class = sc_black_hole
-				}
+			exists = solar_system
+			solar_system = {
+				is_star_class = sc_black_hole
 			}
 		}
 		modifier = {
@@ -1946,10 +1935,9 @@ system_fast = {
 
 	triggered_station_modifier = {
 		potential = {
-			from = {
-				solar_system = {
-					is_star_class = sc_neutron_star
-				}
+			exists = solar_system
+			solar_system = {
+				is_star_class = sc_neutron_star
 			}
 		}
 		modifier = {
@@ -1961,12 +1949,11 @@ system_fast = {
 
 	triggered_station_modifier = {
 		potential = {
-			from = {
-				solar_system = {
-					OR = {
-						is_binary_star = yes
-						is_trinary_star = yes
-					}
+			exists = solar_system
+			solar_system = {
+				OR = {
+					is_binary_star = yes
+					is_trinary_star = yes
 				}
 			}
 		}
@@ -2249,6 +2236,14 @@ star_clean = {
 							is_megastructure_type = quantum_catapult_restored_slingshot
 							is_megastructure_type = quantum_catapult_ruined_slingshot
 							is_megastructure_type = quantum_catapult_improved_slingshot
+
+							is_megastructure_type = hyper_relay
+							is_megastructure_type = hyper_relay_ruined
+							is_megastructure_type = hyper_relay_restored
+
+							is_megastructure_type = orbital_ring
+							is_megastructure_type = orbital_ring_ruined
+							is_megastructure_type = orbital_ring_restored
 						}
 					}
 					any_system_planet = { is_planet_class = pc_habitat }
@@ -2287,6 +2282,7 @@ star_hyper = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_hyper_relays }
+		is_orbital_ring = no
 	}
 
 	possible = {
@@ -2350,32 +2346,6 @@ aux_module_starhold = {
 	station_modifier = {
 		ship_sensor_range_add = 2
 		ship_hyperlane_range_add = 2
-	}
-	ai_weight = {
-		weight = 150
-	}
-
-	show_in_tech = "tech_sensors_1"
-}
-
-module_protection_link = {
-	icon = "GFX_spaceport_module_protection_link"
-	construction_days = 180
-
-	resources = {
-		category = starbase_buildings
-		cost = { alloys = 25 }
-		upkeep = { energy = 5 }
-	}
-
-	potential = {
-		exists = owner
-		owner = { has_technology = tech_sensors_1 }
-	}
-	
-	station_modifier = {
-		starbase_trade_protection_range_add = 1
-		starbase_trade_protection_add = 4
 	}
 
 	ai_weight = {
@@ -2446,4 +2416,355 @@ hyperlane_sbs = {
 	ai_weight = { weight = 0 }
 
 	show_in_tech = "tech_hyperlane_sbs"
+}
+
+emp_sbs = {
+	icon = "GFX_spaceport_sbs_emp"
+	construction_days = 360
+
+	potential = {
+		exists = owner
+		owner = { 
+			has_technology = tech_emp_sbs
+			has_federation = no
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starport"
+			has_starbase_size >= starbase_starport
+		}
+		custom_tooltip = {
+			fail_text = "requires_modules"
+			OR = {
+				AND = {
+					has_starbase_module = gun_battery
+					has_starbase_module = missile_battery
+					has_starbase_module = hangar_bay
+				}
+				count_starbase_modules = {
+					type = gun_battery_upgrade
+					count >= 3
+				}
+			}
+		}
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			energy = 750
+			influence = 25
+		}
+		upkeep = { energy = 75 }
+	}
+
+	show_in_tech = "tech_emp_sbs"
+	ai_weight = { weight = 0 }
+}
+
+gatherers_production = {
+	icon = "GFX_starbase_gatherers_production"
+	construction_days = 360
+	
+	potential = {
+		exists = owner
+		owner = { 
+			has_technology = tech_space_mining_4
+		}
+	}
+	
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starport"
+			has_starbase_size >= starbase_starport
+		}
+		custom_tooltip = {
+			fail_text = "requires_black_hole_neutron_star_pulsar"
+			solar_system = {
+				OR = {
+					is_star_class = sc_black_hole
+					is_star_class = sc_neutron_star
+					is_star_class = sc_pulsar
+					is_binary_star = yes
+					is_trinary_star = yes
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_orbital_station"
+			solar_system = {
+				any_system_planet = {
+					has_mining_station = yes
+				}
+			}
+		}
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 100
+		}
+
+		upkeep = {
+			energy = 5
+		}
+	}
+	
+	system_modifier = {
+		station_gatherers_produces_mult = 0.25
+	}
+	
+	show_in_tech = "tech_space_mining_4"
+
+	ai_weight = { weight = 150 }
+}
+
+gatherers_production_science = {
+	icon = "GFX_starbase_gatherers_production_science"
+	construction_days = 360
+	
+	potential = {
+		exists = owner
+		owner = { 
+			has_technology = tech_space_mining_2
+		}
+	}
+	
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starport"
+			has_starbase_size >= starbase_starport
+		}
+		custom_tooltip = {
+			fail_text = "requires_black_hole_neutron_star_pulsar"
+			solar_system = {
+				OR = {
+					is_star_class = sc_black_hole
+					is_star_class = sc_neutron_star
+					is_star_class = sc_pulsar
+					is_binary_star = yes
+					is_trinary_star = yes
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_orbital_station"
+			solar_system = {
+				any_system_planet = {
+					has_research_station = yes
+				}
+			}
+		}
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 100
+		}
+
+		upkeep = {
+			energy = 5
+		}
+	}
+	
+	system_modifier = {
+		station_researchers_produces_mult = 0.25
+	}
+	
+	show_in_tech = "tech_space_mining_2"
+
+	ai_weight = { weight = 150 }
+}
+
+gatherers_production_rare = {
+	icon = "GFX_starbase_gatherers_production_rare"
+	construction_days = 360
+	
+	potential = {
+		exists = owner
+		owner = { 
+			has_technology = tech_space_mining_3
+		}
+	}
+	
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starport"
+			has_starbase_size >= starbase_starport
+		}
+		custom_tooltip = {
+			fail_text = "requires_orbital_station"
+			solar_system = {
+				any_system_planet = {
+					OR = {
+						has_deposit = d_rare_crystals_1
+						has_deposit = d_rare_crystals_2
+						has_deposit = d_rare_crystals_3
+						has_deposit = d_rare_crystals_4
+						has_deposit = d_rare_crystals_5
+
+						has_deposit = d_volatile_motes_1
+						has_deposit = d_volatile_motes_2
+						has_deposit = d_volatile_motes_3
+						has_deposit = d_volatile_motes_4
+						has_deposit = d_volatile_motes_5
+
+						has_deposit = d_exotic_gases_1
+						has_deposit = d_exotic_gases_2
+						has_deposit = d_exotic_gases_3
+						has_deposit = d_exotic_gases_4
+						has_deposit = d_exotic_gases_5
+					}
+				}
+			}
+		}
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 100
+		}
+
+		upkeep = {
+			energy = 5
+		}
+	}
+
+	system_modifier = {
+		stations_volatile_motes_produces_mult = 0.25
+		stations_exotic_gases_produces_mult = 0.25
+		stations_rare_crystals_produces_mult = 0.25
+	}
+
+	show_in_tech = "tech_space_mining_3"
+
+	ai_weight = { weight = 150 }
+}
+
+
+module_protection_link = {
+	icon = "GFX_spaceport_module_protection_link"
+	construction_days = 180
+
+	resources = {
+		category = starbase_buildings
+		cost = { alloys = 25 }
+		upkeep = { energy = 5 }
+	}
+
+	potential = {
+		exists = owner
+		owner = { 
+			is_gestalt = no
+			is_criminal_syndicate = no
+			has_technology = tech_sensors_1
+		}
+	}
+
+	station_modifier = {
+		starbase_trade_protection_range_add = 1
+		starbase_trade_protection_add = 25
+	}
+
+	ai_weight = {
+		weight = 150
+	}
+
+	show_in_tech = "tech_sensors_1"
+}
+
+federation_sbs = {
+	icon = "GFX_spaceport_federation_sbs"
+	construction_days = 180
+
+	resources = {
+		category = starbase_buildings
+		cost = { 
+			alloys = 25 
+			unity = 25
+		}
+		upkeep = { 
+			energy = 100
+			alloys = 75
+			unity = 50
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_citadel"
+			has_starbase_size >= starbase_citadel
+		}
+		custom_tooltip = {
+			fail_text = "requires_country_fed"
+			solar_system = {
+				OR = {
+					any_country_neighbor_to_system = {
+						exists = federation
+					}
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_country_fed_war"
+			solar_system = {
+				OR = {
+					any_country_neighbor_to_system = {
+						exists = federation
+						is_at_war_with = root
+					}
+				}
+			}
+		}
+	}
+
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_sensors_4 }
+	}
+
+	abort_trigger = {
+		owner = { has_federation = yes }
+	}
+
+	destroy_trigger = {
+		OR = {
+			solar_system = {
+				NOT = {
+					any_country_neighbor_to_system = {
+						exists = federation
+					}
+				}
+			}
+			solar_system = {
+				NOT = {
+					any_country_neighbor_to_system = {
+						is_at_war_with = root
+					}
+				}
+			}
+		}
+	}
+
+	station_modifier = {
+		ship_shield_mult = 1
+		ship_hull_mult = 1
+		ship_armor_mult = 1
+		ship_shield_hardening_add = 1
+		ship_armor_hardening_add = 1
+		starbase_defense_platform_capacity_add = 8
+	}
+
+	ai_weight = { weight = 0 }
+
+	on_finished = {
+		starbase_event = { id = federation_sbs.1 days = 30 }
+	}
+
+	show_in_tech = "tech_sensors_4"
 }

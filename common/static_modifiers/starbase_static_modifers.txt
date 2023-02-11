@@ -8,3 +8,154 @@ station_sbs = {
 	shipclass_military_station_damage_mult = 0.25
 	shipclass_military_station_hull_mult = 0.25
 }
+
+mod_anti_fed_01 = {
+	ship_hull_mult = 0.25
+	ship_armor_mult = 0.25
+	ship_shield_mult = 0.25
+	shipclass_starbase_damage_mult = 0.25
+}
+mod_anti_fed_02 = {
+	ship_hull_mult = 0.50
+	ship_armor_mult = 0.50
+	ship_shield_mult = 0.50
+	shipclass_starbase_damage_mult = 0.50
+}
+mod_anti_fed_03 = {
+	ship_hull_mult = 0.75
+	ship_armor_mult = 0.75
+	ship_shield_mult = 0.75
+	shipclass_starbase_damage_mult = 0.75
+}
+mod_anti_fed_04 = {
+	ship_hull_mult = 1.00
+	ship_armor_mult = 1.00
+	ship_shield_mult = 1.00
+	shipclass_starbase_damage_mult = 1.00
+}
+mod_anti_fed_05 = {
+	ship_hull_mult = 1.25
+	ship_armor_mult = 1.25
+	ship_shield_mult = 1.25
+	shipclass_starbase_damage_mult = 1.25
+}
+mod_anti_fed_06 = {
+	ship_hull_mult = 1.50
+	ship_armor_mult = 1.50
+	ship_shield_mult = 1.50
+	shipclass_starbase_damage_mult = 1.50
+}
+mod_anti_fed_07 = {
+	ship_hull_mult = 1.75
+	ship_armor_mult = 1.75
+	ship_shield_mult = 1.75
+	shipclass_starbase_damage_mult = 1.75
+}
+mod_anti_fed_08 = {
+	ship_hull_mult = 2.00
+	ship_armor_mult = 2.00
+	ship_shield_mult = 2.00
+	shipclass_starbase_damage_mult = 2.00
+}
+mod_anti_fed_09 = {
+	ship_hull_mult = 2.25
+	ship_armor_mult = 2.25
+	ship_shield_mult = 2.25
+	shipclass_starbase_damage_mult = 2.25
+}
+mod_anti_fed_10 = {
+	ship_hull_mult = 2.50
+	ship_armor_mult = 2.50
+	ship_shield_mult = 2.50
+	shipclass_starbase_damage_mult = 2.50
+}
+mod_anti_fed_11 = {
+	ship_hull_mult = 2.75
+	ship_armor_mult = 2.75
+	ship_shield_mult = 2.75
+	shipclass_starbase_damage_mult = 2.75
+}
+mod_anti_fed_12 = {
+	ship_hull_mult = 3.00
+	ship_armor_mult = 3.00
+	ship_shield_mult = 3.00
+	shipclass_starbase_damage_mult = 3.00
+}
+mod_anti_fed_13 = {
+	ship_hull_mult = 3.25
+	ship_armor_mult = 3.25
+	ship_shield_mult = 3.25
+	shipclass_starbase_damage_mult = 3.25
+}
+mod_anti_fed_14 = {
+	ship_hull_mult = 3.50
+	ship_armor_mult = 3.50
+	ship_shield_mult = 3.50
+	shipclass_starbase_damage_mult = 3.50
+}
+mod_anti_fed_15 = {
+	ship_hull_mult = 3.75
+	ship_armor_mult = 3.75
+	ship_shield_mult = 3.75
+	shipclass_starbase_damage_mult = 3.75
+}
+mod_anti_fed_16 = {
+	ship_hull_mult = 4.00
+	ship_armor_mult = 4.00
+	ship_shield_mult = 4.00
+	shipclass_starbase_damage_mult = 4.00
+}
+mod_anti_fed_17 = {
+	ship_hull_mult = 4.25
+	ship_armor_mult = 4.25
+	ship_shield_mult = 4.25
+	shipclass_starbase_damage_mult = 4.25
+}
+mod_anti_fed_18 = {
+	ship_hull_mult = 4.50
+	ship_armor_mult = 4.50
+	ship_shield_mult = 4.50
+	shipclass_starbase_damage_mult = 4.50
+}
+mod_anti_fed_19 = {
+	ship_hull_mult = 4.75
+	ship_armor_mult = 4.75
+	ship_shield_mult = 4.75
+	shipclass_starbase_damage_mult = 4.75
+}
+mod_anti_fed_20 = {
+	ship_hull_mult = 5.00
+	ship_armor_mult = 5.00
+	ship_shield_mult = 5.00
+	shipclass_starbase_damage_mult = 5.00
+}
+mod_anti_fed_21 = {
+	ship_hull_mult = 5.25
+	ship_armor_mult = 5.25
+	ship_shield_mult = 5.25
+	shipclass_starbase_damage_mult = 5.25
+}
+mod_anti_fed_22 = {
+	ship_hull_mult = 5.50
+	ship_armor_mult = 5.50
+	ship_shield_mult = 5.50
+	shipclass_starbase_damage_mult = 5.50
+}
+mod_anti_fed_23 = {
+	ship_hull_mult = 6.00
+	ship_armor_mult = 6.00
+	ship_shield_mult = 6.00
+	shipclass_starbase_damage_mult = 6.00
+}
+mod_anti_fed_24 = {
+	ship_hull_mult = 6.25
+	ship_armor_mult = 6.25
+	ship_shield_mult = 6.25
+	shipclass_starbase_damage_mult = 6.25
+}
+mod_anti_fed_25 = {
+	ship_hull_mult = 6.50
+	ship_armor_mult = 6.50
+	ship_shield_mult = 6.50
+	shipclass_starbase_damage_mult = 6.50
+}

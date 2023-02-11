@@ -1,3 +1,83 @@
+gatherers_dark_matter = {
+	icon = "GFX_starbase_gatherers_dark_matter"
+	construction_days = 360
+
+	resources = {
+		category = starbase_modules
+		cost = {
+			energy = 10
+		}
+		produces = {
+			sr_dark_matter = 0.25
+		}
+
+		upkeep = {
+			energy = 5
+		}
+	}
+
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_mine_dark_matter } 
+		is_orbital_ring = no
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starport"
+			has_starbase_size >= starbase_starport
+		}
+		custom_tooltip = {
+			fail_text = "requires_black_hole"
+			star = { is_star_class = sc_black_hole }
+		}
+	}
+
+	show_in_tech = "tech_mine_dark_matter"
+
+	ai_weight = { weight = 100 }
+}
+
+gatherers_living_metal = {
+	icon = "GFX_starbase_gatherers_living_metal"
+	construction_days = 360
+
+	resources = {
+		category = starbase_modules
+		cost = {
+			energy = 10
+		}
+		produces = {
+			sr_living_metal = 0.25
+		}
+
+		upkeep = {
+			energy = 5
+		}
+	}
+
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_mine_living_metal } 
+		is_orbital_ring = no
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starport"
+			has_starbase_size >= starbase_starport
+		}
+		custom_tooltip = {
+			fail_text = "requires_black_hole"
+			star = { is_star_class = sc_black_hole }
+		}
+	}
+
+	show_in_tech = "tech_mine_living_metal"
+
+	ai_weight = { weight = 100 }
+}
+
 unity_module = {
 	icon = "GFX_starbase_unity_module"
 	construction_days = 360
@@ -20,7 +100,6 @@ unity_module = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_planetary_unification } 
-		is_orbital_ring = no
 	}
 
 	possible = {
@@ -65,7 +144,6 @@ manufacturing_module = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_space_trading }
-		is_orbital_ring = no
 	}
 
 	possible = {
@@ -95,7 +173,6 @@ storage_food = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_hydroponics }
-		is_orbital_ring = no
 	}
 
 	resources = {
@@ -114,7 +191,10 @@ storage_food = {
 	possible = {
 		custom_tooltip = {
 			fail_text = "requires_starport"
-			has_starbase_size >= starbase_starport
+			OR = {
+				has_starbase_size >= starbase_starport
+				is_orbital_ring = yes
+			}
 		}
 		has_starbase_building = hydroponics_bay
 	}
@@ -133,7 +213,6 @@ storage_minerals = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_mining_1 }
-		is_orbital_ring = no
 	}
 
 	resources = {
@@ -152,7 +231,10 @@ storage_minerals = {
 	possible = {
 		custom_tooltip = {
 			fail_text = "requires_starport"
-			has_starbase_size >= starbase_starport
+			OR = {
+				has_starbase_size >= starbase_starport
+				is_orbital_ring = yes
+			}
 		}
 		custom_tooltip = {
 			fail_text = "requires_mine_minerals"
@@ -202,7 +284,6 @@ management_office = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_adaptive_bureaucracy }
-		is_orbital_ring = no
 	}
 
 	possible = {
@@ -243,7 +324,6 @@ social_services = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_effective_bureaucracy }
-		is_orbital_ring = no
 	}
 
 	resources = {
@@ -297,7 +377,6 @@ solar_panels = {
 
 	potential = {
 		exists = owner
-		is_orbital_ring = no
 		owner = {
 			is_gestalt = no
 			has_technology = "tech_solar_panels"

@@ -142,7 +142,7 @@
  cleanevents.1.f:0 "§YNanobots aufladen§!"
 
  tech_sensors_1:0 "Remote sensing"
- tech_sensors_1_desc:0 "These sensors have been created to operate at a distance, controlled by advanced artificial intelligence is capable of controlling modules that detect changes in wavelengths and some unnatural energy alterations. Its easy positioning makes it essential for exploration, support in defense and replenishment of spacecraft."
+ tech_sensors_1_desc:0 "Sensormodul, das von fortschrittlicher künstlicher Intelligenz gesteuert wird und in der Lage ist, Wellenlängenänderungen und einige unnatürliche Stromstörungen zu erkennen. Seine einfache Positionierung macht es für die Erkundung, die Verteidigungsunterstützung und die Versorgung von Raumfahrzeugen unerlässlich."
 
  aura_starbase_crisis:0 "Offensive Aura - Krise"
  aura_starbase_fallen:0 "Offensive Aura - Gefallen"
@@ -175,7 +175,9 @@
  requires_no_modules:0 "$TRIGGER_FAIL$§RSie können keine Kampfmodule an der Sternbasis haben§!: Aufgrund der explosiven Komponenten für die Ausarbeitung von Legierungen."
  requires_citadel_upgrade:0 "$TRIGGER_FAIL$§RBenötigt Update§!: Aufgrund der Anforderungen an spezialisierte Waffen und Verteidigungsversammlungen ist es notwendig, die Sternbasis zu verstärken."
  requires_habitable_planet:0 "Erfordert einen bewohnbaren Planeten im System, um ihn zu erkunden"
- requires_modules:0 "Requires combat module"
+ requires_modules:0 "Benötigt die 3 Basis-Kampfmodule oder 3 XL-Akku"
+
+ requires_black_hole_neutron_star_pulsar:0 "§RErfordert eine §Y$pc_pulsar$§! \n§RErfordert eine §Y$pc_neutron_star$§! \n§RErfordert eine §Y$pc_black_hole$§! \nIm System.§!"
 
  sm_archeological_center:0 "Archäologisches Zentrum"
  sm_archeological_center_desc:0 "Archäologische Untersuchung der Sternenbasis"
@@ -273,8 +275,37 @@
  sm_refinery_living_metal:0 "$sr_living_metal$ $sm_refinery$"
  sm_refinery_living_metal_desc:0 "Mit der Nanitentechnologie können wir lebendige Metall verfeinern, die aus den Tiefen extrahiert werden, um die Produktion zu verbessern."
 
+ sm_gatherers_living_metal:0 "Kollektor §Y$sr_living_metal$§!"
+ sm_gatherers_living_metal_desc:0 "Spezialisierte Drohnen sammeln Extrakte von lebendem Metall in dem System, das den Stern in der Nähe des Ereignishorizonts verlässt."
+
  sm_refinery_dark_matter:0 "$sr_dark_matter$ $sm_refinery$"
  sm_refinery_dark_matter_desc:0 "With Nanites technology we can refine dark matter extracted from the depths improving production."
+
+ sm_gatherers_dark_matter:0 "Kollektor §Y$sr_dark_matter$§!"
+ sm_gatherers_dark_matter_desc:0 "Spezialisierte Drohnen sammeln Extrakte dunkler Materie in dem System, das den Stern in der Nähe des Ereignishorizonts verlässt."
+
+ sm_gatherers_production:0 "Ressourcensammler"
+ sm_gatherers_production_desc:0 "Starbase-Gebäude, das die Ressourcen einiger Spezialsysteme effizienter verwaltet."
+ requires_orbital_station:0 "Benötigt Systemressourcen"
+
+ sm_gatherers_production_science:0 "Wissenschaftsauswahl"
+ sm_gatherers_production_science_desc:0 "Starbase-Gebäude, das die Ressourcen einiger Spezialsysteme effizienter verwaltet."
+
+ sm_gatherers_production_rare:0 "besonderer Sammler"
+ sm_gatherers_production_rare_desc:0 "Starbase-Gebäude, das die spezifischen Ressourcen einiger Spezialsysteme effizienter verwaltet."
+
+ mod_stations_volatile_motes_produces_mult:0 "Recolector de motas"
+ mod_stations_exotic_gases_produces_mult:0 "Recolector de gas"
+ mod_stations_rare_crystals_produces_mult:0 "Recolector de cristal"
+
+ sm_emp_sbs:0 "E.M.P."
+ sm_emp_sbs_desc:0 "Elektromagnetischer Impuls der Sternenbasis als letzte Verteidigungslinie gegen überwältigende feindliche Flotten."
+
+ sbsemp.1_title:0 "Elektromagnetischer Puls"
+ sbsemp.1_desc:0 "Es wurde festgestellt, dass überwältigende feindliche Flotten in das System eindringen §H[sbsemp_emp.system.GetName]§!... §YElektromagnetischer Impuls§! auf Standby.\n\nOption 1. Maximaler Impuls; wird die Basis ohne Verteidigung oder verbündete Schiffe verlassen oder feindliche Flotten im System; §HAufladezeit 360d§!.\n\nOption 2nd Medium Pulse; wirkt sich nur auf eigene oder feindliche Flotten zwischen 150.000 und 300.000 aus, wobei möglicherweise kleinere oder größere feindliche Flotten die Basis angreifen; §HAufladezeit 180d§!. \n\nOption 3. Niedriger Impuls; nur Warnung und wird §HElektromagnetischer Impuls§! bis zu einem anderen Zeitpunkt deaktivieren."
+
+ tech_emp_sbs:0 "Elektromagnetischer Puls"
+ tech_emp_sbs_desc:0 "Elektromagnetischer Puls (E.M.P.) Montiert auf der Sternenbasis, die als letzte Verteidigungslinie gegen überwältigende feindliche Flotten im System mit verheerenden Folgen verwendet wird."
 
  starbase_aura_warp:0 "Hyperimpuls-Aura"
  starbase_citadel_upgrade:0 "Verbesserung Zitadelle"
@@ -346,3 +377,13 @@
  military_station_sbs.11_title:0 "Kampfplattformen"
  military_station_sbs.11_desc:0 "§YDefensive Warfare Protocol;§! Kampfplattformen erhöhen ihren Angriff und ihre Panzerung während eines Konflikts.\n\nPlattformen von §HStarbases§!, die im Kampf verloren gehen, werden nicht zerstört, sondern deaktiviert, bis Sie sie wiedererlangen, und können nicht gegen sie eingesetzt werden Sie, es sei denn, die Basis wird zuerst eingenommen.\n\nWiederhergestellte Kampfplattformen brauchen Zeit, um vollständig reaktiviert zu werden. Lassen Sie sie nicht in Ruhe, während die volle Leistung wiederhergestellt ist.\n\nWenn der Angriff auf die Plattformen zu überwältigend ist, können Sie sie verlieren und müssen erneuert werden."
  station_sbs:0 "Defensives Protokoll"
+
+ ########## Anti federation #########
+
+ sm_federation_sbs:0 "Anti-Föderationen"
+ sm_federation_sbs_desc:0 "Logistikgebäude, um missbräuchliche Verbände an unseren Grenzen zu unterbinden."
+ requires_country_fed:0 "Grenzföderation erforderlich"
+ requires_country_fed_war:0 "Erfordert Krieg mit Grenzföderation"
+
+ MESSAGE_REANIMATION_COMPLETE_TITLE:0 "Feedback-Sternenbasis"
+ MESSAGE_MERCENARY_COMPLETE_DESC:0 "Die Sternenbasis wird mit jedem Widerstandsjahr stärker und einige Fraktionen der Galaxie, die nicht mit der Föderation verbündet sind, wurden rekrutiert und erwarten uns in der Sternenbasis von §H[From.solar_system.GetName]§! in den Kampf einzutreten... Weitere Schiffe sind bereits unterwegs."

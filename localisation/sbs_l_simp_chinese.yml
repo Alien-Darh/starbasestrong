@@ -142,7 +142,7 @@
  cleanevents.1.f:0 "§YRecharge nanobots§!"
 
  tech_sensors_1:0 "Remote sensing"
- tech_sensors_1_desc:0 "These sensors have been created to operate at a distance, controlled by advanced artificial intelligence is capable of controlling modules that detect changes in wavelengths and some unnatural energy alterations. Its easy positioning makes it essential for exploration, support in defense and replenishment of spacecraft."
+ tech_sensors_1_desc:0 "Sensor module controlled by advanced artificial intelligence, capable of detecting changes in wavelengths and some unnatural power disturbances. Its easy positioning makes it essential for exploration, defense support, and spacecraft resupply."
 
  aura_starbase_crisis:0 "Offensive Aura - Crisis"
  aura_starbase_fallen:0 "Offensive Aura - Awakened"
@@ -175,7 +175,9 @@
  requires_no_modules:0 "$TRIGGER_FAIL$§RYou can't have combat modules at the star base§!: due to the explosive components for the elaboration of alloys."
  requires_citadel_upgrade:0 "$TRIGGER_FAIL$§RRequires update§!: Due to specialized weapons and defense assembly requirements, it is necessary to reinforce the star base."
  requires_habitable_planet:0 "Requires a habitable planet in the system to explore"
- requires_modules:0 "Requires combat module"
+ requires_modules:0 "Requires the 3 basic combat modules or 3 XL battery"
+
+ requires_black_hole_neutron_star_pulsar:0 "§RRequires a §Y$pc_pulsar$§! \n§RRequires a §Y$pc_neutron_star$§! \n§RRequires a §Y$pc_black_hole$§! \nin the system.§!"
 
  sm_archeological_center:0 "Archeological Center"
  sm_archeological_center_desc:0 "Archaeological study of the star base"
@@ -273,8 +275,37 @@
  sm_refinery_living_metal:0 "Living metal refinery"
  sm_refinery_living_metal_desc:0 "With nanite technology we can refine living metal extracted from the depths improving production."
 
+ sm_gatherers_living_metal:0 "Collector §Y$sr_living_metal$§!"
+ sm_gatherers_living_metal_desc:0 "Specialized drones collect live metal extracts in the system that the star leaves near the horizon of events."
+
  sm_refinery_dark_matter:0 "Dark matter refinery"
  sm_refinery_dark_matter_desc:0 "Con la tecnología de nanites podemos refinar materia oscura extraída desde las profundidades mejorando la producción."
+
+ sm_gatherers_dark_matter:0 "Collector §Y$sr_dark_matter$§!"
+ sm_gatherers_dark_matter_desc:0 "Specialized drones collect extracts of dark matter in the system that leaves the star near the horizon of events."
+
+ sm_gatherers_production:0 "Resource collector"
+ sm_gatherers_production_desc:0 "Star base building that more efficiently manages the resources of some special systems."
+ requires_orbital_station:0 "Requires resources in the system"
+
+ sm_gatherers_production_science:0 "Science selector"
+ sm_gatherers_production_science_desc:0 "Star base building that more efficiently manages the resources of some special systems."
+
+ sm_gatherers_production_rare:0 "Special collector"
+ sm_gatherers_production_rare_desc:0 "Star base building that more efficiently manages the specific resources of some special systems."
+
+ mod_stations_volatile_motes_produces_mult:0 "Recolector de motas"
+ mod_stations_exotic_gases_produces_mult:0 "Recolector de gas"
+ mod_stations_rare_crystals_produces_mult:0 "Recolector de cristal"
+
+ sm_emp_sbs:0 "E.M.P."
+ sm_emp_sbs_desc:0 "Electromagnetic pulse of the star base used as the last defensive line against overwhelming hostile fleets."
+
+ sbsemp.1_title:0 "Electromagnetic pulse"
+ sbsemp.1_desc:0 "Overwhelming hostile fleets have been detected entering the system §H[sbsemp_emp.system.GetName]§!... §YElectromagnetic Pulse§! on standby.\n\nOption 1st Maximum Pulse; will leave the base without defenses or friendly ships or enemy fleets in system; §Hrecharge time 360d§!.\n\nOption 2nd Medium Pulse; will only affect friendly or enemy fleets between 150k and 300k leaving some possible smaller or larger hostile fleets attacking the base; §Hrecharge time 180d §!.\n\nOption 3rd Low Pulse; warning only and will disable §HElectromagnetic Pulse§! until another time."
+
+ tech_emp_sbs:0 "Electromagnetic pulse"
+ tech_emp_sbs_desc:0 "Electromagnetic pulse (E.M.P.) mounted on the stellar base used as the last defensive line against overwhelming hostile fleets in the system with devastating consequences."
 
  starbase_aura_warp:0 "Hyper Boost Aura"
  starbase_citadel_upgrade:0 "Improvement Citadel"
@@ -324,8 +355,9 @@
  tech_hyperlane_sbs_desc:0 "Powerful hyperlane disruption system that is capable of shutting off access to hostile empires controlled from the starbase."
  TECH_UNLOCK_HYPERLANE_SBS_TITLE:0 "§HAccess the megastructure:§! Quantum disruptor"
  TECH_UNLOCK_HYPERLANE_SBS_DESC:0 "Powerful hyperlane disruption system that is capable of shutting off access to hostile empires controlled from the starbase."
+
  sm_hyperlane_sbs:0 "Gravitational controller"
- sm_hyperlane_sbs_desc:0 "Control building dedicated to generating and controlling the quantum disruptive megastructure."
+ sm_hyperlane_sbs_desc:0 "Control building dedicated to generating and controlling quantum disruptive mega."
 
  hyperlane_sbs.2.name:0 "Active quantum disruptor"
  hyperlane_sbs.2.desc:0 "The hyperlane has been locked and the megastructure will not be able to be used on another starbase while it is active.\n\nThe Disruptor quantum will have to be used tactically in the territory, guarding against other potential threats breaking through other entrances to the territory."
@@ -335,9 +367,11 @@
 
  hyperlane_sbs:0 "Quantum disruptor"
  hyperlane_sbs_desc:0 "While active the hyperlane will be blocked and cannot be used on another starbase.\n\nThe Disruptor quantum will have to be used tactically in the territory, guarding against other possible threats breaking through other entrances."
+
  requires_no_existing_sbs:0 "Requires inactive quantum disruptor"
  requires_country:0 "Requires hostile limit"
  requires_no_war:0 "Requires limit without war"
+
  hyperlane_sbs_MEGASTRUCTURE_DETAILS:0 "Quantum disruptor; powerful megastructure capable of altering the system star's gravitational waves to close or open star lanes."
  hyperlane_sbs_DESC:0 "While this is active the hyperpath will be permanently blocked."
 
@@ -346,3 +380,13 @@
  military_station_sbs.11_title:0 "Combat platforms"
  military_station_sbs.11_desc:0 "§YDefensive Warfare Protocol;§! Combat platforms increase their attack and armor during conflict.\n\nPlatforms from §HStarbases§! lost in battle will not be destroyed but will be disabled until you recover them and cannot be used against you, unless the base is taken first.\n\nRecovered combat platforms will take time to fully reactivate, do not leave them alone while full power is restored.\n\nIf the attack on the platforms is too overwhelming, you may lose them and have to be redone."
  station_sbs:0 "Defensive protocol"
+
+ ########## Anti federation #########
+
+ sm_federation_sbs:0 "Anti-federations"
+ sm_federation_sbs_desc:0 "Logistics building to disrupt abusive federations at our borders."
+ requires_country_fed:0 "Requires border federation"
+ requires_country_fed_war:0 "Requires war with borderline federation"
+
+ MESSAGE_REANIMATION_COMPLETE_TITLE:0 "Feedback starbase"
+ MESSAGE_MERCENARY_COMPLETE_DESC:0 "The starbase will become stronger every year of resistance and some factions of the galaxy not aligned with the federation have been recruited and await us in the stellar base of §H[From.solar_system.GetName]§! to enter combat... More ships are already on their way."

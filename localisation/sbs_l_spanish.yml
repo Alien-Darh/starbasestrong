@@ -142,7 +142,7 @@
  cleanevents.1.f:0 "§YRecargar nanobots§!"
 
  tech_sensors_1:0 "Sensores remotos"
- tech_sensors_1_desc:0 "Estos sensores se han creado para operar a distancia, controlados por una inteligencia artificial avanzada es capaz de controlar módulos que detectan cambios de longitudes de onda y algunas alteraciones de energía no naturales. Su fácil posicionamiento lo hace imprescindible para la exploración, apoyo en defensa y reabastecimiento de naves espaciales."
+ tech_sensors_1_desc:0 "Módulo de sensores controlados por inteligencia artificial avanzada, son capaces de detectar cambios de longitudes de onda y algunas alteraciones de energía no naturales. Su fácil posicionamiento lo hace imprescindible para la exploración, apoyo en defensa y reabastecimiento de naves espaciales."
 
  aura_starbase_crisis:0 "Aura Ofensiva - Crisis"
  aura_starbase_fallen:0 "Aura Ofensiva - Despertados"
@@ -175,7 +175,9 @@
  requires_no_modules:0 "$TRIGGER_FAIL$§RNo se puede tener módulos de combate en la base estelar§!: debido a los componentes explosivos para la elaboración de aleaciones."
  requires_citadel_upgrade:0 "$TRIGGER_FAIL$§RRequiere actualización§!: debido a los requerimientos de montaje de armas y defensa especializados es necesario reforzar la base estelar."
  requires_habitable_planet:0 "Requiere un planeta habitable en el sistema para explorar"
- requires_modules:0 "Requiere modulo de combate"
+ requires_modules:0 "Requiere los 3 módulos de combate básicos ó 3 bateria XL"
+
+ requires_black_hole_neutron_star_pulsar:0 "§RRequiere un §Y$pc_pulsar$§! \n§RRequiere un §Y$pc_neutron_star$§! \n§RRequiere un §Y$pc_black_hole$§! \nen el sistema.§!"
 
  sm_archeological_center:0 "Centro Arqueológico"
  sm_archeological_center_desc:0 "Estudio Arqueológico de la base estelar"
@@ -270,11 +272,40 @@
  sm_refinery_alloys:0 "Refinería de aleaciones"
  sm_refinery_alloys_desc:0 "Con la tecnología de nanites podemos refinar aleaciones extraídas desde las profundidades mejorando la producción."
 
- sm_refinery_living_metal:0 "Refinería de metal vivo"
+ sm_refinery_living_metal:0 "Refinería £sr_living_metal£ §Y §!"
  sm_refinery_living_metal_desc:0 "Con la tecnología de nanites podemos refinar metal vivo extraído desde las profundidades mejorando la producción."
 
- sm_refinery_dark_matter:0 "Refinería de materia oscura"
+ sm_gatherers_living_metal:0 "Recolector £sr_living_metal£ §Y §!"
+ sm_gatherers_living_metal_desc:0 "Drones especializados recolectan extractos de metal vivo en el sistema que deja la estrella cerca del horizonte de sucesos."
+
+ sm_refinery_dark_matter:0 "Refinería £sr_dark_matter£ §Y §!"
  sm_refinery_dark_matter_desc:0 "Con la tecnología de nanites podemos refinar materia oscura extraída desde las profundidades mejorando la producción."
+
+ sm_gatherers_dark_matter:0 "Recolector £sr_dark_matter£ §Y §!"
+ sm_gatherers_dark_matter_desc:0 "Drones especializados recolectan extractos de materia oscura en el sistema que deja la estrella cerca del horizonte de sucesos."
+
+ sm_gatherers_production:0 "Recolector de recursos"
+ sm_gatherers_production_desc:0 "Edificio de la base estelar que gestiona con mayor eficiencia los recursos de algunos sistemas especiales."
+ requires_orbital_station:0 "Requiere recursos en el sistema"
+
+ sm_gatherers_production_science:0 "Selector de ciencias"
+ sm_gatherers_production_science_desc:0 "Edificio de la base estelar que gestiona con mayor eficiencia los recursos de algunos sistemas especiales."
+
+ sm_gatherers_production_rare:0 "Recolector especial"
+ sm_gatherers_production_rare_desc:0 "Edificio de la base estelar que gestiona con mayor eficiencia los recursos específicos de algunos sistemas especiales."
+
+ mod_stations_volatile_motes_produces_mult:0 "Recolector de motas"
+ mod_stations_exotic_gases_produces_mult:0 "Recolector de gas"
+ mod_stations_rare_crystals_produces_mult:0 "Recolector de cristal"
+
+ sm_emp_sbs:0 "P.E.M."
+ sm_emp_sbs_desc:0 "Pulso electromagnético de la base estelar usada como última linea defensiva ante flotas hostiles abrumadoras."
+
+ sbsemp.1_title:0 "Pulso electromagnético"
+ sbsemp.1_desc:0 "Se han detectado flotas hostiles abrumadoras entrando al sistema §H[sbsemp_emp.system.GetName]§!... §YPulso Electromagnético§! en espera.\n\nOpción 1° Pulso máximo; dejará la base sin defensas ni naves aliadas o enemigas en el sistema; §Htiempo de recarga 360d§!.\n\nOpción 2° Pulso medio; solo afectará a flotas aliadas o enemigas entre 150k y 300k dejando algunas posibles flotas hostiles menores o mayores atacando la base; §Htiempo de recarga 180d§!.\n\nOpción 3° Pulso bajo; solo advertencia y dejará sin efecto el §HPulso Electromagnético§! hasta otro momento."
+
+ tech_emp_sbs:0 "Pulso electromagnético"
+ tech_emp_sbs_desc:0 "Pulso electromagnético (P.E.M.) montado en la base estelar usada como última linea defensiva ante flotas hostiles abrumadoras en el sistema con consecuencias devastadoras."
 
  starbase_aura_warp:0 "Aura HiperImpulso"
  starbase_citadel_upgrade:0 "Mejora Ciudadela"
@@ -324,6 +355,7 @@
  tech_hyperlane_sbs_desc:0 "Poderoso sistema de alteración de hiperrutas que es capaz cerrar el acceso a imperios hostiles controlados desde la base estelar."
  TECH_UNLOCK_HYPERLANE_SBS_TITLE:0 "§HAccede a la megaestructura:§! Disruptor quantum"
  TECH_UNLOCK_HYPERLANE_SBS_DESC:0 "Poderoso sistema de alteración de hiperrutas que es capaz cerrar el acceso a imperios hostiles controlados desde la base estelar."
+
  sm_hyperlane_sbs:0 "Controlador gravitacional"
  sm_hyperlane_sbs_desc:0 "Edificio de control dedicado a generar y controlar la megaestructura disruptiva quantum."
 
@@ -335,9 +367,11 @@
 
  hyperlane_sbs:0 "Disruptor quantum"
  hyperlane_sbs_desc:0 "Mientras este activo la hiperruta estará bloqueada y no podrá ser usada en otra base estelar.\n\nEl Disruptor quantum tendrá que ser usado tácticamente en el territorio, cuidando la irrupción de otras posibles amenazas por otras entradas."
+
  requires_no_existing_sbs:0 "Requiere disruptor quantum inactivo"
  requires_country:0 "Requiere límite hostil"
  requires_no_war:0 "Requiere límite sin guerra"
+
  hyperlane_sbs_MEGASTRUCTURE_DETAILS:0 "Disruptor quantum; poderosa megaestructura capaz de alterar las ondas gravitacionales de la estrella del sistema para cerrar o abrir rutas estelares."
  hyperlane_sbs_DESC:0 "Mientras este activo la hiperruta estará bloqueada permanentemente."
 
@@ -346,6 +380,16 @@
  military_station_sbs.11_title:0 "Plataformas de combate"
  military_station_sbs.11_desc:0 "§YProtocolo de guerra defensiva;§! las plataformas de combate aumentan su ataque y armadura durante el conflicto.\n\nLas plataformas de las §HBases estelares§! perdidas en batalla no serán destruidas pero serán desactivadas hasta que las recuperes y no podrán ser usadas en tu contra, salvo que la base sea tomada antes.\n\nLas plataformas de combate recuperadas tardarán un tiempo en reactivarse completamente, no las dejes solas mientras se restablece toda la potencia.\n\nSi el ataque a las plataformas es demasiado abrumador, puede que las pierdas y habrá que rehacerlas."
  station_sbs:0 "Protocolo defensivo"
+
+ ########## Anti federation #########
+
+ sm_federation_sbs:0 "Anti-federaciones"
+ sm_federation_sbs_desc:0 "Edificio logístico para desbaratar federaciones abusivas en nuestras fronteras."
+ requires_country_fed:0 "Requiere federación limítrofe"
+ requires_country_fed_war:0 "Requiere guerra con federación limítrofe"
+
+ MESSAGE_REANIMATION_COMPLETE_TITLE:0 "Base estelar retroalimentada"
+ MESSAGE_MERCENARY_COMPLETE_DESC:0 "La base estelar se hará mas fuerte cada año de resistencia y se ha conseguido reclutar algunas facciones de la galaxia no alineadas con la federación y nos esperan en la base estelar de §H[From.solar_system.GetName]§! para entrar en combate... Mas naves ya vienen en camino."
 
  ########## solo español #########
 

@@ -413,6 +413,7 @@ country_event = {
 				any_system_megastructure = {
 					OR = {
 						is_megastructure_type = hyper_relay
+						is_megastructure_type = hyper_relay_ruined
 						is_megastructure_type = hyper_relay_restored
 					}	
 				}
@@ -424,6 +425,7 @@ country_event = {
 				limit = {
 					OR = {
 						is_megastructure_type = hyper_relay
+						is_megastructure_type = hyper_relay_ruined
 						is_megastructure_type = hyper_relay_restored
 					}	
 				}
@@ -489,6 +491,7 @@ country_event = {
 				}
 				any_system_megastructure = {
 					OR = {
+						is_megastructure_type = orbital_ring
 						is_megastructure_type = orbital_ring_ruined
 						is_megastructure_type = orbital_ring_restored
 					}
@@ -523,6 +526,7 @@ country_event = {
 			random_system_megastructure = {
 				limit = {
 					OR = {
+						is_megastructure_type = orbital_ring
 						is_megastructure_type = orbital_ring_ruined
 						is_megastructure_type = orbital_ring_restored
 					}
