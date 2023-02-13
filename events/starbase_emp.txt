@@ -150,9 +150,11 @@ country_event = {
 						if = {
 							limit = { exists = starbase }
 							starbase = {
-								remove_starbase_module = { module = gun_battery }
-								remove_starbase_module = { module = missile_battery }
-								remove_starbase_module = { module = hangar_bay }
+								# TODO: Vanilla bug, works only random
+								# remove_starbase_module = { module = gun_battery module = missile_battery module = hangar_bay }
+								remove_random_starbase_module = { type = gun_battery }
+								remove_random_starbase_module = { type = missile_battery }
+								remove_random_starbase_module = { type = hangar_bay }
 							}
 						}
 						else_if = {
