@@ -68,8 +68,8 @@
  STARBASE_AURA_CRISIS_DESC:0 "Powerful ancient aura against galactic crisis."
  STARBASE_AURA_FALLEN:0 "Awakened aura"
  STARBASE_AURA_FALLEN_DESC:0 "Powerful ancient aura against awakened empires."
- STARBASE_AURA_MARAUDERS:0 "Fortress aura"
- STARBASE_AURA_MARAUDERS_DESC:0 "Powerful Ancient aura of Battleships"
+ STARBASE_AURA_AIR_FORCE:0 "Fortress aura"
+ STARBASE_AURA_AIR_FORCE_DESC:0 "Powerful Ancient aura of Battleships"
  STARBASE_STAR_GATE:0 "Stargate"
 
  TECH_UNLOCK_STARHOLD_TECHNO_TITLE:0 "§SUnlock technology:§! Auxiliary sections I"
@@ -146,7 +146,7 @@
 
  aura_starbase_crisis:0 "Offensive Aura - Crisis"
  aura_starbase_fallen:0 "Offensive Aura - Awakened"
- aura_starbase_marauders:0 "Offensive Aura - Fortress"
+ aura_starbase_air_force:0 "Offensive Aura - Fortress"
 
  mod_shipsize_colossus_build_speed_mult:0 "Speed build colossi"
  mod_shipsize_juggernaut_build_speed_mult:0 "Speed build Juggernaut"
@@ -188,8 +188,8 @@
  sm_aura_fallen:0 "Awakened Aura"
  sm_aura_fallen_desc:0 "Sophisticated aura will help starbases defend against some Awakened Empires."
 
- sm_aura_marauders:0 "Fortress aura"
- sm_aura_marauders_desc:0 "A sophisticated aura will help the star bases to defend against hostile empires and others."
+ sm_aura_air_force:0 "Fortress aura"
+ sm_aura_air_force_desc:0 "A sophisticated aura will help the star bases to defend against hostile empires and others."
 
  sm_aux_module_starhold:0 "Support module"
  sm_aux_module_starhold_desc:0 "Logistic support station is strategically placed at the edges of our borders with some tactical advantages."
@@ -298,14 +298,18 @@
  mod_stations_exotic_gases_produces_mult:0 "Recolector de gas"
  mod_stations_rare_crystals_produces_mult:0 "Recolector de cristal"
 
+################  E.M.P. ################
+
  sm_emp_sbs:0 "E.M.P."
  sm_emp_sbs_desc:0 "Electromagnetic pulse of the star base used as the last defensive line against overwhelming hostile fleets."
 
  sbsemp.1_title:0 "Electromagnetic pulse"
- sbsemp.1_desc:0 "Overwhelming hostile fleets have been detected entering the system §H[sbsemp_emp.system.GetName]§!... §YElectromagnetic Pulse§! on standby.\n\nOption 1st Maximum Pulse; will leave the base without defenses or friendly ships or enemy fleets in system; §Hrecharge time 360d§!.\n\nOption 2nd Medium Pulse; will only affect friendly or enemy fleets between 150k and 300k leaving some possible smaller or larger hostile fleets attacking the base; §Hrecharge time 180d §!.\n\nOption 3rd Low Pulse; warning only and will disable §HElectromagnetic Pulse§! until another time."
+ sbsemp.1_desc:0 "Overwhelming hostile fleets have been detected entering the system §Y[event_target:sbsemp_emp.GetName]§!... electromagnetic pulse on standby.\n\nOption 1st Maximum Pulse; will leave the base with no defenses or friendly or enemy ships in the system; §Hrecharge time 360d§!.\n\nOption 2nd Medium Pulse; Will affect friendly or enemy fleets between 125k and 175k leaving some possible minor or major hostile fleets attacking the base; §Hrecharge time 180d§!.\ n\nOption 3rd Low Pulse; warning only and will disable §HPelectromagnetic Pulse§! until another time."
 
  tech_emp_sbs:0 "Electromagnetic pulse"
  tech_emp_sbs_desc:0 "Electromagnetic pulse (E.M.P.) mounted on the stellar base used as the last defensive line against overwhelming hostile fleets in the system with devastating consequences."
+
+################     ################
 
  starbase_aura_warp:0 "Hyper Boost Aura"
  starbase_citadel_upgrade:0 "Improvement Citadel"
@@ -335,11 +339,19 @@
   REACTOR_BOOSTER_4_DESC:0 "$REACTOR_BOOSTER_3_DESC$"
   REACTOR_BOOSTER_5:0 "Reactor V-drives V"
   REACTOR_BOOSTER_5_DESC:0 "$REACTOR_BOOSTER_3_DESC$"
- 
+
   tech_reactor_boosters_4:0 "Reactor impellers IV"
   tech_reactor_boosters_4_desc:0 "$REACTOR_BOOSTER_3_DESC$"
   tech_reactor_boosters_5:0 "Reactor V-drives V"
   tech_reactor_boosters_5_desc:0 "$REACTOR_BOOSTER_3_DESC$"
+
+  ########## Sensor #########
+
+  SBS_EXPLORATION:0 "Lidar exploration"
+  SBS_EXPLORATION_DESC:0 "Lidar remote sensing involves transmitting light pulses and assessing the amount recovered. Target location and distance is obtained by multiplying time by the speed of light."
+
+  sensor.1.name:0 "Advances"
+  sensor.1.desc:0 "Following the imminent settlement of §H[Root.GetName]§! beyond the borders of §H[root.solar_system.GetName]§!... our scientists have managed to make all sorts of technological advances for future colonies on the territory."
 
  ########## Torpedo #########
 
@@ -390,3 +402,33 @@
 
  MESSAGE_REANIMATION_COMPLETE_TITLE:0 "Feedback starbase"
  MESSAGE_MERCENARY_COMPLETE_DESC:0 "The starbase will become stronger every year of resistance and some factions of the galaxy not aligned with the federation have been recruited and await us in the stellar base of §H[From.solar_system.GetName]§! to enter combat... More ships are already on their way."
+
+  mod_anti_fed:0 "0"
+  mod_anti_fed_01:0 "1"
+  mod_anti_fed_02:0 "2"
+  mod_anti_fed_03:0 "3"
+  mod_anti_fed_04:0 "4"
+  mod_anti_fed_05:0 "5"
+  mod_anti_fed_06:0 "6"
+  mod_anti_fed_07:0 "7"
+  mod_anti_fed_08:0 "8"
+  mod_anti_fed_09:0 "9"
+  mod_anti_fed_10:0 "10"
+  mod_anti_fed_11:0 "11"
+  mod_anti_fed_12:0 "12"
+  mod_anti_fed_13:0 "13"
+  mod_anti_fed_14:0 "14"
+  mod_anti_fed_15:0 "15"
+  mod_anti_fed_16:0 "16"
+  mod_anti_fed_17:0 "17"
+  mod_anti_fed_18:0 "18"
+  mod_anti_fed_19:0 "19"
+  mod_anti_fed_20:0 "20"
+  mod_anti_fed_21:0 "21"
+  mod_anti_fed_22:0 "22"
+  mod_anti_fed_23:0 "23"
+  mod_anti_fed_24:0 "24"
+  mod_anti_fed_25:0 "25"
+
+  mod_anti_marau_01:0 "Marau"
+  mod_anti_marau_02:0 "Marau"

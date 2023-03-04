@@ -68,8 +68,8 @@
  STARBASE_AURA_CRISIS_DESC:0 "Poderosa aura ancestral contra crisis galáctica"
  STARBASE_AURA_FALLEN:0 "Aura Despertados"
  STARBASE_AURA_FALLEN_DESC:0 "Poderosa aura ancestral contra imperios despertados"
- STARBASE_AURA_MARAUDERS:0 "Aura Fortaleza"
- STARBASE_AURA_MARAUDERS_DESC:0 "Poderosa aura ancestral de naves de combate"
+ STARBASE_AURA_AIR_FORCE:0 "Aura Fortaleza"
+ STARBASE_AURA_AIR_FORCE_DESC:0 "Poderosa aura ancestral de naves de combate"
  STARBASE_STAR_GATE:0 "Puerta Estelar"
 
  TECH_UNLOCK_STARHOLD_TECHNO_TITLE:0 "§SDesbloquea Tecnología:§! Secciones Auxiliares I"
@@ -146,7 +146,7 @@
 
  aura_starbase_crisis:0 "Aura Ofensiva - Crisis"
  aura_starbase_fallen:0 "Aura Ofensiva - Despertados"
- aura_starbase_marauders:0 "Aura Ofensiva - Fortaleza"
+ aura_starbase_air_force:0 "Aura Ofensiva - Fortaleza"
 
  mod_shipsize_colossus_build_speed_mult:0 "Veloc. construc. Colosos"
  mod_shipsize_juggernaut_build_speed_mult:0 "Veloc. construc. Juggernaut"
@@ -188,8 +188,8 @@
  sm_aura_fallen:0 "Aura Despertados"
  sm_aura_fallen_desc:0 "Sofisticada Aura ayudará a las Bases Estelares a defenderse de algunos Imperios Despertados."
 
- sm_aura_marauders:0 "Aura Fortaleza"
- sm_aura_marauders_desc:0 "Una sofisticada Aura ayudará a las bases estelares a defenderse de imperios hostiles y otros."
+ sm_aura_air_force:0 "Aura Fortaleza"
+ sm_aura_air_force_desc:0 "Una sofisticada Aura ayudará a las bases estelares a defenderse de imperios hostiles y otros."
 
  sm_aux_module:0 "Módulo Auxiliar"
  sm_aux_module_desc:0 "Módulo auxiliar avanzado para Bases Estelares, dedicado a la construcción rápida de flotas."
@@ -298,14 +298,18 @@
  mod_stations_exotic_gases_produces_mult:0 "Recolector de gas"
  mod_stations_rare_crystals_produces_mult:0 "Recolector de cristal"
 
+################  E.M.P. ################
+
  sm_emp_sbs:0 "P.E.M."
  sm_emp_sbs_desc:0 "Pulso electromagnético de la base estelar usada como última linea defensiva ante flotas hostiles abrumadoras."
 
  sbsemp.1_title:0 "Pulso electromagnético"
- sbsemp.1_desc:0 "Se han detectado flotas hostiles abrumadoras entrando al sistema §H[sbsemp_emp.system.GetName]§!... §YPulso Electromagnético§! en espera.\n\nOpción 1° Pulso máximo; dejará la base sin defensas ni naves aliadas o enemigas en el sistema; §Htiempo de recarga 360d§!.\n\nOpción 2° Pulso medio; solo afectará a flotas aliadas o enemigas entre 150k y 300k dejando algunas posibles flotas hostiles menores o mayores atacando la base; §Htiempo de recarga 180d§!.\n\nOpción 3° Pulso bajo; solo advertencia y dejará sin efecto el §HPulso Electromagnético§! hasta otro momento."
+ sbsemp.1_desc:0 "Se han detectado flotas hostiles abrumadoras entrando al sistema §Y[event_target:sbsemp_emp.GetName]§!... pulso electromagnético en espera.\n\nOpción 1° Pulso máximo; dejará la base sin defensas ni naves aliadas o enemigas en el sistema; §Htiempo de recarga 360d§!.\n\nOpción 2° Pulso medio; Afectará a flotas aliadas o enemigas entre 125k y 175k dejando algunas posibles flotas hostiles menores o mayores atacando la base; §Htiempo de recarga 180d§!.\n\nOpción 3° Pulso bajo; solo advertencia y dejará sin efecto el §HPulso Electromagnético§! hasta otro momento."
 
  tech_emp_sbs:0 "Pulso electromagnético"
  tech_emp_sbs_desc:0 "Pulso electromagnético (P.E.M.) montado en la base estelar usada como última linea defensiva ante flotas hostiles abrumadoras en el sistema con consecuencias devastadoras."
+
+################     ################
 
  starbase_aura_warp:0 "Aura HiperImpulso"
  starbase_citadel_upgrade:0 "Mejora Ciudadela"
@@ -335,11 +339,19 @@
   REACTOR_BOOSTER_4_DESC:0 "$REACTOR_BOOSTER_3_DESC$"
   REACTOR_BOOSTER_5:0 "Impulsores de reactor V"
   REACTOR_BOOSTER_5_DESC:0 "$REACTOR_BOOSTER_3_DESC$"
- 
+
   tech_reactor_boosters_4:0 "Impulsores de reactor IV"
   tech_reactor_boosters_4_desc:0 "$REACTOR_BOOSTER_3_DESC$"
   tech_reactor_boosters_5:0 "Impulsores de reactor V"
   tech_reactor_boosters_5_desc:0 "$REACTOR_BOOSTER_3_DESC$"
+
+  ########## Sensor #########
+
+  SBS_EXPLORATION:0 "Exploracion lidar"
+  SBS_EXPLORATION_DESC:0 "La detección remota mediante Lidar implica la transmisión de impulsos luminosos y la evaluación de la cantidad recuperada. La ubicación del objetivo y la distancia se obtiene multiplicando el tiempo por la velocidad de la luz."
+
+  sensor.1.name:0 "Avances"
+  sensor.1.desc:0 "Tras el inminente asentamiento de §H[Root.GetName]§! mas allá de las fronteras de §H[root.solar_system.GetName]§!... nuestros científicos han logrado realizar todo tipo de avances tecnológicos para las futuras colonias en el territorio."
 
  ########## Torpedo #########
 
@@ -353,6 +365,7 @@
 
  tech_hyperlane_sbs:0 "Disruptor quantum"
  tech_hyperlane_sbs_desc:0 "Poderoso sistema de alteración de hiperrutas que es capaz cerrar el acceso a imperios hostiles controlados desde la base estelar."
+
  TECH_UNLOCK_HYPERLANE_SBS_TITLE:0 "§HAccede a la megaestructura:§! Disruptor quantum"
  TECH_UNLOCK_HYPERLANE_SBS_DESC:0 "Poderoso sistema de alteración de hiperrutas que es capaz cerrar el acceso a imperios hostiles controlados desde la base estelar."
 
@@ -390,6 +403,36 @@
 
  MESSAGE_REANIMATION_COMPLETE_TITLE:0 "Base estelar retroalimentada"
  MESSAGE_MERCENARY_COMPLETE_DESC:0 "La base estelar se hará mas fuerte cada año de resistencia y se ha conseguido reclutar algunas facciones de la galaxia no alineadas con la federación y nos esperan en la base estelar de §H[From.solar_system.GetName]§! para entrar en combate... Mas naves ya vienen en camino."
+
+  mod_anti_fed:0 "0"
+  mod_anti_fed_01:0 "1"
+  mod_anti_fed_02:0 "2"
+  mod_anti_fed_03:0 "3"
+  mod_anti_fed_04:0 "4"
+  mod_anti_fed_05:0 "5"
+  mod_anti_fed_06:0 "6"
+  mod_anti_fed_07:0 "7"
+  mod_anti_fed_08:0 "8"
+  mod_anti_fed_09:0 "9"
+  mod_anti_fed_10:0 "10"
+  mod_anti_fed_11:0 "11"
+  mod_anti_fed_12:0 "12"
+  mod_anti_fed_13:0 "13"
+  mod_anti_fed_14:0 "14"
+  mod_anti_fed_15:0 "15"
+  mod_anti_fed_16:0 "16"
+  mod_anti_fed_17:0 "17"
+  mod_anti_fed_18:0 "18"
+  mod_anti_fed_19:0 "19"
+  mod_anti_fed_20:0 "20"
+  mod_anti_fed_21:0 "21"
+  mod_anti_fed_22:0 "22"
+  mod_anti_fed_23:0 "23"
+  mod_anti_fed_24:0 "24"
+  mod_anti_fed_25:0 "25"
+
+  mod_anti_marau_01:0 "Marau"
+  mod_anti_marau_02:0 "Marau"
 
  ########## solo español #########
 

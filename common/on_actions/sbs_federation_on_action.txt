@@ -4,3 +4,8 @@ on_monthly_pulse_country = {
 		federation_sbs.3
 	}
 }
+
+on_system_lost = {
+	events = {
+	}
+}

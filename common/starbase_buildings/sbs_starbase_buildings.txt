@@ -14,8 +14,11 @@ research_lav = {
 
 	possible = {
 		custom_tooltip = {
-			fail_text = "requires_starport"
-			has_starbase_size >= starbase_starport
+			fail_text = "requires_starport_or_ring"
+			OR = {
+				has_starbase_size >= starbase_starport
+				is_orbital_ring = yes
+			}
 		}
 	}
 
@@ -90,7 +93,10 @@ hydrogen_cells = {
 	possible = {
 		custom_tooltip = {
 			fail_text = "requires_starhold"
-			has_starbase_size >= starbase_starhold
+			OR = {
+				has_starbase_size >= starbase_starhold
+				is_orbital_ring = yes
+			}
 		}
 		has_starbase_module = solar_panels
 	}
@@ -119,7 +125,10 @@ archeological_center = {
 	possible = {
 		custom_tooltip = {
 			fail_text = "requires_starfortress"
-			has_starbase_size >= starbase_starfortress
+			OR = {
+				has_starbase_size >= starbase_starfortress
+				is_orbital_ring = yes
+			}
 		}
 		custom_tooltip = {
 			fail_text = "requires_habitable_planet"
@@ -166,7 +175,10 @@ nanotechnology_lab = {
 	possible = {
 		custom_tooltip = {
 			fail_text = "requires_citadel"
-			has_starbase_size >= starbase_citadel
+			OR = {
+				has_starbase_size >= starbase_citadel
+				is_orbital_ring = yes
+			}
 		}
 	}
 
@@ -440,11 +452,14 @@ aura_fallen = {
 	equipped_component = "STARBASE_AURA_FALLEN"
 
 	ai_weight = { weight = 100 }
-	#show_in_tech = "tech_starbase_4"
+
+	on_finished = {
+		starbase_event = { id = aura_sbs.1 days = 30 }
+	}
 }
 
-aura_marauders = {
-	icon = "GFX_spaceport_module_aura_marauders"
+aura_air_force = {
+	icon = "GFX_spaceport_module_aura_air_force"
 	construction_days = 180
 	potential = {
 		exists = owner
@@ -461,7 +476,7 @@ aura_marauders = {
 		cost = { alloys = 100 }
 		upkeep = { energy = 10 }
 	}
-	equipped_component = "STARBASE_AURA_MARAUDERS"
+	equipped_component = "STARBASE_AURA_AIR_FORCE"
 
 	ai_weight = { weight = 100 }
 	show_in_tech = "tech_starbase_5"
@@ -469,7 +484,7 @@ aura_marauders = {
 
 star_gate = {
 	icon = "GFX_spaceport_star_gate"
-	construction_days = 360
+	construction_days = 180
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_gateway_stargate }
@@ -635,7 +650,10 @@ refinery_exotic_gases = {
 	possible = {
 		custom_tooltip = {
 			fail_text = "requires_starfortress"
-			has_starbase_size >= starbase_starfortress
+			OR = {
+				has_starbase_size >= starbase_starfortress
+				is_orbital_ring = yes
+			}
 		}
 		custom_tooltip = {
 			fail_text = "requires_mine_exotic_gases"
@@ -690,7 +708,10 @@ refinery_rare_crystals = {
 	possible = {
 		custom_tooltip = {
 			fail_text = "requires_starfortress"
-			has_starbase_size >= starbase_starfortress
+			OR = {
+				has_starbase_size >= starbase_starfortress
+				is_orbital_ring = yes
+			}
 		}
 		custom_tooltip = {
 			fail_text = "requires_mine_rare_crystals"
@@ -745,7 +766,10 @@ refinery_volatile_motes = {
 	possible = {
 		custom_tooltip = {
 			fail_text = "requires_starfortress"
-			has_starbase_size >= starbase_starfortress
+			OR = {
+				has_starbase_size >= starbase_starfortress
+				is_orbital_ring = yes
+			}
 		}
 		custom_tooltip = {
 			fail_text = "requires_mine_volatile_motes"
@@ -799,6 +823,7 @@ refinery_alloys = {
 	possible = {
 		custom_tooltip = {
 			fail_text = "requires_starfortress"
+
 			has_starbase_size >= starbase_starfortress
 		}
 		custom_tooltip = {
@@ -862,7 +887,10 @@ refinery_living_metal = {
 	possible = {
 		custom_tooltip = {
 			fail_text = "requires_starfortress"
-			has_starbase_size >= starbase_starfortress
+			OR = {
+				has_starbase_size >= starbase_starfortress
+				is_orbital_ring = yes
+			}
 		}
 		custom_tooltip = {
 			fail_text = "requires_mine_living_metal"
@@ -913,7 +941,10 @@ refinery_dark_matter = {
 	possible = {
 		custom_tooltip = {
 			fail_text = "requires_starfortress"
-			has_starbase_size >= starbase_starfortress
+			OR = {
+				has_starbase_size >= starbase_starfortress
+				is_orbital_ring = yes
+			}
 		}
 		custom_tooltip = {
 			fail_text = "requires_mine_dark_matter"
@@ -2005,8 +2036,11 @@ orbital_ecology = {
 
 	possible = {
 		custom_tooltip = {
-			fail_text = "requires_starhold"
-			has_starbase_size >= starbase_starport
+			fail_text = "requires_starport_or_ring"
+			OR = {
+				has_starbase_size >= starbase_starport
+				is_orbital_ring = yes
+			}
 		}
 		custom_tooltip = {
 			fail_text = "requires_colonized_planet"
@@ -2335,6 +2369,7 @@ aux_module_starhold = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_sensors_1 }
+		is_orbital_ring = no
 	}
 	
 	orbit_modifier = {
@@ -2477,8 +2512,11 @@ gatherers_production = {
 	
 	possible = {
 		custom_tooltip = {
-			fail_text = "requires_starport"
-			has_starbase_size >= starbase_starport
+			fail_text = "requires_starport_or_ring"
+			OR = {
+				has_starbase_size >= starbase_starport
+				is_orbital_ring = yes
+			}
 		}
 		custom_tooltip = {
 			fail_text = "requires_black_hole_neutron_star_pulsar"
@@ -2535,8 +2573,11 @@ gatherers_production_science = {
 	
 	possible = {
 		custom_tooltip = {
-			fail_text = "requires_starport"
-			has_starbase_size >= starbase_starport
+			fail_text = "requires_starport_or_ring"
+			OR = {
+				has_starbase_size >= starbase_starport
+				is_orbital_ring = yes
+			}
 		}
 		custom_tooltip = {
 			fail_text = "requires_black_hole_neutron_star_pulsar"
@@ -2593,8 +2634,11 @@ gatherers_production_rare = {
 	
 	possible = {
 		custom_tooltip = {
-			fail_text = "requires_starport"
-			has_starbase_size >= starbase_starport
+			fail_text = "requires_starport_or_ring"
+			OR = {
+				has_starbase_size >= starbase_starport
+				is_orbital_ring = yes
+			}
 		}
 		custom_tooltip = {
 			fail_text = "requires_orbital_station"
@@ -2664,6 +2708,7 @@ module_protection_link = {
 			is_criminal_syndicate = no
 			has_technology = tech_sensors_1
 		}
+		is_orbital_ring = no
 	}
 
 	station_modifier = {
@@ -2736,14 +2781,7 @@ federation_sbs = {
 		OR = {
 			solar_system = {
 				NOT = {
-					any_country_neighbor_to_system = {
-						exists = federation
-					}
-				}
-			}
-			solar_system = {
-				NOT = {
-					any_country_neighbor_to_system = {
+					any_country = {
 						is_at_war_with = root
 					}
 				}

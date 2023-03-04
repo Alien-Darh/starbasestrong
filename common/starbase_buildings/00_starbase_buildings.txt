@@ -122,8 +122,11 @@ resource_silo = {
 
 	possible = {
 		custom_tooltip = {
-			fail_text = "requires_starport"
-			has_starbase_size >= starbase_starport
+			fail_text = "requires_starport_or_ring"
+			OR = {
+				has_starbase_size >= starbase_starport
+				is_orbital_ring = yes
+			}
 		}
 	}
 
@@ -134,7 +137,7 @@ resource_silo = {
 				NOT = { has_technology = tech_construction_templates }
 			}
 		}
-		country_resource_max_add = 5000
+		country_resource_max_add = 2500
 	}
 
 	triggered_country_modifier = {
@@ -144,7 +147,7 @@ resource_silo = {
 				has_technology = tech_construction_templates
 			}
 		}
-		country_resource_max_add = 10000
+		country_resource_max_add = 5000
 	}
 
 

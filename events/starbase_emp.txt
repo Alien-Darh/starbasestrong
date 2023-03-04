@@ -75,11 +75,14 @@ country_event = {
 						limit = { NOT = { exists = starbase } }
 						create_starbase = {
 							size = starbase_citadel
+							owner = root
+							module = gun_battery
+							module = missile_battery
+							module = hangar_bay
 							building = system_fast
 							building = emp_sbs
-							building = star_gate
 							building = star_hyper
-							owner = root
+							#building = star_gate
 						}
 					}
 					create_ambient_object = {
@@ -128,8 +131,8 @@ country_event = {
 					any_fleet_in_system = {
 						is_ship_class = shipclass_military
 						owner = { is_hostile = root.owner }
-						fleet_power >= 150000
-						fleet_power <= 300000
+						fleet_power >= 125000
+						fleet_power <= 175000
 					}
 				}
 			}
@@ -154,6 +157,7 @@ country_event = {
 									module = gun_battery
 									module = missile_battery
 									module = hangar_bay
+									module = gun_battery_upgrade
 								}
 							}
 						}

@@ -10,7 +10,6 @@ on_monthly_pulse_country = {
 	events = {
 		whgenevents.5
 		hyperevents.5
-		sbsemp.1
 	}
 }
 on_system_lost = {

@@ -460,17 +460,17 @@ country_event = {
 				33 = {
 					add_monthly_resource_mult = {
 						resource = unity
-						value = @tier1materialreward
-						min = @tier1materialmin
-						max = @tier1materialmax
+						value = @tier1unityreward
+						min = @tier1unitymin
+						max = @tier1unitymax
 					}
 				}
 				33 = {
 					add_monthly_resource_mult = {
 						resource = influence
-						value = @tier1materialreward
-						min = @tier1materialmin
-						max = @tier1materialmax
+						value = @tier1influencereward
+						min = @tier1influencemin
+						max = @tier1influencemax
 					}
 				}
 			}

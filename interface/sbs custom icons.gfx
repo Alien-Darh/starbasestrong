@@ -9,8 +9,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/icons/modules/spaceport_module_aura_fallen.dds"
 	}
 	spriteType = {
-		name = "GFX_spaceport_module_aura_marauders"
-		texturefile = "gfx/interface/icons/modules/spaceport_module_aura_marauders.dds"
+		name = "GFX_spaceport_module_aura_air_force"
+		texturefile = "gfx/interface/icons/modules/spaceport_module_aura_air_force.dds"
 	}
 	corneredTileSpriteType = {
 		name = "GFX_drop_area_green_mod"
@@ -319,5 +319,39 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 		alwaystransparent = yes				
+	}	
+
+	spriteType = {
+		name = "GFX_evt_sensor_box"
+		texturefile = "gfx/event_pictures/sensor_box.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		effectFile = "gfx/FX/buttonstate.shader"
+		animation = {
+			animationmaskfile = "gfx/interface/icons/relics/sensor_shine01.dds"			
+			animationtexturefile = "gfx/interface/icons/relics/glow_overlay.dds" 	# <- the animated file
+			animationrotation = 180.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 18				# in seconds
+			animationdelay = 0				# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/icons/relics/sensor_shine02.dds"			
+			animationtexturefile = "gfx/interface/icons/relics/glow_overlay.dds" 	# <- the animated file
+			animationrotation = 0.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 25				# in seconds
+			animationdelay = 0				# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+		alwaystransparent = yes				
 	}
 }
+

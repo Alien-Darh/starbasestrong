@@ -180,6 +180,11 @@ country_event = {
 		}
 		country_event = { id = hyperlane_sbs.6 days = 15 }
 	}
+
+	after = {
+		clear_global_event_target = hyperlane_sbs_system
+		clear_global_event_target = hyperlane_target_system
+	}
 }
 
 # destroy (on_monthly_pulse)
@@ -249,6 +254,7 @@ event = {
 			}
 		}
 		every_playable_country = {
+			limit = { is_ai = no }
 			country_event = { id = hyperlane_sbs.6 days = 15 }
 		}
 	}
@@ -270,5 +276,15 @@ country_event = {
 
 	option = {
 		name = EXCELLENT
+		hidden_effect = {
+			if = {
+				limit = { exists = event_target:hyperlane_sbs_system }
+				clear_global_event_target = hyperlane_sbs_system
+			}
+			if = {
+				limit = { exists = event_target:hyperlane_target_system }
+				clear_global_event_target = hyperlane_target_system
+			}
+		}
 	}
 }

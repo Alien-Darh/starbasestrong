@@ -12,8 +12,8 @@ component_set = {
 }
 
 component_set = {
-	key = "STARBASE_AURA_MARAUDERS"
-	icon = "GFX_spaceport_module_aura_marauders"
+	key = "STARBASE_AURA_AIR_FORCE"
+	icon = "GFX_spaceport_module_aura_air_force"
 	icon_frame = 1
 }
 

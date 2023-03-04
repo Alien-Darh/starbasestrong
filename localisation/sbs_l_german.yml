@@ -68,8 +68,8 @@
  STARBASE_AURA_CRISIS_DESC:0 "Mächtige alte aura gegen die galaktische Krise."
  STARBASE_AURA_FALLEN:0 "Erweckte aura"
  STARBASE_AURA_FALLEN_DESC:0 "Mächtige alte aura gegen erwachte Reich."
- STARBASE_AURA_MARAUDERS:0 "Festung aura"
- STARBASE_AURA_MARAUDERS_DESC:0 "Mächtige alte aura der schlachtschiffe"
+ STARBASE_AURA_AIR_FORCE:0 "Festung aura"
+ STARBASE_AURA_AIR_FORCE_DESC:0 "Mächtige alte aura der schlachtschiffe"
  STARBASE_STAR_GATE:0 "Stargate"
 
  TECH_UNLOCK_STARHOLD_TECHNO_TITLE:0 "§STechnologie freischalten:§! Hilfsabschnitte I"
@@ -146,7 +146,7 @@
 
  aura_starbase_crisis:0 "Offensive Aura - Krise"
  aura_starbase_fallen:0 "Offensive Aura - Gefallen"
- aura_starbase_marauders:0 ""Offensive Aura - Festung"
+ aura_starbase_air_force:0 ""Offensive Aura - Festung"
 
  mod_shipsize_colossus_build_speed_mult:0 "Baugeschwindigkeit $colossus$"
  mod_shipsize_juggernaut_build_speed_mult:0 "Baugeschwindigkeit $juggernaut$"
@@ -188,8 +188,8 @@
  sm_aura_fallen:0 "Defensiv-Gefallenen-Aura"
  sm_aura_fallen_desc:0 "Diese anspruchsvolle Aura wird Sternenbasen helfen, sich gegen einige Gefallene Imperien zu verteidigen."
 
- sm_aura_marauders:0 "Festung aura"
- sm_aura_marauders_desc:0 "Eine anspruchsvolle Aura wird den Sternbasen helfen, sich gegen feindliche Reiche und andere zu verteidigen."
+ sm_aura_air_force:0 "Festung aura"
+ sm_aura_air_force_desc:0 "Eine anspruchsvolle Aura wird den Sternbasen helfen, sich gegen feindliche Reiche und andere zu verteidigen."
 
  sm_aux_module:0 "Hilfsplattform"
  sm_aux_module_desc:0 "Erweiterte Hilfsplattformen für Star Bases, die einen schnellen Flottenbau durchführen."
@@ -298,14 +298,18 @@
  mod_stations_exotic_gases_produces_mult:0 "Recolector de gas"
  mod_stations_rare_crystals_produces_mult:0 "Recolector de cristal"
 
+################  E.M.P. ################
+
  sm_emp_sbs:0 "E.M.P."
  sm_emp_sbs_desc:0 "Elektromagnetischer Impuls der Sternenbasis als letzte Verteidigungslinie gegen überwältigende feindliche Flotten."
 
  sbsemp.1_title:0 "Elektromagnetischer Puls"
- sbsemp.1_desc:0 "Es wurde festgestellt, dass überwältigende feindliche Flotten in das System eindringen §H[sbsemp_emp.system.GetName]§!... §YElektromagnetischer Impuls§! auf Standby.\n\nOption 1. Maximaler Impuls; wird die Basis ohne Verteidigung oder verbündete Schiffe verlassen oder feindliche Flotten im System; §HAufladezeit 360d§!.\n\nOption 2nd Medium Pulse; wirkt sich nur auf eigene oder feindliche Flotten zwischen 150.000 und 300.000 aus, wobei möglicherweise kleinere oder größere feindliche Flotten die Basis angreifen; §HAufladezeit 180d§!. \n\nOption 3. Niedriger Impuls; nur Warnung und wird §HElektromagnetischer Impuls§! bis zu einem anderen Zeitpunkt deaktivieren."
+ sbsemp.1_desc:0 "Überwältigende feindliche Flotten wurden beim Eindringen in das System §Y[event_target:sbsemp_emp.GetName]§!... Elektromagnetischer Impuls auf Standby entdeckt.\n\nOption 1. Maximaler Impuls; verlässt die Basis ohne Verteidigung oder befreundete oder feindliche Schiffe darin des Systems; §HAufladezeit 360d§!.\n\nOption 2° Mittlerer Impuls; Wirkt sich auf freundliche oder feindliche Flotten zwischen 125k und 175k aus und lässt möglicherweise einige kleinere oder größere feindliche Flotten zurück, die die Basis angreifen; §HAufladezeit 180d§!.\n\nOption 3. Niedriger Impuls; nur Warnung und wird §HPelektromagnetischer Impuls§! bis zu einem anderen Zeitpunkt deaktivieren."
 
  tech_emp_sbs:0 "Elektromagnetischer Puls"
  tech_emp_sbs_desc:0 "Elektromagnetischer Puls (E.M.P.) Montiert auf der Sternenbasis, die als letzte Verteidigungslinie gegen überwältigende feindliche Flotten im System mit verheerenden Folgen verwendet wird."
+
+################     ################
 
  starbase_aura_warp:0 "Hyperimpuls-Aura"
  starbase_citadel_upgrade:0 "Verbesserung Zitadelle"
@@ -341,6 +345,14 @@
   tech_reactor_boosters_5:0 "Reactor V-drives V"
   tech_reactor_boosters_5_desc:0 "$REACTOR_BOOSTER_3_DESC$"
 
+  ########## Sensor #########
+
+  SBS_EXPLORATION:0 "Lidar-Scan"
+  SBS_EXPLORATION_DESC:0 "Bei der Lidar-Fernerkundung werden Lichtimpulse übertragen und die zurückgewonnene Menge bewertet. Der Zielort und die Entfernung werden durch Multiplizieren der Zeit mit der Lichtgeschwindigkeit ermittelt."
+
+  sensor.1.name:0 "Fortschritt"
+  sensor.1.desc:0 "Nach der bevorstehenden Besiedlung von §H[Root.GetName]§! jenseits der Grenzen von §H[root.solar_system.GetName]§!... ist es unseren Wissenschaftlern gelungen, alle möglichen technologischen Fortschritte für zukünftige Kolonien auf dem Territorium zu erzielen ."
+
  ########## Torpedo #########
 
  tech_torpedoes_0:0 "Hypersonic torpedoes"
@@ -353,8 +365,10 @@
 
  tech_hyperlane_sbs:0 "Quantendisruptor"
  tech_hyperlane_sbs_desc:0 "Leistungsstarkes Hyperlane-Unterbrechungssystem, das in der Lage ist, den Zugang zu feindlichen Imperien zu blockieren, die von der Sternenbasis aus kontrolliert werden."
+
  TECH_UNLOCK_HYPERLANE_SBS_TITLE:0 "§HGreifen Sie auf die Megastruktur zu:§! Quantendisruptor"
  TECH_UNLOCK_HYPERLANE_SBS_DESC:0 "Leistungsstarkes Hyperlane-Unterbrechungssystem, das in der Lage ist, den Zugang zu feindlichen Imperien zu blockieren, die von der Sternenbasis aus kontrolliert werden."
+
  sm_hyperlane_sbs:0 "Gravitationsregler"
  sm_hyperlane_sbs_desc:0 "Kontrollgebäude, das der Erzeugung und Kontrolle der quantenzerstörenden Megastruktur gewidmet ist."
 
@@ -366,9 +380,11 @@
 
  hyperlane_sbs:0 "Quantendisruptor"
  hyperlane_sbs_desc:0 "Während der Hyperlane aktiv ist, wird er blockiert und kann nicht auf einer anderen Sternenbasis verwendet werden.\n\nDas Disruptor-Quantum muss im Gebiet taktisch eingesetzt werden, um sich vor anderen möglichen Bedrohungen zu schützen, die andere Eingänge durchbrechen."
+
  requires_no_existing_sbs:0 "Benötigt inaktiven Quantendisruptor"
  requires_country:0 "Erfordert feindliches Limit"
  requires_no_war:0 "Benötigt Limit ohne Krieg"
+
  hyperlane_sbs_MEGASTRUCTURE_DETAILS:0 "Quantendisruptor; mächtige Megastruktur, die in der Lage ist, die Gravitationswellen des Systemsterns zu verändern, um Sternenbahnen zu schließen oder zu öffnen."
  hyperlane_sbs_DESC:0"Solange dies aktiv ist, wird der Hyperpfad dauerhaft blockiert."
 
@@ -387,3 +403,33 @@
 
  MESSAGE_REANIMATION_COMPLETE_TITLE:0 "Feedback-Sternenbasis"
  MESSAGE_MERCENARY_COMPLETE_DESC:0 "Die Sternenbasis wird mit jedem Widerstandsjahr stärker und einige Fraktionen der Galaxie, die nicht mit der Föderation verbündet sind, wurden rekrutiert und erwarten uns in der Sternenbasis von §H[From.solar_system.GetName]§! in den Kampf einzutreten... Weitere Schiffe sind bereits unterwegs."
+
+  mod_anti_fed:0 "0"
+  mod_anti_fed_01:0 "1"
+  mod_anti_fed_02:0 "2"
+  mod_anti_fed_03:0 "3"
+  mod_anti_fed_04:0 "4"
+  mod_anti_fed_05:0 "5"
+  mod_anti_fed_06:0 "6"
+  mod_anti_fed_07:0 "7"
+  mod_anti_fed_08:0 "8"
+  mod_anti_fed_09:0 "9"
+  mod_anti_fed_10:0 "10"
+  mod_anti_fed_11:0 "11"
+  mod_anti_fed_12:0 "12"
+  mod_anti_fed_13:0 "13"
+  mod_anti_fed_14:0 "14"
+  mod_anti_fed_15:0 "15"
+  mod_anti_fed_16:0 "16"
+  mod_anti_fed_17:0 "17"
+  mod_anti_fed_18:0 "18"
+  mod_anti_fed_19:0 "19"
+  mod_anti_fed_20:0 "20"
+  mod_anti_fed_21:0 "21"
+  mod_anti_fed_22:0 "22"
+  mod_anti_fed_23:0 "23"
+  mod_anti_fed_24:0 "24"
+  mod_anti_fed_25:0 "25"
+
+  mod_anti_marau_01:0 "Marau"
+  mod_anti_marau_02:0 "Marau"
