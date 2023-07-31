@@ -229,6 +229,10 @@ storage_minerals = {
 		upkeep = { 
 			energy = 5
 		}
+		upkeep = {
+			trigger = { owner = { is_at_war = yes } }
+			energy = -2
+		}
 	}
 
 	possible = {
@@ -280,7 +284,7 @@ management_office = {
 
 		upkeep = {
 			energy = 5
-			influence = 0.25
+			influence = 0.20
 		}
 	}
 
@@ -336,10 +340,10 @@ social_services = {
 			energy = 10
 		}
 		produces = {
-			influence = 0.25
+			influence = 0.20
 		}
 		upkeep = {
-			energy = 10
+			energy = 5
 			alloys = 2
 		}
 	}
@@ -409,7 +413,11 @@ solar_panels = {
 			alloys = 25
 		}
 		upkeep = {
-			minerals = 2
+			minerals = 5
+		}
+		upkeep = {
+			trigger = { owner = { is_at_war = yes } }
+			energy = -1
 		}
 
 		produces = {
@@ -417,7 +425,7 @@ solar_panels = {
 				exists = owner
 				owner = { has_technology = tech_power_plant_1 }
 			}
-			energy = 0.5
+			energy = 0.25
 		}
 
 		produces = {

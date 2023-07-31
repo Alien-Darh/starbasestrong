@@ -8,6 +8,7 @@
  ION_CANNON_FRACTAL_REACTOR:0 "Reactor Fractal"
  PLATFORM_FRACTAL_REACTOR:0 "Reactor Fractal"
  TITAN_FRACTAL_REACTOR:0 "Reactor Fractal"
+ JUGGERNAUT_FRACTAL_REACTOR:0 "Reactor Fractal"
  STARBASE_FRACTAL_REACTOR:0 "Reactor Fractal"
 
  CORVETTE_MID_S1_AUX:0 "Núcleo cambiador aux"
@@ -89,7 +90,7 @@
 
  TECH_UNLOCK_FRACTAL_POWER_DESC:0 "El reactor funciona por la atracción gravitacional de las estrellas cercanas colisionando rayos cósmicos en complejos y fractales cálculos enigmáticos produciendo mucha potencia sin ruido alguno."
 
- TECH_UNLOCK_FRACTAL_POWER_TITLE:0 "§SDesbloquea el componente:§! Reactor Fractal."
+ TECH_UNLOCK_FRACTAL_POWER_TITLE:0 "§SDesbloquea el componente:§! Reactor Fractal.\n- Invisibilidad parcial.\n- Detección asistida."
 
  tech_defense_platform_hull_2:0 "Integridad estructural de Tungsteno"
  tech_defense_platform_hull_2_desc:0 "Un armazón reforzado y escudos con mayor absorción de impacto garantizan la integridad estructural de la estación de defensa, incluso bajo intensa presión."
@@ -255,7 +256,7 @@
  sm_solar_panels_desc:0 "Produce energía"
 
  sm_space_housing:0 "Módulos Habitacionales"
- sm_space_housing_desc:0 "Despliega módulos de alojamiento en las bases estelares alrededor de los planetas para aumentar las poblaciones."
+ sm_space_housing_desc:0 "Despliega módulos de alojamiento en los anillos alrededor de los planetas para aumentar las poblaciones."
 
  sm_star_gate:0 "$stargate$"
  sm_star_gate_desc:0 "Nuestras bases estelares ahora tienen una §S$stargate$§! que conecta una red de vías de enlace en todo nuestro imperio con control de acceso."
@@ -286,13 +287,19 @@
 
  sm_gatherers_production:0 "Recolector de recursos"
  sm_gatherers_production_desc:0 "Edificio de la base estelar que gestiona con mayor eficiencia los recursos de algunos sistemas especiales."
- requires_orbital_station:0 "Requiere recursos en el sistema"
+ requires_orbital_station:0 "Requiere estación especifica en el sistema"
 
  sm_gatherers_production_science:0 "Selector de ciencias"
  sm_gatherers_production_science_desc:0 "Edificio de la base estelar que gestiona con mayor eficiencia los recursos de algunos sistemas especiales."
 
  sm_gatherers_production_rare:0 "Recolector especial"
  sm_gatherers_production_rare_desc:0 "Edificio de la base estelar que gestiona con mayor eficiencia los recursos específicos de algunos sistemas especiales."
+
+ sm_space_log:0 "Edificio logístico"
+ sm_space_log_desc:0 "Edificio de la base estelar que gestiona con mayor eficiencia la organización de población y recursos de construcción."
+
+ sm_space_army:0 "Edificio de la academia"
+ sm_space_army_desc:0 "Edificio de la base estelar que gestiona con mayor eficiencia la fuerza de la armada y que además genera un escudo ante posibles bombardeos planetarios."
 
  mod_stations_volatile_motes_produces_mult:0 "Recolector de motas"
  mod_stations_exotic_gases_produces_mult:0 "Recolector de gas"
@@ -304,7 +311,7 @@
  sm_emp_sbs_desc:0 "Pulso electromagnético de la base estelar usada como última linea defensiva ante flotas hostiles abrumadoras."
 
  sbsemp.1_title:0 "Pulso electromagnético"
- sbsemp.1_desc:0 "Se han detectado flotas hostiles abrumadoras entrando al sistema §Y[event_target:sbsemp_emp.GetName]§!... pulso electromagnético en espera.\n\nOpción 1° Pulso máximo; dejará la base sin defensas ni naves aliadas o enemigas en el sistema; §Htiempo de recarga 360d§!.\n\nOpción 2° Pulso medio; Afectará a flotas aliadas o enemigas entre 125k y 175k dejando algunas posibles flotas hostiles menores o mayores atacando la base; §Htiempo de recarga 180d§!.\n\nOpción 3° Pulso bajo; solo advertencia y dejará sin efecto el §HPulso Electromagnético§! hasta otro momento."
+ sbsemp.1_desc:0 "Se han detectado flotas hostiles abrumadoras entrando al sistema §Y[event_target:sbsemp_emp.GetName]§!... pulso electromagnético en espera.\n\nOpción 1° Pulso máximo; dejará la base sin defensas ni naves aliadas o enemigas en el sistema; §Htiempo de recarga 360d§!.\n\nOpción 2° Pulso medio; Afectará a flotas aliadas o enemigas entre 75k y 175k dejando algunas posibles flotas hostiles menores o mayores atacando la base; §Htiempo de recarga 180d§!.\n\nOpción 3° Pulso bajo; solo advertencia y dejará sin efecto el §HPulso Electromagnético§! hasta otro momento."
 
  tech_emp_sbs:0 "Pulso electromagnético"
  tech_emp_sbs_desc:0 "Pulso electromagnético (P.E.M.) montado en la base estelar usada como última linea defensiva ante flotas hostiles abrumadoras en el sistema con consecuencias devastadoras."
@@ -434,8 +441,43 @@
   mod_anti_marau_01:0 "Marau"
   mod_anti_marau_02:0 "Marau"
 
+ ########## cannon Sarmat #########
+
+ sbs_cannon:0 "Sarmat"
+ sbs_cannon_DESC:0 "Cañón Interestelar"
+ sbs_cannon_MEGASTRUCTURE_DETAILS:0 "Cañón devastador de sistemas instalado en nuestras bases estelares, único capas de devastar sistemas limítrofes de imperios abusivos"
+
+ tech_sbs_cannon:0 "Cañón Interestelar Sarmat"
+ tech_sbs_cannon_desc:0 "Cañón devastador de sistemas instalado en nuestras bases estelares, único capas de devastar sistemas limítrofes de imperios abusivos."
+
+ tech_sbs_cannon_title:0 "§HDesbloquea el cañon§!: Cañón interestelar devastador"
+ tech_sbs_cannon_desc:0 "Cañón devastador de sistemas instalado en nuestras bases estelares, único capas de devastar sistemas limítrofes de imperios abusivos."
+
+ sm_sbs_cannon:0 "Sarmat"
+ sm_sbs_cannon_desc:0 "Cañón devastador de sistemas instalado en nuestras bases estelares, único capas de devastar sistemas limítrofes de imperios abusivos."
+
+ requires_no_existing_sbs_cannon:0 "Requiere recargar cañón 10 años aprox."
+ requires_country_default:0 "Requiere limite menor o igual a neutral"
+ requires_country_no_default:0 "Requiere limite imperial común"
+ requires_modules_solar:0 "Requiere 2 módulos de paneles solares"
+
+ sbscannon.2.name:0 "Instalación cañón"
+ sbscannon.2.desc:0 "Se ha instalado un cañón interestelar cerca de nuestra base en §Y[event_target:sbs_cannon_system_0.GetName]§! y ha comenzado la cuenta regresiva de lanzamiento...\n\nAlmirante; solo falta la orden final de activación una vez que haya alcanzado su potencia máxima de carga dentro de algunos meses."
+
+ sbscannon.3.name:0 "Cañón listo y en espera"
+ sbscannon.3.desc:0 "El cañón Interestelar en la base estelar en §Y[event_target:sbs_cannon_system_0.GetName]§! esta listo para ser lanzado al sistema §Y[event_target:sbs_cannon_system.GetName]§!..."
+
+ ########## extra system #########
+
+ sm_starbase_extra:0 "Sistema militar"
+ sm_starbase_extra_desc:0 "Edificio de la base estelar que añade un sistema exclusivo para fines militares."
+
+ starbase_extra.2.name:0 "Sistema militar"
+ starbase_extra.2.desc:0 "Se ha encontrado y enlazado un nuevo sistema cerca de nuestra base principal en §H[Root.Solar_System.GetName]§! llamado §H[event_target:starbase_extra_base.GetName]§!.\n\nNuestro edificio de comunicaciones de largo alcance mantendrá activo el enlace con este nuevo sistema de características militares.\n\nSi nuestro edificio falla o es desactivado no se podrá construir de nuevo y no habrá conexión via hiperruta al nuevo sistema dejandolo aislado hasta encontrar otras alternativas de paso."
+
+ requires_no_existing_starbase_extra:0 "No se puede volver a construir"
+
  ########## solo español #########
 
  TECH_UNLOCK_STARBASE_BUILDING:0 "§HAccede al edif. de la base:§! $NAME$"
  TECH_UNLOCK_STARBASE_MODULE:0 "§HDesbloquea módulo de la base:§! $NAME$"
-

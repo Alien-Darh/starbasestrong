@@ -8,6 +8,7 @@
  ION_CANNON_FRACTAL_REACTOR:0 "Fractal reactor"
  PLATFORM_FRACTAL_REACTOR:0 "Fractal reactor"
  TITAN_FRACTAL_REACTOR:0 "Fractal reactor"
+ JUGGERNAUT_FRACTAL_REACTOR:0 "Fractal reactor"
  STARBASE_FRACTAL_REACTOR:0 "Fractal reactor"
 
  CORVETTE_MID_S1_AUX:0 "Aux Shifter Core"
@@ -89,7 +90,7 @@
 
  TECH_UNLOCK_FRACTAL_POWER_DESC:0 "The reactor works due to the gravitational attraction of nearby stars colliding cosmic rays in complex and fractal enigmatic calculations producing a lot of power without any noise."
 
- TECH_UNLOCK_FRACTAL_POWER_TITLE:0 "§SUnlock the component:§! Fractal reactor."
+ TECH_UNLOCK_FRACTAL_POWER_TITLE:0 "§SUnlock the component:§! Fractal reactor.\n- Partial invisibility.\n- Assisted detection."
 
  tech_defense_platform_hull_2:0 "Structural integrity of tungsten"
  tech_defense_platform_hull_2_desc:0 "A reinforced frame and shields with greater impact absorption guarantee the structural integrity of the defense station, even under intense pressure."
@@ -255,7 +256,7 @@
  sm_solar_panels_desc:0 "Produces energy"
 
  sm_space_housing:0 "Housing Modules"
- sm_space_housing_desc:0 "Deploy accommodation pods to starbases around planets to increase populations."
+ sm_space_housing_desc:0 "Deploy accommodation modules in the rings around the planets to increase populations."
 
  sm_star_gate:0 "$stargate$"
  sm_star_gate_desc:0 "Our starbases now have a §S$stargate$§! connecting a network of gateways throughout our empire with access control."
@@ -286,13 +287,19 @@
 
  sm_gatherers_production:0 "Resource collector"
  sm_gatherers_production_desc:0 "Star base building that more efficiently manages the resources of some special systems."
- requires_orbital_station:0 "Requires resources in the system"
+ requires_orbital_station:0 "Requires specific station in the system"
 
  sm_gatherers_production_science:0 "Science selector"
  sm_gatherers_production_science_desc:0 "Star base building that more efficiently manages the resources of some special systems."
 
  sm_gatherers_production_rare:0 "Special collector"
  sm_gatherers_production_rare_desc:0 "Star base building that more efficiently manages the specific resources of some special systems."
+
+ sm_space_log:0 "Logistics Building"
+ sm_space_log_desc:0 "Starbase building that more efficiently manages the organization of population and building resources."
+
+ sm_space_army:0 "Academy building"
+ sm_space_army_desc:0 "Starbase building that more efficiently manages the force of the army and that also generates a shield against possible planetary bombardments."
 
  mod_stations_volatile_motes_produces_mult:0 "Recolector de motas"
  mod_stations_exotic_gases_produces_mult:0 "Recolector de gas"
@@ -304,7 +311,7 @@
  sm_emp_sbs_desc:0 "Electromagnetic pulse of the star base used as the last defensive line against overwhelming hostile fleets."
 
  sbsemp.1_title:0 "Electromagnetic pulse"
- sbsemp.1_desc:0 "Overwhelming hostile fleets have been detected entering the system §Y[event_target:sbsemp_emp.GetName]§!... electromagnetic pulse on standby.\n\nOption 1st Maximum Pulse; will leave the base with no defenses or friendly or enemy ships in the system; §Hrecharge time 360d§!.\n\nOption 2nd Medium Pulse; Will affect friendly or enemy fleets between 125k and 175k leaving some possible minor or major hostile fleets attacking the base; §Hrecharge time 180d§!.\ n\nOption 3rd Low Pulse; warning only and will disable §HPelectromagnetic Pulse§! until another time."
+ sbsemp.1_desc:0 "Overwhelming hostile fleets have been detected entering the system §Y[event_target:sbsemp_emp.GetName]§!... electromagnetic pulse on standby.\n\nOption 1st Maximum Pulse; will leave the base with no defenses or friendly or enemy ships in the system; §Hrecharge time 360d§!.\n\nOption 2nd Medium Pulse; Will affect friendly or enemy fleets between 75k and 175k leaving some possible minor or major hostile fleets attacking the base; §Hrecharge time 180d§!.\ n\nOption 3rd Low Pulse; warning only and will disable §HPelectromagnetic Pulse§! until another time."
 
  tech_emp_sbs:0 "Electromagnetic pulse"
  tech_emp_sbs_desc:0 "Electromagnetic pulse (E.M.P.) mounted on the stellar base used as the last defensive line against overwhelming hostile fleets in the system with devastating consequences."
@@ -432,3 +439,39 @@
 
   mod_anti_marau_01:0 "Marau"
   mod_anti_marau_02:0 "Marau"
+
+ ########## cannon Sarmat #########
+
+ sbs_cannon:0 "Sarmat"
+ sbs_cannon_DESC:0 "Interstellar cannon"
+ sbs_cannon_MEGASTRUCTURE_DETAILS:0 "System-devastating cannon installed on our starbases, uniquely capable of devastating border systems of abusive empires."
+
+ tech_sbs_cannon:0 "Sarmat Interstellar Cannon"
+ tech_sbs_cannon_desc:0 "System-devastating cannon installed on our starbases, uniquely capable of devastating border systems of abusive empires."
+
+ tech_sbs_cannon_title:0 "§HUnlock the cannon§!: devastating interstellar cannon"
+ tech_sbs_cannon_desc:0 "System-devastating cannon installed on our starbases, uniquely capable of devastating border systems of abusive empires."
+
+ sm_sbs_cannon:0 "Sarmat"
+ sm_sbs_cannon_desc:0 "System-devastating cannon installed on our starbases, uniquely capable of devastating border systems of abusive empires."
+
+ requires_no_existing_sbs_cannon:0 "Requires barrel recharging 10 years approx."
+ requires_country_default:0 "Requires limit less than or equal to neutral"
+ requires_country_no_default:0 "Requires common imperial limit"
+ requires_modules_solar:0 "Requires 2 solar panel modules"
+
+ sbscannon.2.name:0 "Weapon installation"
+ sbscannon.2.desc:0 "An interstellar cannon has been installed near our base at §Y[event_target:sbs_cannon_system_0.GetName]§! and the launch countdown has begun...\n\nAdmiral, just the final order to activate once it's done reached its maximum charging power within a few months."
+
+ sbscannon.3.name:0 "Cannon ready and standby"
+ sbscannon.3.desc:0 "The Interstellar cannon at the starbase at §Y[event_target:sbs_cannon_system_0.GetName]§! is ready to be launched at the §Y[event_target:sbs_cannon_system.GetName]§ system!..."
+
+ ########## extra system #########
+
+ sm_starbase_extra:0 "Military system"
+ sm_starbase_extra_desc:0 "Star base building that adds an exclusive system for military purposes."
+
+ starbase_extra.2.name:0 "Military system"
+ starbase_extra.2.desc:0 "A new system has been found and linked near our main base at §H[Root.Solar_System.GetName]§! called §H[event_target:starbase_extra_base.GetName]§!.\n\nOur long-range communications building will maintain I activate the link with this new system of military characteristics.\n\nIf our building fails or is deactivated, it will not be possible to build it again and there will be no connection via hyperroute to the new system, leaving it isolated until other passage alternatives are found."
+
+ requires_no_existing_starbase_extra:0 "Cannot be built"

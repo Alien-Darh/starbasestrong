@@ -41,6 +41,9 @@ country_event = {
 				}
 			}
 			save_global_event_target_as = sbsemp_emp
+			solar_system = {
+				set_star_flag = sbsemp_emp_star
+			}
 		}
 	}
 
@@ -70,21 +73,20 @@ country_event = {
 			}
 			solar_system = {
 				every_fleet_in_system = { destroy_fleet = this }
-				hidden_effect = {
-					if = {
-						limit = { NOT = { exists = starbase } }
-						create_starbase = {
-							size = starbase_citadel
-							owner = root
-							module = gun_battery
-							module = missile_battery
-							module = hangar_bay
-							building = system_fast
-							building = emp_sbs
-							building = star_hyper
-							#building = star_gate
-						}
+				if = {
+					limit = { NOT = { exists = starbase } }
+					create_starbase = {
+						size = starbase_citadel
+						owner = root
+						module = gun_battery
+						module = missile_battery
+						module = hangar_bay
+						building = system_fast
+						building = emp_sbs
+						building = communications_jammer
 					}
+				}
+				hidden_effect = {
 					create_ambient_object = {
 						type = "destroyed_system"
 						location = this
@@ -100,6 +102,13 @@ country_event = {
 				}
 			}
 		}
+
+		hidden_effect = {
+			owner = { 
+				country_event = { id = sbsemp.2 days = 60 }
+			}
+		}
+
 		if = {
 			limit = { NOT = { has_country_flag = emp_sbs_target } }
 			set_timed_country_flag = { flag = emp_sbs_target days = 360 }
@@ -131,7 +140,7 @@ country_event = {
 					any_fleet_in_system = {
 						is_ship_class = shipclass_military
 						owner = { is_hostile = root.owner }
-						fleet_power >= 125000
+						fleet_power >= 75000
 						fleet_power <= 175000
 					}
 				}
@@ -143,38 +152,36 @@ country_event = {
 							is_ship_class = shipclass_military
 							#owner = { is_hostile = root.owner }
 						}
-						fleet_power >= 150000
-						fleet_power <= 300000
+						fleet_power >= 75000
+						fleet_power <= 175000
 					}
 					delete_fleet = this
 				}
-				hidden_effect = {
-					event_target:sbsemp_emp = {
-						if = {
-							limit = { exists = starbase }
-							starbase = {
-								remove_starbase_module = {
-									module = gun_battery
-									module = missile_battery
-									module = hangar_bay
-									module = gun_battery_upgrade
-								}
-							}
-						}
-						else = {
-							limit = {
-								any_fleet_in_system = {
-									is_ship_class = shipclass_military_station
-								}
-							}
-							random_fleet_in_system = {
-								limit = {
-									is_ship_class = shipclass_military_station
-								}
-								destroy_fleet = this
-							}
+				if = {
+					limit = { exists = starbase }
+					starbase = {
+						remove_starbase_module = {
+							module = gun_battery
+							module = missile_battery
+							module = hangar_bay
+							module = gun_battery_upgrade
 						}
 					}
+				}
+				else = {
+					limit = {
+						any_fleet_in_system = {
+							is_ship_class = shipclass_military_station
+						}
+					}
+					random_fleet_in_system = {
+						limit = {
+							is_ship_class = shipclass_military_station
+						}
+						destroy_fleet = this
+					}
+				}
+				hidden_effect = {
 					create_ambient_object = {
 						type = explosion_particle_object
 						location = this
@@ -189,9 +196,15 @@ country_event = {
 							angle = random
 						}
 					}
+					clear_global_event_target = sbsemp_emp
+					random_system = {
+						limit = { has_star_flag = sbsemp_emp_star }
+						remove_star_flag = sbsemp_emp_star
+					}
 				}
 			}
 		}
+
 		if = {
 			limit = { NOT = { has_country_flag = emp_sbs_target } }
 			set_timed_country_flag = { flag = emp_sbs_target days = 180 }
@@ -200,9 +213,53 @@ country_event = {
 
 	option = {
 		name = TOOPOOR
+		hidden_effect = { 
+			clear_global_event_target = sbsemp_emp
+			random_system = {
+				limit = { has_star_flag = sbsemp_emp_star }
+				remove_star_flag = sbsemp_emp_star
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sbsemp.2
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		every_owned_starbase = {
+			limit = { 
+				has_starbase_building = emp_sbs
+				solar_system = { has_star_flag = sbsemp_emp_star }
+			}
+			solar_system = {
+				every_fleet_in_system = { destroy_fleet = this }
+				if = {
+					limit = { NOT = { exists = starbase } }
+					create_starbase = {
+						size = starbase_citadel
+						owner = root
+						module = gun_battery
+						module = missile_battery
+						module = hangar_bay
+						building = system_fast
+						building = emp_sbs
+						building = communications_jammer
+						building = star_gate
+					}
+				}
+			}
+		}
 	}
 
 	after = {
 		clear_global_event_target = sbsemp_emp
+		random_system = {
+			limit = { has_star_flag = sbsemp_emp_star }
+			remove_star_flag = sbsemp_emp_star
+		}
 	}
 }

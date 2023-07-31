@@ -103,6 +103,10 @@ country_event = {
 				save_global_event_target_as = hyperlane_target_system
 			}
 		}
+		set_country_flag = hyperlane_sbs
+	}
+
+	after = {
 		hidden_effect = {
 			remove_hyperlane = {
 				from = event_target:hyperlane_target_system
@@ -115,7 +119,6 @@ country_event = {
 				set_star_flag = hyperlane_target_system
 			}
 		}
-		set_country_flag = hyperlane_sbs
 	}
 }
 

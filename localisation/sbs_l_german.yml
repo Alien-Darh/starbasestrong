@@ -8,6 +8,7 @@
  ION_CANNON_FRACTAL_REACTOR:0 "Fraktal-Reaktor"
  PLATFORM_FRACTAL_REACTOR:0 "Fraktal-Reaktor"
  TITAN_FRACTAL_REACTOR:0 "Fraktal-Reaktor"
+ JUGGERNAUT_FRACTAL_REACTOR:0 "Fraktal-Reaktor"
  STARBASE_FRACTAL_REACTOR:0 "Fraktal-Reaktor"
 
  CORVETTE_MID_S1_AUX:0 "Aux Shifter Core"
@@ -89,7 +90,7 @@
 
  TECH_UNLOCK_FRACTAL_POWER_DESC:0 "Der Reaktor wirkt aufgrund der Gravitationsanziehung nahe gelegener Sterne, die kosmische Strahlen in komplexen und fraktalen rätselhaften Berechnungen kollidieren und viel Leistung ohne Geräusche erzeugen."
 
- TECH_UNLOCK_FRACTAL_POWER_TITLE:0 "§SSchalte die Komponente frei:§! Fraktal-Reaktor."
+ TECH_UNLOCK_FRACTAL_POWER_TITLE:0 "§SSchalte die Komponente frei:§! Fraktal-Reaktor.\n- Teilweise Unsichtbarkeit.\n- Unterstützte Erkennung."
 
  tech_defense_platform_hull_2:0 "Strukturintegrität von Wolfram"
  tech_defense_platform_hull_2_desc:0 "Ein verstärkter Rahmen und eine Schilde mit einer größeren Aufprallabsorption garantiert die strukturelle Integrität der Verteidigungsstation auch unter starkem Druck."
@@ -255,7 +256,7 @@
  sm_solar_panels_desc:0 "Produziert Energie"
 
  sm_space_housing:0 "Unterkunfts-Module"
- sm_space_housing_desc:0 "Setze Unterbringungs-Module an Sternbasen bei Planeten ein um die Population zu erhöhen."
+ sm_space_housing_desc:0 "Setzen Sie Unterkunftsmodule in den Ringen um die Planeten ein, um die Bevölkerung zu erhöhen."
 
  sm_star_gate:0 "$stargate$"
  sm_star_gate_desc:0 "Unsere Sternbasen haben jetzt eine §SStargate§!, welches ein Netzwerk von Durchgängen in unserem Imperium mit Zugangskontrolle verbindet."
@@ -286,13 +287,19 @@
 
  sm_gatherers_production:0 "Ressourcensammler"
  sm_gatherers_production_desc:0 "Starbase-Gebäude, das die Ressourcen einiger Spezialsysteme effizienter verwaltet."
- requires_orbital_station:0 "Benötigt Systemressourcen"
+ requires_orbital_station:0 "Benötigt eine spezielle Station im System"
 
  sm_gatherers_production_science:0 "Wissenschaftsauswahl"
  sm_gatherers_production_science_desc:0 "Starbase-Gebäude, das die Ressourcen einiger Spezialsysteme effizienter verwaltet."
 
  sm_gatherers_production_rare:0 "besonderer Sammler"
  sm_gatherers_production_rare_desc:0 "Starbase-Gebäude, das die spezifischen Ressourcen einiger Spezialsysteme effizienter verwaltet."
+
+ sm_space_log:0 "Edificio logístico"
+ sm_space_log_desc:0 "Sternenbasisgebäude, das die Organisation der Bevölkerung und Gebäuderessourcen effizienter verwaltet."
+
+ sm_space_army:0 "Edificio de la academia"
+ sm_space_army_desc:0 "Sternenbasis-Gebäude, das die Streitkräfte der Armee effizienter verwaltet und das auch einen Schild gegen mögliche planetare Bombardierungen erzeugt."
 
  mod_stations_volatile_motes_produces_mult:0 "Recolector de motas"
  mod_stations_exotic_gases_produces_mult:0 "Recolector de gas"
@@ -304,7 +311,7 @@
  sm_emp_sbs_desc:0 "Elektromagnetischer Impuls der Sternenbasis als letzte Verteidigungslinie gegen überwältigende feindliche Flotten."
 
  sbsemp.1_title:0 "Elektromagnetischer Puls"
- sbsemp.1_desc:0 "Überwältigende feindliche Flotten wurden beim Eindringen in das System §Y[event_target:sbsemp_emp.GetName]§!... Elektromagnetischer Impuls auf Standby entdeckt.\n\nOption 1. Maximaler Impuls; verlässt die Basis ohne Verteidigung oder befreundete oder feindliche Schiffe darin des Systems; §HAufladezeit 360d§!.\n\nOption 2° Mittlerer Impuls; Wirkt sich auf freundliche oder feindliche Flotten zwischen 125k und 175k aus und lässt möglicherweise einige kleinere oder größere feindliche Flotten zurück, die die Basis angreifen; §HAufladezeit 180d§!.\n\nOption 3. Niedriger Impuls; nur Warnung und wird §HPelektromagnetischer Impuls§! bis zu einem anderen Zeitpunkt deaktivieren."
+ sbsemp.1_desc:0 "Überwältigende feindliche Flotten wurden beim Eindringen in das System §Y[event_target:sbsemp_emp.GetName]§!... Elektromagnetischer Impuls auf Standby entdeckt.\n\nOption 1. Maximaler Impuls; verlässt die Basis ohne Verteidigung oder befreundete oder feindliche Schiffe darin des Systems; §HAufladezeit 360d§!.\n\nOption 2° Mittlerer Impuls; Wirkt sich auf freundliche oder feindliche Flotten zwischen 75k und 175k aus und lässt möglicherweise einige kleinere oder größere feindliche Flotten zurück, die die Basis angreifen; §HAufladezeit 180d§!.\n\nOption 3. Niedriger Impuls; nur Warnung und wird §HPelektromagnetischer Impuls§! bis zu einem anderen Zeitpunkt deaktivieren."
 
  tech_emp_sbs:0 "Elektromagnetischer Puls"
  tech_emp_sbs_desc:0 "Elektromagnetischer Puls (E.M.P.) Montiert auf der Sternenbasis, die als letzte Verteidigungslinie gegen überwältigende feindliche Flotten im System mit verheerenden Folgen verwendet wird."
@@ -433,3 +440,39 @@
 
   mod_anti_marau_01:0 "Marau"
   mod_anti_marau_02:0 "Marau"
+
+ ########## cannon Sarmat #########
+
+ sbs_cannon:0 "Big-Berta"
+ sbs_cannon_DESC:0 "Interstellare Kanone"
+ sbs_cannon_MEGASTRUCTURE_DETAILS:0 "Systemzerstörende Kanone, die auf unseren Sternenbasen installiert ist und in einzigartiger Weise in der Lage ist, Grenzsysteme missbräuchlicher Imperien zu zerstören."
+
+ tech_sbs_cannon:0 "Big-Berta Interstellare Kanone"
+ tech_sbs_cannon_desc:0 "Systemzerstörende Kanone, die auf unseren Sternenbasen installiert ist und in einzigartiger Weise in der Lage ist, Grenzsysteme missbräuchlicher Imperien zu zerstören."
+
+ tech_sbs_cannon_title:0 "§HSchalte die Kanone frei§!: devastating interstellar cannon"
+ tech_sbs_cannon_desc:0 "Systemzerstörende Kanone, die auf unseren Sternenbasen installiert ist und in einzigartiger Weise in der Lage ist, Grenzsysteme missbräuchlicher Imperien zu zerstören."
+
+ sm_sbs_cannon:0 "Big-Berta"
+ sm_sbs_cannon_desc:0 "System-devastating cannon installed on our starbases, uniquely capable of devastating border systems of abusive empires."
+
+ requires_no_existing_sbs_cannon:0 "Nachladen des Fasses erforderlich ca. 10 Jahre"
+ requires_country_default:0 "Benötigt Grenze kleiner oder gleich neutral"
+ requires_country_no_default:0 "Benötigt gemeinsames imperiales Limit"
+ requires_modules_solar:0 "Benötigt 2 Solarpanel-Module"
+
+ sbscannon.2.name:0 "Waffeninstallation"
+ sbscannon.2.desc:0 "Eine interstellare Kanone wurde in der Nähe unserer Basis bei §Y[event_target:sbs_cannon_system_0.GetName]§! installiert und der Start-Countdown hat begonnen...\n\nAdmiral, nur der letzte Aktivierungsbefehl hat seine maximale Ladeleistung erreicht innerhalb weniger Monate."
+
+ sbscannon.3.name:0 "Kanone bereit und bereit"
+ sbscannon.3.desc:0 "Die interstellare Kanone auf der Sternenbasis bei §Y[event_target:sbs_cannon_system_0.GetName]§! ist bereit, auf das System §Y[event_target:sbs_cannon_system.GetName]§ abgefeuert zu werden!..."
+
+ ########## extra system #########
+
+ sm_starbase_extra:0 "Militärisches System"
+ sm_starbase_extra_desc:0 "Sternenbasisgebäude, das ein exklusives System für militärische Zwecke hinzufügt."
+
+ starbase_extra.2.name:0 "Militärisches System"
+ starbase_extra.2.desc:0 "Ein neues System wurde in der Nähe unserer Hauptbasis bei §H[Root.Solar_System.GetName]§! gefunden und verbunden, genannt §H[event_target:starbase_extra_base.GetName]§!.\n\nUnser Fernkommunikationsgebäude wird I aktiviere die Verbindung mit diesem neuen System militärischer Eigenschaften.\n\nWenn unser Gebäude ausfällt oder deaktiviert wird, ist es nicht möglich, es erneut zu bauen, und es wird keine Verbindung per Hyperroute zum neuen System geben, wodurch es bis zu einem anderen Durchgang isoliert bleibt Alternativen gefunden werden."
+
+ requires_no_existing_starbase_extra:0 "Kann nicht gebaut werden"

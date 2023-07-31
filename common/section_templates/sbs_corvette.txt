@@ -86,7 +86,7 @@ ship_section_template = {
 	small_utility_slots = 2
 	medium_utility_slots = 1
 	large_utility_slots = 0
-	aux_utility_slots = 3
+	aux_utility_slots = 5
 
 	resources = {
 		category = ship_sections
@@ -123,7 +123,7 @@ ship_section_template = {
 	small_utility_slots = 2
 	medium_utility_slots = 1
 	large_utility_slots = 0
-	aux_utility_slots = 3
+	aux_utility_slots = 5
 	
 	resources = {
 		category = ship_sections
@@ -170,7 +170,7 @@ ship_section_template = {
 	small_utility_slots = 1
 	medium_utility_slots = 1
 	large_utility_slots = 1
-	aux_utility_slots = 3
+	aux_utility_slots = 5
 	
 	resources = {
 		category = ship_sections
@@ -212,7 +212,7 @@ ship_section_template = {
 	small_utility_slots = 2
 	medium_utility_slots = 1
 	large_utility_slots = 0
-	aux_utility_slots = 3
+	aux_utility_slots = 5
 	
 	ai_weight = {
 		modifier = {
@@ -276,7 +276,7 @@ ship_section_template = {
 	small_utility_slots = 2
 	medium_utility_slots = 1
 	large_utility_slots = 0
-	aux_utility_slots = 3
+	aux_utility_slots = 5
 	
 	resources = {
 		category = ship_sections

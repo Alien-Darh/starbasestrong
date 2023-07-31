@@ -9,8 +9,8 @@ starbase_citadel_upgrade = {
 	modifier = {
 		ship_evasion_mult = -1
 		ship_armor_add = 20000
-		starbase_module_capacity_add = 6
-		starbase_building_capacity_add = 9
+		starbase_module_capacity_add = 8
+		starbase_building_capacity_add = 12
 		starbase_defense_platform_capacity_add = 16
 		#trade system
 		starbase_trade_collection_range_add = 1
@@ -32,7 +32,7 @@ starbase_citadel_upgrade = {
 		}
 
 		upkeep = {
-			energy = 10
+			energy = 25
 		}
 	}
 

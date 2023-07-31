@@ -513,6 +513,8 @@ ship_section_template = {
 	fits_on_slot = "4"
 	fits_on_slot = "5"
 	fits_on_slot = "6"
+	fits_on_slot = "7"
+	fits_on_slot = "8"
 
 	should_draw_components = yes
 }
@@ -539,6 +541,8 @@ ship_section_template = {
 	fits_on_slot = "4"
 	fits_on_slot = "5"
 	fits_on_slot = "6"
+	fits_on_slot = "7"
+	fits_on_slot = "8"
 
 	should_draw_components = yes
 
@@ -576,6 +580,8 @@ ship_section_template = {
 	fits_on_slot = "4"
 	fits_on_slot = "5"
 	fits_on_slot = "6"
+	fits_on_slot = "7"
+	fits_on_slot = "8"
 
 	should_draw_components = yes
 
@@ -613,6 +619,8 @@ ship_section_template = {
 	fits_on_slot = "4"
 	fits_on_slot = "5"
 	fits_on_slot = "6"
+	fits_on_slot = "7"
+	fits_on_slot = "8"
 
 	should_draw_components = yes
 
@@ -645,6 +653,8 @@ ship_section_template = {
 	fits_on_slot = "4"
 	fits_on_slot = "5"
 	fits_on_slot = "6"
+	fits_on_slot = "7"
+	fits_on_slot = "8"
 
 	should_draw_components = yes
 }
@@ -670,6 +680,8 @@ ship_section_template = {
 	fits_on_slot = "4"
 	fits_on_slot = "5"
 	fits_on_slot = "6"
+	fits_on_slot = "7"
+	fits_on_slot = "8"
 
 	should_draw_components = yes
 }
@@ -692,6 +704,8 @@ ship_section_template = {
 	fits_on_slot = "4"
 	fits_on_slot = "5"
 	fits_on_slot = "6"
+	fits_on_slot = "7"
+	fits_on_slot = "8"
 
 	should_draw_components = yes
 }
@@ -717,6 +731,8 @@ ship_section_template = {
 	fits_on_slot = "4"
 	fits_on_slot = "5"
 	fits_on_slot = "6"
+	fits_on_slot = "7"
+	fits_on_slot = "8"
 
 	should_draw_components = yes
 }
@@ -741,7 +757,7 @@ ship_section_template = {
 	small_utility_slots = 0
 	medium_utility_slots = 0
 	large_utility_slots = 6
-	aux_utility_slots = 3
+	aux_utility_slots = 2
 
 	resources = {
 		category = ship_sections
@@ -766,6 +782,8 @@ ship_section_template = {
 	fits_on_slot = "4"
 	fits_on_slot = "5"
 	fits_on_slot = "6"
+	fits_on_slot = "7"
+	fits_on_slot = "8"
 
 	should_draw_components = yes
 

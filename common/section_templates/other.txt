@@ -65,7 +65,8 @@ ship_section_template = {
 
 	large_utility_slots = 1
 	medium_utility_slots = 2
-	aux_utility_slots = 3
+	small_utility_slots = 1
+	aux_utility_slots = 4
 
 	resources = {
 		category = ship_sections
@@ -126,7 +127,8 @@ ship_section_template = {
 
 	large_utility_slots = 1
 	medium_utility_slots = 2
-	aux_utility_slots = 3
+	small_utility_slots = 1
+	aux_utility_slots = 4
 
 	resources = {
 		category = ship_sections
@@ -169,7 +171,8 @@ ship_section_template = {
 
 	large_utility_slots = 1
 	medium_utility_slots = 2
-	aux_utility_slots = 3
+	small_utility_slots = 1
+	aux_utility_slots = 4
 
 	resources = {
 		category = ship_sections
@@ -223,7 +226,8 @@ ship_section_template = {
 
 	large_utility_slots = 1
 	medium_utility_slots = 2
-	aux_utility_slots = 3
+	small_utility_slots = 1
+	aux_utility_slots = 4
 
 	resources = {
 		category = ship_sections
@@ -265,7 +269,8 @@ ship_section_template = {
 
 	large_utility_slots = 1
 	medium_utility_slots = 2
-	aux_utility_slots = 3
+	small_utility_slots = 1
+	aux_utility_slots = 4
 
 	resources = {
 		category = ship_sections
@@ -304,7 +309,8 @@ ship_section_template = {
 
 	large_utility_slots = 1
 	medium_utility_slots = 2
-	aux_utility_slots = 3
+	small_utility_slots = 1
+	aux_utility_slots = 4
 
 	ai_weight = {
 		factor = 1
@@ -395,10 +401,10 @@ ship_section_template = {
 		section_instance = 1
 	}
 
-	small_utility_slots = 2
+	small_utility_slots = 3
 	medium_utility_slots = 2
 	large_utility_slots = 2
-	aux_utility_slots = 3
+	aux_utility_slots = 5
 }
 
 ship_section_template = {
@@ -442,10 +448,10 @@ ship_section_template = {
 		section_instance = 1
 	}
 
-	small_utility_slots = 2
+	small_utility_slots = 3
 	medium_utility_slots = 2
 	large_utility_slots = 2
-	aux_utility_slots = 3
+	aux_utility_slots = 5
 }
 
 ship_section_template = {
@@ -475,10 +481,10 @@ ship_section_template = {
 		section_instance = 1
 	}
 
-	small_utility_slots = 2
+	small_utility_slots = 3
 	medium_utility_slots = 2
 	large_utility_slots = 2
-	aux_utility_slots = 3
+	aux_utility_slots = 5
 }
 
 ship_section_template = {
@@ -511,10 +517,10 @@ ship_section_template = {
 		section_instance = 1
 	}
 
-	small_utility_slots = 2
+	small_utility_slots = 3
 	medium_utility_slots = 2
 	large_utility_slots = 2
-	aux_utility_slots = 3
+	aux_utility_slots = 5
 }
 
 ###########################
