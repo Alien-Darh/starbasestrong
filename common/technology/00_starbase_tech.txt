@@ -1,4 +1,4 @@
-#Starbases
+# Starbases
 
 tech_starbase_3 = {
 	cost = @tier2cost2
@@ -45,10 +45,7 @@ tech_starbase_3 = {
 		}
 		modifier = {
 			factor = value:tech_weight_likelihood
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
 		}
 		modifier = {
 			factor = 1.5
@@ -71,10 +68,7 @@ tech_starbase_3 = {
 		factor = @ai_starbase_types_factor
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
 		}
 	}
 }
@@ -124,10 +118,7 @@ tech_starbase_4 = {
 		}
 		modifier = {
 			factor = value:tech_weight_likelihood
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
 		}
 		modifier = {
 			factor = 1.5
@@ -150,10 +141,7 @@ tech_starbase_4 = {
 		factor = @ai_starbase_types_factor
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
 		}
 	}
 }
@@ -203,10 +191,7 @@ tech_starbase_5 = {
 		}
 		modifier = {
 			factor = value:tech_weight_likelihood
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
 		}
 		modifier = {
 			factor = 1.5
@@ -229,10 +214,7 @@ tech_starbase_5 = {
 		factor = @ai_starbase_types_factor
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
 		}
 	}
 }

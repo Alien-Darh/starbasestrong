@@ -1,4 +1,4 @@
-#starbase_level_foo = {
+# starbase_level_foo = {
 #	ship_size = starbase_foo		# Required
 #	next_level = starbase_level_bar	# Optional
 #	show_in_outliner = yes			# Default yes, if yes starbase will be shown in outliner

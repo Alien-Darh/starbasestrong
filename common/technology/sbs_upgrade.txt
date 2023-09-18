@@ -10,20 +10,17 @@ tech_starbase_citadel_upgrade = {
 	# unlocks Citadel Upgrade
 	
 	weight_modifier = {
-        modifier = {
-            factor = 0
+		modifier = {
+			factor = 0
 			mid_game_years_passed <= 90
-        }
+		}
 		modifier = {
 			factor = 1.25
 			has_tradition = tr_unyielding_adopt
 		}
 		modifier = {
 			factor = value:tech_weight_likelihood
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
 		}
 		modifier = {
 			factor = 1.5
@@ -42,10 +39,7 @@ tech_starbase_citadel_upgrade = {
 		factor = @ai_starbase_types_factor
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
 		}
 	}
 }
@@ -63,27 +57,21 @@ tech_ftl_inhibitor = {
 	}
 
 	weight_modifier = {
-		factor = 4 #FTL inhibitor is very important
+		factor = 4 # FTL inhibitor is very important
 		modifier = {
 			factor = 1.25
 			has_tradition = tr_unyielding_adopt
 		}
 		modifier = {
 			factor = value:tech_weight_likelihood
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_particles }
 		}
 	}
 
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_particles }
 		}
 	}
 }
@@ -101,27 +89,21 @@ tech_ftl_inhibitor_II = {
 	}
 
 	weight_modifier = {
-		factor = 4 #FTL inhibitor is very important
+		factor = 4 # FTL inhibitor is very important
 		modifier = {
 			factor = 1.25
 			has_tradition = tr_unyielding_adopt
 		}
 		modifier = {
 			factor = value:tech_weight_likelihood
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_particles }
 		}
 	}
 
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_particles }
 		}
 	}
 }

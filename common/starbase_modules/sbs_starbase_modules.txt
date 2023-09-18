@@ -19,7 +19,7 @@ gatherers_dark_matter = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_mine_dark_matter } 
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	possible = {
@@ -59,7 +59,7 @@ gatherers_living_metal = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_mine_living_metal } 
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	possible = {
@@ -477,7 +477,7 @@ gun_battery_upgrade = {
 				has_technology = tech_mass_accelerator_2
 			}
 		}
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	possible = {

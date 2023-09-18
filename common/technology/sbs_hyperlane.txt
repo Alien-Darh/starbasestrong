@@ -12,22 +12,10 @@ tech_hyperlane_sbs = {
 		modifier = {
 			factor = 0.1
 			NOR = {
-				research_leader = {
-					area = physics
-					has_trait = "leader_trait_expertise_particles"
-				}
-				research_leader = {
-					area = physics
-					has_trait = "leader_trait_curator"
-				}
-				research_leader = {
-					area = physics
-					has_trait = "leader_trait_spark_of_genius"
-				}
-				research_leader = {
-					area = physics
-					has_trait = "leader_trait_maniacal"
-				}
+				has_trait_in_council = { TRAIT = leader_trait_expertise_particles }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+				has_trait_in_council = { TRAIT = leader_trait_spark_of_genius }
+				has_trait_in_council = { TRAIT = leader_trait_maniacal }
 			}		
 		}
 		modifier = {
@@ -36,10 +24,7 @@ tech_hyperlane_sbs = {
 		}
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_particles }
 		}
 		modifier = {
 			factor = 4
@@ -48,7 +33,7 @@ tech_hyperlane_sbs = {
 	}
 	
 	prereqfor_desc = {
-		#hide_prereq_for_desc = component
+		# hide_prereq_for_desc = component
 		custom = {
 			title = "TECH_UNLOCK_HYPERLANE_SBS_TITLE"
 			desc = "TECH_UNLOCK_HYPERLANE_SBS_DESC"
@@ -56,13 +41,10 @@ tech_hyperlane_sbs = {
 	}
 	
 	ai_weight = {
-		factor = 4 #FTL techs are good
+		factor = 4 # FTL techs are good
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_particles }
 		}
 	}
 }

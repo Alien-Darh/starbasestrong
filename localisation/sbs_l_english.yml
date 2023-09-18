@@ -192,15 +192,15 @@
  sm_aura_air_force:0 "Fortress aura"
  sm_aura_air_force_desc:0 "A sophisticated aura will help the star bases to defend against hostile empires and others."
 
+ sm_aux_module:0 "Auxiliary platform"
+ sm_aux_module_desc:0 "Advanced support platforms for Star Bases that perform rapid fleet construction."
+
  sm_aux_module_starhold:0 "Support module"
  sm_aux_module_starhold_desc:0 "Logistic support station is strategically placed at the edges of our borders with some tactical advantages."
- 
+
  sm_module_protection_link:0 "Protection module"
  sm_module_protection_link_desc:0 "A station that is able to repel and delay some pirate attacks in the system before being captured."
- 
- sm_module_protection_link:0 "Modulo protección"
- sm_module_protection_link_desc:0 "Una estación que es capaz de repeler y retrasar algunos ataques de piratas en el sistema antes de ser capturada."
- 
+
  sm_gun_battery_upgrade:0 "XL battery"
  sm_gun_battery_upgrade_desc:0 "Add two XL weapons spaces to the star base."
 
@@ -242,7 +242,7 @@
 
  sm_system_fast:0 "Station support"
  sm_system_fast_desc:0 "Building that generates an extreme gravitational field in the system. The star bases will be more protected to the environmental variables of complex galactic systems such as neutrons, pulsar stars, black holes or others."
- 
+
  sm_orbital_ecology:0 "Ecological station"
  sm_orbital_ecology_desc:0 "Environmental planning building and orbital ecological adaptation that helps in the improvement of the adequate use of planetary surfaces for the implementation of population and crops."
 
@@ -305,18 +305,18 @@
  mod_stations_exotic_gases_produces_mult:0 "Recolector de gas"
  mod_stations_rare_crystals_produces_mult:0 "Recolector de cristal"
 
-################  E.M.P. ################
+################ E.M.P. ################
 
  sm_emp_sbs:0 "E.M.P."
  sm_emp_sbs_desc:0 "Electromagnetic pulse of the star base used as the last defensive line against overwhelming hostile fleets."
 
  sbsemp.1_title:0 "Electromagnetic pulse"
- sbsemp.1_desc:0 "Overwhelming hostile fleets have been detected entering the system §Y[event_target:sbsemp_emp.GetName]§!... electromagnetic pulse on standby.\n\nOption 1st Maximum Pulse; will leave the base with no defenses or friendly or enemy ships in the system; §Hrecharge time 360d§!.\n\nOption 2nd Medium Pulse; Will affect friendly or enemy fleets between 75k and 175k leaving some possible minor or major hostile fleets attacking the base; §Hrecharge time 180d§!.\ n\nOption 3rd Low Pulse; warning only and will disable §HPelectromagnetic Pulse§! until another time."
+ sbsemp.1_desc:0 "Overwhelming hostile fleets have been detected entering the system §Y[sbsemp_emp.GetName]§!... electromagnetic pulse on standby.\n\nOption 1st Maximum Pulse; will leave the base with no defenses or friendly or enemy ships in the system; §Hrecharge time 360d§!.\n\nOption 2nd Medium Pulse; Will affect friendly or enemy fleets between 75k and 175k leaving some possible minor or major hostile fleets attacking the base; §Hrecharge time 180d§!.\n\nOption 3rd Low Pulse; warning only and will disable §HPelectromagnetic Pulse§! until another time."
 
  tech_emp_sbs:0 "Electromagnetic pulse"
  tech_emp_sbs_desc:0 "Electromagnetic pulse (E.M.P.) mounted on the stellar base used as the last defensive line against overwhelming hostile fleets in the system with devastating consequences."
 
-################     ################
+################   ################
 
  starbase_aura_warp:0 "Hyper Boost Aura"
  starbase_citadel_upgrade:0 "Improvement Citadel"
@@ -324,7 +324,7 @@
  CITADEL_STARBASE_SECTION:0 "High power combat section"
  CITADEL_STARBASE_UPGRADE_SECTION:0 "Improvement of the stellar base to stellar bunker"
  BATTERY_STARBASE_SECTION_UPGRADE:0 "Long -range weapon and high fire power"
- 
+
  stargate:0 "Stargate"
  stargate_DESC:0 "$gateway_final_DESC$"
  stargate_MEGASTRUCTURE_DETAILS:0 "$gateway_final_MEGASTRUCTURE_DETAILS$"
@@ -334,31 +334,31 @@
  STARBASE_AURA_FTL_INHIBITOR_II:0 "Advanced inhibitor"
  STARBASE_AURA_FTL_INHIBITOR_II_DESC:0 "Powerful threat inhibitor"
  STARBASE_AURA_FTL_INHIBITOR_DESC:0 "Inhibidor inicial contra amenazas"
- aura_starbase_ftl_inhibitor_II:0 "Offensive aura  - Counterattack Inhibitor."
+ aura_starbase_ftl_inhibitor_II:0 "Offensive aura - Counterattack Inhibitor."
 
  requires_max_m:0 "Starbase with module §YManagement§!"
  requires_max_u:0 "Starbase with module §YUnity§!"
  requires_max_s:0 "Starbase with module §YServices§!"
 
-  ################  BOOSTER ################
-  
-  REACTOR_BOOSTER_4:0 "Reactor impellers IV"
-  REACTOR_BOOSTER_4_DESC:0 "$REACTOR_BOOSTER_3_DESC$"
-  REACTOR_BOOSTER_5:0 "Reactor V-drives V"
-  REACTOR_BOOSTER_5_DESC:0 "$REACTOR_BOOSTER_3_DESC$"
+ ################ BOOSTER ################
 
-  tech_reactor_boosters_4:0 "Reactor impellers IV"
-  tech_reactor_boosters_4_desc:0 "$REACTOR_BOOSTER_3_DESC$"
-  tech_reactor_boosters_5:0 "Reactor V-drives V"
-  tech_reactor_boosters_5_desc:0 "$REACTOR_BOOSTER_3_DESC$"
+ REACTOR_BOOSTER_4:0 "Reactor impellers IV"
+ REACTOR_BOOSTER_4_DESC:0 "$REACTOR_BOOSTER_3_DESC$"
+ REACTOR_BOOSTER_5:0 "Reactor V-drives V"
+ REACTOR_BOOSTER_5_DESC:0 "$REACTOR_BOOSTER_3_DESC$"
 
-  ########## Sensor #########
+ tech_reactor_boosters_4:0 "Reactor impellers IV"
+ tech_reactor_boosters_4_desc:0 "$REACTOR_BOOSTER_3_DESC$"
+ tech_reactor_boosters_5:0 "Reactor V-drives V"
+ tech_reactor_boosters_5_desc:0 "$REACTOR_BOOSTER_3_DESC$"
 
-  SBS_EXPLORATION:0 "Lidar exploration"
-  SBS_EXPLORATION_DESC:0 "Lidar remote sensing involves transmitting light pulses and assessing the amount recovered. Target location and distance is obtained by multiplying time by the speed of light."
+ ########## Sensor #########
 
-  sensor.1.name:0 "Advances"
-  sensor.1.desc:0 "Following the imminent settlement of §H[Root.GetName]§! beyond the borders of §H[root.solar_system.GetName]§!... our scientists have managed to make all sorts of technological advances for future colonies on the territory."
+ SBS_EXPLORATION:0 "Lidar exploration"
+ SBS_EXPLORATION_DESC:0 "Lidar remote sensing involves transmitting light pulses and assessing the amount recovered. Target location and distance is obtained by multiplying time by the speed of light."
+
+ sensor.1.name:0 "Advances"
+ sensor.1.desc:0 "Following the imminent settlement of §H[Root.GetName]§! beyond the borders of §H[root.solar_system.GetName]§!... our scientists have managed to make all sorts of technological advances for future colonies on the territory."
 
  ########## Torpedo #########
 
@@ -372,7 +372,8 @@
 
  tech_hyperlane_sbs:0 "Quantum disruptor"
  tech_hyperlane_sbs_desc:0 "Powerful hyperlane disruption system that is capable of shutting off access to hostile empires controlled from the starbase."
- TECH_UNLOCK_HYPERLANE_SBS_TITLE:0 "§HAccess the megastructure:§! Quantum disruptor"
+
+TECH_UNLOCK_HYPERLANE_SBS_TITLE:0 "§HAccess the megastructure:§! Quantum disruptor"
  TECH_UNLOCK_HYPERLANE_SBS_DESC:0 "Powerful hyperlane disruption system that is capable of shutting off access to hostile empires controlled from the starbase."
 
  sm_hyperlane_sbs:0 "Gravitational controller"
@@ -410,35 +411,35 @@
  MESSAGE_REANIMATION_COMPLETE_TITLE:0 "Feedback starbase"
  MESSAGE_MERCENARY_COMPLETE_DESC:0 "The starbase will become stronger every year of resistance and some factions of the galaxy not aligned with the federation have been recruited and await us in the stellar base of §H[From.solar_system.GetName]§! to enter combat... More ships are already on their way."
 
-  mod_anti_fed:0 "0"
-  mod_anti_fed_01:0 "1"
-  mod_anti_fed_02:0 "2"
-  mod_anti_fed_03:0 "3"
-  mod_anti_fed_04:0 "4"
-  mod_anti_fed_05:0 "5"
-  mod_anti_fed_06:0 "6"
-  mod_anti_fed_07:0 "7"
-  mod_anti_fed_08:0 "8"
-  mod_anti_fed_09:0 "9"
-  mod_anti_fed_10:0 "10"
-  mod_anti_fed_11:0 "11"
-  mod_anti_fed_12:0 "12"
-  mod_anti_fed_13:0 "13"
-  mod_anti_fed_14:0 "14"
-  mod_anti_fed_15:0 "15"
-  mod_anti_fed_16:0 "16"
-  mod_anti_fed_17:0 "17"
-  mod_anti_fed_18:0 "18"
-  mod_anti_fed_19:0 "19"
-  mod_anti_fed_20:0 "20"
-  mod_anti_fed_21:0 "21"
-  mod_anti_fed_22:0 "22"
-  mod_anti_fed_23:0 "23"
-  mod_anti_fed_24:0 "24"
-  mod_anti_fed_25:0 "25"
+ mod_anti_fed:0 "0"
+ mod_anti_fed_01:0 "1"
+ mod_anti_fed_02:0 "2"
+ mod_anti_fed_03:0 "3"
+ mod_anti_fed_04:0 "4"
+ mod_anti_fed_05:0 "5"
+ mod_anti_fed_06:0 "6"
+ mod_anti_fed_07:0 "7"
+ mod_anti_fed_08:0 "8"
+ mod_anti_fed_09:0 "9"
+ mod_anti_fed_10:0 "10"
+ mod_anti_fed_11:0 "11"
+ mod_anti_fed_12:0 "12"
+ mod_anti_fed_13:0 "13"
+ mod_anti_fed_14:0 "14"
+ mod_anti_fed_15:0 "15"
+ mod_anti_fed_16:0 "16"
+ mod_anti_fed_17:0 "17"
+ mod_anti_fed_18:0 "18"
+ mod_anti_fed_19:0 "19"
+ mod_anti_fed_20:0 "20"
+ mod_anti_fed_21:0 "21"
+ mod_anti_fed_22:0 "22"
+ mod_anti_fed_23:0 "23"
+ mod_anti_fed_24:0 "24"
+ mod_anti_fed_25:0 "25"
 
-  mod_anti_marau_01:0 "Marau"
-  mod_anti_marau_02:0 "Marau"
+ mod_anti_marau_01:0 "Marau"
+ mod_anti_marau_02:0 "Marau"
 
  ########## cannon Sarmat #########
 
@@ -448,9 +449,7 @@
 
  tech_sbs_cannon:0 "Sarmat Interstellar Cannon"
  tech_sbs_cannon_desc:0 "System-devastating cannon installed on our starbases, uniquely capable of devastating border systems of abusive empires."
-
  tech_sbs_cannon_title:0 "§HUnlock the cannon§!: devastating interstellar cannon"
- tech_sbs_cannon_desc:0 "System-devastating cannon installed on our starbases, uniquely capable of devastating border systems of abusive empires."
 
  sm_sbs_cannon:0 "Sarmat"
  sm_sbs_cannon_desc:0 "System-devastating cannon installed on our starbases, uniquely capable of devastating border systems of abusive empires."
@@ -461,10 +460,10 @@
  requires_modules_solar:0 "Requires 2 solar panel modules"
 
  sbscannon.2.name:0 "Weapon installation"
- sbscannon.2.desc:0 "An interstellar cannon has been installed near our base at §Y[event_target:sbs_cannon_system_0.GetName]§! and the launch countdown has begun...\n\nAdmiral, just the final order to activate once it's done reached its maximum charging power within a few months."
+ sbscannon.2.desc:0 "An interstellar cannon has been installed near our base at §Y[sbs_cannon_system_0.GetName]§! and the launch countdown has begun...\n\nAdmiral, just the final order to activate once it's done reached its maximum charging power within a few months."
 
  sbscannon.3.name:0 "Cannon ready and standby"
- sbscannon.3.desc:0 "The Interstellar cannon at the starbase at §Y[event_target:sbs_cannon_system_0.GetName]§! is ready to be launched at the §Y[event_target:sbs_cannon_system.GetName]§ system!..."
+ sbscannon.3.desc:0 "The Interstellar cannon at the starbase at §Y[sbs_cannon_system_0.GetName]§! is ready to be launched at the §Y[sbs_cannon_system.GetName]§ system!..."
 
  ########## extra system #########
 
@@ -472,6 +471,6 @@
  sm_starbase_extra_desc:0 "Star base building that adds an exclusive system for military purposes."
 
  starbase_extra.2.name:0 "Military system"
- starbase_extra.2.desc:0 "A new system has been found and linked near our main base at §H[Root.Solar_System.GetName]§! called §H[event_target:starbase_extra_base.GetName]§!.\n\nOur long-range communications building will maintain I activate the link with this new system of military characteristics.\n\nIf our building fails or is deactivated, it will not be possible to build it again and there will be no connection via hyperroute to the new system, leaving it isolated until other passage alternatives are found."
+ starbase_extra.2.desc:0 "A new system has been found and linked near our main base at §H[Root.Solar_System.GetName]§! called §H[starbase_extra_base.GetName]§!.\n\nOur long-range communications building will maintain I activate the link with this new system of military characteristics.\n\nIf our building fails or is deactivated, it will not be possible to build it again and there will be no connection via hyperroute to the new system, leaving it isolated until other passage alternatives are found."
 
  requires_no_existing_starbase_extra:0 "Cannot be built"

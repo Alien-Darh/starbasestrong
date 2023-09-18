@@ -1,0 +1,5 @@
+﻿l_spanish:
+ ########## solo español #########
+
+ TECH_UNLOCK_STARBASE_BUILDING:0 "§HAccede al edif. de la base:§! $NAME$"
+ TECH_UNLOCK_STARBASE_MODULE:0 "§HDesbloquea módulo de la base:§! $NAME$"

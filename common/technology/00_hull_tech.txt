@@ -27,10 +27,7 @@ tech_defense_platform_hull_1 = {
 		}
 		modifier = {
 			factor = value:tech_weight_likelihood
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
 		}
 		modifier = {
 			factor = 1.5
@@ -53,7 +50,6 @@ tech_defense_platform_hull_2 = {
 	is_rare = yes
 	weight = @tier3weight2
 
-
 	weight_modifier = {
 		factor = 0.50
 		modifier = {
@@ -70,10 +66,7 @@ tech_defense_platform_hull_2 = {
 		}
 		modifier = {
 			factor = value:tech_weight_likelihood
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
 		}
 		modifier = {
 			factor = 1.5
@@ -112,10 +105,7 @@ tech_defense_platform_hull_3 = {
 		}
 		modifier = {
 			factor = value:tech_weight_likelihood
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
 		}
 		modifier = {
 			factor = 1.5
@@ -149,10 +139,7 @@ tech_torpedoes_0 = {
 		}
 		modifier = {
 			factor = value:tech_weight_likelihood
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_propulsion"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_propulsion }
 		}
 	}
 
@@ -167,10 +154,7 @@ tech_torpedoes_0 = {
 		}
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_propulsion"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_propulsion }
 		}
 		modifier = {
 			factor = @favored_weapon_ai_tech_factor
@@ -203,10 +187,7 @@ tech_torpedoes_1 = {
 		}
 		modifier = {
 			factor = value:tech_weight_likelihood
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_propulsion"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_propulsion }
 		}
 	}
 
@@ -221,10 +202,7 @@ tech_torpedoes_1 = {
 		}
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_propulsion"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_propulsion }
 		}
 		modifier = {
 			factor = @favored_weapon_ai_tech_factor
@@ -252,20 +230,14 @@ tech_sensors_1 = {
 		}
 		modifier = {
 			factor = value:tech_weight_likelihood
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_computing"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_computing }
 		}
 	}
 
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_computing"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_computing }
 		}
 	}
 }
@@ -286,20 +258,14 @@ tech_emp_sbs = {
 		}
 		modifier = {
 			factor = value:tech_weight_likelihood
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_computing"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_computing }
 		}
 	}
 
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_computing"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_computing }
 		}
 	}
 }
@@ -319,20 +285,14 @@ tech_solar_panels = {
 	weight_modifier = {
 		modifier = {
 			factor = value:tech_weight_likelihood
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
 		}
 	}
 
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
 		}
 	}
 }
@@ -364,10 +324,7 @@ tech_sbs_cannon = {
 		}
 		modifier = {
 			factor = value:tech_weight_likelihood
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_propulsion"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_propulsion }
 		}
 	}
 
@@ -382,10 +339,7 @@ tech_sbs_cannon = {
 		}
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_propulsion"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_propulsion }
 		}
 		modifier = {
 			factor = @favored_weapon_ai_tech_factor

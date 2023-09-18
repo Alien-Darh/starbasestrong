@@ -6,8 +6,7 @@ country_event = {
 	hide_window = yes
 
 	trigger = {
-		exists = this
-		is_scope_type = country
+		is_scope_valid = yes
 		is_ai = no
 		has_technology = tech_hyperlane_sbs
 		any_owned_starbase = { has_starbase_building = hyperlane_sbs }
@@ -51,7 +50,7 @@ starbase_event = {
 	picture = GFX_evt_worm_box
 	show_sound = event_scanner
 	location = this
-	
+
 	is_triggered_only = yes
 
 	trigger = {
@@ -73,7 +72,7 @@ country_event = {
 			limit = {
 				any_system_megastructure = { is_megastructure_type = hyperlane_sbs }
 				any_country_neighbor_to_system = {
-					is_country_type = default
+					merg_is_default_empire = yes
 					has_communications = root
 					OR = {
 						is_at_war_with = root
@@ -90,7 +89,7 @@ country_event = {
 					has_hyperlane_to = prev
 					exists = space_owner
 					space_owner = {
-						is_country_type = default
+						merg_is_default_empire = yes
 						has_communications = root
 						OR = {
 							is_hostile_to = root
@@ -270,7 +269,7 @@ country_event = {
 	picture = GFX_evt_worm_box
 	show_sound = event_scanner
 	location = this
-	
+
 	is_triggered_only = yes
 
 	trigger = {

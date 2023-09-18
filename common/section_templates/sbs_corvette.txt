@@ -96,7 +96,6 @@ ship_section_template = {
 	}
 }
 
-
 ship_section_template = {
 	key = "CORVETTE_MID_TPDA_AUX"
 	ship_size = corvette

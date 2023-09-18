@@ -72,7 +72,7 @@ starbase_outpost = {
 	can_disable = yes
 	flip_control_on_disable = yes
 
-	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+	enable_default_design = yes	# if yes, countries will have an auto-generated design at start
 	prerequisites = { "tech_starbase_1" }
 	class = shipclass_starbase
 
@@ -96,7 +96,7 @@ starbase_starport = {
 		starbase_module_capacity_add = 2
 		starbase_building_capacity_add = 1
 		starbase_defense_platform_capacity_add = 4
-		#trade system
+		# trade system
 		starbase_trade_collection_range_add = 1
 		starbase_trade_protection_range_add = 1
 		starbase_trade_protection_add = 8
@@ -136,7 +136,7 @@ starbase_starport = {
 	can_disable = yes
 	flip_control_on_disable = yes
 
-	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+	enable_default_design = yes	# if yes, countries will have an auto-generated design at start
 	prerequisites = { "tech_starbase_2" }
 	class = shipclass_starbase
 
@@ -169,7 +169,7 @@ starbase_starhold = {
 		starbase_module_capacity_add = 4
 		starbase_building_capacity_add = 2
 		starbase_defense_platform_capacity_add = 6
-		#trade system
+		# trade system
 		starbase_trade_collection_range_add = 1
 		starbase_trade_protection_range_add = 1
 		starbase_trade_protection_add = 16
@@ -211,7 +211,7 @@ starbase_starhold = {
 	can_disable = yes
 	flip_control_on_disable = yes
 
-	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+	enable_default_design = yes	# if yes, countries will have an auto-generated design at start
 	prerequisites = { "tech_starbase_3" }
 	class = shipclass_starbase
 
@@ -243,7 +243,7 @@ starbase_starfortress = {
 		starbase_module_capacity_add = 5
 		starbase_building_capacity_add = 5
 		starbase_defense_platform_capacity_add = 10
-		#trade system
+		# trade system
 		starbase_trade_collection_range_add = 1
 		starbase_trade_protection_range_add = 1
 		starbase_trade_protection_add = 24
@@ -287,7 +287,7 @@ starbase_starfortress = {
 	can_disable = yes
 	flip_control_on_disable = yes
 
-	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+	enable_default_design = yes	# if yes, countries will have an auto-generated design at start
 	prerequisites = { "tech_starbase_4" }
 	class = shipclass_starbase
 
@@ -319,7 +319,7 @@ starbase_citadel = {
 		starbase_module_capacity_add = 6
 		starbase_building_capacity_add = 8
 		starbase_defense_platform_capacity_add = 12
-		#trade system
+		# trade system
 		starbase_trade_collection_range_add = 1
 		starbase_trade_protection_range_add = 1
 		starbase_trade_protection_add = 32
@@ -363,8 +363,8 @@ starbase_citadel = {
 	can_disable = yes
 	flip_control_on_disable = yes
 
-	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
-	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
+	enable_default_design = yes	# if yes, countries will have an auto-generated design at start
+	enable_3dview_in_ship_browser = yes # if yes, ship design will have a 3d view in the ship browser
 	prerequisites = { "tech_starbase_5" }
 	class = shipclass_starbase
 
@@ -427,7 +427,7 @@ starbase_swarm = {
 	is_listed = no
 	can_disable = no
 
-	enable_default_design = no	#if yes, countries will have an auto-generated design at start
+	enable_default_design = no	# if yes, countries will have an auto-generated design at start
 	class = shipclass_starbase
 
 	required_component_set = "sensor_components"
@@ -476,7 +476,7 @@ starbase_ai = {
 	is_listed = no
 	can_disable = no
 
-	enable_default_design = no	#if yes, countries will have an auto-generated design at start
+	enable_default_design = no	# if yes, countries will have an auto-generated design at start
 	class = shipclass_starbase
 
 	required_component_set = "sensor_components"
@@ -526,7 +526,7 @@ starbase_exd_0 = {
 	is_listed = no
 	can_disable = no
 
-	enable_default_design = no	#if yes, countries will have an auto-generated design at start
+	enable_default_design = no	# if yes, countries will have an auto-generated design at start
 	class = shipclass_starbase
 
 	required_component_set = "sensor_components"
@@ -578,7 +578,7 @@ starbase_exd = {
 	is_listed = no
 	can_disable = no
 
-	enable_default_design = no	#if yes, countries will have an auto-generated design at start
+	enable_default_design = no	# if yes, countries will have an auto-generated design at start
 	class = shipclass_starbase
 
 	required_component_set = "sensor_components"
@@ -628,7 +628,7 @@ starbase_marauder = {
 	is_listed = no
 	can_disable = no
 
-	enable_default_design = no	#if yes, countries will have an auto-generated design at start
+	enable_default_design = no	# if yes, countries will have an auto-generated design at start
 	class = shipclass_starbase
 
 	required_component_set = "power_core"
@@ -678,7 +678,7 @@ starbase_gatebuilders = {
 	is_listed = no
 	can_disable = no
 
-	enable_default_design = no	#if yes, countries will have an auto-generated design at start
+	enable_default_design = no	# if yes, countries will have an auto-generated design at start
 	class = shipclass_starbase
 
 	required_component_set = "power_core"
@@ -698,7 +698,7 @@ starbase_gatebuilders = {
 starbase_fe_outpost = {
 	graphical_culture = { "fallen_empire_01" "fallen_empire_02" "fallen_empire_03" "fallen_empire_04" }
 
-	enable_default_design = no	#if yes, countries will have an auto-generated design at start
+	enable_default_design = no	# if yes, countries will have an auto-generated design at start
 	class = shipclass_starbase
 
 	max_speed = 0.0
@@ -775,7 +775,6 @@ starbase_fe_outpost = {
 	icon = ship_size_military_station
 }
 
-
 ##################
 # Defensive Platform
 ##################
@@ -804,7 +803,7 @@ ion_cannon = {
 	base_buildtime = @battleship_build_time
 	auto_upgrade = no
 
-	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+	enable_default_design = yes	# if yes, countries will have an auto-generated design at start
 	prerequisites = { "tech_titans" }
 	class = shipclass_military_station
 	ship_class_icon_frame = 26

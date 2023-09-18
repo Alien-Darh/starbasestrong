@@ -44,7 +44,7 @@
 @titan_power_6 = 4200
 
 # Unlike normal scaling, the base of these is 3.5×
-# the previous ship class instead of 2×.
+# The previous ship class instead of 2×.
 @juggernaut_power_1 = 3850
 @juggernaut_power_2 = 5000
 @juggernaut_power_3 = 6500
@@ -115,7 +115,7 @@
 @titan_cost_6 = 592
 
 # Unlike normal scaling, the base of these is 3.5×
-# the previous ship class instead of 2×.
+# The previous ship class instead of 2×.
 @juggernaut_cost_1 = 560
 @juggernaut_cost_2 = 730
 @juggernaut_cost_3 = 950

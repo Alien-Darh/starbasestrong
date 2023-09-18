@@ -12,7 +12,7 @@ sbs_cannon = {
 	construction_blocks_and_blocked_by = self_type
 
 	potential = {
-		has_technology = tech_sensors_2 #has_technology = tech_sbs_cannon
+		has_technology = tech_sensors_2 # has_technology = tech_sbs_cannon
 	}
 
 	possible = {

@@ -1,7 +1,7 @@
 @distance = 50
 @base_moon_distance = 10
 
-#starbase_extra
+# starbase_extra
 
 starbase_extra_system = {
 	class = "rl_standard_stars"

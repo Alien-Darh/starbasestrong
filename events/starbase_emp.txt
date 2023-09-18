@@ -7,20 +7,19 @@ country_event = {
 	picture = GFX_evt_pem_box
 	show_sound = event_space_battle
 	location = event_target:sbsemp_emp
-	
+
 	is_triggered_only = yes
 
 	trigger = {
-		exists = this
-		is_scope_type = country
+		is_scope_valid = yes
 		is_ai = no
 		has_technology = tech_emp_sbs
 		NOT = { has_country_flag = emp_sbs_target }
-		any_owned_starbase = { 
+		any_owned_starbase = {
 			has_starbase_building = emp_sbs
 			solar_system = {
 				any_fleet_in_system = {
-					is_ship_class = shipclass_military
+					is_civilian = no # is_ship_class = shipclass_military
 					owner = { is_hostile = root.owner }
 					fleet_power >= 75000
 				}
@@ -34,7 +33,7 @@ country_event = {
 				has_starbase_building = emp_sbs
 				solar_system = {
 					any_fleet_in_system = {
-						is_ship_class = shipclass_military
+						is_civilian = no # is_ship_class = shipclass_military
 						owner = { is_hostile = root.owner }
 						fleet_power >= 75000
 					}
@@ -65,7 +64,7 @@ country_event = {
 				has_starbase_building = emp_sbs
 				solar_system = {
 					any_fleet_in_system = {
-						is_ship_class = shipclass_military
+						is_civilian = no # is_ship_class = shipclass_military
 						owner = { is_hostile = root.owner }
 						fleet_power >= 75000
 					}
@@ -104,14 +103,14 @@ country_event = {
 		}
 
 		hidden_effect = {
-			owner = { 
+			owner = {
 				country_event = { id = sbsemp.2 days = 60 }
 			}
 		}
 
 		if = {
 			limit = { NOT = { has_country_flag = emp_sbs_target } }
-			set_timed_country_flag = { flag = emp_sbs_target days = 360 }
+			set_timed_country_flag = { flag = emp_sbs_target years = 1 }
 		}
 	}
 
@@ -130,15 +129,14 @@ country_event = {
 			}
 		}
 		owner = {
-			add_resource = { influence = -100 }
-			add_resource = { energy = -2500 }
+			add_resource = { influence = -100 energy = -2500 }
 		}
 		every_owned_starbase = {
 			limit = {
 				has_starbase_building = emp_sbs
 				solar_system = {
 					any_fleet_in_system = {
-						is_ship_class = shipclass_military
+						is_civilian = no # is_ship_class = shipclass_military
 						owner = { is_hostile = root.owner }
 						fleet_power >= 75000
 						fleet_power <= 175000
@@ -148,10 +146,8 @@ country_event = {
 			solar_system = {
 				every_fleet_in_system = {
 					limit = {
-						any_controlled_ship = {
-							is_ship_class = shipclass_military
-							#owner = { is_hostile = root.owner }
-						}
+						is_civilian = no # is_ship_class = shipclass_military
+						# owner = { is_hostile = root.owner }
 						fleet_power >= 75000
 						fleet_power <= 175000
 					}
@@ -168,7 +164,7 @@ country_event = {
 						}
 					}
 				}
-				else = {
+				else_if = {
 					limit = {
 						any_fleet_in_system = {
 							is_ship_class = shipclass_military_station
@@ -191,7 +187,7 @@ country_event = {
 					}
 					last_created_ambient_object = {
 						set_location = {
-							target = PREV
+							target = prev
 							distance = 0
 							angle = random
 						}
@@ -207,13 +203,13 @@ country_event = {
 
 		if = {
 			limit = { NOT = { has_country_flag = emp_sbs_target } }
-			set_timed_country_flag = { flag = emp_sbs_target days = 180 }
+			set_timed_country_flag = { flag = emp_sbs_target months = 6 }
 		}
 	}
 
 	option = {
 		name = TOOPOOR
-		hidden_effect = { 
+		hidden_effect = {
 			clear_global_event_target = sbsemp_emp
 			random_system = {
 				limit = { has_star_flag = sbsemp_emp_star }
@@ -231,7 +227,7 @@ country_event = {
 
 	immediate = {
 		every_owned_starbase = {
-			limit = { 
+			limit = {
 				has_starbase_building = emp_sbs
 				solar_system = { has_star_flag = sbsemp_emp_star }
 			}

@@ -4,7 +4,8 @@
 # SCIENCE_STARBASE_SECTION
 # HANGAR_STARBASE_SECTION
 # ASSEMBLYYARD_STARBASE_SECTION
-#
+# Remember to update operation_sabotage_starbase if you add any new modules.
+# You will need to update the description, espionage_sabotage_starbase_module, and remove_sabotage_starbase_flag
 
 shipyard = {
 	icon = "GFX_starbase_shipyard"
@@ -13,7 +14,7 @@ shipyard = {
 	initial = yes
 
 	potential = {
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	resources = {
@@ -36,7 +37,7 @@ shipyard = {
 	}
 
 	ai_weight = {
-		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		weight = 100 # use same weight here - ai weighting is done in starbase_types.txt
 		modifier = {
 			factor = 100
 			owner = {
@@ -87,7 +88,7 @@ anchorage = {
 	construction_days = 180
 
 	potential = {
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	resources = {
@@ -110,7 +111,7 @@ anchorage = {
 	}
 
 	ai_weight = {
-		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		weight = 100 # use same weight here - ai weighting is done in starbase_types.txt
 		modifier = {
 			factor = 2
 			count_starbase_modules = {
@@ -127,7 +128,7 @@ gun_battery = {
 	construction_days = 180
 
 	potential = {
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	resources = {
@@ -149,9 +150,8 @@ gun_battery = {
 		starbase_defense_platform_capacity_add = 1
 	}
 
-
 	ai_weight = {
-		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		weight = 100 # use same weight here - ai weighting is done in starbase_types.txt
 		modifier = {
 			factor = 2
 			exists = owner
@@ -175,7 +175,7 @@ missile_battery = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_torpedoes_0 }
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	resources = {
@@ -197,10 +197,8 @@ missile_battery = {
 		starbase_defense_platform_capacity_add = 1
 	}
 
-
-
 	ai_weight = {
-		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		weight = 100 # use same weight here - ai weighting is done in starbase_types.txt
 		modifier = {
 			factor = 2
 			exists = owner
@@ -219,7 +217,7 @@ hangar_bay = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_strike_craft_1 }
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	resources = {
@@ -241,9 +239,8 @@ hangar_bay = {
 		starbase_defense_platform_capacity_add = 1
 	}
 
-
 	ai_weight = {
-		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		weight = 100 # use same weight here - ai weighting is done in starbase_types.txt
 		modifier = {
 			factor = 2
 			exists = owner
@@ -262,7 +259,7 @@ solar_panel_network = {
 
 	potential = {
 		exists = owner
-		is_orbital_ring = no
+		is_normal_starbase = yes
 		owner = {
 			is_gestalt = yes
 			has_technology = "tech_solar_panel_network"
@@ -312,9 +309,8 @@ solar_panel_network = {
 		}
 	}
 
-
 	ai_weight = {
-		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		weight = 100 # use same weight here - ai weighting is done in starbase_types.txt
 	}
 }
 
@@ -329,7 +325,7 @@ trading_hub = {
 		owner = {
 			is_gestalt = no
 		}
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	resources = {
@@ -346,9 +342,19 @@ trading_hub = {
 		starbase_trade_collection_range_add = 1
 	}
 
+	triggered_station_modifier = {
+		potential = {
+			hidden_trigger = { is_scope_valid = yes exists = owner }
+			owner = {
+				has_councilor = { COUNCILOR = "councilor_trading_posts" }
+			}
+		}
+		trade_value_add = 0.5
+		mult = value:councilor_level|TYPE|councilor_trading_posts|
+	}
 
 	ai_weight = {
-		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		weight = 100 # use same weight here - ai weighting is done in starbase_types.txt
 		modifier = {
 			factor = 5
 			NOT = { has_starbase_module = trading_hub }
@@ -369,7 +375,7 @@ detection_array = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_detection_array }
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	possible = {
@@ -396,7 +402,7 @@ detection_array = {
 	ai_build_at_chokepoint = yes
 	ai_build_outside_chokepoint = yes
 	ai_weight = {
-		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		weight = 100 # use same weight here - ai weighting is done in starbase_types.txt
 		modifier = {
 			add = 1000
 			owner = {
@@ -418,7 +424,7 @@ archaeo_rampart = {
 	construction_days = 180
 
 	potential = {
-		is_orbital_ring = no
+		is_normal_starbase = yes
 		owner = { has_technology = tech_archaeo_rampart }
 	}
 
@@ -448,7 +454,7 @@ archaeo_rampart = {
 	triggered_station_modifier = {
 		potential = {
 			owner = {
-				has_ascension_perk = ap_archaeoengineers 
+				has_ascension_perk = ap_archaeoengineers
 			}
 		}
 		ship_hull_mult = 0.15
@@ -465,7 +471,7 @@ archaeo_rampart = {
 	}
 
 	ai_weight = {
-		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		weight = 100 # use same weight here - ai weighting is done in starbase_types.txt
 	}
 
 	show_in_tech = "tech_archaeo_rampart"

@@ -39,7 +39,7 @@ ship_section_template = {
 	}
 }
 
-###############STERN#########################
+############### STERN#########################
 
 ship_section_template = {
 	key = "CRUISER_STERN_T2"

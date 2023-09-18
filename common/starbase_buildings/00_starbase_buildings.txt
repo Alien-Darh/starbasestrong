@@ -1,3 +1,62 @@
+# Remember to update operation_sabotage_starbase if you add any new buildings.
+# You will need to update the description, espionage_sabotage_starbase_building, remove_sabotage_starbase_flag, and has_nonshipyard_starbase_buildings
+
+recruitment_office = {
+	icon = "GFX_starbase_recruitment_office"
+	construction_days = 720
+
+	potential = {
+		exists = owner
+		owner = {
+			has_technology = "tech_xeno_linguistics"
+			is_homicidal = no
+		}
+	}
+
+	possible = {
+		owner = {
+			count_starbase_buildings = {
+				type = recruitment_office
+				count < 1
+				include_being_constructed = yes
+			}
+		}
+	}
+
+	abort_construction_trigger = {
+		owner = {
+			count_starbase_buildings = {
+				type = recruitment_office
+				count > 1
+				include_being_constructed = yes
+			}
+		}
+	}
+
+	country_modifier = {
+		external_leader_pool_add = 1
+		species_leader_exp_gain = 0.1
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 50
+		}
+		upkeep = {
+			energy = 2
+		}
+	}
+
+	show_in_tech = "tech_xeno_linguistics"
+
+	custom_tooltip = sm_recruitment_office_tooltip
+
+	ai_weight = {
+		weight = 100 # use same weight here - ai weighting is done in starbase_types.txt
+	}
+}
+
 crew_quarters = {
 	icon = "GFX_spaceport_module_crew_quarters"
 	construction_days = 180
@@ -20,10 +79,62 @@ crew_quarters = {
 	}
 
 	ai_weight = {
-		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		weight = 100 # use same weight here - ai weighting is done in starbase_types.txt
 	}
 }
 
+mining_bay = {
+	icon = "GFX_spaceport_mining_bay"
+	construction_days = 180
+
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_space_mining_1 }
+
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starport_or_ring"
+			OR = {
+				has_starbase_size >= starbase_starport
+				is_orbital_ring = yes
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_shattered_world"
+			solar_system = {
+				any_system_planet = {
+					OR = {
+						is_planet_class = pc_shattered
+						is_planet_class = pc_shattered_2
+					}
+				}
+			}
+		}
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 50
+		}
+
+		produces = {
+			minerals = 5
+		}
+
+		upkeep = {
+			energy = 1
+		}
+	}
+
+	show_in_tech = "tech_space_mining_1"
+
+	ai_weight = {
+		weight = 100 # use same weight here - ai weighting is done in starbase_types.txt
+	}
+}
 hydroponics_bay = {
 	icon = "GFX_spaceport_module_hydroponic_farms"
 	construction_days = 180
@@ -38,7 +149,7 @@ hydroponics_bay = {
 		OR = {
 			owner = { is_ai = no }
 			owner = { country_uses_food = yes }
-		}	
+		}
 		custom_tooltip = {
 			fail_text = "requires_colonized_planet"
 			solar_system = {
@@ -89,13 +200,11 @@ hydroponics_bay = {
 			energy = 5
 		}
 	}
-	
+
 	show_in_tech = "tech_hydroponics"
 
-
-
 	ai_weight = {
-		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		weight = 100 # use same weight here - ai weighting is done in starbase_types.txt
 	}
 }
 
@@ -141,7 +250,7 @@ resource_silo = {
 	}
 
 	ai_weight = {
-		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		weight = 100 # use same weight here - ai weighting is done in starbase_types.txt
 	}
 }
 
@@ -307,7 +416,7 @@ nebula_refinery = {
 	show_in_tech = "tech_space_mining_1"
 
 	ai_weight = {
-		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		weight = 100 # use same weight here - ai weighting is done in starbase_types.txt
 	}
 }
 
@@ -339,7 +448,7 @@ listening_post = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_sensors_2 }
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	station_modifier = {
@@ -351,8 +460,7 @@ listening_post = {
 
 	triggered_station_modifier = {
 		potential = {
-			hidden_trigger = { exists = this }
-			exists = owner
+			hidden_trigger = { is_scope_valid = yes exists = owner }
 			owner = {
 				has_technology = tech_unusual_senses
 			}
@@ -365,8 +473,7 @@ listening_post = {
 
 	triggered_station_modifier = {
 		potential = {
-			hidden_trigger = { exists = this }
-			exists = owner
+			hidden_trigger = { is_scope_valid = yes exists = owner }
 			owner = {
 				is_galactic_community_member = yes
 			}
@@ -384,8 +491,7 @@ listening_post = {
 
 	triggered_station_modifier = {
 		potential = {
-			hidden_trigger = { exists = this }
-			exists = owner
+			hidden_trigger = { is_scope_valid = yes exists = owner }
 			owner = {
 				has_civic = civic_hive_subspace_ephapse
 				has_first_contact_dlc = yes
@@ -396,7 +502,7 @@ listening_post = {
 	}
 
 	ai_weight = {
-		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		weight = 100 # use same weight here - ai weighting is done in starbase_types.txt
 	}
 
 	show_in_tech = "tech_sensors_2"
@@ -412,7 +518,7 @@ offworld_trading_company = {
 			has_technology = tech_space_trading
 			is_gestalt = no
 		}
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	possible = {
@@ -438,7 +544,7 @@ offworld_trading_company = {
 
 	triggered_station_modifier = {
 		potential = {
-			hidden_trigger = { exists = this }
+			hidden_trigger = { is_scope_valid = yes }
 			has_starbase_module = trading_hub
 		}
 		trade_value_add = 2
@@ -450,7 +556,7 @@ offworld_trading_company = {
 	show_in_tech = "tech_space_trading"
 
 	ai_weight = {
-		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		weight = 100 # use same weight here - ai weighting is done in starbase_types.txt
 		modifier = {
 			factor = 0
 			count_starbase_modules = {
@@ -469,7 +575,7 @@ fleet_academy = {
 		exists = owner
 		owner = { has_technology = tech_interstellar_fleet_traditions }
 
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	possible = {
@@ -500,7 +606,7 @@ fleet_academy = {
 	show_in_tech = "tech_interstellar_fleet_traditions"
 
 	ai_weight = {
-		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		weight = 100 # use same weight here - ai weighting is done in starbase_types.txt
 		modifier = {
 			factor = 0
 			count_starbase_modules = {
@@ -553,7 +659,7 @@ naval_logistics_office = {
 	show_in_tech = "tech_interstellar_fleet_traditions"
 
 	ai_weight = {
-		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		weight = 100 # use same weight here - ai weighting is done in starbase_types.txt
 		modifier = {
 			factor = 0
 			count_starbase_modules = {
@@ -571,7 +677,7 @@ titan_yards = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_titans }
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	possible = {
@@ -601,10 +707,8 @@ titan_yards = {
 
 	custom_tooltip = sm_titan_yards_desc_modifier
 
-
-
 	ai_weight = {
-		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		weight = 100 # use same weight here - ai weighting is done in starbase_types.txt
 		modifier = {
 			factor = 0
 			count_starbase_modules = {
@@ -637,7 +741,7 @@ colossus_yards = {
 				has_technology = tech_btc_1 # star-eater
 			}
 		}
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	possible = {
@@ -670,7 +774,7 @@ colossus_yards = {
 	show_in_tech = "tech_juggernaut"
 
 	ai_weight = {
-		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		weight = 100 # use same weight here - ai weighting is done in starbase_types.txt
 		modifier = {
 			factor = 0
 			count_starbase_modules = {
@@ -773,7 +877,7 @@ black_hole_observatory = {
 	show_in_tech = "tech_sensors_3"
 
 	ai_weight = {
-		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		weight = 100 # use same weight here - ai weighting is done in starbase_types.txt
 	}
 }
 
@@ -816,7 +920,7 @@ target_uplink_computer = {
 	}
 
 	ai_weight = {
-		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		weight = 100 # use same weight here - ai weighting is done in starbase_types.txt
 	}
 }
 
@@ -858,7 +962,7 @@ defense_grid = {
 	show_in_tech = "tech_synchronized_defences"
 
 	ai_weight = {
-		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		weight = 100 # use same weight here - ai weighting is done in starbase_types.txt
 	}
 }
 
@@ -870,9 +974,9 @@ deep_space_black_site = {
 		exists = owner
 		owner = {
 			has_technology = tech_living_state
-			NOT = { has_ethic = ethic_gestalt_consciousness }
+			is_gestalt = no
 		}
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	possible = {
@@ -914,7 +1018,7 @@ deep_space_black_site = {
 	show_in_tech = "tech_living_state"
 
 	ai_weight = {
-		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		weight = 100 # use same weight here - ai weighting is done in starbase_types.txt
 	}
 }
 
@@ -928,7 +1032,7 @@ curator_think_tank = {
 			is_homicidal = no
 			has_country_flag = curator_intro
 		}
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	possible = {
@@ -998,7 +1102,7 @@ curator_think_tank = {
 	}
 
 	ai_weight = {
-		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		weight = 100 # use same weight here - ai weighting is done in starbase_types.txt
 	}
 }
 
@@ -1012,7 +1116,7 @@ art_college = {
 			is_homicidal = no
 			has_country_flag = enclave_artist_encountered
 		}
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	possible = {
@@ -1027,7 +1131,7 @@ art_college = {
 				any_fleet_in_system = {
 					exists = owner
 					owner = {
-						is_same_value = event_target:artist_enclave_country
+						is_same_empire = event_target:artist_enclave_country
 					}
 				}
 			}
@@ -1039,7 +1143,7 @@ art_college = {
 				any_fleet_in_system = {
 					exists = owner
 					owner = {
-						is_same_value = event_target:artist_enclave_country
+						is_same_empire = event_target:artist_enclave_country
 						has_country_flag = art_college@root.owner
 					}
 				}
@@ -1078,7 +1182,7 @@ art_college = {
 	}
 
 	ai_weight = {
-		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		weight = 100 # use same weight here - ai weighting is done in starbase_types.txt
 	}
 }
 
@@ -1092,7 +1196,7 @@ salvager_workshop = {
 			is_homicidal = no
 			has_country_flag = salvager_enclave_diplomacy_engaged
 		}
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	possible = {
@@ -1174,7 +1278,7 @@ shroud_beacon = {
 			has_country_flag = shroudwalker_enclave_diplomacy_engaged
 			has_country_flag = shroudwalker_enclave_bought_shroud_beacon
 		}
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	possible = {
@@ -1251,7 +1355,7 @@ shroud_beacon = {
 
 	ai_weight = {
 		weight = 50
-		#Don't build nextdoor to the Shroudwalkers
+		# Don't build nextdoor to the Shroudwalkers
 		modifier = {
 			factor = 0
 			solar_system = {
@@ -1292,7 +1396,7 @@ cybrex_mining_hub = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_secrets_cybrex }
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	resources = {
@@ -1309,13 +1413,12 @@ cybrex_mining_hub = {
 
 	triggered_system_modifier = {
 		potential = {
-			owner = { 
+			owner = {
 				NOT = { has_ascension_perk = ap_archaeoengineers }
 			}
 		}
 		station_gatherers_produces_mult = 1.0
 	}
-
 
 	triggered_system_modifier = {
 		potential = {
@@ -1325,7 +1428,7 @@ cybrex_mining_hub = {
 	}
 
 	ai_weight = {
-		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		weight = 100 # use same weight here - ai weighting is done in starbase_types.txt
 	}
 
 	custom_tooltip = sm_cybrex_mining_hub_desc_modifier
@@ -1340,7 +1443,7 @@ irassian_naval_yards = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_secrets_irassian }
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	possible = {
@@ -1370,7 +1473,7 @@ irassian_naval_yards = {
 
 	triggered_station_modifier = {
 		potential = {
-			owner = { 
+			owner = {
 				NOT = { has_ascension_perk = ap_archaeoengineers }
 			}
 		}
@@ -1388,7 +1491,7 @@ irassian_naval_yards = {
 	show_in_tech = "tech_secrets_irassian"
 
 	ai_weight = {
-		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		weight = 100 # use same weight here - ai weighting is done in starbase_types.txt
 		modifier = {
 			factor = 0
 			count_starbase_modules = {
@@ -1406,7 +1509,7 @@ yuht_detection_array = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_secrets_yuht }
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	resources = {
@@ -1444,7 +1547,7 @@ yuht_detection_array = {
 	show_in_tech = "tech_secrets_yuht"
 
 	ai_weight = {
-		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		weight = 100 # use same weight here - ai weighting is done in starbase_types.txt
 	}
 }
 
@@ -1455,7 +1558,7 @@ zroni_storm_caster = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_secrets_zroni }
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	resources = {
@@ -1504,7 +1607,7 @@ archaeo_overcharger = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_archaeo_overcharger }
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	triggered_station_modifier = {
@@ -1555,6 +1658,43 @@ archaeo_overcharger = {
 	}
 }
 
+feeder = {
+	icon = "GFX_starbase_feeder"
+	construction_days = 180
+
+	potential = {
+		is_normal_starbase = yes
+		exists = owner
+		owner = { has_technology = tech_critter_feeder }
+	}
+
+	possible = {
+		exists = owner
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 50
+		}
+
+		produces = {
+			food = 5
+		}
+
+		upkeep = {
+			energy = 1
+		}
+	}
+
+	custom_tooltip = sm_feeder_tt
+
+	show_in_tech = "tech_critter_feeder"
+
+	ai_weight = {
+		weight = 100 # use same weight here - ai weighting is done in starbase_types.txt
+	}
+}
 
 #################
 # AURA BUILDINGS
@@ -1605,7 +1745,7 @@ communications_jammer = {
 	equipped_component = "STARBASE_AURA_COMMUNICATIONS_JAMMER"
 
 	ai_weight = {
-		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		weight = 100 # use same weight here - ai weighting is done in starbase_types.txt
 	}
 }
 
@@ -1654,7 +1794,7 @@ disruption_field = {
 	equipped_component = "STARBASE_AURA_DISRUPTION_FIELD"
 
 	ai_weight = {
-		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		weight = 100 # use same weight here - ai weighting is done in starbase_types.txt
 	}
 }
 
@@ -1668,7 +1808,7 @@ warp_fluctuator = {
 			has_technology = tech_interstellar_economics
 			is_gestalt = no
 		}
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	possible = {
@@ -1697,7 +1837,7 @@ warp_fluctuator = {
 	show_in_tech = "tech_interstellar_economics"
 
 	ai_weight = {
-		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		weight = 100 # use same weight here - ai weighting is done in starbase_types.txt
 	}
 }
 
@@ -1774,8 +1914,7 @@ transit_hub = {
 			NOT = {
 				solar_system = {
 					any_system_colony = {
-						exists = owner
-						owner = { is_country_type = default }
+						owner = { merg_is_default_empire = yes }
 					}
 				}
 			}
@@ -1834,7 +1973,7 @@ command_center = {
 	show_in_tech = "tech_command_matrix"
 
 	ai_weight = {
-		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		weight = 100 # use same weight here - ai weighting is done in starbase_types.txt
 	}
 }
 
@@ -1854,7 +1993,7 @@ trader_proxy_office = {
 				has_fleet_flag = trader_enclave_station
 			}
 		}
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	possible = {
@@ -1869,8 +2008,7 @@ trader_proxy_office = {
 			solar_system = {
 				OR = {
 					any_system_colony = {
-						exists = owner
-						owner = { is_country_type = default }
+						owner = { merg_is_default_empire = yes }
 					}
 					AND = {
 						has_star_flag = enclave
@@ -1899,9 +2037,7 @@ trader_proxy_office = {
 
 	triggered_station_modifier = {
 		potential = {
-			hidden_trigger = { exists = this }
-
-			exists = owner
+			hidden_trigger = { is_scope_valid = yes exists = owner }
 			owner = {
 				is_galactic_community_member = yes
 			}
@@ -1916,7 +2052,7 @@ trader_proxy_office = {
 	}
 
 	ai_weight = {
-		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		weight = 100 # use same weight here - ai weighting is done in starbase_types.txt
 		modifier = {
 			factor = 0
 			OR = {
@@ -1970,7 +2106,7 @@ dragon_hatchery = {
 	custom_tooltip = dragon_hatchery_tooltip
 
 	ai_weight = {
-		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		weight = 100 # use same weight here - ai weighting is done in starbase_types.txt
 		modifier = {
 			factor = 0
 			owner = {
@@ -2027,7 +2163,7 @@ ice_mining_station = {
 	}
 
 	ai_weight = {
-		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		weight = 100 # use same weight here - ai weighting is done in starbase_types.txt
 		modifier = {
 			factor = 0
 			owner = {
@@ -2087,7 +2223,7 @@ mercenary_garrison = {
 			is_homicidal = no
 			has_country_flag = mercenary_enclave_diplomacy_engaged
 		}
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	possible = {
@@ -2124,9 +2260,7 @@ mercenary_garrison = {
 
 	triggered_country_modifier = {
 		potential = {
-			hidden_trigger = { exists = this }
-
-			exists = owner
+			hidden_trigger = { is_scope_valid = yes exists = owner }
 			owner = {
 				is_galactic_community_member = yes
 			}
@@ -2168,7 +2302,7 @@ cordyceptic_reanimation_facility = {
 	possible = {
 		custom_tooltip = {
 			fail_text = "requires_tiyanki_spawning_system"
-			star.solar_system = { 
+			star.solar_system = {
 				OR = {
 					has_star_flag = tiyanki_graveyard_system
 					has_star_flag = tiyanki_spawn_system
@@ -2197,7 +2331,7 @@ cordyceptic_reanimation_facility = {
 	ai_build_at_chokepoint = yes
 	ai_build_outside_chokepoint = yes
 	ai_weight = {
-		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		weight = 100 # use same weight here - ai weighting is done in starbase_types.txt
 	}
 }
 
@@ -2208,7 +2342,7 @@ dark_matter_detector = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_dark_matter_detection }
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	possible = {
@@ -2229,7 +2363,7 @@ dark_matter_detector = {
 
 	triggered_station_modifier = {
 		potential = {
-			hidden_trigger = { exists = this }
+			hidden_trigger = { is_scope_valid = yes }
 			has_starbase_module = detection_array
 		}
 		ship_cloaking_detection_add = 4
@@ -2254,7 +2388,7 @@ dark_matter_detector = {
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
 	ai_weight = {
-		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		weight = 100 # use same weight here - ai weighting is done in starbase_types.txt
 		modifier = {
 			factor = 0
 			count_starbase_modules = {
@@ -2285,7 +2419,7 @@ dark_matter_listening_post = {
 	potential = {
 		exists = owner
 		owner = { is_fallen_empire = yes }
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	possible = {
@@ -2304,8 +2438,7 @@ dark_matter_listening_post = {
 
 	triggered_station_modifier = {
 		potential = {
-			hidden_trigger = { exists = this }
-			exists = owner
+			hidden_trigger = { is_scope_valid = yes exists = owner }
 			owner = {
 				is_galactic_community_member = yes
 			}
@@ -2322,6 +2455,6 @@ dark_matter_listening_post = {
 	}
 
 	ai_weight = {
-		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		weight = 100 # use same weight here - ai weighting is done in starbase_types.txt
 	}
 }

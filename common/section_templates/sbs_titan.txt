@@ -1,6 +1,6 @@
 @section_cost = 160
 
-#STERN#####
+# STERN#####
 
 ship_section_template = {
 	key = "TITAN_STERN_XP"

@@ -197,10 +197,10 @@
 
  sm_aux_module_starhold:0 "Modulo soporte"
  sm_aux_module_starhold_desc:0 "Estación de soporte logístico es colocada estratégicamente en los bordes de nuestras fronteras con algunas ventajas tácticas."
- 
+
  sm_module_protection_link:0 "Modulo protección"
  sm_module_protection_link_desc:0 "Una estación que es capaz de repeler y retrasar algunos ataques de piratas en el sistema antes de ser capturada."
- 
+
  sm_gun_battery_upgrade:0 "Batería XL"
  sm_gun_battery_upgrade_desc:0 "Añade dos espacios de armas XL a la base estelar."
 
@@ -242,7 +242,7 @@
 
  sm_system_fast:0 "Soporte estación"
  sm_system_fast_desc:0 "Edificio que genera un campo gravitacional extremo en el sistema. Las bases estelares estarán mas protegidas a las variables ambientales de sistemas galácticos complejos como estrellas Neutrones, Púlsares, Agujeros Negros u otros."
- 
+
  sm_orbital_ecology:0 "Estación ecológica"
  sm_orbital_ecology_desc:0 "Edificio de planificacion ambiental y adaptacion ecologica orbital que ayuda en la mejora del uso adecuado de superficies planetarias para la implementacion de población y cultivos."
 
@@ -305,18 +305,18 @@
  mod_stations_exotic_gases_produces_mult:0 "Recolector de gas"
  mod_stations_rare_crystals_produces_mult:0 "Recolector de cristal"
 
-################  E.M.P. ################
+################ E.M.P. ################
 
  sm_emp_sbs:0 "P.E.M."
  sm_emp_sbs_desc:0 "Pulso electromagnético de la base estelar usada como última linea defensiva ante flotas hostiles abrumadoras."
 
  sbsemp.1_title:0 "Pulso electromagnético"
- sbsemp.1_desc:0 "Se han detectado flotas hostiles abrumadoras entrando al sistema §Y[event_target:sbsemp_emp.GetName]§!... pulso electromagnético en espera.\n\nOpción 1° Pulso máximo; dejará la base sin defensas ni naves aliadas o enemigas en el sistema; §Htiempo de recarga 360d§!.\n\nOpción 2° Pulso medio; Afectará a flotas aliadas o enemigas entre 75k y 175k dejando algunas posibles flotas hostiles menores o mayores atacando la base; §Htiempo de recarga 180d§!.\n\nOpción 3° Pulso bajo; solo advertencia y dejará sin efecto el §HPulso Electromagnético§! hasta otro momento."
+ sbsemp.1_desc:0 "Se han detectado flotas hostiles abrumadoras entrando al sistema §Y[sbsemp_emp.GetName]§!... pulso electromagnético en espera.\n\nOpción 1° Pulso máximo; dejará la base sin defensas ni naves aliadas o enemigas en el sistema; §Htiempo de recarga 360d§!.\n\nOpción 2° Pulso medio; Afectará a flotas aliadas o enemigas entre 75k y 175k dejando algunas posibles flotas hostiles menores o mayores atacando la base; §Htiempo de recarga 180d§!.\n\nOpción 3° Pulso bajo; solo advertencia y dejará sin efecto el §HPulso Electromagnético§! hasta otro momento."
 
  tech_emp_sbs:0 "Pulso electromagnético"
  tech_emp_sbs_desc:0 "Pulso electromagnético (P.E.M.) montado en la base estelar usada como última linea defensiva ante flotas hostiles abrumadoras en el sistema con consecuencias devastadoras."
 
-################     ################
+################   ################
 
  starbase_aura_warp:0 "Aura HiperImpulso"
  starbase_citadel_upgrade:0 "Mejora Ciudadela"
@@ -324,7 +324,7 @@
  CITADEL_STARBASE_SECTION:0 "Sección de combate de alto poder"
  CITADEL_STARBASE_UPGRADE_SECTION:0 "Mejora de la base estelar a Bunker estelar"
  BATTERY_STARBASE_SECTION_UPGRADE:0 "Arma de largo alcance y alto poder de fuego"
- 
+
  stargate:0 "Puerta Estelar"
  stargate_DESC:0 "$gateway_final_DESC$"
  stargate_MEGASTRUCTURE_DETAILS:0 "$gateway_final_MEGASTRUCTURE_DETAILS$"
@@ -340,25 +340,25 @@
  requires_max_u:0 "Base estelar con módulo §YUnidad§!"
  requires_max_s:0 "Base estelar con módulo §YServicios§!"
 
-  ################  BOOSTER ################
-  
-  REACTOR_BOOSTER_4:0 "Impulsores de reactor IV"
-  REACTOR_BOOSTER_4_DESC:0 "$REACTOR_BOOSTER_3_DESC$"
-  REACTOR_BOOSTER_5:0 "Impulsores de reactor V"
-  REACTOR_BOOSTER_5_DESC:0 "$REACTOR_BOOSTER_3_DESC$"
+ ################ BOOSTER ################
 
-  tech_reactor_boosters_4:0 "Impulsores de reactor IV"
-  tech_reactor_boosters_4_desc:0 "$REACTOR_BOOSTER_3_DESC$"
-  tech_reactor_boosters_5:0 "Impulsores de reactor V"
-  tech_reactor_boosters_5_desc:0 "$REACTOR_BOOSTER_3_DESC$"
+ REACTOR_BOOSTER_4:0 "Impulsores de reactor IV"
+ REACTOR_BOOSTER_4_DESC:0 "$REACTOR_BOOSTER_3_DESC$"
+ REACTOR_BOOSTER_5:0 "Impulsores de reactor V"
+ REACTOR_BOOSTER_5_DESC:0 "$REACTOR_BOOSTER_3_DESC$"
 
-  ########## Sensor #########
+ tech_reactor_boosters_4:0 "Impulsores de reactor IV"
+ tech_reactor_boosters_4_desc:0 "$REACTOR_BOOSTER_3_DESC$"
+ tech_reactor_boosters_5:0 "Impulsores de reactor V"
+ tech_reactor_boosters_5_desc:0 "$REACTOR_BOOSTER_3_DESC$"
 
-  SBS_EXPLORATION:0 "Exploracion lidar"
-  SBS_EXPLORATION_DESC:0 "La detección remota mediante Lidar implica la transmisión de impulsos luminosos y la evaluación de la cantidad recuperada. La ubicación del objetivo y la distancia se obtiene multiplicando el tiempo por la velocidad de la luz."
+ ########## Sensor #########
 
-  sensor.1.name:0 "Avances"
-  sensor.1.desc:0 "Tras el inminente asentamiento de §H[Root.GetName]§! mas allá de las fronteras de §H[root.solar_system.GetName]§!... nuestros científicos han logrado realizar todo tipo de avances tecnológicos para las futuras colonias en el territorio."
+ SBS_EXPLORATION:0 "Exploracion lidar"
+ SBS_EXPLORATION_DESC:0 "La detección remota mediante Lidar implica la transmisión de impulsos luminosos y la evaluación de la cantidad recuperada. La ubicación del objetivo y la distancia se obtiene multiplicando el tiempo por la velocidad de la luz."
+
+ sensor.1.name:0 "Avances"
+ sensor.1.desc:0 "Tras el inminente asentamiento de §H[Root.GetName]§! mas allá de las fronteras de §H[root.solar_system.GetName]§!... nuestros científicos han logrado realizar todo tipo de avances tecnológicos para las futuras colonias en el territorio."
 
  ########## Torpedo #########
 
@@ -411,35 +411,35 @@
  MESSAGE_REANIMATION_COMPLETE_TITLE:0 "Base estelar retroalimentada"
  MESSAGE_MERCENARY_COMPLETE_DESC:0 "La base estelar se hará mas fuerte cada año de resistencia y se ha conseguido reclutar algunas facciones de la galaxia no alineadas con la federación y nos esperan en la base estelar de §H[From.solar_system.GetName]§! para entrar en combate... Mas naves ya vienen en camino."
 
-  mod_anti_fed:0 "0"
-  mod_anti_fed_01:0 "1"
-  mod_anti_fed_02:0 "2"
-  mod_anti_fed_03:0 "3"
-  mod_anti_fed_04:0 "4"
-  mod_anti_fed_05:0 "5"
-  mod_anti_fed_06:0 "6"
-  mod_anti_fed_07:0 "7"
-  mod_anti_fed_08:0 "8"
-  mod_anti_fed_09:0 "9"
-  mod_anti_fed_10:0 "10"
-  mod_anti_fed_11:0 "11"
-  mod_anti_fed_12:0 "12"
-  mod_anti_fed_13:0 "13"
-  mod_anti_fed_14:0 "14"
-  mod_anti_fed_15:0 "15"
-  mod_anti_fed_16:0 "16"
-  mod_anti_fed_17:0 "17"
-  mod_anti_fed_18:0 "18"
-  mod_anti_fed_19:0 "19"
-  mod_anti_fed_20:0 "20"
-  mod_anti_fed_21:0 "21"
-  mod_anti_fed_22:0 "22"
-  mod_anti_fed_23:0 "23"
-  mod_anti_fed_24:0 "24"
-  mod_anti_fed_25:0 "25"
+ mod_anti_fed:0 "0"
+ mod_anti_fed_01:0 "1"
+ mod_anti_fed_02:0 "2"
+ mod_anti_fed_03:0 "3"
+ mod_anti_fed_04:0 "4"
+ mod_anti_fed_05:0 "5"
+ mod_anti_fed_06:0 "6"
+ mod_anti_fed_07:0 "7"
+ mod_anti_fed_08:0 "8"
+ mod_anti_fed_09:0 "9"
+ mod_anti_fed_10:0 "10"
+ mod_anti_fed_11:0 "11"
+ mod_anti_fed_12:0 "12"
+ mod_anti_fed_13:0 "13"
+ mod_anti_fed_14:0 "14"
+ mod_anti_fed_15:0 "15"
+ mod_anti_fed_16:0 "16"
+ mod_anti_fed_17:0 "17"
+ mod_anti_fed_18:0 "18"
+ mod_anti_fed_19:0 "19"
+ mod_anti_fed_20:0 "20"
+ mod_anti_fed_21:0 "21"
+ mod_anti_fed_22:0 "22"
+ mod_anti_fed_23:0 "23"
+ mod_anti_fed_24:0 "24"
+ mod_anti_fed_25:0 "25"
 
-  mod_anti_marau_01:0 "Marau"
-  mod_anti_marau_02:0 "Marau"
+ mod_anti_marau_01:0 "Marau"
+ mod_anti_marau_02:0 "Marau"
 
  ########## cannon Sarmat #########
 
@@ -449,9 +449,7 @@
 
  tech_sbs_cannon:0 "Cañón Interestelar Sarmat"
  tech_sbs_cannon_desc:0 "Cañón devastador de sistemas instalado en nuestras bases estelares, único capas de devastar sistemas limítrofes de imperios abusivos."
-
  tech_sbs_cannon_title:0 "§HDesbloquea el cañon§!: Cañón interestelar devastador"
- tech_sbs_cannon_desc:0 "Cañón devastador de sistemas instalado en nuestras bases estelares, único capas de devastar sistemas limítrofes de imperios abusivos."
 
  sm_sbs_cannon:0 "Sarmat"
  sm_sbs_cannon_desc:0 "Cañón devastador de sistemas instalado en nuestras bases estelares, único capas de devastar sistemas limítrofes de imperios abusivos."
@@ -462,10 +460,10 @@
  requires_modules_solar:0 "Requiere 2 módulos de paneles solares"
 
  sbscannon.2.name:0 "Instalación cañón"
- sbscannon.2.desc:0 "Se ha instalado un cañón interestelar cerca de nuestra base en §Y[event_target:sbs_cannon_system_0.GetName]§! y ha comenzado la cuenta regresiva de lanzamiento...\n\nAlmirante; solo falta la orden final de activación una vez que haya alcanzado su potencia máxima de carga dentro de algunos meses."
+ sbscannon.2.desc:0 "Se ha instalado un cañón interestelar cerca de nuestra base en §Y[sbs_cannon_system_0.GetName]§! y ha comenzado la cuenta regresiva de lanzamiento...\n\nAlmirante; solo falta la orden final de activación una vez que haya alcanzado su potencia máxima de carga dentro de algunos meses."
 
  sbscannon.3.name:0 "Cañón listo y en espera"
- sbscannon.3.desc:0 "El cañón Interestelar en la base estelar en §Y[event_target:sbs_cannon_system_0.GetName]§! esta listo para ser lanzado al sistema §Y[event_target:sbs_cannon_system.GetName]§!..."
+ sbscannon.3.desc:0 "El cañón Interestelar en la base estelar en §Y[sbs_cannon_system_0.GetName]§! esta listo para ser lanzado al sistema §Y[sbs_cannon_system.GetName]§!..."
 
  ########## extra system #########
 
@@ -473,11 +471,6 @@
  sm_starbase_extra_desc:0 "Edificio de la base estelar que añade un sistema exclusivo para fines militares."
 
  starbase_extra.2.name:0 "Sistema militar"
- starbase_extra.2.desc:0 "Se ha encontrado y enlazado un nuevo sistema cerca de nuestra base principal en §H[Root.Solar_System.GetName]§! llamado §H[event_target:starbase_extra_base.GetName]§!.\n\nNuestro edificio de comunicaciones de largo alcance mantendrá activo el enlace con este nuevo sistema de características militares.\n\nSi nuestro edificio falla o es desactivado no se podrá construir de nuevo y no habrá conexión via hiperruta al nuevo sistema dejandolo aislado hasta encontrar otras alternativas de paso."
+ starbase_extra.2.desc:0 "Se ha encontrado y enlazado un nuevo sistema cerca de nuestra base principal en §H[Root.Solar_System.GetName]§! llamado §H[starbase_extra_base.GetName]§!.\n\nNuestro edificio de comunicaciones de largo alcance mantendrá activo el enlace con este nuevo sistema de características militares.\n\nSi nuestro edificio falla o es desactivado no se podrá construir de nuevo y no habrá conexión via hiperruta al nuevo sistema dejandolo aislado hasta encontrar otras alternativas de paso."
 
  requires_no_existing_starbase_extra:0 "No se puede volver a construir"
-
- ########## solo español #########
-
- TECH_UNLOCK_STARBASE_BUILDING:0 "§HAccede al edif. de la base:§! $NAME$"
- TECH_UNLOCK_STARBASE_MODULE:0 "§HDesbloquea módulo de la base:§! $NAME$"

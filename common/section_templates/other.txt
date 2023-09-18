@@ -197,7 +197,8 @@ ship_section_template = {
 	key = "MISSILE_MILITARY_STATION_SECTION"
 	ship_size = military_station_small
 	ship_size = military_station_medium
-	ai_tags = { explosive }
+
+	ai_tags = { energy_torpedoes } # ai_tags = { explosive }
 
 	fits_on_slot = "north"
 	fits_on_slot = "west"
@@ -207,10 +208,8 @@ ship_section_template = {
 
 	entity = "military_station_section_medium_entity"
 	icon = "GFX_ship_part_core_mid"
-	
-	prerequisites = { tech_torpedoes_1 }
 
-	ai_tags = { energy_torpedoes }
+	prerequisites = { tech_torpedoes_1 }
 
 	component_slot = {
 		name = "TORPEDO_01"
@@ -260,7 +259,6 @@ ship_section_template = {
 	entity = "military_station_section_heavy_entity"
 	icon = "GFX_ship_part_core_mid"
 
-
 	component_slot = {
 		name = "LARGE_GUN_01"
 		template = "large_turret"
@@ -298,7 +296,6 @@ ship_section_template = {
 
 	entity = "military_station_section_hangar_entity"
 	icon = "GFX_ship_part_core_mid"
-
 
 	component_slot = {
 		name = "STRIKE_CRAFT_01"
@@ -420,7 +417,6 @@ ship_section_template = {
 	entity = "military_station_section_medium_entity"
 	icon = "GFX_ship_part_core_mid"
 
-
 	component_slot = {
 		name = "MEDIUM_GUN_01"
 		template = "medium_turret"
@@ -467,7 +463,6 @@ ship_section_template = {
 	entity = "military_station_section_heavy_entity"
 	icon = "GFX_ship_part_core_mid"
 
-
 	component_slot = {
 		name = "LARGE_GUN_01"
 		template = "large_turret"
@@ -491,7 +486,7 @@ ship_section_template = {
 	key = "HANGAR_LARGE_MILITARY_STATION_SECTION"
 	ship_size = military_station_large
 
-	prerequisites = { tech_strike_craft_1 tech_strike_craft_2 tech_strike_craft_3 }
+	prerequisites = { tech_strike_craft_1 tech_strike_craft_2 tech_strike_craft_3 tech_strike_craft_skrand }
 
 	fits_on_slot = "north"
 	fits_on_slot = "west"

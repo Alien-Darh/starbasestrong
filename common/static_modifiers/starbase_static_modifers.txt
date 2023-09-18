@@ -160,7 +160,7 @@ mod_anti_fed_25 = {
 	shipclass_starbase_damage_mult = 2.50
 }
 
-#base, aux
+# base, aux
 mod_anti_marau_01 = {
 	ship_fire_rate_mult = -1
 	ship_weapon_damage = -1

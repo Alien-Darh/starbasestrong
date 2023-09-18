@@ -7,15 +7,14 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		exists = this
-		is_scope_type = country
+		is_scope_valid = yes
 		is_ai = no
 		has_technology = tech_starclean
 		any_owned_starbase = { has_starbase_building = star_clean }
 		NOT = {
 			owner = {
 				has_active_event = { cleanevents.1 }
-			}	
+			}
 		}
 	}
 
@@ -29,9 +28,9 @@ country_event = {
 				save_global_event_target_as = star_clean_loc
 				set_star_flag = star_clean_mega
 			}
-			owner = { 
+			owner = {
 				country_event = { id =  cleanevents.1 }
-			}	
+			}
 		}
 	}
 }
@@ -49,11 +48,11 @@ country_event = {
 	option = {
 		name = cleanevents.1.a
 		trigger = {
-			any_system = { 
-				has_star_flag = star_clean_mega 
+			any_system = {
+				has_star_flag = star_clean_mega
 				solar_system = {
 					exists = starbase
-					starbase = { has_starbase_building = star_clean }	
+					starbase = { has_starbase_building = star_clean }
 				}
 				any_system_megastructure = {
 					OR = {
@@ -66,7 +65,7 @@ country_event = {
 						is_megastructure_type = dyson_sphere_restored
 						is_megastructure_type = dyson_sphere_permanently_ruined
 						is_megastructure_type = dyson_sphere_ruined
-	
+
 						is_megastructure_type = think_tank_0
 						is_megastructure_type = think_tank_1
 						is_megastructure_type = think_tank_2
@@ -101,7 +100,7 @@ country_event = {
 						is_megastructure_type = strategic_coordination_center_restored
 						is_megastructure_type = strategic_coordination_center_restored
 						is_megastructure_type = strategic_coordination_center_ruined
-	
+
 						is_megastructure_type = mega_art_installation_0
 						is_megastructure_type = mega_art_installation_1
 						is_megastructure_type = mega_art_installation_2
@@ -110,7 +109,7 @@ country_event = {
 						is_megastructure_type = mega_art_installation_restored_2
 						is_megastructure_type = mega_art_installation_ruined
 						is_megastructure_type = mega_art_installation_permanently_ruined
-					
+
 						is_megastructure_type = interstellar_assembly_0
 						is_megastructure_type = interstellar_assembly_1
 						is_megastructure_type = interstellar_assembly_2
@@ -119,7 +118,7 @@ country_event = {
 						is_megastructure_type = interstellar_assembly_restored
 						is_megastructure_type = interstellar_assembly_ruined
 						is_megastructure_type = interstellar_assembly_permanently_ruined
-	
+
 						is_megastructure_type = mega_shipyard_0
 						is_megastructure_type = mega_shipyard_1
 						is_megastructure_type = mega_shipyard_2
@@ -155,7 +154,7 @@ country_event = {
 						is_megastructure_type = dyson_sphere_restored
 						is_megastructure_type = dyson_sphere_permanently_ruined
 						is_megastructure_type = dyson_sphere_ruined
-	
+
 						is_megastructure_type = think_tank_0
 						is_megastructure_type = think_tank_1
 						is_megastructure_type = think_tank_2
@@ -190,7 +189,7 @@ country_event = {
 						is_megastructure_type = strategic_coordination_center_restored
 						is_megastructure_type = strategic_coordination_center_restored
 						is_megastructure_type = strategic_coordination_center_ruined
-	
+
 						is_megastructure_type = mega_art_installation_0
 						is_megastructure_type = mega_art_installation_1
 						is_megastructure_type = mega_art_installation_2
@@ -199,7 +198,7 @@ country_event = {
 						is_megastructure_type = mega_art_installation_restored_2
 						is_megastructure_type = mega_art_installation_ruined
 						is_megastructure_type = mega_art_installation_permanently_ruined
-					
+
 						is_megastructure_type = interstellar_assembly_0
 						is_megastructure_type = interstellar_assembly_1
 						is_megastructure_type = interstellar_assembly_2
@@ -208,7 +207,7 @@ country_event = {
 						is_megastructure_type = interstellar_assembly_restored
 						is_megastructure_type = interstellar_assembly_ruined
 						is_megastructure_type = interstellar_assembly_permanently_ruined
-	
+
 						is_megastructure_type = mega_shipyard_0
 						is_megastructure_type = mega_shipyard_1
 						is_megastructure_type = mega_shipyard_2
@@ -279,8 +278,8 @@ country_event = {
 						exists = starbase
 						starbase = { has_starbase_building = star_clean }
 					}
-				}	
-			}	
+				}
+			}
 		}
 		every_system = {
 			limit = {
@@ -291,7 +290,7 @@ country_event = {
 			every_system_planet = {
 				limit = {
 					is_under_colonization = no
-					is_planet_class = pc_habitat
+					merg_is_habitat = yes
 				}
 				destroy_colony = yes
 				remove_planet = yes
@@ -336,18 +335,18 @@ country_event = {
 	option = {
 		name = cleanevents.1.c
 		trigger = {
-			any_system = { 
+			any_system = {
 				has_star_flag = star_clean_mega
 				solar_system = {
 					exists = starbase
-					starbase = { has_starbase_building = star_clean }	
+					starbase = { has_starbase_building = star_clean }
 				}
 				any_system_megastructure = {
 					OR = {
 						is_megastructure_type = gateway_0
 						is_megastructure_type = gateway_final
 						is_megastructure_type = gateway_restored
-					}	
+					}
 				}
 			}
 		}
@@ -368,7 +367,7 @@ country_event = {
 					use_3d_location = yes
 					duration = 20
 					scale = 5
-				}	
+				}
 			}
 		}
 		hidden_effect = {
@@ -404,18 +403,18 @@ country_event = {
 	option = {
 		name = cleanevents.1.d
 		trigger = {
-			any_system = { 
-				has_star_flag = star_clean_mega 
+			any_system = {
+				has_star_flag = star_clean_mega
 				solar_system = {
 					exists = starbase
-					starbase = { has_starbase_building = star_clean }	
+					starbase = { has_starbase_building = star_clean }
 				}
 				any_system_megastructure = {
 					OR = {
 						is_megastructure_type = hyper_relay
 						is_megastructure_type = hyper_relay_ruined
 						is_megastructure_type = hyper_relay_restored
-					}	
+					}
 				}
 			}
 		}
@@ -427,7 +426,7 @@ country_event = {
 						is_megastructure_type = hyper_relay
 						is_megastructure_type = hyper_relay_ruined
 						is_megastructure_type = hyper_relay_restored
-					}	
+					}
 				}
 				remove_megastructure = this
 				create_ambient_object = {
@@ -483,7 +482,7 @@ country_event = {
 			any_system = {
 				has_star_flag = star_clean_mega
 				any_system_planet = {
-					#has_planet_flag = has_megastructure
+					# has_planet_flag = has_megastructure
 					solar_system = {
 						exists = starbase
 						starbase = { has_starbase_building = star_clean }
@@ -573,7 +572,7 @@ country_event = {
 
 	option = {
 		name = cleanevents.1.f
-		trigger = { 
+		trigger = {
 			any_owned_starbase = { has_starbase_building = star_clean }
 			exists = event_target:star_clean_loc
 			any_system = { has_star_flag = star_clean_mega }
