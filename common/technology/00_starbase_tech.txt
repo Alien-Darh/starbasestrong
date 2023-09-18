@@ -50,6 +50,10 @@ tech_starbase_3 = {
 				has_trait = "leader_trait_expertise_voidcraft"
 			}
 		}
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_eager_explorers
+		}
 	}
 
 	prereqfor_desc = {
@@ -125,6 +129,10 @@ tech_starbase_4 = {
 				has_trait = "leader_trait_expertise_voidcraft"
 			}
 		}
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_eager_explorers
+		}
 	}
 
 	prereqfor_desc = {
@@ -199,6 +207,10 @@ tech_starbase_5 = {
 				area = engineering
 				has_trait = "leader_trait_expertise_voidcraft"
 			}
+		}
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_eager_explorers
 		}
 	}
 

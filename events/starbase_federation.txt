@@ -38,7 +38,7 @@ starbase_event = {
 					effect = {
 						set_owner = prev
 						while = {
-							count = 7
+							count = 3
 							create_ship = {
 								name = random
 								design = "NAME_Taciturn"
@@ -46,14 +46,14 @@ starbase_event = {
 							}
 						}
 						while = {
-							count = 14
+							count = 6
 							create_ship = {
 								name = random
 								design = "NAME_Reticent"
 								graphical_culture = "ai_01"
 							}
 						}
-						set_location = root.solar_system.star
+						set_location = root.solar_system
 					}
 					settings = {
 						uses_naval_capacity = no
@@ -338,40 +338,67 @@ country_event = {
 	}
 
 	immediate = {
-		if = {
-			limit = {
-				solar_system = {
-					NAND = {
-						exists = starbase
+		solar_system = {
+			random_system = {
+				limit = {
+					exists = starbase
+					NOT = {
 						starbase = { has_starbase_building = federation_sbs }
 					}
+					OR = {
+						has_modifier = mod_anti_fed_01
+						has_modifier = mod_anti_fed_02
+						has_modifier = mod_anti_fed_03
+						has_modifier = mod_anti_fed_04
+						has_modifier = mod_anti_fed_05
+						has_modifier = mod_anti_fed_06
+						has_modifier = mod_anti_fed_07
+						has_modifier = mod_anti_fed_08
+						has_modifier = mod_anti_fed_09
+						has_modifier = mod_anti_fed_10
+						has_modifier = mod_anti_fed_11
+						has_modifier = mod_anti_fed_12
+						has_modifier = mod_anti_fed_13
+						has_modifier = mod_anti_fed_14
+						has_modifier = mod_anti_fed_15
+						has_modifier = mod_anti_fed_16
+						has_modifier = mod_anti_fed_17
+						has_modifier = mod_anti_fed_18
+						has_modifier = mod_anti_fed_19
+						has_modifier = mod_anti_fed_20
+						has_modifier = mod_anti_fed_21
+						has_modifier = mod_anti_fed_22
+						has_modifier = mod_anti_fed_23
+						has_modifier = mod_anti_fed_24
+						has_modifier = mod_anti_fed_25
+					}
 				}
-			}		
-			remove_modifier = mod_anti_fed_01
-			remove_modifier = mod_anti_fed_02
-			remove_modifier = mod_anti_fed_03
-			remove_modifier = mod_anti_fed_04
-			remove_modifier = mod_anti_fed_05
-			remove_modifier = mod_anti_fed_06
-			remove_modifier = mod_anti_fed_07
-			remove_modifier = mod_anti_fed_08
-			remove_modifier = mod_anti_fed_09
-			remove_modifier = mod_anti_fed_10
-			remove_modifier = mod_anti_fed_11
-			remove_modifier = mod_anti_fed_12
-			remove_modifier = mod_anti_fed_13
-			remove_modifier = mod_anti_fed_14
-			remove_modifier = mod_anti_fed_15
-			remove_modifier = mod_anti_fed_16
-			remove_modifier = mod_anti_fed_17
-			remove_modifier = mod_anti_fed_18
-			remove_modifier = mod_anti_fed_19
-			remove_modifier = mod_anti_fed_20
-			remove_modifier = mod_anti_fed_21
-			remove_modifier = mod_anti_fed_22
-			remove_modifier = mod_anti_fed_23
-			remove_modifier = mod_anti_fed_24
-			remove_modifier = mod_anti_fed_25
+				remove_modifier = mod_anti_fed_01
+				remove_modifier = mod_anti_fed_02
+				remove_modifier = mod_anti_fed_03
+				remove_modifier = mod_anti_fed_04
+				remove_modifier = mod_anti_fed_05
+				remove_modifier = mod_anti_fed_06
+				remove_modifier = mod_anti_fed_07
+				remove_modifier = mod_anti_fed_08
+				remove_modifier = mod_anti_fed_09
+				remove_modifier = mod_anti_fed_10
+				remove_modifier = mod_anti_fed_11
+				remove_modifier = mod_anti_fed_12
+				remove_modifier = mod_anti_fed_13
+				remove_modifier = mod_anti_fed_14
+				remove_modifier = mod_anti_fed_15
+				remove_modifier = mod_anti_fed_16
+				remove_modifier = mod_anti_fed_17
+				remove_modifier = mod_anti_fed_18
+				remove_modifier = mod_anti_fed_19
+				remove_modifier = mod_anti_fed_20
+				remove_modifier = mod_anti_fed_21
+				remove_modifier = mod_anti_fed_22
+				remove_modifier = mod_anti_fed_23
+				remove_modifier = mod_anti_fed_24
+				remove_modifier = mod_anti_fed_25
+			}
 		}
 	}
 }

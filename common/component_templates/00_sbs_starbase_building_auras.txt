@@ -119,8 +119,8 @@ utility_component_template = {
 		}
 
 		modifier = {
-			damage_vs_country_type_fallen_empire_mult = 0.25
-			damage_vs_country_type_awakened_fallen_empire_mult = 0.25
+			damage_vs_country_type_fallen_empire_mult = 0.50
+			damage_vs_country_type_awakened_fallen_empire_mult = 0.50
 			damage_vs_country_type_gate_builders_mult = 0.25
 			damage_vs_country_type_awakened_marauders_mult = 0.25
 			damage_vs_country_type_gray_goo_mult = 0.25
@@ -140,19 +140,19 @@ utility_component_template = {
 }
 
 utility_component_template = {
-	key = "STARBASE_AURA_MARAUDERS"
+	key = "STARBASE_AURA_AIR_FORCE"
 	size = medium
-	icon = "GFX_spaceport_module_aura_marauders"
+	icon = "GFX_spaceport_module_aura_air_force"
 	icon_frame = 1
 	power = 0
 	class_restriction = { shipclass_starbase }
 
 	friendly_aura = {
-		name = "aura_starbase_marauders"
+		name = "aura_starbase_air_force"
 		system_wide = yes
 
 		stack_info = {
-			id = friendly_marauders_aura
+			id = friendly_air_force_aura
 			priority = 10
 		}
 
@@ -170,10 +170,10 @@ utility_component_template = {
 	}
 
 	hostile_aura = {
-		name = "aura_starbase_marauders"
+		name = "aura_starbase_air_force"
 		system_wide = yes
 		stack_info = {
-			id = hostile_marauders_aura
+			id = hostile_air_force_aura
 			priority = 10
 		}
 

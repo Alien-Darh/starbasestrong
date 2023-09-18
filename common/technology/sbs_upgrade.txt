@@ -1,16 +1,4 @@
 
-tech_solar_panels = {
-	area = engineering
-	tier = 0
-	category = { voidcraft }
-	#prerequisites = { "tech_starbase_2" }
-	start_tech = yes
-
-	potential = {
-		is_gestalt = no
-	}
-}
-
 tech_starbase_citadel_upgrade = {
 	cost = @tier5cost1
 	area = engineering
@@ -36,6 +24,10 @@ tech_starbase_citadel_upgrade = {
 				area = engineering
 				has_trait = "leader_trait_expertise_voidcraft"
 			}
+		}
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_eager_explorers
 		}
 	}
 

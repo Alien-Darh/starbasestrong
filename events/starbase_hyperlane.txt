@@ -103,6 +103,10 @@ country_event = {
 				save_global_event_target_as = hyperlane_target_system
 			}
 		}
+		set_country_flag = hyperlane_sbs
+	}
+
+	after = {
 		hidden_effect = {
 			remove_hyperlane = {
 				from = event_target:hyperlane_target_system
@@ -115,7 +119,6 @@ country_event = {
 				set_star_flag = hyperlane_target_system
 			}
 		}
-		set_country_flag = hyperlane_sbs
 	}
 }
 
@@ -179,6 +182,11 @@ country_event = {
 			}
 		}
 		country_event = { id = hyperlane_sbs.6 days = 15 }
+	}
+
+	after = {
+		clear_global_event_target = hyperlane_sbs_system
+		clear_global_event_target = hyperlane_target_system
 	}
 }
 
@@ -249,6 +257,7 @@ event = {
 			}
 		}
 		every_playable_country = {
+			limit = { is_ai = no }
 			country_event = { id = hyperlane_sbs.6 days = 15 }
 		}
 	}
@@ -270,5 +279,15 @@ country_event = {
 
 	option = {
 		name = EXCELLENT
+		hidden_effect = {
+			if = {
+				limit = { exists = event_target:hyperlane_sbs_system }
+				clear_global_event_target = hyperlane_sbs_system
+			}
+			if = {
+				limit = { exists = event_target:hyperlane_target_system }
+				clear_global_event_target = hyperlane_target_system
+			}
+		}
 	}
 }
