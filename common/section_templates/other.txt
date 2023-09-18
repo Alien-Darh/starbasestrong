@@ -26,6 +26,7 @@ ship_section_template = {
 	key = "LIGHT_MILITARY_STATION_SECTION"
 	ship_size = military_station_small
 	ship_size = military_station_medium
+	ai_tags = { gunship }
 
 	fits_on_slot = "north"
 	fits_on_slot = "west"
@@ -61,10 +62,11 @@ ship_section_template = {
 		locatorname = "small_gun_04"
 		is_side_slot = no
 	}
-	
+
 	large_utility_slots = 1
 	medium_utility_slots = 2
-	aux_utility_slots = 3
+	small_utility_slots = 1
+	aux_utility_slots = 4
 
 	resources = {
 		category = ship_sections
@@ -86,6 +88,7 @@ ship_section_template = {
 	key = "PD_MILITARY_STATION_SECTION"
 	ship_size = military_station_small
 	ship_size = military_station_medium
+	ai_tags = { screen }
 
 	fits_on_slot = "north"
 	fits_on_slot = "west"
@@ -124,7 +127,8 @@ ship_section_template = {
 
 	large_utility_slots = 1
 	medium_utility_slots = 2
-	aux_utility_slots = 3
+	small_utility_slots = 1
+	aux_utility_slots = 4
 
 	resources = {
 		category = ship_sections
@@ -142,6 +146,7 @@ ship_section_template = {
 	key = "MEDIUM_MILITARY_STATION_SECTION"
 	ship_size = military_station_small
 	ship_size = military_station_medium
+	ai_tags = { gunship }
 
 	fits_on_slot = "north"
 	fits_on_slot = "west"
@@ -166,7 +171,8 @@ ship_section_template = {
 
 	large_utility_slots = 1
 	medium_utility_slots = 2
-	aux_utility_slots = 3
+	small_utility_slots = 1
+	aux_utility_slots = 4
 
 	resources = {
 		category = ship_sections
@@ -191,6 +197,7 @@ ship_section_template = {
 	key = "MISSILE_MILITARY_STATION_SECTION"
 	ship_size = military_station_small
 	ship_size = military_station_medium
+	ai_tags = { explosive }
 
 	fits_on_slot = "north"
 	fits_on_slot = "west"
@@ -200,7 +207,10 @@ ship_section_template = {
 
 	entity = "military_station_section_medium_entity"
 	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_torpedoes_1 }
 
+	ai_tags = { energy_torpedoes }
 
 	component_slot = {
 		name = "TORPEDO_01"
@@ -216,7 +226,8 @@ ship_section_template = {
 
 	large_utility_slots = 1
 	medium_utility_slots = 2
-	aux_utility_slots = 3
+	small_utility_slots = 1
+	aux_utility_slots = 4
 
 	resources = {
 		category = ship_sections
@@ -238,6 +249,7 @@ ship_section_template = {
 	key = "HEAVY_MILITARY_STATION_SECTION"
 	ship_size = military_station_small
 	ship_size = military_station_medium
+	ai_tags = { artillery }
 
 	fits_on_slot = "north"
 	fits_on_slot = "west"
@@ -257,7 +269,8 @@ ship_section_template = {
 
 	large_utility_slots = 1
 	medium_utility_slots = 2
-	aux_utility_slots = 3
+	small_utility_slots = 1
+	aux_utility_slots = 4
 
 	resources = {
 		category = ship_sections
@@ -271,11 +284,11 @@ ship_section_template = {
 	}
 }
 
-
 ship_section_template = {
 	key = "HANGAR_MILITARY_STATION_SECTION"
 	ship_size = military_station_small
 	ship_size = military_station_medium
+	ai_tags = { carrier }
 
 	fits_on_slot = "north"
 	fits_on_slot = "west"
@@ -283,7 +296,7 @@ ship_section_template = {
 	fits_on_slot = "south"
 	should_draw_components = yes
 
-	entity = "military_station_section_heavy_entity"
+	entity = "military_station_section_hangar_entity"
 	icon = "GFX_ship_part_core_mid"
 
 
@@ -296,7 +309,8 @@ ship_section_template = {
 
 	large_utility_slots = 1
 	medium_utility_slots = 2
-	aux_utility_slots = 3
+	small_utility_slots = 1
+	aux_utility_slots = 4
 
 	ai_weight = {
 		factor = 1
@@ -387,10 +401,10 @@ ship_section_template = {
 		section_instance = 1
 	}
 
-	small_utility_slots = 2
+	small_utility_slots = 3
 	medium_utility_slots = 2
 	large_utility_slots = 2
-	aux_utility_slots = 3
+	aux_utility_slots = 5
 }
 
 ship_section_template = {
@@ -434,10 +448,10 @@ ship_section_template = {
 		section_instance = 1
 	}
 
-	small_utility_slots = 2
+	small_utility_slots = 3
 	medium_utility_slots = 2
 	large_utility_slots = 2
-	aux_utility_slots = 3
+	aux_utility_slots = 5
 }
 
 ship_section_template = {
@@ -467,10 +481,10 @@ ship_section_template = {
 		section_instance = 1
 	}
 
-	small_utility_slots = 2
+	small_utility_slots = 3
 	medium_utility_slots = 2
 	large_utility_slots = 2
-	aux_utility_slots = 3
+	aux_utility_slots = 5
 }
 
 ship_section_template = {
@@ -503,10 +517,10 @@ ship_section_template = {
 		section_instance = 1
 	}
 
-	small_utility_slots = 2
+	small_utility_slots = 3
 	medium_utility_slots = 2
 	large_utility_slots = 2
-	aux_utility_slots = 3
+	aux_utility_slots = 5
 }
 
 ###########################

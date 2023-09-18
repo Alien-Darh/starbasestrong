@@ -1,0 +1,28 @@
+category = {
+ name = "Effects"
+ soundeffects = {
+	sbs_event_siren
+	}
+}
+
+########## SOUND EFFECTS
+
+soundeffect = {
+	name = sbs_event_siren
+	sounds = {
+		sound = sbs_event_siren
+	}
+	volume = 0.7
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+
+########## SOUND ASSETS
+
+sound = {
+	name = "sbs_event_siren"
+	file = "sbs_event_siren.wav"
+	volume = 0.7
+}
+

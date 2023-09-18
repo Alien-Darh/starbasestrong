@@ -41,14 +41,18 @@ tech_starbase_3 = {
 		}
 		modifier = {
 			factor = 1.25
-			has_tradition = tr_supremacy_adopt
+			has_tradition = tr_unyielding_adopt
 		}
 		modifier = {
-			factor = 1.25
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = engineering
 				has_trait = "leader_trait_expertise_voidcraft"
 			}
+		}
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_eager_explorers
 		}
 	}
 
@@ -64,7 +68,7 @@ tech_starbase_3 = {
 	}
 
 	ai_weight = {
-		factor = 100 #higher factor due to starbase upgrade
+		factor = @ai_starbase_types_factor
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -116,14 +120,18 @@ tech_starbase_4 = {
 		}
 		modifier = {
 			factor = 1.25
-			has_tradition = tr_supremacy_adopt
+			has_tradition = tr_unyielding_adopt
 		}
 		modifier = {
-			factor = 1.25
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = engineering
 				has_trait = "leader_trait_expertise_voidcraft"
 			}
+		}
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_eager_explorers
 		}
 	}
 
@@ -139,7 +147,7 @@ tech_starbase_4 = {
 	}
 
 	ai_weight = {
-		factor = 100 #higher factor due to starbase upgrade
+		factor = @ai_starbase_types_factor
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -191,14 +199,18 @@ tech_starbase_5 = {
 		}
 		modifier = {
 			factor = 1.25
-			has_tradition = tr_supremacy_adopt
+			has_tradition = tr_unyielding_adopt
 		}
 		modifier = {
-			factor = 1.25
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = engineering
 				has_trait = "leader_trait_expertise_voidcraft"
 			}
+		}
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_eager_explorers
 		}
 	}
 
@@ -214,7 +226,7 @@ tech_starbase_5 = {
 	}
 
 	ai_weight = {
-		factor = 100 #higher factor due to starbase upgrade
+		factor = @ai_starbase_types_factor
 		modifier = {
 			factor = 1.25
 			research_leader = {

@@ -1,4 +1,34 @@
 @section_cost = 30
+@section_cost_2 = 90
+
+ship_section_template = {
+	key = "CORVETTE_MID_S1"
+	ship_size = corvette
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "corvette_S1_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = { artillery }
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	small_utility_slots = 3
+	medium_utility_slots = 0
+	large_utility_slots = 0
+	aux_utility_slots = 1
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost_2
+		}
+		upkeep = { energy = 0.5 }
+	}
+}
 
 ship_section_template = {
 	key = "CORVETTE_MID_TPDA"
@@ -7,6 +37,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "corvette_M1S1_entity"
 	icon = "GFX_ship_part_core_mid"
+	ai_tags = { screen }
 	
 	component_slot = {
 		name = "SMALL_GUN_01"
@@ -36,12 +67,80 @@ ship_section_template = {
 ######### ############# AUX ############# #########
 
 ship_section_template = {
-	key = "CORVETTE_MID_M1S1_AUX"
+	key = "CORVETTE_MID_S1_AUX"
+	ship_size = corvette
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "corvette_S1_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = { artillery }
+
+	prerequisites = { tech_starbase_3 }
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	small_utility_slots = 2
+	medium_utility_slots = 1
+	large_utility_slots = 0
+	aux_utility_slots = 5
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost_2
+		}
+	}
+}
+
+
+ship_section_template = {
+	key = "CORVETTE_MID_TPDA_AUX"
 	ship_size = corvette
 	fits_on_slot = mid
 	should_draw_components = yes
 	entity = "corvette_M1S1_entity"
 	icon = "GFX_ship_part_core_mid"
+	ai_tags = { screen }
+	
+	prerequisites = { tech_starbase_3 }
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+	
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	
+	small_utility_slots = 2
+	medium_utility_slots = 1
+	large_utility_slots = 0
+	aux_utility_slots = 5
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+}
+
+ship_section_template = {
+	key = "CORVETTE_MID_M1S1_AUX"
+	ship_size = frigate
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "corvette_M1S1_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = { explosive }
 	
 	prerequisites = { tech_starbase_3 }
 	
@@ -68,10 +167,10 @@ ship_section_template = {
 		locatorname = "medium_gun_01"
 	}
 	
-	small_utility_slots = 2
+	small_utility_slots = 1
 	medium_utility_slots = 1
-	large_utility_slots = 0
-	aux_utility_slots = 3
+	large_utility_slots = 1
+	aux_utility_slots = 5
 	
 	resources = {
 		category = ship_sections
@@ -88,6 +187,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "corvette_S3_entity"
 	icon = "GFX_ship_part_core_mid"
+	ai_tags = { gunship artillery brawler }
 	
 	prerequisites = { tech_starbase_3 }
 	
@@ -112,7 +212,7 @@ ship_section_template = {
 	small_utility_slots = 2
 	medium_utility_slots = 1
 	large_utility_slots = 0
-	aux_utility_slots = 3
+	aux_utility_slots = 5
 	
 	ai_weight = {
 		modifier = {
@@ -140,6 +240,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "corvette_S3_entity"
 	icon = "GFX_ship_part_core_mid"
+	ai_tags = { screen }
 	
 	prerequisites = { tech_starbase_3 }
 	
@@ -175,42 +276,7 @@ ship_section_template = {
 	small_utility_slots = 2
 	medium_utility_slots = 1
 	large_utility_slots = 0
-	aux_utility_slots = 3
-	
-	resources = {
-		category = ship_sections
-		cost = {
-			alloys = @section_cost
-		}
-	}
-}
-
-ship_section_template = {
-	key = "CORVETTE_MID_TPDA_AUX"
-	ship_size = corvette
-	fits_on_slot = mid
-	should_draw_components = yes
-	entity = "corvette_M1S1_entity"
-	icon = "GFX_ship_part_core_mid"
-	
-	prerequisites = { tech_starbase_3 }
-
-	component_slot = {
-		name = "SMALL_GUN_01"
-		template = "small_turret"
-		locatorname = "small_gun_01"
-	}
-	
-	component_slot = {
-		name = "MEDIUM_GUN_01"
-		template = "medium_turret"
-		locatorname = "medium_gun_01"
-	}
-	
-	small_utility_slots = 2
-	medium_utility_slots = 1
-	large_utility_slots = 0
-	aux_utility_slots = 3
+	aux_utility_slots = 5
 	
 	resources = {
 		category = ship_sections

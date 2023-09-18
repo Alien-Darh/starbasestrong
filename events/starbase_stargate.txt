@@ -5,16 +5,15 @@ country_event = {
 	id = whgenevents.5
 	is_triggered_only = yes
 	hide_window = yes
+
 	trigger = {
 		exists = this
 		is_scope_type = country
 		is_ai = no
-		OR = {
-			has_technology = tech_gateway_activation
-			has_technology = tech_gateway_construction
-		}
+		has_technology = tech_gateway_stargate
 		any_owned_starbase = { has_starbase_building = star_gate }
 	}
+
 	immediate = {
 		every_owned_starbase = {
 			limit = {
@@ -32,17 +31,15 @@ country_event = {
 					type = stargate
 					owner = space_owner
 					planet = star
-					orbit_distance = 34
-					orbit_angle = 120
+					orbit_distance = 50
+					orbit_angle = 150
 					init_effect = {
 						activate_gateway = this
-						# save_event_target_as = psi_nav_origin
 						prevprev = {
 							starbase_event = { id = whgenevents.6 }
 						}
 					}
 				}
-				# set_star_flag = stargate_system
 			}
 		}
 		if = {
@@ -119,14 +116,8 @@ event = {
 				}
 			}
 		}
-		# any_owned_starbase = {
-		# 	solar_system = { has_megastructure = stargate }
-		# 	NOT = { has_starbase_building = star_gate }
-		# }
 	}
 	immediate = {
-		# once should be sufficient (as this effect is expensive in point of every country every month every mega...)
-		# random_owned_megastructure = {
 		random_megastructure = {
 			limit = {
 				is_megastructure_type = stargate

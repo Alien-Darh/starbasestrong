@@ -25,7 +25,7 @@ entity = {
 		bloom_factor = 0.8
 	}
 
-	scale = 0.5
+	scale = 1
 }
 
 entity = {
@@ -59,10 +59,12 @@ entity = {
 		shader = "PdxMeshShip"
 	}
 	attach = { root = "stargate_gateway_portal_entity" }
+
+	scale = 5
 }
 
 entity = {
-	name = "tannhauser_gate_01_locator_entity"
+	name = "tannhauser_gate_02_locator_entity"
 
 	locator = {
 		name = "tannhauser_locator"
@@ -71,4 +73,6 @@ entity = {
 	}
 
 	attach = { "tannhauser_locator" = "tannhauser_gate_02_entity" }
+
+	scale = 5
 }

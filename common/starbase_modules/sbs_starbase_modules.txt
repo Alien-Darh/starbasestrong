@@ -1,3 +1,83 @@
+gatherers_dark_matter = {
+	icon = "GFX_starbase_gatherers_dark_matter"
+	construction_days = 360
+
+	resources = {
+		category = starbase_modules
+		cost = {
+			energy = 10
+		}
+		produces = {
+			sr_dark_matter = 0.25
+		}
+
+		upkeep = {
+			energy = 5
+		}
+	}
+
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_mine_dark_matter } 
+		is_orbital_ring = no
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starport"
+			has_starbase_size >= starbase_starport
+		}
+		custom_tooltip = {
+			fail_text = "requires_black_hole"
+			star = { is_star_class = sc_black_hole }
+		}
+	}
+
+	show_in_tech = "tech_mine_dark_matter"
+
+	ai_weight = { weight = 100 }
+}
+
+gatherers_living_metal = {
+	icon = "GFX_starbase_gatherers_living_metal"
+	construction_days = 360
+
+	resources = {
+		category = starbase_modules
+		cost = {
+			energy = 10
+		}
+		produces = {
+			sr_living_metal = 0.25
+		}
+
+		upkeep = {
+			energy = 5
+		}
+	}
+
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_mine_living_metal } 
+		is_orbital_ring = no
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starport"
+			has_starbase_size >= starbase_starport
+		}
+		custom_tooltip = {
+			fail_text = "requires_black_hole"
+			star = { is_star_class = sc_black_hole }
+		}
+	}
+
+	show_in_tech = "tech_mine_living_metal"
+
+	ai_weight = { weight = 100 }
+}
+
 unity_module = {
 	icon = "GFX_starbase_unity_module"
 	construction_days = 360
@@ -5,33 +85,41 @@ unity_module = {
 	resources = {
 		category = starbase_modules
 		cost = {
-			influence = 20
+			influence = 10
 		}
 		produces = {
-			unity = 0.50
+			unity = 5
 		}
 
 		upkeep = {
 			energy = 5
-			influence = 0.10
+			influence = 0.1
 		}
 	}
 
 	potential = {
 		exists = owner
-		owner = { has_technology = tech_planetary_unification } }
+		owner = { has_technology = tech_planetary_unification } 
+	}
 
 	possible = {
 		custom_tooltip = {
-			fail_text = "requires_starport"
-			has_starbase_size >= starbase_starport
+			fail_text = "requires_starport_or_ring"
+			OR = {
+				has_starbase_size >= starbase_starport
+				is_orbital_ring = yes
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_max_u"
+			NOT = {
+				has_starbase_module = unity_module
+			}
 		}
 	}
 
 	show_in_tech = "tech_planetary_unification"
 
-	ai_build_at_chokepoint = no
-	ai_build_outside_chokepoint = yes
 	ai_weight = { weight = 100 }
 }
 
@@ -43,6 +131,7 @@ manufacturing_module = {
 		category = starbase_modules
 		cost = {
 			minerals = 20
+			alloys = 20
 			influence = 20
 		}
 		produces = {
@@ -57,7 +146,8 @@ manufacturing_module = {
 
 	potential = {
 		exists = owner
-		owner = { has_technology = tech_space_trading } }
+		owner = { has_technology = tech_space_trading }
+	}
 
 	possible = {
 		custom_tooltip = {
@@ -76,8 +166,6 @@ manufacturing_module = {
 
 	show_in_tech = "tech_space_trading"
 
-	ai_build_at_chokepoint = no
-	ai_build_outside_chokepoint = yes
 	ai_weight = { weight = 100 }
 }
 
@@ -98,21 +186,24 @@ storage_food = {
 		produces = {
 			food = 5
 		}
-		upkeep = { energy = 5 }
+		upkeep = { 
+			energy = 5
+		}
 	}
 
 	possible = {
 		custom_tooltip = {
 			fail_text = "requires_starport"
-			has_starbase_size >= starbase_starport
+			OR = {
+				has_starbase_size >= starbase_starport
+				is_orbital_ring = yes
+			}
 		}
 		has_starbase_building = hydroponics_bay
 	}
 
 	show_in_tech = "tech_eco_simulation"
 
-	ai_build_at_chokepoint = no
-	ai_build_outside_chokepoint = yes
 	ai_weight = {
 		weight = 50
 	}
@@ -135,13 +226,22 @@ storage_minerals = {
 		produces = {
 			minerals = 5
 		}
-		upkeep = { energy = 5 }
+		upkeep = { 
+			energy = 5
+		}
+		upkeep = {
+			trigger = { owner = { is_at_war = yes } }
+			energy = -2
+		}
 	}
 
 	possible = {
 		custom_tooltip = {
 			fail_text = "requires_starport"
-			has_starbase_size >= starbase_starport
+			OR = {
+				has_starbase_size >= starbase_starport
+				is_orbital_ring = yes
+			}
 		}
 		custom_tooltip = {
 			fail_text = "requires_mine_minerals"
@@ -166,8 +266,6 @@ storage_minerals = {
 
 	show_in_tech = "tech_mining_1"
 
-	ai_build_at_chokepoint = no
-	ai_build_outside_chokepoint = yes
 	ai_weight = {
 		weight = 50
 	}
@@ -180,19 +278,20 @@ management_office = {
 	resources = {
 		category = starbase_modules
 		cost = {
-			minerals = 20
-			influence = 20
+			minor_artifacts = 5
+			influence = 50
 		}
 
 		upkeep = {
 			energy = 5
-			influence = 0.10
+			influence = 0.20
 		}
 	}
 
 	potential = {
 		exists = owner
-		owner = { has_technology = tech_adaptive_bureaucracy } }
+		owner = { has_technology = tech_adaptive_bureaucracy }
+	}
 
 	possible = {
 		custom_tooltip = {
@@ -207,12 +306,20 @@ management_office = {
 				}
 			}
 		}
+		custom_tooltip = {
+			fail_text = "requires_max_m"
+			NOT = {
+				has_starbase_module = management_office
+			}
+		}	
+		has_starbase_building = management_building	
 	}
 
-	country_modifier = { country_admin_cap_mult = 0.05 }
+	country_modifier = {
+		empire_size_colonies_mult = -0.05
+		empire_size_districts_mult = -0.05
+	}
 
-	ai_build_at_chokepoint = no
-	ai_build_outside_chokepoint = yes
 	ai_weight = { weight = 100 }
 	show_in_tech = "tech_adaptive_bureaucracy"
 }
@@ -233,17 +340,21 @@ social_services = {
 			energy = 10
 		}
 		produces = {
-			influence = 0.2
+			influence = 0.20
 		}
 		upkeep = {
-			energy = 10
+			energy = 5
+			alloys = 2
 		}
 	}
 
 	possible = {
 		custom_tooltip = {
-			fail_text = "requires_starport"
-			has_starbase_size >= starbase_starport
+			fail_text = "requires_starport_or_ring"
+			OR = {
+				has_starbase_size >= starbase_starport
+				is_orbital_ring = yes
+			}
 		}
 		custom_tooltip = {
 			fail_text = "requires_colonized_planet"
@@ -253,12 +364,16 @@ social_services = {
 				}
 			}
 		}
+		custom_tooltip = {
+			fail_text = "requires_max_s"
+			NOT = {
+				has_starbase_module = social_services
+			}
+		}
 	}
 
 	show_in_tech = "tech_effective_bureaucracy"
 
-	ai_build_at_chokepoint = no
-	ai_build_outside_chokepoint = yes
 	ai_weight = {
 		weight = 50
 	}
@@ -268,6 +383,7 @@ solar_panels = {
 	section = "REFINERY_STARBASE_SECTION"
 	icon = "GFX_solar_panel_network"
 	construction_days = 130
+	initial = yes
 
 	potential = {
 		exists = owner
@@ -277,10 +393,31 @@ solar_panels = {
 		}
 	}
 
+	possible = {
+		solar_system = {
+			custom_tooltip = {
+				fail_text = "requires_no_black_hole_or_dyson_sphere"
+				NOR = {
+					is_star_class = sc_black_hole
+					has_megastructure = dyson_sphere_3
+					has_megastructure = dyson_sphere_4
+					has_megastructure = dyson_sphere_5
+				}
+			}
+		}
+	}
+
 	resources = {
 		category = starbase_modules
 		cost = {
 			alloys = 25
+		}
+		upkeep = {
+			minerals = 5
+		}
+		upkeep = {
+			trigger = { owner = { is_at_war = yes } }
+			energy = -1
 		}
 
 		produces = {
@@ -288,7 +425,7 @@ solar_panels = {
 				exists = owner
 				owner = { has_technology = tech_power_plant_1 }
 			}
-			energy = 0.5
+			energy = 0.25
 		}
 
 		produces = {
@@ -316,25 +453,16 @@ solar_panels = {
 		}
 	}
 
-	possible = {
-		custom_tooltip = {
-			fail_text = "requires_starport"
-			has_starbase_size >= starbase_starport
-		}
-	}
-
 	show_in_tech = "tech_solar_panels"
 
-	ai_build_at_chokepoint = no
-	ai_build_outside_chokepoint = yes
 	ai_weight = {
-		weight = 50
+		weight = 100
 	}
 }
 
 gun_battery_upgrade = {
-	section = "BATTERY_STARBASE_SECTION_UPGRADE"
 	icon = "GFX_starbase_battery_upgrade"
+	section = "BATTERY_STARBASE_SECTION_UPGRADE"
 	construction_days = 180
 
 	potential = {
@@ -349,6 +477,7 @@ gun_battery_upgrade = {
 				has_technology = tech_mass_accelerator_2
 			}
 		}
+		is_orbital_ring = no
 	}
 
 	possible = {
@@ -377,8 +506,6 @@ gun_battery_upgrade = {
 		starbase_trade_protection_add = 5
 	}
 
-	ai_build_at_chokepoint = yes
-	ai_build_outside_chokepoint = no
 	show_in_tech = "tech_starbase_citadel_upgrade"
 
 	ai_weight = {

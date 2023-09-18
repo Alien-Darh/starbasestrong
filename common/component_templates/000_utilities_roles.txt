@@ -189,6 +189,9 @@ utility_component_template = {
 		starbase_starfortress
 		starbase_citadel
 		starbase_citadel_upgrade
+		orbital_ring_tier_1
+		orbital_ring_tier_2
+		orbital_ring_tier_3
 	}
 	component_set = "combat_computers"
 	ship_behavior = "platform"
@@ -218,6 +221,9 @@ utility_component_template = {
 		starbase_starfortress
 		starbase_citadel
 		starbase_citadel_upgrade
+		orbital_ring_tier_1
+		orbital_ring_tier_2
+		orbital_ring_tier_3
 	}
 	component_set = "combat_computers"
 	ship_behavior = "platform"
@@ -248,6 +254,9 @@ utility_component_template = {
 		starbase_starfortress
 		starbase_citadel
 		starbase_citadel_upgrade
+		orbital_ring_tier_1
+		orbital_ring_tier_2
+		orbital_ring_tier_3
 	}
 	component_set = "combat_computers"
 	ship_behavior = "platform"

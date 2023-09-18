@@ -27,7 +27,7 @@ tech_fractal_power = {
 			has_technology = tech_battleships
 		}
 		modifier = {
-			factor = 1.25
+			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = physics
 				has_trait = "leader_trait_expertise_particles"
@@ -36,7 +36,6 @@ tech_fractal_power = {
 	}
 
 	ai_weight = {
-		factor = 3 #important component
 		modifier = {
 			factor = 1.25
 			research_leader = {
