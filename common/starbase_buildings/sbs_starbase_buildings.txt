@@ -2871,6 +2871,12 @@ sbs_cannon = {
 					count >= 2
 				}
 			}
+			OR = {
+				count_starbase_modules = {
+					type = solar_panel_network
+					count >= 2
+				}
+			}
 		}
 		custom_tooltip = {
 			fail_text = "requires_starport"
