@@ -140,7 +140,9 @@
  cleanevents.1.c:0 "§Y$BYPASS_GATEWAY$§!"
  cleanevents.1.d:0 "§Y$hyper_relay$§!"
  cleanevents.1.e:0 "§Y$orbital_ring$§!"
- cleanevents.1.f:0 "§YRecargar nanobots§!"
+ cleanevents.1.f:0 "§Y$dyson_swarm_3$§!"
+ cleanevents.1.g:0 "§Y$orbital_arc_furnace_4$§!"
+ cleanevents.1.h:0 "§YRecargar nanobots§!"
 
  tech_sensors_1:0 "Sensores remotos"
  tech_sensors_1_desc:0 "Módulo de sensores controlados por inteligencia artificial avanzada, son capaces de detectar cambios de longitudes de onda y algunas alteraciones de energía no naturales. Su fácil posicionamiento lo hace imprescindible para la exploración, apoyo en defensa y reabastecimiento de naves espaciales."
@@ -179,6 +181,7 @@
  requires_modules:0 "Requiere los 3 módulos de combate básicos ó 3 bateria XL"
 
  requires_black_hole_neutron_star_pulsar:0 "§RRequiere un §Y$pc_pulsar$§! \n§RRequiere un §Y$pc_neutron_star$§! \n§RRequiere un §Y$pc_black_hole$§! \nen el sistema.§!"
+ requires_capital_planet:0 "Requiere capital planetaria"
 
  sm_archeological_center:0 "Centro Arqueológico"
  sm_archeological_center_desc:0 "Estudio Arqueológico de la base estelar"
@@ -456,10 +459,10 @@
  sm_sbs_cannon:0 "Sarmat"
  sm_sbs_cannon_desc:0 "Cañón devastador de sistemas instalado en nuestras bases estelares, único capas de devastar sistemas limítrofes de imperios abusivos."
 
- requires_no_existing_sbs_cannon:0 "Requiere recargar cañón 10 años aprox."
- requires_country_default:0 "Requiere limite menor o igual a neutral"
+ requires_no_existing_sbs_cannon:0 "Requiere recargar cañón 7 años aprox."
+ requires_country_default:0 "Requiere limite poder relativo mayor o igual a superior.\n      Requiere limite opinión menor o igual a neutral."
  requires_country_no_default:0 "Requiere limite imperial común"
- requires_modules_solar:0 "Requiere 2 módulos de paneles solares"
+ requires_modules_solar:0 "Requiere 4 módulos de paneles solares"
 
  sbscannon.2.name:0 "Instalación cañón"
  sbscannon.2.desc:0 "Se ha instalado un cañón interestelar cerca de nuestra base en §Y[event_target:sbs_cannon_system_0.GetName]§! y ha comenzado la cuenta regresiva de lanzamiento...\n\nAlmirante; solo falta la orden final de activación una vez que haya alcanzado su potencia máxima de carga dentro de algunos meses."
@@ -476,6 +479,9 @@
  starbase_extra.2.desc:0 "Se ha encontrado y enlazado un nuevo sistema cerca de nuestra base principal en §H[Root.Solar_System.GetName]§! llamado §H[event_target:starbase_extra_base.GetName]§!.\n\nNuestro edificio de comunicaciones de largo alcance mantendrá activo el enlace con este nuevo sistema de características militares.\n\nSi nuestro edificio falla o es desactivado no se podrá construir de nuevo y no habrá conexión via hiperruta al nuevo sistema dejandolo aislado hasta encontrar otras alternativas de paso."
 
  requires_no_existing_starbase_extra:0 "No se puede volver a construir"
+
+ cannon_sarmat:0 "Sarmat"
+ SCIENCE_CLOAKING_0:0 "$CLOAKING_1$"
 
  ########## solo español #########
 

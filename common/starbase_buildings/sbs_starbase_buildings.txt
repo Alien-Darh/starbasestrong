@@ -6,9 +6,7 @@ research_lav = {
 	potential = {
 		exists = owner
 		owner = {
-			has_technology = tech_physics_2
-			has_technology = tech_engineering_2
-			has_technology = tech_society_2
+			has_technology = tech_space_science_1
 		}
 	}
 
@@ -31,9 +29,9 @@ research_lav = {
 				exists = owner
 				owner = { has_technology = tech_space_science_1 }
 			}
-			physics_research = 0.5
-			society_research = 0.5
-			engineering_research = 0.5
+			physics_research = 1
+			society_research = 1
+			engineering_research = 1
 		}
 
 		produces = {
@@ -41,9 +39,9 @@ research_lav = {
 				exists = owner
 				owner = { has_technology = tech_space_science_2 }
 			}
-			physics_research = 0.5
-			society_research = 0.5
-			engineering_research = 0.5
+			physics_research = 2
+			society_research = 2
+			engineering_research = 2
 		}
 
 		produces = {
@@ -51,9 +49,9 @@ research_lav = {
 				exists = owner
 				owner = { has_technology = tech_space_science_3 }
 			}
-			physics_research = 0.5
-			society_research = 0.5
-			engineering_research = 0.5
+			physics_research = 3
+			society_research = 3
+			engineering_research = 3
 		}
 
 		produces = {
@@ -61,22 +59,24 @@ research_lav = {
 				exists = owner
 				owner = { has_technology = tech_space_science_4 }
 			}
-			physics_research = 0.5
-			society_research = 0.5
-			engineering_research = 0.5
+			physics_research = 4
+			society_research = 4
+			engineering_research = 4
 		}
 		produces = {
 			trigger = {
 				exists = owner
 				owner = { has_technology = tech_space_science_5 }
 			}
-			physics_research = 0.5
-			society_research = 0.5
-			engineering_research = 0.5
+			physics_research = 5
+			society_research = 5
+			engineering_research = 5
 		}
 
 		upkeep = { energy = 10 }
 	}
+
+	show_in_tech = "tech_space_science_1"
 
 	ai_weight = {
 		weight = 100
@@ -120,9 +120,7 @@ archeological_center = {
 	potential = {
 		exists = owner
 		owner = {
-			has_technology = tech_physics_2
-			has_technology = tech_engineering_2
-			has_technology = tech_society_2
+			has_technology = tech_space_science_4
 		}
 	}
 
@@ -159,6 +157,8 @@ archeological_center = {
 			minerals = 10
 		}
 	}
+
+	show_in_tech = "tech_space_science_4"
 
 	ai_weight = { weight = 100 }
 }
@@ -280,25 +280,25 @@ pulsar_observatory = {
 		produces = {
 			trigger = {
 				exists = owner
-				owner = { has_technology = tech_engineering_1 }
+				owner = { has_technology = tech_space_science_3 }
 			}
-			engineering_research = 2
+			engineering_research = 5
 		}
 
 		produces = {
 			trigger = {
 				exists = owner
-				owner = { has_technology = tech_engineering_2 }
+				owner = { has_technology = tech_space_science_4 }
 			}
-			engineering_research = 2
+			engineering_research = 5
 		}
 
 		produces = {
 			trigger = {
 				exists = owner
-				owner = { has_technology = tech_engineering_3 }
+				owner = { has_technology = tech_space_science_5 }
 			}
-			engineering_research = 2
+			engineering_research = 5
 		}
 
 		produces = {
@@ -312,10 +312,10 @@ pulsar_observatory = {
 					is_active_resolution = "resolution_galacticstudies_extradimensional_experimentation"
 				}
 			}
-			engineering_research = 6
+			engineering_research = 10
 		}
 		upkeep = {
-			energy = 10
+			energy = 5
 		}
 	}
 	show_in_tech = "tech_self_aware_logic"
@@ -355,25 +355,25 @@ neutron_observatory = {
 		produces = {
 			trigger = {
 				exists = owner
-				owner = { has_technology = tech_society_1 }
+				owner = { has_technology = tech_space_science_3 }
 			}
-			society_research = 2
+			society_research = 5
 		}
 
 		produces = {
 			trigger = {
 				exists = owner
-				owner = { has_technology = tech_society_2 }
+				owner = { has_technology = tech_space_science_4 }
 			}
-			society_research = 2
+			society_research = 5
 		}
 
 		produces = {
 			trigger = {
 				exists = owner
-				owner = { has_technology = tech_society_3 }
+				owner = { has_technology = tech_space_science_5 }
 			}
-			society_research = 2
+			society_research = 5
 		}
 
 		produces = {
@@ -387,10 +387,10 @@ neutron_observatory = {
 					is_active_resolution = "resolution_galacticstudies_extradimensional_experimentation"
 				}
 			}
-			society_research = 6
+			society_research = 10
 		}
 		upkeep = {
-			energy = 10
+			energy = 5
 		}
 	}
 	show_in_tech = "tech_self_aware_logic"
@@ -2177,7 +2177,7 @@ management_building = {
 				has_technology = tech_colonial_centralization
 			}
 		}
-		empire_size_systems_mult = -0.04
+		empire_size_systems_mult = -0.05
 	}
 	
 	triggered_country_modifier = {
@@ -2187,7 +2187,7 @@ management_building = {
 				has_technology = tech_galactic_administration
 			}
 		}
-		empire_size_systems_mult = -0.06
+		empire_size_systems_mult = -0.1
 	}
 
 	country_modifier = {
@@ -2306,6 +2306,27 @@ star_clean = {
 							is_megastructure_type = orbital_ring
 							is_megastructure_type = orbital_ring_ruined
 							is_megastructure_type = orbital_ring_restored
+
+							is_megastructure_type = dyson_swarm_1
+							is_megastructure_type = dyson_swarm_2
+							is_megastructure_type = dyson_swarm_3
+
+							is_megastructure_type = orbital_arc_furnace_1
+							is_megastructure_type = orbital_arc_furnace_2
+							is_megastructure_type = orbital_arc_furnace_3
+							is_megastructure_type = orbital_arc_furnace_4
+							is_megastructure_type = orbital_arc_furnace_destroyed
+							is_megastructure_type = orbital_arc_furnace_restored
+
+							is_megastructure_type = cosmogenesis_needle
+							is_megastructure_type = cosmogenesis_world_0
+							is_megastructure_type = cosmogenesis_world_ruined
+
+							is_megastructure_type = major_orbital
+							is_megastructure_type = minor_orbital
+							is_megastructure_type = major_orbital_knights
+							is_megastructure_type = habitat_central_complex_ruined
+							is_megastructure_type = habitat_central_complex_restored
 						}
 					}
 					any_system_planet = { is_planet_class = pc_habitat }
@@ -2432,10 +2453,6 @@ hyperlane_sbs = {
 	}
 
 	possible = {
-#		custom_tooltip = {
-#			fail_text = "requires_starport"
-#			has_starbase_size >= starbase_starport
-#		}
 		custom_tooltip = {
 			fail_text = "requires_country"
 			solar_system = {
@@ -2534,7 +2551,7 @@ gatherers_production = {
 	potential = {
 		exists = owner
 		owner = { 
-			has_technology = tech_space_mining_2
+			has_technology = tech_space_mining_4
 		}
 	}
 	
@@ -2599,9 +2616,7 @@ gatherers_production_science = {
 	potential = {
 		exists = owner
 		owner = {
-			has_technology = tech_physics_2
-			has_technology = tech_engineering_2
-			has_technology = tech_society_2
+			has_technology = tech_space_science_5
 		}
 	}
 	
@@ -2654,7 +2669,7 @@ gatherers_production_science = {
 		station_researchers_produces_mult = 0.10
 	}
 	
-	show_in_tech = "tech_space_mining_2"
+	show_in_tech = "tech_space_science_5"
 
 	ai_weight = { weight = 150 }
 }
@@ -2666,7 +2681,7 @@ gatherers_production_rare = {
 	potential = {
 		exists = owner
 		owner = { 
-			has_technology = tech_space_mining_3
+			has_technology = tech_space_mining_5
 		}
 	}
 	
@@ -2718,12 +2733,12 @@ gatherers_production_rare = {
 	}
 
 	system_modifier = {
-		stations_volatile_motes_produces_mult = 0.10
-		stations_exotic_gases_produces_mult = 0.10
-		stations_rare_crystals_produces_mult = 0.10
+		station_gatherers_volatile_motes_produces_mult = 0.10
+		station_gatherers_exotic_gases_produces_mult = 0.10
+		station_gatherers_rare_crystals_produces_mult = 0.10
 	}
 
-	show_in_tech = "tech_space_mining_3"
+	show_in_tech = "tech_space_mining_5"
 
 	ai_weight = { weight = 150 }
 }
@@ -2852,13 +2867,12 @@ sbs_cannon = {
 	resources = {
 		category = starbase_buildings
 		cost = { 
-			alloys = 25 
-			unity = 25
+			energy = 1000
+			influence = 25
 		}
 		upkeep = { 
 			energy = 50
-			alloys = 50
-			unity = 50
+			influence = 1
 		}
 	}
 
@@ -2866,21 +2880,23 @@ sbs_cannon = {
 		custom_tooltip = {
 			fail_text = "requires_modules_solar"
 			OR = {
-				count_starbase_modules = {
-					type = solar_panels
-					count >= 2
-				}
-			}
-			OR = {
-				count_starbase_modules = {
-					type = solar_panel_network
-					count >= 2
+				OR = {
+					count_starbase_modules = {
+						type = solar_panels
+						count >= 4
+					}
+				}	
+				OR = {
+					count_starbase_modules = {
+						type = solar_panel_network
+						count >= 4
+					}
 				}
 			}
 		}
 		custom_tooltip = {
-			fail_text = "requires_starport"
-			has_starbase_size >= starbase_starport
+			fail_text = "requires_starhold"
+			has_starbase_size >= starbase_starhold
 		}
 		custom_tooltip = {
 			fail_text = "requires_no_existing_sbs_cannon"
@@ -2896,12 +2912,23 @@ sbs_cannon = {
 						is_ai = yes
 						is_country_type = default
 						has_communications = root
-						opinion_level = {
-							who = from
-							level <= neutral  #>= mayor que / <= menor que
+						opinion_level = { who = from level <= neutral } #>= mayor que / <= menor que
+						relative_power = { who = from value >= superior }
+					}
+					OR = {
+						any_country = {
+							is_country_type = default
+							any_system_within_border = {
+								any_neighbor_system = {
+									exists = space_owner
+									space_owner = {
+										is_country_type = dormant_marauders
+										has_communications = prevprevprev
+									}
+								}
+							}
 						}
 					}
-
 				}
 			}
 		}
@@ -2934,7 +2961,7 @@ sbs_cannon = {
 							is_country_type = guardian_elderly_tiyanki
 							is_country_type = guardian_toxic_god
 							is_country_type = enclave_mercenary
-							is_country_type = dormant_marauders
+#							is_country_type = dormant_marauders
 							is_country_type = awakened_marauders
 							is_country_type = debt_collectors
 							is_country_type = gray
@@ -3033,7 +3060,7 @@ starbase_extra = {
 
 	potential = {
 		exists = owner
-		owner = { has_technology = tech_space_defense_station_improvement }
+		owner = { has_technology = tech_defense_platform_hull_1 }
 	}
 	
 	ai_weight = { weight = 100 }
@@ -3042,5 +3069,5 @@ starbase_extra = {
 		starbase_event = { id = starbase_extra.2 days = 30 }
 	}
 
-	show_in_tech = "tech_space_defense_station_improvement"
+	show_in_tech = "tech_defense_platform_hull_1"
 }

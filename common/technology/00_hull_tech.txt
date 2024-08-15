@@ -26,13 +26,6 @@ tech_defense_platform_hull_1 = {
 			}
 		}
 		modifier = {
-			factor = value:tech_weight_likelihood
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
-		}
-		modifier = {
 			factor = 1.5
 			is_specialist_subject_type = { TYPE = bulwark }
 		}
@@ -66,13 +59,6 @@ tech_defense_platform_hull_2 = {
 			federation = {
 				has_federation_perk = rare_tech_boost
 				any_member = { has_technology = tech_defense_platform_hull_1 }
-			}
-		}
-		modifier = {
-			factor = value:tech_weight_likelihood
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
 			}
 		}
 		modifier = {
@@ -111,13 +97,6 @@ tech_defense_platform_hull_3 = {
 			}
 		}
 		modifier = {
-			factor = value:tech_weight_likelihood
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
-		}
-		modifier = {
 			factor = 1.5
 			is_specialist_subject_type = { TYPE = bulwark }
 		}
@@ -147,13 +126,6 @@ tech_torpedoes_0 = {
 			factor = 1.5
 			has_ethic = ethic_fanatic_militarist
 		}
-		modifier = {
-			factor = value:tech_weight_likelihood
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_propulsion"
-			}
-		}
 	}
 
 	ai_weight = {
@@ -164,13 +136,6 @@ tech_torpedoes_0 = {
 		modifier = {
 			factor = 1.5
 			has_ethic = ethic_fanatic_militarist
-		}
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_propulsion"
-			}
 		}
 		modifier = {
 			factor = @favored_weapon_ai_tech_factor
@@ -201,13 +166,6 @@ tech_torpedoes_1 = {
 			factor = 1.5
 			has_ethic = ethic_fanatic_militarist
 		}
-		modifier = {
-			factor = value:tech_weight_likelihood
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_propulsion"
-			}
-		}
 	}
 
 	ai_weight = {
@@ -218,13 +176,6 @@ tech_torpedoes_1 = {
 		modifier = {
 			factor = 1.5
 			has_ethic = ethic_fanatic_militarist
-		}
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_propulsion"
-			}
 		}
 		modifier = {
 			factor = @favored_weapon_ai_tech_factor
@@ -250,23 +201,9 @@ tech_sensors_1 = {
 			factor = 1.25
 			has_tradition = tr_discovery_adopt
 		}
-		modifier = {
-			factor = value:tech_weight_likelihood
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_computing"
-			}
-		}
 	}
 
 	ai_weight = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_computing"
-			}
-		}
 	}
 }
 
@@ -284,23 +221,9 @@ tech_emp_sbs = {
 			factor = 1.25
 			has_tradition = tr_discovery_adopt
 		}
-		modifier = {
-			factor = value:tech_weight_likelihood
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_computing"
-			}
-		}
 	}
 
 	ai_weight = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_computing"
-			}
-		}
 	}
 }
 
@@ -309,42 +232,25 @@ tech_solar_panels = {
 	area = engineering
 	tier = 1
 	category = { voidcraft }
-	prerequisites = { "tech_engineering_1" }
+	prerequisites = { "tech_space_science_1" }
 	weight = @tier1weight1
 
 	potential = {
 		is_gestalt = no
 	}
 
-	weight_modifier = {
-		modifier = {
-			factor = value:tech_weight_likelihood
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
-		}
-	}
-
 	ai_weight = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
-		}
 	}
 }
 
 tech_sbs_cannon = {
 	area = engineering
-	cost = @tier3cost2
-	tier = 3
+	cost = @tier2cost2
+	tier = 2
 	category = { propulsion }
 	ai_update_type = military
 	prerequisites = { "tech_starbase_3" }
-	weight = @tier3weight2
+	weight = @tier2weight2
 
 	prereqfor_desc = {
 		custom = {
@@ -362,13 +268,6 @@ tech_sbs_cannon = {
 			factor = 1.5
 			has_ethic = ethic_fanatic_militarist
 		}
-		modifier = {
-			factor = value:tech_weight_likelihood
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_propulsion"
-			}
-		}
 	}
 
 	ai_weight = {
@@ -379,13 +278,6 @@ tech_sbs_cannon = {
 		modifier = {
 			factor = 1.5
 			has_ethic = ethic_fanatic_militarist
-		}
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_propulsion"
-			}
 		}
 		modifier = {
 			factor = @favored_weapon_ai_tech_factor

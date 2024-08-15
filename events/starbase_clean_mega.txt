@@ -137,6 +137,16 @@ country_event = {
 						is_megastructure_type = quantum_catapult_restored_slingshot
 						is_megastructure_type = quantum_catapult_ruined_slingshot
 						is_megastructure_type = quantum_catapult_improved_slingshot
+
+						is_megastructure_type = cosmogenesis_needle
+						is_megastructure_type = cosmogenesis_world_0
+						is_megastructure_type = cosmogenesis_world_ruined
+
+						is_megastructure_type = major_orbital
+						is_megastructure_type = minor_orbital
+						is_megastructure_type = major_orbital_knights
+						is_megastructure_type = habitat_central_complex_ruined
+						is_megastructure_type = habitat_central_complex_restored
 					}
 				}
 			}
@@ -226,6 +236,16 @@ country_event = {
 						is_megastructure_type = quantum_catapult_restored_slingshot
 						is_megastructure_type = quantum_catapult_ruined_slingshot
 						is_megastructure_type = quantum_catapult_improved_slingshot
+
+						is_megastructure_type = cosmogenesis_needle
+						is_megastructure_type = cosmogenesis_world_0
+						is_megastructure_type = cosmogenesis_world_ruined
+
+						is_megastructure_type = major_orbital
+						is_megastructure_type = minor_orbital
+						is_megastructure_type = major_orbital_knights
+						is_megastructure_type = habitat_central_complex_ruined
+						is_megastructure_type = habitat_central_complex_restored
 					}
 				}
 				remove_megastructure = this
@@ -238,6 +258,7 @@ country_event = {
 				}
 			}
 		}
+
 		hidden_effect = {
 			random_owned_starbase = {
 				limit = {
@@ -245,24 +266,151 @@ country_event = {
 				}
 				remove_starbase_building = { building = star_clean }
 			}
-		}
-		owner = {
-			locked_random_list = {
-				50 = {
-					add_monthly_resource_mult = {
-						resource = alloys
-						value = @tier1materialreward
-						min = @tier1materialmin
-						max = @tier1materialmax
+			if = {
+				limit = {
+					NOR = {
+						has_megastructure =	dyson_sphere_0
+						has_megastructure = dyson_sphere_1
+						has_megastructure = dyson_sphere_2
+						has_megastructure = dyson_sphere_3
+						has_megastructure = dyson_sphere_4
+						has_megastructure = dyson_sphere_4
+						has_megastructure = dyson_sphere_restored
 					}
 				}
-				50 = {
-					add_monthly_resource_mult = {
-						resource = alloys
-						value = @tier2materialreward
-						min = @tier2materialmin
-						max = @tier2materialmax
+				remove_country_flag = built_dyson_sphere
+			}
+			if = {
+				limit = {
+					NOR = {
+						has_megastructure = think_tank_0
+						has_megastructure = think_tank_1
+						has_megastructure = think_tank_2
+						has_megastructure = think_tank_3
+						has_megastructure = think_tank_4
+						has_megastructure = think_tank_restored
 					}
+				}
+				remove_country_flag = built_think_tank
+			}
+			if = {
+				limit = {
+					NOR = {
+						has_megastructure = spy_orb_0
+						has_megastructure = spy_orb_1
+						has_megastructure = spy_orb_2
+						has_megastructure = spy_orb_3
+						has_megastructure = spy_orb_4
+						has_megastructure = spy_orb_restored
+					}
+				}
+				remove_country_flag = built_spyorb
+			}
+			if = {
+				limit = {
+					NOR = {
+						has_megastructure = matter_decompressor_0
+						has_megastructure = matter_decompressor_1
+						has_megastructure = matter_decompressor_2
+						has_megastructure = matter_decompressor_3
+						has_megastructure = matter_decompressor_4
+						has_megastructure = matter_decompressor_restored
+					}
+				}
+				remove_country_flag = built_matter_decompressor_site
+			}
+			if = {
+				limit = {
+					NOR = {
+						has_megastructure = strategic_coordination_center_0
+						has_megastructure = strategic_coordination_center_1
+						has_megastructure = strategic_coordination_center_2
+						has_megastructure = strategic_coordination_center_3
+						has_megastructure = strategic_coordination_center_restored
+					}
+				}
+				remove_country_flag = built_strategic_coordination_center_site
+			}
+			if = {
+				limit = {
+					NOR = {
+						has_megastructure = mega_art_installation_0
+						has_megastructure = mega_art_installation_1
+						has_megastructure = mega_art_installation_2
+						has_megastructure = mega_art_installation_3
+						has_megastructure = mega_art_installation_restored
+						has_megastructure = mega_art_installation_restored_2
+					}
+				}
+				remove_country_flag = built_mega_art_installation
+			}
+			if = {
+				limit = {
+					NOR = {
+						has_megastructure = interstellar_assembly_0
+						has_megastructure = interstellar_assembly_1
+						has_megastructure = interstellar_assembly_2
+						has_megastructure = interstellar_assembly_3
+						has_megastructure = interstellar_assembly_4
+						has_megastructure = interstellar_assembly_restored
+					}
+				}
+				remove_country_flag = built_interstellar_assembly_site
+			}
+			if = {
+				limit = {
+					NOR = {
+						has_megastructure = mega_shipyard_0
+						has_megastructure = mega_shipyard_1
+						has_megastructure = mega_shipyard_2
+						has_megastructure = mega_shipyard_3
+						has_megastructure = mega_shipyard_restored
+					}
+				}
+				remove_country_flag = built_mega_shipyard_site
+			}
+			if = {
+				limit = {
+					NOR = {
+						has_megastructure = quantum_catapult_0
+						has_megastructure = quantum_catapult_1
+						has_megastructure = quantum_catapult_2
+						has_megastructure = quantum_catapult_3
+						has_megastructure = quantum_catapult_restored
+						has_megastructure = quantum_catapult_ruined
+						has_megastructure = quantum_catapult_restored_slingshot
+					}
+				}
+				remove_country_flag = built_mega_shipyard_site
+			}
+			if = {
+				limit = {
+					NOR = {
+						has_megastructure = cosmogenesis_needle
+						has_megastructure = cosmogenesis_world_0
+						has_megastructure = cosmogenesis_world_ruined
+					}
+				}
+				remove_country_flag = cosmogenesis_needle_built
+				remove_country_flag = cosmogenesis_world_built
+			}
+		}
+
+		locked_random_list = {
+			50 = {
+				add_monthly_resource_mult = {
+					resource = alloys
+					value = @tier1materialreward
+					min = @tier1materialmin
+					max = @tier1materialmax
+				}
+			}
+			50 = {
+				add_monthly_resource_mult = {
+					resource = alloys
+					value = @tier2materialreward
+					min = @tier2materialmin
+					max = @tier2materialmax
 				}
 			}
 		}
@@ -311,23 +459,22 @@ country_event = {
 				remove_starbase_building = { building = star_clean }
 			}
 		}
-		owner = {
-			locked_random_list = {
-				50 = {
-					add_monthly_resource_mult = {
-						resource = alloys
-						value = @tier1materialreward
-						min = @tier1materialmin
-						max = @tier1materialmax
-					}
+
+		locked_random_list = {
+			50 = {
+				add_monthly_resource_mult = {
+					resource = alloys
+					value = @tier1materialreward
+					min = @tier1materialmin
+					max = @tier1materialmax
 				}
-				50 = {
-					add_monthly_resource_mult = {
-						resource = alloys
-						value = @tier2materialreward
-						min = @tier2materialmin
-						max = @tier2materialmax
-					}
+			}
+			50 = {
+				add_monthly_resource_mult = {
+					resource = alloys
+					value = @tier2materialreward
+					min = @tier2materialmin
+					max = @tier2materialmax
 				}
 			}
 		}
@@ -379,23 +526,22 @@ country_event = {
 				remove_starbase_building = { building = star_clean }
 			}
 		}
-		owner = {
-			locked_random_list = {
-				50 = {
-					add_monthly_resource_mult = {
-						resource = alloys
-						value = @tier1materialreward
-						min = @tier1materialmin
-						max = @tier1materialmax
-					}
+
+		locked_random_list = {
+			50 = {
+				add_monthly_resource_mult = {
+					resource = alloys
+					value = @tier1materialreward
+					min = @tier1materialmin
+					max = @tier1materialmax
 				}
-				50 = {
-					add_monthly_resource_mult = {
-						resource = alloys
-						value = @tier2materialreward
-						min = @tier2materialmin
-						max = @tier2materialmax
-					}
+			}
+			50 = {
+				add_monthly_resource_mult = {
+					resource = alloys
+					value = @tier2materialreward
+					min = @tier2materialmin
+					max = @tier2materialmax
 				}
 			}
 		}
@@ -447,31 +593,30 @@ country_event = {
 				remove_starbase_building = { building = star_clean }
 			}
 		}
-		owner = {
-			locked_random_list = {
-				33 = {
-					add_monthly_resource_mult = {
-						resource = alloys
-						value = @tier1materialreward
-						min = @tier1materialmin
-						max = @tier1materialmax
-					}
+
+		locked_random_list = {
+			33 = {
+				add_monthly_resource_mult = {
+					resource = alloys
+					value = @tier1materialreward
+					min = @tier1materialmin
+					max = @tier1materialmax
 				}
-				33 = {
-					add_monthly_resource_mult = {
-						resource = unity
-						value = @tier1unityreward
-						min = @tier1unitymin
-						max = @tier1unitymax
-					}
+			}
+			33 = {
+				add_monthly_resource_mult = {
+					resource = unity
+					value = @tier1unityreward
+					min = @tier1unitymin
+					max = @tier1unitymax
 				}
-				33 = {
-					add_monthly_resource_mult = {
-						resource = influence
-						value = @tier1influencereward
-						min = @tier1influencemin
-						max = @tier1influencemax
-					}
+			}
+			33 = {
+				add_monthly_resource_mult = {
+					resource = influence
+					value = @tier1influencereward
+					min = @tier1influencemin
+					max = @tier1influencemax
 				}
 			}
 		}
@@ -549,23 +694,22 @@ country_event = {
 				remove_starbase_building = { building = star_clean }
 			}
 		}
-		owner = {
-			locked_random_list = {
-				50 = {
-					add_monthly_resource_mult = {
-						resource = alloys
-						value = @tier1materialreward
-						min = @tier1materialmin
-						max = @tier1materialmax
-					}
+
+		locked_random_list = {
+			50 = {
+				add_monthly_resource_mult = {
+					resource = alloys
+					value = @tier1materialreward
+					min = @tier1materialmin
+					max = @tier1materialmax
 				}
-				50 = {
-					add_monthly_resource_mult = {
-						resource = alloys
-						value = @tier2materialreward
-						min = @tier2materialmin
-						max = @tier2materialmax
-					}
+			}
+			50 = {
+				add_monthly_resource_mult = {
+					resource = alloys
+					value = @tier2materialreward
+					min = @tier2materialmin
+					max = @tier2materialmax
 				}
 			}
 		}
@@ -573,6 +717,171 @@ country_event = {
 
 	option = {
 		name = cleanevents.1.f
+		trigger = {
+			any_system = { 
+				has_star_flag = star_clean_mega 
+				solar_system = {
+					exists = starbase
+					starbase = { has_starbase_building = star_clean }	
+				}
+				any_system_megastructure = {
+					OR = {
+						is_megastructure_type = dyson_swarm_1
+						is_megastructure_type = dyson_swarm_2
+						is_megastructure_type = dyson_swarm_3
+					}
+				}
+			}
+		}
+		random_system = {
+			limit = { has_star_flag = star_clean_mega }
+			random_system_megastructure = {
+				limit = {
+					OR = {
+						is_megastructure_type = dyson_swarm_1
+						is_megastructure_type = dyson_swarm_2
+						is_megastructure_type = dyson_swarm_3
+					}
+				}
+				remove_megastructure = this
+				create_ambient_object = {
+					type = explosion_particle_object
+					location = this
+					use_3d_location = yes
+					duration = 20
+					scale = 5
+				}
+			}
+			if = {
+				limit = {
+					exists = star
+				}
+				star = {
+					remove_planet_flag = has_megastructure
+				}
+			}
+		}
+
+		hidden_effect = {
+			random_owned_starbase = {
+				limit = {
+					has_starbase_building = star_clean
+				}
+				remove_starbase_building = { building = star_clean }
+			}
+		}
+
+		locked_random_list = {
+			50 = {
+				add_monthly_resource_mult = {
+					resource = alloys
+					value = @tier1materialreward
+					min = @tier1materialmin
+					max = @tier1materialmax
+				}
+			}
+			50 = {
+				add_monthly_resource_mult = {
+					resource = alloys
+					value = @tier2materialreward
+					min = @tier2materialmin
+					max = @tier2materialmax
+				}
+			}
+		}
+	}
+
+	option = {
+		name = cleanevents.1.g
+		trigger = {
+			any_system = { 
+				has_star_flag = star_clean_mega 
+				solar_system = {
+					exists = starbase
+					starbase = { has_starbase_building = star_clean }	
+				}
+				any_system_megastructure = {
+					OR = {
+						is_megastructure_type = orbital_arc_furnace_1
+						is_megastructure_type = orbital_arc_furnace_2
+						is_megastructure_type = orbital_arc_furnace_3
+						is_megastructure_type = orbital_arc_furnace_4
+						is_megastructure_type = orbital_arc_furnace_destroyed
+						is_megastructure_type = orbital_arc_furnace_restored
+					}
+				}
+			}
+		}
+		random_system = {
+			limit = { has_star_flag = star_clean_mega }
+			random_system_megastructure = {
+				limit = {
+					OR = {
+						is_megastructure_type = orbital_arc_furnace_1
+						is_megastructure_type = orbital_arc_furnace_2
+						is_megastructure_type = orbital_arc_furnace_3
+						is_megastructure_type = orbital_arc_furnace_4
+						is_megastructure_type = orbital_arc_furnace_destroyed
+						is_megastructure_type = orbital_arc_furnace_restored
+					}
+				}
+				remove_megastructure = this
+				create_ambient_object = {
+					type = explosion_particle_object
+					location = this
+					use_3d_location = yes
+					duration = 20
+					scale = 5
+				}
+			}
+			solar_system = {
+				random_system_planet = {
+					limit = {
+						is_planet_class = pc_molten
+					}
+					remove_planet_flag = megastructure
+					orbit = {
+						remove_planet_flag = has_megastructure
+						remove_planet_flag = has_arc_furnace
+					}
+#					every_deposit = {
+#						remove_deposit = yes
+#					}
+				}
+			}
+		}
+
+		hidden_effect = {
+			random_owned_starbase = {
+				limit = {
+					has_starbase_building = star_clean
+				}
+				remove_starbase_building = { building = star_clean }
+			}
+		}
+
+		locked_random_list = {
+			50 = {
+				add_monthly_resource_mult = {
+					resource = alloys
+					value = @tier1materialreward
+					min = @tier1materialmin
+					max = @tier1materialmax
+				}
+			}
+			50 = {
+				add_monthly_resource_mult = {
+					resource = alloys
+					value = @tier2materialreward
+					min = @tier2materialmin
+					max = @tier2materialmax
+				}
+			}
+		}
+	}
+
+	option = {
+		name = cleanevents.1.h
 		trigger = { 
 			any_owned_starbase = { has_starbase_building = star_clean }
 			exists = event_target:star_clean_loc
@@ -586,24 +895,6 @@ country_event = {
 			}
 		}
 	}
-#		if = {
-#			limit = {
-#				any_fleet_in_system = {
-#					is_ship_class = shipclass_starbase
-#				}
-#			}
-#			random_fleet_in_system = {
-#				limit = {
-#					is_ship_class = shipclass_starbase
-#				}
-#				destroy_fleet = this
-#			}
-#		}
-#		create_starbase = {
-#			size = starbase_outpost
-#			owner = root
-#		}
-#	}
 
 	after = {
 		hidden_effect = {

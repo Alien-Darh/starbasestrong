@@ -246,6 +246,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_ship_part_cloak_0"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_cloak_0.dds"
+	}
+
+	spriteType = {
 		name = "GFX_evt_sarmat"
 		texturefile = "gfx/event_pictures/sarmat.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"

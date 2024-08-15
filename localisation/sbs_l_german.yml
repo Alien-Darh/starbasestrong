@@ -140,7 +140,9 @@
  cleanevents.1.c:0 "§Y$BYPASS_GATEWAY$§!"
  cleanevents.1.d:0 "§Y$hyper_relay$§!"
  cleanevents.1.e:0 "§Y$orbital_ring$§!"
- cleanevents.1.f:0 "§YNanobots aufladen§!"
+ cleanevents.1.f:0 "§Y$dyson_swarm_3$§!"
+ cleanevents.1.g:0 "§Y$orbital_arc_furnace_4$§!"
+ cleanevents.1.h:0 "§YRecargar nanobots§!"
 
  tech_sensors_1:0 "Remote sensing"
  tech_sensors_1_desc:0 "Sensormodul, das von fortschrittlicher künstlicher Intelligenz gesteuert wird und in der Lage ist, Wellenlängenänderungen und einige unnatürliche Stromstörungen zu erkennen. Seine einfache Positionierung macht es für die Erkundung, die Verteidigungsunterstützung und die Versorgung von Raumfahrzeugen unerlässlich."
@@ -179,6 +181,7 @@
  requires_modules:0 "Benötigt die 3 Basis-Kampfmodule oder 3 XL-Akku"
 
  requires_black_hole_neutron_star_pulsar:0 "§RErfordert eine §Y$pc_pulsar$§! \n§RErfordert eine §Y$pc_neutron_star$§! \n§RErfordert eine §Y$pc_black_hole$§! \nIm System.§!"
+ requires_capital_planet:0 "Erfordert Planetenkapital"
 
  sm_archeological_center:0 "Archäologisches Zentrum"
  sm_archeological_center_desc:0 "Archäologische Untersuchung der Sternenbasis"
@@ -456,10 +459,10 @@
  sm_sbs_cannon:0 "Big-Berta"
  sm_sbs_cannon_desc:0 "System-devastating cannon installed on our starbases, uniquely capable of devastating border systems of abusive empires."
 
- requires_no_existing_sbs_cannon:0 "Nachladen des Fasses erforderlich ca. 10 Jahre"
- requires_country_default:0 "Benötigt Grenze kleiner oder gleich neutral"
+ requires_no_existing_sbs_cannon:0 "Nachladen des Fasses erforderlich ca. 7 Jahre"
+ requires_country_default:0 "Erfordert einen Grenzwert für die relative Stärke, der größer oder gleich überlegen ist.\n      Erfordert einen Meinungsgrenzwert, der kleiner oder gleich neutral ist."
  requires_country_no_default:0 "Benötigt gemeinsames imperiales Limit"
- requires_modules_solar:0 "Benötigt 2 Solarpanel-Module"
+ requires_modules_solar:0 "Benötigt 4 Solarpanel-Module"
 
  sbscannon.2.name:0 "Waffeninstallation"
  sbscannon.2.desc:0 "Eine interstellare Kanone wurde in der Nähe unserer Basis bei §Y[event_target:sbs_cannon_system_0.GetName]§! installiert und der Start-Countdown hat begonnen...\n\nAdmiral, nur der letzte Aktivierungsbefehl hat seine maximale Ladeleistung erreicht innerhalb weniger Monate."
@@ -476,3 +479,6 @@
  starbase_extra.2.desc:0 "Ein neues System wurde in der Nähe unserer Hauptbasis bei §H[Root.Solar_System.GetName]§! gefunden und verbunden, genannt §H[event_target:starbase_extra_base.GetName]§!.\n\nUnser Fernkommunikationsgebäude wird I aktiviere die Verbindung mit diesem neuen System militärischer Eigenschaften.\n\nWenn unser Gebäude ausfällt oder deaktiviert wird, ist es nicht möglich, es erneut zu bauen, und es wird keine Verbindung per Hyperroute zum neuen System geben, wodurch es bis zu einem anderen Durchgang isoliert bleibt Alternativen gefunden werden."
 
  requires_no_existing_starbase_extra:0 "Kann nicht gebaut werden"
+
+ cannon_sarmat:0 "Sarmat"
+ SCIENCE_CLOAKING_0:0 "$CLOAKING_1$"

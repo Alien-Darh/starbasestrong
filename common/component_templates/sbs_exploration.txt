@@ -28,3 +28,26 @@ utility_component_template = {
 		weight = 4
 	}
 }
+
+utility_component_template = {
+	key = "SCIENCE_CLOAKING_0"
+	size = small
+	icon = "GFX_ship_part_cloak_0"
+	icon_frame = 1
+	power = 0
+
+	modifier = {
+		ship_cloaking_strength_add = 1
+	}
+	inline_script = ship_components/cloaking_ship_shield_reduction
+	custom_tooltip = "CLOAKING_1_TOOLTIP"
+
+	size_restriction = {science explorer_vessel }
+	prerequisites = { "tech_sensors_1" }
+	component_set = "science_cloaking_components"
+	upgrades_to = "SCIENCE_CLOAKING_1"
+
+	ai_weight = {
+		weight = @basic_cloaking_weight
+	}
+}

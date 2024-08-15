@@ -6,3 +6,10 @@ component_set = {
 	icon = "GFX_ship_part_sbs_exploration"
 	icon_frame = 1
 }
+
+component_set = {
+	key = "SCIENCE_CLOAKING_0"
+	
+	icon = "GFX_ship_part_cloak_0"
+	icon_frame = 1
+}

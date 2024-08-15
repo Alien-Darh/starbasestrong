@@ -10,23 +10,11 @@ tech_reactor_boosters_4 = {
 	
 	weight_modifier = {
 		factor = 1.5
-		modifier = {
-			factor = value:tech_weight_likelihood
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
-		}
+
 	}
-	
+
 	ai_weight = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
-		}
+
 	}
 }
 
@@ -41,22 +29,10 @@ tech_reactor_boosters_5 = {
 	
 	weight_modifier = {
 		factor = 1.5
-		modifier = {
-			factor = value:tech_weight_likelihood
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
-		}
+
 	}
-	
+
 	ai_weight = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
-		}
+
 	}
 }

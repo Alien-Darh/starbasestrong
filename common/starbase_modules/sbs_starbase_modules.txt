@@ -316,8 +316,8 @@ management_office = {
 	}
 
 	country_modifier = {
-		empire_size_colonies_mult = -0.05
-		empire_size_districts_mult = -0.05
+		empire_size_colonies_mult = -0.1
+		empire_size_districts_mult = -0.1
 	}
 
 	ai_weight = { weight = 100 }
@@ -393,19 +393,18 @@ solar_panels = {
 		}
 	}
 
-	possible = {
-		solar_system = {
-			custom_tooltip = {
-				fail_text = "requires_no_black_hole_or_dyson_sphere"
-				NOR = {
-					is_star_class = sc_black_hole
-					has_megastructure = dyson_sphere_3
-					has_megastructure = dyson_sphere_4
-					has_megastructure = dyson_sphere_5
-				}
-			}
-		}
-	}
+#	possible = {
+#				custom_tooltip = {
+#				fail_text = "requires_no_black_hole_or_dyson_sphere"
+#				NOR = {
+#					is_star_class = sc_black_hole
+#					has_megastructure = dyson_sphere_3
+#					has_megastructure = dyson_sphere_4
+#					has_megastructure = dyson_sphere_5
+#				}
+#			}
+#		}
+#	}
 
 	resources = {
 		category = starbase_modules
@@ -417,6 +416,15 @@ solar_panels = {
 		}
 		upkeep = {
 			trigger = { owner = { is_at_war = yes } }
+			energy = -1
+		}
+
+		upkeep = {
+			trigger = {
+				solar_system = {
+					is_star_class = sc_black_hole
+				}
+			}	
 			energy = -1
 		}
 

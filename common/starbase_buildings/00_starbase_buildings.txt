@@ -722,25 +722,25 @@ black_hole_observatory = {
 		produces = {
 			trigger = {
 				exists = owner
-				owner = { has_technology = tech_physics_1 }
+				owner = { has_technology = tech_space_science_3 }
 			}
-			physics_research = 2
+			physics_research = 5
 		}
 
 		produces = {
 			trigger = {
 				exists = owner
-				owner = { has_technology = tech_physics_2 }
+				owner = { has_technology = tech_space_science_4 }
 			}
-			physics_research = 2
+			physics_research = 5
 		}
 
 		produces = {
 			trigger = {
 				exists = owner
-				owner = { has_technology = tech_physics_3 }
+				owner = { has_technology = tech_space_science_5 }
 			}
-			physics_research = 2
+			physics_research = 5
 		}
 
 		produces = {

@@ -269,19 +269,19 @@ solar_panel_network = {
 		}
 	}
 
-	possible = {
-		solar_system = {
-			custom_tooltip = {
-				fail_text = "requires_no_black_hole_or_dyson_sphere"
-				NOR = {
-					is_star_class = sc_black_hole
-					has_megastructure = dyson_sphere_3
-					has_megastructure = dyson_sphere_4
-					has_megastructure = dyson_sphere_5
-				}
-			}
-		}
-	}
+#	possible = {
+#		solar_system = {
+#			custom_tooltip = {
+#				fail_text = "requires_no_black_hole_or_dyson_sphere"
+#				NOR = {
+#					is_star_class = sc_black_hole
+#					has_megastructure = dyson_sphere_3
+#					has_megastructure = dyson_sphere_4
+#					has_megastructure = dyson_sphere_5
+#				}
+#			}
+#		}
+#	}
 
 	show_in_tech = "tech_solar_panel_network"
 
@@ -293,6 +293,15 @@ solar_panel_network = {
 
 		produces = {
 			energy = 6
+		}
+
+		upkeep = {
+			trigger = {
+				solar_system = {
+					is_star_class = sc_black_hole
+				}
+			}	
+			energy = -1
 		}
 
 		produces = {

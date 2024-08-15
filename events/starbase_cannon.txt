@@ -64,6 +64,9 @@ starbase_event = {
 
 	option = {
 		name = OK
+		owner = {
+			add_modifier = { modifier = cannon_sarmat days = 1800 }
+		}
 	}
 }
 
@@ -82,7 +85,10 @@ country_event = {
 			limit = {
 				any_system_megastructure = { is_megastructure_type = sbs_cannon }
 				any_country_neighbor_to_system = {
-					is_country_type = default
+					OR = {
+						is_country_type = default
+						is_country_type = dormant_marauders
+					}
 					has_communications = root
 					NOT = { is_at_war_with = root }
 				}
@@ -95,7 +101,10 @@ country_event = {
 						has_hyperlane_to = prev
 						exists = space_owner
 						space_owner = {
-							is_country_type = default
+							OR = {
+								is_country_type = default
+								is_country_type = dormant_marauders
+							}
 							has_communications = root
 							NOT = { is_at_war_with = root }
 						}
@@ -109,30 +118,39 @@ country_event = {
 
 	option = {
 		name = BATTLESTATIONS
+		
 		trigger = {
 			owner = {
 				resource_stockpile_compare = {
 					resource = energy
-					value >= 5000
+					value >= 2500
 				}
 			}
 		}
 		owner = {
-			add_resource = { energy = -5000 }
+			add_resource = { energy = -2500 }
 		}
 		hidden_effect = {
-			every_playable_country = {
+			random_neighbor_country = {
 				limit = {
-					has_communications = root
-					NOT = { is_same_value = root }
+					is_ai = yes
+					is_country_type = default
+					has_communications = prev
 				}
-				add_opinion_modifier = { who = root modifier = opinion_genocidal } #-10 or -5
+				random_list = {
+					33 = { add_opinion_modifier = { who = prev modifier = opinion_destroying_systems } }	#-100		
+					33 = { add_opinion_modifier = { who = prev modifier = fotd_destroyed_starbase } }		#-200
+					33 = { add_opinion_modifier = { who = prev modifier = opinion_insult } }				#-200
+				}	
 			}
 			random_system_within_border = {
 				limit = {
 					any_system_megastructure = { is_megastructure_type = sbs_cannon }
 					any_country_neighbor_to_system = {
-						is_country_type = default
+						OR = {
+							is_country_type = default
+							is_country_type = dormant_marauders
+						}
 						has_communications = root
 						NOT = { is_at_war_with = root }
 					}
@@ -146,7 +164,10 @@ country_event = {
 							has_star_flag = sbs_cannon_system
 							exists = space_owner
 							space_owner = {
-								is_country_type = default
+								OR = {
+									is_country_type = default
+									is_country_type = dormant_marauders
+								}
 								has_communications = root
 								NOT = { is_at_war_with = root }
 							}
