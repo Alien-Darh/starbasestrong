@@ -197,9 +197,6 @@
 
  sm_aux_module:0 "Hilfsplattform"
  sm_aux_module_desc:0 "Erweiterte Hilfsplattformen für Star Bases, die einen schnellen Flottenbau durchführen."
-
- sm_aux_module_starhold:0 "Support module"
- sm_aux_module_starhold_desc:0 "Logistic support station is strategically placed at the edges of our borders with some tactical advantages."
  
  sm_module_protection_link:0 "Protection module"
  sm_module_protection_link_desc:0 "A station that is able to repel and delay some pirate attacks in the system before being captured."

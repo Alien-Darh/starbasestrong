@@ -199,8 +199,8 @@ sm_aura_fallen_desc:0 "精密的光环将帮助星球基地抵御某些觉醒的
 sm_aura_air_force:0 "要塞光环"
 sm_aura_air_force_desc:0 "精密的光环将帮助星球基地抵御敌对帝国等威胁。"
 
-sm_aux_module_starhold:0 "支援模块"
-sm_aux_module_starhold_desc:0 "战略性地放置在我们边境的后方，具有一定的战术优势的后勤支援站。"
+sm_aux_module:0 "支援模块"
+sm_aux_module_desc:0 "战略性地放置在我们边境的后方，具有一定的战术优势的后勤支援站。"
 
 sm_module_protection_link:0 "保护模块"
 sm_module_protection_link_desc:0 "一种能够在星系中抵御和延迟某些海盗攻击的站点，直到被捕获前。"

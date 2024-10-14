@@ -48,6 +48,6 @@ utility_component_template = {
 	upgrades_to = "SCIENCE_CLOAKING_1"
 
 	ai_weight = {
-		weight = @basic_cloaking_weight
+		weight = 5
 	}
 }

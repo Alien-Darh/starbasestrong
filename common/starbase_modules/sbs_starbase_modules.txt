@@ -19,7 +19,7 @@ gatherers_dark_matter = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_mine_dark_matter } 
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	possible = {
@@ -59,7 +59,7 @@ gatherers_living_metal = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_mine_living_metal } 
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	possible = {
@@ -147,6 +147,7 @@ manufacturing_module = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_space_trading }
+		is_normal_starbase = yes
 	}
 
 	possible = {
@@ -291,6 +292,7 @@ management_office = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_adaptive_bureaucracy }
+		is_normal_starbase = yes
 	}
 
 	possible = {
@@ -391,6 +393,7 @@ solar_panels = {
 			is_gestalt = no
 			has_technology = "tech_solar_panels"
 		}
+		is_normal_starbase = yes
 	}
 
 #	possible = {
@@ -469,8 +472,8 @@ solar_panels = {
 }
 
 gun_battery_upgrade = {
-	icon = "GFX_starbase_battery_upgrade"
 	section = "BATTERY_STARBASE_SECTION_UPGRADE"
+	icon = "GFX_starbase_battery_upgrade"
 	construction_days = 180
 
 	potential = {
@@ -485,7 +488,7 @@ gun_battery_upgrade = {
 				has_technology = tech_mass_accelerator_2
 			}
 		}
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	possible = {

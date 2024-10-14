@@ -224,12 +224,12 @@ space_housing = {
 				any_system_colony = { is_owned_by = from }
 			}
 		}
+		is_orbital_ring = yes
 	}
 
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_housing_2 }
-		is_orbital_ring = yes
 	}
 
 	triggered_planet_modifier = {
@@ -404,6 +404,7 @@ aura_crisis = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_starbase_citadel_upgrade }
+		is_normal_starbase = yes
 	}
 	possible = {
 		custom_tooltip = {
@@ -428,6 +429,7 @@ aura_fallen = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_starbase_4 }
+		is_normal_starbase = yes
 	}
 	possible = {
 		custom_tooltip = {
@@ -455,6 +457,7 @@ aura_air_force = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_starbase_5 }
+		is_normal_starbase = yes
 	}
 	possible = {
 		custom_tooltip = {
@@ -479,6 +482,7 @@ star_gate = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_gateway_stargate }
+		is_normal_starbase = yes
 	}
 	possible = {
 		custom_tooltip = {
@@ -532,6 +536,7 @@ aux_module = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_starbase_3 }
+		is_normal_starbase = yes
 	}
 
 	possible = {
@@ -810,6 +815,7 @@ refinery_alloys = {
 		owner = {
 			has_technology = tech_advanced_metallurgy_2
 		}
+		is_normal_starbase = yes
 	}
 
 	possible = {
@@ -986,6 +992,7 @@ job_module = {
 		owner = {
 			has_technology = "tech_colonial_centralization"
 		}
+		is_normal_starbase = yes
 	}
 
 	possible = {
@@ -1805,6 +1812,7 @@ orbital_assembly = {
 		owner = {
 			has_technology = tech_cryostasis_1
 		}
+		is_normal_starbase = yes
 	}
 
 	possible = {
@@ -1897,6 +1905,7 @@ system_fast = {
 		owner = {
 			has_technology = tech_sensors_2
 		}
+		is_normal_starbase = yes
 	}
 
 	possible = {
@@ -2024,6 +2033,7 @@ orbital_ecology = {
 		owner = {
 			has_technology = tech_colonization_2
 		}
+		is_normal_starbase = yes
 	}
 
 	possible = {
@@ -2120,6 +2130,7 @@ space_log = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_heritage_site }
+		is_normal_starbase = yes
 	}
 
 	system_modifier = {
@@ -2140,6 +2151,7 @@ management_building = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_adaptive_bureaucracy }
+		is_normal_starbase = yes
 	}
 
 	possible = {
@@ -2207,6 +2219,7 @@ star_clean = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_starclean }
+		is_normal_starbase = yes
 	}
 
 	possible = {
@@ -2365,7 +2378,7 @@ star_hyper = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_hyper_relays }
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	possible = {
@@ -2417,8 +2430,8 @@ aux_module_starhold = {
 
 	potential = {
 		exists = owner
-		owner = { has_technology = tech_sensors_1 }
-		is_orbital_ring = no
+		owner = { has_technology = tech_sensors_2 }
+		is_normal_starbase = yes
 	}
 	
 	orbit_modifier = {
@@ -2436,7 +2449,7 @@ aux_module_starhold = {
 		weight = 150
 	}
 
-	show_in_tech = "tech_sensors_1"
+	show_in_tech = "tech_sensors_2"
 }
 
 hyperlane_sbs = {
@@ -2491,6 +2504,7 @@ hyperlane_sbs = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_hyperlane_sbs }
+		is_normal_starbase = yes
 	}
 
 	ai_weight = { weight = 0 }
@@ -2508,6 +2522,7 @@ emp_sbs = {
 			has_technology = tech_emp_sbs
 			has_federation = no
 		}
+		is_normal_starbase = yes
 	}
 
 	possible = {
@@ -2755,11 +2770,12 @@ module_protection_link = {
 	}
 
 	potential = {
+		has_cosmic_storms_dlc = yes
 		exists = owner
 		owner = { 
 			is_gestalt = no
 			is_criminal_syndicate = no
-			has_technology = tech_sensors_1
+			has_technology = tech_space_trading
 		}
 		is_orbital_ring = no
 	}
@@ -2769,11 +2785,20 @@ module_protection_link = {
 		starbase_trade_protection_add = 25
 	}
 
+	triggered_station_modifier = {
+		potential = {
+			always = yes
+		}
+		storm_repelling_field_modifier = 0.2
+		custom_tooltip = "building_cosmic_storm_repellent_center_tt"
+	}
+
+
 	ai_weight = {
 		weight = 150
 	}
 
-	show_in_tech = "tech_sensors_1"
+	show_in_tech = "tech_space_trading"
 }
 
 federation_sbs = {
@@ -2824,6 +2849,7 @@ federation_sbs = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_sensors_4 }
+		is_normal_starbase = yes
 	}
 
 	abort_trigger = {
@@ -2978,6 +3004,7 @@ sbs_cannon = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_sbs_cannon }
+		is_normal_starbase = yes
 	}
 
 	abort_trigger = {
@@ -3014,6 +3041,7 @@ space_army = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_global_defense_grid }
+		is_normal_starbase = yes
 	}
 
 	planet_modifier = {
@@ -3061,6 +3089,7 @@ starbase_extra = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_defense_platform_hull_1 }
+		is_normal_starbase = yes
 	}
 	
 	ai_weight = { weight = 100 }

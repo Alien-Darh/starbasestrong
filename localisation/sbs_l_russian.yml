@@ -195,8 +195,8 @@
  sm_aura_air_force:0 "Fortress aura"
  sm_aura_air_force_desc:0 "A sophisticated aura will help the star bases to defend against hostile empires and others."
 
- sm_aux_module_starhold:0 "Support module"
- sm_aux_module_starhold_desc:0 "Logistic support station is strategically placed at the edges of our borders with some tactical advantages."
+ sm_aux_module:0 "Support module"
+ sm_aux_module_desc:0 "Logistic support station is strategically placed at the edges of our borders with some tactical advantages."
  
  sm_module_protection_link:0 "Protection module"
  sm_module_protection_link_desc:0 "A station that is able to repel and delay some pirate attacks in the system before being captured."
@@ -326,7 +326,7 @@
  starbase_citadel_upgrade_plural:0 "Ciudad improvements"
  CITADEL_STARBASE_SECTION:0 "High power combat section"
  CITADEL_STARBASE_UPGRADE_SECTION:0 "Improvement of the stellar base to stellar bunker"
- BATTERY_STARBASE_SECTION_UPGRADE:0 "Long -range weapon and high fire power"
+ BATTERY_STARBASE_SECTION_UPGRADE:0 "Long range weapon and high fire power"
  
  stargate:0 "Stargate"
  stargate_DESC:0 "$gateway_final_DESC$"
