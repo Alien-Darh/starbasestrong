@@ -442,12 +442,14 @@ country_event = {
 					is_planet_class = pc_habitat
 				}
 				destroy_colony = yes
-				remove_planet = yes
 				spawn_habitat_cracker_effect = yes
 				remove_planet_flag = megastructure
 				remove_planet_flag = habitat
 				orbit = {
 					remove_planet_flag = has_megastructure
+				}
+				hidden_effect = {
+					remove_planet = yes
 				}
 			}
 		}
@@ -744,6 +746,11 @@ country_event = {
 					}
 				}
 				remove_megastructure = this
+				hidden_effect = {
+					remove_modifier = dyson_swarm_1_mod
+					remove_modifier = dyson_swarm_2_mod
+					remove_modifier = dyson_swarm_3_mod
+				}
 				create_ambient_object = {
 					type = explosion_particle_object
 					location = this
@@ -758,6 +765,7 @@ country_event = {
 				}
 				star = {
 					remove_planet_flag = has_megastructure
+					clear_deposits = yes
 				}
 			}
 		}
@@ -826,6 +834,12 @@ country_event = {
 					}
 				}
 				remove_megastructure = this
+				hidden_effect = {
+					remove_modifier = orbital_arc_furnace_1_mod
+					remove_modifier = orbital_arc_furnace_2_mod
+					remove_modifier = orbital_arc_furnace_3_mod
+					remove_modifier = orbital_arc_furnace_4_mod
+				}
 				create_ambient_object = {
 					type = explosion_particle_object
 					location = this
@@ -844,9 +858,9 @@ country_event = {
 						remove_planet_flag = has_megastructure
 						remove_planet_flag = has_arc_furnace
 					}
-#					every_deposit = {
-#						remove_deposit = yes
-#					}
+				}
+				every_system_planet = {
+					clear_deposits = yes
 				}
 			}
 		}

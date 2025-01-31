@@ -722,7 +722,7 @@ guiTypes = {
 		}
 
 		containerWindowType = {
-			name = "shipyard_tab"
+			name = "ship_build_queue_tab"
 
 			if_scaled_resolution = {
 				max_height = 800
@@ -748,14 +748,14 @@ guiTypes = {
 				}
 
 				iconType = {
-					name = "shipyard_icon"
+					name = "module_icon"
 					spriteType = "GFX_starbase_shipyard"
 					position = { x = 8 y = -65 }
 					orientation = LOWER_LEFT
 				}
 
 				instantTextBoxType = {
-					name = "shipyard_capacity"
+					name = "module_capacity"
 					position = { x = 70 y = -50 }
 					font = "malgun_goth_24"
 					text = "STARBASE_SHIPYARD_CAPACITY"
@@ -763,7 +763,6 @@ guiTypes = {
 					maxHeight = 40
 					fixedSize = yes
 					format = left
-					pdx_tooltip = "STARBASE_SHIPYARD_CAPACITY_DESC"
 					orientation = LOWER_LEFT
 				}
 			}
@@ -911,18 +910,18 @@ guiTypes = {
 			iconType = {
 				name = "help_icon"
 				spriteType = "GFX_help_icon_circle"
-				position = { x = 170 y = -1 }
+				position = { x = 520 y = -4 }
 				pdx_tooltip = "MACRO_BUILDER_DESC"
 			}
 
 
 			instantTextBoxType = {
 				name = "macro_builder_title"
-				position = { x = 200 y = 0 }
+				position = { x = 15 y = 0 }
 				font = "malgun_goth_24"
 				text = "MACRO_BUILDER_TITLE"
 				maxWidth = 400
-				maxHeight = 50
+				maxHeight = 24
 				fixedSize = yes
 				format = left
 				pdx_tooltip = "MACRO_BUILDER_DESC"
@@ -951,22 +950,15 @@ guiTypes = {
 					spriteType = "GFX_tiles_frame"
 				}
 
-				iconType = {
-					name = "shipyard_icon"
-					spriteType = "GFX_system_cap_icon"
-					position = { x = 42 y = -31 }
-					orientation = LOWER_LEFT
-				}
-
 				instantTextBoxType = {
 					name = "macro_builder_capacity"
-					position = { x = 70 y = -35 }
-					font = "malgun_goth_24"
+					position = { x = 10 y = -30 }
+					font = "cg_16b"
 					text = "MACRO_BUILDER_CAPACITY"
-					maxWidth = 198
-					maxHeight = 40
+					maxWidth = 250
+					maxHeight = 20
 					fixedSize = yes
-					format = left
+					#format = left
 					pdx_tooltip = "MACRO_BUILDER_CAPACITY_DESC"
 					orientation = LOWER_LEFT
 				}
@@ -1004,6 +996,7 @@ guiTypes = {
 					fixedSize = yes
 					format = center
 					alwaysTransparent = yes
+					text_color_code = g
 				}
 
 				smoothListBoxType = {
@@ -1085,7 +1078,6 @@ guiTypes = {
 				quadTextureSprite = "GFX_button_planet"
 				position = { x = 25 y = 0 }
 				pdx_tooltip = "OPEN_PLANET_VIEW"
-				#shortcut = "TODO"
 			}
 
 			buttonType = {
@@ -1175,7 +1167,7 @@ guiTypes = {
 			buttonType = {
 				name = "shipyard_tab"
 				quadTextureSprite = "GFX_tab_2_inactive"
-				position = { x= 391 y = 0}
+				position = { x= 391 y = 0 }
 				buttonText = "STARBASE_SHIPYARD_TAB"
 				buttonFont = "cg_16b"
 				clicksound = "tab_click"
@@ -1714,6 +1706,13 @@ guiTypes = {
 		iconType = {
 			name = "unlocked"
 			spriteType = "GFX_spaceport_module_slot"
+		}
+
+		iconType = {
+			name = "progressbar"
+			spriteType = "GFX_queue_progressbar_52"
+			position = { x = 3 y = 42 }
+			alwaysTransparent = yes
 		}
 	}
 

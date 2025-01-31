@@ -143,6 +143,7 @@
  cleanevents.1.f:0 "§Y$dyson_swarm_3$§!"
  cleanevents.1.g:0 "§Y$orbital_arc_furnace_4$§!"
  cleanevents.1.h:0 "§YRecargar nanobots§!"
+ REMOVE_PLANET_EFFECT:0 "Remover planeta $PLANET$"
 
  tech_sensors_1:0 "Sensores remotos"
  tech_sensors_1_desc:0 "Módulo de sensores controlados por inteligencia artificial avanzada, son capaces de detectar cambios de longitudes de onda y algunas alteraciones de energía no naturales. Su fácil posicionamiento lo hace imprescindible para la exploración, apoyo en defensa y reabastecimiento de naves espaciales."
@@ -177,7 +178,7 @@
  requires_mine_minerals:0 "$TRIGGER_FAIL$Requiere un §YDepósito de extracción de minerales§! en el sistema."
  requires_no_modules:0 "$TRIGGER_FAIL$§RNo se puede tener módulos de combate en la base estelar§!: debido a los componentes explosivos para la elaboración de aleaciones."
  requires_citadel_upgrade:0 "$TRIGGER_FAIL$§RRequiere actualización§!: debido a los requerimientos de montaje de armas y defensa especializados es necesario reforzar la base estelar."
- requires_habitable_planet:0 "Requiere un planeta habitable en el sistema para explorar"
+ requires_habitable_planet:0 "Requiere un planeta habitable en el sistema"
  requires_modules:0 "Requiere los 3 módulos de combate básicos ó 3 bateria XL"
 
  requires_black_hole_neutron_star_pulsar:0 "§RRequiere un §Y$pc_pulsar$§! \n§RRequiere un §Y$pc_neutron_star$§! \n§RRequiere un §Y$pc_black_hole$§! \nen el sistema.§!"
@@ -468,7 +469,10 @@
  sbscannon.2.desc:0 "Se ha instalado un cañón interestelar cerca de nuestra base en §Y[event_target:sbs_cannon_system_0.GetName]§! y ha comenzado la cuenta regresiva de lanzamiento...\n\nAlmirante; solo falta la orden final de activación una vez que haya alcanzado su potencia máxima de carga dentro de algunos meses."
 
  sbscannon.3.name:0 "Cañón listo y en espera"
- sbscannon.3.desc:0 "El cañón Interestelar en la base estelar en §Y[event_target:sbs_cannon_system_0.GetName]§! esta listo para ser lanzado al sistema §Y[event_target:sbs_cannon_system.GetName]§!..."
+ sbscannon.3.desc:0 "El cañón Interestelar en la base estelar en §Y[event_target:sbs_cannon_system_0.GetName]§! esta listo para ser lanzado al sistema §Y[event_target:sbs_cannon_system.GetName]§!... Se necesita de al menos 2500 GigoMegawatt de energía para un optimo funcionamiento."
+
+ sbscannon.7.name:0 "Cañón estelar recargado"
+ sbscannon.7.desc:0 "El cañón Interestelar en la base estelar en esta recargado a su maxima capacidad y listo para ser usado nuevamente..."
 
  ########## extra system #########
 
@@ -476,12 +480,32 @@
  sm_starbase_extra_desc:0 "Edificio de la base estelar que añade un sistema exclusivo para fines militares."
 
  starbase_extra.2.name:0 "Sistema militar"
- starbase_extra.2.desc:0 "Se ha encontrado y enlazado un nuevo sistema cerca de nuestra base principal en §H[Root.Solar_System.GetName]§! llamado §H[event_target:starbase_extra_base.GetName]§!.\n\nNuestro edificio de comunicaciones de largo alcance mantendrá activo el enlace con este nuevo sistema de características militares.\n\nSi nuestro edificio falla o es desactivado no se podrá construir de nuevo y no habrá conexión via hiperruta al nuevo sistema dejandolo aislado hasta encontrar otras alternativas de paso."
+ starbase_extra.2.desc:0 "Se ha encontrado y enlazado un nuevo sistema cerca de nuestra base principal en §H[Root.Solar_System.GetName]§! llamado §H[event_target:starbase_extra_base.GetName]§!.\n\nNuestro edificio de comunicaciones de largo alcance mantendrá activo el enlace con este nuevo sistema de características militares.\n\nSi nuestro edificio falla o es desactivado no se podrá construir de nuevo y no habrá conexión via hiperruta al nuevo sistema dejándolo aislado hasta encontrar otras alternativas de paso."
 
  requires_no_existing_starbase_extra:0 "No se puede volver a construir"
 
  cannon_sarmat:0 "Sarmat"
  SCIENCE_CLOAKING_0:0 "$CLOAKING_1$"
+ science_cloaking_components_DESC: "Los generadores de campo de camuflaje permiten que nuestras naves se oculten de los sensores convencionales."
+
+ ########## omega infestation #########
+
+ sbsomega.2.name:0 "Infestación Omega"
+ sbsomega.2.desc:0 "Virus de infestación radiactiva es dirigido a todo el sistema desde la base estelar irradiando los planetas habitables no colonizados cercanos dejándolos inertes e inevitables desde su núcleo hacia su atmósfera....\n\nIniciando radiación expansiva total en algunos meses..."
+
+ sbsomega.4.name:0 "Infestación Omega"
+ sbsomega.4.desc:0 "Virus de infestación radiactiva ha sido recargado y está listo para ser usada nuevamente en alguna base estelar del territorio"
+
+ sm_sbs_omega:0 "Infestación Omega"
+ sm_sbs_omega_desc:0 "Edificio de la base estelar que añade un potente pulso radiactivo de infectación planetaria."
+ omega_trans:0 "Infestación Omega"
+ requires_existing_sbs_omega:0 "Requiere recarga Infestación Omega"
+ requires_no_primitives:0 "Requiere no civilizaciones primitivas"
+ requires_habitable_planet:0 "Requiere planeta habitable"
+ requires_no_candidate_planet:0 "Requiere no planetas terraformación"
+ requires_no_colony_planet:0 "Requiere no planetas colonizados"
+ requires_no_guardian_planet:0 "Requiere no sectores guardianes"
+ requires_no_no_war:0 "Requiere estar en paz"
 
  ########## solo español #########
 

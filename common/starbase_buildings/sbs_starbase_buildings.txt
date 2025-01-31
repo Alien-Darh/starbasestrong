@@ -29,16 +29,6 @@ research_lav = {
 				exists = owner
 				owner = { has_technology = tech_space_science_1 }
 			}
-			physics_research = 1
-			society_research = 1
-			engineering_research = 1
-		}
-
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { has_technology = tech_space_science_2 }
-			}
 			physics_research = 2
 			society_research = 2
 			engineering_research = 2
@@ -47,11 +37,21 @@ research_lav = {
 		produces = {
 			trigger = {
 				exists = owner
+				owner = { has_technology = tech_space_science_2 }
+			}
+			physics_research = 4
+			society_research = 4
+			engineering_research = 4
+		}
+
+		produces = {
+			trigger = {
+				exists = owner
 				owner = { has_technology = tech_space_science_3 }
 			}
-			physics_research = 3
-			society_research = 3
-			engineering_research = 3
+			physics_research = 6
+			society_research = 6
+			engineering_research = 6
 		}
 
 		produces = {
@@ -59,18 +59,18 @@ research_lav = {
 				exists = owner
 				owner = { has_technology = tech_space_science_4 }
 			}
-			physics_research = 4
-			society_research = 4
-			engineering_research = 4
+			physics_research = 8
+			society_research = 8
+			engineering_research = 8
 		}
 		produces = {
 			trigger = {
 				exists = owner
 				owner = { has_technology = tech_space_science_5 }
 			}
-			physics_research = 5
-			society_research = 5
-			engineering_research = 5
+			physics_research = 10
+			society_research = 10
+			engineering_research = 10
 		}
 
 		upkeep = { energy = 10 }
@@ -92,22 +92,224 @@ hydrogen_cells = {
 	}
 	possible = {
 		custom_tooltip = {
-			fail_text = "requires_starhold"
+			fail_text = "requires_starport_or_ring"
 			OR = {
-				has_starbase_size >= starbase_starhold
+				has_starbase_size >= starbase_starport
 				is_orbital_ring = yes
 			}
 		}
 		has_starbase_module = solar_panels
 	}
+
 	resources = {
 		category = starbase_buildings
 		cost = { alloys = 100 }
-		produces = { energy = 6 }
-		upkeep = { minerals = 10 }
 		upkeep = {
 			trigger = { owner = { is_at_war = yes } }
-			energy = -2
+			energy = -6
+		}
+		upkeep = {
+			trigger = {
+				exists = starbase
+					starbase = { 
+						count_starbase_modules = {
+						type = solar_panels
+						count = 1
+					}
+				}
+			}
+			minerals = 5
+		}
+		upkeep = {
+			trigger = {
+				exists = starbase
+					starbase = { 
+						count_starbase_modules = {
+						type = solar_panels
+						count = 2
+					}
+				}
+			}
+			minerals = 10
+		}
+		upkeep = {
+			trigger = {
+				exists = starbase
+					starbase = { 
+						count_starbase_modules = {
+						type = solar_panels
+						count = 3
+					}
+				}
+			}
+			minerals = 15
+		}
+		upkeep = {
+			trigger = {
+				exists = starbase
+					starbase = { 
+						count_starbase_modules = {
+						type = solar_panels
+						count = 4
+					}
+				}
+			}
+			minerals = 20
+		}
+		upkeep = {
+			trigger = {
+				exists = starbase
+					starbase = { 
+						count_starbase_modules = {
+						type = solar_panels
+						count = 5
+					}
+				}
+			}
+			minerals = 22
+		}
+		upkeep = {
+			trigger = {
+				exists = starbase
+					starbase = { 
+						count_starbase_modules = {
+						type = solar_panels
+						count = 6
+					}
+				}
+			}
+			minerals = 24
+		}
+		upkeep = {
+			trigger = {
+				exists = starbase
+					starbase = { 
+						count_starbase_modules = {
+						type = solar_panels
+						count = 7
+					}
+				}
+			}
+			minerals = 26
+		}
+		upkeep = {
+			trigger = {
+				exists = starbase
+					starbase = { 
+						count_starbase_modules = {
+						type = solar_panels
+						count = 8
+					}
+				}
+			}
+			minerals = 28
+		}
+
+		produces = {
+			trigger = {
+				exists = starbase
+					starbase = { 
+						count_starbase_modules = {
+						type = solar_panels
+						count = 1
+					}
+				}
+			}
+			energy = 2
+		}
+		produces = {
+			trigger = {
+				exists = starbase
+					starbase = { 
+						count_starbase_modules = {
+						type = solar_panels
+						count = 2
+					}
+				}
+			}
+			energy = 4
+		}
+		produces = {
+			trigger = {
+				exists = starbase
+					starbase = { 
+						count_starbase_modules = {
+						type = solar_panels
+						count = 3
+					}
+				}
+			}
+			energy = 6
+		}
+		produces = {
+			trigger = {
+				exists = starbase
+					starbase = { 
+						count_starbase_modules = {
+						type = solar_panels
+						count = 4
+					}
+				}
+			}
+			energy = 8
+		}
+		produces = {
+			trigger = {
+				exists = starbase
+					starbase = { 
+						count_starbase_modules = {
+						type = solar_panels
+						count = 5
+					}
+				}
+			}
+			energy = 9
+		}
+		produces = {
+			trigger = {
+				exists = starbase
+					starbase = { 
+						count_starbase_modules = {
+						type = solar_panels
+						count = 6
+					}
+				}
+			}
+			energy = 10
+		}
+		produces = {
+			trigger = {
+				exists = starbase
+					starbase = { 
+						count_starbase_modules = {
+						type = solar_panels
+						count = 7
+					}
+				}
+			}
+			energy = 11
+		}
+		produces = {
+			trigger = {
+				exists = starbase
+					starbase = { 
+						count_starbase_modules = {
+						type = solar_panels
+						count = 8
+					}
+				}
+			}
+			energy = 12
+		}
+	}
+
+	destroy_trigger = {
+		exists = starbase
+			starbase = { 
+				count_starbase_modules = {
+				type = solar_panels
+				count = 0
+			}
 		}
 	}
 
@@ -1838,40 +2040,7 @@ orbital_assembly = {
 				has_technology = tech_cryostasis_1
 			}
 		}
-		pop_growth_speed = 0.04
-	}
-
-	triggered_system_modifier = {
-		potential = {
-			hidden_trigger = { exists = this }
-			exists = owner
-			owner = {
-				has_technology = tech_droid_workers
-			}
-		}
-		planet_pop_assembly_add = 1
-	}
-
-	triggered_system_modifier = {
-		potential = {
-			hidden_trigger = { exists = this }
-			exists = owner
-			owner = {
-				has_technology = tech_micro_replicators
-			}
-		}
-		planet_pop_assembly_add = 1
-	}
-
-	triggered_system_modifier = {
-		potential = {
-			hidden_trigger = { exists = this }
-			exists = owner
-			owner = {
-				has_technology = tech_self_assembling_components
-			}
-		}
-		planet_pop_assembly_add = 1
+		pop_growth_speed = 0.20
 	}
 
 	triggered_system_modifier = {
@@ -1882,12 +2051,43 @@ orbital_assembly = {
 				has_technology = tech_cryostasis_2
 			}
 		}
-		pop_growth_speed = 0.06
+		pop_growth_speed = 0.30
 	}
 
-	system_modifier = {
-		pop_growth_speed = 0.02
-		planet_pop_assembly_add = 1
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			exists = owner
+			owner = {
+				has_technology = tech_droid_workers
+			}
+		}
+		planet_pop_assembly_add = 2
+		planet_pop_assembly_mult = 0.25
+	}
+
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			exists = owner
+			owner = {
+				has_technology = tech_micro_replicators
+			}
+		}
+		planet_pop_assembly_add = 2
+		planet_pop_assembly_mult = 0.20
+	}
+
+	triggered_system_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			exists = owner
+			owner = {
+				has_technology = tech_self_assembling_components
+			}
+		}
+		planet_pop_assembly_add = 3
+		planet_pop_assembly_mult = 0.30
 	}
 
 	show_in_tech = "tech_cryostasis_1"
@@ -2410,7 +2610,7 @@ star_hyper = {
 			alloys = 10
 			influence = 5
 		}
-		upkeep = { energy = 5 }
+		upkeep = { energy = 1 }
 	}
 
 	ai_weight = { weight = 0 }
@@ -3007,9 +3207,6 @@ sbs_cannon = {
 		is_normal_starbase = yes
 	}
 
-	abort_trigger = {
-	}
-
 	ai_weight = { weight = 0 }
 
 	show_in_tech = "tech_sbs_cannon"
@@ -3099,4 +3296,100 @@ starbase_extra = {
 	}
 
 	show_in_tech = "tech_defense_platform_hull_1"
+}
+
+sbs_omega = {
+	icon = "GFX_spaceport_sbs_omega"
+	construction_days = 360
+
+	resources = {
+		category = starbase_buildings
+		cost = { 
+			energy = 1000
+			influence = 25
+		}
+		upkeep = { 
+			energy = 50
+			influence = 1
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_existing_sbs_omega"
+			from = {
+				NOT = { has_country_flag = sbs_omega_target }
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_primitives"
+			solar_system = {
+				NOT = {
+					any_system_colony = {
+						exists = owner
+						owner = { is_country_type = primitive }
+					}
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_habitable_planet"
+			solar_system = {
+				any_system_planet = {
+					OR = {
+						habitable_planet = yes
+						colonizable_planet = yes
+					}
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_candidate_planet"
+			solar_system = {
+				any_system_planet = {
+					is_terraforming_candidate = no
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_colony_planet"
+			solar_system = {
+				NOT = {
+					any_system_colony = { is_owned_by = from }
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_guardian_planet"
+			solar_system = {
+				any_country = {
+					is_guardian_country = no
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_no_war"
+            from = {
+                owner = {
+                    NOT = { 
+                        is_at_war = yes
+					}
+				}
+			}
+		}
+	}
+
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_sbs_cannon }
+		is_normal_starbase = yes
+	}
+
+	on_finished = {
+		starbase_event = { id = sbsomega.2 days = 30 }
+	}
+
+	ai_weight = { weight = 0 }
+
+	show_in_tech = "tech_sbs_cannon"
 }

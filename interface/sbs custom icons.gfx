@@ -236,6 +236,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_spaceport_sbs_omega"
+		texturefile = "gfx/interface/icons/modules/sbs_omega.dds"
+	}
+
+	spriteType = {
 		name = "GFX_starbase_extra"
 		texturefile =  "gfx/interface/icons/modules/starbase_extra.dds"
 	}
@@ -412,5 +417,23 @@ spriteTypes = {
 		legacy_lazy_load = no
 		alwaystransparent = yes				
 	}
-}
 
+	#Megastructures
+	spriteType = {
+		name = "GFX_hyperlane_sbs_build_icon"
+		textureFile = "gfx/interface/icons/megastructures/hyperlane_sbs_build.dds"
+	}
+	spriteType = {
+		name = "GFX_sbs_cannon_build_icon"
+		textureFile = "gfx/interface/icons/megastructures/sbs_cannon_build.dds"
+	}
+	spriteType = {
+		name = "GFX_stargate_build_icon"
+		textureFile = "gfx/interface/icons/megastructures/spaceport_star_gate.dds"
+	}
+	spriteType = {
+		name = "GFX_hyper_relay_starbase_build_icon"
+		textureFile = "gfx/interface/icons/megastructures/spaceport_star_hyper.dds"
+	}
+
+}

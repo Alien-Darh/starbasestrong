@@ -342,7 +342,7 @@ social_services = {
 			energy = 10
 		}
 		produces = {
-			influence = 0.20
+			influence = 0.1
 		}
 		upkeep = {
 			energy = 5
@@ -374,6 +374,50 @@ social_services = {
 		}
 	}
 
+	triggered_planet_modifier = {
+		potential = {
+			exists = planet
+			planet = {
+				planet_stability >= 90 #>= mayor que / <= menor que
+#				planet_crime <= 5
+			}
+		}
+		country_ruler_influence_produces_add = 0.04
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = planet
+			planet = {
+				planet_stability >= 80 #>= mayor que / <= menor que
+#				planet_crime <= 10
+			}
+		}
+		country_ruler_influence_produces_add = 0.03
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = planet
+			planet = {
+				planet_stability >= 70 #>= mayor que / <= menor que
+#				planet_crime <= 15
+			}
+		}
+		country_ruler_influence_produces_add = 0.02
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = planet
+			planet = {
+				planet_stability >= 60 #>= mayor que / <= menor que
+#				planet_crime <= 20
+			}
+		}
+		country_ruler_influence_produces_add = 0.01	
+	}
+
 	show_in_tech = "tech_effective_bureaucracy"
 
 	ai_weight = {
@@ -393,21 +437,18 @@ solar_panels = {
 			is_gestalt = no
 			has_technology = "tech_solar_panels"
 		}
-		is_normal_starbase = yes
+#		is_normal_starbase = yes
 	}
 
-#	possible = {
-#				custom_tooltip = {
-#				fail_text = "requires_no_black_hole_or_dyson_sphere"
-#				NOR = {
-#					is_star_class = sc_black_hole
-#					has_megastructure = dyson_sphere_3
-#					has_megastructure = dyson_sphere_4
-#					has_megastructure = dyson_sphere_5
-#				}
-#			}
-#		}
-#	}
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starport_or_ring"
+			OR = {
+				has_starbase_size >= starbase_starport
+				is_orbital_ring = yes
+			}
+		}
+	}
 
 	resources = {
 		category = starbase_modules
@@ -428,7 +469,7 @@ solar_panels = {
 					is_star_class = sc_black_hole
 				}
 			}	
-			energy = -1
+			energy = -0.5
 		}
 
 		produces = {
@@ -436,7 +477,7 @@ solar_panels = {
 				exists = owner
 				owner = { has_technology = tech_power_plant_1 }
 			}
-			energy = 0.25
+			energy = 2
 		}
 
 		produces = {
@@ -444,7 +485,7 @@ solar_panels = {
 				exists = owner
 				owner = { has_technology = tech_power_plant_2 }
 			}
-			energy = 0.5
+			energy = 1.5
 		}
 
 		produces = {
@@ -452,7 +493,7 @@ solar_panels = {
 				exists = owner
 				owner = { has_technology = tech_power_plant_3 }
 			}
-			energy = 0.5
+			energy = 1
 		}
 
 		produces = {

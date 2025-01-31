@@ -146,6 +146,7 @@ cleanevents.1.d:0 "§Y$hyper_relay$§!"
  cleanevents.1.f:0 "§Y$dyson_swarm_3$§!"
  cleanevents.1.g:0 "§Y$orbital_arc_furnace_4$§!"
  cleanevents.1.h:0 "§YRecargar nanobots§!"
+ REMOVE_PLANET_EFFECT:0 "移除行星$PLANET$"
 
 tech_sensors_1:0 "远程感应"
 tech_sensors_1_desc:0 "由先进人工智能控制的传感器模块，能够检测波长变化和一些不自然的能量扰动。其易于定位使其成为勘探、防御支援和航天器补给的重要工具。"
@@ -181,7 +182,7 @@ requires_mine_dark_matter:0 "$TRIGGER_FAIL$需要系统中有一个§YDark matte
 requires_mine_minerals:0 "$TRIGGER_FAIL$需要系统中有一个§YMineral extraction deposit§!。"
 requires_no_modules:0 "$TRIGGER_FAIL$§R由于用于制造合金的爆炸性成分，星球基地不能安装战斗模块§!。"
 requires_citadel_upgrade:0 "$TRIGGER_FAIL$§R需要升级§!：由于特殊武器和防御装配要求，必须加强星球基地。"
-requires_habitable_planet:0 "需要系统中有一个适合居住的行星来进行勘探。"
+requires_habitable_planet:0 "需要係統中有一顆宜居行星。"
 requires_modules:0 "需要3个基本战斗模块或3个XL电池。"
 
 requires_black_hole_neutron_star_pulsar:0 "§R需要系统中有一个§Y$pc_pulsar$§!。\n§R需要系统中有一个§Y$pc_neutron_star$§!。\n§R需要系统中有一个§Y$pc_black_hole$§!。"
@@ -478,8 +479,11 @@ requires_modules_solar:0 "需要4个太阳能板模块"
 sbscannon.2.name:0 "武器安装"
 sbscannon.2.desc:0 "一个星际火炮已经安装在我们位于§Y[event_target:sbs_cannon_system_0.GetName]§!附近的基地，发射倒计时已经开始...\n\n上将，一旦它达到几个月内的最大充电功率，只需最终激活命令即可。"
 
+sbscannon.7.name:0 "星砲重裝上陣"
+sbscannon.7.desc:0 "星際基地的星際大砲已充滿電並準備再次使用......"
+
 sbscannon.3.name:0 "火炮准备就绪并待命"
-sbscannon.3.desc:0 "星际火炮在§Y[event_target:sbs_cannon_system_0.GetName]§!的星球基地已经准备好发射至§Y[event_target:sbs_cannon_system.GetName]§!系统！..."
+sbscannon.3.desc:0 "星际火炮在§Y[event_target:sbs_cannon_system_0.GetName]§!的星球基地已经准备好发射至§Y[event_target:sbs_cannon_system.GetName]§!系统！...为了实现最佳运行，至少需要 2500 千兆瓦的电力。"
 
  ########## extra system #########
 
@@ -493,3 +497,23 @@ requires_no_existing_starbase_extra:0 "无法建造"
 
 cannon_sarmat:0 "Sarmat"
 SCIENCE_CLOAKING_0:0 "$CLOAKING_1$"
+science_cloaking_components_DESC: "隐形场发生器能够让我们的舰船在传统的传感器面前隐匿起来。"
+
+########## 歐米伽感染 ##########
+
+ sbsomega.2.name:0 "歐米茄感染"
+ sbsomega.2.desc:0 "放射性感染病毒從恆星基地定向到整個系統，輻射附近的非殖民宜居行星，使它們處於惰性狀態，不可避免地從其核心進入大氣層......\n\n啟動全面擴張幾個月後的輻射...”
+
+ sbsomega.4.name:0 "歐米茄感染"
+ sbsomega.4.desc:0 "放射性感染病毒已重新充電並準備好在該領土的某些星際基地再次使用。"
+
+ sm_sbs_omega:0 "歐米茄感染"
+ sm_sbs_omega_desc:0 "增加強大行星感染輻射脈衝的星際基地建築。"
+ omega_trans:0 "歐米茄感染"
+ require_existing_sbs_omega:0 "需要歐米茄感染充能"
+ require_no_primitives:0 "不需要原始文明"
+ require_habitable_planet:0 "需要宜居星球"
+ require_no_candidate_planet:0 "不需要改造行星"
+ require_no_colony_planet:0 "不需要殖民行星"
+ require_no_guardian_planet:0 "不需要守護星區"
+ require_no_no_war:0 "需要和平。"

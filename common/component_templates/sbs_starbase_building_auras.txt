@@ -124,6 +124,10 @@ utility_component_template = {
 			damage_vs_country_type_gate_builders_mult = 0.50
 			damage_vs_country_type_awakened_marauders_mult = 0.50
 			damage_vs_country_type_gray_goo_mult = 0.50
+			damage_vs_country_type_voidworms_mult = 0.50
+			damage_vs_country_type_voidworms_crisis_mult = 0.50
+			damage_vs_country_type_voidworms_treasure_hunters_mult = 0.50
+			damage_vs_country_type_frenzied_voidworms_mult = 0.50
 		}
 
 		graphics = {

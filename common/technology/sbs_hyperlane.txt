@@ -6,7 +6,7 @@ tech_hyperlane_sbs = {
 	is_rare = yes
 	is_reverse_engineerable = no
 	weight = @tier1cost2
-	
+
 	weight_modifier = {
 		factor = 0.5
 		modifier = {

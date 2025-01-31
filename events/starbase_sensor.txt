@@ -11,7 +11,7 @@ country_event = {
 	}
 
 	immediate = {
-		country_event = { id = sensor.1 days = 2520 random = 360 }
+		country_event = { id = sensor.1 days = 2880 random = 1440 }
 	}
 }
 
@@ -36,11 +36,7 @@ country_event = {
 				limit = {
 					NOT = { has_technology = tech_sensors_1 }
 				}
-				add_research_option = tech_sensors_1
-				add_tech_progress = {
-					tech = tech_sensors_1
-					progress = 0.99
-				}
+				give_technology = { tech = tech_sensors_1 }
 			}
 			else_if = {
 				limit = {
@@ -50,6 +46,15 @@ country_event = {
 					unity = 500
 					influence = 100
 				}
+				add_research_option = tech_solar_panels
+				add_tech_progress = {
+					tech = tech_solar_panels
+					progress = 0.10
+				}
+			}
+			add_modifier =  {
+				modifier = agenda_uncover_secrets_finish
+				days = 3600
 			}
 		}
 	}

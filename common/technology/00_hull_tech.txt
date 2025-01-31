@@ -196,6 +196,10 @@ tech_sensors_1 = {
 	ai_update_type = all
 	weight = @tier1weight1
 
+	modifier = {
+		first_contact_speed_mult = 0.1
+	}
+
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -232,11 +236,20 @@ tech_solar_panels = {
 	area = engineering
 	tier = 1
 	category = { voidcraft }
+	ai_update_type = all
 	prerequisites = { "tech_space_science_1" }
 	weight = @tier1weight1
 
 	potential = {
 		is_gestalt = no
+	}
+
+	weight_modifier = {
+		factor = 0.25
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_discovery_adopt
+		}
 	}
 
 	ai_weight = {

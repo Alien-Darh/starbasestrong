@@ -143,6 +143,7 @@
  cleanevents.1.f:0 "§Y$dyson_swarm_3$§!"
  cleanevents.1.g:0 "§Y$orbital_arc_furnace_4$§!"
  cleanevents.1.h:0 "§YRecargar nanobots§!"
+ REMOVE_PLANET_EFFECT:0 "Remove planet $PLANET$"
 
  tech_sensors_1:0 "Remote sensing"
  tech_sensors_1_desc:0 "Sensor module controlled by advanced artificial intelligence, capable of detecting changes in wavelengths and some unnatural power disturbances. Its easy positioning makes it essential for exploration, defense support, and spacecraft resupply."
@@ -177,7 +178,7 @@
  requires_mine_minerals:0 "$TRIGGER_FAIL$requires a §YMineral extraction deposit§! in the system."
  requires_no_modules:0 "$TRIGGER_FAIL$§RYou can't have combat modules at the star base§!: due to the explosive components for the elaboration of alloys."
  requires_citadel_upgrade:0 "$TRIGGER_FAIL$§RRequires update§!: Due to specialized weapons and defense assembly requirements, it is necessary to reinforce the star base."
- requires_habitable_planet:0 "Requires a habitable planet in the system to explore"
+ requires_habitable_planet:0 "Requires a habitable planet in the system"
  requires_modules:0 "Requires the 3 basic combat modules or 3 XL battery"
 
  requires_black_hole_neutron_star_pulsar:0 "§RRequires a §Y$pc_pulsar$§! \n§RRequires a §Y$pc_neutron_star$§! \n§RRequires a §Y$pc_black_hole$§! \nin the system.§!"
@@ -466,8 +467,11 @@
  sbscannon.2.name:0 "Weapon installation"
  sbscannon.2.desc:0 "An interstellar cannon has been installed near our base at §Y[event_target:sbs_cannon_system_0.GetName]§! and the launch countdown has begun...\n\nAdmiral, just the final order to activate once it's done reached its maximum charging power within a few months."
 
+ sbscannon.7.name:0 "Star Cannon Recharged"
+ sbscannon.7.desc:0 "The Interstellar Cannon at Starbase is recharged to full capacity and ready to be used again..."
+
  sbscannon.3.name:0 "Cannon ready and standby"
- sbscannon.3.desc:0 "The Interstellar cannon at the starbase at §Y[event_target:sbs_cannon_system_0.GetName]§! is ready to be launched at the §Y[event_target:sbs_cannon_system.GetName]§ system!..."
+ sbscannon.3.desc:0 "The Interstellar cannon at the starbase at §Y[event_target:sbs_cannon_system_0.GetName]§! is ready to be launched at the §Y[event_target:sbs_cannon_system.GetName]§ system!... At least 2500 GigoMegawatt of power is required for optimal operation."
 
  ########## extra system #########
 
@@ -481,3 +485,23 @@
 
  cannon_sarmat:0 "Sarmat"
  SCIENCE_CLOAKING_0:0 "$CLOAKING_1$"
+ science_cloaking_components_desc:0 "Cloaking field generators allow our vessels to hide from conventional sensors."
+
+ ########## omega infestation #########
+
+ sbsomega.2.name:0 "Omega Infestation"
+ sbsomega.2.desc:0 "Radioactive infestation virus is directed system-wide from starbase irradiating nearby uncolonized habitable planets rendering them inert and unavoidable from their core into their atmosphere....\n\nInitiating full expansive radiation in a few months..."
+
+ sbsomega.4.name:0 "Omega Infestation"
+ sbsomega.4.desc:0 "Radioactive infestation virus has been recharged and is ready to be used again on a starbase in the territory"
+
+ sm_sbs_omega:0 "Omega Infestation"
+ sm_sbs_omega_desc:0 "Starbase building that adds a powerful planetary infection radiation pulse."
+ omega_trans:0 "Omega Infestation"
+ requires_existing_sbs_omega:0 "Omega Infestation Requires Recharge"
+ requires_no_primitives:0 "Requires no primitive civilizations"
+ requires_habitable_planet:0 "Requires habitable planet"
+ requires_no_candidate_planet:0 "Requires no terraforming planets"
+ requires_no_colony_planet:0 "Requires no colonized planets"
+ requires_no_guardian_planet:0 "Requires no guardian sectors"
+ requires_no_no_war:0 "Requires being at peace."

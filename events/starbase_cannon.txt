@@ -16,7 +16,7 @@ country_event = {
 	}
 
 	immediate = {
-		set_timed_country_flag = { flag = sbs_cannon_target days = 2700 }
+		set_timed_country_flag = { flag = sbs_cannon_target days = 1800 }
 		every_owned_starbase = {
 			limit = {
 				has_starbase_building = sbs_cannon
@@ -43,7 +43,8 @@ country_event = {
 			}
 		}
 		owner = {
-			country_event = { id = sbscannon.3 days = 360 }
+			country_event = { id = sbscannon.3 days = 180 }
+			country_event = { id = sbscannon.7 days = 1800 }
 		}
 	}
 }
@@ -117,8 +118,7 @@ country_event = {
 	}
 
 	option = {
-		name = BATTLESTATIONS
-		
+		name = BATTLESTATIONS	
 		trigger = {
 			owner = {
 				resource_stockpile_compare = {
@@ -385,5 +385,20 @@ event = {
 				scale = 5
 			}
 		}
+	}
+}
+
+country_event = {
+	id = sbscannon.7
+	title = "sbscannon.7.name"
+	desc = "sbscannon.7.desc"
+	picture = GFX_evt_decryption
+	show_sound = event_screams
+	location = from
+
+	is_triggered_only = yes
+
+	option = {
+		name = ACKNOWLEDGED
 	}
 }

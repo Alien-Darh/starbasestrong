@@ -77,13 +77,14 @@ military_station_medium = {
 		"east" = { locator = "part3" }
 		"south" = { locator = "part4" }
 	}
-	is_designable = yes
-	uses_name_prefix = no
-	takes_name_from_ship_design = yes
+
 	num_target_locators = 0
 	is_space_station = yes
 	base_buildtime = 360
 	#is_listed = no
+	is_designable = yes
+	uses_name_prefix = no
+	takes_name_from_ship_design = yes
 
 	ship_roles = { gunship screen artillery carrier energy_torpedoes }
 
@@ -131,14 +132,14 @@ military_station_large = {
 		"east" = { locator = "part5" locator = "part6" }
 		"south" = { locator = "part7" locator = "part8" }
 	}
-	is_designable = yes
-	uses_name_prefix = no
-	takes_name_from_ship_design = yes
+
 	num_target_locators = 0
 	is_space_station = yes
 	base_buildtime = 560
 	#is_listed = no
-
+	is_designable = yes
+	uses_name_prefix = no
+	takes_name_from_ship_design = yes
 	ship_roles = { gunship screen artillery carrier energy_torpedoes }
 
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start

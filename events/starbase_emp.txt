@@ -160,25 +160,25 @@ country_event = {
 				if = {
 					limit = { exists = starbase }
 					starbase = {
-						remove_starbase_module = {
-							module = gun_battery
-							module = missile_battery
-							module = hangar_bay
-							module = gun_battery_upgrade
-						}
+						remove_starbase_module = { module = gun_battery }
+						remove_starbase_module = { module = missile_battery }
+						remove_starbase_module = { module = hangar_bay }
+						remove_starbase_module = { module = gun_battery_upgrade }
 					}
 				}
 				else = {
-					limit = {
-						any_fleet_in_system = {
-							is_ship_class = shipclass_military_station
-						}
-					}
-					random_fleet_in_system = {
+					if = {
 						limit = {
-							is_ship_class = shipclass_military_station
+							any_fleet_in_system = {
+								is_ship_class = shipclass_military_station
+							}
 						}
-						destroy_fleet = this
+						random_fleet_in_system = {
+							limit = {
+								is_ship_class = shipclass_military_station
+							}
+							destroy_fleet = this
+						}
 					}
 				}
 				hidden_effect = {

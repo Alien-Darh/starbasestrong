@@ -15,6 +15,7 @@ starbase_outpost = {
 		starbase_defense_platform_capacity_add = 2
 		starbase_building_capacity_add = 1
 		ship_sensor_range_add = 1
+		shipsize_military_station_small_hull_mult = 0.5
 	}
 	ship_modifier = {
 		ship_fire_rate_mult = 0.50
