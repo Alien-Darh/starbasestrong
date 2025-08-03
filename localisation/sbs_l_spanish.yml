@@ -104,8 +104,6 @@
  tech_station_large:0 "Fortaleza"
  tech_station_large_desc:0 "Una gigantesca estructura acorazada de defensa capas de soportar el mas intenso ataque naval."
 
- tech_solar_panels:0 "Paneles Solares"
- tech_solar_panels_desc:0 "Usa la energía del sol para producir energía"
  tech_starbase_citadel_upgrade:0 "Mejora de Ciudadela"
  tech_starbase_citadel_upgrade_desc:0 "Accede a los nuevos edificios de la Base Estelar Ciudadela para reforzar los limites de tu imperio o fomentar las artes, el comercio o investigación"
 
@@ -167,7 +165,6 @@
 
  requires_neutron_star:0 "$TRIGGER_FAIL$Requiere un §Y$pc_neutron_star$§! en el sistema."
  requires_pulsar:0 "$TRIGGER_FAIL$Requiere un §Y$pc_pulsar$§! en el sistema."
- requires_solar_panels:0 "$TRIGGER_FAIL$Requiere modulo de panel solar."
  requires_outpost:0 "$TRIGGER_FAIL$Requiere un §YPuerto estelar§! en el sistema."
  requires_mine_exotic_gases:0 "$TRIGGER_FAIL$Requiere un §YDepósito de extracción de gases§! en el sistema."
  requires_mine_rare_crystals:0 "$TRIGGER_FAIL$Requiere un §YDepósito de cristales raros§! en el sistema."
@@ -183,6 +180,8 @@
 
  requires_black_hole_neutron_star_pulsar:0 "§RRequiere un §Y$pc_pulsar$§! \n§RRequiere un §Y$pc_neutron_star$§! \n§RRequiere un §Y$pc_black_hole$§! \nen el sistema.§!"
  requires_capital_planet:0 "Requiere capital planetaria"
+ requires_no_friendly:0 "Requiere no limite hostil"
+ requires_paz:0 "Requiere estar en paz"
 
  sm_archeological_center:0 "Centro Arqueológico"
  sm_archeological_center_desc:0 "Estudio Arqueológico de la base estelar"
@@ -256,9 +255,6 @@
  sm_research_lav:0 "Laboratorio de Ciencia"
  sm_research_lav_desc:0 "Laboratorio de investigación de la base estelar"
 
- sm_solar_panels:0 "Paneles Solares"
- sm_solar_panels_desc:0 "Produce energía"
-
  sm_space_housing:0 "Módulos Habitacionales"
  sm_space_housing_desc:0 "Despliega módulos de alojamiento en los anillos alrededor de los planetas para aumentar las poblaciones."
 
@@ -305,6 +301,15 @@
  sm_space_army:0 "Edificio de la academia"
  sm_space_army_desc:0 "Edificio de la base estelar que gestiona con mayor eficiencia la fuerza de la armada y que además genera un escudo ante posibles bombardeos planetarios."
 
+ sm_bureaucracy_stelar:0 "Burocracia estelar"
+ sm_bureaucracy_stelar_desc:0 "Edificio de la base estelar que reune una gran base de datos burocraticos de todas las especies de la galaxia conocida que ayuda a encontrar con mayor facilidad edictos sus gobernantes según el póderio de las bases estelares por el imperio."
+
+ requires_management:0 "Requiere Edificio Administrativo"
+ requires_no_crime:0 "Requiere crimen menor a 20%"
+
+ sm_alloys_module:0 "Comercio de metales"
+ sm_alloys_module_desc:0 "Edificio de comercio de metales instalado en la base estelar para agilizar los valores y gestionar la entrega de aleaciones refinadas con mayor eficacia."
+
  mod_stations_volatile_motes_produces_mult:0 "Recolector de motas"
  mod_stations_exotic_gases_produces_mult:0 "Recolector de gas"
  mod_stations_rare_crystals_produces_mult:0 "Recolector de cristal"
@@ -343,6 +348,7 @@
  requires_max_m:0 "Base estelar con módulo §YAdministración§!"
  requires_max_u:0 "Base estelar con módulo §YUnidad§!"
  requires_max_s:0 "Base estelar con módulo §YServicios§!"
+ requires_max_t:0 "Base estelar con módulo §YAleación§!"
 
   ################  BOOSTER ################
   
@@ -466,13 +472,20 @@
  requires_modules_solar:0 "Requiere 4 módulos de paneles solares"
 
  sbscannon.2.name:0 "Instalación cañón"
- sbscannon.2.desc:0 "Se ha instalado un cañón interestelar cerca de nuestra base en §Y[event_target:sbs_cannon_system_0.GetName]§! y ha comenzado la cuenta regresiva de lanzamiento...\n\nAlmirante; solo falta la orden final de activación una vez que haya alcanzado su potencia máxima de carga dentro de algunos meses."
+ sbscannon.2.desc:0 "Se ha instalado un cañón interestelar cerca de nuestra base en §Y[event_target:sbs_cannon_system.GetName]§! y ha comenzado la cuenta regresiva de lanzamiento...\n\nAlmirante; solo falta la orden final de activación una vez que haya alcanzado su potencia máxima de carga dentro de algunos meses."
 
  sbscannon.3.name:0 "Cañón listo y en espera"
- sbscannon.3.desc:0 "El cañón Interestelar en la base estelar en §Y[event_target:sbs_cannon_system_0.GetName]§! esta listo para ser lanzado al sistema §Y[event_target:sbs_cannon_system.GetName]§!... Se necesita de al menos 2500 GigoMegawatt de energía para un optimo funcionamiento."
+ sbscannon.3.desc:0 "El cañón Interestelar en la base estelar en §Y[event_target:sbs_cannon_system.GetName]§! esta listo para ser lanzado al sistema §Y[event_target:sbs_cannon_system_target.GetName]§!... Se necesita de al menos 2500 GigoMegawatt de energía para un optimo funcionamiento."
 
  sbscannon.7.name:0 "Cañón estelar recargado"
  sbscannon.7.desc:0 "El cañón Interestelar en la base estelar en esta recargado a su maxima capacidad y listo para ser usado nuevamente..."
+
+ sbscannon.8.name:0 "§Y¿Qué significa esta acción..?§!"
+ sbscannon.8.desc:0 "Te estamos observando e insistes con lo mismo... cómo te atreves a destruir sistemas que limitan nuetras fronteras?\n\n§RCrees que no nos ibamos a dar cuenta?§!\n\nPudimos enviar a nuestros embajadores y haber negociado ciertos intereses.\n\n¿Cuál es tu explicación...? tal vez perder la confianza que estabamos forjando con el tiempo.\n\nHemos reunido a nuestro consejo imperial para tomar medidas y estaremos atentos a tus próximas acciones, aunque esto no mejorará nuestras relaciones diplomáticas."
+
+ sbscannon.8.a:0 "Fue un experimento fallido"
+ sbscannon.8.b:0 "Será mejor que no te entrometas"
+ sbscannon.8.c:0 "No lo volveremos a hacer..."
 
  ########## extra system #########
 
@@ -511,3 +524,4 @@
 
  TECH_UNLOCK_STARBASE_BUILDING:0 "§HAccede al edif. de la base:§! $NAME$"
  TECH_UNLOCK_STARBASE_MODULE:0 "§HDesbloquea módulo de la base:§! $NAME$"
+ SHIP_COMPONENTS_AUTO_GENERATE: "Automatización"

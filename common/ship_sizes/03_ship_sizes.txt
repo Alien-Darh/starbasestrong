@@ -9,7 +9,7 @@ frigate = {
 	max_hitpoints = @frigate_hp
 	modifier = {
 		ship_evasion_add = @frigate_evasion
-		ship_piracy_suppression_add = 10
+
 	}
 	size_multiplier = 1
 	hull_scale = 1.25
@@ -25,6 +25,8 @@ frigate = {
 	use_shipnames_from = corvette
 
 	default_behavior = torpedo
+
+	role_background = "GFX_role_selection_frigate"
 	ship_roles = { explosive }
 	triggered_ship_roles = {
 		{
@@ -36,7 +38,7 @@ frigate = {
 			trigger = { has_technology = tech_energy_torpedoes_1 }
 		}
 	} 
-	prerequisites = { "tech_corvettes" "tech_torpedoes_0" }
+	prerequisites = { "tech_torpedoes_0" }
 
 	combat_disengage_chance = 1.00
 
@@ -53,6 +55,10 @@ frigate = {
 		upkeep = {
 			energy = @corvette_upkeep_energy
 			alloys = @corvette_upkeep_alloys
+		}
+
+		logistics = {
+			trade = @frigate_logistic_upkeep_trade
 		}
 	}
 

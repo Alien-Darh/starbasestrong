@@ -23,7 +23,7 @@ utility_component_template = {
 
 		modifier = {
 			ship_emergency_ftl_min_days_mult = 1
-			ship_disengage_chance_mult = -0.20
+			ship_disengage_chance_mult = -0.10
 		}
 
 		graphics = {
@@ -44,7 +44,7 @@ utility_component_template = {
 		}
 
 		modifier = {
-			damage_vs_country_type_adversary_mult = 0.20
+			damage_vs_country_type_adversary_mult = 0.10
 			damage_vs_country_type_default_mult = 0.10
 		}
 
@@ -119,15 +119,15 @@ utility_component_template = {
 		}
 
 		modifier = {
-			damage_vs_country_type_fallen_empire_mult = 0.50
-			damage_vs_country_type_awakened_fallen_empire_mult = 0.50
-			damage_vs_country_type_gate_builders_mult = 0.50
-			damage_vs_country_type_awakened_marauders_mult = 0.50
-			damage_vs_country_type_gray_goo_mult = 0.50
-			damage_vs_country_type_voidworms_mult = 0.50
-			damage_vs_country_type_voidworms_crisis_mult = 0.50
-			damage_vs_country_type_voidworms_treasure_hunters_mult = 0.50
-			damage_vs_country_type_frenzied_voidworms_mult = 0.50
+			damage_vs_country_type_fallen_empire_mult = 0.25
+			damage_vs_country_type_awakened_fallen_empire_mult = 0.25
+			damage_vs_country_type_gate_builders_mult = 0.25
+			damage_vs_country_type_awakened_marauders_mult = 0.25
+			damage_vs_country_type_gray_goo_mult = 0.25
+			damage_vs_country_type_voidworms_mult = 0.25
+			damage_vs_country_type_voidworms_crisis_mult = 0.25
+			damage_vs_country_type_voidworms_treasure_hunters_mult = 0.25
+			damage_vs_country_type_frenzied_voidworms_mult = 0.25
 		}
 
 		graphics = {
@@ -161,8 +161,8 @@ utility_component_template = {
 		}
 
 		modifier = {
-			weapon_type_strike_craft_weapon_damage_mult = 0.10
-			weapon_type_strike_craft_speed_mult = 0.10
+			weapon_type_strike_craft_weapon_damage_mult = 0.05
+			weapon_type_strike_craft_speed_mult = 0.05
 		}
 
 		graphics = {
@@ -182,8 +182,8 @@ utility_component_template = {
 		}
 
 		modifier = {
-			weapon_type_strike_craft_weapon_damage_mult = -0.10
-			weapon_type_strike_craft_speed_mult = -0.10
+			weapon_type_strike_craft_weapon_damage_mult = -0.05
+			weapon_type_strike_craft_speed_mult = -0.05
 		}
 
 		graphics = {
@@ -216,8 +216,8 @@ utility_component_template = {
 		}
 
 		modifier = {
-			ship_windup_mult = 0.20
-			ship_winddown_mult = 0.20
+			ship_windup_mult = 0.10
+			ship_winddown_mult = 0.10
 		}
 
 		graphics = {

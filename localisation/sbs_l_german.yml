@@ -104,8 +104,6 @@
  tech_station_large:0 "Strength"
  tech_station_large_desc:0 "A gigantic defense armored structure layers of supporting the most intense naval attack."
 
- tech_solar_panels:0 "Sonnenkollektoren"
- tech_solar_panels_desc:0 "Nutzt die Energie der Sonne um Energie-Credits zu produzieren"
  tech_starbase_citadel_upgrade:0 "$starbase_citadel_upgrade$"
  tech_starbase_citadel_upgrade_desc:0 "Greife auf die neuen Konstruktionen der $starbase_citadel_plural$-Sternenbasis zu, um die Grenzen Ihres Reiches zu stärken oder Kunst, Handel oder Forschung zu fördern."
 
@@ -167,7 +165,6 @@
 
  requires_neutron_star:0 "$TRIGGER_FAIL$benötigt ein §Y$pc_neutron_star$§! Im System."
  requires_pulsar:0 "$TRIGGER_FAIL$benötigt ein §Y$pc_pulsar$§! im system."
- requires_solar_panels:0 "$TRIGGER_FAIL$It Benötigt Solarpanel -Modul."
  requires_outpost:0 "$TRIGGER_FAIL$benötigt ein §YStellar port§! im system."
  requires_mine_exotic_gases:0 "$TRIGGER_FAIL$benötigt ein §YGas extraction Vorkommen§! im system."
  requires_mine_rare_crystals:0 "$TRIGGER_FAIL$benötigt ein §YRare crystal Vorkommen§! im system."
@@ -183,6 +180,8 @@
 
  requires_black_hole_neutron_star_pulsar:0 "§RErfordert eine §Y$pc_pulsar$§! \n§RErfordert eine §Y$pc_neutron_star$§! \n§RErfordert eine §Y$pc_black_hole$§! \nIm System.§!"
  requires_capital_planet:0 "Erfordert Planetenkapital"
+ requires_no_friendly:0 "Erfordert keine feindliche Begrenzung"
+ requires_paz:0 "Erfordert Frieden"
 
  sm_archeological_center:0 "Archäologisches Zentrum"
  sm_archeological_center_desc:0 "Archäologische Untersuchung der Sternenbasis"
@@ -196,8 +195,11 @@
  sm_aura_air_force:0 "Festung aura"
  sm_aura_air_force_desc:0 "Eine anspruchsvolle Aura wird den Sternbasen helfen, sich gegen feindliche Reiche und andere zu verteidigen."
 
- sm_aux_module:0 "Hilfsplattform"
- sm_aux_module_desc:0 "Erweiterte Hilfsplattformen für Star Bases, die einen schnellen Flottenbau durchführen."
+ sm_aux_module:0 "Hilfsmodul"
+ sm_aux_module_desc:0 "Erweitertes Hilfsmodul für Sternenbasen, speziell für den schnellen Flottenbau."
+
+ sm_aux_module_starhold:0 "Unterstützungsmodul"
+ sm_aux_module_starhold_desc:0 "Die Logistikunterstützungsstation ist strategisch am Rande unserer Grenzen platziert und bietet einige taktische Vorteile."
  
  sm_module_protection_link:0 "Protection module"
  sm_module_protection_link_desc:0 "A station that is able to repel and delay some pirate attacks in the system before being captured."
@@ -253,9 +255,6 @@
  sm_research_lav:0 "Wissenschaftslabor"
  sm_research_lav_desc:0 "Sternenbasis-Forschungslabor"
 
- sm_solar_panels:0 "$tech_solar_panels$"
- sm_solar_panels_desc:0 "Produziert Energie"
-
  sm_space_housing:0 "Unterkunfts-Module"
  sm_space_housing_desc:0 "Setzen Sie Unterkunftsmodule in den Ringen um die Planeten ein, um die Bevölkerung zu erhöhen."
 
@@ -296,11 +295,20 @@
  sm_gatherers_production_rare:0 "besonderer Sammler"
  sm_gatherers_production_rare_desc:0 "Starbase-Gebäude, das die spezifischen Ressourcen einiger Spezialsysteme effizienter verwaltet."
 
- sm_space_log:0 "Edificio logístico"
+ sm_space_log:0 "Logistikgebäude"
  sm_space_log_desc:0 "Sternenbasisgebäude, das die Organisation der Bevölkerung und Gebäuderessourcen effizienter verwaltet."
 
- sm_space_army:0 "Edificio de la academia"
+ sm_space_army:0 "Akademiegebäude"
  sm_space_army_desc:0 "Sternenbasis-Gebäude, das die Streitkräfte der Armee effizienter verwaltet und das auch einen Schild gegen mögliche planetare Bombardierungen erzeugt."
+
+ sm_bureaucracy_stelar:0 "Stelar-Bürokratie"
+ sm_bureaucracy_stelar_desc:0 "Gebäude einer Sternenbasis, das eine große bürokratische Datenbank aller Spezies in der bekannten Galaxie sammelt, die dabei hilft, Erlasse ihrer Herrscher entsprechend der Macht der Sternenbasen durch das Imperium leichter zu finden."
+
+ requires_management:0 "Erfordert Verwaltungsgebäude"
+ requires_no_crime:0 "Erfordert weniger als 20 % Kriminalität auf dem Planeten"
+
+ sm_alloys_module:0 "Metallhandel"
+ sm_alloys_module_desc:0 "An der Sternenbasis wurde ein Gebäude für den Metallhandel installiert, um Werte zu rationalisieren und die Lieferung raffinierter Legierungen effizienter zu verwalten."
 
  mod_stations_volatile_motes_produces_mult:0 "Recolector de motas"
  mod_stations_exotic_gases_produces_mult:0 "Recolector de gas"
@@ -337,9 +345,10 @@
  STARBASE_AURA_FTL_INHIBITOR_DESC:0 "Anfänglicher Bedrohungshemmer"
  aura_starbase_ftl_inhibitor_II:0 "Offensive aura  - Gegenangriff Inhibitor."
 
- requires_max_m:0 "Base estelar con módulo §YVerwaltungsstelle§!"
- requires_max_u:0 "Base estelar con módulo §YEinheit§!"
- requires_max_s:0 "Base estelar con módulo §YDienste§!"
+ requires_max_m:0 "Sternenbasis mit §YVerwaltungsstelle§-Modul!"
+ requires_max_u:0 "Sternenbasis mit §YEinheit§-Modul!"
+ requires_max_s:0 "Sternenbasis mit §YDienste§-Modul!"
+ requires_max_t:0 "Sternenbasis mit §YAlloy§-Modul!"
 
   ################  BOOSTER ################
   
@@ -463,14 +472,22 @@
  requires_modules_solar:0 "Benötigt 4 Solarpanel-Module"
 
  sbscannon.2.name:0 "Waffeninstallation"
- sbscannon.2.desc:0 "Eine interstellare Kanone wurde in der Nähe unserer Basis bei §Y[event_target:sbs_cannon_system_0.GetName]§! installiert und der Start-Countdown hat begonnen...\n\nAdmiral, nur der letzte Aktivierungsbefehl hat seine maximale Ladeleistung erreicht innerhalb weniger Monate."
+ sbscannon.2.desc:0 "Eine interstellare Kanone wurde in der Nähe unserer Basis bei §Y[event_target:sbs_cannon_system.GetName]§! installiert und der Start-Countdown hat begonnen...\n\nAdmiral, nur der letzte Aktivierungsbefehl hat seine maximale Ladeleistung erreicht innerhalb weniger Monate."
 
  sbscannon.3.name:0 "Kanone bereit und bereit"
- sbscannon.3.desc:0 "Die interstellare Kanone auf der Sternenbasis bei §Y[event_target:sbs_cannon_system_0.GetName]§! ist bereit, auf das System §Y[event_target:sbs_cannon_system.GetName]§ abgefeuert zu werden!...Für einen optimalen Betrieb sind mindestens 2500 GigoMegawatt Leistung erforderlich"
+ sbscannon.3.desc:0 "Die interstellare Kanone auf der Sternenbasis bei §Y[event_target:sbs_cannon_system.GetName]§! ist bereit, auf das System §Y[event_target:sbs_cannon_system_target.GetName]§ abgefeuert zu werden!...Für einen optimalen Betrieb sind mindestens 2500 GigoMegawatt Leistung erforderlich"
 
  sbscannon.7.name:0 "Sternkanone neu geladen"
  sbscannon.7.desc:0 "Die interstellare Kanone an der Sternenbasis ist wieder voll aufgeladen und einsatzbereit …"
+
  ########## extra system #########
+
+ sbscannon.8.name:0 "§YWas bedeutet diese Aktion?§!"
+ sbscannon.8.desc:0 "Wir beobachten Sie und Sie beharren auf demselben Ziel ... wie können Sie es wagen, Systeme zu zerstören, die unsere Grenzen einschränken?\n\n§RGlaubst du, uns würde es nicht auffallen?§!\n\nWir konnten unsere Botschafter entsenden und bestimmte Interessen aushandeln.\n\nWas ist Ihre Erklärung...? Vielleicht verlieren wir das Vertrauen, das wir im Laufe der Zeit aufgebaut haben.\n\nWir haben unseren Imperialen Rat einberufen, um Maßnahmen zu ergreifen, und werden Ihre nächsten Schritte aufmerksam beobachten, obwohl dies unsere diplomatischen Beziehungen nicht verbessern wird."
+
+ sbscannon.8.a:0 "Es war ein gescheitertes Experiment"
+ sbscannon.8.b:0 "Misch dich lieber nicht ein"
+ sbscannon.8.c:0 "Wir werden es nicht wieder tun..."
 
  sm_starbase_extra:0 "Militärisches System"
  sm_starbase_extra_desc:0 "Sternenbasisgebäude, das ein exklusives System für militärische Zwecke hinzufügt."

@@ -40,7 +40,7 @@ utility_component_template = {
 
 		modifier = {
 			ship_emergency_ftl_min_days_mult = 0.5
-			ship_disengage_chance_mult = -0.10
+			ship_disengage_chance_mult = -0.05
 		}
 
 		graphics = {
@@ -61,8 +61,8 @@ utility_component_template = {
 		}
 
 		modifier = {
-			damage_vs_country_type_adversary_mult = 0.20
-			damage_vs_country_type_default_mult = 0.10
+			damage_vs_country_type_adversary_mult = 0.05
+			damage_vs_country_type_default_mult = 0.05
 		}
 
 		graphics = {

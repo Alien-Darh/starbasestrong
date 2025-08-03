@@ -263,6 +263,16 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_starbase_bureaucracy_stelar"
+		texturefile =  "gfx/interface/icons/modules/starbase_bureaucracy_stelar.dds"
+	}
+
+	spriteType = {
+		name = "GFX_starbase_alloys_module"
+		texturefile =  "gfx/interface/icons/modules/starbase_alloys_module.dds"
+	}
+
+	spriteType = {
 		name = "GFX_evt_sarmat_out"
 		texturefile = "gfx/event_pictures/sarmat_out.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"

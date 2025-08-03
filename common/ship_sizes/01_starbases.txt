@@ -12,10 +12,6 @@ starbase_citadel_upgrade = {
 		starbase_module_capacity_add = 8
 		starbase_building_capacity_add = 12
 		starbase_defense_platform_capacity_add = 16
-		#trade system
-		starbase_trade_collection_range_add = 1
-		starbase_trade_protection_range_add = 1
-		starbase_trade_protection_add = 32
 	}
 
 	ship_modifier = {
@@ -26,7 +22,7 @@ starbase_citadel_upgrade = {
 	max_hitpoints = 120000
 	base_buildtime = 700
 	resources = {
-		category = starbase_stations
+		category = starbases
 		cost = {
 			alloys = 1500
 		}

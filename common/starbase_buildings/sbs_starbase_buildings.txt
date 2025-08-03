@@ -39,9 +39,9 @@ research_lav = {
 				exists = owner
 				owner = { has_technology = tech_space_science_2 }
 			}
-			physics_research = 4
-			society_research = 4
-			engineering_research = 4
+			physics_research = 2
+			society_research = 2
+			engineering_research = 2
 		}
 
 		produces = {
@@ -49,9 +49,9 @@ research_lav = {
 				exists = owner
 				owner = { has_technology = tech_space_science_3 }
 			}
-			physics_research = 6
-			society_research = 6
-			engineering_research = 6
+			physics_research = 2
+			society_research = 2
+			engineering_research = 2
 		}
 
 		produces = {
@@ -59,21 +59,24 @@ research_lav = {
 				exists = owner
 				owner = { has_technology = tech_space_science_4 }
 			}
-			physics_research = 8
-			society_research = 8
-			engineering_research = 8
+			physics_research = 2
+			society_research = 2
+			engineering_research = 2
 		}
 		produces = {
 			trigger = {
 				exists = owner
 				owner = { has_technology = tech_space_science_5 }
 			}
-			physics_research = 10
-			society_research = 10
-			engineering_research = 10
+			physics_research = 2
+			society_research = 2
+			engineering_research = 2
 		}
 
-		upkeep = { energy = 10 }
+		upkeep = { 
+			energy = 10 
+			influence = 0.1
+		}
 	}
 
 	show_in_tech = "tech_space_science_1"
@@ -98,7 +101,7 @@ hydrogen_cells = {
 				is_orbital_ring = yes
 			}
 		}
-		has_starbase_module = solar_panels
+		has_starbase_module = solar_panel_network
 	}
 
 	resources = {
@@ -113,7 +116,7 @@ hydrogen_cells = {
 				exists = starbase
 					starbase = { 
 						count_starbase_modules = {
-						type = solar_panels
+						type = solar_panel_network
 						count = 1
 					}
 				}
@@ -125,7 +128,7 @@ hydrogen_cells = {
 				exists = starbase
 					starbase = { 
 						count_starbase_modules = {
-						type = solar_panels
+						type = solar_panel_network
 						count = 2
 					}
 				}
@@ -137,7 +140,7 @@ hydrogen_cells = {
 				exists = starbase
 					starbase = { 
 						count_starbase_modules = {
-						type = solar_panels
+						type = solar_panel_network
 						count = 3
 					}
 				}
@@ -149,7 +152,7 @@ hydrogen_cells = {
 				exists = starbase
 					starbase = { 
 						count_starbase_modules = {
-						type = solar_panels
+						type = solar_panel_network
 						count = 4
 					}
 				}
@@ -161,7 +164,7 @@ hydrogen_cells = {
 				exists = starbase
 					starbase = { 
 						count_starbase_modules = {
-						type = solar_panels
+						type = solar_panel_network
 						count = 5
 					}
 				}
@@ -173,7 +176,7 @@ hydrogen_cells = {
 				exists = starbase
 					starbase = { 
 						count_starbase_modules = {
-						type = solar_panels
+						type = solar_panel_network
 						count = 6
 					}
 				}
@@ -185,7 +188,7 @@ hydrogen_cells = {
 				exists = starbase
 					starbase = { 
 						count_starbase_modules = {
-						type = solar_panels
+						type = solar_panel_network
 						count = 7
 					}
 				}
@@ -197,7 +200,7 @@ hydrogen_cells = {
 				exists = starbase
 					starbase = { 
 						count_starbase_modules = {
-						type = solar_panels
+						type = solar_panel_network
 						count = 8
 					}
 				}
@@ -210,7 +213,7 @@ hydrogen_cells = {
 				exists = starbase
 					starbase = { 
 						count_starbase_modules = {
-						type = solar_panels
+						type = solar_panel_network
 						count = 1
 					}
 				}
@@ -222,7 +225,7 @@ hydrogen_cells = {
 				exists = starbase
 					starbase = { 
 						count_starbase_modules = {
-						type = solar_panels
+						type = solar_panel_network
 						count = 2
 					}
 				}
@@ -234,7 +237,7 @@ hydrogen_cells = {
 				exists = starbase
 					starbase = { 
 						count_starbase_modules = {
-						type = solar_panels
+						type = solar_panel_network
 						count = 3
 					}
 				}
@@ -246,7 +249,7 @@ hydrogen_cells = {
 				exists = starbase
 					starbase = { 
 						count_starbase_modules = {
-						type = solar_panels
+						type = solar_panel_network
 						count = 4
 					}
 				}
@@ -258,7 +261,7 @@ hydrogen_cells = {
 				exists = starbase
 					starbase = { 
 						count_starbase_modules = {
-						type = solar_panels
+						type =solar_panel_network
 						count = 5
 					}
 				}
@@ -270,7 +273,7 @@ hydrogen_cells = {
 				exists = starbase
 					starbase = { 
 						count_starbase_modules = {
-						type = solar_panels
+						type = solar_panel_network
 						count = 6
 					}
 				}
@@ -282,7 +285,7 @@ hydrogen_cells = {
 				exists = starbase
 					starbase = { 
 						count_starbase_modules = {
-						type = solar_panels
+						type = solar_panel_network
 						count = 7
 					}
 				}
@@ -294,7 +297,7 @@ hydrogen_cells = {
 				exists = starbase
 					starbase = { 
 						count_starbase_modules = {
-						type = solar_panels
+						type = solar_panel_network
 						count = 8
 					}
 				}
@@ -307,7 +310,7 @@ hydrogen_cells = {
 		exists = starbase
 			starbase = { 
 				count_starbase_modules = {
-				type = solar_panels
+				type = solar_panel_network
 				count = 0
 			}
 		}
@@ -442,7 +445,7 @@ space_housing = {
 				has_technology = tech_housing_2
 			}
 		}
-		planet_max_buildings_add = 1
+		planet_housing_add = 500
 	}
 	
 	ai_weight = { weight = 100 }
@@ -710,7 +713,7 @@ star_gate = {
 			alloys = 200
 			influence = 100
 		}
-		upkeep = { energy = 25 }
+		upkeep = { energy = 20 }
 	}
 
 	equipped_component = "STARBASE_STAR_GATE"
@@ -732,7 +735,7 @@ aux_module = {
 	resources = {
 		category = starbase_buildings
 		cost = { alloys = 50 }
-		upkeep = { energy = 10 }
+		upkeep = { energy = 5 }
 	}
 
 	potential = {
@@ -881,7 +884,7 @@ refinery_exotic_gases = {
 			exotic_gases = 2
 		}
 		upkeep = {
-			energy = 10
+			energy = 5
 			minerals = 10
 			nanites = 1
 		}
@@ -939,7 +942,7 @@ refinery_rare_crystals = {
 			rare_crystals = 2
 		}
 		upkeep = {
-			energy = 10
+			energy = 5
 			minerals = 10
 			nanites = 1
 		}
@@ -997,7 +1000,7 @@ refinery_volatile_motes = {
 			volatile_motes = 2
 		}
 		upkeep = {
-			energy = 10
+			energy = 5
 			minerals = 10
 			nanites = 1
 		}
@@ -1062,7 +1065,7 @@ refinery_alloys = {
 			alloys = 15
 		}
 		upkeep = {
-			energy = 10
+			energy = 5
 			minerals = 10
 			nanites = 1
 		}
@@ -1116,7 +1119,7 @@ refinery_living_metal = {
 			sr_living_metal = 2
 		}
 		upkeep = {
-			energy = 10
+			energy = 5
 			minerals = 5
 			nanites = 1
 		}
@@ -1174,7 +1177,7 @@ refinery_dark_matter = {
 			sr_dark_matter = 1
 		}
 		upkeep = {
-			energy = 10
+			energy = 5
 			minerals = 5
 			nanites = 1
 		}
@@ -1233,7 +1236,7 @@ job_module = {
 				count >= 1
 			}
 		}
-		job_artisan_add = 1
+		job_artisan_add = 100
 	}
 
 	triggered_system_modifier = {
@@ -1249,7 +1252,7 @@ job_module = {
 				count >= 1
 			}
 		}
-		job_artisan_add = 1
+		job_artisan_add = 100
 	}
 ##
 	triggered_system_modifier = {
@@ -1264,7 +1267,7 @@ job_module = {
 				count >= 1
 			}
 		}
-		job_artisan_drone_add = 1
+		job_artisan_drone_add = 100
 	}
 
 	triggered_system_modifier = {
@@ -1280,7 +1283,7 @@ job_module = {
 				count >= 1
 			}
 		}
-		job_artisan_drone_add = 1
+		job_artisan_drone_add = 100
 	}
 ##------------------------------------------------------------------##
 	triggered_system_modifier = {
@@ -1291,8 +1294,8 @@ job_module = {
 			}		
 			is_scope_type = starbase
 			has_starbase_building = refinery_alloys
-			}
-		job_foundry_add = 1
+		}
+		job_foundry_add = 100
 	}
 ##
 	triggered_system_modifier = {
@@ -1303,8 +1306,8 @@ job_module = {
 			}
 			is_scope_type = starbase
 			has_starbase_building = refinery_alloys
-			}
-		job_alloy_drone_add = 1
+		}
+		job_alloy_drone_add = 100
 	}
 ##------------------------------------------------------------------##
 	triggered_system_modifier = {
@@ -1315,11 +1318,11 @@ job_module = {
 			}
 			hidden_trigger = { exists = this }
 			count_starbase_modules = {
-				type = solar_panels
+				type = solar_panel_network
 				count >= 1
 			}
 		}
-		job_technician_add = 1
+		job_technician_add = 100
 	}
 
 	triggered_system_modifier = {
@@ -1331,11 +1334,11 @@ job_module = {
 			}
 			hidden_trigger = { exists = this }
 			count_starbase_modules = {
-				type = solar_panels
+				type = solar_panel_network
 				count >= 1
 			}
 		}
-		job_technician_add = 1
+		job_technician_add = 100
 	}
 ##
 	triggered_system_modifier = {
@@ -1350,7 +1353,7 @@ job_module = {
 				count >= 1
 			}
 		}
-		job_technician_drone_add = 1
+		job_technician_drone_add = 100
 	}
 
 	triggered_system_modifier = {
@@ -1366,7 +1369,7 @@ job_module = {
 				count >= 1
 			}
 		}
-		job_technician_drone_add = 1
+		job_technician_drone_add = 100
 	}
 ##------------------------------------------------------------------##
 	triggered_system_modifier = {
@@ -1381,7 +1384,7 @@ job_module = {
 				count >= 1
 			}
 		}
-		job_miner_add = 1
+		job_miner_add = 100
 	}
 
 	triggered_system_modifier = {
@@ -1397,7 +1400,7 @@ job_module = {
 				count >= 1
 			}
 		}
-		job_miner_add = 1
+		job_miner_add = 100
 	}
 ##
 	triggered_system_modifier = {
@@ -1412,7 +1415,7 @@ job_module = {
 				count >= 1
 			}
 		}
-		job_mining_drone_add = 1
+		job_mining_drone_add = 100
 	}
 
 	triggered_system_modifier = {
@@ -1428,7 +1431,7 @@ job_module = {
 				count >= 1
 			}
 		}
-		job_mining_drone_add = 1
+		job_mining_drone_add = 100
 	}
 ##------------------------------------------------------------------##
 	triggered_system_modifier = {
@@ -1443,7 +1446,7 @@ job_module = {
 				count >= 1
 			}
 		}
-		job_farmer_add = 1
+		job_farmer_add = 100
 	}
 
 	triggered_system_modifier = {
@@ -1459,7 +1462,7 @@ job_module = {
 				count >= 1
 			}
 		}
-		job_farmer_add = 1
+		job_farmer_add = 100
 	}
 ##	
 	triggered_system_modifier = {
@@ -1474,7 +1477,7 @@ job_module = {
 				count >= 1
 			}
 		}
-		job_agri_drone_add = 1
+		job_agri_drone_add = 100
 	}
 
 	triggered_system_modifier = {
@@ -1490,7 +1493,7 @@ job_module = {
 				count >= 1
 			}
 		}
-		job_agri_drone_add = 1
+		job_agri_drone_add = 100
 	}
 ##------------------------------------------------------------------##
 	triggered_system_modifier = {
@@ -1505,7 +1508,7 @@ job_module = {
 				count >= 1
 			}
 		}
-		job_merchant_add = 1
+		job_merchant_add = 100
 	}
 
 	triggered_system_modifier = {
@@ -1521,7 +1524,7 @@ job_module = {
 				count >= 1
 			}
 		}
-		job_merchant_add = 1
+		job_merchant_add = 100
 	}
 ##	
 	triggered_system_modifier = {
@@ -1536,7 +1539,7 @@ job_module = {
 				count >= 1
 			}
 		}
-		job_coordinator_add = 1
+		job_coordinator_add = 100
 	}
 
 	triggered_system_modifier = {
@@ -1552,7 +1555,7 @@ job_module = {
 				count >= 1
 			}
 		}
-		job_coordinator_add = 1
+		job_coordinator_add = 100
 	}
 ##------------------------------------------------------------------##
 	triggered_system_modifier = {
@@ -1583,7 +1586,7 @@ job_module = {
 				count >= 1
 			}
 		}
-		job_bureaucrat_add = 1
+		job_bureaucrat_add = 100
 	}
 ##------------------------------------------------------------------##
 	triggered_system_modifier = {
@@ -1594,8 +1597,8 @@ job_module = {
 			}
 			is_scope_type = starbase
 			has_starbase_building = research_lav
-			}
-		job_researcher_add = 1
+		}
+		job_researcher_add = 100
 	}
 ##	
 	triggered_system_modifier = {
@@ -1608,7 +1611,7 @@ job_module = {
 			has_starbase_building = research_lav
 		}
 		modifier = {
-			job_brain_drone_add = 1
+			job_primitive_hive_brain_drone_add = 100
 		}
 	}
 ##------------------------------------------------------------------##
@@ -1624,7 +1627,7 @@ job_module = {
 				count >= 1
 			}
 		}
-		job_enforcer_add = 1
+		job_enforcer_add = 100
 	}
 
 	triggered_system_modifier = {
@@ -1640,7 +1643,7 @@ job_module = {
 				count >= 1
 			}
 		}
-		job_enforcer_add = 1
+		job_enforcer_add = 100
 	}
 ##	
 	triggered_system_modifier = {
@@ -1655,7 +1658,7 @@ job_module = {
 				count >= 1
 			}
 		}
-		job_patrol_drone_add = 1
+		job_patrol_drone_add = 100
 	}
 
 	triggered_system_modifier = {
@@ -1671,7 +1674,7 @@ job_module = {
 				count >= 1
 			}
 		}
-		job_patrol_drone_add = 1
+		job_patrol_drone_add = 100
 	}
 ##------------------------------------------------------------------##
 	triggered_system_modifier = {
@@ -1686,7 +1689,7 @@ job_module = {
 				count >= 1
 			}
 		}
-		job_executive_add = 1
+		job_executive_add = 100
 	}
 
 	triggered_system_modifier = {
@@ -1702,7 +1705,7 @@ job_module = {
 				count >= 1
 			}
 		}
-		job_executive_add = 1
+		job_executive_add = 100
 	}
 ##	
 	triggered_system_modifier = {
@@ -1717,7 +1720,7 @@ job_module = {
 				count >= 1
 			}
 		}
-		job_roboticist_add = 1
+		job_roboticist_add = 100
 	}
 
 	triggered_system_modifier = {
@@ -1733,7 +1736,7 @@ job_module = {
 				count >= 1
 			}
 		}
-		job_roboticist_add = 1
+		job_roboticist_add = 100
 	}
 ##------------------------------------------------------------------##
 	triggered_system_modifier = {
@@ -1744,8 +1747,8 @@ job_module = {
 			}
 			is_scope_type = starbase
 			has_starbase_building = resource_silo
-			}
-		job_manager_add = 1
+		}
+		job_manager_add = 100
 	}
 ##	
 	triggered_system_modifier = {
@@ -1757,7 +1760,7 @@ job_module = {
 			is_scope_type = starbase
 			has_starbase_building = resource_silo
 		}
-		job_maintenance_drone_add = 1
+		job_maintenance_drone_add = 100
 	}
 ##------------------------------------------------------------------##
 	triggered_system_modifier = {
@@ -1772,7 +1775,7 @@ job_module = {
 				count >= 1
 			}
 		}
-		job_soldier_add = 1
+		job_soldier_add = 100
 	}
 
 	triggered_system_modifier = {
@@ -1788,7 +1791,7 @@ job_module = {
 				count >= 1
 			}
 		}
-		job_soldier_add = 1
+		job_soldier_add = 100
 	}
 ##	
 	triggered_system_modifier = {
@@ -1803,7 +1806,7 @@ job_module = {
 				count >= 1
 			}
 		}
-		job_warrior_drone_add = 1
+		job_warrior_drone_add = 100
 	}
 
 	triggered_system_modifier = {
@@ -1819,7 +1822,7 @@ job_module = {
 				count >= 1
 			}
 		}
-		job_warrior_drone_add = 1
+		job_warrior_drone_add = 100
 	}
 ##------------------------------------------------------------------##
 	triggered_system_modifier = {
@@ -1831,7 +1834,7 @@ job_module = {
 			is_scope_type = starbase
 			has_starbase_building = space_housing
 		}
-		job_spawning_drone_add = 1
+		job_spawning_drone_add = 100
 	}
 ##------------------------------------------------------------------##
  	triggered_system_modifier = {
@@ -1848,7 +1851,7 @@ job_module = {
 				}
 			}
 		}
-		job_maintenance_drone_add = 1
+		job_maintenance_drone_add = 100
 	}
 ##
 	triggered_system_modifier = {
@@ -1865,7 +1868,7 @@ job_module = {
 				}
 			}
 		}
-		job_technician_drone_add = 1
+		job_technician_drone_add = 100
 	}
 ##
 	triggered_system_modifier = {
@@ -1882,7 +1885,7 @@ job_module = {
 				}
 			}
 		}
-		job_brain_drone_add = 1
+		job_primitive_hive_brain_drone_add = 100
 	}
 ##
 	triggered_system_modifier = {
@@ -1899,7 +1902,7 @@ job_module = {
 				}
 			}
 		}
-		job_mining_drone_add = 1
+		job_mining_drone_add = 100
 	}
 ##
 	triggered_system_modifier = {
@@ -1917,7 +1920,7 @@ job_module = {
 				}
 			}
 		}
-		job_agri_drone_add = 1
+		job_agri_drone_add = 100
 	}
 ##
 	triggered_system_modifier = {
@@ -1934,7 +1937,7 @@ job_module = {
 				}
 			}
 		}
-		job_coordinator_add = 1
+		job_coordinator_add = 100
 	}
 ##
 	triggered_system_modifier = {
@@ -1951,7 +1954,7 @@ job_module = {
 				}
 			}
 		}
-		job_warrior_drone_add = 1
+		job_warrior_drone_add = 100
 	}
 ##
 	triggered_system_modifier = {
@@ -1968,7 +1971,7 @@ job_module = {
 				}
 			}
 		}
-		job_patrol_drone_add = 1
+		job_patrol_drone_add = 100
 	}
 ##
 	triggered_system_modifier = {
@@ -1985,7 +1988,7 @@ job_module = {
 				}
 			}
 		}
-		job_alloy_drone_add = 1
+		job_alloy_drone_add = 100
 	}
 
 	show_in_tech = "tech_colonial_centralization"
@@ -2040,7 +2043,7 @@ orbital_assembly = {
 				has_technology = tech_cryostasis_1
 			}
 		}
-		pop_growth_speed = 0.20
+		bonus_pop_growth_mult = 0.20
 	}
 
 	triggered_system_modifier = {
@@ -2051,7 +2054,7 @@ orbital_assembly = {
 				has_technology = tech_cryostasis_2
 			}
 		}
-		pop_growth_speed = 0.30
+		bonus_pop_growth_mult = 0.30
 	}
 
 	triggered_system_modifier = {
@@ -2336,7 +2339,7 @@ space_log = {
 	system_modifier = {
 		planet_buildings_cost_mult = -0.1
 		planet_building_build_speed_mult = 0.1
-		planet_housing_add = 5
+		planet_housing_add = 500
 	}
 	
 	ai_weight = { weight = 100 }
@@ -2535,9 +2538,8 @@ star_clean = {
 							is_megastructure_type = cosmogenesis_world_0
 							is_megastructure_type = cosmogenesis_world_ruined
 
-							is_megastructure_type = major_orbital
-							is_megastructure_type = minor_orbital
-							is_megastructure_type = major_orbital_knights
+							is_megastructure_type = habitat_major_orbital
+							is_megastructure_type = habitat_minor_orbital
 							is_megastructure_type = habitat_central_complex_ruined
 							is_megastructure_type = habitat_central_complex_restored
 						}
@@ -2625,7 +2627,7 @@ aux_module_starhold = {
 	resources = {
 		category = starbase_buildings
 		cost = { alloys = 25 }
-		upkeep = { energy = 10 }
+		upkeep = { energy = 5 }
 	}
 
 	potential = {
@@ -2699,6 +2701,14 @@ hyperlane_sbs = {
 				NOT = { has_country_flag = hyperlane_sbs }
 			}
 		}
+		custom_tooltip = {
+			fail_text = "requires_paz"
+			NOT = {
+				owner = {
+					is_at_war = yes
+				}
+			}
+		}
 	}
 
 	potential = {
@@ -2752,7 +2762,7 @@ emp_sbs = {
 			energy = 750
 			influence = 25
 		}
-		upkeep = { energy = 75 }
+		upkeep = { energy = 50 }
 	}
 
 	show_in_tech = "tech_emp_sbs"
@@ -2958,7 +2968,6 @@ gatherers_production_rare = {
 	ai_weight = { weight = 150 }
 }
 
-
 module_protection_link = {
 	icon = "GFX_spaceport_module_protection_link"
 	construction_days = 180
@@ -2966,7 +2975,7 @@ module_protection_link = {
 	resources = {
 		category = starbase_buildings
 		cost = { alloys = 25 }
-		upkeep = { energy = 10 }
+		upkeep = { energy = 5 }
 	}
 
 	potential = {
@@ -2978,11 +2987,6 @@ module_protection_link = {
 			has_technology = tech_space_trading
 		}
 		is_orbital_ring = no
-	}
-
-	station_modifier = {
-		starbase_trade_protection_range_add = 1
-		starbase_trade_protection_add = 25
 	}
 
 	triggered_station_modifier = {
@@ -3013,8 +3017,8 @@ federation_sbs = {
 		}
 		upkeep = { 
 			energy = 50
-			alloys = 50
-			unity = 50
+			alloys = 25
+			unity = 10
 		}
 	}
 
@@ -3106,17 +3110,9 @@ sbs_cannon = {
 		custom_tooltip = {
 			fail_text = "requires_modules_solar"
 			OR = {
-				OR = {
-					count_starbase_modules = {
-						type = solar_panels
-						count >= 4
-					}
-				}	
-				OR = {
-					count_starbase_modules = {
-						type = solar_panel_network
-						count >= 4
-					}
+				count_starbase_modules = {
+					type = solar_panel_network
+					count >= 4
 				}
 			}
 		}
@@ -3153,6 +3149,20 @@ sbs_cannon = {
 									}
 								}
 							}
+						}
+					}
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_friendly"
+			solar_system = {
+				OR = {
+					any_country_neighbor_to_system = {
+						NOR = {
+							is_protective_to = root
+							is_friendly_to = root
+							is_loyal_to = root
 						}
 					}
 				}
@@ -3219,7 +3229,7 @@ space_army = {
 	resources = {
 		category = starbase_buildings
 		cost = { alloys = 500 }
-		upkeep = { energy = 10 }
+		upkeep = { energy = 5 }
 	}
 
 	possible = {
@@ -3259,7 +3269,7 @@ starbase_extra = {
 	resources = {
 		category = starbase_buildings
 		cost = { alloys = 500 }
-		upkeep = { energy = 25 }
+		upkeep = { energy = 10 }
 	}
 
 	possible = {
@@ -3277,6 +3287,17 @@ starbase_extra = {
 			fail_text = "requires_no_existing_starbase_extra"
 			from = {
 				NOT = { has_country_flag = starbase_destination_system }
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_primitives"
+			solar_system = {
+				NOT = {
+					any_system_colony = {
+						exists = owner
+						owner = { is_country_type = primitive }
+					}
+				}
 			}
 		}
 	}
@@ -3381,7 +3402,11 @@ sbs_omega = {
 
 	potential = {
 		exists = owner
-		owner = { has_technology = tech_sbs_cannon }
+		owner = { 
+			has_technology = tech_sbs_cannon
+			is_lithoid = no
+			is_robotic_species = no
+		}
 		is_normal_starbase = yes
 	}
 
@@ -3392,4 +3417,88 @@ sbs_omega = {
 	ai_weight = { weight = 0 }
 
 	show_in_tech = "tech_sbs_cannon"
+}
+
+bureaucracy_stelar = {
+	icon = "GFX_starbase_bureaucracy_stelar"
+	construction_days = 360
+
+	potential = {
+		exists = owner
+		owner = {
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		is_normal_starbase = yes
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			influence = 10
+			energy = 10
+		}
+		upkeep = {
+			influence = 1
+			energy = 5
+		}
+		upkeep = {
+			trigger = { owner = { is_at_war = yes } }
+			influence = -1
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starport"
+			has_starbase_size >= starbase_starport
+		}
+		custom_tooltip = {
+			fail_text = "requires_capital_planet"
+			solar_system = {
+				any_system_colony = { is_capital = yes }
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_crime"
+			solar_system = {
+				any_system_planet = {
+					is_capital = yes
+					NOT = {
+						planet_crime > 20	# mayor que
+					}
+				}
+			}
+		}
+	}
+
+	triggered_country_modifier = {
+		potential = { is_scope_valid = yes has_starbase_size >= starbase_citadel_upgrade }
+		country_edict_fund_add = 20
+	}
+
+	triggered_country_modifier = {
+		potential = { is_scope_valid = yes has_starbase_size >= starbase_citadel }
+		country_edict_fund_add = 15
+	}
+
+	triggered_country_modifier = {
+		potential = { is_scope_valid = yes has_starbase_size >= starbase_starfortress }
+		country_edict_fund_add = 10
+	}
+
+	triggered_country_modifier = {
+		potential = { is_scope_valid = yes has_starbase_size >= starbase_starport }
+		country_edict_fund_add = 5
+	}
+
+	destroy_trigger = {
+		exists = planet
+		planet = { 
+			planet_crime > 20	# mayor que
+		}
+	}
+
+	ai_weight = {
+		weight = 100
+	}
 }

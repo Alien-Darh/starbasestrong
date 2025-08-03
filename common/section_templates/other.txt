@@ -197,7 +197,7 @@ ship_section_template = {
 	key = "MISSILE_MILITARY_STATION_SECTION"
 	ship_size = military_station_small
 	ship_size = military_station_medium
-	ai_tags = { explosive }
+	ai_tags = { explosive energy_torpedoes }
 
 	fits_on_slot = "north"
 	fits_on_slot = "west"
@@ -209,8 +209,6 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_mid"
 	
 	prerequisites = { tech_torpedoes_1 }
-
-	ai_tags = { energy_torpedoes }
 
 	component_slot = {
 		name = "TORPEDO_01"

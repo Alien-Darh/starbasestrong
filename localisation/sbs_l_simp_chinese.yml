@@ -106,8 +106,6 @@ tech_ftl_inhibitor_II_desc:0 "针对本世纪初敌对帝国的强大高级反�
 tech_station_large:0 "要塞"
 tech_station_large_desc:0 "一座巨大的防御装甲结构，支撑着最激烈的海军攻击。"
 
-tech_solar_panels:0 "太阳能电池板"
-tech_solar_panels_desc:0 "利用太阳能产生能量。"
 tech_starbase_citadel_upgrade:0 "城堡改进"
 tech_starbase_citadel_upgrade_desc:0 "访问城堡星球基地的新建筑，加强帝国的边界限制，促进艺术、贸易或研究。"
 
@@ -171,7 +169,6 @@ mod_shipsize_military_station_large_build_speed_mult:0 "防御堡垒建造速度
 
 requires_neutron_star:0 "$TRIGGER_FAIL$需要系统中有一个§Y$pc_neutron_star$§!。"
 requires_pulsar:0 "$TRIGGER_FAIL$需要系统中有一个§Y$pc_pulsar$§!。"
-requires_solar_panels:0 "$TRIGGER_FAIL$需要太阳能电池板模块。"
 requires_outpost:0 "$TRIGGER_FAIL$需要系统中有一个§YPuerto estelar§!。"
 requires_mine_exotic_gases:0 "$TRIGGER_FAIL$需要系统中有一个§YGas extraction deposit§!。"
 requires_mine_rare_crystals:0 "$TRIGGER_FAIL$需要系统中有一个§YRare crystals deposit§!。"
@@ -187,6 +184,8 @@ requires_modules:0 "需要3个基本战斗模块或3个XL电池。"
 
 requires_black_hole_neutron_star_pulsar:0 "§R需要系统中有一个§Y$pc_pulsar$§!。\n§R需要系统中有一个§Y$pc_neutron_star$§!。\n§R需要系统中有一个§Y$pc_black_hole$§!。"
 requires_capital_planet:0 "需要行星首都。"
+requires_no_friendly:0 "无需敌对限制。"
+requires_paz:0 "需要保持和平"
 
 sm_archeological_center:0 "考古中心"
 sm_archeological_center_desc:0 "对星球基地进行考古研究。"
@@ -200,8 +199,11 @@ sm_aura_fallen_desc:0 "精密的光环将帮助星球基地抵御某些觉醒的
 sm_aura_air_force:0 "要塞光环"
 sm_aura_air_force_desc:0 "精密的光环将帮助星球基地抵御敌对帝国等威胁。"
 
-sm_aux_module:0 "支援模块"
-sm_aux_module_desc:0 "战略性地放置在我们边境的后方，具有一定的战术优势的后勤支援站。"
+sm_aux_module:0 "輔助模組"
+sm_aux_module_desc:0 "先進的星際基地輔助模組，專用於快速艦隊建設。"
+
+sm_aux_module_starhold:0 "支援模組"
+sm_aux_module_starhold_desc:0 "後勤支援站位於我們邊境的戰略位置，具有一些戰術優勢。"
 
 sm_module_protection_link:0 "保护模块"
 sm_module_protection_link_desc:0 "一种能够在星系中抵御和延迟某些海盗攻击的站点，直到被捕获前。"
@@ -262,9 +264,6 @@ sm_management_building_desc:0 "负责有效管理和治理该地区行星系统�
 sm_research_lav:0 "科学实验室"
 sm_research_lav_desc:0 "恒星基地研究实验室。"
 
-sm_solar_panels:0 "太阳能电池板"
-sm_solar_panels_desc:0 "产生能量。"
-
 sm_space_housing:0 "住房模块"
 sm_space_housing_desc:0 "在行星周围的环形中部署住宿模块，以增加人口。"
 
@@ -313,6 +312,15 @@ sm_space_log_desc:0 "恒星基地建筑更有效地管理人口和建筑资源�
 sm_space_army:0 "学院建筑"
 sm_space_army_desc:0 "恒星基地建筑更有效地管理军队力量，并生成一个屏障，防御可能的行星轰炸。"
 
+sm_bureaucracy_stelar:0 "恆星官僚機構"
+sm_bureaucracy_stelar_desc:0 "星際基地建築收集了已知星系中所有物種的大型官僚資料庫，有助於帝國根據星際基地的權力更輕鬆地找到其統治者的法令。"
+
+requires_management:0 "需要行政大樓"
+requires_no_crime:0 "要求星球犯罪率低於 20%"
+
+sm_alloys_module:0 "金屬交易"
+sm_alloys_module_desc:0 "在星際基地安裝金屬交易大樓，以簡化價值並更有效地管理精煉合金的交付。"
+
 mod_stations_volatile_motes_produces_mult:0 "易爆微粒收集器"
 mod_stations_exotic_gases_produces_mult:0 "异星天然气收集器"
 mod_stations_rare_crystals_produces_mult:0 "稀有水晶收集器"
@@ -353,7 +361,7 @@ aura_starbase_ftl_inhibitor_II:0 "攻击性光环 - 反击抑制器。"
 requires_max_m:0 "星际基地需要 §Y管理§! 模块！"
 requires_max_u:0 "星际基地需要 §Y凝聚力§! 模块！"
 requires_max_s:0 "星际基地需要 §Y服务§! 模块！"
-
+requires_max_t:0 "帶有§YAlloy§模組的星際基地！"
 
   ################  BOOSTER ################
   
@@ -423,7 +431,7 @@ requires_country_fed:0 "需要边境联邦"
 requires_country_fed_war:0 "需要与边境联邦交战"
 
 MESSAGE_REANIMATION_COMPLETE_TITLE:0 "反馈星基"
-MESSAGE_MERCENARY_COMPLETE_DESC:0 "星基每年抵抗力都会增强，一些不属于联邦的星系势力已经被招募，等待我们在§H[From.solar_system.GetName]§的星基中加入战斗...更多的舰船已经在路上。"
+MESSAGE_MERCENARY_COMPLETE_DESC:0 "星基每年抵抗力都会增强,一些不属于联邦的星系势力已经被招募,等待我们在§H[From.solar_system.GetName]§的星基中加入战斗...更多的舰船已经在路上。"
 
 
   mod_anti_fed:0 "0"
@@ -477,21 +485,30 @@ requires_country_no_default:0 "需要普通帝国的限制"
 requires_modules_solar:0 "需要4个太阳能板模块"
 
 sbscannon.2.name:0 "武器安装"
-sbscannon.2.desc:0 "一个星际火炮已经安装在我们位于§Y[event_target:sbs_cannon_system_0.GetName]§!附近的基地，发射倒计时已经开始...\n\n上将，一旦它达到几个月内的最大充电功率，只需最终激活命令即可。"
+sbscannon.2.desc:0 "一門星際大砲已安裝在你的基地附近 §Y[event_target:sbs_cannon_system.GetName]§! 並且發射倒數計時已經開始...\n\n提督 僅是完成後啟動的最後命令在幾個月內就已經達到了最大充電功率。"
+
 
 sbscannon.7.name:0 "星砲重裝上陣"
 sbscannon.7.desc:0 "星際基地的星際大砲已充滿電並準備再次使用......"
 
 sbscannon.3.name:0 "火炮准备就绪并待命"
-sbscannon.3.desc:0 "星际火炮在§Y[event_target:sbs_cannon_system_0.GetName]§!的星球基地已经准备好发射至§Y[event_target:sbs_cannon_system.GetName]§!系统！...为了实现最佳运行，至少需要 2500 千兆瓦的电力。"
+sbscannon.3.desc:0 "星际火炮在§Y[event_target:sbs_cannon_system.GetName]§!的星球基地已经准备好发射至§Y[event_target:sbs_cannon_system_target.GetName]§!系统！...为了实现最佳运行，至少需要 2500 千兆瓦的电力。"
+
+ sbscannon.8.name:0 "§Y這個動作意味著什麼?§!"
+ sbscannon.8.desc:0 "我們正在關注你，而你堅持同樣的事情......你怎麼敢破壞限制我們邊界的系統?\n\n§R你認為我們不會注意到嗎?§!\n\n我們能夠派遣我們的大使來談判某些利益。\n\n你的解釋是什麼...? 也許我們會失去長期以來建立的信任。\n\n我們已經召集帝國議會採取行動，並將密切關注你們的下一步行動，儘管這不會改善我們的外交關係。"
+
+
+sbscannon.8.a:0 "這是一次失敗的實驗"
+sbscannon.8.b:0 "你最好別插手"
+sbscannon.8.c:0 "我們不會再這樣做了…"
 
  ########## extra system #########
 
- sm_starbase_extra:0 "军事系统"
+sm_starbase_extra:0 "军事系统"
 sm_starbase_extra_desc:0 "星球基地建筑，用于增加专用于军事目的的独特系统。"
 
 starbase_extra.2.name:0 "军事系统"
-starbase_extra.2.desc:0 "在我们位于§H[Root.Solar_System.GetName]§!的主要基地附近发现并链接了一个名为§H[event_target:starbase_extra_base.GetName]§!的新系统。\n\n我们的远程通信建筑将保持与此新的军事特征系统的连接。\n\n如果我们的建筑失败或停止运行，则无法再次建造，并且将无法通过超空间路由与新系统连接，导致其孤立，直到找到其他通道替代方案为止。"
+starbase_extra.2.desc:0 "在我们位于§H[Root.Solar_System.GetName]§!的主要基地附近发现并链接了一个名为§H[event_target:starbase_extra_base.GetName]§!的新系统。\n\n我们的远程通信建筑将保持与此新的军事特征系统的连接。\n\n如果我们的建筑失败或停止运行,则无法再次建造,并且将无法通过超空间路由与新系统连接,导致其孤立,直到找到其他通道替代方案为止。"
 
 requires_no_existing_starbase_extra:0 "无法建造"
 
@@ -502,7 +519,7 @@ science_cloaking_components_DESC: "隐形场发生器能够让我们的舰船在
 ########## 歐米伽感染 ##########
 
  sbsomega.2.name:0 "歐米茄感染"
- sbsomega.2.desc:0 "放射性感染病毒從恆星基地定向到整個系統，輻射附近的非殖民宜居行星，使它們處於惰性狀態，不可避免地從其核心進入大氣層......\n\n啟動全面擴張幾個月後的輻射...”
+ sbsomega.2.desc:0 "放射性感染病毒從恆星基地定向到整個系統，輻射附近的非殖民宜居行星，使它們處於惰性狀態，不可避免地從其核心進入大氣層......\n\n啟動全面擴張幾個月後的輻射..."
 
  sbsomega.4.name:0 "歐米茄感染"
  sbsomega.4.desc:0 "放射性感染病毒已重新充電並準備好在該領土的某些星際基地再次使用。"

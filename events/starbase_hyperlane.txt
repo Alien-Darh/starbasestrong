@@ -173,20 +173,7 @@ country_event = {
 			}
 		}
 		set_spawn_system_batch = end
-		hidden_effect = {
-			clear_global_event_target = hyperlane_sbs_system
-			clear_global_event_target = hyperlane_target_system
-			every_country = {
-				limit = { has_country_flag = hyperlane_sbs }
-				remove_country_flag = hyperlane_sbs
-			}
-		}
-		country_event = { id = hyperlane_sbs.6 days = 15 }
-	}
-
-	after = {
-		clear_global_event_target = hyperlane_sbs_system
-		clear_global_event_target = hyperlane_target_system
+		country_event = { id = hyperlane_sbs.6 days = 30 }
 	}
 }
 
@@ -248,17 +235,9 @@ event = {
 			}
 		}
 		set_spawn_system_batch = end
-		hidden_effect = {
-			clear_global_event_target = hyperlane_sbs_system
-			clear_global_event_target = hyperlane_target_system
-			every_country = {
-				limit = { has_country_flag = hyperlane_sbs }
-				remove_country_flag = hyperlane_sbs
-			}
-		}
 		every_playable_country = {
-			limit = { is_ai = no }
-			country_event = { id = hyperlane_sbs.6 days = 15 }
+			limit = { has_country_flag = hyperlane_sbs }
+			country_event = { id = hyperlane_sbs.6 days = 30 }
 		}
 	}
 }
@@ -287,6 +266,17 @@ country_event = {
 			if = {
 				limit = { exists = event_target:hyperlane_target_system }
 				clear_global_event_target = hyperlane_target_system
+			}
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			clear_global_event_target = hyperlane_sbs_system
+			clear_global_event_target = hyperlane_target_system
+			every_country = {
+				limit = { has_country_flag = hyperlane_sbs }
+				remove_country_flag = hyperlane_sbs
 			}
 		}
 	}

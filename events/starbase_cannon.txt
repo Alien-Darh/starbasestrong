@@ -4,7 +4,7 @@ country_event = {
 	id = sbscannon.1
 	is_triggered_only = yes
 	hide_window = yes
-	location = event_target:sbs_cannon_system_0
+	location = event_target:sbs_cannon_system
 
 	trigger = {
 		exists = this
@@ -16,7 +16,7 @@ country_event = {
 	}
 
 	immediate = {
-		set_timed_country_flag = { flag = sbs_cannon_target days = 1800 }
+		set_timed_country_flag = { flag = sbs_cannon_target days = 2700 }
 		every_owned_starbase = {
 			limit = {
 				has_starbase_building = sbs_cannon
@@ -26,7 +26,7 @@ country_event = {
 					}
 				}
 			}
-			save_global_event_target_as = sbs_cannon_system_0
+			save_global_event_target_as = sbs_cannon_system
 			solar_system = {
 				spawn_megastructure = {
 					type = sbs_cannon
@@ -44,7 +44,7 @@ country_event = {
 		}
 		owner = {
 			country_event = { id = sbscannon.3 days = 180 }
-			country_event = { id = sbscannon.7 days = 1800 }
+			country_event = { id = sbscannon.7 days = 2700 }
 		}
 	}
 }
@@ -77,7 +77,7 @@ country_event = {
 	desc = "sbscannon.3.desc"
 	picture = GFX_evt_sarmat_out
 	show_sound = sbs_event_siren
-	location = event_target:sbs_cannon_system_0
+	location = event_target:sbs_cannon_system
 
 	is_triggered_only = yes
 
@@ -87,34 +87,60 @@ country_event = {
 				any_system_megastructure = { is_megastructure_type = sbs_cannon }
 				any_country_neighbor_to_system = {
 					OR = {
+						is_ai = yes
 						is_country_type = default
 						is_country_type = dormant_marauders
 					}
 					has_communications = root
-					NOT = { is_at_war_with = root }
+					NOR = {
+						is_at_war_with = root
+						root = { is_protective_to = prev }
+						root = { is_friendly_to = prev }
+						root = { is_loyal_to = prev }
+					}
 				}
 			}
-			save_global_event_target_as = sbs_cannon_system_0
-			while = {
-				count = 1
-				random_neighbor_system  = {
-					limit = {
-						has_hyperlane_to = prev
-						exists = space_owner
-						space_owner = {
-							OR = {
-								is_country_type = default
-								is_country_type = dormant_marauders
-							}
-							has_communications = root
-							NOT = { is_at_war_with = root }
+			save_global_event_target_as = sbs_cannon_system
+			random_country_neighbor_to_system = {
+				limit = {
+					OR = {
+						is_ai = yes
+						is_country_type = default
+						is_country_type = dormant_marauders
+					}
+					has_communications = root
+					NOR = {
+						is_at_war_with = root
+						root = { is_protective_to = prev }
+						root = { is_friendly_to = prev }
+						root = { is_loyal_to = prev }
+					}
+				}
+				save_global_event_target_as = sbs_cannon_target
+			}
+			random_neighbor_system = {
+				limit = {
+					has_hyperlane_to = prev
+					exists = space_owner
+					space_owner = {
+						OR = {
+							is_ai = yes
+							is_country_type = default
+							is_country_type = dormant_marauders
+						}
+						has_communications = root
+						NOR = {
+							is_at_war_with = root
+							root = { is_protective_to = prev }
+							root = { is_friendly_to = prev }
+							root = { is_loyal_to = prev }
 						}
 					}
-					save_global_event_target_as = sbs_cannon_system
-					set_star_flag = sbs_cannon_system
 				}
+				set_star_flag = sbs_cannon_system_star
+				save_global_event_target_as = sbs_cannon_system_target
 			}
-		}
+		}		
 	}
 
 	option = {
@@ -127,169 +153,31 @@ country_event = {
 				}
 			}
 		}
-		owner = {
-			add_resource = { energy = -2500 }
-		}
+		owner = { add_resource = { energy = -2500 } }
+
 		hidden_effect = {
-			random_neighbor_country = {
-				limit = {
-					is_ai = yes
-					is_country_type = default
-					has_communications = prev
-				}
-				random_list = {
-					33 = { add_opinion_modifier = { who = prev modifier = opinion_destroying_systems } }	#-100		
-					33 = { add_opinion_modifier = { who = prev modifier = fotd_destroyed_starbase } }		#-200
-					33 = { add_opinion_modifier = { who = prev modifier = opinion_insult } }				#-200
-				}	
-			}
 			random_system_within_border = {
 				limit = {
 					any_system_megastructure = { is_megastructure_type = sbs_cannon }
-					any_country_neighbor_to_system = {
-						OR = {
-							is_country_type = default
-							is_country_type = dormant_marauders
-						}
-						has_communications = root
-						NOT = { is_at_war_with = root }
-					}
 				}
-				while = {
-					count = 1
-					random_neighbor_system = {
-						limit = {
-							has_hyperlane_to = prev
-							exists = event_target:sbs_cannon_system
-							has_star_flag = sbs_cannon_system
-							exists = space_owner
-							space_owner = {
-								OR = {
-									is_country_type = default
-									is_country_type = dormant_marauders
-								}
-								has_communications = root
-								NOT = { is_at_war_with = root }
-							}
-						}
-						solar_system = {
-							every_fleet_in_system = { destroy_fleet = this }
-							every_system_planet = {
-								limit = {
-									is_star = no
-									is_asteroid = no
-									NOR = {
-										is_planet_class = pc_shattered
-										is_planet_class = pc_shattered_2
-										is_planet_class = pc_shielded
-										is_planet_class = pc_ringworld_habitable_damaged
-										is_planet_class = pc_ringworld_tech_damaged
-										is_planet_class = pc_ringworld_seam_damaged
-									}
-								}
-								if = {
-									limit = { is_planet_class = pc_habitat } # uncolonized
-									spawn_habitat_cracker_effect = yes
-									remove_planet = yes
-								}
-								if = {
-									limit = { is_colony = yes }
-									if = {
-										limit = {
-											exists = orbital_defence
-										}
-										destroy_fleet = orbital_defence
-									}
-									remove_all_buildings = yes
-									destroy_colony = yes
-									if = {
-										limit = { is_planet_class = pc_habitat }
-										spawn_habitat_cracker_effect = yes
-										remove_planet = yes
-									}
-									else_if = {
-										limit = { is_ringworld = yes }
-										spawn_ringworld_cracker_effect = yes
-										change_pc = pc_ringworld_habitable_damaged
-									}
-								}
-								else_if = {
-									limit = { is_ringworld = yes }
-									spawn_ringworld_cracker_effect = yes
-									change_pc = pc_ringworld_habitable_damaged
-								}
-								else_if = {
-									limit = { is_planet_class = pc_ringworld_tech }
-									spawn_ringworld_cracker_effect = yes
-									change_pc = pc_ringworld_tech_damaged
-								}
-								else_if = {
-									limit = { is_planet_class = pc_ringworld_seam }
-									spawn_ringworld_cracker_effect = yes
-									change_pc = pc_ringworld_seam_damaged
-								}
-							}
-							every_system_planet = {
-								limit = {
-									exists = orbital_station
-								}
-								orbital_station = { dismantle = yes }
-							}
-							every_system_planet = {
-								limit = { is_star = yes }
-								create_ambient_object = {
-									type = "star_explosion"
-									play_animation_once = yes
-									location = this
-								}
-								last_created_ambient_object = {
-									set_location = {
-										target = prev
-										distance = 0
-										angle = random
-									}
-								}
-							}
-							star = {
-								create_ambient_object = {
-									type = "destroyed_system"
-									location = this
-								}
-								last_created_ambient_object = {
-									set_ambient_object_flag = destroyed_system_effect
-									set_location = {
-										target = prev
-										distance = 0
-										angle = random
-									}
-								}
-							}
-						}
+				random_neighbor_system = {
+					limit = {
+						has_star_flag = sbs_cannon_system_star
+					}
+					solar_system = {
+						every_fleet_in_system = { destroy_fleet = this }
+						sbs_destroy_star_system = yes
 					}
 				}
 			}
+			country_event = { id = sbscannon.8 days = 30 }
 		}
 	}
 
 	option = {
 		name = TOOPOOR
-	}
-
-	after = {
 		hidden_effect = {
-			random_owned_starbase = {
-				limit = {
-					has_starbase_building = sbs_cannon
-				}
-				remove_starbase_building = { building = sbs_cannon }
-			}
-			clear_global_event_target = sbs_cannon_system
-			clear_global_event_target = sbs_cannon_system_0
-			random_system = {
-				limit = { has_star_flag = sbs_cannon_system }
-				remove_star_flag = sbs_cannon_system
-			}
-			country_event = { id = sbscannon.4 days = 360 }
+			country_event = { id = sbscannon.8 days = 30 }
 		}
 	}
 }
@@ -400,5 +288,139 @@ country_event = {
 
 	option = {
 		name = ACKNOWLEDGED
+	}
+}
+
+country_event = {
+	id = sbscannon.8
+	title = "sbscannon.8.name"
+	desc = "sbscannon.8.desc"
+	show_sound = event_conversation
+	location = event_target:sbs_cannon_target
+	diplomatic = yes
+
+	is_triggered_only = yes
+
+	picture_event_data = {
+		portrait = event_target:sbs_cannon_target
+		planet_background = event_target:sbs_cannon_target
+		graphical_culture = event_target:sbs_cannon_target
+		city_level = event_target:sbs_cannon_target
+		room = event_target:sbs_cannon_target.ruler
+	}
+
+	option = {
+		name = sbscannon.8.a
+		hidden_effect = {
+			random_list = {
+				30 = {
+					event_target:sbs_cannon_target = {
+						add_opinion_modifier = { 
+							who = prev
+							modifier = fotd_destroyed_starbase
+						} 
+					}
+				}
+				25 = {
+					event_target:sbs_cannon_target = {
+						add_opinion_modifier = { 
+							who = prev
+							modifier = opinion_insult
+						}
+					}
+				}
+				20 = {
+					event_target:sbs_cannon_target = {
+						add_opinion_modifier = { 
+							who = prev
+							modifier = opinion_destroying_systems
+						}							
+					}							
+				}
+			}
+		}
+	}
+
+	option = {
+		name = sbscannon.8.b
+		hidden_effect = {
+			random_list = {
+				30 = {
+					event_target:sbs_cannon_target = {
+						add_opinion_modifier = { 
+							who = prev
+							modifier = opinion_cracked_my_uninhabited_world
+						} 
+					}
+				}	
+				25 = {
+					event_target:sbs_cannon_target = {
+						add_opinion_modifier = { 
+							who = prev
+							modifier = opinion_insult
+						}
+					}
+				}
+				20 = {
+					event_target:sbs_cannon_target = {
+						add_opinion_modifier = { 
+							who = prev
+							modifier = opinion_destroying_systems
+						}							
+					}							
+				}
+			}
+		}
+	}
+
+	option = {
+		name = sbscannon.8.c
+		hidden_effect = {
+			random_list = {
+				20 = {
+					event_target:sbs_cannon_target = {
+						add_opinion_modifier = { 
+							who = prev
+							modifier = fotd_destroyed_starbase
+						} 
+					}
+				}
+				30 = {
+					event_target:sbs_cannon_target = {
+						add_opinion_modifier = { 
+							who = prev
+							modifier = opinion_declared_rival
+						}
+					}
+				}
+				40 = {
+					event_target:sbs_cannon_target = {
+						add_opinion_modifier = { 
+							who = prev
+							modifier = opinion_changed_alliance
+						}								
+					}							
+				}
+			}
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			random_owned_starbase = {
+				limit = {
+					has_starbase_building = sbs_cannon
+				}
+				remove_starbase_building = { building = sbs_cannon }
+			}
+			clear_global_event_target = sbs_cannon_target
+			clear_global_event_target = sbs_cannon_system
+			clear_global_event_target = sbs_cannon_system_target
+			random_system = {
+				limit = { has_star_flag = sbs_cannon_system_star }
+				remove_star_flag = sbs_cannon_system_star
+			}
+			country_event = { id = sbscannon.4 days = 360 }
+		}
 	}
 }

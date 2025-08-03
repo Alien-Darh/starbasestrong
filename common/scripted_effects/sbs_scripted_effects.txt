@@ -1,0 +1,96 @@
+sbs_destroy_star_system = {
+	every_system_planet = {
+		limit = { is_star = yes }
+		create_ambient_object = {
+			type = "star_explosion"
+			play_animation_once = yes
+			location = this
+		}
+		last_created_ambient_object = {
+			set_location = {
+				target = prev
+				distance = 0
+				angle = random
+			}
+		}
+	}
+	every_system_planet = {
+		limit = {
+			is_star = no
+			is_asteroid = no
+			NOR = {
+				is_planet_class = pc_shattered
+				is_planet_class = pc_shattered_2
+				is_planet_class = pc_shielded
+				is_planet_class = pc_ringworld_habitable_damaged
+				is_planet_class = pc_ringworld_tech_damaged
+				is_planet_class = pc_ringworld_seam_damaged
+			}
+		}
+		if = {
+			limit = { is_planet_class = pc_habitat } # uncolonized
+			spawn_habitat_cracker_effect = yes
+		}
+		if = {
+			limit = { is_colony = yes }
+			if = {
+				limit = {
+					exists = orbital_defence
+				}
+				destroy_fleet = orbital_defence
+			}
+			remove_all_buildings = yes
+			destroy_colony = yes
+			if = {
+				limit = { is_planet_class = pc_habitat }
+				spawn_habitat_cracker_effect = yes
+			}
+			else_if = {
+				limit = { is_ringworld = yes }
+				spawn_ringworld_cracker_effect = yes
+				change_pc = pc_ringworld_habitable_damaged
+			}
+			else = {
+				change_pc = pc_shattered
+			}
+		}
+		else_if = {
+			limit = { is_ringworld = yes }
+			spawn_ringworld_cracker_effect = yes
+			change_pc = pc_ringworld_habitable_damaged
+		}
+		else_if = {
+			limit = { is_planet_class = pc_ringworld_tech }
+			spawn_ringworld_cracker_effect = yes
+			change_pc = pc_ringworld_tech_damaged
+		}
+		else_if = {
+			limit = { is_planet_class = pc_ringworld_seam }
+			spawn_ringworld_cracker_effect = yes
+			change_pc = pc_ringworld_seam_damaged
+		}
+		else = {
+			change_pc = pc_shattered
+		}
+	}
+	every_system_planet = {
+		limit = {
+			exists = orbital_station
+		}
+		orbital_station = { dismantle = yes }
+	}
+	star = {
+		create_ambient_object = {
+			type = "destroyed_system"
+			location = this
+		}
+		last_created_ambient_object = {
+			set_ambient_object_flag = destroyed_system_effect
+			set_location = {
+				target = prev
+				distance = 0
+				angle = random
+			}
+		}
+	}
+}

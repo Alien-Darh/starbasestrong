@@ -46,11 +46,6 @@ country_event = {
 					unity = 500
 					influence = 100
 				}
-				add_research_option = tech_solar_panels
-				add_tech_progress = {
-					tech = tech_solar_panels
-					progress = 0.10
-				}
 			}
 			add_modifier =  {
 				modifier = agenda_uncover_secrets_finish

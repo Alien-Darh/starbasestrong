@@ -142,9 +142,8 @@ country_event = {
 						is_megastructure_type = cosmogenesis_world_0
 						is_megastructure_type = cosmogenesis_world_ruined
 
-						is_megastructure_type = major_orbital
-						is_megastructure_type = minor_orbital
-						is_megastructure_type = major_orbital_knights
+						is_megastructure_type = habitat_major_orbital
+						is_megastructure_type = habitat_minor_orbital
 						is_megastructure_type = habitat_central_complex_ruined
 						is_megastructure_type = habitat_central_complex_restored
 					}
@@ -241,9 +240,8 @@ country_event = {
 						is_megastructure_type = cosmogenesis_world_0
 						is_megastructure_type = cosmogenesis_world_ruined
 
-						is_megastructure_type = major_orbital
-						is_megastructure_type = minor_orbital
-						is_megastructure_type = major_orbital_knights
+						is_megastructure_type = habitat_major_orbital
+						is_megastructure_type = habitat_minor_orbital
 						is_megastructure_type = habitat_central_complex_ruined
 						is_megastructure_type = habitat_central_complex_restored
 					}

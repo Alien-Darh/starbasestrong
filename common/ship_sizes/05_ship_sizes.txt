@@ -41,7 +41,30 @@ science = {
 	resources = {
 		category = ships
 		cost = {
-			alloys = 100
+			trigger = {
+				from = {
+					country_uses_bio_ships = no
+				}
+			}
+			alloys = @science_ship_cost
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			alloys = @science_ship_cost
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			food = @science_ship_cost
+			mult = @halved_alloy_to_food_cost_ratio
 		}
 		upkeep = {
 			energy = @science_upkeep_energy
@@ -53,11 +76,20 @@ science = {
 		NOT = {
 			is_country_type = enclave_mercenary
 		}
+		OR = {
+			has_technology = tech_hyper_drive_1
+			has_technology = tech_hyper_drive_2
+			has_technology = tech_hyper_drive_3
+			has_technology = tech_jump_drive_1
+			has_technology = tech_psi_jump_drive_1
+		}
 	}
+
+	available_to_everyone = yes
 
 	ai_ship_data = {
 		min = value:desired_science_ships
 		system_mult = value:desired_science_ships_system_mult
-		max = 5
+		max = value:max_science_ships
 	}
 }

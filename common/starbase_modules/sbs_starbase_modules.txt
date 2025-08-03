@@ -333,6 +333,7 @@ social_services = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_effective_bureaucracy }
+		is_normal_starbase = yes
 	}
 
 	resources = {
@@ -342,21 +343,149 @@ social_services = {
 			energy = 10
 		}
 		produces = {
+			trigger = {
+				solar_system = {
+					any_system_planet = {
+						OR = {
+							is_colony = yes
+							is_capital = yes
+						}
+						planet_stability >= 90 	# mayor que
+					}
+				}
+			}
+			influence = 0.5
+		}
+		produces = {
+			trigger = {
+				solar_system = {
+					any_system_planet = {
+						OR = {
+							is_colony = yes
+							is_capital = yes
+						}
+						planet_stability < 90 	# menor que
+						planet_stability >= 80	# mayor que
+					}
+				}
+			}
+			influence = 0.4
+		}
+		produces = {
+			trigger = {
+				solar_system = {
+					any_system_planet = {
+						OR = {
+							is_colony = yes
+							is_capital = yes
+						}
+						planet_stability < 80 	# menor que
+						planet_stability >= 70	# mayor que
+					}
+				}
+			}
+			influence = 0.3
+		}
+		produces = {
+			trigger = {
+				solar_system = {
+					any_system_planet = {
+						OR = {
+							is_colony = yes
+							is_capital = yes
+						}
+						planet_stability < 70 	# menor que
+						planet_stability >= 60	# mayor que
+					}
+				}
+			}
+			influence = 0.2
+		}
+
+		produces = {
+			trigger = {
+				solar_system = {
+					any_system_planet = {
+						OR = {
+							is_colony = yes
+							is_capital = yes
+						}
+						planet_stability < 60	# menor que
+						planet_stability >= 50	# mayor que
+					}
+				}
+			}
 			influence = 0.1
 		}
+
+		produces = {
+			trigger = {
+				solar_system = {
+					any_system_planet = {
+						OR = {
+							is_colony = yes
+							is_capital = yes
+						}
+						planet_stability < 50	# menor que
+						planet_stability >= 40	# mayor que
+					}
+				}
+			}
+			influence = -0.1
+		}
+
+		produces = {
+			trigger = {
+				solar_system = {
+					any_system_planet = {
+						OR = {
+							is_colony = yes
+							is_capital = yes
+						}
+						planet_stability < 40	# menor que
+						planet_stability >= 30	# mayor que
+					}
+				}
+			}
+			influence = -0.2
+		}
+
+		produces = {
+			trigger = {
+				solar_system = {
+					any_system_planet = {
+						OR = {
+							is_colony = yes
+							is_capital = yes
+						}
+						planet_stability < 30	# menor que
+					}
+				}
+			}
+			influence = -0.3
+		}
+
 		upkeep = {
 			energy = 5
 			alloys = 2
+		}
+		upkeep = {
+			trigger = {
+				exists = planet
+				planet = { has_modifier = anticrime_campaign }
+			}
+			influence = -0.1
+		}
+		upkeep = {
+			trigger = { owner = { is_at_war = yes } }
+			influence = -0.1
 		}
 	}
 
 	possible = {
 		custom_tooltip = {
-			fail_text = "requires_starport_or_ring"
-			OR = {
-				has_starbase_size >= starbase_starport
-				is_orbital_ring = yes
-			}
+			fail_text = "requires_management"
+			has_starbase_building = management_building
 		}
 		custom_tooltip = {
 			fail_text = "requires_colonized_planet"
@@ -372,144 +501,139 @@ social_services = {
 				has_starbase_module = social_services
 			}
 		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = planet
-			planet = {
-				planet_stability >= 90 #>= mayor que / <= menor que
-#				planet_crime <= 5
+		custom_tooltip = {
+			fail_text = "requires_no_crime"
+			solar_system = {
+				any_system_planet = {
+					OR = {
+						is_colony = yes
+						is_capital = yes
+					}
+					NOT = {
+						planet_crime >= 20	# mayor que
+					}
+				}
 			}
 		}
-		country_ruler_influence_produces_add = 0.04
 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = planet
-			planet = {
-				planet_stability >= 80 #>= mayor que / <= menor que
-#				planet_crime <= 10
-			}
+	on_destroyed = {
+		if = {
+			limit = { NOT = { has_starbase_module = social_services } }
+			set_ship_construction_type = none
 		}
-		country_ruler_influence_produces_add = 0.03
 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = planet
-			planet = {
-				planet_stability >= 70 #>= mayor que / <= menor que
-#				planet_crime <= 15
+	abort_construction_trigger = {
+		OR = {
+			solar_system = {
+				any_system_planet = {
+					OR = {
+						is_colony = yes
+						is_capital = yes
+					}
+					NOT = {
+						planet_crime > 20	# mayor que
+					}
+				}
 			}
 		}
-		country_ruler_influence_produces_add = 0.02
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = planet
-			planet = {
-				planet_stability >= 60 #>= mayor que / <= menor que
-#				planet_crime <= 20
-			}
-		}
-		country_ruler_influence_produces_add = 0.01	
 	}
 
 	show_in_tech = "tech_effective_bureaucracy"
 
 	ai_weight = {
-		weight = 50
+		weight = 100
+		modifier = {
+			add = 1000
+			owner = {
+				any_owned_starbase = {
+					OR = {
+						has_starbase_building = module_protection_link
+						has_starbase_building = aux_module_starhold
+					}
+				}
+			}
+		}
 	}
 }
 
-solar_panels = {
-	section = "REFINERY_STARBASE_SECTION"
-	icon = "GFX_solar_panel_network"
-	construction_days = 130
-	initial = yes
+alloys_module = {
+	icon = "GFX_starbase_alloys_module"
+	construction_days = 360
 
 	potential = {
 		exists = owner
-		owner = {
-			is_gestalt = no
-			has_technology = "tech_solar_panels"
-		}
-#		is_normal_starbase = yes
-	}
-
-	possible = {
-		custom_tooltip = {
-			fail_text = "requires_starport_or_ring"
-			OR = {
-				has_starbase_size >= starbase_starport
-				is_orbital_ring = yes
-			}
-		}
+		owner = { has_technology = tech_heritage_site }
+		is_normal_starbase = yes
 	}
 
 	resources = {
 		category = starbase_modules
 		cost = {
-			alloys = 25
+			minerals = 100
+			alloys = 20
+			influence = 10
+		}
+		produces = {
+			alloys = 2
+		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_technology = tech_alloys_1 }
+			}
+			alloys = 2
+		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_technology = tech_alloys_2 }
+			}
+			alloys = 2
+		}
+		produces = {
+			trigger = { owner = { is_at_war = yes } }
+			alloys = 4
 		}
 		upkeep = {
-			minerals = 5
+			minerals = 10
+			energy = 5
+			influence = 0.10
 		}
 		upkeep = {
 			trigger = { owner = { is_at_war = yes } }
-			energy = -1
+			influence = -0.10
+			energy = -5
 		}
+	}
 
-		upkeep = {
-			trigger = {
-				solar_system = {
-					is_star_class = sc_black_hole
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starport"
+			has_starbase_size >= starbase_starport
+		}
+		custom_tooltip = {
+			fail_text = "requires_colonized_planet"
+			solar_system = {
+				any_system_planet = {
+					is_owned_by = from
 				}
-			}	
-			energy = -0.5
-		}
-
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { has_technology = tech_power_plant_1 }
 			}
-			energy = 2
 		}
-
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { has_technology = tech_power_plant_2 }
+		custom_tooltip = {
+			fail_text = "requires_max_t"
+			NOT = {
+				has_starbase_module = alloys_module
 			}
-			energy = 1.5
 		}
-
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { has_technology = tech_power_plant_3 }
-			}
-			energy = 1
-		}
-
-		produces = {
-			trigger = {
-				exists = owner
-				owner = { has_technology = tech_power_plant_4 }
-			}
-			energy = 0.5
-		}
+		has_starbase_building = offworld_trading_company
 	}
 
-	show_in_tech = "tech_solar_panels"
 
-	ai_weight = {
-		weight = 100
-	}
+	show_in_tech = "tech_heritage_site"
+
+	ai_weight = { weight = 100 }
 }
 
 gun_battery_upgrade = {
@@ -551,11 +675,9 @@ gun_battery_upgrade = {
 	}
 
 	station_modifier = {
-		ship_shield_mult = 0.10
-		ship_hull_mult = 0.10
-		ship_armor_mult = 0.10
-		starbase_trade_protection_range_add = 1
-		starbase_trade_protection_add = 5
+		ship_shield_mult = 0.05
+		ship_hull_mult = 0.05
+		ship_armor_mult = 0.05
 	}
 
 	show_in_tech = "tech_starbase_citadel_upgrade"
